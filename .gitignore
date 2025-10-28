@@ -1,0 +1,38 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (si usas npm/node en el futuro)
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Archivos temporales
+*.log
+*.tmp
+.cache/
+
+# Build outputs (para futuras compilaciones)
+dist/
+build/
+
+# Variables de entorno
+.env
+.env.local
