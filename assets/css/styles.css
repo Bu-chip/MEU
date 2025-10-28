@@ -1,0 +1,592 @@
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #000;
+    color: #0f0;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 3px solid #0f0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 20px #0f0;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #0a0;
+    font-size: 1.1em;
+}
+
+/* Área de carga */
+.upload-area {
+    background: #111;
+    border: 2px dashed #0f0;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.upload-area.loaded {
+    display: none;
+}
+
+#fileInput {
+    padding: 10px 20px;
+    background: #0f0;
+    color: #000;
+    border: none;
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.main-content {
+    display: none;
+}
+
+.main-content.active {
+    display: block;
+}
+
+/* Estadísticas */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background: #111;
+    border: 2px solid #0f0;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Hover - solo borde brillante y elevación */
+.stat-box:hover {
+    border-color: #0ff;
+    border-width: 3px;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #0f0;
+}
+
+/* Activo - fondo verde completo */
+.stat-box.active {
+    background: #0f0;
+    border-color: #0f0;
+}
+
+.stat-box.active .stat-value {
+    color: #000;
+    text-shadow: none;
+}
+
+.stat-box.active .stat-label {
+    color: #000;
+}
+
+.stat-value {
+    font-size: 2.5em;
+    color: #0f0;
+    font-weight: bold;
+    text-shadow: 0 0 10px #0f0;
+}
+
+.stat-label {
+    color: #0a0;
+    margin-top: 5px;
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.tab {
+    padding: 12px 24px;
+    background: #111;
+    border: 2px solid #0f0;
+    color: #0f0;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.tab:hover {
+    background: #0f0;
+    color: #000;
+    box-shadow: 0 0 10px #0f0;
+}
+
+.tab.active {
+    background: #0f0;
+    color: #000;
+}
+
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 5px #f00;
+    }
+    50% {
+        box-shadow: 0 0 20px #f00;
+    }
+}
+
+/* Barra de búsqueda integrada */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: stretch;
+}
+
+.search {
+    flex: 1;
+    padding: 15px;
+    background: #111;
+    border: 2px solid #0f0;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+    min-width: 0;
+}
+
+.search:focus {
+    outline: none;
+    border-color: #0ff;
+    box-shadow: 0 0 10px #0f0;
+}
+
+.random-select {
+    padding: 12px 15px;
+    background: #111;
+    border: 2px solid #0f0;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 120px;
+}
+
+.random-select:hover {
+    background: #0a0;
+    border-color: #0ff;
+}
+
+.random-select:focus {
+    outline: none;
+    border-color: #0ff;
+    box-shadow: 0 0 10px #0f0;
+}
+
+.random-btn {
+    padding: 12px 30px;
+    background: #f00;
+    border: 2px solid #f00;
+    color: #000;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    transition: all 0.3s;
+    white-space: nowrap;
+    animation: pulse 2s infinite;
+}
+
+.random-btn:hover {
+    background: #ff3333;
+    border-color: #ff3333;
+    box-shadow: 0 0 20px #f00;
+    transform: scale(1.05);
+}
+
+/* Área de contenido */
+.content-area {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #111;
+    border: 2px solid #0f0;
+    padding: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 20px;
+}
+
+/* Scrollbar personalizado para el sidebar */
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #000;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #0f0;
+    border: 1px solid #000;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #0ff;
+}
+
+.list-item {
+    padding: 10px;
+    border-bottom: 1px solid #0f0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.list-item:hover {
+    background: #0f0;
+    color: #000;
+    padding-left: 20px;
+}
+
+/* Área de detalle */
+.detail-area {
+    background: #111;
+    border: 2px solid #0f0;
+    padding: 30px;
+    min-height: 500px;
+}
+
+.album-title {
+    font-size: 2em;
+    color: #0ff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.album-artist {
+    font-size: 1.5em;
+    color: #0f0;
+    margin-bottom: 20px;
+}
+
+.album-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.meta-item {
+    background: #000;
+    padding: 15px;
+    border: 1px solid #0f0;
+}
+
+.meta-label {
+    color: #0a0;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.meta-value {
+    color: #0f0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 1.3em;
+    color: #0f0;
+    border-bottom: 2px solid #0f0;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Tags */
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    padding: 8px 16px;
+    background: #000;
+    border: 1px solid #0f0;
+    color: #0f0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tag:hover {
+    background: #0f0;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Botón de Bandcamp */
+.bandcamp-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #0f0;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+/* Sección relacionada */
+.related-section {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #0f0;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.related-album {
+    background: #000;
+    border: 1px solid #0f0;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.related-album:hover {
+    border-color: #0ff;
+    box-shadow: 0 0 10px #0f0;
+    transform: translateY(-2px);
+}
+
+.related-album-title {
+    color: #0ff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.related-album-artist {
+    color: #0a0;
+    font-size: 0.9em;
+}
+
+/* Estado vacío */
+.empty-state {
+    text-align: center;
+    padding: 60px;
+    color: #0a0;
+    font-size: 1.2em;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .content-area {
+        grid-template-columns: 300px 1fr;
+    }
+    
+    .sidebar {
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .content-area {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .sidebar {
+        max-height: 40vh;
+        position: relative;
+        top: 0;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .sidebar {
+        max-height: 35vh;
+    }
+}
+
+/* Responsive para la barra de búsqueda */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-wrap: wrap;
+    }
+    
+    .search {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+    
+    .random-select {
+        flex: 1;
+    }
+    
+    .random-btn {
+        flex: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .random-select {
+        font-size: 0.85em;
+        padding: 12px 10px;
+        min-width: 100px;
+    }
+    
+    .random-btn {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* Resultados de búsqueda global */
+.search-results {
+    display: none;
+    background: #111;
+    border: 2px solid #0f0;
+    margin-bottom: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-category {
+    border-bottom: 2px solid #0f0;
+    padding: 20px;
+}
+
+.search-category:last-child {
+    border-bottom: none;
+}
+
+.search-category-title {
+    color: #0f0;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px #0f0;
+}
+
+.search-category-count {
+    color: #0a0;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #0a0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.search-result-item:hover {
+    background: #0f0;
+    color: #000;
+    padding-left: 20px;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-no-results {
+    padding: 40px;
+    text-align: center;
+    color: #0a0;
+    font-size: 1.1em;
+}
+
+.show-more-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #000;
+    border: 2px solid #0f0;
+    color: #0f0;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.show-more-btn:hover {
+    background: #0f0;
+    color: #000;
+    box-shadow: 0 0 10px #0f0;
+}
+
+/* Header de artista mejorado */
+.artist-header {
+    margin-bottom: 30px;
+}
+
+.artist-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
