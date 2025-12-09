@@ -101,18 +101,18 @@ function loadTab(tab) {
         filteredItems = [...DATA.artists];
         sidebarTitle.textContent = 'ARTISTAS';
         sidebarCount.textContent = `${filteredItems.length} total`;
-        renderList(filteredItems, (item) => `${item} (${getArtistAlbumCount(item)})`);
+        renderList(filteredItems, (item) => `${sanitizeForHTML(item)} (${getArtistAlbumCount(item)})`);
     } else if (tab === 'tags') {
         filteredItems = [...DATA.tags];
         sidebarTitle.textContent = 'TAGS';
         sidebarCount.textContent = `${filteredItems.length} total`;
-        renderList(filteredItems, (item) => `${item} (${getTagCount(item)})`);
+        renderList(filteredItems, (item) => `${sanitizeForHTML(item)} (${getTagCount(item)})`);
     } else if (tab === 'albums') {
         filteredItems = [...DATA.albums];
         sidebarTitle.textContent = 'ÁLBUMES';
         sidebarCount.textContent = `${filteredItems.length} total`;
         sidebarList.innerHTML = filteredItems.map(album =>
-            `<div class="list-item" onclick="showAlbum(${album.id})">${album.artist} - ${album.title}</div>`
+            `<div class="list-item" onclick="showAlbum(${album.id})">${sanitizeForHTML(album.artist)} - ${sanitizeForHTML(album.title)}</div>`
         ).join('');
     } else if (tab === 'years') {
         filteredItems = [...DATA.years];
@@ -197,7 +197,7 @@ function handleSearch(e) {
     if (artistResults.length > 0) {
         searchResultsCache.artists = artistResults;
         html += buildSearchCategory('ARTISTAS', artistResults, 'artists', (artist) =>
-            `${artist} <span style="color:var(--text-secondary)">(${getArtistAlbumCount(artist)} álbumes)</span>`,
+            `${sanitizeForHTML(artist)} <span style="color:var(--text-secondary)">(${getArtistAlbumCount(artist)} álbumes)</span>`,
             (artist) => `searchShowArtist('${escapeHtml(artist)}')`
         );
     }
@@ -206,8 +206,8 @@ function handleSearch(e) {
     if (albumResults.length > 0) {
         searchResultsCache.albums = albumResults;
         html += buildSearchCategory('ÁLBUMES', albumResults, 'albums', (album) =>
-            `<div style="font-weight:600">${album.title}</div>
-             <div style="font-size:14px;color:var(--text-secondary)">${album.artist} • ${album.year || '?'}</div>`,
+            `<div style="font-weight:600">${sanitizeForHTML(album.title)}</div>
+             <div style="font-size:14px;color:var(--text-secondary)">${sanitizeForHTML(album.artist)} • ${album.year || '?'}</div>`,
             (album) => `showAlbum(${album.id})`
         );
     }
@@ -216,7 +216,7 @@ function handleSearch(e) {
     if (tagResults.length > 0) {
         searchResultsCache.tags = tagResults;
         html += buildSearchCategory('TAGS', tagResults, 'tags', (tag) =>
-            `${tag} <span style="color:var(--text-secondary)">(${getTagCount(tag)} álbumes)</span>`,
+            `${sanitizeForHTML(tag)} <span style="color:var(--text-secondary)">(${getTagCount(tag)} álbumes)</span>`,
             (tag) => `searchShowTag('${escapeHtml(tag)}')`
         );
     }
@@ -243,7 +243,7 @@ function buildSearchCategory(title, results, type, formatter, clickHandler) {
     return `
         <div class="search-category">
             <div class="search-category-title">
-                ${title}
+                ${sanitizeForHTML(title)}
                 <span class="search-category-count">(${results.length})</span>
             </div>
             <div id="${type}-results">
@@ -271,20 +271,20 @@ function showMoreResults(type) {
     if (type === 'artists') {
         container.innerHTML = items.map(artist => `
             <div class="search-result-item" onclick="searchShowArtist('${escapeHtml(artist)}')">
-                ${artist} <span style="color:var(--text-secondary)">(${getArtistAlbumCount(artist)} álbumes)</span>
+                ${sanitizeForHTML(artist)} <span style="color:var(--text-secondary)">(${getArtistAlbumCount(artist)} álbumes)</span>
             </div>
         `).join('');
     } else if (type === 'tags') {
         container.innerHTML = items.map(tag => `
             <div class="search-result-item" onclick="searchShowTag('${escapeHtml(tag)}')">
-                ${tag} <span style="color:var(--text-secondary)">(${getTagCount(tag)} álbumes)</span>
+                ${sanitizeForHTML(tag)} <span style="color:var(--text-secondary)">(${getTagCount(tag)} álbumes)</span>
             </div>
         `).join('');
     } else if (type === 'albums') {
         container.innerHTML = items.map(album => `
             <div class="search-result-item" onclick="showAlbum(${album.id})">
-                <div style="font-weight:600">${album.title}</div>
-                <div style="font-size:14px;color:var(--text-secondary)">${album.artist} • ${album.year || '?'}</div>
+                <div style="font-weight:600">${sanitizeForHTML(album.title)}</div>
+                <div style="font-size:14px;color:var(--text-secondary)">${sanitizeForHTML(album.artist)} • ${album.year || '?'}</div>
             </div>
         `).join('');
     }
@@ -351,13 +351,13 @@ function showAlbum(albumId, addHistory = true) {
 
     let html = `
         <div class="album-detail">
-            <div class="album-title">${album.title}</div>
-            <div class="album-artist">${album.artist}</div>
+            <div class="album-title">${sanitizeForHTML(album.title)}</div>
+            <div class="album-artist">${sanitizeForHTML(album.artist)}</div>
 
             <div class="album-meta">
                 <div class="meta-item">
                     <div class="meta-label">GÉNERO</div>
-                    <div class="meta-value">${album.genre}</div>
+                    <div class="meta-value">${sanitizeForHTML(album.genre)}</div>
                 </div>
                 <div class="meta-item">
                     <div class="meta-label">AÑO</div>
@@ -376,7 +376,7 @@ function showAlbum(albumId, addHistory = true) {
             <div class="section-title coral-accent">TAGS</div>
             <div class="tag-cloud">
                 ${album.tags.map(tag =>
-                    `<span class="tag" onclick="showTagAlbums('${escapeHtml(tag)}')">${tag}</span>`
+                    `<span class="tag" onclick="showTagAlbums('${escapeHtml(tag)}')">${sanitizeForHTML(tag)}</span>`
                 ).join('')}
             </div>
         `;
@@ -394,11 +394,11 @@ function showAlbum(albumId, addHistory = true) {
     if (sameArtist.length > 0) {
         html += `
             <div class="related-section">
-                <div class="section-title mint-accent">MÁS DE ${album.artist}</div>
+                <div class="section-title mint-accent">MÁS DE ${sanitizeForHTML(album.artist)}</div>
                 <div class="related-grid">
                     ${sameArtist.map(a => `
                         <div class="related-album" onclick="showAlbum(${a.id})">
-                            <div class="related-album-title">${a.title}</div>
+                            <div class="related-album-title">${sanitizeForHTML(a.title)}</div>
                             <div class="related-album-artist">${a.year || '?'}</div>
                         </div>
                     `).join('')}
@@ -420,8 +420,8 @@ function showAlbum(albumId, addHistory = true) {
                     <div class="related-grid">
                         ${sameTags.map(a => `
                             <div class="related-album" onclick="showAlbum(${a.id})">
-                                <div class="related-album-title">${a.title}</div>
-                                <div class="related-album-artist">${a.artist}</div>
+                                <div class="related-album-title">${sanitizeForHTML(a.title)}</div>
+                                <div class="related-album-artist">${sanitizeForHTML(a.artist)}</div>
                             </div>
                         `).join('')}
                     </div>
@@ -472,7 +472,7 @@ function showArtistAlbums(artist, addHistory = true) {
     // Construir HTML
     let html = `
         <div class="artist-header">
-            <div class="album-title">${artist}</div>
+            <div class="album-title">${sanitizeForHTML(artist)}</div>
 
             <div class="artist-meta-grid">
                 <div class="meta-item">
@@ -501,7 +501,7 @@ function showArtistAlbums(artist, addHistory = true) {
             <div class="section-title coral-accent">GÉNEROS</div>
             <div class="tag-cloud">
                 ${genres.map(genre =>
-                    `<span class="tag" onclick="searchShowGenre('${escapeHtml(genre)}')">${genre}</span>`
+                    `<span class="tag" onclick="searchShowGenre('${escapeHtml(genre)}')">${sanitizeForHTML(genre)}</span>`
                 ).join('')}
             </div>
         `;
@@ -513,7 +513,7 @@ function showArtistAlbums(artist, addHistory = true) {
             <div class="section-title mint-accent">TAGS MÁS FRECUENTES</div>
             <div class="tag-cloud">
                 ${topTags.map(([tag, count]) =>
-                    `<span class="tag" onclick="searchShowTag('${escapeHtml(tag)}')">${tag} <span style="color:var(--text-secondary)">(${count})</span></span>`
+                    `<span class="tag" onclick="searchShowTag('${escapeHtml(tag)}')">${sanitizeForHTML(tag)} <span style="color:var(--text-secondary)">(${count})</span></span>`
                 ).join('')}
             </div>
         `;
@@ -527,8 +527,8 @@ function showArtistAlbums(artist, addHistory = true) {
         <div class="related-grid">
             ${sortedAlbums.map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
-                    <div class="related-album-title">${a.title}</div>
-                    <div class="related-album-artist">${a.year || '?'} • ${a.genre}</div>
+                    <div class="related-album-title">${sanitizeForHTML(a.title)}</div>
+                    <div class="related-album-artist">${a.year || '?'} • ${sanitizeForHTML(a.genre)}</div>
                 </div>
             `).join('')}
         </div>
@@ -558,13 +558,13 @@ function showTagAlbums(tag, addHistory = true) {
     const shuffledAlbums = shuffleArray(albums);
 
     let html = `
-        <div class="section-title mint-accent">TAG: ${tag}</div>
+        <div class="section-title mint-accent">TAG: ${sanitizeForHTML(tag)}</div>
         <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
         <div class="related-grid">
             ${shuffledAlbums.slice(0, 40).map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
-                    <div class="related-album-title">${a.title}</div>
-                    <div class="related-album-artist">${a.artist}</div>
+                    <div class="related-album-title">${sanitizeForHTML(a.title)}</div>
+                    <div class="related-album-artist">${sanitizeForHTML(a.artist)}</div>
                 </div>
             `).join('')}
         </div>
@@ -599,8 +599,8 @@ function showYearAlbums(year, addHistory = true) {
         <div class="related-grid">
             ${shuffledAlbums.map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
-                    <div class="related-album-title">${a.title}</div>
-                    <div class="related-album-artist">${a.artist}</div>
+                    <div class="related-album-title">${sanitizeForHTML(a.title)}</div>
+                    <div class="related-album-artist">${sanitizeForHTML(a.artist)}</div>
                 </div>
             `).join('')}
         </div>
@@ -630,13 +630,13 @@ function searchShowGenre(genre, addHistory = true) {
     const shuffledAlbums = shuffleArray(albums);
 
     let html = `
-        <div class="section-title mint-accent">GÉNERO: ${genre}</div>
+        <div class="section-title mint-accent">GÉNERO: ${sanitizeForHTML(genre)}</div>
         <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
         <div class="related-grid">
             ${shuffledAlbums.slice(0, 40).map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
-                    <div class="related-album-title">${a.title}</div>
-                    <div class="related-album-artist">${a.artist}</div>
+                    <div class="related-album-title">${sanitizeForHTML(a.title)}</div>
+                    <div class="related-album-artist">${sanitizeForHTML(a.artist)}</div>
                 </div>
             `).join('')}
         </div>
@@ -676,7 +676,20 @@ function closeSearch() {
 // ============================================
 
 function escapeHtml(text) {
-    return text.replace(/'/g, "\\'");
+    if (!text) return '';
+    return text
+        .replace(/\\/g, '\\\\')  // Escape backslashes first
+        .replace(/'/g, "\\'")     // Escape single quotes
+        .replace(/"/g, '\\"')     // Escape double quotes
+        .replace(/\n/g, '\\n')    // Escape newlines
+        .replace(/\r/g, '\\r');   // Escape carriage returns
+}
+
+function sanitizeForHTML(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
 }
 
 // Shuffle array (Fisher-Yates)
