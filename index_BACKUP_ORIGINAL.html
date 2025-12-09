@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilbao Underground Explorer</title>
+    <meta name="description" content="Explora 2,396 álbumes de la escena underground de Bilbao">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>▶ BILBAO UNDERGROUND EXPLORER ◀</h1>
+            <div class="subtitle">Navega 2,396 álbumes de la escena underground</div>
+        </header>
+
+        <div class="upload-area" id="uploadArea">
+            <h2 style="margin-bottom:20px;color:#0f0">▶ CARGANDO DATOS...</h2>
+            <p style="margin-bottom:20px;color:#0a0">Preparando 2,396 álbumes</p>
+        </div>
+
+        <div class="main-content" id="mainContent">
+            <div class="stats">
+                <div class="stat-box" onclick="goToTab('artistas')">
+                    <div class="stat-value" id="statArtists">0</div>
+                    <div class="stat-label">ARTISTAS</div>
+                </div>
+                <div class="stat-box" onclick="goToTab('tags')">
+                    <div class="stat-value" id="statTags">0</div>
+                    <div class="stat-label">TAGS</div>
+                </div>
+                <div class="stat-box" onclick="goToTab('albums')">
+                    <div class="stat-value" id="statAlbums">0</div>
+                    <div class="stat-label">ÁLBUMES</div>
+                </div>
+                <div class="stat-box" onclick="goToTab('years')">
+                    <div class="stat-value" id="statYears">0</div>
+                    <div class="stat-label">AÑOS</div>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" class="search" id="search" placeholder="▶ Buscar artistas, álbumes, tags...">
+                <select id="randomFilter" class="random-select">
+                    <option value="all">🎲 Todo</option>
+                    <option value="genre">🎸 Género</option>
+                    <option value="year">📅 Año</option>
+                    <option value="tag">🏷️ Tag</option>
+                </select>
+                <button class="random-btn" id="randomBtn">RANDOM</button>
+            </div>
+
+            <div class="search-results" id="searchResults"></div>
+
+            <div class="content-area">
+                <div class="sidebar" id="sidebar"></div>
+                <div class="detail-area" id="detailArea">
+                    <div class="empty-state"> Busca, elige algo o pulsa RANDOM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
