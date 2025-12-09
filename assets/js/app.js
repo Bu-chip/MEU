@@ -7,6 +7,8 @@ let DATA = null;
 let currentTab = 'artistas';
 let filteredItems = [];
 let searchResultsCache = {};
+let navigationHistory = []; // Historial de navegación
+let currentContext = null; // Contexto actual (para random inteligente)
 
 // ============================================
 // INICIALIZACIÓN
@@ -49,6 +51,9 @@ function setupEventListeners() {
 
     // Random button
     document.getElementById('randomBtn').addEventListener('click', handleRandom);
+
+    // Back button
+    document.getElementById('backBtn').addEventListener('click', goBack);
 
     // Stats cards navigation
     document.querySelectorAll('.stat-card').forEach(card => {
@@ -292,7 +297,31 @@ function showMoreResults(type) {
 // ============================================
 
 function handleRandom() {
-    const randomAlbum = DATA.albums[Math.floor(Math.random() * DATA.albums.length)];
+    let randomAlbum;
+
+    // Random inteligente según contexto
+    if (currentContext) {
+        let filteredAlbums = [];
+
+        if (currentContext.type === 'tag') {
+            filteredAlbums = DATA.albums.filter(a => a.tags.includes(currentContext.name));
+        } else if (currentContext.type === 'year') {
+            filteredAlbums = DATA.albums.filter(a => a.year === currentContext.year);
+        } else if (currentContext.type === 'artist') {
+            filteredAlbums = DATA.albums.filter(a => a.artist === currentContext.name);
+        } else if (currentContext.type === 'genre') {
+            filteredAlbums = DATA.albums.filter(a => a.genre === currentContext.name);
+        }
+
+        if (filteredAlbums.length > 0) {
+            randomAlbum = filteredAlbums[Math.floor(Math.random() * filteredAlbums.length)];
+        } else {
+            randomAlbum = DATA.albums[Math.floor(Math.random() * DATA.albums.length)];
+        }
+    } else {
+        randomAlbum = DATA.albums[Math.floor(Math.random() * DATA.albums.length)];
+    }
+
     showAlbum(randomAlbum.id);
 
     // Cerrar búsqueda si está abierta
@@ -305,9 +334,18 @@ function handleRandom() {
 // MOSTRAR ÁLBUM
 // ============================================
 
-function showAlbum(albumId) {
+function showAlbum(albumId, addHistory = true) {
     const album = DATA.albums.find(a => a.id === albumId);
     if (!album) return;
+
+    // Agregar al historial
+    if (addHistory && navigationHistory.length === 0 ||
+        (navigationHistory.length > 0 && navigationHistory[navigationHistory.length - 1].id !== albumId)) {
+        addToHistory({ type: 'album', id: albumId });
+    }
+
+    // Actualizar contexto (el álbum no cambia el contexto de random)
+    updateRandomButton();
 
     const detail = document.getElementById('detailArea');
 
@@ -349,8 +387,10 @@ function showAlbum(albumId) {
         html += `<a href="${album.url}" target="_blank" class="bandcamp-btn">ABRIR EN BANDCAMP ↗</a>`;
     }
 
-    // Más del mismo artista
-    const sameArtist = DATA.albums.filter(a => a.artist === album.artist && a.id !== album.id).slice(0, 6);
+    // Más del mismo artista (shuffled)
+    const sameArtist = shuffleArray(
+        DATA.albums.filter(a => a.artist === album.artist && a.id !== album.id)
+    ).slice(0, 6);
     if (sameArtist.length > 0) {
         html += `
             <div class="related-section">
@@ -367,10 +407,10 @@ function showAlbum(albumId) {
         `;
     }
 
-    // Álbumes similares
+    // Álbumes similares (shuffled)
     if (album.tags.length > 0) {
-        const sameTags = DATA.albums.filter(a =>
-            a.id !== album.id && a.tags.some(t => album.tags.includes(t))
+        const sameTags = shuffleArray(
+            DATA.albums.filter(a => a.id !== album.id && a.tags.some(t => album.tags.includes(t)))
         ).slice(0, 6);
 
         if (sameTags.length > 0) {
@@ -398,9 +438,18 @@ function showAlbum(albumId) {
 // MOSTRAR ARTISTA
 // ============================================
 
-function showArtistAlbums(artist) {
+function showArtistAlbums(artist, addHistory = true) {
     const albums = DATA.albums.filter(a => a.artist === artist);
     const detail = document.getElementById('detailArea');
+
+    // Agregar al historial
+    if (addHistory) {
+        addToHistory({ type: 'artist', name: artist });
+    }
+
+    // Actualizar contexto
+    currentContext = { type: 'artist', name: artist };
+    updateRandomButton();
 
     // Calcular estadísticas
     const years = albums.map(a => a.year).filter(y => y).sort((a, b) => a - b);
@@ -492,15 +541,27 @@ function showArtistAlbums(artist) {
 // MOSTRAR TAG
 // ============================================
 
-function showTagAlbums(tag) {
+function showTagAlbums(tag, addHistory = true) {
     const albums = DATA.albums.filter(a => a.tags.includes(tag));
     const detail = document.getElementById('detailArea');
+
+    // Agregar al historial
+    if (addHistory) {
+        addToHistory({ type: 'tag', name: tag });
+    }
+
+    // Actualizar contexto
+    currentContext = { type: 'tag', name: tag };
+    updateRandomButton();
+
+    // Shuffle albums
+    const shuffledAlbums = shuffleArray(albums);
 
     let html = `
         <div class="section-title mint-accent">TAG: ${tag}</div>
         <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
         <div class="related-grid">
-            ${albums.slice(0, 40).map(a => `
+            ${shuffledAlbums.slice(0, 40).map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
@@ -516,15 +577,27 @@ function showTagAlbums(tag) {
 // MOSTRAR AÑO
 // ============================================
 
-function showYearAlbums(year) {
+function showYearAlbums(year, addHistory = true) {
     const albums = DATA.albums.filter(a => a.year === year);
     const detail = document.getElementById('detailArea');
+
+    // Agregar al historial
+    if (addHistory) {
+        addToHistory({ type: 'year', year: year });
+    }
+
+    // Actualizar contexto
+    currentContext = { type: 'year', year: year };
+    updateRandomButton();
+
+    // Shuffle albums
+    const shuffledAlbums = shuffleArray(albums);
 
     let html = `
         <div class="section-title coral-accent">AÑO: ${year}</div>
         <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
         <div class="related-grid">
-            ${albums.map(a => `
+            ${shuffledAlbums.map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
@@ -540,15 +613,27 @@ function showYearAlbums(year) {
 // MOSTRAR GÉNERO
 // ============================================
 
-function searchShowGenre(genre) {
+function searchShowGenre(genre, addHistory = true) {
     const albums = DATA.albums.filter(a => a.genre === genre);
     const detail = document.getElementById('detailArea');
+
+    // Agregar al historial
+    if (addHistory) {
+        addToHistory({ type: 'genre', name: genre });
+    }
+
+    // Actualizar contexto
+    currentContext = { type: 'genre', name: genre };
+    updateRandomButton();
+
+    // Shuffle albums
+    const shuffledAlbums = shuffleArray(albums);
 
     let html = `
         <div class="section-title mint-accent">GÉNERO: ${genre}</div>
         <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
         <div class="related-grid">
-            ${albums.slice(0, 40).map(a => `
+            ${shuffledAlbums.slice(0, 40).map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
@@ -592,4 +677,75 @@ function closeSearch() {
 
 function escapeHtml(text) {
     return text.replace(/'/g, "\\'");
+}
+
+// Shuffle array (Fisher-Yates)
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+// ============================================
+// HISTORIAL DE NAVEGACIÓN
+// ============================================
+
+function addToHistory(state) {
+    navigationHistory.push(state);
+    updateBackButton();
+}
+
+function goBack() {
+    if (navigationHistory.length > 0) {
+        const previousState = navigationHistory.pop();
+
+        // Restaurar estado sin agregar al historial
+        if (previousState.type === 'album') {
+            showAlbum(previousState.id, false);
+        } else if (previousState.type === 'artist') {
+            showArtistAlbums(previousState.name, false);
+        } else if (previousState.type === 'tag') {
+            showTagAlbums(previousState.name, false);
+        } else if (previousState.type === 'year') {
+            showYearAlbums(previousState.year, false);
+        } else if (previousState.type === 'genre') {
+            searchShowGenre(previousState.name, false);
+        }
+
+        updateBackButton();
+    }
+}
+
+function updateBackButton() {
+    const backBtn = document.getElementById('backBtn');
+    if (navigationHistory.length > 0) {
+        backBtn.style.display = 'block';
+    } else {
+        backBtn.style.display = 'none';
+    }
+}
+
+// ============================================
+// RANDOM INTELIGENTE
+// ============================================
+
+function updateRandomButton() {
+    const randomText = document.getElementById('randomText');
+
+    if (currentContext) {
+        if (currentContext.type === 'tag') {
+            randomText.textContent = `RANDOM: ${currentContext.name}`;
+        } else if (currentContext.type === 'year') {
+            randomText.textContent = `RANDOM: ${currentContext.year}`;
+        } else if (currentContext.type === 'artist') {
+            randomText.textContent = `RANDOM: ${currentContext.name}`;
+        } else if (currentContext.type === 'genre') {
+            randomText.textContent = `RANDOM: ${currentContext.name}`;
+        }
+    } else {
+        randomText.textContent = 'RANDOM';
+    }
 }
