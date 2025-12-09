@@ -1,10 +1,17 @@
+// ============================================
+// BILBAO UNDERGROUND - REDESIGN
+// ============================================
+
 // Variables globales
 let DATA = null;
 let currentTab = 'artistas';
 let filteredItems = [];
-let searchResultsCache = {}; // NUEVA LÍNEA
+let searchResultsCache = {};
 
-// Cargar JSON automáticamente al iniciar
+// ============================================
+// INICIALIZACIÓN
+// ============================================
+
 window.addEventListener('DOMContentLoaded', function() {
     fetch('data/bandcamp_bilbaotags_clean.json')
         .then(response => response.json())
@@ -17,104 +24,118 @@ window.addEventListener('DOMContentLoaded', function() {
         });
 });
 
-// Inicialización de la aplicación
 function init() {
-    document.getElementById('uploadArea').classList.add('loaded');
-    document.getElementById('mainContent').classList.add('active');
+    // Ocultar loading screen
+    document.getElementById('loadingScreen').classList.add('loaded');
+    document.getElementById('mainContainer').classList.add('active');
+
+    // Actualizar estadísticas
     document.getElementById('statAlbums').textContent = DATA.albums.length;
     document.getElementById('statArtists').textContent = DATA.artists.length;
     document.getElementById('statTags').textContent = DATA.tags.length;
     document.getElementById('statYears').textContent = DATA.years.length;
+
+    // Cargar pestaña inicial
     loadTab('artistas');
-    document.querySelectorAll('.stat-box')[0].classList.add('active');
+    document.querySelector('[data-tab="artistas"]').classList.add('active');
+
+    // Setup event listeners
+    setupEventListeners();
 }
 
-// Manejo de pestañas
-document.querySelectorAll('.tab').forEach(tab => {
-    tab.addEventListener('click', function() {
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        this.classList.add('active');
-        currentTab = this.dataset.tab;
-        loadTab(currentTab);
-    });
-});
+function setupEventListeners() {
+    // Búsqueda
+    document.getElementById('search').addEventListener('input', handleSearch);
 
-// Función para ir a una pestaña desde las estadísticas
+    // Random button
+    document.getElementById('randomBtn').addEventListener('click', handleRandom);
+
+    // Stats cards navigation
+    document.querySelectorAll('.stat-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const tab = this.dataset.tab;
+            if (tab) goToTab(tab);
+        });
+    });
+}
+
+// ============================================
+// NAVEGACIÓN ENTRE TABS
+// ============================================
+
 function goToTab(tabName) {
-    // Limpiar búsqueda (con verificación)
+    // Limpiar búsqueda
     const searchInput = document.getElementById('search');
     const searchResults = document.getElementById('searchResults');
-    const contentArea = document.querySelector('.content-area');
-    
+    const contentWrapper = document.querySelector('.content-wrapper');
+
     if (searchInput) searchInput.value = '';
     if (searchResults) {
         searchResults.classList.remove('active');
         searchResults.innerHTML = '';
     }
-    if (contentArea) contentArea.style.display = 'grid';
-    
-    // Quitar "active" de todas las estadísticas
-    document.querySelectorAll('.stat-box').forEach(box => box.classList.remove('active'));
-    
-    // Marcar como activa la estadística correspondiente
-    const statBoxes = document.querySelectorAll('.stat-box');
-    const tabIndex = {
-        'artistas': 0,
-        'tags': 1,
-        'albums': 2,
-        'years': 3
-    };
-    
-    if (statBoxes[tabIndex[tabName]]) {
-        statBoxes[tabIndex[tabName]].classList.add('active');
-    }
-    
+    if (contentWrapper) contentWrapper.style.display = 'grid';
+
+    // Actualizar estado activo de stats
+    document.querySelectorAll('.stat-card').forEach(box => box.classList.remove('active'));
+    const activeCard = document.querySelector(`[data-tab="${tabName}"]`);
+    if (activeCard) activeCard.classList.add('active');
+
     // Cargar contenido
     currentTab = tabName;
     loadTab(tabName);
 }
 
-// Carga de contenido de pestañas
 function loadTab(tab) {
-    const sidebar = document.getElementById('sidebar');
+    const sidebarList = document.getElementById('sidebarList');
+    const sidebarTitle = document.getElementById('sidebarTitle');
+    const sidebarCount = document.getElementById('sidebarCount');
     document.getElementById('search').value = '';
 
     if (tab === 'artistas') {
         filteredItems = [...DATA.artists];
+        sidebarTitle.textContent = 'ARTISTAS';
+        sidebarCount.textContent = `${filteredItems.length} total`;
         renderList(filteredItems, (item) => `${item} (${getArtistAlbumCount(item)})`);
     } else if (tab === 'tags') {
         filteredItems = [...DATA.tags];
+        sidebarTitle.textContent = 'TAGS';
+        sidebarCount.textContent = `${filteredItems.length} total`;
         renderList(filteredItems, (item) => `${item} (${getTagCount(item)})`);
     } else if (tab === 'albums') {
         filteredItems = [...DATA.albums];
-        sidebar.innerHTML = filteredItems.map(album =>
+        sidebarTitle.textContent = 'ÁLBUMES';
+        sidebarCount.textContent = `${filteredItems.length} total`;
+        sidebarList.innerHTML = filteredItems.map(album =>
             `<div class="list-item" onclick="showAlbum(${album.id})">${album.artist} - ${album.title}</div>`
         ).join('');
     } else if (tab === 'years') {
-    filteredItems = [...DATA.years];
-    const sidebar = document.getElementById('sidebar');
-    sidebar.innerHTML = filteredItems.map(year =>
-        `<div class="list-item" onclick="showYearAlbums(${year})">${year} (${getYearCount(year)} álbumes)</div>`
-    ).join('');
-}
+        filteredItems = [...DATA.years];
+        sidebarTitle.textContent = 'AÑOS';
+        sidebarCount.textContent = `${filteredItems.length} total`;
+        sidebarList.innerHTML = filteredItems.map(year =>
+            `<div class="list-item" onclick="showYearAlbums(${year})">${year} (${getYearCount(year)} álbumes)</div>`
+        ).join('');
+    }
 }
 
-// Renderizado de listas
 function renderList(items, formatter) {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.innerHTML = items.map(item =>
+    const sidebarList = document.getElementById('sidebarList');
+    sidebarList.innerHTML = items.map(item =>
         `<div class="list-item" onclick="handleItemClick('${escapeHtml(item)}')">${formatter(item)}</div>`
     ).join('');
 }
 
-// Manejo de clicks en items
 function handleItemClick(item) {
     if (currentTab === 'artistas') showArtistAlbums(item);
     else if (currentTab === 'tags') showTagAlbums(item);
     else if (currentTab === 'years') showYearAlbums(parseInt(item));
 }
 
-// Funciones de conteo
+// ============================================
+// CONTADORES
+// ============================================
+
 function getArtistAlbumCount(artist) {
     return DATA.albums.filter(a => a.artist === artist).length;
 }
@@ -127,156 +148,163 @@ function getYearCount(year) {
     return DATA.albums.filter(a => a.year === year).length;
 }
 
-// Búsqueda global
-document.getElementById('search').addEventListener('input', function(e) {
+// ============================================
+// BÚSQUEDA GLOBAL
+// ============================================
+
+function handleSearch(e) {
     const query = e.target.value.toLowerCase().trim();
     const searchResults = document.getElementById('searchResults');
-    const contentArea = document.querySelector('.content-area');
-    
-    // Si no hay búsqueda, ocultar resultados y mostrar contenido normal
+    const contentWrapper = document.querySelector('.content-wrapper');
+
     if (query === '') {
         searchResults.classList.remove('active');
         searchResults.innerHTML = '';
-        contentArea.style.display = 'grid';
+        contentWrapper.style.display = 'grid';
         return;
     }
-    
-    // Ocultar contenido normal y mostrar resultados
-    contentArea.style.display = 'none';
+
+    contentWrapper.style.display = 'none';
     searchResults.classList.add('active');
-    
+
     // Buscar en todas las categorías
-    const artistResults = DATA.artists.filter(artist => 
+    const artistResults = DATA.artists.filter(artist =>
         artist.toLowerCase().includes(query)
     );
-    
-    const albumResults = DATA.albums.filter(album => 
-        album.title.toLowerCase().includes(query) || 
+
+    const albumResults = DATA.albums.filter(album =>
+        album.title.toLowerCase().includes(query) ||
         album.artist.toLowerCase().includes(query)
     );
-    
-    const tagResults = DATA.tags.filter(tag => 
+
+    const tagResults = DATA.tags.filter(tag =>
         tag.toLowerCase().includes(query)
     );
-    
-    const yearResults = DATA.years.filter(year => 
+
+    const yearResults = DATA.years.filter(year =>
         year.toString().includes(query)
     );
-    
-    // Construir HTML de resultados
+
+    // Construir HTML
     let html = '';
-    
+
     // Artistas
     if (artistResults.length > 0) {
-        searchResultsCache.artists = artistResults; // Guardar en caché
-        
-        html += `
-            <div class="search-category">
-                <div class="search-category-title">
-                    ▶ ARTISTAS
-                    <span class="search-category-count">(${artistResults.length})</span>
-                </div>
-                <div id="artists-results">
-                    ${artistResults.slice(0, 10).map(artist => `
-                        <div class="search-result-item" onclick="searchShowArtist('${escapeHtml(artist)}')">
-                            ${artist} <span style="color:#0a0">(${getArtistAlbumCount(artist)} álbumes)</span>
-                        </div>
-                    `).join('')}
-                </div>
-                ${artistResults.length > 10 ? `
-                    <button class="show-more-btn" onclick="showMoreResults('artists')">
-                        ▶ Ver todos (${artistResults.length})
-                    </button>
-                ` : ''}
-            </div>
-        `;
+        searchResultsCache.artists = artistResults;
+        html += buildSearchCategory('ARTISTAS', artistResults, 'artists', (artist) =>
+            `${artist} <span style="color:var(--text-secondary)">(${getArtistAlbumCount(artist)} álbumes)</span>`,
+            (artist) => `searchShowArtist('${escapeHtml(artist)}')`
+        );
     }
-    
+
     // Álbumes
     if (albumResults.length > 0) {
-        searchResultsCache.albums = albumResults; // Guardar en caché
-        
-        html += `
-            <div class="search-category">
-                <div class="search-category-title">
-                    ▶ ÁLBUMES
-                    <span class="search-category-count">(${albumResults.length})</span>
-                </div>
-                <div id="albums-results">
-                    ${albumResults.slice(0, 10).map(album => `
-                        <div class="search-result-item" onclick="showAlbum(${album.id})">
-                            <div style="color:#0ff">${album.title}</div>
-                            <div style="color:#0a0;font-size:0.9em">${album.artist} • ${album.year || '?'}</div>
-                        </div>
-                    `).join('')}
-                </div>
-                ${albumResults.length > 10 ? `
-                    <button class="show-more-btn" onclick="showMoreResults('albums')">
-                        ▶ Ver todos (${albumResults.length})
-                    </button>
-                ` : ''}
-            </div>
-        `;
+        searchResultsCache.albums = albumResults;
+        html += buildSearchCategory('ÁLBUMES', albumResults, 'albums', (album) =>
+            `<div style="font-weight:600">${album.title}</div>
+             <div style="font-size:14px;color:var(--text-secondary)">${album.artist} • ${album.year || '?'}</div>`,
+            (album) => `showAlbum(${album.id})`
+        );
     }
-    
+
     // Tags
     if (tagResults.length > 0) {
-        searchResultsCache.tags = tagResults; // Guardar en caché
-        
-        html += `
-            <div class="search-category">
-                <div class="search-category-title">
-                    ▶ TAGS
-                    <span class="search-category-count">(${tagResults.length})</span>
-                </div>
-                <div id="tags-results">
-                    ${tagResults.slice(0, 10).map(tag => `
-                        <div class="search-result-item" onclick="searchShowTag('${escapeHtml(tag)}')">
-                            ${tag} <span style="color:#0a0">(${getTagCount(tag)} álbumes)</span>
-                        </div>
-                    `).join('')}
-                </div>
-                ${tagResults.length > 10 ? `
-                    <button class="show-more-btn" onclick="showMoreResults('tags')">
-                        ▶ Ver todos (${tagResults.length})
-                    </button>
-                ` : ''}
-            </div>
-        `;
+        searchResultsCache.tags = tagResults;
+        html += buildSearchCategory('TAGS', tagResults, 'tags', (tag) =>
+            `${tag} <span style="color:var(--text-secondary)">(${getTagCount(tag)} álbumes)</span>`,
+            (tag) => `searchShowTag('${escapeHtml(tag)}')`
+        );
     }
-    
+
     // Años
     if (yearResults.length > 0) {
-        html += `
-            <div class="search-category">
-                <div class="search-category-title">
-                    ▶ AÑOS
-                    <span class="search-category-count">(${yearResults.length})</span>
-                </div>
-                ${yearResults.map(year => `
-                    <div class="search-result-item" onclick="searchShowYear(${year})">
-                        ${year} <span style="color:#0a0">(${getYearCount(year)} álbumes)</span>
+        html += buildSearchCategory('AÑOS', yearResults, 'years', (year) =>
+            `${year} <span style="color:var(--text-secondary)">(${getYearCount(year)} álbumes)</span>`,
+            (year) => `searchShowYear(${year})`
+        );
+    }
+
+    if (html === '') {
+        html = `<div class="search-no-results">No se encontraron resultados para "${query}"</div>`;
+    }
+
+    searchResults.innerHTML = html;
+}
+
+function buildSearchCategory(title, results, type, formatter, clickHandler) {
+    const displayResults = results.slice(0, 10);
+    const hasMore = results.length > 10;
+
+    return `
+        <div class="search-category">
+            <div class="search-category-title">
+                ${title}
+                <span class="search-category-count">(${results.length})</span>
+            </div>
+            <div id="${type}-results">
+                ${displayResults.map(item => `
+                    <div class="search-result-item" onclick="${clickHandler(item)}">
+                        ${formatter(item)}
                     </div>
                 `).join('')}
             </div>
-        `;
-    }
-    
-    // Sin resultados
-    if (html === '') {
-        html = `<div class="search-no-results">◀ No se encontraron resultados para "${query}"</div>`;
-    }
-    
-    searchResults.innerHTML = html;
-});
+            ${hasMore ? `
+                <button class="show-more-btn" onclick="showMoreResults('${type}')">
+                    Ver todos (${results.length})
+                </button>
+            ` : ''}
+        </div>
+    `;
+}
 
-// Botón random
-document.getElementById('randomBtn').addEventListener('click', function() {
+function showMoreResults(type) {
+    const container = document.getElementById(`${type}-results`);
+    const items = searchResultsCache[type];
+
+    if (!items) return;
+
+    if (type === 'artists') {
+        container.innerHTML = items.map(artist => `
+            <div class="search-result-item" onclick="searchShowArtist('${escapeHtml(artist)}')">
+                ${artist} <span style="color:var(--text-secondary)">(${getArtistAlbumCount(artist)} álbumes)</span>
+            </div>
+        `).join('');
+    } else if (type === 'tags') {
+        container.innerHTML = items.map(tag => `
+            <div class="search-result-item" onclick="searchShowTag('${escapeHtml(tag)}')">
+                ${tag} <span style="color:var(--text-secondary)">(${getTagCount(tag)} álbumes)</span>
+            </div>
+        `).join('');
+    } else if (type === 'albums') {
+        container.innerHTML = items.map(album => `
+            <div class="search-result-item" onclick="showAlbum(${album.id})">
+                <div style="font-weight:600">${album.title}</div>
+                <div style="font-size:14px;color:var(--text-secondary)">${album.artist} • ${album.year || '?'}</div>
+            </div>
+        `).join('');
+    }
+
+    window.event.target.style.display = 'none';
+}
+
+// ============================================
+// RANDOM
+// ============================================
+
+function handleRandom() {
     const randomAlbum = DATA.albums[Math.floor(Math.random() * DATA.albums.length)];
     showAlbum(randomAlbum.id);
-});
 
-// Mostrar detalles de álbum
+    // Cerrar búsqueda si está abierta
+    document.getElementById('search').value = '';
+    document.getElementById('searchResults').classList.remove('active');
+    document.querySelector('.content-wrapper').style.display = 'grid';
+}
+
+// ============================================
+// MOSTRAR ÁLBUM
+// ============================================
+
 function showAlbum(albumId) {
     const album = DATA.albums.find(a => a.id === albumId);
     if (!album) return;
@@ -287,6 +315,7 @@ function showAlbum(albumId) {
         <div class="album-detail">
             <div class="album-title">${album.title}</div>
             <div class="album-artist">${album.artist}</div>
+
             <div class="album-meta">
                 <div class="meta-item">
                     <div class="meta-label">GÉNERO</div>
@@ -306,20 +335,18 @@ function showAlbum(albumId) {
     // Tags
     if (album.tags.length > 0) {
         html += `
-            <div class="tags-section">
-                <div class="section-title">▶ TAGS</div>
-                <div class="tag-cloud">
-                    ${album.tags.map(tag =>
-                        `<span class="tag" onclick="showTagAlbums('${escapeHtml(tag)}')">${tag}</span>`
-                    ).join('')}
-                </div>
+            <div class="section-title coral-accent">TAGS</div>
+            <div class="tag-cloud">
+                ${album.tags.map(tag =>
+                    `<span class="tag" onclick="showTagAlbums('${escapeHtml(tag)}')">${tag}</span>`
+                ).join('')}
             </div>
         `;
     }
 
     // Enlace a Bandcamp
     if (album.url) {
-        html += `<a href="${album.url}" target="_blank" class="bandcamp-btn">▶ ABRIR EN BANDCAMP</a>`;
+        html += `<a href="${album.url}" target="_blank" class="bandcamp-btn">ABRIR EN BANDCAMP ↗</a>`;
     }
 
     // Más del mismo artista
@@ -327,7 +354,7 @@ function showAlbum(albumId) {
     if (sameArtist.length > 0) {
         html += `
             <div class="related-section">
-                <div class="section-title">▶ MÁS DE ${album.artist}</div>
+                <div class="section-title mint-accent">MÁS DE ${album.artist}</div>
                 <div class="related-grid">
                     ${sameArtist.map(a => `
                         <div class="related-album" onclick="showAlbum(${a.id})">
@@ -349,7 +376,7 @@ function showAlbum(albumId) {
         if (sameTags.length > 0) {
             html += `
                 <div class="related-section">
-                    <div class="section-title">▶ ÁLBUMES SIMILARES</div>
+                    <div class="section-title coral-accent">ÁLBUMES SIMILARES</div>
                     <div class="related-grid">
                         ${sameTags.map(a => `
                             <div class="related-album" onclick="showAlbum(${a.id})">
@@ -367,18 +394,20 @@ function showAlbum(albumId) {
     detail.innerHTML = html;
 }
 
+// ============================================
+// MOSTRAR ARTISTA
+// ============================================
+
 function showArtistAlbums(artist) {
     const albums = DATA.albums.filter(a => a.artist === artist);
     const detail = document.getElementById('detailArea');
-    
-    // Calcular estadísticas del artista
+
+    // Calcular estadísticas
     const years = albums.map(a => a.year).filter(y => y).sort((a, b) => a - b);
     const firstYear = years[0];
     const lastYear = years[years.length - 1];
-    
-    // Géneros únicos
     const genres = [...new Set(albums.map(a => a.genre))];
-    
+
     // Tags más frecuentes
     const tagCount = {};
     albums.forEach(album => {
@@ -386,16 +415,16 @@ function showArtistAlbums(artist) {
             tagCount[tag] = (tagCount[tag] || 0) + 1;
         });
     });
-    
-    // Ordenar tags por frecuencia y tomar los top 10
+
     const topTags = Object.entries(tagCount)
         .sort((a, b) => b[1] - a[1])
         .slice(0, 10);
-    
+
     // Construir HTML
     let html = `
         <div class="artist-header">
             <div class="album-title">${artist}</div>
+
             <div class="artist-meta-grid">
                 <div class="meta-item">
                     <div class="meta-label">ÁLBUMES</div>
@@ -416,65 +445,62 @@ function showArtistAlbums(artist) {
             </div>
         </div>
     `;
-    
+
     // Géneros
     if (genres.length > 0) {
         html += `
-            <div style="margin-top:30px">
-                <div class="section-title">▶ GÉNEROS</div>
-                <div class="tag-cloud">
-                    ${genres.map(genre => 
-                        `<span class="tag" onclick="searchShowGenre('${escapeHtml(genre)}')">${genre}</span>`
-                    ).join('')}
-                </div>
+            <div class="section-title coral-accent">GÉNEROS</div>
+            <div class="tag-cloud">
+                ${genres.map(genre =>
+                    `<span class="tag" onclick="searchShowGenre('${escapeHtml(genre)}')">${genre}</span>`
+                ).join('')}
             </div>
         `;
     }
-    
+
     // Tags más frecuentes
     if (topTags.length > 0) {
         html += `
-            <div style="margin-top:30px">
-                <div class="section-title">▶ TAGS MÁS FRECUENTES</div>
-                <div class="tag-cloud">
-                    ${topTags.map(([tag, count]) => 
-                        `<span class="tag" onclick="searchShowTag('${escapeHtml(tag)}')">${tag} <span style="color:#0a0">(${count})</span></span>`
-                    ).join('')}
-                </div>
+            <div class="section-title mint-accent">TAGS MÁS FRECUENTES</div>
+            <div class="tag-cloud">
+                ${topTags.map(([tag, count]) =>
+                    `<span class="tag" onclick="searchShowTag('${escapeHtml(tag)}')">${tag} <span style="color:var(--text-secondary)">(${count})</span></span>`
+                ).join('')}
             </div>
         `;
     }
-    
-    // Álbumes ordenados por año
+
+    // Discografía
     const sortedAlbums = albums.sort((a, b) => (b.year || 0) - (a.year || 0));
-    
+
     html += `
-        <div style="margin-top:30px">
-            <div class="section-title">▶ DISCOGRAFÍA</div>
-            <div class="related-grid">
-                ${sortedAlbums.map(a => `
-                    <div class="related-album" onclick="showAlbum(${a.id})">
-                        <div class="related-album-title">${a.title}</div>
-                        <div class="related-album-artist">${a.year || '?'} • ${a.genre}</div>
-                    </div>
-                `).join('')}
-            </div>
+        <div class="section-title coral-accent">DISCOGRAFÍA</div>
+        <div class="related-grid">
+            ${sortedAlbums.map(a => `
+                <div class="related-album" onclick="showAlbum(${a.id})">
+                    <div class="related-album-title">${a.title}</div>
+                    <div class="related-album-artist">${a.year || '?'} • ${a.genre}</div>
+                </div>
+            `).join('')}
         </div>
     `;
 
     detail.innerHTML = html;
 }
 
-// Mostrar álbumes de un tag
+// ============================================
+// MOSTRAR TAG
+// ============================================
+
 function showTagAlbums(tag) {
     const albums = DATA.albums.filter(a => a.tags.includes(tag));
     const detail = document.getElementById('detailArea');
 
     let html = `
-        <div class="section-title">▶ TAG: ${tag}</div>
-        <p style="color:#0a0;margin-bottom:30px">${albums.length} álbumes</p>
+        <div class="section-title mint-accent">TAG: ${tag}</div>
+        <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
         <div class="related-grid">
-            ${albums.slice(0, 20).map(a => `
+            ${albums.slice(0, 40).map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
@@ -486,14 +512,17 @@ function showTagAlbums(tag) {
     detail.innerHTML = html;
 }
 
-// Mostrar álbumes de un año
+// ============================================
+// MOSTRAR AÑO
+// ============================================
+
 function showYearAlbums(year) {
     const albums = DATA.albums.filter(a => a.year === year);
     const detail = document.getElementById('detailArea');
 
     let html = `
-        <div class="section-title">▶ AÑO: ${year}</div>
-        <p style="color:#0a0;margin-bottom:30px">${albums.length} álbumes</p>
+        <div class="section-title coral-accent">AÑO: ${year}</div>
+        <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
         <div class="related-grid">
             ${albums.map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
@@ -507,95 +536,19 @@ function showYearAlbums(year) {
     detail.innerHTML = html;
 }
 
-// Función helper para escapar HTML
-function escapeHtml(text) {
-    return text.replace(/'/g, "\\'");
-}
-
-// Funciones para búsqueda global
-function searchShowArtist(artist) {
-    document.getElementById('search').value = '';
-    document.getElementById('searchResults').classList.remove('active');
-    document.getElementById('searchResults').innerHTML = '';
-    document.querySelector('.content-area').style.display = 'grid';
-    
-    // Cambiar a pestaña artistas
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.querySelector('[data-tab="artistas"]').classList.add('active');
-    currentTab = 'artistas';
-    
-    showArtistAlbums(artist);
-}
-
-function searchShowTag(tag) {
-    document.getElementById('search').value = '';
-    document.getElementById('searchResults').classList.remove('active');
-    document.getElementById('searchResults').innerHTML = '';
-    document.querySelector('.content-area').style.display = 'grid';
-    
-    // Cambiar a pestaña tags
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.querySelector('[data-tab="tags"]').classList.add('active');
-    currentTab = 'tags';
-    
-    showTagAlbums(tag);
-}
-
-function searchShowYear(year) {
-    document.getElementById('search').value = '';
-    document.getElementById('searchResults').classList.remove('active');
-    document.getElementById('searchResults').innerHTML = '';
-    document.querySelector('.content-area').style.display = 'grid';
-    
-    // Cambiar a pestaña años
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.querySelector('[data-tab="years"]').classList.add('active');
-    currentTab = 'years';
-    
-    showYearAlbums(year);
-}
-
-// Función para mostrar más resultados
-function showMoreResults(type) {
-    const container = document.getElementById(`${type}-results`);
-    const items = searchResultsCache[type];
-    
-    if (!items) return;
-    
-    if (type === 'artists') {
-        container.innerHTML = items.map(artist => `
-            <div class="search-result-item" onclick="searchShowArtist('${escapeHtml(artist)}')">
-                ${artist} <span style="color:#0a0">(${getArtistAlbumCount(artist)} álbumes)</span>
-            </div>
-        `).join('');
-    } else if (type === 'tags') {
-        container.innerHTML = items.map(tag => `
-            <div class="search-result-item" onclick="searchShowTag('${escapeHtml(tag)}')">
-                ${tag} <span style="color:#0a0">(${getTagCount(tag)} álbumes)</span>
-            </div>
-        `).join('');
-    } else if (type === 'albums') {
-        container.innerHTML = items.map(album => `
-            <div class="search-result-item" onclick="showAlbum(${album.id})">
-                <div style="color:#0ff">${album.title}</div>
-                <div style="color:#0a0;font-size:0.9em">${album.artist} • ${album.year || '?'}</div>
-            </div>
-        `).join('');
-    }
-    
-    // Ocultar el botón
-    window.event.target.style.display = 'none';
-}
+// ============================================
+// MOSTRAR GÉNERO
+// ============================================
 
 function searchShowGenre(genre) {
     const albums = DATA.albums.filter(a => a.genre === genre);
     const detail = document.getElementById('detailArea');
 
     let html = `
-        <div class="section-title">▶ GÉNERO: ${genre}</div>
-        <p style="color:#0a0;margin-bottom:30px">${albums.length} álbumes</p>
+        <div class="section-title mint-accent">GÉNERO: ${genre}</div>
+        <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
         <div class="related-grid">
-            ${albums.slice(0, 20).map(a => `
+            ${albums.slice(0, 40).map(a => `
                 <div class="related-album" onclick="showAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
@@ -605,4 +558,38 @@ function searchShowGenre(genre) {
     `;
 
     detail.innerHTML = html;
+}
+
+// ============================================
+// FUNCIONES DE BÚSQUEDA (DESDE RESULTADOS)
+// ============================================
+
+function searchShowArtist(artist) {
+    closeSearch();
+    showArtistAlbums(artist);
+}
+
+function searchShowTag(tag) {
+    closeSearch();
+    showTagAlbums(tag);
+}
+
+function searchShowYear(year) {
+    closeSearch();
+    showYearAlbums(year);
+}
+
+function closeSearch() {
+    document.getElementById('search').value = '';
+    document.getElementById('searchResults').classList.remove('active');
+    document.getElementById('searchResults').innerHTML = '';
+    document.querySelector('.content-wrapper').style.display = 'grid';
+}
+
+// ============================================
+// UTILIDADES
+// ============================================
+
+function escapeHtml(text) {
+    return text.replace(/'/g, "\\'");
 }
