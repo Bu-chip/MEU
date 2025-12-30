@@ -12,7 +12,7 @@ let searchResultsCache = {};
 // INICIALIZACIÓN
 // ============================================
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
     fetch('data/bandcamp_bilbaotags_clean.json')
         .then(response => response.json())
         .then(data => {
@@ -52,7 +52,7 @@ function setupEventListeners() {
 
     // Stats cards navigation
     document.querySelectorAll('.stat-card').forEach(card => {
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function () {
             const tab = this.dataset.tab;
             if (tab) goToTab(tab);
         });
@@ -107,7 +107,7 @@ function loadTab(tab) {
         sidebarTitle.textContent = 'ÁLBUMES';
         sidebarCount.textContent = `${filteredItems.length} total`;
         sidebarList.innerHTML = filteredItems.map(album =>
-            `<div class="list-item" onclick="showAlbum(${album.id})">${album.artist} - ${album.title}</div>`
+            `<div class="list-item" onclick="navigateToAlbum(${album.id})">${album.artist} - ${album.title}</div>`
         ).join('');
     } else if (tab === 'years') {
         filteredItems = [...DATA.years];
@@ -203,7 +203,7 @@ function handleSearch(e) {
         html += buildSearchCategory('ÁLBUMES', albumResults, 'albums', (album) =>
             `<div style="font-weight:600">${album.title}</div>
              <div style="font-size:14px;color:var(--text-secondary)">${album.artist} • ${album.year || '?'}</div>`,
-            (album) => `showAlbum(${album.id})`
+            (album) => `navigateToAlbum(${album.id})`
         );
     }
 
@@ -277,7 +277,7 @@ function showMoreResults(type) {
         `).join('');
     } else if (type === 'albums') {
         container.innerHTML = items.map(album => `
-            <div class="search-result-item" onclick="showAlbum(${album.id})">
+            <div class="search-result-item" onclick="navigateToAlbum(${album.id})">
                 <div style="font-weight:600">${album.title}</div>
                 <div style="font-size:14px;color:var(--text-secondary)">${album.artist} • ${album.year || '?'}</div>
             </div>
@@ -293,12 +293,7 @@ function showMoreResults(type) {
 
 function handleRandom() {
     const randomAlbum = DATA.albums[Math.floor(Math.random() * DATA.albums.length)];
-    showAlbum(randomAlbum.id);
-
-    // Cerrar búsqueda si está abierta
-    document.getElementById('search').value = '';
-    document.getElementById('searchResults').classList.remove('active');
-    document.querySelector('.content-wrapper').style.display = 'grid';
+    navigateToAlbum(randomAlbum.id);
 }
 
 // ============================================
@@ -312,25 +307,25 @@ function showAlbum(albumId) {
     const detail = document.getElementById('detailArea');
 
     let html = `
-        <div class="album-detail">
-            <div class="album-title">${album.title}</div>
-            <div class="album-artist">${album.artist}</div>
+    <div class="album-detail">
+        <div class="album-title">${album.title}</div>
+        <div class="album-artist">${album.artist}</div>
 
-            <div class="album-meta">
-                <div class="meta-item">
-                    <div class="meta-label">GÉNERO</div>
-                    <div class="meta-value">${album.genre}</div>
-                </div>
-                <div class="meta-item">
-                    <div class="meta-label">AÑO</div>
-                    <div class="meta-value">${album.year || '?'}</div>
-                </div>
-                <div class="meta-item">
-                    <div class="meta-label">TAGS</div>
-                    <div class="meta-value">${album.tags.length}</div>
-                </div>
+        <div class="album-meta">
+            <div class="meta-item">
+                <div class="meta-label">GÉNERO</div>
+                <div class="meta-value">${album.genre}</div>
             </div>
-    `;
+            <div class="meta-item">
+                <div class="meta-label">AÑO</div>
+                <div class="meta-value">${album.year || '?'}</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">TAGS</div>
+                <div class="meta-value">${album.tags.length}</div>
+            </div>
+        </div>
+        `;
 
     // Tags
     if (album.tags.length > 0) {
@@ -338,8 +333,8 @@ function showAlbum(albumId) {
             <div class="section-title coral-accent">TAGS</div>
             <div class="tag-cloud">
                 ${album.tags.map(tag =>
-                    `<span class="tag" onclick="showTagAlbums('${escapeHtml(tag)}')">${tag}</span>`
-                ).join('')}
+            `<span class="tag" onclick="showTagAlbums('${escapeHtml(tag)}')">${tag}</span>`
+        ).join('')}
             </div>
         `;
     }
@@ -357,7 +352,7 @@ function showAlbum(albumId) {
                 <div class="section-title mint-accent">MÁS DE ${album.artist}</div>
                 <div class="related-grid">
                     ${sameArtist.map(a => `
-                        <div class="related-album" onclick="showAlbum(${a.id})">
+                        <div class="related-album" onclick="navigateToAlbum(${a.id})">
                             <div class="related-album-title">${a.title}</div>
                             <div class="related-album-artist">${a.year || '?'}</div>
                         </div>
@@ -379,7 +374,7 @@ function showAlbum(albumId) {
                     <div class="section-title coral-accent">ÁLBUMES SIMILARES</div>
                     <div class="related-grid">
                         ${sameTags.map(a => `
-                            <div class="related-album" onclick="showAlbum(${a.id})">
+                            <div class="related-album" onclick="navigateToAlbum(${a.id})">
                                 <div class="related-album-title">${a.title}</div>
                                 <div class="related-album-artist">${a.artist}</div>
                             </div>
@@ -422,28 +417,28 @@ function showArtistAlbums(artist) {
 
     // Construir HTML
     let html = `
-        <div class="artist-header">
-            <div class="album-title">${artist}</div>
+    <div class="artist-header">
+        <div class="album-title">${artist}</div>
 
-            <div class="artist-meta-grid">
-                <div class="meta-item">
-                    <div class="meta-label">ÁLBUMES</div>
-                    <div class="meta-value">${albums.length}</div>
-                </div>
-                <div class="meta-item">
-                    <div class="meta-label">AÑOS ACTIVO</div>
-                    <div class="meta-value">${firstYear}${lastYear !== firstYear ? ' - ' + lastYear : ''}</div>
-                </div>
-                <div class="meta-item">
-                    <div class="meta-label">GÉNEROS</div>
-                    <div class="meta-value">${genres.length}</div>
-                </div>
-                <div class="meta-item">
-                    <div class="meta-label">TAGS ÚNICOS</div>
-                    <div class="meta-value">${Object.keys(tagCount).length}</div>
-                </div>
+        <div class="artist-meta-grid">
+            <div class="meta-item">
+                <div class="meta-label">ÁLBUMES</div>
+                <div class="meta-value">${albums.length}</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">AÑOS ACTIVO</div>
+                <div class="meta-value">${firstYear}${lastYear !== firstYear ? ' - ' + lastYear : ''}</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">GÉNEROS</div>
+                <div class="meta-value">${genres.length}</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">TAGS ÚNICOS</div>
+                <div class="meta-value">${Object.keys(tagCount).length}</div>
             </div>
         </div>
+    </div>
     `;
 
     // Géneros
@@ -452,8 +447,8 @@ function showArtistAlbums(artist) {
             <div class="section-title coral-accent">GÉNEROS</div>
             <div class="tag-cloud">
                 ${genres.map(genre =>
-                    `<span class="tag" onclick="searchShowGenre('${escapeHtml(genre)}')">${genre}</span>`
-                ).join('')}
+            `<span class="tag" onclick="searchShowGenre('${escapeHtml(genre)}')">${genre}</span>`
+        ).join('')}
             </div>
         `;
     }
@@ -464,8 +459,8 @@ function showArtistAlbums(artist) {
             <div class="section-title mint-accent">TAGS MÁS FRECUENTES</div>
             <div class="tag-cloud">
                 ${topTags.map(([tag, count]) =>
-                    `<span class="tag" onclick="searchShowTag('${escapeHtml(tag)}')">${tag} <span style="color:var(--text-secondary)">(${count})</span></span>`
-                ).join('')}
+            `<span class="tag" onclick="searchShowTag('${escapeHtml(tag)}')">${tag} <span style="color:var(--text-secondary)">(${count})</span></span>`
+        ).join('')}
             </div>
         `;
     }
@@ -474,15 +469,15 @@ function showArtistAlbums(artist) {
     const sortedAlbums = albums.sort((a, b) => (b.year || 0) - (a.year || 0));
 
     html += `
-        <div class="section-title coral-accent">DISCOGRAFÍA</div>
-        <div class="related-grid">
-            ${sortedAlbums.map(a => `
-                <div class="related-album" onclick="showAlbum(${a.id})">
+    <div class="section-title coral-accent">DISCOGRAFÍA</div>
+    <div class="related-grid">
+        ${sortedAlbums.map(a => `
+                <div class="related-album" onclick="navigateToAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.year || '?'} • ${a.genre}</div>
                 </div>
             `).join('')}
-        </div>
+    </div>
     `;
 
     detail.innerHTML = html;
@@ -497,16 +492,16 @@ function showTagAlbums(tag) {
     const detail = document.getElementById('detailArea');
 
     let html = `
-        <div class="section-title mint-accent">TAG: ${tag}</div>
-        <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
-        <div class="related-grid">
-            ${albums.slice(0, 40).map(a => `
-                <div class="related-album" onclick="showAlbum(${a.id})">
+    <div class="section-title mint-accent">TAG: ${tag}</div>
+    <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
+    <div class="related-grid">
+        ${albums.slice(0, 40).map(a => `
+                <div class="related-album" onclick="navigateToAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
                 </div>
             `).join('')}
-        </div>
+    </div>
     `;
 
     detail.innerHTML = html;
@@ -521,16 +516,16 @@ function showYearAlbums(year) {
     const detail = document.getElementById('detailArea');
 
     let html = `
-        <div class="section-title coral-accent">AÑO: ${year}</div>
-        <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
-        <div class="related-grid">
-            ${albums.map(a => `
-                <div class="related-album" onclick="showAlbum(${a.id})">
+    <div class="section-title coral-accent">AÑO: ${year}</div>
+    <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
+    <div class="related-grid">
+        ${albums.map(a => `
+                <div class="related-album" onclick="navigateToAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
                 </div>
             `).join('')}
-        </div>
+    </div>
     `;
 
     detail.innerHTML = html;
@@ -545,16 +540,16 @@ function searchShowGenre(genre) {
     const detail = document.getElementById('detailArea');
 
     let html = `
-        <div class="section-title mint-accent">GÉNERO: ${genre}</div>
-        <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
-        <div class="related-grid">
-            ${albums.slice(0, 40).map(a => `
-                <div class="related-album" onclick="showAlbum(${a.id})">
+    <div class="section-title mint-accent">GÉNERO: ${genre}</div>
+    <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
+    <div class="related-grid">
+        ${albums.slice(0, 40).map(a => `
+                <div class="related-album" onclick="navigateToAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
                 </div>
             `).join('')}
-        </div>
+    </div>
     `;
 
     detail.innerHTML = html;
@@ -585,6 +580,13 @@ function closeSearch() {
     document.getElementById('searchResults').innerHTML = '';
     document.querySelector('.content-wrapper').style.display = 'grid';
 }
+
+function navigateToAlbum(albumId) {
+    closeSearch();
+    showAlbum(albumId);
+}
+
+
 
 // ============================================
 // UTILIDADES
