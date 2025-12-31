@@ -44,22 +44,31 @@ function init() {
 
     // Setup event listeners
     setupEventListeners();
+
+    // Render initial Random Button
+    updateRandomButtonUI();
 }
 
 function setupEventListeners() {
     // Búsqueda
     document.getElementById('search').addEventListener('input', handleSearch);
 
-    // Random button
-    // Random button
-    document.getElementById('randomBtn').addEventListener('click', (e) => {
-        // Check if click target is the back arrow
-        if (e.target.classList.contains('back-arrow')) {
-            handleRandomBack(e);
-        } else {
-            handleRandom(e);
-        }
-    });
+    // Random Wrapper Delegation
+    const randomWrapper = document.getElementById('randomWrapper');
+    if (randomWrapper) {
+        randomWrapper.addEventListener('click', (e) => {
+            const target = e.target.closest('button'); // Get the button element
+            if (!target) return;
+
+            if (target.classList.contains('random-btn-main')) {
+                handleRandom();
+            } else if (target.classList.contains('back')) {
+                handleRandomBack(e);
+            } else if (target.classList.contains('reset')) {
+                resetRandomFilter(e);
+            }
+        });
+    }
 
     // Stats cards navigation
     document.querySelectorAll('.stat-card').forEach(card => {
@@ -95,6 +104,7 @@ function goToTab(tabName) {
     // Cargar contenido
     currentTab = tabName;
     loadTab(tabName);
+
 }
 
 function loadTab(tab) {
@@ -128,6 +138,8 @@ function loadTab(tab) {
             `<div class="list-item" onclick="showYearAlbums(${year})">${year} (${getYearCount(year)} álbumes)</div>`
         ).join('');
     }
+
+
 }
 
 function renderList(items, formatter) {
@@ -378,26 +390,30 @@ function resetRandomFilter(e) {
 }
 
 function updateRandomButtonUI() {
-    const btn = document.getElementById('randomBtn');
+    const wrapper = document.getElementById('randomWrapper');
+    if (!wrapper) return;
 
-    let arrowHtml = '';
-    if (lastRandomAlbumId) {
-        arrowHtml = '<span class="back-arrow">‹</span><span class="divider">|</span>';
-    }
+    let mainText = 'RANDOM';
+    let showBack = !!lastRandomAlbumId;
+    let showReset = currentRandomFilter.type !== 'all';
 
-    if (currentRandomFilter.type === 'all') {
-        btn.innerHTML = `${arrowHtml}<span class="random-text">RANDOM</span>`;
-    } else {
+    if (showReset) {
         let text = currentRandomFilter.value;
         if (currentRandomFilter.type === 'search' && text.length > 8) {
             text = text.substring(0, 8) + '...';
         }
-        btn.innerHTML = `
-            ${arrowHtml}
-            <span class="random-text">RANDOM: ${text}</span>
-            <span class="random-filter-reset" onclick="resetRandomFilter(event)">✕</span>
-        `;
+        mainText = `RANDOM: ${text}`;
     }
+
+    // Generate flat HTML for Flexbox
+    const backHtml = showBack ? `<button class="sub-button back">◄</button>` : '';
+    const resetHtml = showReset ? `<button class="sub-button reset">✕</button>` : '';
+
+    wrapper.innerHTML = `
+        ${backHtml}
+        <button class="random-btn-main">${mainText}</button>
+        ${resetHtml}
+    `;
 }
 
 function getShuffledList(key, items) {
@@ -715,6 +731,10 @@ function navigateToAlbum(albumId) {
     closeSearch();
     showAlbum(albumId);
 }
+
+
+
+
 
 
 

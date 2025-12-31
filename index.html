@@ -69,9 +69,9 @@
                 <input type="text" class="search-input" id="search" placeholder="Buscar artistas, álbumes, tags..."
                     autocomplete="off">
 
-                <button class="random-btn" id="randomBtn">
-                    <span class="random-text">RANDOM</span>
-                </button>
+                <div class="random-wrapper" id="randomWrapper">
+                    <!-- Dynamic Button System -->
+                </div>
             </div>
         </section>
 
@@ -96,7 +96,7 @@
             <main class="detail-area" id="detailArea">
                 <div class="empty-state">
                     <p class="empty-text">Selecciona un artista, álbum o tag</p>
-                    <p class="empty-subtext">o pulsa RANDOM para descubrir música</p>
+                    <button class="large-random-btn" onclick="handleRandom()">DESCUBRIR MÚSICA</button>
                 </div>
             </main>
 
