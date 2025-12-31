@@ -7,6 +7,9 @@ let DATA = null;
 let currentTab = 'artistas';
 let filteredItems = [];
 let searchResultsCache = {};
+let currentRandomFilter = { type: 'all', value: null };
+let lastRandomAlbumId = null;
+let shuffledCache = {};
 
 // ============================================
 // INICIALIZACIÓN
@@ -48,7 +51,15 @@ function setupEventListeners() {
     document.getElementById('search').addEventListener('input', handleSearch);
 
     // Random button
-    document.getElementById('randomBtn').addEventListener('click', handleRandom);
+    // Random button
+    document.getElementById('randomBtn').addEventListener('click', (e) => {
+        // Check if click target is the back arrow
+        if (e.target.classList.contains('back-arrow')) {
+            handleRandomBack(e);
+        } else {
+            handleRandom(e);
+        }
+    });
 
     // Stats cards navigation
     document.querySelectorAll('.stat-card').forEach(card => {
@@ -156,6 +167,13 @@ function handleSearch(e) {
     const query = e.target.value.toLowerCase().trim();
     const searchResults = document.getElementById('searchResults');
     const contentWrapper = document.querySelector('.content-wrapper');
+
+    // Update Random Filter
+    if (query !== '') {
+        setRandomFilter('search', query);
+    } else {
+        setRandomFilter('all', null);
+    }
 
     if (query === '') {
         searchResults.classList.remove('active');
@@ -292,8 +310,108 @@ function showMoreResults(type) {
 // ============================================
 
 function handleRandom() {
-    const randomAlbum = DATA.albums[Math.floor(Math.random() * DATA.albums.length)];
+    let pool = DATA.albums;
+    let filterText = '';
+
+    // Filter Logic
+    if (currentRandomFilter.type === 'search') {
+        const query = currentRandomFilter.value;
+        pool = DATA.albums.filter(album =>
+            album.title.toLowerCase().includes(query) ||
+            album.artist.toLowerCase().includes(query) ||
+            album.tags.some(t => t.toLowerCase().includes(query)) ||
+            (album.year && album.year.toString().includes(query))
+        );
+        filterText = `: ${query}`;
+    } else if (currentRandomFilter.type === 'year') {
+        const year = currentRandomFilter.value;
+        pool = DATA.albums.filter(album => album.year === year);
+        filterText = `: ${year}`;
+    }
+
+    if (pool.length === 0) {
+        alert('No hay álbumes disponibles para esta selección.');
+        return;
+    }
+
+    // Save current album for history
+    const currentDetail = document.querySelector('.album-detail');
+    if (currentDetail && currentDetail.dataset.id) {
+        lastRandomAlbumId = parseInt(currentDetail.dataset.id);
+    }
+
+    const randomAlbum = pool[Math.floor(Math.random() * pool.length)];
+
     navigateToAlbum(randomAlbum.id);
+    updateRandomButtonUI(); // Ensure arrow appears
+}
+
+function handleRandomBack(e) {
+    if (e) e.stopPropagation(); // Prevent triggering main random
+
+    if (lastRandomAlbumId) {
+        navigateToAlbum(lastRandomAlbumId);
+        // History consumed: we are back at the start (or previous step).
+        // For 1-level history, we simply clear it to hide the arrow.
+        lastRandomAlbumId = null;
+        updateRandomButtonUI();
+    }
+}
+
+function setRandomFilter(type, value) {
+    currentRandomFilter = { type, value };
+    updateRandomButtonUI();
+}
+
+function resetRandomFilter(e) {
+    if (e) e.stopPropagation();
+    setRandomFilter('all', null);
+    lastRandomAlbumId = null; // Clear history on reset? Or keep it? Keeping it is usage friendly.
+
+    // Clear search context if neede
+    if (document.getElementById('search').value !== '') {
+        document.getElementById('search').value = '';
+        document.getElementById('searchResults').classList.remove('active');
+        document.querySelector('.content-wrapper').style.display = 'grid';
+    }
+    updateRandomButtonUI();
+}
+
+function updateRandomButtonUI() {
+    const btn = document.getElementById('randomBtn');
+
+    let arrowHtml = '';
+    if (lastRandomAlbumId) {
+        arrowHtml = '<span class="back-arrow">‹</span><span class="divider">|</span>';
+    }
+
+    if (currentRandomFilter.type === 'all') {
+        btn.innerHTML = `${arrowHtml}<span class="random-text">RANDOM</span>`;
+    } else {
+        let text = currentRandomFilter.value;
+        if (currentRandomFilter.type === 'search' && text.length > 8) {
+            text = text.substring(0, 8) + '...';
+        }
+        btn.innerHTML = `
+            ${arrowHtml}
+            <span class="random-text">RANDOM: ${text}</span>
+            <span class="random-filter-reset" onclick="resetRandomFilter(event)">✕</span>
+        `;
+    }
+}
+
+function getShuffledList(key, items) {
+    if (shuffledCache[key]) {
+        return shuffledCache[key];
+    }
+    // Fisher-Yates shuffle copy
+    const shuffled = [...items];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    shuffledCache[key] = shuffled;
+    return shuffled;
 }
 
 // ============================================
@@ -307,7 +425,7 @@ function showAlbum(albumId) {
     const detail = document.getElementById('detailArea');
 
     let html = `
-    <div class="album-detail">
+    <div class="album-detail" data-id="${album.id}">
         <div class="album-title">${album.title}</div>
         <div class="album-artist">${album.artist}</div>
 
@@ -491,11 +609,14 @@ function showTagAlbums(tag) {
     const albums = DATA.albums.filter(a => a.tags.includes(tag));
     const detail = document.getElementById('detailArea');
 
+    // Task 4: Content Shuffling for discovery (Cache key: tag_TAGNAME)
+    const displayAlbums = getShuffledList(`tag_${tag}`, albums);
+
     let html = `
     <div class="section-title mint-accent">TAG: ${tag}</div>
     <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
     <div class="related-grid">
-        ${albums.slice(0, 40).map(a => `
+        ${displayAlbums.slice(0, 40).map(a => `
                 <div class="related-album" onclick="navigateToAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
@@ -515,11 +636,17 @@ function showYearAlbums(year) {
     const albums = DATA.albums.filter(a => a.year === year);
     const detail = document.getElementById('detailArea');
 
+    // Task 3: Context Aware Random
+    setRandomFilter('year', year);
+
+    // Task 4: Content Shuffling
+    const displayAlbums = getShuffledList(`year_${year}`, albums);
+
     let html = `
     <div class="section-title coral-accent">AÑO: ${year}</div>
     <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
     <div class="related-grid">
-        ${albums.map(a => `
+        ${displayAlbums.map(a => `
                 <div class="related-album" onclick="navigateToAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
@@ -539,11 +666,14 @@ function searchShowGenre(genre) {
     const albums = DATA.albums.filter(a => a.genre === genre);
     const detail = document.getElementById('detailArea');
 
+    // Task 4: Content Shuffling
+    const displayAlbums = getShuffledList(`genre_${genre}`, albums);
+
     let html = `
     <div class="section-title mint-accent">GÉNERO: ${genre}</div>
     <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
     <div class="related-grid">
-        ${albums.slice(0, 40).map(a => `
+        ${displayAlbums.slice(0, 40).map(a => `
                 <div class="related-album" onclick="navigateToAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
                     <div class="related-album-artist">${a.artist}</div>
