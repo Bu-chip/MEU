@@ -448,7 +448,7 @@ function showAlbum(albumId) {
         <div class="album-meta">
             <div class="meta-item">
                 <div class="meta-label">GÉNERO</div>
-                <div class="meta-value">${album.genre}</div>
+                <div class="meta-value">${album.genre || '?'}</div>
             </div>
             <div class="meta-item">
                 <div class="meta-label">AÑO</div>
@@ -535,7 +535,7 @@ function showArtistAlbums(artist) {
     const years = albums.map(a => a.year).filter(y => y).sort((a, b) => a - b);
     const firstYear = years[0];
     const lastYear = years[years.length - 1];
-    const genres = [...new Set(albums.map(a => a.genre))];
+    const genres = [...new Set(albums.map(a => a.genre).filter(g => g))];
 
     // Tags más frecuentes
     const tagCount = {};
@@ -608,7 +608,7 @@ function showArtistAlbums(artist) {
         ${sortedAlbums.map(a => `
                 <div class="related-album" onclick="navigateToAlbum(${a.id})">
                     <div class="related-album-title">${a.title}</div>
-                    <div class="related-album-artist">${a.year || '?'} • ${a.genre}</div>
+                    <div class="related-album-artist">${a.year || '?'} • ${a.genre || '?'}</div>
                 </div>
             `).join('')}
     </div>
