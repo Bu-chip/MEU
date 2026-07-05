@@ -141,9 +141,189 @@ def step_fix_corrupt_genres(data):
     return changes
 
 
+# ------------------------------------------------------------------
+# Dedupe de releases (PR B, paso 1)
+# ------------------------------------------------------------------
+#
+# El scraping capturó 35 páginas de Bandcamp dos (o más) veces: una fila
+# con el título/artista "de listado" del sello (p. ej. `FSR120 The
+# Daltonics - 3`, o `Miusichole Recs.` como artista) y otra con los de
+# la propia página. Dentro de cada grupo tags y year son idénticos, así
+# que la "fusión de tags" es trivial (unión == los del superviviente).
+#
+# Se fusionan 30 grupos auditados a mano. Quedan FUERA, anotados para
+# re-scrape futuro porque las filas parecen releases reales distintos
+# con la URL corrompida: Inigo Lunani LNI01-06 (6 filas -> /lni05),
+# h.101 (3 filas -> /101001), MotorSex Single III vs VII, ELBIS REVER
+# holaaa vs holaaa 2, txopet Ostabe Zuloan vs (Remixak).
+#
+# Formato cerrojo: id_a_borrar -> (url_esperada, id_superviviente). Una
+# fila solo se elimina si su URL coincide byte a byte con la esperada Y
+# el superviviente sigue presente con esa misma URL; así el paso es
+# idempotente y no puede borrar nada si el dataset cambió por debajo.
+RELEASE_DEDUPE = {
+    2216: ("https://breathingthecore.bandcamp.com/album/stay-djent-1", 1364),
+    1773: ("https://campamentorumano.bandcamp.com/album/el-punk-est-lleno-de-sinverg-enzas", 739),
+    1344: ("https://chicoychica.bandcamp.com/album/s-edici-n-xx-aniversario", 403),
+    2062: ("https://clorah.bandcamp.com/album/la-pena-extended-edition", 897),
+    375: ("https://eclecticreactionsrecords.bandcamp.com/album/er028-garazi-gorostiaga-irauten-ii", 1779),
+    1489: ("https://electricsoundmuchachos.bandcamp.com/album/electric-sound-muchachos", 2004),
+    228: ("https://familyspreerecordings.bandcamp.com/album/fsr120-the-daltonics-3", 1598),
+    50: ("https://fullcabb.bandcamp.com/album/full-cab-demos", 523),
+    184: ("https://furiousrecords.bandcamp.com/album/m-rmol-declaraci-n-total-de-guerra", 113),
+    329: ("https://hiddenbayrecords.bandcamp.com/album/con-las-vantanas-tan-grandes-me-da-verg-enza-mirar-voy-tan-deprisa", 134),
+    724: ("https://jamesroom.bandcamp.com/album/fear", 1404),
+    1098: ("https://juza.bandcamp.com/album/juza-true-love-blm006", 448),
+    463: ("https://knekelput.bandcamp.com/album/demos-mmxix-mmxx", 360),
+    69: ("https://laagoniadevivir.bandcamp.com/album/ladv214-alkuper-sendero-desesperanza-lp", 72),
+    1527: ("https://laagoniadevivir.bandcamp.com/album/ladv214-alkuper-sendero-desesperanza-lp", 72),
+    775: ("https://lahumanidadeslaplaga.bandcamp.com/album/cult-of-misery-together-to-hell-lp", 407),
+    2146: ("https://meyorecords.bandcamp.com/album/vulk-beat-kamerlanden", 590),
+    1309: ("https://miusichole.bandcamp.com/album/5000-rpm-manifesto-2011-mh-009", 908),
+    1300: ("https://miusichole.bandcamp.com/album/despe-aperros-el-foso-7-2013-mh019", 2345),
+    1322: ("https://miusichole.bandcamp.com/album/despe-aperros-el-foso-7-2013-mh019", 2345),
+    1297: ("https://miusichole.bandcamp.com/album/diana-lagarto-s-t-2014-mh021", 471),
+    1296: ("https://miusichole.bandcamp.com/album/los-cosm-ticos-danze-zizek-danze-2016-mh024", 1384),
+    1295: ("https://miusichole.bandcamp.com/album/los-cosm-ticos-puro-pl-stico-2018-mh025", 1132),
+    1305: ("https://miusichole.bandcamp.com/album/maderacore-el-camino-del-asombro-2013-mh-013", 783),
+    1310: ("https://miusichole.bandcamp.com/album/maderacore-la-importancia-de-llamarse-humano-2009-mh-006", 1284),
+    491: ("https://muertematarrecords.bandcamp.com/album/no-ser", 1619),
+    1269: ("https://neila.bandcamp.com/album/neila-wayne-split", 773),
+    225: ("https://runawaylovers.bandcamp.com/album/fsr074-santiago-delgado-y-los-runaway-lovers-por-amor-al-rocknroll-10-aniversario-lp", 729),
+    2262: ("https://selfshot.bandcamp.com/album/19s-single", 2260),
+    510: ("https://soma101.bandcamp.com/album/soma-101", 562),
+    694: ("https://sustraidunyouths.bandcamp.com/album/problems-of-war-digital-cuts-vol-1", 258),
+    1625: ("https://thecherryboppers.bandcamp.com/album/remix-it-again", 1380),
+}
+
+# Ajustes de campo en supervivientes cuyo valor era el equivocado del
+# par. Mismo cerrojo que GENRE_FIXES: id -> campo -> (esperado, nuevo).
+DEDUPE_OVERRIDES = {
+    72: {"genre": ("devotional", "punk")},      # Alkuperä; 'devotional' era glitch, la fila gemela decía punk
+    2345: {"genre": ("rock", "punk")},          # Despeñaperros, banda punk (fila gemela id 1322)
+    729: {"genre": ("pop", "rock")},            # Santiago Delgado y los Runaway Lovers, rock'n'roll
+    360: {"title": ("Demo MMXX", "Demos MMXIX-MMXX")},  # Saguzar: la página real es el recopilatorio de ambas demos
+}
+
+
+def rebuild_artists(data):
+    """Regenera la lista top-level `artists` desde los albums.
+
+    `tags` y `years` no se tocan: los duplicados eliminados tenían tags
+    y year idénticos a sus supervivientes, así que nada queda huérfano.
+    """
+    data["artists"] = sorted({a["artist"] for a in data["albums"]})
+
+
+def step_dedupe_releases(data):
+    """Elimina las filas duplicadas por URL y aplica los overrides."""
+    changes = []
+    by_id = {a["id"]: a for a in data["albums"]}
+    to_drop = set()
+    for dead_id, (url, survivor_id) in RELEASE_DEDUPE.items():
+        dead, survivor = by_id.get(dead_id), by_id.get(survivor_id)
+        if dead and survivor and dead["url"] == url and survivor["url"] == url:
+            to_drop.add(dead_id)
+    if to_drop:
+        data["albums"] = [a for a in data["albums"] if a["id"] not in to_drop]
+        changes.append(f"dedupe_releases: {len(to_drop)} filas duplicadas eliminadas "
+                       f"({len(data['albums'])} albums)")
+    fixed = 0
+    for album in data["albums"]:
+        for field, (expected, new) in DEDUPE_OVERRIDES.get(album["id"], {}).items():
+            if album[field] == expected:
+                album[field] = new
+                fixed += 1
+    if fixed:
+        changes.append(f"dedupe_releases: {fixed} campos de supervivientes corregidos")
+    if changes:
+        rebuild_artists(data)
+    return changes
+
+
+# ------------------------------------------------------------------
+# Normalización de nombres de artista (PR B, paso 2)
+# ------------------------------------------------------------------
+#
+# 41 grupos de variantes del mismo artista por mayúsculas/espacios/
+# acentos. Forma canónica elegida, por orden: (1) la que el artista usa
+# en las filas de su propio subdominio de Bandcamp, (2) la más
+# frecuente tras el dedupe, (3) empates 1-a-1 decididos a mano.
+#
+# Casos EXCLUIDOS a propósito: nombres colaborativos (`Inshore, Javier
+# Ho`, `Antxon Sagardui & ...`) son entidades distintas, no variantes;
+# y `Judy`/`judy` quedan separados hasta verificar manualmente que el
+# release de Eclectic Reactions es de la misma judy de erroa.
+#
+# El propio dict es el cerrojo: solo renombra filas cuyo artista
+# coincide exactamente con la variante; tras aplicarse, ya no queda
+# ninguna y el paso es un no-op.
+ARTIST_RENAMES = {
+    "6SISS": "6siss",
+    "Add Obscurae": "add obscurae",
+    "Azúal Dub": "Azùal Dub",
+    "BIRKIT": "Birkit",
+    "BISTIWARRIOR": "Bistiwarrior",
+    "CAMPAMENTO RUMANO": "Campamento Rumano",
+    "DABELYU": "Dabelyu",
+    "distorsion": "DISTORSION",
+    "edificios": "Edificios",
+    "Elbis Rever": "ELBIS REVER",
+    "ENKORE": "Enkore",
+    "Ensemble KLEM": "Ensemble Klem",
+    "Ensemble klem": "Ensemble Klem",
+    "FALLING BLACK": "Falling Black",
+    "FRANCO": "Franco",
+    "GURS": "Gurs",
+    "Huracan Rose": "HURACAN ROSE",
+    "IN THOUSAND LAKES": "In Thousand Lakes",
+    "iñigo ibaibarriaga": "Iñigo Ibaibarriaga",
+    "jana jan": "JANA JAN",
+    "kurixe": "KURIXE",
+    "la sombra / Itzala": "La Sombra / Itzala",
+    "LIFELOST": "Lifelost",
+    "Mármol": "Marmol",
+    "matutano": "Matutano",
+    "miguel a. garcía": "Miguel A. García",
+    "Motorsex": "MotorSex",
+    "Myriam Rzm": "Myriam RZM",
+    "neox": "NeOx",
+    "Nize": "NIZE",
+    "Onepointsix": "onepointsix",
+    "ORBAIN UNIT": "Orbain Unit",
+    "Shintoma": "SHINTOMA",
+    "SHÖCK": "Shöck",
+    "Sonic Trash": "SONIC TRASH",
+    "Still RIver": "Still River",
+    "TAKE WARNING": "Take Warning",
+    "THE CRAZY WHEELS BAND": "The Crazy Wheels Band",
+    "The Wizards": "THE WIZARDS",
+    "Txarly Usher y los Ejemplares": "Txarly Usher y Los Ejemplares",
+    "UMBRA OHM": "Umbra Ohm",
+    "Vulk": "VULK",
+}
+
+
+def step_normalize_artist_names(data):
+    """Unifica las variantes de nombre de artista en su forma canónica."""
+    renamed = 0
+    for album in data["albums"]:
+        new = ARTIST_RENAMES.get(album["artist"])
+        if new:
+            album["artist"] = new
+            renamed += 1
+    if renamed:
+        rebuild_artists(data)
+        return [f"normalize_artist_names: {renamed} filas renombradas "
+                f"({len(data['artists'])} artistas únicos)"]
+    return []
+
+
 STEPS = [
     step_clean_urls,
     step_fix_corrupt_genres,
+    step_dedupe_releases,
+    step_normalize_artist_names,
 ]
 
 

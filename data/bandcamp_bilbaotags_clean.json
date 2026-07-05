@@ -837,21 +837,6 @@
             "url": "https://ekhilambert.bandcamp.com/album/inbasioak-2"
         },
         {
-            "id": 50,
-            "artist": "Full Cab",
-            "title": "Full Cab",
-            "genre": "rock",
-            "year": 2020,
-            "tags": [
-                "alternative rock",
-                "garage rock",
-                "indie rock",
-                "noise pop",
-                "rock"
-            ],
-            "url": "https://fullcabb.bandcamp.com/album/full-cab-demos"
-        },
-        {
             "id": 51,
             "artist": "Ian Mason",
             "title": "Ordalías",
@@ -1150,27 +1135,6 @@
             "url": "https://katarsi.bandcamp.com/album/katarsi"
         },
         {
-            "id": 69,
-            "artist": "La Agonía Vivir",
-            "title": "LADV214 - ALKUPERÄ \"sendero desesperanza\" LP",
-            "genre": "punk",
-            "year": 2025,
-            "tags": [
-                "punk",
-                "crust",
-                "emo",
-                "emo punk",
-                "existencialism",
-                "hardcore",
-                "noise",
-                "post-hardcore",
-                "post-rock",
-                "screamo",
-                "madrid"
-            ],
-            "url": "https://laagoniadevivir.bandcamp.com/album/ladv214-alkuper-sendero-desesperanza-lp"
-        },
-        {
             "id": 70,
             "artist": "Hippie Johnny",
             "title": "Where Is the Grey?",
@@ -1206,7 +1170,7 @@
             "id": 72,
             "artist": "Alkuperä",
             "title": "Sendero Desesperanza",
-            "genre": "devotional",
+            "genre": "punk",
             "year": 2025,
             "tags": [
                 "punk",
@@ -1570,7 +1534,7 @@
         },
         {
             "id": 94,
-            "artist": "GURS",
+            "artist": "Gurs",
             "title": "Gerran Bizi Gara LP",
             "genre": "punk",
             "year": 2024,
@@ -1614,7 +1578,7 @@
         },
         {
             "id": 97,
-            "artist": "Txarly Usher y los Ejemplares",
+            "artist": "Txarly Usher y Los Ejemplares",
             "title": "Protocolo Antitodo",
             "genre": "punk",
             "year": 2025,
@@ -1809,7 +1773,7 @@
         },
         {
             "id": 110,
-            "artist": "LIFELOST",
+            "artist": "Lifelost",
             "title": "Dialogues From Beyond",
             "genre": "metal",
             "year": 2018,
@@ -1856,7 +1820,7 @@
         },
         {
             "id": 113,
-            "artist": "Mármol",
+            "artist": "Marmol",
             "title": "Declaración total de guerra",
             "genre": "alternative",
             "year": 2022,
@@ -2569,7 +2533,7 @@
         },
         {
             "id": 157,
-            "artist": "GURS",
+            "artist": "Gurs",
             "title": "S/T 7\"",
             "genre": "punk",
             "year": 2022,
@@ -3044,23 +3008,6 @@
                 "steppa"
             ],
             "url": "https://crudobilbao.com/album/myths-legends"
-        },
-        {
-            "id": 184,
-            "artist": "Marmol",
-            "title": "Declaración total de guerra",
-            "genre": "pop",
-            "year": 2022,
-            "tags": [
-                "punk",
-                "hardcore",
-                "hardcore punk",
-                "melodic hardcore...",
-                "post-rock",
-                "punk rock",
-                "castellón de la plana"
-            ],
-            "url": "https://furiousrecords.bandcamp.com/album/m-rmol-declaraci-n-total-de-guerra"
         },
         {
             "id": 185,
@@ -3745,25 +3692,6 @@
             "url": "https://wldv.bandcamp.com/album/wldv-malediction-ep"
         },
         {
-            "id": 225,
-            "artist": "Runaway Lovers",
-            "title": "FSR074 Santiago Delgado y los Runaway Lovers - Por amor al rock'n'roll (10º aniversario) (LP)",
-            "genre": "rock",
-            "year": 2020,
-            "tags": [
-                "rock",
-                "doo wop",
-                "ramones",
-                "rock & roll",
-                "rock'n'roll",
-                "rockabillly",
-                "rockabilly",
-                "surf",
-                "twist"
-            ],
-            "url": "https://runawaylovers.bandcamp.com/album/fsr074-santiago-delgado-y-los-runaway-lovers-por-amor-al-rocknroll-10-aniversario-lp"
-        },
-        {
             "id": 226,
             "artist": "HEX",
             "title": "Behold the Unlighted",
@@ -3797,20 +3725,6 @@
                 "san sebastián"
             ],
             "url": "https://reykjavik606.bandcamp.com/album/everything-happens-for-a-reason"
-        },
-        {
-            "id": 228,
-            "artist": "The Daltonics",
-            "title": "FSR120 The Daltonics - 3",
-            "genre": "rock",
-            "year": 2022,
-            "tags": [
-                "rock & roll",
-                "party",
-                "pub rock",
-                "rock'n'roll"
-            ],
-            "url": "https://familyspreerecordings.bandcamp.com/album/fsr120-the-daltonics-3"
         },
         {
             "id": 229,
@@ -4259,7 +4173,7 @@
         },
         {
             "id": 257,
-            "artist": "Vulk",
+            "artist": "VULK",
             "title": "Vulk ez da",
             "genre": "kids",
             "year": 2022,
@@ -4301,7 +4215,7 @@
         },
         {
             "id": 260,
-            "artist": "The Wizards",
+            "artist": "THE WIZARDS",
             "title": "Plagues",
             "genre": "rock",
             "year": 2014,
@@ -4465,7 +4379,7 @@
         },
         {
             "id": 271,
-            "artist": "Nize",
+            "artist": "NIZE",
             "title": "Gaur Ez Naiz",
             "genre": "rock",
             "year": 2024,
@@ -4480,7 +4394,7 @@
         },
         {
             "id": 272,
-            "artist": "Azúal Dub",
+            "artist": "Azùal Dub",
             "title": "Incandescent World",
             "genre": "reggae",
             "year": 2019,
@@ -5172,7 +5086,7 @@
         },
         {
             "id": 315,
-            "artist": "SHÖCK",
+            "artist": "Shöck",
             "title": "SHÖCK",
             "genre": "punk",
             "year": 2018,
@@ -5383,24 +5297,6 @@
                 "roots reggae"
             ],
             "url": "https://sustraidunyouths.bandcamp.com/album/true-love-tree-digital-cuts-vol-2"
-        },
-        {
-            "id": 329,
-            "artist": "airu",
-            "title": "Con las vantanas tan grandes me da vergüenza mirar / Voy tan deprisa",
-            "genre": "pop",
-            "year": 2021,
-            "tags": [
-                "pop",
-                "alternative",
-                "bedroom pop",
-                "cassette",
-                "dream",
-                "indie",
-                "jangle pop",
-                "toulouse"
-            ],
-            "url": "https://hiddenbayrecords.bandcamp.com/album/con-las-vantanas-tan-grandes-me-da-verg-enza-mirar-voy-tan-deprisa"
         },
         {
             "id": 330,
@@ -5886,7 +5782,7 @@
         {
             "id": 360,
             "artist": "Saguzar",
-            "title": "Demo MMXX",
+            "title": "Demos MMXIX-MMXX",
             "genre": "metal",
             "year": 2020,
             "tags": [
@@ -5916,7 +5812,7 @@
         },
         {
             "id": 362,
-            "artist": "BIRKIT",
+            "artist": "Birkit",
             "title": "Inertzia",
             "genre": "rock",
             "year": 2021,
@@ -6124,28 +6020,6 @@
                 "santander"
             ],
             "url": "https://alonereggaeshop.bandcamp.com/album/7-message-east-bound"
-        },
-        {
-            "id": 375,
-            "artist": "Garazi Gorostiaga",
-            "title": "ER028 Garazi Gorostiaga - Irauten II",
-            "genre": "electronic",
-            "year": 2020,
-            "tags": [
-                "electronic",
-                "house",
-                "ambient",
-                "dark",
-                "dark ambient",
-                "eclectic reactions",
-                "experimental",
-                "garazi gorostiaga",
-                "gothic",
-                "industrial",
-                "synth",
-                "techno"
-            ],
-            "url": "https://eclecticreactionsrecords.bandcamp.com/album/er028-garazi-gorostiaga-irauten-ii"
         },
         {
             "id": 376,
@@ -7599,28 +7473,6 @@
             "url": "https://reichmelt.bandcamp.com/album/erre-arte"
         },
         {
-            "id": 463,
-            "artist": "Saguzar",
-            "title": "Demo MMXIX",
-            "genre": "metal",
-            "year": 2020,
-            "tags": [
-                "blackened crust punk",
-                "metal",
-                "raw black metal",
-                "black metal",
-                "black metal punk",
-                "crust punk",
-                "d-beat",
-                "dark ambient",
-                "dungeon synth",
-                "lo-fi black metal",
-                "underground",
-                "italy"
-            ],
-            "url": "https://knekelput.bandcamp.com/album/demos-mmxix-mmxx"
-        },
-        {
             "id": 464,
             "artist": "Negracalavera",
             "title": "NEGRACALAVERA - Espérame en el coche",
@@ -8055,26 +7907,6 @@
             "url": "https://sustraidunyouths.bandcamp.com/album/true-love-tree"
         },
         {
-            "id": 491,
-            "artist": "LODOR - THE COVENANT",
-            "title": "-NO SER-",
-            "genre": "rock",
-            "year": 2023,
-            "tags": [
-                "death metal",
-                "metal",
-                "punk",
-                "crust",
-                "doom",
-                "grindcore",
-                "noise rock",
-                "post-metal",
-                "sludge",
-                "santurtzi"
-            ],
-            "url": "https://muertematarrecords.bandcamp.com/album/no-ser"
-        },
-        {
             "id": 492,
             "artist": "Empty Files",
             "title": "Shadows",
@@ -8377,18 +8209,6 @@
             "url": "https://fixationonsuffering.bandcamp.com/album/confined-in-obscurity"
         },
         {
-            "id": 510,
-            "artist": "SOMA 101",
-            "title": "101",
-            "genre": "punk",
-            "year": 2018,
-            "tags": [
-                "punk",
-                "punk #dark #garage #post-punk"
-            ],
-            "url": "https://soma101.bandcamp.com/album/soma-101"
-        },
-        {
             "id": 511,
             "artist": "nekhenu",
             "title": "nekhenu - thrade | polygon network [NW0023]",
@@ -8642,7 +8462,7 @@
         },
         {
             "id": 526,
-            "artist": "6SISS",
+            "artist": "6siss",
             "title": "Concrete Poetry . UNMTD246E",
             "genre": "electronic",
             "year": 2020,
@@ -9443,7 +9263,7 @@
         },
         {
             "id": 574,
-            "artist": "Elbis Rever",
+            "artist": "ELBIS REVER",
             "title": "Happy Birthday LP",
             "genre": "pop",
             "year": 2022,
@@ -9578,7 +9398,7 @@
         },
         {
             "id": 582,
-            "artist": "CAMPAMENTO RUMANO",
+            "artist": "Campamento Rumano",
             "title": "Amenaza de paz",
             "genre": "punk",
             "year": 2024,
@@ -11400,19 +11220,6 @@
             "url": "https://cromrecords.bandcamp.com/album/cr-008-akt-1-die-frauenjagd"
         },
         {
-            "id": 694,
-            "artist": "Sustraidun Youths, George Palmer",
-            "title": "Problems Of War",
-            "genre": "reggae",
-            "year": 2024,
-            "tags": [
-                "digital reggae",
-                "reggae",
-                "roots reggae"
-            ],
-            "url": "https://sustraidunyouths.bandcamp.com/album/problems-of-war-digital-cuts-vol-1"
-        },
-        {
             "id": 695,
             "artist": "Uger",
             "title": "II",
@@ -11439,7 +11246,7 @@
         },
         {
             "id": 697,
-            "artist": "Sonic Trash",
+            "artist": "SONIC TRASH",
             "title": "KING KONG PARTY",
             "genre": "rock",
             "year": 2021,
@@ -11876,25 +11683,6 @@
             "url": "https://jamesroom.bandcamp.com/album/morning-train-to-benefit-the-ngo-cear-euskadi"
         },
         {
-            "id": 724,
-            "artist": "James Room",
-            "title": "Weird Antiqua",
-            "genre": "rock",
-            "year": 2018,
-            "tags": [
-                "americana",
-                "hard rock",
-                "rock",
-                "southern rock",
-                "blues",
-                "electric guitar",
-                "folk rock",
-                "roots rock",
-                "singer-songwriter"
-            ],
-            "url": "https://jamesroom.bandcamp.com/album/fear"
-        },
-        {
             "id": 725,
             "artist": "xplexed",
             "title": "xplexed - lotus light | polygon network [NW0045]",
@@ -11962,7 +11750,7 @@
             "id": 729,
             "artist": "SANTIAGO DELGADO Y LOS RUNAWAY LOVERS",
             "title": "POR AMOR AL ROCK´N´ROLL",
-            "genre": "pop",
+            "genre": "rock",
             "year": 2020,
             "tags": [
                 "rock",
@@ -12277,7 +12065,7 @@
         },
         {
             "id": 748,
-            "artist": "Txarly Usher y los Ejemplares",
+            "artist": "Txarly Usher y Los Ejemplares",
             "title": "Baudelaire",
             "genre": "punk",
             "year": 2021,
@@ -12709,20 +12497,6 @@
             "url": "https://voidesc.bandcamp.com/album/sisyph-aeon"
         },
         {
-            "id": 775,
-            "artist": "CULT OF MISERY",
-            "title": "Together To Hell",
-            "genre": "metal",
-            "year": 2019,
-            "tags": [
-                "crust",
-                "diy",
-                "old school death metal",
-                "punk"
-            ],
-            "url": "https://lahumanidadeslaplaga.bandcamp.com/album/cult-of-misery-together-to-hell-lp"
-        },
-        {
             "id": 776,
             "artist": "Juan Ortiz",
             "title": "Winter Tales",
@@ -12972,7 +12746,7 @@
         },
         {
             "id": 791,
-            "artist": "Vulk",
+            "artist": "VULK",
             "title": "Vulk - Beat Kamerlanden",
             "genre": "kids",
             "year": 2017,
@@ -13151,7 +12925,7 @@
         },
         {
             "id": 802,
-            "artist": "ORBAIN UNIT",
+            "artist": "Orbain Unit",
             "title": "Suiseki",
             "genre": "experimental",
             "year": 2016,
@@ -13545,7 +13319,7 @@
         },
         {
             "id": 826,
-            "artist": "CAMPAMENTO RUMANO",
+            "artist": "Campamento Rumano",
             "title": "Visones",
             "genre": "punk",
             "year": 2022,
@@ -15720,7 +15494,7 @@
         },
         {
             "id": 964,
-            "artist": "BISTIWARRIOR",
+            "artist": "Bistiwarrior",
             "title": "PSICOCIVILIZADO",
             "genre": "punk",
             "year": 2022,
@@ -16593,7 +16367,7 @@
         },
         {
             "id": 1017,
-            "artist": "IN THOUSAND LAKES",
+            "artist": "In Thousand Lakes",
             "title": "EVOLUTION",
             "genre": "metal",
             "year": 2019,
@@ -17366,7 +17140,7 @@
         },
         {
             "id": 1064,
-            "artist": "TAKE WARNING",
+            "artist": "Take Warning",
             "title": "Smiling is not a crime / Demo 2017 [K7]",
             "genre": "metal",
             "year": 2017,
@@ -17615,7 +17389,7 @@
         },
         {
             "id": 1079,
-            "artist": "la sombra / Itzala",
+            "artist": "La Sombra / Itzala",
             "title": "EP",
             "genre": "punk",
             "year": 2019,
@@ -17924,27 +17698,6 @@
             "url": "https://thelongboards.bandcamp.com/album/dragger-joe"
         },
         {
-            "id": 1098,
-            "artist": "Juza",
-            "title": "Juza - True Love [BLM006]",
-            "genre": "reggae",
-            "year": 2019,
-            "tags": [
-                "bass lee",
-                "juza",
-                "reggae",
-                "deejay",
-                "digital reggae",
-                "dub",
-                "reggae",
-                "reggae dub",
-                "reggae roots",
-                "true love",
-                "version"
-            ],
-            "url": "https://juza.bandcamp.com/album/juza-true-love-blm006"
-        },
-        {
             "id": 1099,
             "artist": "Röber",
             "title": "Arenas movedizas",
@@ -18040,7 +17793,7 @@
         },
         {
             "id": 1105,
-            "artist": "FRANCO",
+            "artist": "Franco",
             "title": "El Sueño Español",
             "genre": "electronic",
             "year": 2016,
@@ -18198,7 +17951,7 @@
         },
         {
             "id": 1116,
-            "artist": "distorsion",
+            "artist": "DISTORSION",
             "title": "RAMONIANA",
             "genre": "punk",
             "year": 2015,
@@ -19624,7 +19377,7 @@
         },
         {
             "id": 1208,
-            "artist": "Onepointsix",
+            "artist": "onepointsix",
             "title": "Inverse . UNMTD129W",
             "genre": "electronic",
             "year": 2021,
@@ -19831,7 +19584,7 @@
         },
         {
             "id": 1222,
-            "artist": "DABELYU",
+            "artist": "Dabelyu",
             "title": "Version 2.0[15]",
             "genre": "metal",
             "year": 2015,
@@ -20508,7 +20261,7 @@
         },
         {
             "id": 1267,
-            "artist": "Motorsex",
+            "artist": "MotorSex",
             "title": "Single IX",
             "genre": "punk",
             "year": 2017,
@@ -20533,23 +20286,6 @@
                 "electronic music"
             ],
             "url": "https://livelula.bandcamp.com/album/blue-sun"
-        },
-        {
-            "id": 1269,
-            "artist": "Wayne/Neila",
-            "title": "Wayne-Neila split",
-            "genre": "punk",
-            "year": 2012,
-            "tags": [
-                "metal",
-                "doom",
-                "post-metal",
-                "postrock",
-                "sludge",
-                "split",
-                "wayne"
-            ],
-            "url": "https://neila.bandcamp.com/album/neila-wayne-split"
         },
         {
             "id": 1270,
@@ -20973,61 +20709,6 @@
             "url": "https://jonkale.bandcamp.com/album/suspiros-asm-ticos"
         },
         {
-            "id": 1295,
-            "artist": "Miusichole Recs.",
-            "title": "Los cosméticos- \"Puro Plástico\"- (2018)- MH025",
-            "genre": "alternative",
-            "year": 2018,
-            "tags": [
-                "alternative",
-                "hardcore",
-                "metal",
-                "pop",
-                "punk",
-                "screamo",
-                "garaje",
-                "punk",
-                "rock",
-                "shoegaze"
-            ],
-            "url": "https://miusichole.bandcamp.com/album/los-cosm-ticos-puro-pl-stico-2018-mh025"
-        },
-        {
-            "id": 1296,
-            "artist": "Miusichole Recs.",
-            "title": "Los Cosméticos- Danze! Zizek! Danze! - (2016)- MH024",
-            "genre": "alternative",
-            "year": 2016,
-            "tags": [
-                "alternative",
-                "hardcore",
-                "metal",
-                "pop",
-                "pop punk",
-                "punk",
-                "screamo",
-                "garage rock",
-                "pop"
-            ],
-            "url": "https://miusichole.bandcamp.com/album/los-cosm-ticos-danze-zizek-danze-2016-mh024"
-        },
-        {
-            "id": 1297,
-            "artist": "Miusichole Recs.",
-            "title": "Diana Lagarto \"S/T\" (2.014)- MH021",
-            "genre": "alternative",
-            "year": 2014,
-            "tags": [
-                "alternative",
-                "hardcore",
-                "metal",
-                "pop",
-                "punk",
-                "screamo"
-            ],
-            "url": "https://miusichole.bandcamp.com/album/diana-lagarto-s-t-2014-mh021"
-        },
-        {
             "id": 1298,
             "artist": "Miusichole Recs.",
             "title": "1991- \"S/T\" (2014)- MH022",
@@ -21058,22 +20739,6 @@
                 "screamo"
             ],
             "url": "https://miusichole.bandcamp.com/album/trigger-travis-nada-cambia-2014-mh020"
-        },
-        {
-            "id": 1300,
-            "artist": "Miusichole Recs.",
-            "title": "Despeñaperros- \"El Foso\" 7\" (2013)- MH019",
-            "genre": "alternative",
-            "year": 2013,
-            "tags": [
-                "alternative",
-                "hardcore",
-                "metal",
-                "pop",
-                "punk",
-                "screamo"
-            ],
-            "url": "https://miusichole.bandcamp.com/album/despe-aperros-el-foso-7-2013-mh019"
         },
         {
             "id": 1301,
@@ -21140,22 +20805,6 @@
             "url": "https://miusichole.bandcamp.com/album/despe-aperros-s-t-2013-mh-014"
         },
         {
-            "id": 1305,
-            "artist": "Miusichole Recs.",
-            "title": "MaderaCore: \"El camino del asombro\" (2013)- MH 013",
-            "genre": "alternative",
-            "year": 2013,
-            "tags": [
-                "alternative",
-                "hardcore",
-                "metal",
-                "pop",
-                "punk",
-                "screamo"
-            ],
-            "url": "https://miusichole.bandcamp.com/album/maderacore-el-camino-del-asombro-2013-mh-013"
-        },
-        {
             "id": 1306,
             "artist": "Miusichole Recs.",
             "title": "WAYNE/NEILA- Split 12\" (2012)- MH 011",
@@ -21211,38 +20860,6 @@
                 "techno"
             ],
             "url": "https://uhinzine.bandcamp.com/album/uhin-n-3"
-        },
-        {
-            "id": 1309,
-            "artist": "Miusichole Recs.",
-            "title": "5000 rpm : \"Manifesto\" (2011)- MH 009",
-            "genre": "alternative",
-            "year": 2011,
-            "tags": [
-                "alternative",
-                "hardcore",
-                "metal",
-                "pop",
-                "punk",
-                "screamo"
-            ],
-            "url": "https://miusichole.bandcamp.com/album/5000-rpm-manifesto-2011-mh-009"
-        },
-        {
-            "id": 1310,
-            "artist": "Miusichole Recs.",
-            "title": "MaderaCore: \"La importancia de llamarse humano\" (2009)- MH 006",
-            "genre": "alternative",
-            "year": 2009,
-            "tags": [
-                "alternative",
-                "hardcore",
-                "metal",
-                "pop",
-                "punk",
-                "screamo"
-            ],
-            "url": "https://miusichole.bandcamp.com/album/maderacore-la-importancia-de-llamarse-humano-2009-mh-006"
         },
         {
             "id": 1311,
@@ -21439,22 +21056,6 @@
                 "sadi"
             ],
             "url": "https://edervxga.bandcamp.com/album/genesis"
-        },
-        {
-            "id": 1322,
-            "artist": "Despeñaperros",
-            "title": "\"El Foso\" (2013)",
-            "genre": "punk",
-            "year": 2013,
-            "tags": [
-                "alternative",
-                "hardcore",
-                "metal",
-                "pop",
-                "punk",
-                "screamo"
-            ],
-            "url": "https://miusichole.bandcamp.com/album/despe-aperros-el-foso-7-2013-mh019"
         },
         {
             "id": 1323,
@@ -21771,23 +21372,6 @@
             "url": "https://kikomonzon.bandcamp.com/album/04-2020"
         },
         {
-            "id": 1344,
-            "artist": "Chico y Chica",
-            "title": "Sí",
-            "genre": "latin",
-            "year": 2021,
-            "tags": [
-                "2000s",
-                "latin",
-                "early 2000s",
-                "europop",
-                "pop",
-                "synth pop",
-                "tecnopop"
-            ],
-            "url": "https://chicoychica.bandcamp.com/album/s-edici-n-xx-aniversario"
-        },
-        {
             "id": 1345,
             "artist": "Moncada Veinte",
             "title": "Sturm und drang",
@@ -22046,7 +21630,7 @@
         },
         {
             "id": 1361,
-            "artist": "miguel a. garcía",
+            "artist": "Miguel A. García",
             "title": "red river / rio tinto",
             "genre": "experimental",
             "year": 2012,
@@ -22249,7 +21833,7 @@
         },
         {
             "id": 1374,
-            "artist": "neox",
+            "artist": "NeOx",
             "title": "NeOx-NeUrOmaNcEr",
             "genre": "electronic",
             "year": 2018,
@@ -22714,7 +22298,7 @@
         },
         {
             "id": 1403,
-            "artist": "Myriam Rzm",
+            "artist": "Myriam RZM",
             "title": "Sonar el arbol/arbola soinutu",
             "genre": "alternative",
             "year": 2018,
@@ -23403,7 +22987,7 @@
         },
         {
             "id": 1448,
-            "artist": "matutano",
+            "artist": "Matutano",
             "title": "Arraiz F.T. Anthem",
             "genre": "metal",
             "year": 2013,
@@ -23415,7 +22999,7 @@
         },
         {
             "id": 1449,
-            "artist": "matutano",
+            "artist": "Matutano",
             "title": "Matutano grindcore snacks",
             "genre": "metal",
             "year": 2011,
@@ -23648,7 +23232,7 @@
         },
         {
             "id": 1463,
-            "artist": "Still RIver",
+            "artist": "Still River",
             "title": "Wood & WIre",
             "genre": "rock",
             "year": 2016,
@@ -24014,7 +23598,7 @@
         },
         {
             "id": 1487,
-            "artist": "ENKORE",
+            "artist": "Enkore",
             "title": "KANALA",
             "genre": "rock",
             "year": 2014,
@@ -24037,20 +23621,6 @@
                 "rock"
             ],
             "url": "https://motorsex.bandcamp.com/album/single-viii"
-        },
-        {
-            "id": 1489,
-            "artist": "Electric Sound Muchachos",
-            "title": "Electric Sound",
-            "genre": "experimental",
-            "year": 2019,
-            "tags": [
-                "colombia",
-                "experimental",
-                "falsepop",
-                "instrumental"
-            ],
-            "url": "https://electricsoundmuchachos.bandcamp.com/album/electric-sound-muchachos"
         },
         {
             "id": 1490,
@@ -24605,27 +24175,6 @@
             "url": "https://hitz-ihintz.bandcamp.com/album/isiltasunaren-hiltzailea"
         },
         {
-            "id": 1527,
-            "artist": "Alkupera",
-            "title": "Sendero Desesperanza",
-            "genre": "punk",
-            "year": 2025,
-            "tags": [
-                "punk",
-                "crust",
-                "emo",
-                "emo punk",
-                "existencialism",
-                "hardcore",
-                "noise",
-                "post-hardcore",
-                "post-rock",
-                "screamo",
-                "madrid"
-            ],
-            "url": "https://laagoniadevivir.bandcamp.com/album/ladv214-alkuper-sendero-desesperanza-lp"
-        },
-        {
             "id": 1528,
             "artist": "J. Bilbao",
             "title": "HEARTRENDING",
@@ -24866,7 +24415,7 @@
         },
         {
             "id": 1544,
-            "artist": "Sonic Trash",
+            "artist": "SONIC TRASH",
             "title": "GURE NIGHTS single",
             "genre": "rock",
             "year": 2025,
@@ -26083,20 +25632,6 @@
             "url": "https://cherryboppers.bandcamp.com/album/the-cherry-boppers-meet-patrcia-reckless"
         },
         {
-            "id": 1625,
-            "artist": "The Cherry Boppers",
-            "title": "Remix It Again",
-            "genre": "funk",
-            "year": 2010,
-            "tags": [
-                "funk",
-                "groove",
-                "jazz",
-                "soul"
-            ],
-            "url": "https://thecherryboppers.bandcamp.com/album/remix-it-again"
-        },
-        {
             "id": 1626,
             "artist": "The Cherry Boppers",
             "title": "Play It Again",
@@ -26774,7 +26309,7 @@
         },
         {
             "id": 1668,
-            "artist": "Ensemble klem",
+            "artist": "Ensemble Klem",
             "title": "KOBAZULO",
             "genre": "electronic",
             "year": 2023,
@@ -27542,7 +27077,7 @@
         },
         {
             "id": 1719,
-            "artist": "Ensemble KLEM",
+            "artist": "Ensemble Klem",
             "title": "Dislocations",
             "genre": "electronic",
             "year": 2022,
@@ -28417,19 +27952,6 @@
             "url": "https://discosbanana1.bandcamp.com/album/elvis-strauss"
         },
         {
-            "id": 1773,
-            "artist": "CAMPAMENTO RUMANO",
-            "title": "El punk esta lleno de sinvergüenzas",
-            "genre": "punk",
-            "year": 2018,
-            "tags": [
-                "punk",
-                "mongopunk",
-                "punk mongol"
-            ],
-            "url": "https://campamentorumano.bandcamp.com/album/el-punk-est-lleno-de-sinverg-enzas"
-        },
-        {
             "id": 1774,
             "artist": "VOIDIOTS",
             "title": "1982",
@@ -28667,7 +28189,7 @@
         },
         {
             "id": 1789,
-            "artist": "Huracan Rose",
+            "artist": "HURACAN ROSE",
             "title": "5,04",
             "genre": "rock",
             "year": 2020,
@@ -30313,7 +29835,7 @@
         },
         {
             "id": 1884,
-            "artist": "Add Obscurae",
+            "artist": "add obscurae",
             "title": "Resource . UNMTD182E",
             "genre": "electronic",
             "year": 2021,
@@ -31212,7 +30734,7 @@
         },
         {
             "id": 1944,
-            "artist": "FALLING BLACK",
+            "artist": "Falling Black",
             "title": "NEVER COMING BACK",
             "genre": "rock",
             "year": 2020,
@@ -33009,7 +32531,7 @@
         },
         {
             "id": 2057,
-            "artist": "matutano",
+            "artist": "Matutano",
             "title": "DEMOLITION",
             "genre": "metal",
             "year": 2018,
@@ -33082,18 +32604,6 @@
                 "pop"
             ],
             "url": "https://gerente.bandcamp.com/album/muerto-ban-s"
-        },
-        {
-            "id": 2062,
-            "artist": "Clorah",
-            "title": "La Pena",
-            "genre": "pop",
-            "year": 2018,
-            "tags": [
-                "pop",
-                "trap-fusión triste"
-            ],
-            "url": "https://clorah.bandcamp.com/album/la-pena-extended-edition"
         },
         {
             "id": 2063,
@@ -33455,7 +32965,7 @@
         },
         {
             "id": 2084,
-            "artist": "Shintoma",
+            "artist": "SHINTOMA",
             "title": "EXCESO DE CARGA",
             "genre": "hip-hop/rap",
             "year": 2016,
@@ -33564,7 +33074,7 @@
         },
         {
             "id": 2091,
-            "artist": "jana jan",
+            "artist": "JANA JAN",
             "title": "Gertrude Noise",
             "genre": "experimental",
             "year": 2018,
@@ -34408,21 +33918,6 @@
                 "wavy"
             ],
             "url": "https://shdwless.bandcamp.com/album/glad-to-have-you-back"
-        },
-        {
-            "id": 2146,
-            "artist": "MEYO RECORDS",
-            "title": "VULK - BEAT KAMERLANDEN",
-            "genre": "punk",
-            "year": 2017,
-            "tags": [
-                "experimental",
-                "punk",
-                "vulk",
-                "post-punk",
-                "power pop"
-            ],
-            "url": "https://meyorecords.bandcamp.com/album/vulk-beat-kamerlanden"
         },
         {
             "id": 2147,
@@ -35508,22 +35003,6 @@
             "url": "https://breathingthecore.bandcamp.com/album/stay-core-2"
         },
         {
-            "id": 2216,
-            "artist": "Breathing The Core",
-            "title": "Stay Core #1",
-            "genre": "metal",
-            "year": 2020,
-            "tags": [
-                "deathcore",
-                "metal",
-                "metalcore",
-                "djent",
-                "hardcore",
-                "post-hardcore"
-            ],
-            "url": "https://breathingthecore.bandcamp.com/album/stay-djent-1"
-        },
-        {
             "id": 2217,
             "artist": "KURIXE",
             "title": "Enemigos de viaje",
@@ -35542,7 +35021,7 @@
         },
         {
             "id": 2218,
-            "artist": "edificios",
+            "artist": "Edificios",
             "title": "HE IS A POET",
             "genre": "experimental",
             "year": 2016,
@@ -35914,7 +35393,7 @@
         },
         {
             "id": 2242,
-            "artist": "iñigo ibaibarriaga",
+            "artist": "Iñigo Ibaibarriaga",
             "title": "365 recordings",
             "genre": "electronic",
             "year": 2015,
@@ -36206,19 +35685,6 @@
                 "rapcore"
             ],
             "url": "https://selfshot.bandcamp.com/album/20-ep"
-        },
-        {
-            "id": 2262,
-            "artist": "Selfshot",
-            "title": "19S - Single",
-            "genre": "alternative",
-            "year": 2014,
-            "tags": [
-                "metal",
-                "nü metal",
-                "rapcore"
-            ],
-            "url": "https://selfshot.bandcamp.com/album/19s-single"
         },
         {
             "id": 2263,
@@ -36856,7 +36322,7 @@
         },
         {
             "id": 2303,
-            "artist": "kurixe",
+            "artist": "KURIXE",
             "title": "Kurixe",
             "genre": "rock",
             "year": 2014,
@@ -37100,7 +36566,7 @@
         },
         {
             "id": 2319,
-            "artist": "UMBRA OHM",
+            "artist": "Umbra Ohm",
             "title": "REW",
             "genre": "experimental",
             "year": 2014,
@@ -37475,7 +36941,7 @@
             "id": 2345,
             "artist": "Despeñaperros",
             "title": "El Foso",
-            "genre": "rock",
+            "genre": "punk",
             "year": 2013,
             "tags": [
                 "alternative",
@@ -37861,7 +37327,7 @@
         },
         {
             "id": 2371,
-            "artist": "THE CRAZY WHEELS BAND",
+            "artist": "The Crazy Wheels Band",
             "title": "Maketia",
             "genre": "rock",
             "year": 2012,
@@ -38247,7 +37713,6 @@
         "4 Villains",
         "5000 rpm",
         "555 Kables",
-        "6SISS",
         "6siss",
         "83x5t",
         "A.T.A",
@@ -38264,7 +37729,6 @@
         "AT",
         "ATENEA WARRIORS",
         "Abyme Nabar / Passion Farolas eta Mikel Lauki",
-        "Add Obscurae",
         "Adur",
         "Aehrebelsethe",
         "Ageda Ibarra",
@@ -38276,7 +37740,6 @@
         "Aladino & His Friends",
         "Albert Solé",
         "Alicia PB",
-        "Alkupera",
         "Alkuperä",
         "All This Chaos",
         "Amor Eterno",
@@ -38321,13 +37784,10 @@
         "Azunak aka Enrike Hurtado",
         "Azùal Dub",
         "Azùal Dub / Antxon Sagardui",
-        "Azúal Dub",
         "B FLAT",
         "B-Flat",
         "BARRRK",
         "BELHARRA",
-        "BIRKIT",
-        "BISTIWARRIOR",
         "BKTS",
         "BLACKOUT TRANSITION",
         "Baikor",
@@ -38372,13 +37832,11 @@
         "Bulletnoise",
         "Busker Juice",
         "Buszemi",
-        "CAMPAMENTO RUMANO",
         "CAVALIERE",
         "CCCORROSION",
         "CIRUJANOS",
         "CLAWS OUT",
         "COBRA",
-        "CULT OF MISERY",
         "Cacas Blancas",
         "Calero LDN",
         "Campamento Rumano",
@@ -38411,7 +37869,6 @@
         "Cult of Misery",
         "D-RAIS",
         "D-River",
-        "DABELYU",
         "DAIMÓNICA (Grabaciones)",
         "DARK HELLION",
         "DDTbanaketak",
@@ -38468,7 +37925,6 @@
         "ELPiLO",
         "ELVIS STRAUSS",
         "EMPIRE OF DISEASE",
-        "ENKORE",
         "ERBESTEAN",
         "EVEN MUD",
         "EZEZEZ",
@@ -38485,7 +37941,6 @@
         "El Demonio",
         "El Viejo Chimango",
         "El_Txef_A",
-        "Elbis Rever",
         "Electric Sound Muchachos",
         "Elena Setién, GranDays & Xabier Erkizia",
         "Elis Casado",
@@ -38497,10 +37952,8 @@
         "Enkore",
         "Enrike Hurtado",
         "Ensemble Errante",
-        "Ensemble KLEM",
         "Ensemble Klem",
         "Ensemble Klem & Elias Merino",
-        "Ensemble klem",
         "Erra Biurrun",
         "Errol Bellot & Sammy Gold",
         "Esmegma",
@@ -38515,13 +37968,11 @@
         "Eylen Music",
         "Eztandub",
         "Eñaut Zubizarreta",
-        "FALLING BLACK",
         "FATAL COMFORT",
         "FDP",
         "FEARTH",
         "FEROSZ",
         "FLAN",
-        "FRANCO",
         "FUNERAL SUN",
         "Factory Lane",
         "Falkia",
@@ -38551,7 +38002,6 @@
         "GRAND MATTER",
         "GRANIZO",
         "GRANSAN aka 187San",
-        "GURS",
         "Gaba",
         "Gacela Thompson",
         "Galder",
@@ -38605,14 +38055,12 @@
         "Hoon",
         "Horace Martin & Dub Crucials, Sammy Gold & Raggattack",
         "Hotza",
-        "Huracan Rose",
         "Hyperesthesia",
         "I Man Cruz",
         "I'MA NOT A DJ",
         "II",
         "ILE",
         "IMPURE",
-        "IN THOUSAND LAKES",
         "INDIX",
         "INSENSATHORS",
         "INTOXIKADO",
@@ -38721,10 +38169,8 @@
         "LANDSLIDE",
         "LB Marszalek",
         "LEX-OR & Mind Halla",
-        "LIFELOST",
         "LINES",
         "LMc",
-        "LODOR - THE COVENANT",
         "LODOR Y THE COVENANT",
         "LOMOKEN HOBOKEN",
         "LOS PANIKS",
@@ -38780,7 +38226,6 @@
         "MAGMADAM",
         "MASEDA",
         "MDMA",
-        "MEYO RECORDS",
         "MIDI K84",
         "MIRAVALLES",
         "MOLYKOTE",
@@ -38839,7 +38284,6 @@
         "MoonShakers",
         "MotorSex",
         "Motorastola",
-        "Motorsex",
         "Movimiento M30",
         "Moxal",
         "Moze Naya",
@@ -38854,8 +38298,6 @@
         "My Sweet Torment",
         "Myke Epel",
         "Myriam RZM",
-        "Myriam Rzm",
-        "Mármol",
         "Mármol / Nueva Generación",
         "Método Gurú",
         "N0 HUMANS A110WED",
@@ -38881,7 +38323,6 @@
         "Nictofilia",
         "NightWaves",
         "Nik Bores & Ginslayer",
-        "Nize",
         "Niño Feriante",
         "Niños Pájaro",
         "No Komply",
@@ -38889,7 +38330,6 @@
         "Näiz",
         "Nø Name",
         "OBE",
-        "ORBAIN UNIT",
         "ORIGAMI",
         "OTOI",
         "OTUZ",
@@ -38901,7 +38341,6 @@
         "Olaf Olivier",
         "On d'Rocks",
         "Oneiric Delusion",
-        "Onepointsix",
         "Opium Tea",
         "Orange Broek",
         "Orbain Unit",
@@ -38995,7 +38434,6 @@
         "SERPIENTE",
         "SHINTOMA",
         "SHINTOMAOFFICIAL",
-        "SHÖCK",
         "SISTEMA DE ENTRETENIMIENTO",
         "SOAPS",
         "SOMA 101",
@@ -39033,7 +38471,6 @@
         "Shanti Yalah & Lone Ark Riddim Force",
         "Shdwless",
         "Sheneedas",
-        "Shintoma",
         "Shrapnel Meat",
         "Shöck",
         "Sigeruban",
@@ -39055,7 +38492,6 @@
         "Soloyosolo",
         "Somedays Out",
         "Song Of Anhubis",
-        "Sonic Trash",
         "Sonidero 13 + Miguel A. Garcia",
         "Soporte Vital Básico",
         "Sotomonte",
@@ -39066,7 +38502,6 @@
         "Stalin",
         "Stand For Nothing",
         "Steve Sallow",
-        "Still RIver",
         "Still River",
         "Striknina",
         "Strøm & Wolkokrots",
@@ -39081,9 +38516,7 @@
         "Sweaty Lovers",
         "Sönambula",
         "T.D.S.",
-        "TAKE WARNING",
         "TELARAÑA",
-        "THE CRAZY WHEELS BAND",
         "THE DESCENT",
         "THE WIZARDS",
         "TLTLLR",
@@ -39126,7 +38559,6 @@
         "The Stalactites Of Pozalagua",
         "The Sulfators",
         "The Timpanos",
-        "The Wizards",
         "The Yee-Haws",
         "TheDaltonics",
         "Tight Leash",
@@ -39154,14 +38586,12 @@
         "Txarly Usher",
         "Txarly Usher & Peibol",
         "Txarly Usher y Los Ejemplares",
-        "Txarly Usher y los Ejemplares",
         "Tximeleta Efektua",
         "Txintxo por Tatu",
         "Txufo Wilson",
         "Tzesne",
         "UDA",
         "ULTIMO ENEMIGO",
-        "UMBRA OHM",
         "Uger",
         "Uhin Zine",
         "Ulzión",
@@ -39199,13 +38629,11 @@
         "Virulency",
         "Visoki Napon",
         "Vulcanizadas",
-        "Vulk",
         "WALDO FALDO",
         "WLDV",
         "Walnut",
         "WastedEnd",
         "Wayne & Neila",
-        "Wayne/Neila",
         "Weevers",
         "Who Killed Laika? / Black hole",
         "Wicked Wizzard",
@@ -39267,12 +38695,10 @@
         "def.",
         "demeon",
         "disorder",
-        "distorsion",
         "dj ridoo + ginslayer",
         "doombloomdoom",
         "d´Escriván - Ibaibarriaga",
         "echø",
-        "edificios",
         "etcrock",
         "eva",
         "exposure",
@@ -39291,18 +38717,14 @@
         "innertia",
         "iosu Vakerizzo",
         "izena",
-        "iñigo ibaibarriaga",
         "iñigo ibaibarriaga - josep lluís galiana - gregorio jiménez - carlos d. perales",
-        "jana jan",
         "jani ho | audience",
         "javier sanchez",
         "josue san jim",
         "judy",
         "k.o.e.",
         "kalipotxo",
-        "kurixe",
         "la baldosa flotante",
-        "la sombra / Itzala",
         "lali barriere, miguel a. garcía, tomas gris",
         "laurian bardos",
         "lokom",
@@ -39310,14 +38732,11 @@
         "lowveld",
         "m1s0fk4t",
         "mamu",
-        "matutano",
         "mauri",
         "miKEL moRtiS",
         "michael valentine west",
         "michal valentine west",
-        "miguel a. garcía",
         "nekhenu",
-        "neox",
         "ni",
         "nuanae",
         "occult archetype",
