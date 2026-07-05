@@ -319,11 +319,310 @@ def step_normalize_artist_names(data):
     return []
 
 
+# ------------------------------------------------------------------
+# Limpieza de caracteres invisibles (PR C, paso 1)
+# ------------------------------------------------------------------
+#
+# Restos de copy-paste en el scraping: U+200B (ZWSP) en dos títulos de
+# judy, U+200E (LRM) al final del tag 'cáceres' y U+FEFF (BOM) al
+# inicio de cuatro títulos de la serie ＃ＮＮＮ (los dígitos fullwidth
+# son estilización del artista y se conservan). El paso elimina toda la
+# familia de invisibles de title, artist y tags; es idempotente por
+# naturaleza (sobre texto limpio no hace nada).
+INVISIBLE_CHARS = dict.fromkeys(map(ord, (
+    "\u200b"  # zero width space
+    "\u200c"  # zero width non-joiner
+    "\u200d"  # zero width joiner
+    "\ufeff"  # BOM / zero width no-break space
+    "\u200e"  # left-to-right mark
+    "\u200f"  # right-to-left mark
+    "\u2060"  # word joiner
+    "\u00ad"  # soft hyphen
+)), None)
+
+
+def step_clean_invisible_chars(data):
+    """Elimina caracteres invisibles de title, artist y tags."""
+    cleaned = 0
+    for album in data["albums"]:
+        for field in ("title", "artist"):
+            new = album[field].translate(INVISIBLE_CHARS)
+            if new != album[field]:
+                album[field] = new
+                cleaned += 1
+        new_tags = [t.translate(INVISIBLE_CHARS) for t in album["tags"]]
+        if new_tags != album["tags"]:
+            album["tags"] = new_tags
+            cleaned += 1
+    if cleaned:
+        rebuild_artists(data)
+        return [f"clean_invisible_chars: {cleaned} campos limpiados"]
+    return []
+
+
+# ------------------------------------------------------------------
+# Normalización de tags (PR C, paso 2)
+# ------------------------------------------------------------------
+#
+# Fusiona variantes del mismo tag (guiones/espacios/acentos/apóstrofes/
+# puntuación colgante), typos con forma correcta ya existente y
+# topónimos. Política auditada en la PR C:
+#   - canónica = variante más frecuente del cluster; la puntuación
+#     colgante nunca es canónica y los empates van a la forma con
+#     espaciado estándar (excepciones decididas a mano: e.l.e.c.t.r.o
+#     -> electro, non-conventional, improvisacion libre bilbao);
+#   - topónimos vascos en euskera (donostia, gasteiz, bizkaia, iruña,
+#     santurtzi, euskal herria); no vascos en su forma local (sevilla);
+#   - NUNCA se cruzan familias léxicas ni idiomas: rock & roll /
+#     rock'n'roll / rock and roll, dnb / drum & bass, synthpop /
+#     tecnopop, hardcore punk / punk hardcore, basque music / euskal
+#     musika, free improvisation / improvisacion libre, basque / vasco
+#     quedan como están (candidatos a capa de alias del buscador en la
+#     migración Vite+React).
+#
+# El propio dict es el cerrojo: solo renombra apariciones exactas de la
+# variante; tras aplicarse no queda ninguna y el paso es un no-op.
+TAG_RENAMES = {
+    '2 step': '2-step',
+    '2step': '2-step',
+    '2stepgarage': '2-step garage',
+    "70's": '70s',
+    '70´s rock': '70s rock',
+    '8-bit': '8bit',
+    "90's": '90s',
+    '90-s': '90s',
+    'acústico': 'acustico',
+    'afrocuban': 'afro-cuban',
+    'alternative rock...': 'alternative rock',
+    'ambient-electronic': 'ambient electronic',
+    'amniótico': 'amniotico',
+    'anarcho-punk': 'anarchopunk',
+    'avant garde': 'avant-garde',
+    'avantgarde': 'avant-garde',
+    'avantgarde jazz': 'avantgardejazz',
+    'basque coutry': 'euskal herria',
+    'basquemusic': 'basque music',
+    'bass.': 'bass',
+    'bassmusic': 'bass music',
+    'boombap': 'boom bap',
+    'break beat': 'breakbeat',
+    'chill out': 'chillout',
+    'cold wave': 'coldwave',
+    'cowntry': 'country',
+    'crustpunk': 'crust punk',
+    "d'nb": 'dnb',
+    'd.i.y': 'diy',
+    'dance-music': 'dance music',
+    'dark ambient.': 'dark ambient',
+    'dark-ambient': 'dark ambient',
+    'darkdisco': 'dark disco',
+    'darkpop': 'dark pop',
+    'darktechno': 'dark techno',
+    'dbeat': 'd-beat',
+    'deathdoom metal': 'death doom metal',
+    'deathmetal': 'death metal',
+    'djtools': 'dj tools',
+    'donostia san sebastian': 'donostia',
+    'dreampop': 'dream pop',
+    'drum-bass': 'drum & bass',
+    'drumandbass': 'drum and bass',
+    'dungeonsynth': 'dungeon synth',
+    'e.b.m': 'ebm',
+    'e.l.e.c.t.r.o': 'electro',
+    'e.l.e.c.t.r.o.': 'electro',
+    'eclecticreactions': 'eclectic reactions',
+    'electro pop': 'electropop',
+    'electrodub': 'electro dub',
+    'electropunk': 'electro punk',
+    'electrónica': 'electronica',
+    'euskal heria': 'euskal herria',
+    'euskalmusika': 'euskal musika',
+    'experimental-electronic': 'experimental electronic',
+    'fieldrecording': 'field recording',
+    'flavourgz': "flavour g'z",
+    'folk-rock': 'folk rock',
+    'freeimprovisation': 'free improvisation',
+    'freejazz': 'free jazz',
+    'giallodisco': 'giallo disco',
+    'gorka sanchez': 'gorka sánchez',
+    'grind...': 'grind',
+    'grungerock': 'grunge rock',
+    'hard bass': 'hardbass',
+    'hard core': 'hardcore',
+    'hard core melodico': 'hardcore melódico',
+    'hardcore-punk': 'hardcore punk',
+    'hardcorepunk': 'hardcore punk',
+    'harddance': 'hard dance',
+    'hardhouse': 'hard house',
+    'hardtechno': 'hard techno',
+    'heavy metal.': 'heavy metal',
+    'heavyrock': 'heavy rock',
+    'hip-hop': 'hip hop',
+    'hip_hop': 'hip hop',
+    'hiphop': 'hip hop',
+    'hiphop rap': 'hip-hop/rap',
+    'horrordisco': 'horror disco',
+    'hyperpop': 'hyper pop',
+    'idm.': 'idm',
+    'improvisacionlibrebilbao': 'improvisacion libre bilbao',
+    'improvisación libre': 'improvisacion libre',
+    'improvisaciónlibre': 'improvisacion libre',
+    'indiepop': 'indie pop',
+    'indiepoprock': 'indie pop rock',
+    'indierock': 'indie rock',
+    'indusrial': 'industrial',
+    'italodisco': 'italo disco',
+    'livecoding': 'live coding',
+    'lo fi': 'lo-fi',
+    'lo-fi house': 'lofi house',
+    'lofi': 'lo-fi',
+    'mathrock': 'math rock',
+    'melodic hardcore...': 'melodic hardcore',
+    'melodic metal.': 'melodic metal',
+    'melodichardcore': 'melodic hardcore',
+    'metal punk': 'metalpunk',
+    'metalcore.': 'metalcore',
+    'miguel a garcia': 'miguel a. garcia',
+    'mikel ndong': "mikel n'dong",
+    'minimalhouse': 'minimal house',
+    'modernclassical': 'modern classical',
+    'mongopunk': 'mongo punk',
+    'moonshakers': 'moon shakers',
+    'neo-classical': 'neo classical',
+    'neoclassical': 'neo classical',
+    'noise-punk': 'noise punk',
+    'noiserock': 'noise rock',
+    'non - conventional': 'non-conventional',
+    'nu jazz': 'nujazz',
+    'nu-jazz': 'nujazz',
+    'nu-metal': 'nu metal',
+    'nü metal': 'nu metal',
+    'old school death metal': 'oldschool death metal',
+    'oldschool': 'old school',
+    'pamplona': 'iruña',
+    'pays basque': 'euskal herria',
+    'país vasco': 'euskal herria',
+    'pcmusic': 'pc music',
+    'pop-punk': 'pop punk',
+    'pop-rock': 'pop rock',
+    'pop.rock': 'pop rock',
+    'poppunk': 'pop punk',
+    'poprock': 'pop rock',
+    'post hardcore': 'post-hardcore',
+    'post punk': 'post-punk',
+    'post rock': 'post-rock',
+    'post-blackmetal': 'post black metal',
+    'posthardcore': 'post-hardcore',
+    'postmetal': 'post-metal',
+    'postpunk': 'post-punk',
+    'postrock': 'post-rock',
+    'power violence': 'powerviolence',
+    'powerpop': 'power pop',
+    'powertrio': 'power trio',
+    "punk'n'roll": "punk 'n' roll",
+    'punk.rock': 'punk rock',
+    'punkhardcore': 'punk hardcore',
+    'punkpop': 'punk pop',
+    'punkrock': 'punk rock',
+    'rap metal': 'rapmetal',
+    'ratzinger': 'rat-zinger',
+    'ravepunk': 'rave punk',
+    'reggae.': 'reggae',
+    'rock n roll': "rock'n'roll",
+    "rock n' roll": "rock'n'roll",
+    'rock&roll': 'rock & roll',
+    'rockabillly': 'rockabilly',
+    'rockandroll': 'rock and roll',
+    'rootsrock': 'roots rock',
+    'rubadub': 'rub a dub',
+    'rubén g. mateos': 'ruben g mateos',
+    'rythm & blues': 'rhythm & blues',
+    'samuel cano': 'samuelcano',
+    'san sebastián': 'donostia',
+    'santurz': 'santurtzi',
+    'scifi': 'sci-fi',
+    'seville': 'sevilla',
+    'singersongwriter': 'singer-songwriter',
+    'soundart': 'sound art',
+    'soundsystem': 'sound system',
+    'spacedisco': 'space disco',
+    'spacerock': 'space rock',
+    'streetpunk': 'street punk',
+    'synth pop': 'synthpop',
+    'synth wave': 'synthwave',
+    'synthpunk': 'synth punk',
+    'techno.': 'techno',
+    'technopop': 'techno pop',
+    'tecno pop': 'tecnopop',
+    'thebiterbitten': 'the biter bitten',
+    'triphop': 'trip hop',
+    'uk grime': 'ukgrime',
+    'uk roots': 'ukroots',
+    'ukgarage': 'uk garage',
+    'video game music': 'videogame music',
+    'videogame': 'video game',
+    'vitoria-gasteiz': 'gasteiz',
+    'vizcaya': 'bizkaia',
+    'worldmusic': 'world music',
+    'zaragoza.': 'zaragoza',
+}
+
+
+# Tags-mezcla con '#' (restos de redes sociales): se trocean en sus
+# componentes reales; lista vacía = el tag se elimina por no tener
+# contenido musical. 'irish music' es forma nueva (no existía).
+TAG_SPLITS = {
+    "2025 #spotify #youtube #google": [],
+    "etc.": [],
+    "etc...": [],
+    "celticmusic #irishmusic #folk": ["celtic", "irish music", "folk"],
+    "deephouse #deephousemusic": ["deep house"],
+    "downtempomusic #steppa": ["downtempo", "steppa"],
+    "dubtechno #downtempo": ["dub techno", "downtempo"],
+    "jazz #funk #afro beat #": ["jazz", "funk", "afrobeat"],
+    "punk #dark #garage #post-punk": ["punk", "dark", "garage", "post-punk"],
+    "steppastyle #dubsteppa": ["steppa", "dubsteppa"],
+}
+
+
+def rebuild_tags(data):
+    """Regenera la lista top-level `tags` desde los albums."""
+    data["tags"] = sorted({t for a in data["albums"] for t in a["tags"]})
+
+
+def step_normalize_tags(data):
+    """Aplica TAG_RENAMES y TAG_SPLITS y deduplica cada lista de tags.
+
+    La deduplicación conserva el orden de primera aparición; ya había
+    367 entradas repetidas literales en 299 álbumes antes de esta PR,
+    y las fusiones pueden crear alguna más. Ningún álbum pierde
+    información: cada variante se sustituye por su forma canónica.
+    """
+    touched = 0
+    for album in data["albums"]:
+        out = []
+        for tag in album["tags"]:
+            parts = TAG_SPLITS[tag] if tag in TAG_SPLITS else [TAG_RENAMES.get(tag, tag)]
+            for part in parts:
+                if part not in out:
+                    out.append(part)
+        if out != album["tags"]:
+            album["tags"] = out
+            touched += 1
+    if touched:
+        rebuild_tags(data)
+        return [f"normalize_tags: {touched} álbumes con tags normalizados "
+                f"({len(data['tags'])} tags únicos)"]
+    return []
+
+
 STEPS = [
     step_clean_urls,
     step_fix_corrupt_genres,
     step_dedupe_releases,
     step_normalize_artist_names,
+    step_clean_invisible_chars,
+    step_normalize_tags,
 ]
 
 
