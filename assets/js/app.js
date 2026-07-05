@@ -464,7 +464,7 @@ function showAlbum(albumId) {
     // Tags
     if (album.tags.length > 0) {
         html += `
-            <div class="section-title coral-accent">TAGS</div>
+            <div class="section-title burn-a">TAGS</div>
             <div class="tag-cloud">
                 ${album.tags.map(tag =>
             `<span class="tag" onclick="showTagAlbums('${escapeHtml(tag)}')">${tag}</span>`
@@ -483,7 +483,7 @@ function showAlbum(albumId) {
     if (sameArtist.length > 0) {
         html += `
             <div class="related-section">
-                <div class="section-title mint-accent">MÁS DE ${album.artist}</div>
+                <div class="section-title burn-b">MÁS DE ${album.artist}</div>
                 <div class="related-grid">
                     ${sameArtist.map(a => `
                         <div class="related-album" onclick="navigateToAlbum(${a.id})">
@@ -505,7 +505,7 @@ function showAlbum(albumId) {
         if (sameTags.length > 0) {
             html += `
                 <div class="related-section">
-                    <div class="section-title coral-accent">ÁLBUMES SIMILARES</div>
+                    <div class="section-title burn-a">ÁLBUMES SIMILARES</div>
                     <div class="related-grid">
                         ${sameTags.map(a => `
                             <div class="related-album" onclick="navigateToAlbum(${a.id})">
@@ -578,7 +578,7 @@ function showArtistAlbums(artist) {
     // Géneros
     if (genres.length > 0) {
         html += `
-            <div class="section-title coral-accent">GÉNEROS</div>
+            <div class="section-title burn-a">GÉNEROS</div>
             <div class="tag-cloud">
                 ${genres.map(genre =>
             `<span class="tag" onclick="searchShowGenre('${escapeHtml(genre)}')">${genre}</span>`
@@ -590,7 +590,7 @@ function showArtistAlbums(artist) {
     // Tags más frecuentes
     if (topTags.length > 0) {
         html += `
-            <div class="section-title mint-accent">TAGS MÁS FRECUENTES</div>
+            <div class="section-title burn-b">TAGS MÁS FRECUENTES</div>
             <div class="tag-cloud">
                 ${topTags.map(([tag, count]) =>
             `<span class="tag" onclick="searchShowTag('${escapeHtml(tag)}')">${tag} <span style="color:var(--text-secondary)">(${count})</span></span>`
@@ -603,7 +603,7 @@ function showArtistAlbums(artist) {
     const sortedAlbums = albums.sort((a, b) => (b.year || 0) - (a.year || 0));
 
     html += `
-    <div class="section-title coral-accent">DISCOGRAFÍA</div>
+    <div class="section-title burn-a">DISCOGRAFÍA</div>
     <div class="related-grid">
         ${sortedAlbums.map(a => `
                 <div class="related-album" onclick="navigateToAlbum(${a.id})">
@@ -629,7 +629,7 @@ function showTagAlbums(tag) {
     const displayAlbums = getShuffledList(`tag_${tag}`, albums);
 
     let html = `
-    <div class="section-title mint-accent">TAG: ${tag}</div>
+    <div class="section-title burn-b">TAG: ${tag}</div>
     <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
     <div class="related-grid">
         ${displayAlbums.slice(0, 40).map(a => `
@@ -659,7 +659,7 @@ function showYearAlbums(year) {
     const displayAlbums = getShuffledList(`year_${year}`, albums);
 
     let html = `
-    <div class="section-title coral-accent">AÑO: ${year}</div>
+    <div class="section-title burn-a">AÑO: ${year}</div>
     <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
     <div class="related-grid">
         ${displayAlbums.map(a => `
@@ -686,7 +686,7 @@ function searchShowGenre(genre) {
     const displayAlbums = getShuffledList(`genre_${genre}`, albums);
 
     let html = `
-    <div class="section-title mint-accent">GÉNERO: ${genre}</div>
+    <div class="section-title burn-b">GÉNERO: ${genre}</div>
     <p style="color:var(--text-secondary);margin-bottom:var(--space-lg);font-size:18px">${albums.length} álbumes</p>
     <div class="related-grid">
         ${displayAlbums.slice(0, 40).map(a => `

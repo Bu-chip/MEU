@@ -4,36 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilbao Underground</title>
-    <meta name="description" content="Mapeo de 2,396 álbumes de la escena underground de Bilbao">
+    <title>Bilbao Underground — MEU</title>
+    <meta name="description" content="Mapeo de 2.396 álbumes de la escena underground de Bilbao. Una guía de Queimada Circuit Records.">
 
-    <!-- Google Fonts -->
+    <!-- PIEL v0 · tipografía
+         cuerpo/metadatos: IBM Plex Mono (la de la casa)
+         display A: Big Shoulders Display (grotesca condensada dura)
+         display B: Grenze Gotisch (serif gótica tipo Jarrera)
+         display C: collage/letra cortada (elemento gráfico, no fuente de sistema) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Darker+Grotesque:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Big+Shoulders+Display:wght@700;800;900&family=Grenze+Gotisch:wght@600;800&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
-    <!-- Textura de fondo -->
-    <div class="grain-overlay"></div>
+<body class="piel-a">
+    <!-- Textura de papel. PENDIENTE (Miguel): escaneo real en assets/img/papel-escaneado.jpg;
+         mientras tanto cae al ruido SVG de respaldo. Ver assets/img/PENDIENTE.md -->
+    <div class="paper-overlay" aria-hidden="true"></div>
 
-    <!-- Header -->
-    <header class="main-header">
-        <div class="header-content">
-            <h1 class="site-title" data-text="BILBAO UNDERGROUND">BILBAO UNDERGROUND</h1>
-            <p class="site-subtitle">2,396 álbumes · Escena underground de Bilbao</p>
+    <!-- Cabecera / mancheta -->
+    <header class="masthead">
+        <div class="masthead-inner">
+            <div class="masthead-top">
+                <p class="kicker">MEU · MAPA UNDERGROUND EUSKADI · DOC/001</p>
+                <!-- PENDIENTE (Miguel): sustituir por sello QCR escaneado (assets/img/sello-qcr.png) -->
+                <div class="sello-qcr" aria-hidden="true">
+                    <span class="sello-sigla">QCR</span>
+                    <span class="sello-texto">queimada circuit records</span>
+                </div>
+            </div>
+            <h1 class="site-title">BILBAO UNDERGROUND</h1>
+            <p class="site-subtitle">2.396 álbumes · escena underground de Bilbao · ría industrial</p>
         </div>
+        <div class="halftone-band" aria-hidden="true"></div>
     </header>
 
     <!-- Loading screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loading-content">
-            <h2 class="loading-title">CARGANDO BASE DE DATOS</h2>
-            <p class="loading-text">Preparando 2,396 álbumes...</p>
+            <h2 class="loading-title">FOTOCOPIANDO EL ARCHIVO</h2>
+            <p class="loading-text">2.396 álbumes en la bandeja de salida…</p>
             <div class="loading-bar">
                 <div class="loading-progress"></div>
             </div>
@@ -66,7 +80,7 @@
         <!-- Search bar -->
         <section class="search-section">
             <div class="search-wrapper">
-                <input type="text" class="search-input" id="search" placeholder="Buscar artistas, álbumes, tags..."
+                <input type="text" class="search-input" id="search" placeholder="Buscar artistas, álbumes, tags…"
                     autocomplete="off">
 
                 <div class="random-wrapper" id="randomWrapper">
@@ -95,7 +109,7 @@
             <!-- Detail area -->
             <main class="detail-area" id="detailArea">
                 <div class="empty-state">
-                    <p class="empty-text">Selecciona un artista, álbum o tag</p>
+                    <p class="empty-text">SELECCIONA UN ARTISTA, UN ÁLBUM, UN TAG —</p>
                     <button class="large-random-btn" onclick="handleRandom()">DESCUBRIR MÚSICA</button>
                 </div>
             </main>
@@ -103,7 +117,22 @@
         </div>
     </div>
 
+    <!-- Colofón / firma -->
+    <footer class="colophon">
+        <p class="colophon-firma">una guía de <strong>Queimada Circuit Records</strong></p>
+        <p class="colophon-meta">MEU · piel v0 «xerox que arde» · fotocopia B/N + quemazos</p>
+    </footer>
+
+    <!-- Conmutador de dirección display (decisión abierta del moodboard) -->
+    <nav class="piel-switch" aria-label="Dirección tipográfica de la piel (decisión abierta)">
+        <span class="piel-switch-label">PIEL</span>
+        <button type="button" data-piel="piel-a" title="A — grotesca condensada dura (Big Shoulders)">A</button>
+        <button type="button" data-piel="piel-b" title="B — serif gótica tipo Jarrera (Grenze Gotisch)">B</button>
+        <button type="button" data-piel="piel-c" title="C — collage / letra cortada (elemento gráfico)">C</button>
+    </nav>
+
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/piel.js"></script>
 </body>
 
 </html>
