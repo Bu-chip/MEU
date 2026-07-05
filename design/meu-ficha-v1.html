@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEU — FICHA de release</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@500;700;900&family=Big+Shoulders+Display:wght@500;700;900&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --papel:#F2EFE8;
+  --tinta:#111111;
+  --lima:#A3E635;
+  --mono:'IBM Plex Mono', ui-monospace, monospace;
+  --display:'Big Shoulders','Big Shoulders Display','Arial Narrow',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;border-radius:0 !important;}
+html,body{background:var(--papel);color:var(--tinta);font-family:var(--mono);}
+::selection{background:var(--lima);color:var(--tinta);}
+
+/* barra de retorno: de dónde vienes */
+.retorno{
+  display:flex;align-items:center;gap:0;
+  border-bottom:2px solid var(--tinta);
+  font-size:11px;
+}
+.retorno a{
+  color:var(--tinta);text-decoration:none;
+  padding:8px 16px;border-right:1px solid var(--tinta);
+}
+.retorno a:hover{background:var(--lima);}
+.retorno .marca{margin-left:auto;padding:8px 16px;font-weight:700;font-size:10px;letter-spacing:.08em;}
+
+/* cuerpo de la ficha: asimétrico, portada izquierda, texto derecha */
+.cuerpo{
+  display:grid;
+  grid-template-columns:minmax(260px,420px) 1fr;
+  border-bottom:2px solid var(--tinta);
+}
+.portada{
+  border-right:2px solid var(--tinta);
+  aspect-ratio:1/1;position:relative;
+  background:var(--tinta);color:var(--papel);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:18px;
+}
+.portada .ph{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(40px,8vw,96px);line-height:.86;word-break:break-word;
+}
+.portada .aviso{
+  position:absolute;top:12px;left:14px;
+  font-size:8px;letter-spacing:.14em;
+  border:1px solid var(--papel);padding:3px 6px;opacity:.7;
+}
+.datos{padding:22px 22px 18px 22px;display:flex;flex-direction:column;gap:0;}
+.datos .art{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(34px,5.5vw,72px);line-height:.88;
+}
+.datos .tit{
+  font-size:clamp(15px,2vw,20px);font-style:italic;margin-top:8px;line-height:1.35;
+}
+.metaline{
+  display:flex;gap:0;flex-wrap:wrap;margin-top:16px;
+  border-top:1px solid var(--tinta);border-bottom:1px solid var(--tinta);
+}
+.metaline .m{
+  font-size:11px;padding:6px 14px;border-right:1px solid var(--tinta);
+}
+.metaline .m b{font-weight:700;}
+.tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px;}
+.tags a{
+  font-size:11px;color:var(--tinta);text-decoration:none;
+  border:1px solid var(--tinta);padding:3px 9px;
+}
+.tags a:hover{background:var(--lima);}
+.acciones{margin-top:auto;padding-top:22px;display:flex;gap:0;flex-wrap:wrap;}
+.acciones a.principal{
+  font-family:var(--display);text-transform:uppercase;font-weight:700;
+  font-size:clamp(18px,2.6vw,26px);line-height:1;
+  background:var(--tinta);color:var(--papel);text-decoration:none;
+  padding:12px 22px 14px 22px;
+}
+.acciones a.principal:hover{background:var(--lima);color:var(--tinta);}
+.acciones button.azar{
+  font-family:var(--display);text-transform:uppercase;font-weight:700;
+  font-size:clamp(18px,2.6vw,26px);line-height:1;
+  background:transparent;color:var(--tinta);
+  border:2px solid var(--tinta);border-left:none;
+  padding:12px 22px 14px 22px;cursor:pointer;
+}
+.acciones button.azar:hover{background:var(--lima);}
+
+/* similares: líneas de registro con la cuenta de tags compartidos */
+.similares h2{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(20px,3vw,30px);line-height:1;
+  padding:14px 18px 8px 18px;
+  border-bottom:1px solid var(--tinta);
+  display:flex;align-items:baseline;gap:10px;
+}
+.similares h2 .c{font-family:var(--mono);font-size:10px;font-weight:400;opacity:.6;}
+.sim{
+  display:grid;grid-template-columns:52px 1.1fr 1.4fr 110px 60px;gap:12px;
+  padding:3px 18px;font-size:12px;line-height:1.5;cursor:pointer;align-items:baseline;
+}
+.sim:hover{background:var(--lima);}
+.sim .y{font-size:10px;opacity:.55;}
+.sim .ar{font-weight:700;text-transform:uppercase;font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.sim .ti{font-style:italic;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.sim .ge{font-size:10px;opacity:.55;}
+.sim .ov{font-size:10px;text-align:right;opacity:.55;}
+.similares{border-bottom:2px solid var(--tinta);padding-bottom:8px;}
+
+footer{padding:14px 18px 30px 18px;font-size:10px;line-height:1.7;}
+
+@media(max-width:760px){
+  .cuerpo{grid-template-columns:1fr;}
+  .portada{border-right:none;border-bottom:2px solid var(--tinta);max-height:52vw;}
+  .sim{grid-template-columns:44px 1fr 50px;}
+  .sim .ti,.sim .ge{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="retorno">
+  <a href="#" onclick="return false;">← EXPLORAR</a>
+  <a href="#" onclick="return false;">← ARCHIVO</a>
+  <span class="marca">MAPA EUSKADI UNDERGROUND · QCR</span>
+</div>
+
+<div class="cuerpo">
+  <div class="portada" id="portada">
+    <span class="aviso">PORTADA PENDIENTE · IRÁ TRATADA (THRESHOLD/DITHER)</span>
+    <div class="ph" id="p-ph"></div>
+  </div>
+  <div class="datos">
+    <h1 class="art" id="p-art"></h1>
+    <div class="tit" id="p-tit"></div>
+    <div class="metaline" id="p-meta"></div>
+    <div class="tags" id="p-tags"></div>
+    <div class="acciones">
+      <a class="principal" id="p-url" href="#" target="_blank" rel="noopener">ESCUCHAR EN BANDCAMP ↗</a>
+      <button class="azar" onclick="otra()">OTRO AL AZAR ⟳</button>
+    </div>
+  </div>
+</div>
+
+<div class="similares">
+  <h2>CERCA DE ESTE <span class="c">por tags compartidos — calculado sobre el archivo real</span></h2>
+  <div id="p-sims"></div>
+</div>
+
+<footer>
+  la ficha donde desembocan las dos puertas · tags clicables → filtro en ARCHIVO · «otro al azar» = seguir la deriva sin volver atrás (aquí rota entre 5 fichas reales precargadas) · portada: hueco honesto hasta el scrape, siempre irá tratada, nunca foto limpia
+</footer>
+
+<script>
+const FICHAS = [{"a":"Emaztegaiak / PHLGZ","t":"Emaztegaiak / PHLGZ (Split)","y":2021,"g":"electronic","tags":["electronic","ambient drone","cosmic horror","cyberpunk","electro","glitch","idm","industrial","noise","power electronics","techno"],"u":"https://phlgz.bandcamp.com/album/emaztegaiak-phlgz-split","sims":[{"a":"PHLGZ","t":"Paradigitm","y":2015,"g":"electronic","ov":9,"u":"https://phlgz.bandcamp.com/album/paradigitm"},{"a":"PHLGZ","t":"XTR0P1AN","y":2017,"g":"electronic","ov":8,"u":"https://phlgz.bandcamp.com/album/xtr0p1an"},{"a":"VVAA","t":"ER030 Compilation V.4","y":2020,"g":"electronic","ov":7,"u":"https://eclecticreactionsrecords.bandcamp.com/album/er030-compilation-v-4"},{"a":"PHLGZ","t":"NEBVLAE","y":2020,"g":"electronic","ov":7,"u":"https://phlgz.bandcamp.com/album/nebvlae"},{"a":"PHLGZ","t":"Logy","y":2020,"g":"electronic","ov":7,"u":"https://phlgz.bandcamp.com/album/logy"},{"a":"PHLGZ","t":"P.gram-engaged-ro","y":2013,"g":"electronic","ov":6,"u":"https://phlgz.bandcamp.com/album/p-gram-engaged-ro"},{"a":"PHLGZ","t":"VARØQ","y":2021,"g":"electronic","ov":6,"u":"https://phlgz.bandcamp.com/album/var-q"},{"a":"VVAA","t":"ER046 Compilation V5","y":2023,"g":"electronic","ov":6,"u":"https://eclecticreactionsrecords.bandcamp.com/album/er046-compilation-v5"}]},{"a":"Motorastola","t":"Motorastola","y":2018,"g":"punk","tags":["punk","rock n' roll","d-beat","hardcore punk","metalpunk","motorpunk"],"u":"https://motorastola.bandcamp.com/album/motorastola","sims":[{"a":"Shöck","t":"Alta Traición","y":2020,"g":"punk","ov":3,"u":"https://aediy.bandcamp.com/album/sh-ck-alta-traici-n-ae-006-agotado-sold-out"},{"a":"Paniks","t":"Panik Piknik","y":2007,"g":"punk","ov":2,"u":"https://paniks.bandcamp.com/album/panik-piknik-2"},{"a":"Rat-Zinger","t":"Cartas al Vaticano","y":2010,"g":"rock","ov":2,"u":"https://rat-zinger.bandcamp.com/album/cartas-al-vaticano"},{"a":"Rat-Zinger","t":"Crónicas de la destrucción","y":2012,"g":"rock","ov":2,"u":"https://rat-zinger.bandcamp.com/album/cr-nicas-de-la-destrucci-n"},{"a":"No Komply","t":"Kamikaze","y":2012,"g":"punk","ov":2,"u":"https://nokomplytaldea.bandcamp.com/album/kamikaze"},{"a":"Punquis Palo","t":"Round #1","y":2012,"g":"punk","ov":2,"u":"https://punquisdepalo.bandcamp.com/album/round-1"},{"a":"Take Warning","t":"First Session","y":2013,"g":"punk","ov":2,"u":"https://takewarningkids.bandcamp.com/album/first-session"},{"a":"Striknina","t":"Rosebud","y":2013,"g":"rock","ov":2,"u":"https://striknina.bandcamp.com/album/rosebud"}]},{"a":"Ecce Homo & Miguel A. Garcia","t":"Soleil Satan","y":2018,"g":"ambient","tags":["abruptum","ambient","black metal","blut aus nord","cober ord","experimental","habsyll","scelsi","xenakis","contemporary","dark ambiant"],"u":"https://soleilsatan.bandcamp.com/album/soleil-satan","sims":[{"a":"Nacho Ortega","t":"ER006 Nacho Ortega - Cascando","y":2015,"g":"electronic","ov":3,"u":"https://eclecticreactionsrecords.bandcamp.com/album/er006-nacho-ortega-cascando"},{"a":"Buszemi","t":"ER Special II - Buszemi","y":2018,"g":"electronic","ov":3,"u":"https://eclecticreactionsrecords.bandcamp.com/album/er-special-ii-buszemi"},{"a":"Minusculo","t":"ER025 Minusculo - Denbora","y":2019,"g":"electronic","ov":3,"u":"https://eclecticreactionsrecords.bandcamp.com/album/er025-minusculo-denbora"},{"a":"Sculptures","t":"ER045 Sculptures - Máscara","y":2023,"g":"electronic","ov":3,"u":"https://eclecticreactionsrecords.bandcamp.com/album/er045-sculptures-m-scara"},{"a":"Pre Ulzión","t":"Tratamientos Avanzados de Sonoterapia","y":2007,"g":"experimental","ov":2,"u":"https://ulzion.bandcamp.com/album/tratamientos-avanzados-de-sonoterapia"},{"a":"iosu Vakerizzo","t":"Bossanova From Space! And Raven! (2008)","y":2008,"g":"experimental","ov":2,"u":"https://iosuvakerizzo.bandcamp.com/album/bossanova-from-space-and-raven-2008"},{"a":"Roman Random","t":"Yamarchestra","y":2010,"g":"electronic","ov":2,"u":"https://romanrandom.bandcamp.com/album/yamarchestra"},{"a":"Legion of Swine","t":"They Took Democracy and Threw It onto the Pyre with the Rest of the Legion of Swine","y":2012,"g":"experimental","ov":2,"u":"https://legionofswine.bandcamp.com/album/they-took-democracy-and-threw-it-onto-the-pyre-with-the-rest-of-the-legion-of-swine"}]},{"a":"vacuum","t":"winterdays","y":2018,"g":"experimental","tags":["experimental","contemporary","free improv","freejazz","improvisation","noise"],"u":"https://vacuumduo.bandcamp.com/album/winterdays","sims":[{"a":"MAGMADAM","t":"Z","y":2015,"g":"experimental","ov":3,"u":"https://magmadam.bandcamp.com/album/z"},{"a":"Magmadam/ Pornoise","t":"MEDUSA ELECTRICA split with Anatomia Humana Desmontable","y":2016,"g":"experimental","ov":3,"u":"https://magmadam.bandcamp.com/album/medusa-electrica-split-with-anatomia-humana-desmontable"},{"a":"E.L.","t":"IMT o 'Afonía para ti'","y":2018,"g":"experimental","ov":3,"u":"https://el-lo.bandcamp.com/album/imt-o-afon-a-para-ti"},{"a":"jana jan","t":"Gertrude Noise","y":2018,"g":"experimental","ov":3,"u":"https://janajan.bandcamp.com/album/gertrude-noise"},{"a":"Various Artists","t":"Compilation Vol III","y":2018,"g":"metal","ov":3,"u":"https://therealhfn.bandcamp.com/album/hfn-various-compilation-vol-iii"},{"a":"ĒTHĘR ensemble","t":"ĒTHĘR XX - Our Mums (Full album)","y":2021,"g":"world","ov":3,"u":"https://theetherensemble.bandcamp.com/album/th-r-xx-our-mums-full-album"},{"a":"Miguel A. García","t":"Oppolomuni","y":2023,"g":"experimental","ov":3,"u":"https://haziesporak.bandcamp.com/album/oppolomuni"},{"a":"Enrike Hurtado","t":"Hardcore Punk Dissasters","y":2023,"g":"experimental","ov":3,"u":"https://haziesporak.bandcamp.com/album/hardcore-punk-dissasters"}]},{"a":"Ras Tekio","t":"Ras Tekio - Hills Of Judah","y":2025,"g":"reggae","tags":["reggae","roots reggae","dub","instrumental","melodica","melodica dub","militant","rockers"],"u":"https://sustraidunyouths.bandcamp.com/album/ras-tekio-hills-of-judah","sims":[{"a":"Lone Ark & Message","t":"Singers & Players","y":null,"g":"reggae","ov":4,"u":"https://bassleemusic.bandcamp.com/album/singers-players"},{"a":"Bass Lee & Eztandub","t":"Zulu Dantza","y":2017,"g":"reggae","ov":4,"u":"https://bassleemusic.bandcamp.com/album/zulu-dantza"},{"a":"Pirates Choice Recordings","t":"12\" Earl Zero, Bass Lee, Kenny Knotts, Roberto Sánchez - Fire In The City / Love & Glory","y":2018,"g":"reggae","ov":4,"u":"https://bassleemusic.bandcamp.com/album/12-earl-zero-bass-lee-kenny-knotts-roberto-s-nchez-fire-in-the-city-love-glory"},{"a":"Sistah Lore, Sista Kata","t":"New Chapter Riddim","y":2018,"g":"reggae","ov":4,"u":"https://bassleemusic.bandcamp.com/album/new-chapter-riddim"},{"a":"Antxon Sagardui & Bass Lee","t":"Running Everyday","y":2018,"g":"reggae","ov":4,"u":"https://bassleemusic.bandcamp.com/album/running-everyday"},{"a":"Gamba, Sistah Lore, Bass Lee","t":"Psychopaths Riddim","y":2019,"g":"reggae","ov":4,"u":"https://bassleemusic.bandcamp.com/album/psychopaths-riddim"},{"a":"David Fendah","t":"No More","y":2019,"g":"reggae","ov":4,"u":"https://bassleemusic.bandcamp.com/album/no-more"},{"a":"George Palmer","t":"Beware","y":2020,"g":"reggae","ov":4,"u":"https://bassleemusic.bandcamp.com/album/beware"}]}];
+const esc = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+let idx=0;
+
+function render(f){
+  /* placeholder de portada: el título ocupando el hueco, honesto */
+  const ph=document.getElementById('p-ph');
+  ph.textContent=f.t.length>40 ? f.t.slice(0,40)+'…' : f.t;
+  document.getElementById('p-art').textContent=f.a;
+  document.getElementById('p-tit').textContent=f.t;
+  const meta=document.getElementById('p-meta');
+  meta.innerHTML='';
+  [['AÑO',f.y||'s/f'],['GÉNERO',f.g||'—'],['FUENTE','bandcamp']].forEach(([k,v])=>{
+    const m=document.createElement('span');m.className='m';
+    m.innerHTML=`${k} <b>${esc(String(v))}</b>`;meta.appendChild(m);
+  });
+  const tags=document.getElementById('p-tags');
+  tags.innerHTML='';
+  (f.tags||[]).forEach(t=>{
+    const a=document.createElement('a');a.href='#';a.textContent=t;
+    a.onclick=e=>{e.preventDefault();};
+    a.title='en la implementación: abre ARCHIVO filtrado por «'+t+'»';
+    tags.appendChild(a);
+  });
+  document.getElementById('p-url').href=f.u||'#';
+  const sims=document.getElementById('p-sims');
+  sims.innerHTML='';
+  (f.sims||[]).forEach(s=>{
+    const l=document.createElement('div');l.className='sim';
+    l.innerHTML=`<span class="y">${s.y||'s/f'}</span><span class="ar">${esc(s.a)}</span><span class="ti">${esc(s.t)}</span><span class="ge">${esc(s.g||'—')}</span><span class="ov">${s.ov} tags</span>`;
+    l.onclick=()=>window.open(s.u,'_blank');
+    l.title='en la implementación: navega a la ficha de este release';
+    sims.appendChild(l);
+  });
+}
+function otra(){ idx=(idx+1)%FICHAS.length; render(FICHAS[idx]); window.scrollTo({top:0}); }
+render(FICHAS[0]);
+</script>
+</body>
+</html>
