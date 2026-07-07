@@ -1,0 +1,78 @@
+name: Scrape covers (Bandcamp)
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Máximo de items a procesar en esta pasada (0 = todos)"
+        required: false
+        default: "20"
+      push_branch:
+        description: "Commitear el resultado a la rama scrape-covers-test"
+        type: boolean
+        required: false
+        default: false
+
+# contents: write solo se ejercita si push_branch=true; el resto del
+# workflow no escribe nada en el repo. El output NUNCA va a main.
+permissions:
+  contents: write
+
+# Nunca dos scrapes a la vez: cortesía con Bandcamp y evita pisar el
+# covers.json de la rama de resultados.
+concurrency:
+  group: scrape-covers
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    # Pasada completa: ~2.350 items x ~2s ≈ 90 min; margen holgado.
+    timeout-minutes: 150
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Si ya hay resultados en scrape-covers-test se usan como semilla:
+      # el script salta los items "ok" y las pasadas son acumulativas.
+      - name: Recuperar covers.json previo (resume)
+        run: |
+          if git fetch origin scrape-covers-test; then
+            git checkout FETCH_HEAD -- data/covers.json || true
+          fi
+
+      - name: Scrape
+        run: python3 scripts/scrape_covers.py --limit "${{ inputs.limit }}"
+
+      # if: always() para conservar el progreso parcial aunque el job se
+      # cancele o agote el timeout a mitad de pasada.
+      - name: Subir artifact con el resultado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: covers-json
+          path: data/covers.json
+          if-no-files-found: warn
+
+      - name: Commitear a scrape-covers-test
+        if: inputs.push_branch == true
+        run: |
+          cp data/covers.json /tmp/covers.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch origin scrape-covers-test; then
+            git checkout -f -B scrape-covers-test FETCH_HEAD
+          else
+            git checkout -f -B scrape-covers-test
+          fi
+          mkdir -p data
+          cp /tmp/covers.json data/covers.json
+          # -f porque data/covers.json está en .gitignore (protección
+          # contra commits accidentales a main); aquí el add es deliberado.
+          git add -f data/covers.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios que commitear"
+          else
+            git commit -m "data: scrape de portadas (run ${{ github.run_id }})"
+            git push origin scrape-covers-test
+          fi

@@ -29,6 +29,10 @@ ENV/
 *.tmp
 .cache/
 
+# Output del scrape de portadas: viaja como artifact o en la rama
+# scrape-covers-test (el workflow hace git add -f), nunca a main.
+data/covers.json
+
 # Build outputs (para futuras compilaciones)
 dist/
 build/
