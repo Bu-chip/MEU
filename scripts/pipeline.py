@@ -616,6 +616,46 @@ def step_normalize_tags(data):
     return []
 
 
+def step_merge_covers(data):
+    """Fusiona data/covers.json (scrape de Bandcamp) en el canónico.
+
+    Añade a cada álbum cover_url (string|null) y album_id (int|null)
+    cruzando por id contra los items del scrape. Los álbumes cuya
+    entrada quedó en "error" (404s de Bandcamp) o que no tienen URL
+    reciben null en ambos campos, la misma convención que `year`.
+
+    data/covers.json no está versionado en main (viaja como artifact o
+    en la rama scrape-covers-test); si el archivo no existe el paso no
+    hace nada, así el pipeline sigue siendo ejecutable en cualquier
+    checkout. Solo se asigna cuando el valor difiere del actual, de
+    modo que una segunda pasada informa 0 cambios.
+    """
+    covers_file = REPO_ROOT / "data" / "covers.json"
+    if not covers_file.exists():
+        return []
+    with open(covers_file, encoding="utf-8") as f:
+        items = json.load(f)["items"]
+
+    filled = 0
+    nulled = 0
+    for album in data["albums"]:
+        item = items.get(str(album["id"]))
+        if item is not None and item.get("status") == "ok":
+            cover_url, album_id = item["cover_url"], item["album_id"]
+        else:
+            cover_url, album_id = None, None
+        if album.get("cover_url", "\0") != cover_url or album.get("album_id", "\0") != album_id:
+            album["cover_url"] = cover_url
+            album["album_id"] = album_id
+            if cover_url is None and album_id is None:
+                nulled += 1
+            else:
+                filled += 1
+    if filled or nulled:
+        return [f"merge_covers: {filled} álbumes con cover_url+album_id, {nulled} a null"]
+    return []
+
+
 STEPS = [
     step_clean_urls,
     step_fix_corrupt_genres,
@@ -623,6 +663,7 @@ STEPS = [
     step_normalize_artist_names,
     step_clean_invisible_chars,
     step_normalize_tags,
+    step_merge_covers,
 ]
 
 
@@ -640,9 +681,18 @@ def serialize(data):
 def validate(data):
     """Invariantes de esquema que ningún paso puede romper."""
     assert set(data.keys()) == {"albums", "artists", "tags", "years"}
-    fields = {"id", "artist", "title", "genre", "year", "tags", "url"}
+    base = {"id", "artist", "title", "genre", "year", "tags", "url"}
+    # merge_covers añade cover_url y album_id; el esquema base sigue
+    # siendo válido porque ese paso es no-op si falta data/covers.json.
+    extended = base | {"cover_url", "album_id"}
     for album in data["albums"]:
-        assert set(album.keys()) == fields, f"esquema roto en album id={album.get('id')}"
+        keys = set(album.keys())
+        assert keys in (base, extended), f"esquema roto en album id={album.get('id')}"
+        if keys == extended:
+            assert album["cover_url"] is None or isinstance(album["cover_url"], str), \
+                f"cover_url no es string|null en album id={album.get('id')}"
+            assert album["album_id"] is None or isinstance(album["album_id"], int), \
+                f"album_id no es int|null en album id={album.get('id')}"
 
 
 def main():
