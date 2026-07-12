@@ -83,7 +83,7 @@
     "run": "https://github.com/Bu-chip/MEU/actions/runs/29203596214",
     "method": "scripts/research_tags.py (discover_web, 200 requests) + auditoría manual documentada en el campo 'audit'. verdict_auto = heurística del script; verdict = propuesta final tras auditoría. La heurística de eh_share solo reconocía municipios de la semilla: infravaloró tags con locations 'PV, Spain'/comarcas (falsos sospechosos) y no detectó tocayos extranjeros cuyo nombre coincide con el término (vitoria→Brasil, durango→Colorado/México).",
     "sin_medir": {
-      "nota": "cosechados al agotarse el presupuesto de 200 requests; medibles en una segunda pasada o directamente en el scraper (coste: 1 request cada uno)",
+      "nota": "MEDIDOS en la mini-pasada del 2026-07-12 (run 29204266712, 24 requests); filas añadidas con source=mini-pasada y final=pendiente a la espera de decisión humana. donostia-san-sebastián exento por duplicado de acentos.",
       "del_canonico": [
         "euskaldun",
         "ezkerraldea",
@@ -2909,6 +2909,714 @@
       "verdict_auto": "incluir",
       "verdict": "incluir",
       "final": "incluir"
+    },
+    {
+      "tag": "euskaldun",
+      "source": "mini-pasada",
+      "result_count": 3,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 3,
+      "eh_share": 0.67,
+      "top_locations": [
+        "Bilbao, Spain",
+        "Oiartzun, Spain",
+        "Andoain, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "GAL",
+          "title": "BAKARKA EZIN DA",
+          "location": "Bilbao, Spain"
+        },
+        {
+          "artist": "TxilTxoko",
+          "title": "SUPREME",
+          "location": "Oiartzun, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "ezkerraldea",
+      "source": "mini-pasada",
+      "result_count": 3,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 3,
+      "eh_share": 0.33,
+      "top_locations": [
+        "PV, Spain",
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Herpes Torpes",
+          "title": "Zuzenean Sastraka Gaztetxean",
+          "location": "PV, Spain"
+        },
+        {
+          "artist": "Sub Rats",
+          "title": "Sub rats split 7'' Bataalla (2018)",
+          "location": "PV, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "audit": "'PV, Spain' es EH; solape con canónico",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "freeimprobilbao",
+      "source": "mini-pasada",
+      "result_count": 2,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 2,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Samuel Cano",
+          "title": "vista",
+          "location": "Bilbao, Spain"
+        },
+        {
+          "artist": "Samuel Cano",
+          "title": "Tradición",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "freejazz-bilbao",
+      "source": "mini-pasada",
+      "result_count": 2,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 2,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Samuel Cano",
+          "title": "Samuel Cano/Eric Surmenian/Hilario Rodeiro",
+          "location": "Bilbao, Spain"
+        },
+        {
+          "artist": "Samuel Cano",
+          "title": "ISLA",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "freejazz-euskadi",
+      "source": "mini-pasada",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Samuel Cano",
+          "title": "Samuel Cano/Eric Surmenian/Hilario Rodeiro",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "getaria",
+      "source": "mini-pasada",
+      "result_count": 9,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 9,
+      "eh_share": 0.22,
+      "top_locations": [
+        "Getaria, Spain",
+        "PV, Spain",
+        "Zarautz, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico",
+        "pero solo 22% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Esne Bidea Records",
+          "title": "Focus On The Inner Darkness",
+          "location": "PV, Spain"
+        },
+        {
+          "artist": "GZR",
+          "title": "Nola Hil Nahi Dek?",
+          "location": "Getaria, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "eh_share infravalorado: Getaria/PV/Zarautz son EH",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "getxo-bilbao-gringo-rock",
+      "source": "mini-pasada",
+      "result_count": 4,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 4,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Getxo, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Gringo",
+          "title": "Riptides",
+          "location": "Getxo, Spain"
+        },
+        {
+          "artist": "Gringo",
+          "title": "A Devastating Wave Of...",
+          "location": "Getxo, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "guernica",
+      "source": "mini-pasada",
+      "result_count": 43,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 19,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Guernica, Spain"
+      ],
+      "reasons": [
+        "solo 0% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "Mikosis",
+          "title": "Gordin, huts",
+          "location": "Guernica, Spain"
+        },
+        {
+          "artist": "Carabao",
+          "title": "ลูกลุงขี้เมา Chapter 26",
+          "location": ""
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "eh_share=0 es falso negativo: top_location 'Guernica, Spain' ES Gernika (grafía castellana, ausente de mis términos); ojo: mezcla spam de tags (banda tailandesa Carabao, la misma que aparecía bajo donostia)",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "hardcore-bilbao",
+      "source": "mini-pasada",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Euskadi, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Sembrando Kaos",
+          "title": "Amorruak beldurra jango du",
+          "location": "Euskadi, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "improvisacion-libre-bilbao",
+      "source": "mini-pasada",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "BRAUST",
+          "title": "braust",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "improvisacionbilbao",
+      "source": "mini-pasada",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Samuel Cano",
+          "title": "Samuel Cano/Eric Surmenian/Hilario Rodeiro",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "musica-garage-bilbao",
+      "source": "mini-pasada",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "MoonShakers",
+          "title": "Visitantes",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "ortuella",
+      "source": "mini-pasada",
+      "result_count": 3,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 3,
+      "eh_share": 0.33,
+      "top_locations": [
+        "PV, Spain",
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Lisergick",
+          "title": "Planets EP",
+          "location": "PV, Spain"
+        },
+        {
+          "artist": "EFB Music",
+          "title": "EFB - Moments EP",
+          "location": "PV, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "audit": "'PV, Spain' es EH; solape con canónico",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "punk-rock-bilbao",
+      "source": "mini-pasada",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "MoonShakers",
+          "title": "Visitantes",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "rock-garage-bilbao",
+      "source": "mini-pasada",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "MoonShakers",
+          "title": "Visitantes",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "surf-bilbao",
+      "source": "mini-pasada",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "SANTIAGO DELGADO Y LOS RUNAWAY LOVERS",
+          "title": "CANTAN EL ROCK EN LA CARA DEL D.J.",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "vasco",
+      "source": "mini-pasada",
+      "result_count": 21,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 20,
+      "eh_share": 0.15,
+      "top_locations": [
+        "Portugal",
+        "Paris, France",
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico",
+        "pero solo 15% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Zumo de Mango",
+          "title": "Mandanga en el tanga [RRV001]",
+          "location": "Bilbao, Spain"
+        },
+        {
+          "artist": "Menta Tormenta",
+          "title": "BRIS BRIS",
+          "location": "Puebla, Mexico"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso",
+      "audit": "colisión confirmada: Portugal/París/México ('Vasco' es nombre propio); recomiendo FUERA como vitoria/durango",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "zalla",
+      "source": "mini-pasada",
+      "result_count": 2,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 2,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Enkarterri, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "No Komply",
+          "title": "Ihes",
+          "location": "Enkarterri, Spain"
+        },
+        {
+          "artist": "No Komply",
+          "title": "Kamikaze",
+          "location": "Enkarterri, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "audit": "'Enkarterri, Spain' es EH; eh_share=0 falso negativo",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "basque-ambient",
+      "source": "mini-pasada",
+      "result_count": 1,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Pamplona, Spain"
+      ],
+      "reasons": [
+        "señal débil: solo 1 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "Nafarist",
+          "title": "Irageneko arimen testigu hotza",
+          "location": "Pamplona, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "señal débil pero inequívoca: Nafarist (Pamplona)",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "basque-country-rock-&-roll",
+      "source": "mini-pasada",
+      "result_count": 0,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 0,
+      "eh_share": null,
+      "top_locations": [],
+      "reasons": [
+        "0 resultados"
+      ],
+      "sample": [],
+      "verdict_auto": "descartar",
+      "verdict": "descartar",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "basquemusic",
+      "source": "mini-pasada",
+      "result_count": 2,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 2,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Irouléguy, France"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Ekhi Lambert",
+          "title": "Inbasioak",
+          "location": "Irouléguy, France"
+        },
+        {
+          "artist": "Ekhi Lambert",
+          "title": "Haustura",
+          "location": "Irouléguy, France"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "audit": "contenido de Iparralde (Irouléguy); el filtro por band_location del PR gestiona el alcance CAV+NA",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "euskal-rap",
+      "source": "mini-pasada",
+      "result_count": 8,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 8,
+      "eh_share": 0.88,
+      "top_locations": [
+        "Vitoria Gasteiz, Spain",
+        "Pamplona, Spain",
+        "France"
+      ],
+      "reasons": [
+        "88% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Raperos de Emaus",
+          "title": "Txokolate (LP)",
+          "location": "Pamplona, Spain"
+        },
+        {
+          "artist": "Ziakhus",
+          "title": "Olio Erreak (Zuzenean)",
+          "location": "Vitoria Gasteiz, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "euskalmusika",
+      "source": "mini-pasada",
+      "result_count": 4,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 2,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Irouléguy, France"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Ekhi Lambert",
+          "title": "Inbasioak",
+          "location": "Irouléguy, France"
+        },
+        {
+          "artist": "JON MINER",
+          "title": "11+II+...",
+          "location": ""
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "audit": "contenido de Iparralde (Irouléguy); ídem",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
+    },
+    {
+      "tag": "orereta",
+      "source": "mini-pasada",
+      "result_count": 5,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 5,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Irun, Spain",
+        "Errenteria, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Sardeska",
+          "title": "R-evolution",
+          "location": "Errenteria, Spain"
+        },
+        {
+          "artist": "Muskulo",
+          "title": "triku bat errepidean",
+          "location": "Errenteria, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "final": "pendiente",
+      "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     }
   ]
 }
