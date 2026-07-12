@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "generated_at": "2026-07-12T19:12:09Z",
+    "month": "smoke",
+    "schema": "candidato = canónico sin id + band_location, source_tags, discovered_at; los id se asignan al merge"
+  },
+  "candidates": [
+    {
+      "artist": "Azten",
+      "title": "JAHENDU THE BEAT: AMERICAN BOOTLEG",
+      "genre": null,
+      "year": 2024,
+      "tags": [
+        "hip-hop/rap",
+        "rap",
+        "rap type beats",
+        "sestao"
+      ],
+      "url": "https://aztentenaz.bandcamp.com/album/jahendu-the-beat-american-bootleg",
+      "cover_url": "https://f4.bcbits.com/img/a1292719937_5.jpg",
+      "album_id": 2946412681,
+      "band_location": "Sestao, Spain",
+      "source_tags": [
+        "sestao"
+      ],
+      "discovered_at": "2026-07-12T19:11:34Z"
+    },
+    {
+      "artist": "BREA",
+      "title": "Purga Natural",
+      "genre": null,
+      "year": 2022,
+      "tags": [
+        "punk",
+        "rock",
+        "punk hardcore",
+        "punk rock",
+        "galdakao"
+      ],
+      "url": "https://breagdko.bandcamp.com/album/purga-natural",
+      "cover_url": "https://f4.bcbits.com/img/a0156269805_5.jpg",
+      "album_id": 2619380936,
+      "band_location": "Galdakao, Spain",
+      "source_tags": [
+        "galdakao"
+      ],
+      "discovered_at": "2026-07-12T19:11:37Z"
+    },
+    {
+      "artist": "Infarto",
+      "title": "Infarto",
+      "genre": null,
+      "year": 2021,
+      "tags": [
+        "rock",
+        "pop rock",
+        "rock'n'roll",
+        "galdakao"
+      ],
+      "url": "https://infarto1.bandcamp.com/album/infarto",
+      "cover_url": "https://f4.bcbits.com/img/a2208757732_5.jpg",
+      "album_id": 1343429362,
+      "band_location": "Galdakao, Spain",
+      "source_tags": [
+        "galdakao"
+      ],
+      "discovered_at": "2026-07-12T19:11:37Z"
+    },
+    {
+      "artist": "Mark deBlain; Bella Cherry; Lola y los guarros; Onoffon",
+      "title": "Captain Julen Anime theme remixes",
+      "genre": null,
+      "year": 2024,
+      "tags": [
+        "electronic",
+        "bolero tech",
+        "dubstep",
+        "electro glam",
+        "techno house",
+        "techno punk",
+        "sestao"
+      ],
+      "url": "https://infrarecords.bandcamp.com/album/captain-julen-anime-theme-remixes",
+      "cover_url": "https://f4.bcbits.com/img/a2675834749_5.jpg",
+      "album_id": 1575984500,
+      "band_location": "Sestao, Spain",
+      "source_tags": [
+        "sestao"
+      ],
+      "discovered_at": "2026-07-12T19:11:34Z"
+    },
+    {
+      "artist": "Javier Casanueva",
+      "title": "Javier Casanueva Cazador",
+      "genre": null,
+      "year": 2024,
+      "tags": [
+        "electronic",
+        "electro glam",
+        "techno house",
+        "techno punk",
+        "sestao"
+      ],
+      "url": "https://infrarecords.bandcamp.com/album/javier-casanueva-cazador",
+      "cover_url": "https://f4.bcbits.com/img/a0667644326_5.jpg",
+      "album_id": 2302863106,
+      "band_location": "Sestao, Spain",
+      "source_tags": [
+        "sestao"
+      ],
+      "discovered_at": "2026-07-12T19:11:34Z"
+    },
+    {
+      "artist": "ONOFFON",
+      "title": "ONOFFON 2 canções de amor e dança",
+      "genre": null,
+      "year": 2024,
+      "tags": [
+        "batucada",
+        "canson",
+        "electronic",
+        "bossa nova",
+        "electro glam",
+        "gabba",
+        "makina",
+        "techno house",
+        "techno punk",
+        "sestao"
+      ],
+      "url": "https://infrarecords.bandcamp.com/album/onoffon-2-can-es-de-amor-e-dan-a",
+      "cover_url": "https://f4.bcbits.com/img/a0235332578_5.jpg",
+      "album_id": 1022847576,
+      "band_location": "Sestao, Spain",
+      "source_tags": [
+        "sestao"
+      ],
+      "discovered_at": "2026-07-12T19:11:34Z"
+    },
+    {
+      "artist": "Mark DeBlain",
+      "title": "The blind E.P.",
+      "genre": null,
+      "year": 2024,
+      "tags": [
+        "electronic",
+        "electronic macarrism",
+        "tech house",
+        "electro glam",
+        "electro punk",
+        "macarra",
+        "techno",
+        "techno house",
+        "techno punk",
+        "sestao"
+      ],
+      "url": "https://infrarecords.bandcamp.com/album/the-blind-e-p",
+      "cover_url": "https://f4.bcbits.com/img/a2996564025_5.jpg",
+      "album_id": 148338668,
+      "band_location": "Sestao, Spain",
+      "source_tags": [
+        "sestao"
+      ],
+      "discovered_at": "2026-07-12T19:11:34Z"
+    },
+    {
+      "artist": "Calathea ",
+      "title": "Flowers & Knives",
+      "genre": null,
+      "year": 2025,
+      "tags": [
+        "punk",
+        "metal",
+        "post-hardcore",
+        "screamo",
+        "skramz",
+        "galdakao"
+      ],
+      "url": "https://knr-calathea.bandcamp.com/album/flowers-knives",
+      "cover_url": "https://f4.bcbits.com/img/a3385944125_5.jpg",
+      "album_id": 2035084015,
+      "band_location": "Galdakao, Spain",
+      "source_tags": [
+        "galdakao"
+      ],
+      "discovered_at": "2026-07-12T19:11:37Z"
+    },
+    {
+      "artist": "Sakatu",
+      "title": "Sakatu",
+      "genre": null,
+      "year": 2015,
+      "tags": [
+        "punk",
+        "galdakao",
+        "punk rock",
+        "sakatu"
+      ],
+      "url": "https://sakatu.bandcamp.com/album/sakatu",
+      "cover_url": "https://f4.bcbits.com/img/a1322012292_5.jpg",
+      "album_id": 3506976061,
+      "band_location": "Galdakao, Spain",
+      "source_tags": [
+        "galdakao"
+      ],
+      "discovered_at": "2026-07-12T19:11:37Z"
+    },
+    {
+      "artist": "sobieht",
+      "title": "TECNO-ILÓGICA",
+      "genre": null,
+      "year": 2014,
+      "tags": [
+        "metal",
+        "rapmetal",
+        "sestao"
+      ],
+      "url": "https://sobieht.bandcamp.com/album/tecno-il-gica",
+      "cover_url": "https://f4.bcbits.com/img/a1287312716_5.jpg",
+      "album_id": 1204494407,
+      "band_location": "Sestao, Spain",
+      "source_tags": [
+        "sestao"
+      ],
+      "discovered_at": "2026-07-12T19:11:34Z"
+    },
+    {
+      "artist": "Calathea",
+      "title": "Cries From The Heart",
+      "genre": null,
+      "year": 2022,
+      "tags": [
+        "metal",
+        "hardcore",
+        "melodic hardcore",
+        "post-hardcore",
+        "post-rock",
+        "galdakao"
+      ],
+      "url": "https://wearecalathea.bandcamp.com/album/cries-from-the-heart",
+      "cover_url": "https://f4.bcbits.com/img/a0447319170_5.jpg",
+      "album_id": 2020278109,
+      "band_location": "Galdakao, Spain",
+      "source_tags": [
+        "galdakao"
+      ],
+      "discovered_at": "2026-07-12T19:11:37Z"
+    },
+    {
+      "artist": "Calathea",
+      "title": "Flowers & Knives",
+      "genre": null,
+      "year": 2025,
+      "tags": [
+        "metal",
+        "hardcore",
+        "melodic hardcore",
+        "post-hardcore",
+        "post-rock",
+        "galdakao"
+      ],
+      "url": "https://wearecalathea.bandcamp.com/album/flowers-knives",
+      "cover_url": "https://f4.bcbits.com/img/a2092094928_5.jpg",
+      "album_id": 4127256236,
+      "band_location": "Galdakao, Spain",
+      "source_tags": [
+        "galdakao"
+      ],
+      "discovered_at": "2026-07-12T19:11:37Z"
+    }
+  ],
+  "deferred_oleada2": []
+}
