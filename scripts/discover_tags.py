@@ -378,7 +378,7 @@ def scrape_ficha(session, partial):
     if "<title>Client Challenge</title>" in page:
         raise ContractError(f"Client Challenge en ficha: {url}")
 
-    tags = normalize_tags(TAG_LINK_RE.findall(page))
+    tags = normalize_tags(html_mod.unescape(t) for t in TAG_LINK_RE.findall(page))
     if not tags:
         return None, "sin_tags"
 
