@@ -56,3 +56,4 @@
   border-left: 1px solid var(--papel);
 }
 .ficha-bar .cerrar:hover { background: var(--lima); color: var(--tinta); }
+.ficha-bar .player-mini { grid-column: 1 / -1; }
