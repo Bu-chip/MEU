@@ -341,10 +341,33 @@ def main():
                         help="fichas a cosechar por tag de semilla con resultados")
     parser.add_argument("--reserva-segunda-pasada", type=int, default=25,
                         help="requests reservados para medir tags cosechados")
+    parser.add_argument("--tags", default="",
+                        help="mini-pasada: medir SOLO estos tags (separados por "
+                             "comas), sin semilla ni cosecha de fichas")
     args = parser.parse_args()
 
     OUT_DIR.mkdir(exist_ok=True)
     canon, canon_urls, canon_ids = load_canonical()
+
+    # ---- Modo mini-pasada: solo medición de una lista dada ----------
+    if args.tags:
+        tags = [t.strip() for t in args.tags.split(",") if t.strip()]
+        note(f"Mini-pasada de medición — {len(tags)} tags, presupuesto "
+             f"{MAX_REQUESTS} requests, {DELAY_SECONDS}s entre requests")
+        note()
+        rows = []
+        try:
+            for t in tags:
+                row, _ = measure_tag(t, "mini-pasada", canon_urls, canon_ids)
+                rows.append(row)
+                note(f"  [{_requests_done}/{MAX_REQUESTS}] {row['tag']}: "
+                     f"count={row['result_count']} solape={row['overlap_id']} "
+                     f"eh={row['eh_share']} → {row['verdict']}")
+        except BudgetExhausted:
+            note(f"\n⚠ presupuesto de {MAX_REQUESTS} requests agotado")
+        emit_results(rows, {"mode": "mini-pasada", "tags_pedidos": tags})
+        return 0
+
     seeds = [(tag, cat) for cat, tags in SEEDS.items() for tag in tags]
     note(f"Investigación de tags — presupuesto {MAX_REQUESTS} requests, "
          f"{DELAY_SECONDS}s entre requests")
@@ -436,20 +459,23 @@ def main():
     except BudgetExhausted:
         note(f"\n⚠ presupuesto de {MAX_REQUESTS} requests agotado")
 
-    # ---- Salida ------------------------------------------------
-    payload = {
-        "meta": {
-            "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "budget_used": _requests_done,
-            "budget_max": MAX_REQUESTS,
-            "seeds": {cat: tags for cat, tags in SEEDS.items()},
-            "note": ("Veredictos = propuesta para revisión humana. "
-                     "eh_share = fracción de band_location de la 1ª página "
-                     "que parecen de Euskal Herria; solape medido contra "
-                     "el canónico por album_id y URL normalizada."),
-        },
-        "tags": rows,
+    emit_results(rows, {"seeds": {cat: tags for cat, tags in SEEDS.items()}})
+    return 0
+
+
+def emit_results(rows, extra_meta):
+    """Salida común: JSON al artifact, tabla legible y JSONL a los logs."""
+    meta = {
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "budget_used": _requests_done,
+        "budget_max": MAX_REQUESTS,
+        "note": ("Veredictos = propuesta para revisión humana. "
+                 "eh_share = fracción de band_location de la 1ª página "
+                 "que parecen de Euskal Herria; solape medido contra "
+                 "el canónico por album_id y URL normalizada."),
     }
+    meta.update(extra_meta)
+    payload = {"meta": meta, "tags": rows}
     (OUT_DIR / "tag_candidates.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
@@ -475,7 +501,6 @@ def main():
          f"{len(rows)} tags medidos ===")
     (OUT_DIR / "summary.md").write_text("\n".join(_report_lines) + "\n",
                                         encoding="utf-8")
-    return 0
 
 
 if __name__ == "__main__":
