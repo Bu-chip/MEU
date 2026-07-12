@@ -36,13 +36,6 @@ on:
         type: boolean
         required: false
         default: false
-  # TEMPORAL para el e2e de esta rama (la integración de la sesión de
-  # Claude no puede lanzar workflow_dispatch). Retirar antes de mergear.
-  push:
-    branches: [feat/discover-schedule]
-    paths:
-      - .github/workflows/discover-tags.yml
-      - scripts/discover_tags.py
 
 # contents: write para las ramas discovery-state y candidates/*;
 # pull-requests: write para abrir el PR de candidatos. Main no se toca.
@@ -85,14 +78,9 @@ jobs:
       - name: Descubrimiento
         id: scrape
         run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            # Smoke e2e de la rama de desarrollo: pequeño y con mes propio.
-            BUDGET=45; TAGS="sestao,galdakao"; MONTH="smoke"
-          else
-            BUDGET="${{ inputs.budget || '900' }}"
-            TAGS="${{ inputs.tags }}"
-            MONTH="${{ inputs.month }}"
-          fi
+          BUDGET="${{ inputs.budget || '900' }}"
+          TAGS="${{ inputs.tags }}"
+          MONTH="${{ inputs.month }}"
           # El código de salida se propaga en el último step: antes hay
           # que persistir el estado aunque el scraper haya fallado.
           set +e
