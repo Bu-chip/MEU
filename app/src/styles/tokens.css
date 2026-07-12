@@ -1,0 +1,29 @@
+/* Tokens del diseño congelado (design/meu-*.html). No inventar valores:
+   papel/tinta/lima, Big Shoulders 700-900 uppercase para display,
+   IBM Plex Mono para cuerpo. Sin border-radius, sin sombras. */
+:root {
+  --papel: #F2EFE8;
+  --tinta: #111111;
+  --lima: #A3E635;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --display: 'Big Shoulders', 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 0 !important;
+}
+
+html,
+body {
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--mono);
+}
+
+::selection {
+  background: var(--lima);
+  color: var(--tinta);
+}

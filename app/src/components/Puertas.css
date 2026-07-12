@@ -1,0 +1,34 @@
+nav.puertas {
+  display: flex;
+  align-items: stretch;
+  border-top: 2px solid var(--tinta);
+  border-bottom: 2px solid var(--tinta);
+  margin-top: 14px;
+}
+nav.puertas a.puerta {
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--tinta);
+  font-size: clamp(20px, 3.4vw, 34px);
+  padding: 6px 22px 8px 18px;
+  border-right: 2px solid var(--tinta);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+nav.puertas a.puerta:hover { background: var(--lima); color: var(--tinta); }
+nav.puertas a.activa { background: var(--tinta); color: var(--papel); }
+nav.puertas a.sobre {
+  margin-left: auto;
+  align-self: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--tinta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0 16px;
+  white-space: nowrap;
+}
+nav.puertas a.sobre:hover { background: var(--lima); }

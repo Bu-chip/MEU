@@ -13,6 +13,9 @@ desktop.ini
 # Node modules (si usas npm/node en el futuro)
 node_modules/
 package-lock.json
+# El lockfile de la app SÍ se versiona: npm ci en el workflow de deploy
+# necesita builds reproducibles.
+!app/package-lock.json
 
 # Python
 __pycache__/
