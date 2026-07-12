@@ -1,34 +1,32 @@
 #!/usr/bin/env python3
-"""Sondeo de descubrimiento por tags en Bandcamp — GATE de la Fase 2 (SOLO lectura). v2.
+"""Sondeo de descubrimiento por tags en Bandcamp — GATE de la Fase 2 (SOLO lectura). v3.
 
-El sondeo v1 (run 29197223469) demostró que las páginas /tag/<slug>
-clásicas YA NO EXISTEN: Bandcamp redirige todas a /discover/<slug>
-(shell SPA de ~3 KB sin JSON embebido) y el endpoint antiguo
-api/hub/2/dig_deeper responde {error, error_message}. Anti-bot: ninguno
-desde runners de GitHub (todo 200 con UA de navegador).
+Hallazgos previos:
+  v1 (run 29197223469): /tag/<slug> redirige a /discover/<slug>;
+     api/hub/2/dig_deeper responde {error}. El sistema de hubs no existe.
+  v2 (run 29197367346): la API nueva POST api/discover/1/discover_web
+     FUNCIONA sin desafío (contrato verificado: results con item_url,
+     item_id, band_name, band_location, release_date, primary_image;
+     paginación por cursor; claves result_count/batch_result_count).
+     PERO todas las páginas HTML de bandcamp.com (discover, search)
+     devuelven un shell "Client Challenge" anti-bot de ~3 KB: la
+     búsqueda clásica está muerta como canal de scraping.
 
-Esta v2 sondea (≤10 requests, 1 req/2s) los DOS canales de descubrimiento
-que quedan vivos:
+Esta v3 cierra el gate con ≤10 requests:
+  A. ¿Siguen siendo accesibles las FICHAS de álbum en subdominios de
+     artista (*.bandcamp.com/album/...)? Es la fase 2 del flujo de
+     ingesta y el método probado de scrape_covers.py. Se comprueba una
+     ficha del canónico y una recién descubierta, verificando og:image,
+     bc-page-properties y la extracción de tags (<a class="tag">).
+  B. Volumen por tag de la oleada 1: result_count de discover_web para
+     los tags clave, incluida la prueba del slug con ñ (iruña).
 
-  A. El Discover nuevo: shell de /discover/<tag> + su API JSON
-     (POST bandcamp.com/api/discover/1/discover_web), probando cuerpos
-     candidatos de forma adaptativa y leyendo los mensajes de error de
-     la propia API para caracterizar el contrato real.
-  B. La búsqueda clásica (/search?q=<tag>&item_type=a&page=N), que es de
-     donde salió el dataset original (?from=search&search_sig=...) y
-     sigue siendo HTML renderizado en servidor con paginación por URL.
-
-Todas las respuestas se imprimen (truncadas) a stdout — los logs del job
-son el informe — y las crudas van a probe_out/ como artifact. No escribe
-NADA en data/ ni toca el canónico. Los errores por request no abortan el
-sondeo; exit != 0 solo ante fallo fatal del script.
-
-Uso:
-    python3 scripts/probe_tag_pages.py
+Output: stdout (los logs del job son el informe) + probe_out/ como
+artifact. No escribe nada en data/. Errores por request no abortan.
 """
 
 import argparse
-import html
+import html as html_mod
 import json
 import random
 import re
@@ -37,13 +35,12 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
-from urllib.parse import quote, urlparse
+from urllib.parse import urlparse
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = REPO_ROOT / "data" / "bandcamp_bilbaotags_clean.json"
 OUT_DIR = REPO_ROOT / "probe_out"
 
-# Presupuesto DURO acordado para el gate.
 MAX_REQUESTS = 10
 DELAY_SECONDS = 2.0
 
@@ -57,6 +54,7 @@ HEADERS = {
 }
 
 REQUEST_TIMEOUT = 30
+DISCOVER_API = "https://bandcamp.com/api/discover/1/discover_web"
 
 _requests_done = 0
 _report_lines = []
@@ -76,7 +74,6 @@ def budget_left():
 
 
 def fetch(url, post_json=None, extra_headers=None, save_as=None):
-    """Un request con presupuesto, rate limit y captura de errores."""
     global _requests_done
     if _requests_done >= MAX_REQUESTS:
         raise BudgetExhausted()
@@ -118,8 +115,86 @@ def fetch(url, post_json=None, extra_headers=None, save_as=None):
 
 
 # ------------------------------------------------------------------
-# Dedupe contra el canónico (offline)
+# Parte A: fichas de álbum (reutiliza el parsing de scrape_covers.py)
 # ------------------------------------------------------------------
+
+def meta_content(page, attr, value):
+    tag_re = re.compile(
+        r"<meta\b[^>]*\b{}=[\"']{}[\"'][^>]*>".format(re.escape(attr), re.escape(value)),
+        re.IGNORECASE,
+    )
+    m = tag_re.search(page)
+    if not m:
+        return None
+    content = re.search(r"\bcontent=[\"']([^\"']*)[\"']", m.group(0))
+    return html_mod.unescape(content.group(1)) if content else None
+
+
+def probe_album_page(label, url):
+    note(f"--- ficha: {label} ---")
+    status, body, final = fetch(url, save_as=f"album_{label}.html")
+    if not (isinstance(status, int) and status == 200):
+        note(f"  ✗ status {status}")
+        note()
+        return
+    if "<title>Client Challenge</title>" in body:
+        note("  ✗ CLIENT CHALLENGE también en la ficha — el scrape de fichas está roto")
+        note()
+        return
+    note(f"  ✓ página real ({len(body):,} bytes, sin challenge)")
+    og_image = meta_content(body, "property", "og:image")
+    note(f"  og:image: {og_image}")
+    props_raw = meta_content(body, "name", "bc-page-properties")
+    note(f"  bc-page-properties: {props_raw}")
+    keywords = meta_content(body, "name", "keywords")
+    note(f"  meta keywords: {keywords}")
+
+    # Tags visibles: <a class="tag" href="...">nombre</a>
+    tags = re.findall(r'<a[^>]*class="tag"[^>]*>\s*([^<]+?)\s*</a>', body)
+    note(f"  tags en la página ({len(tags)}): {tags}")
+
+    # Fecha de publicación (para year).
+    m = re.search(r'(released|releases)\s+([A-Z][a-z]+ \d{1,2}, \d{4})', body)
+    if m:
+        note(f"  fecha en la página: '{m.group(0)}'")
+
+    # data-tralbum lleva el JSON completo del release (fuente alternativa).
+    note(f"  data-tralbum presente: {'data-tralbum=' in body}")
+    note()
+
+
+# ------------------------------------------------------------------
+# Parte B: volúmenes por tag vía discover_web
+# ------------------------------------------------------------------
+
+def discover_body(tag):
+    return {"tag_norm_names": [tag], "include_result_types": ["a", "s"],
+            "category_id": 0, "geoname_id": 0, "slice": "new",
+            "cursor": "*", "size": 20}
+
+
+def probe_tag_volume(tag, canon_urls, canon_ids):
+    safe = re.sub(r"[^a-z0-9-]", "_", tag)
+    status, resp, _ = fetch(DISCOVER_API, post_json=discover_body(tag),
+                            save_as=f"discover_{safe}.json")
+    try:
+        p = json.loads(resp)
+    except json.JSONDecodeError:
+        note(f"  {tag}: ✗ no-JSON: {resp[:200]!r}")
+        return
+    if not isinstance(p.get("results"), list):
+        note(f"  {tag}: ✗ sin results: {resp[:300]!r}")
+        return
+    urls = {normalize_url((r.get("item_url") or "")) for r in p["results"]} - {None}
+    ids = {r.get("item_id") for r in p["results"]} - {None}
+    first = p["results"][0] if p["results"] else {}
+    note(f"  {tag}: result_count={p.get('result_count')} "
+         f"batch={p.get('batch_result_count')} | solape 1ª página: "
+         f"{len(urls & canon_urls)}/{len(urls)} URL, {len(ids & canon_ids)}/{len(ids)} id")
+    if first:
+        note(f"    1º: {first.get('band_name')!r} — {first.get('title')!r} "
+             f"[{first.get('band_location')!r}]")
+
 
 def normalize_url(url):
     if not url:
@@ -135,211 +210,36 @@ def load_canonical_keys():
     return urls, ids
 
 
-# ------------------------------------------------------------------
-# Canal A: Discover nuevo
-# ------------------------------------------------------------------
-
-DISCOVER_API = "https://bandcamp.com/api/discover/1/discover_web"
-
-# Cuerpos candidatos, del más completo (hipótesis del contrato del
-# Discover 2023) al mínimo. Los mensajes de error de la API ante campos
-# ausentes/erróneos son parte del resultado del sondeo.
-def candidate_bodies(tag):
-    return [
-        {"tag_norm_names": [tag], "include_result_types": ["a", "s"],
-         "category_id": 0, "geoname_id": 0, "slice": "new",
-         "cursor": "*", "size": 20},
-        {"tag_norm_names": [tag]},
-    ]
-
-
-def extract_result(d):
-    """Normaliza un resultado del discover/search a campos conocidos."""
-    url = d.get("item_url") or d.get("tralbum_url") or d.get("url")
-    return {
-        "url": url,
-        "artist": d.get("band_name") or d.get("artist") or d.get("artist_name"),
-        "title": d.get("title"),
-        "item_id": d.get("item_id") or d.get("id") or d.get("tralbum_id"),
-        "item_type": d.get("item_type") or d.get("result_type"),
-        "location": d.get("band_location") or d.get("location"),
-    }
-
-
-def report_results_list(label, results, canon_urls, canon_ids):
-    note(f"  {label}: {len(results)} resultados")
-    if not results:
-        return
-    note(f"    campos del result[0]: {sorted(results[0].keys())}")
-    for d in results[:3]:
-        r = extract_result(d)
-        note(f"    · {r['artist']!r} — {r['title']!r} → {r['url']}")
-        note(f"      item_id={r['item_id']} type={r['item_type']} location={r['location']!r}")
-    urls = {normalize_url(extract_result(d)["url"]) for d in results} - {None}
-    ids = {extract_result(d)["item_id"] for d in results} - {None}
-    note(f"    solape con canónico: {len(urls & canon_urls)}/{len(urls)} por URL, "
-         f"{len(ids & canon_ids)}/{len(ids)} por album_id")
-
-
-def probe_discover(canon_urls, canon_ids):
-    note("=== CANAL A: Discover nuevo ===")
-    note()
-    # A1. Shell HTML: se imprime entero (es ~3 KB) buscando el contrato
-    # del frontend (endpoints, JSON embebido, bundles).
-    status, body, _ = fetch("https://bandcamp.com/discover/bilbao",
-                            save_as="discover_bilbao.html")
-    if isinstance(status, int) and status == 200:
-        note("  --- shell de /discover/bilbao (completo) ---")
-        for line in body.splitlines():
-            if line.strip():
-                note("  | " + line[:400])
-        note("  --- fin del shell ---")
-    note()
-
-    # A2. API discover_web con cuerpos candidatos (adaptativo).
-    payload = None
-    for i, cand in enumerate(candidate_bodies("bilbao"), 1):
-        note(f"  discover_web intento {i}: {json.dumps(cand, ensure_ascii=False)}")
-        status, resp, _ = fetch(
-            DISCOVER_API, post_json=cand,
-            extra_headers={"Referer": "https://bandcamp.com/discover/bilbao",
-                           "Origin": "https://bandcamp.com",
-                           "X-Requested-With": "XMLHttpRequest"},
-            save_as=f"discover_web_bilbao_try{i}.json")
-        note(f"    respuesta cruda (1500 chars): {resp[:1500]!r}")
-        try:
-            parsed = json.loads(resp)
-        except json.JSONDecodeError:
-            parsed = None
-        if isinstance(parsed, dict) and isinstance(parsed.get("results"), list):
-            payload = parsed
-            note(f"    ✓ contrato encontrado — claves de la respuesta: {sorted(parsed.keys())}")
-            break
-        if budget_left() <= 4:
-            note("    (reservando presupuesto para el canal B; no más intentos)")
-            break
-
-    if payload is None:
-        note("  ✗ discover_web no devolvió resultados con ningún cuerpo candidato")
-        note()
-        return
-
-    report_results_list("discover bilbao p1", payload["results"], canon_urls, canon_ids)
-    for k in ("cursor", "total", "total_count", "batch_result_count", "more_available"):
-        if k in payload:
-            note(f"    {k} = {json.dumps(payload[k])[:200]}")
-    note()
-
-    # A3. Continuidad de paginación con el cursor devuelto.
-    cursor = payload.get("cursor")
-    if cursor and budget_left() > 3:
-        body2 = dict(candidate_bodies("bilbao")[0])
-        body2["cursor"] = cursor
-        note(f"  discover_web página 2 (cursor={str(cursor)[:60]!r}...)")
-        status, resp, _ = fetch(DISCOVER_API, post_json=body2,
-                                save_as="discover_web_bilbao_p2.json")
-        try:
-            p2 = json.loads(resp)
-            if isinstance(p2.get("results"), list):
-                report_results_list("discover bilbao p2", p2["results"],
-                                    canon_urls, canon_ids)
-            else:
-                note(f"    ✗ sin results: {resp[:400]!r}")
-        except json.JSONDecodeError:
-            note(f"    ✗ no-JSON: {resp[:400]!r}")
-        note()
-
-    # A4. Volumen de un segundo tag de la oleada.
-    if budget_left() > 2:
-        note("  discover_web donostia (volumen)")
-        status, resp, _ = fetch(DISCOVER_API,
-                                post_json=candidate_bodies("donostia")[0],
-                                save_as="discover_web_donostia.json")
-        try:
-            pd = json.loads(resp)
-            if isinstance(pd.get("results"), list):
-                report_results_list("discover donostia p1", pd["results"],
-                                    canon_urls, canon_ids)
-                for k in ("total", "total_count", "cursor"):
-                    if k in pd:
-                        note(f"    {k} = {json.dumps(pd[k])[:200]}")
-            else:
-                note(f"    ✗ sin results: {resp[:400]!r}")
-        except json.JSONDecodeError:
-            note(f"    ✗ no-JSON: {resp[:400]!r}")
-        note()
-
-
-# ------------------------------------------------------------------
-# Canal B: búsqueda clásica (origen del dataset)
-# ------------------------------------------------------------------
-
-def probe_search(canon_urls, canon_ids):
-    note("=== CANAL B: búsqueda clásica /search ===")
-    note()
-    for tag, page in (("bilbao", 1), ("donostia", 2)):
-        if budget_left() < 1:
-            note("  (sin presupuesto para más búsquedas)")
-            break
-        url = f"https://bandcamp.com/search?q={quote(tag)}&item_type=a&page={page}"
-        status, body, final = fetch(url, save_as=f"search_{tag}_p{page}.html")
-        if not (isinstance(status, int) and status == 200):
-            note(f"  search {tag} p{page}: ✗ status {status}")
-            continue
-
-        # Resultados: enlaces a álbum con la firma ?from=search.
-        links = re.findall(
-            r'href="(https://[^"/]+\.bandcamp\.com/(?:album|track)/[^"?]+)[^"]*from=search',
-            body)
-        uniq = list(dict.fromkeys(links))
-        note(f"  search {tag} p{page}: {len(uniq)} URLs de resultado con firma from=search")
-        for u in uniq[:3]:
-            note(f"    · {u}")
-        if uniq:
-            norm = {normalize_url(u) for u in uniq}
-            note(f"    solape con canónico: {len(norm & canon_urls)}/{len(norm)} por URL")
-
-        # Estructura y paginación.
-        for pat, label in [
-            (r'class="searchresult', "items 'searchresult'"),
-            (r'class="result-info', "bloques 'result-info'"),
-            (r'class="itemtype"', "campo itemtype"),
-            (r'class="subhead"', "subhead (artista/location)"),
-            (r'class="released"', "campo released (¡año en el listado!)"),
-            (r'class="tags[^"]*"', "campo tags en el listado"),
-            (r'search_page=\d+|&page=\d+', "paginación por URL"),
-            (r'class="pager|class="pagelabel', "bloque de paginación"),
-        ]:
-            n = len(re.findall(pat, body))
-            if n:
-                note(f"    estructura: {n}x {label}")
-
-        # ¿Cuántas páginas dice haber?
-        m = re.findall(r'page=(\d+)', body)
-        if m:
-            note(f"    máxima página referenciada en el HTML: {max(int(x) for x in m)}")
-        note()
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--extra-tags", default="", help="(reservado; sin uso en v2)")
+    parser.add_argument("--extra-tags", default="", help="(reservado; sin uso en v3)")
     parser.parse_args()
 
     OUT_DIR.mkdir(exist_ok=True)
     canon_urls, canon_ids = load_canonical_keys()
-    note(f"Sondeo v2 — presupuesto {MAX_REQUESTS} requests, {DELAY_SECONDS}s entre requests")
-    note(f"Canónico: {len(canon_urls)} URLs normalizadas, {len(canon_ids)} album_ids")
+    note(f"Sondeo v3 — presupuesto {MAX_REQUESTS} requests, {DELAY_SECONDS}s entre requests")
     note()
 
     try:
-        probe_discover(canon_urls, canon_ids)
-        probe_search(canon_urls, canon_ids)
+        note("=== A: ¿fichas de álbum accesibles? ===")
+        note()
+        # Una ficha veterana del canónico (id 0) y una descubierta en v2.
+        probe_album_page("canonico", "https://cobrarocks.bandcamp.com/album/henko")
+        probe_album_page("nueva", "https://zaratazarautz.bandcamp.com/album/1991-2026-05-22")
+
+        note("=== B: volumen por tag (discover_web, slice=new) ===")
+        note()
+        for tag in ("bilbao", "donostia", "gasteiz", "iruña", "euskal-herria",
+                    "euskadi", "basque"):
+            if budget_left() < 1:
+                note("  (presupuesto agotado)")
+                break
+            probe_tag_volume(tag, canon_urls, canon_ids)
     except BudgetExhausted:
         note(f"\n⚠ presupuesto de {MAX_REQUESTS} requests agotado; sondeo truncado")
 
     note()
-    note(f"=== Fin del sondeo v2: {_requests_done}/{MAX_REQUESTS} requests usados ===")
+    note(f"=== Fin del sondeo v3: {_requests_done}/{MAX_REQUESTS} requests usados ===")
     (OUT_DIR / "summary.md").write_text("\n".join(_report_lines) + "\n",
                                         encoding="utf-8")
     return 0
