@@ -1,0 +1,5 @@
+.error-datos {
+  font-size: 11px;
+  padding: 24px 18px;
+  border-bottom: 2px solid var(--tinta);
+}
