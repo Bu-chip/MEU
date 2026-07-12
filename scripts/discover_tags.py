@@ -235,11 +235,15 @@ def load_canonical_keys():
 
 
 def load_rejected():
-    """data/rejected.json: {url_normalizada: {...}}. Puede no existir aún."""
+    """data/rejected.json: {"meta": {...}, "rejected": {url_normalizada: {...}}}.
+
+    La convención completa está documentada en el meta del propio
+    fichero. Puede no existir en checkouts antiguos.
+    """
     if not REJECTED_FILE.exists():
         return set()
     data = json.loads(REJECTED_FILE.read_text(encoding="utf-8"))
-    return set(data.keys())
+    return set(data.get("rejected", {}).keys())
 
 
 def load_json_or(path, default):
