@@ -113,6 +113,11 @@
         "euskalmusika",
         "orereta"
       ]
+    },
+    "decisiones": {
+      "fecha": "2026-07-12",
+      "resumen": "Lista aprobada por Miguel: los 76 'incluir' del run en bloque; fuera vitoria/durango/donosti (colisión confirmada por location real); dentro los sospechosos de señal débil (araba, alava, tafalla, llodio, estella, altsasu, baztan, guipuzcoa, basque-rock) con captura de band_location OBLIGATORIA en el PR de candidatos (riesgo de colisión: araba='coche' en turco, etc.). Duplicados por normalización de la API: consultar solo una forma (san-sebastian, pais-vasco). iruña e iruñea se mantienen como tags distintos. Iparralde entero queda para la oleada 2 (lo que arrastre basque-country se filtra por band_location en el PR). Los 25 de meta.sin_medir no entran a ciegas: mini-pasada de medición primero (donostia-san-sebastián exento: duplicado por acentos del ya medido donostia-san-sebastian).",
+      "campo": "final = incluir|fuera refleja esta decisión; verdict/verdict_auto conservan la propuesta del robot para trazabilidad."
     }
   },
   "tags": [
@@ -145,7 +150,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "donosti",
@@ -177,7 +183,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "sospechoso",
-      "audit": "confirmado: top_locations Madrid/Girona — uso genérico del tag por gente de fuera"
+      "audit": "confirmado: top_locations Madrid/Girona — uso genérico del tag por gente de fuera",
+      "final": "fuera"
     },
     {
       "tag": "san-sebastian",
@@ -209,7 +216,8 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "audit": "mayoría EH; colisiones menores (San Sebastián PR, San Francisco)"
+      "audit": "mayoría EH; colisiones menores (San Sebastián PR, San Francisco)",
+      "final": "incluir"
     },
     {
       "tag": "san-sebastián",
@@ -242,7 +250,8 @@
       "verdict_auto": "incluir",
       "alias_of": "san-sebastian",
       "verdict": "duplicado",
-      "audit": "la API pliega acentos: mismo tag que 'san-sebastian' (result_count idéntico)"
+      "audit": "la API pliega acentos: mismo tag que 'san-sebastian' (result_count idéntico)",
+      "final": "fuera"
     },
     {
       "tag": "gasteiz",
@@ -273,7 +282,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "vitoria",
@@ -304,7 +314,8 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "sospechoso",
-      "audit": "top_locations = Vitória (Brasil); el contenido EH ya se cubre vía vitoria-gasteiz/gasteiz"
+      "audit": "top_locations = Vitória (Brasil); el contenido EH ya se cubre vía vitoria-gasteiz/gasteiz",
+      "final": "fuera"
     },
     {
       "tag": "vitoria-gasteiz",
@@ -334,7 +345,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "iruña",
@@ -365,7 +377,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "iruñea",
@@ -394,7 +407,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "pamplona",
@@ -424,7 +438,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bilbao",
@@ -455,7 +470,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bilbo",
@@ -486,7 +502,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bizkaia",
@@ -519,7 +536,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "solape 6 con canónico; locations Sopelana/Bilbao — 'El Bierzo' es un sello, no colisión"
+      "audit": "solape 6 con canónico; locations Sopelana/Bilbao — 'El Bierzo' es un sello, no colisión",
+      "final": "incluir"
     },
     {
       "tag": "vizcaya",
@@ -550,7 +568,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "gipuzkoa",
@@ -581,7 +600,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "guipuzcoa",
@@ -612,7 +632,8 @@
         }
       ],
       "verdict_auto": "sospechoso",
-      "verdict": "sospechoso"
+      "verdict": "sospechoso",
+      "final": "incluir"
     },
     {
       "tag": "araba",
@@ -636,7 +657,8 @@
         }
       ],
       "verdict_auto": "sospechoso",
-      "verdict": "sospechoso"
+      "verdict": "sospechoso",
+      "final": "incluir"
     },
     {
       "tag": "alava",
@@ -660,7 +682,8 @@
         }
       ],
       "verdict_auto": "sospechoso",
-      "verdict": "sospechoso"
+      "verdict": "sospechoso",
+      "final": "incluir"
     },
     {
       "tag": "nafarroa",
@@ -691,7 +714,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "navarra",
@@ -722,7 +746,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "euskadi",
@@ -753,7 +778,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "euskal-herria",
@@ -785,7 +811,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "eh_share infravalorado: top_locations son 'PV, Spain', Arratia Nerbioi, Pamplona — todo EH"
+      "audit": "eh_share infravalorado: top_locations son 'PV, Spain', Arratia Nerbioi, Pamplona — todo EH",
+      "final": "incluir"
     },
     {
       "tag": "basque",
@@ -817,7 +844,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "eh_share infravalorado: PV/Portugalete/Oiartzun; algo de diáspora, filtrable por location"
+      "audit": "eh_share infravalorado: PV/Portugalete/Oiartzun; algo de diáspora, filtrable por location",
+      "final": "incluir"
     },
     {
       "tag": "basque-country",
@@ -849,7 +877,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "921 releases; mezcla EH + Iparralde + diáspora — el filtro por location en el PR decide (Iparralde = oleada futura)"
+      "audit": "921 releases; mezcla EH + Iparralde + diáspora — el filtro por location en el PR decide (Iparralde = oleada futura)",
+      "final": "incluir"
     },
     {
       "tag": "pais-vasco",
@@ -880,7 +909,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "euskal-musika",
@@ -913,7 +943,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "eh_share infravalorado: PV/Ondarroa/Arratia; solape con canónico"
+      "audit": "eh_share infravalorado: PV/Ondarroa/Arratia; solape con canónico",
+      "final": "incluir"
     },
     {
       "tag": "basque-music",
@@ -945,7 +976,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "eh_share infravalorado: PV/Donostia/Arrigorriaga"
+      "audit": "eh_share infravalorado: PV/Donostia/Arrigorriaga",
+      "final": "incluir"
     },
     {
       "tag": "euskaraz",
@@ -977,7 +1009,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "eh_share infravalorado: PV/Andoain/Bermeo"
+      "audit": "eh_share infravalorado: PV/Andoain/Bermeo",
+      "final": "incluir"
     },
     {
       "tag": "euskal-rock",
@@ -1009,7 +1042,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "aprobado en oleada 1; eh_share bajo por heurística estrecha, sin evidencia de colisión"
+      "audit": "aprobado en oleada 1; eh_share bajo por heurística estrecha, sin evidencia de colisión",
+      "final": "incluir"
     },
     {
       "tag": "euskal-kantagintza",
@@ -1039,7 +1073,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "barakaldo",
@@ -1070,7 +1105,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "getxo",
@@ -1099,7 +1135,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "santurtzi",
@@ -1128,7 +1165,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "portugalete",
@@ -1159,7 +1197,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "sestao",
@@ -1188,7 +1227,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "basauri",
@@ -1218,7 +1258,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "galdakao",
@@ -1247,7 +1288,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "leioa",
@@ -1276,7 +1318,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "durango",
@@ -1308,7 +1351,8 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "sospechoso",
-      "audit": "top_locations = Durango (Colorado/México); el Durango vasco queda mezclado — requiere filtro por location"
+      "audit": "top_locations = Durango (Colorado/México); el Durango vasco queda mezclado — requiere filtro por location",
+      "final": "fuera"
     },
     {
       "tag": "gernika",
@@ -1340,7 +1384,8 @@
       ],
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "Guernica/Gernika Lumo (Spain) son EH; la grafía 'Guernica' no estaba en los términos"
+      "audit": "Guernica/Gernika Lumo (Spain) son EH; la grafía 'Guernica' no estaba en los términos",
+      "final": "incluir"
     },
     {
       "tag": "bermeo",
@@ -1371,7 +1416,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "ondarroa",
@@ -1400,7 +1446,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "lekeitio",
@@ -1431,7 +1478,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "mungia",
@@ -1461,7 +1509,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "errenteria",
@@ -1491,7 +1540,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "eibar",
@@ -1520,7 +1570,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "tolosa",
@@ -1550,7 +1601,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "hernani",
@@ -1579,7 +1631,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "azpeitia",
@@ -1610,7 +1663,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "arrasate",
@@ -1640,7 +1694,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "zarautz",
@@ -1669,7 +1724,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "irun",
@@ -1701,7 +1757,8 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "audit": "mayoría Irun (Gipuzkoa) pero hay Irun (Nigeria) y spam de un sello de Zaragoza — revisar location en el PR"
+      "audit": "mayoría Irun (Gipuzkoa) pero hay Irun (Nigeria) y spam de un sello de Zaragoza — revisar location en el PR",
+      "final": "incluir"
     },
     {
       "tag": "hondarribia",
@@ -1730,7 +1787,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "oñati",
@@ -1761,7 +1819,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "zumaia",
@@ -1792,7 +1851,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bergara",
@@ -1823,7 +1883,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "oiartzun",
@@ -1853,7 +1914,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "laudio",
@@ -1884,7 +1946,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "llodio",
@@ -1914,7 +1977,8 @@
         }
       ],
       "verdict_auto": "sospechoso",
-      "verdict": "sospechoso"
+      "verdict": "sospechoso",
+      "final": "incluir"
     },
     {
       "tag": "amurrio",
@@ -1943,7 +2007,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "tudela",
@@ -1972,7 +2037,8 @@
         }
       ],
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "tafalla",
@@ -2001,7 +2067,8 @@
         }
       ],
       "verdict_auto": "sospechoso",
-      "verdict": "sospechoso"
+      "verdict": "sospechoso",
+      "final": "incluir"
     },
     {
       "tag": "lizarra",
@@ -2017,7 +2084,8 @@
       ],
       "sample": [],
       "verdict_auto": "descartar",
-      "verdict": "descartar"
+      "verdict": "descartar",
+      "final": "fuera"
     },
     {
       "tag": "estella",
@@ -2041,7 +2109,8 @@
         }
       ],
       "verdict_auto": "sospechoso",
-      "verdict": "sospechoso"
+      "verdict": "sospechoso",
+      "final": "incluir"
     },
     {
       "tag": "altsasu",
@@ -2065,7 +2134,8 @@
         }
       ],
       "verdict_auto": "sospechoso",
-      "verdict": "sospechoso"
+      "verdict": "sospechoso",
+      "final": "incluir"
     },
     {
       "tag": "baztan",
@@ -2089,7 +2159,8 @@
         }
       ],
       "verdict_auto": "sospechoso",
-      "verdict": "sospechoso"
+      "verdict": "sospechoso",
+      "final": "incluir"
     },
     {
       "tag": "euskara",
@@ -2122,7 +2193,8 @@
       "harvest_freq": 6,
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "eh_share infravalorado: PV/Tolosa/Arratia"
+      "audit": "eh_share infravalorado: PV/Tolosa/Arratia",
+      "final": "incluir"
     },
     {
       "tag": "donostia-san-sebastian",
@@ -2153,7 +2225,8 @@
       ],
       "harvest_freq": 4,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "euskal",
@@ -2185,7 +2258,8 @@
       ],
       "harvest_freq": 3,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "euskera",
@@ -2217,7 +2291,8 @@
       ],
       "harvest_freq": 2,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "país-vasco",
@@ -2251,7 +2326,8 @@
       "verdict_auto": "incluir",
       "alias_of": "pais-vasco",
       "verdict": "duplicado",
-      "audit": "la API pliega acentos: mismo tag que 'pais-vasco' (result_count idéntico)"
+      "audit": "la API pliega acentos: mismo tag que 'pais-vasco' (result_count idéntico)",
+      "final": "fuera"
     },
     {
       "tag": "andoain",
@@ -2283,7 +2359,8 @@
       "harvest_freq": 2,
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "locations Andoain/Zarautz — EH claro, término ausente de la heurística"
+      "audit": "locations Andoain/Zarautz — EH claro, término ausente de la heurística",
+      "final": "incluir"
     },
     {
       "tag": "basque-rock",
@@ -2313,7 +2390,8 @@
       ],
       "harvest_freq": 2,
       "verdict_auto": "sospechoso",
-      "verdict": "sospechoso"
+      "verdict": "sospechoso",
+      "final": "incluir"
     },
     {
       "tag": "amorebieta",
@@ -2338,7 +2416,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "banda-femenina-bilbao",
@@ -2363,7 +2442,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "basque-alt-rock",
@@ -2388,7 +2468,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "basque-folk",
@@ -2422,7 +2503,8 @@
       "harvest_freq": 1,
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "solape con canónico; eh_share infravalorado"
+      "audit": "solape con canónico; eh_share infravalorado",
+      "final": "incluir"
     },
     {
       "tag": "bilbainadak",
@@ -2447,7 +2529,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bilbainadas",
@@ -2472,7 +2555,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bilbaokultura",
@@ -2497,7 +2581,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bilbaomusikak",
@@ -2528,7 +2613,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bilbaoudala",
@@ -2553,7 +2639,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bilbo-zaharra",
@@ -2583,7 +2670,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bilbocore",
@@ -2608,7 +2696,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "bilboriginal",
@@ -2633,7 +2722,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "cantante-vasca",
@@ -2658,7 +2748,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "crudobilbao",
@@ -2692,7 +2783,8 @@
       "harvest_freq": 1,
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "solape 2 con canónico; tag de escena bilbaína"
+      "audit": "solape 2 con canónico; tag de escena bilbaína",
+      "final": "incluir"
     },
     {
       "tag": "enkarterri",
@@ -2724,7 +2816,8 @@
       "harvest_freq": 1,
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "comarca de Bizkaia; locations Enkarterri (Spain)"
+      "audit": "comarca de Bizkaia; locations Enkarterri (Spain)",
+      "final": "incluir"
     },
     {
       "tag": "ermua",
@@ -2757,7 +2850,8 @@
       "harvest_freq": 1,
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
-      "audit": "locations Ermua (Spain) — EH claro, término ausente"
+      "audit": "locations Ermua (Spain) — EH claro, término ausente",
+      "final": "incluir"
     },
     {
       "tag": "euskal-rapa",
@@ -2782,7 +2876,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     },
     {
       "tag": "euskal-wave",
@@ -2812,7 +2907,8 @@
       ],
       "harvest_freq": 1,
       "verdict_auto": "incluir",
-      "verdict": "incluir"
+      "verdict": "incluir",
+      "final": "incluir"
     }
   ]
 }
