@@ -2,19 +2,32 @@ import { useState, useMemo } from 'react'
 import { getIndices } from '../utils/indices.js'
 import { shuffle, muroLibre, alAzarDistinto, TAM_MURO } from '../utils/azar.js'
 import { FichaBar } from '../components/FichaBar.jsx'
+import { miniatura } from '../utils/portadas.js'
 import './Explorar.css'
 
-// Spec congelada: design/meu-explorar-v8-deriva.html. Muro tipográfico
-// (sin portadas, decisión 1), tres mandos de deriva, mini-ficha inferior
-// como destino del click. El estado del muro es efímero: no va a la URL.
+// Spec congelada: design/meu-explorar-v8-deriva.html. Muro tipográfico,
+// tres mandos de deriva, mini-ficha inferior como destino del click. El
+// estado del muro es efímero: no va a la URL. Enmienda aprobada a la
+// decisión 1: v-portada como variante minoritaria (~1 de cada 4-5), con
+// el mismo tratamiento .tratada de la FICHA — el carácter del muro sigue
+// siendo tipográfico.
 
-// Rotación de variantes tipográficas del mockup, por posición en el muro.
+// Rotación de variantes por posición en el muro: las tipográficas del
+// mockup más dos v-portada por vuelta de 9 (≈1 de cada 4-5 tiles).
 const VARIANTES = [
-  'v-inicial', 'v-negra', 'v-titulo', 'v-inicial',
-  'v-split', 'v-negra', 'v-inicial', 'v-titulo',
+  'v-inicial', 'v-negra', 'v-portada', 'v-titulo', 'v-split',
+  'v-inicial', 'v-portada', 'v-negra', 'v-titulo',
 ]
 
+// Sustitutas tipográficas para los discos sin cover_url (27) o con la
+// imagen rota: estables por disco para que regenerar el muro no baile.
+const RESERVAS = ['v-inicial', 'v-negra', 'v-titulo', 'v-split']
+
 function Tile({ album, variante, onAbrir }) {
+  const [rota, setRota] = useState(false)
+  if (variante === 'v-portada' && (!album.cover_url || rota)) {
+    variante = RESERVAS[album.id % RESERVAS.length]
+  }
   const inicial = (album.artist || '?').trim().charAt(0).toUpperCase()
   const metaGY = (album.genre || '') + (album.year ? ' · ' + album.year : '')
 
@@ -41,6 +54,19 @@ function Tile({ album, variante, onAbrir }) {
         </>
       )}
       {variante === 'v-titulo' && <div className="big">{album.title}</div>}
+      {variante === 'v-portada' && (
+        <>
+          <img
+            className="tratada"
+            src={miniatura(album.cover_url)}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            onError={() => setRota(true)}
+          />
+          <div className="pa">{album.artist}</div>
+        </>
+      )}
       <div className="meta">
         <div>
           <div className="a">{album.artist}</div>

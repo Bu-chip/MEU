@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './Portada.css'
 
-// Portada de la FICHA (único lugar con imagen: decisión 1 de Fase 0).
-// Tratamiento CSS aprobado (decisión 3): grayscale + contrast + multiply
-// sobre papel — nunca foto limpia. Los null (27: 11 borrados + 16 sin
-// página) y los errores de carga caen en el hueco honesto del mockup.
-// La URL canónica _5 (~700px) basta para la columna de ≤420px; derivar
-// otros sufijos del CDN queda pendiente de verificación en producción.
+// Portada de la FICHA. Tratamiento CSS aprobado (decisión 3): grayscale
+// + contrast + multiply sobre papel — nunca foto limpia (clase .tratada,
+// compartida con las tiles v-portada del muro tras la enmienda a la
+// decisión 1). Los null (27: 11 borrados + 16 sin página) y los errores
+// de carga caen en el hueco honesto del mockup. La URL canónica _5
+// (~700px) basta para la columna de ≤420px; la escalera de sufijos del
+// CDN vive en utils/portadas.js.
 export function Portada({ album }) {
   const [rota, setRota] = useState(false)
 
@@ -25,6 +26,7 @@ export function Portada({ album }) {
   return (
     <div className="portada">
       <img
+        className="tratada"
         src={album.cover_url}
         alt={`Portada de ${album.title}`}
         loading="lazy"

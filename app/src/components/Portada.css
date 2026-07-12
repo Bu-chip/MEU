@@ -10,7 +10,10 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  /* tratamiento aprobado: tinta sobre papel, nunca foto limpia */
+}
+/* tratamiento aprobado: tinta sobre papel, nunca foto limpia.
+   Lo comparten la portada de la FICHA y las tiles v-portada del muro. */
+img.tratada {
   filter: grayscale(1) contrast(1.18) brightness(1.02);
   mix-blend-mode: multiply;
 }
