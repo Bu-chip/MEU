@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "que_es": "Lista de exclusión persistente del scraper de descubrimiento (scripts/discover_tags.py): discos rechazados por Miguel en la revisión de PRs de candidatos, para que ninguna pasada futura vuelva a proponerlos.",
+        "convencion": "rejected = {url_normalizada: {reason, date, pr}}. La clave es la misma del dedupe del scraper: host en minúsculas + path sin barra final, sin query ni fragmento (p. ej. 'artista.bandcamp.com/album/titulo'). reason = motivo corto legible; date = YYYY-MM-DD de la decisión; pr = número del PR de candidatos donde se rechazó.",
+        "flujo": "Al cerrar cada PR de candidatos: toda fila eliminada del JSON de candidatos durante la revisión se apunta aquí (a mano o semiautomatizado en el futuro). Este fichero SÍ se versiona en main, a diferencia de candidates_*.json y discovery_state.json.",
+        "ejemplo": {
+            "artista.bandcamp.com/album/ejemplo": {
+                "reason": "banda de fuera de CAV+Navarra (tag basque genérico)",
+                "date": "2026-07-12",
+                "pr": 21
+            }
+        }
+    },
+    "rejected": {}
+}
