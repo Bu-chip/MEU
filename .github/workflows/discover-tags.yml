@@ -185,9 +185,17 @@ jobs:
           OPEN=$(gh pr list --head "$BR" --state open --json number --jq '.[].number' | head -1)
           if [ "$PUSHED" = "1" ]; then
             if [ -z "$OPEN" ]; then
-              gh pr create --head "$BR" --base main \
-                --title "Candidatos ${MONTH}: ${TOTAL} discos para revisión" \
-                --body-file /tmp/pr-body.md
+              # Requiere "Allow GitHub Actions to create and approve pull
+              # requests" (Settings → Actions → General). Si está apagado,
+              # los candidatos quedan a salvo en la rama y el run avisa
+              # con el enlace en lugar de fallar.
+              if gh pr create --head "$BR" --base main \
+                   --title "Candidatos ${MONTH}: ${TOTAL} discos para revisión" \
+                   --body-file /tmp/pr-body.md; then
+                echo "PR de candidatos abierto"
+              else
+                echo "::warning::No se pudo abrir el PR automáticamente. Activa 'Allow GitHub Actions to create and approve pull requests' en Settings → Actions → General. Los candidatos están en la rama ${BR}: https://github.com/${{ github.repository }}/compare/main...${BR}"
+              fi
             else
               gh pr edit "$OPEN" --body-file /tmp/pr-body.md
               echo "PR #${OPEN} existente actualizado"
