@@ -1,5 +1,13 @@
-.error-datos {
+.error-datos,
+.cargando {
   font-size: 11px;
   padding: 24px 18px;
   border-bottom: 2px solid var(--tinta);
+}
+
+/* Pie de página común: el padding inferior deja sitio a la mini-ficha fija. */
+.pie {
+  padding: 14px 18px 90px 18px;
+  font-size: 10px;
+  line-height: 1.7;
 }

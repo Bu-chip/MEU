@@ -17,6 +17,34 @@ export function parseRoute(hash) {
   return { page: 'explorar', id: null, params }
 }
 
+// Navegación con entrada en el historial (clicks discretos: facetas,
+// artista, chips) — el botón atrás deshace el gesto.
+export function navegar(hash) {
+  window.location.hash = hash
+}
+
+// Sustitución sin entrada en el historial (tecleo en la búsqueda): la URL
+// sigue siendo compartible pero atrás no repasa cada pulsación. Safari
+// además ratelimita replaceState, de ahí el debounce en quien llama.
+export function reemplazar(hash) {
+  const url = new URL(window.location.href)
+  url.hash = hash
+  window.history.replaceState(null, '', url)
+  window.dispatchEvent(new HashChangeEvent('hashchange'))
+}
+
+// Construye #/archivo?… con los filtros no vacíos (esquema de Fase 0).
+export function hashArchivo({ q, genero, anio, tag, artista } = {}) {
+  const params = new URLSearchParams()
+  if (q && q.trim()) params.set('q', q.trim())
+  if (genero) params.set('genero', genero)
+  if (anio) params.set('anio', String(anio))
+  if (tag) params.set('tag', tag)
+  if (artista) params.set('artista', artista)
+  const qs = params.toString()
+  return qs ? `#/archivo?${qs}` : '#/archivo'
+}
+
 export function useHashRoute() {
   const [hash, setHash] = useState(() => window.location.hash)
 

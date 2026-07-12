@@ -25,7 +25,27 @@ export function getIndices(archive) {
     (tag) => tagIndex.get(tag).length >= UMBRAL_ESTILOS,
   )
 
-  idx = { tagIndex, tagsElegibles }
+  // Índice de artistas del ARCHIVO: [nombre, nº releases], ordenado como
+  // el mockup (case-insensitive), no como archive.artists (orden bruto
+  // por codepoint, que separa mayúsculas de minúsculas).
+  const conteoArtistas = new Map()
+  for (const album of archive.albums) {
+    conteoArtistas.set(album.artist, (conteoArtistas.get(album.artist) ?? 0) + 1)
+  }
+  const artistas = [...conteoArtistas.entries()].sort((x, y) =>
+    x[0].toLowerCase().localeCompare(y[0].toLowerCase()),
+  )
+
+  // Facetas de género: [género, nº releases] por frecuencia (los null fuera).
+  const conteoGeneros = new Map()
+  for (const album of archive.albums) {
+    if (album.genre) {
+      conteoGeneros.set(album.genre, (conteoGeneros.get(album.genre) ?? 0) + 1)
+    }
+  }
+  const generos = [...conteoGeneros.entries()].sort((x, y) => y[1] - x[1])
+
+  idx = { tagIndex, tagsElegibles, artistas, generos }
   cache.set(archive, idx)
   return idx
 }
