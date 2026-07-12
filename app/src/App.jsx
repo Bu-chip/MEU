@@ -10,23 +10,28 @@ import './App.css'
 const PAGINAS = {
   explorar: Explorar,
   archivo: Archivo,
-  disco: Ficha,
 }
 
 export default function App() {
   const route = useHashRoute()
   const { archive, error } = useArchive()
-  const Pagina = PAGINAS[route.page]
 
+  if (error) {
+    return <p className="error-datos">error al cargar el archivo: {error}</p>
+  }
+
+  // La FICHA no lleva header ni puertas: abre con su barra de retorno
+  // (spec meu-ficha-v1).
+  if (route.page === 'disco') {
+    return <Ficha route={route} archive={archive} />
+  }
+
+  const Pagina = PAGINAS[route.page]
   return (
     <>
       <Header archive={archive} size={route.page === 'explorar' ? 'grande' : 'compacta'} />
       <Puertas activa={route.page} />
-      {error ? (
-        <p className="error-datos">error al cargar el archivo: {error}</p>
-      ) : (
-        <Pagina route={route} archive={archive} />
-      )}
+      <Pagina route={route} archive={archive} />
     </>
   )
 }

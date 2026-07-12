@@ -1,0 +1,42 @@
+.portada {
+  border-right: 2px solid var(--tinta);
+  aspect-ratio: 1 / 1;
+  position: relative;
+  background: var(--papel);
+  overflow: hidden;
+}
+.portada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* tratamiento aprobado: tinta sobre papel, nunca foto limpia */
+  filter: grayscale(1) contrast(1.18) brightness(1.02);
+  mix-blend-mode: multiply;
+}
+.portada.vacia {
+  background: var(--tinta);
+  color: var(--papel);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px;
+}
+.portada.vacia .ph {
+  font-family: var(--display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(40px, 8vw, 96px);
+  line-height: .86;
+  word-break: break-word;
+}
+.portada.vacia .aviso {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 8px;
+  letter-spacing: .14em;
+  border: 1px solid var(--papel);
+  padding: 3px 6px;
+  opacity: .7;
+}

@@ -45,7 +45,11 @@ export function getIndices(archive) {
   }
   const generos = [...conteoGeneros.entries()].sort((x, y) => y[1] - x[1])
 
-  idx = { tagIndex, tagsElegibles, artistas, generos }
+  // Los id del archivo son estables y únicos pero NO contiguos (0..2395
+  // con 32 huecos de bajas históricas): Map, nunca índice de array.
+  const byId = new Map(archive.albums.map((a) => [a.id, a]))
+
+  idx = { tagIndex, tagsElegibles, artistas, generos, byId }
   cache.set(archive, idx)
   return idx
 }

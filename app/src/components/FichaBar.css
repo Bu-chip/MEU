@@ -30,6 +30,15 @@
 }
 .ficha-bar a { color: var(--papel); font-size: 11px; text-decoration: underline; }
 .ficha-bar a:hover { background: var(--lima); color: var(--tinta); }
+.ficha-bar a.ir-ficha {
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid var(--papel);
+  padding: 2px 10px;
+}
 .ficha-bar .stub { font-size: 9px; opacity: .55; }
 .ficha-bar .cerrar {
   position: absolute;
