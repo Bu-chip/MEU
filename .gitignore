@@ -36,6 +36,9 @@ ENV/
 # scrape-covers-test (el workflow hace git add -f), nunca a main.
 data/covers.json
 
+# Output del sondeo de páginas de tag: viaja solo como artifact.
+probe_out/
+
 # Build outputs (para futuras compilaciones)
 dist/
 build/
