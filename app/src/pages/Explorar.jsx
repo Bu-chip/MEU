@@ -5,19 +5,35 @@ import { FichaBar } from '../components/FichaBar.jsx'
 import { miniatura } from '../utils/portadas.js'
 import './Explorar.css'
 
-// Spec congelada: design/meu-explorar-v8-deriva.html. Muro tipográfico,
-// tres mandos de deriva, mini-ficha inferior como destino del click. El
-// estado del muro es efímero: no va a la URL. Enmienda aprobada a la
-// decisión 1: v-portada como variante minoritaria (~1 de cada 4-5), con
-// el mismo tratamiento .tratada de la FICHA — el carácter del muro sigue
-// siendo tipográfico.
+// Spec congelada: design/meu-explorar-v8-deriva.html. Tres mandos de
+// deriva, mini-ficha inferior como destino del click. El estado del
+// muro es efímero: no va a la URL. Enmienda aprobada a la decisión 1:
+// v-portada con el mismo tratamiento .tratada de la FICHA; el muro se
+// lee como retícula de carátulas con la tipografía de contrapunto.
 
-// Rotación de variantes por posición en el muro: las tipográficas del
-// mockup más dos v-portada por vuelta de 9 (≈1 de cada 4-5 tiles).
-const VARIANTES = [
-  'v-inicial', 'v-negra', 'v-portada', 'v-titulo', 'v-split',
-  'v-inicial', 'v-portada', 'v-negra', 'v-titulo',
+// Proporción de v-portada en el muro: 9/17 ≈ la mitad (~28-31 covers
+// de 60, descontando los discos sin cover_url, que siempre caen
+// tipográficos). Afinar es tocar solo esta fracción (6/17 ≈ un tercio,
+// 11/17 ≈ dos tercios…), pero MANTENER el denominador impar y primo:
+// la retícula tiene 3-16 columnas según el ancho y con un ratio de
+// vuelta par (1/2 exacto, 1/4…) el patrón se alinea con las columnas
+// y salen rayas verticales de portadas.
+const RATIO_PORTADA = 9 / 17
+
+// Rotación tipográfica del mockup: ocupa los huecos que deja v-portada.
+const TIPOGRAFICAS = [
+  'v-inicial', 'v-negra', 'v-titulo', 'v-inicial',
+  'v-split', 'v-negra', 'v-inicial', 'v-titulo',
 ]
+
+// Variante por posición en el muro: v-portada repartida al RATIO_PORTADA
+// (acumulador tipo Bresenham), el resto recorre la rotación tipográfica
+// sin saltarse ninguna.
+function varianteEn(i) {
+  const previas = Math.floor(i * RATIO_PORTADA)
+  if (Math.floor((i + 1) * RATIO_PORTADA) > previas) return 'v-portada'
+  return TIPOGRAFICAS[(i - previas) % TIPOGRAFICAS.length]
+}
 
 // Sustitutas tipográficas para los discos sin cover_url (27) o con la
 // imagen rota: estables por disco para que regenerar el muro no baile.
@@ -171,7 +187,7 @@ export function Explorar({ archive }) {
           <Tile
             key={album.id}
             album={album}
-            variante={VARIANTES[i % VARIANTES.length]}
+            variante={varianteEn(i)}
             onAbrir={() => setSeleccion(album)}
           />
         ))}
