@@ -1,0 +1,47 @@
+name: Research tags (Bandcamp)
+
+# Investigación de tags territoriales de Euskal Herria para el scraper
+# de descubrimiento: mide result_count/solape/locations de cada tag de
+# la semilla vía discover_web y cosecha tags nuevos desde unas pocas
+# fichas. SOLO LECTURA sobre el repo; presupuesto duro de 200 requests
+# a 1 req/2s (~8 min). Resultado: artifact + tabla y JSONL en los logs.
+
+on:
+  workflow_dispatch:
+  # La integración de la sesión de Claude no puede lanzar
+  # workflow_dispatch (403 actions:write); el push del script en la
+  # rama de trabajo hace de disparador, acotado por branches+paths.
+  push:
+    branches: [claude/euskadi-catalog-expansion-choh0j]
+    paths:
+      - scripts/research_tags.py
+      - .github/workflows/research-tags.yml
+
+permissions:
+  contents: read
+
+# Mismo group que scrape-covers: jamás dos scrapes a la vez contra Bandcamp.
+concurrency:
+  group: scrape-covers
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    # 200 requests x ~2,2s ≈ 8 min; margen holgado.
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Investigación (≤200 requests, 1 req/2s)
+        run: python3 scripts/research_tags.py
+
+      # if: always() para conservar el resultado parcial si algo falla.
+      - name: Subir artifact con el resultado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tag-candidates
+          path: probe_out/
+          if-no-files-found: warn
