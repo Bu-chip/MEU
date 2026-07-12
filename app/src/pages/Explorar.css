@@ -154,6 +154,27 @@ button#m-discos:hover { background: var(--lima); color: var(--tinta); }
   overflow: hidden;
 }
 .tile.v-split .bot { height: 50%; padding: 6px 8px; font-size: 9px; overflow: hidden; font-style: italic; }
+.tile.v-portada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* etiqueta de artista sobre la cover tratada: legible en reposo, el
+   encendido lima del hover/focus la tapa como en el resto de variantes */
+.tile.v-portada .pa {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  background: var(--tinta);
+  color: var(--papel);
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  padding: 3px 6px;
+  word-break: break-word;
+}
 .tile.v-titulo { padding: 8px; }
 .tile.v-titulo .big {
   font-family: var(--display);
