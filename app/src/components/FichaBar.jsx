@@ -21,8 +21,10 @@ export function FichaBar({ album, onCerrar }) {
 
   const meta = (album.genre || '') + (album.year ? ' · ' + album.year : '')
 
+  // El modificador con-player abre la columna central del grid: sin
+  // album_id la fila ni siquiera reserva el espacio del player.
   return (
-    <div className="ficha-bar">
+    <div className={`ficha-bar${album.album_id ? ' con-player' : ''}`}>
       <button className="cerrar" onClick={onCerrar}>
         × cerrar
       </button>
@@ -31,6 +33,11 @@ export function FichaBar({ album, onCerrar }) {
         <div className="ft">{album.title}</div>
         <div className="fmeta">{meta}</div>
       </div>
+      {album.album_id && (
+        <div className="player-mini" key={album.id}>
+          <BandcampPlayer albumId={album.album_id} size="small" />
+        </div>
+      )}
       <div className="acciones">
         <a className="ir-ficha" href={`#/disco/${album.id}`}>
           FICHA →
@@ -47,11 +54,6 @@ export function FichaBar({ album, onCerrar }) {
           </span>
         )}
       </div>
-      {album.album_id && (
-        <div className="player-mini" key={album.id}>
-          <BandcampPlayer albumId={album.album_id} size="small" />
-        </div>
-      )}
     </div>
   )
 }

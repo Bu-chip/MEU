@@ -56,4 +56,18 @@
   border-left: 1px solid var(--papel);
 }
 .ficha-bar .cerrar:hover { background: var(--lima); color: var(--tinta); }
-.ficha-bar .player-mini { grid-column: 1 / -1; }
+
+/* Player small EN LÍNEA en pantalla ancha: la barra queda en una fila
+   compacta (el player, 42px, es más bajo que el bloque de info, así que
+   el alto no crece). Columna central solo cuando hay player (modificador
+   con-player): los 27 sin album_id no reservan hueco.
+   Breakpoint derivado, no mágico: 400px de mínimo útil del player
+   + ~240px de info (artista en display) + ~140px de acciones
+   + padding y gaps ≈ 820px. Por debajo, el player baja a su propia
+   fila a ancho completo (ahí sí se acepta el alto extra). */
+.ficha-bar.con-player { grid-template-columns: 1fr minmax(400px, 460px) auto; }
+.ficha-bar .player-mini { align-self: center; }
+@media (max-width: 820px) {
+  .ficha-bar.con-player { grid-template-columns: 1fr auto; }
+  .ficha-bar .player-mini { grid-column: 1 / -1; }
+}
