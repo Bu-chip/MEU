@@ -1,0 +1,49 @@
+.ficha-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background: var(--tinta);
+  color: var(--papel);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 18px;
+  border-top: 3px solid var(--lima);
+}
+.ficha-bar .fa {
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(18px, 3vw, 30px);
+  line-height: 1;
+}
+.ficha-bar .ft { font-size: 11px; margin-top: 3px; }
+.ficha-bar .fmeta { font-size: 10px; opacity: .7; margin-top: 2px; }
+.ficha-bar .acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: right;
+}
+.ficha-bar a { color: var(--papel); font-size: 11px; text-decoration: underline; }
+.ficha-bar a:hover { background: var(--lima); color: var(--tinta); }
+.ficha-bar .stub { font-size: 9px; opacity: .55; }
+.ficha-bar .cerrar {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  transform: translateY(-100%);
+  background: var(--tinta);
+  color: var(--papel);
+  border: none;
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-top: 1px solid var(--papel);
+  border-left: 1px solid var(--papel);
+}
+.ficha-bar .cerrar:hover { background: var(--lima); color: var(--tinta); }
