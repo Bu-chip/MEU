@@ -117,7 +117,8 @@
     "decisiones": {
       "fecha": "2026-07-12",
       "resumen": "Lista aprobada por Miguel: los 76 'incluir' del run en bloque; fuera vitoria/durango/donosti (colisión confirmada por location real); dentro los sospechosos de señal débil (araba, alava, tafalla, llodio, estella, altsasu, baztan, guipuzcoa, basque-rock) con captura de band_location OBLIGATORIA en el PR de candidatos (riesgo de colisión: araba='coche' en turco, etc.). Duplicados por normalización de la API: consultar solo una forma (san-sebastian, pais-vasco). iruña e iruñea se mantienen como tags distintos. Iparralde entero queda para la oleada 2 (lo que arrastre basque-country se filtra por band_location en el PR). Los 25 de meta.sin_medir no entran a ciegas: mini-pasada de medición primero (donostia-san-sebastián exento: duplicado por acentos del ya medido donostia-san-sebastian).",
-      "campo": "final = incluir|fuera refleja esta decisión; verdict/verdict_auto conservan la propuesta del robot para trazabilidad."
+      "campo": "final = incluir|fuera refleja esta decisión; verdict/verdict_auto conservan la propuesta del robot para trazabilidad.",
+      "mini_pasada": "2026-07-12: aprobados los 22 propuestos; fuera vasco (colisión de nombre propio) y basque-country-rock-&-roll (0 resultados). basquemusic/euskalmusika entran con filtro de band_location a CAV+Navarra (Iparralde → cola oleada-2). LISTA CERRADA."
     }
   },
   "tags": [
@@ -2940,7 +2941,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -2973,7 +2974,7 @@
       "verdict_auto": "incluir",
       "verdict": "incluir",
       "audit": "'PV, Spain' es EH; solape con canónico",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3004,7 +3005,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3035,7 +3036,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3061,7 +3062,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3096,7 +3097,7 @@
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
       "audit": "eh_share infravalorado: Getaria/PV/Zarautz son EH",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3127,7 +3128,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3159,7 +3160,7 @@
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
       "audit": "eh_share=0 es falso negativo: top_location 'Guernica, Spain' ES Gernika (grafía castellana, ausente de mis términos); ojo: mezcla spam de tags (banda tailandesa Carabao, la misma que aparecía bajo donostia)",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3185,7 +3186,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3211,7 +3212,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3237,7 +3238,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3263,7 +3264,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3296,7 +3297,7 @@
       "verdict_auto": "incluir",
       "verdict": "incluir",
       "audit": "'PV, Spain' es EH; solape con canónico",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3322,7 +3323,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3348,7 +3349,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3374,7 +3375,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3409,7 +3410,7 @@
       "verdict_auto": "sospechoso",
       "verdict": "sospechoso",
       "audit": "colisión confirmada: Portugal/París/México ('Vasco' es nombre propio); recomiendo FUERA como vitoria/durango",
-      "final": "pendiente",
+      "final": "fuera",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3441,7 +3442,7 @@
       "verdict_auto": "incluir",
       "verdict": "incluir",
       "audit": "'Enkarterri, Spain' es EH; eh_share=0 falso negativo",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3468,7 +3469,7 @@
       "verdict_auto": "sospechoso",
       "verdict": "incluir",
       "audit": "señal débil pero inequívoca: Nafarist (Pamplona)",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3486,7 +3487,7 @@
       "sample": [],
       "verdict_auto": "descartar",
       "verdict": "descartar",
-      "final": "pendiente",
+      "final": "fuera",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3517,8 +3518,8 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "audit": "contenido de Iparralde (Irouléguy); el filtro por band_location del PR gestiona el alcance CAV+NA",
-      "final": "pendiente",
+      "audit": "contenido de Iparralde (Irouléguy); el filtro por band_location del PR gestiona el alcance CAV+NA | DECISIÓN 2026-07-12: entra a la lista PERO su material se filtra por band_location a CAV+Navarra en esta oleada; lo claramente de Iparralde va a la cola oleada-2, no al catálogo.",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3551,7 +3552,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3582,8 +3583,8 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "audit": "contenido de Iparralde (Irouléguy); ídem",
-      "final": "pendiente",
+      "audit": "contenido de Iparralde (Irouléguy); ídem | DECISIÓN 2026-07-12: entra a la lista PERO su material se filtra por band_location a CAV+Navarra en esta oleada; lo claramente de Iparralde va a la cola oleada-2, no al catálogo.",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     },
     {
@@ -3615,7 +3616,7 @@
       ],
       "verdict_auto": "incluir",
       "verdict": "incluir",
-      "final": "pendiente",
+      "final": "incluir",
       "run": "https://github.com/Bu-chip/MEU/actions/runs/29204266712"
     }
   ]

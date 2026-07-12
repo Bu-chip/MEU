@@ -39,6 +39,13 @@ data/covers.json
 # Output del sondeo de páginas de tag: viaja solo como artifact.
 probe_out/
 
+# Output del scraper de descubrimiento: los candidatos entran al repo
+# solo vía PR revisable (git add -f deliberado, como covers.json) y el
+# estado viaja como artifact o en rama de estado. data/rejected.json y
+# data/tag_candidates.json SÍ se versionan.
+data/candidates_*.json
+data/discovery_state.json
+
 # Build outputs (para futuras compilaciones)
 dist/
 build/
