@@ -1,0 +1,44 @@
+name: Probe tag pages (Bandcamp)
+
+# Sondeo GATE de la Fase 2 de expansión del catálogo: verifica la
+# estructura de las páginas /tag/ y el endpoint de paginación con ≤10
+# requests ANTES de escribir el scraper de descubrimiento completo.
+# SOLO LECTURA: no escribe nada en el repo; el resultado viaja como
+# artifact y en los logs del job.
+
+on:
+  workflow_dispatch:
+    inputs:
+      extra_tags:
+        description: "Tags adicionales a sondear (separados por comas, dentro del presupuesto de 10 requests)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+# Mismo group que scrape-covers: jamás dos scrapes a la vez contra Bandcamp.
+concurrency:
+  group: scrape-covers
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    # ≤10 requests a 2s + análisis: minutos, no horas.
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sondeo (≤10 requests, 1 req/2s)
+        run: python3 scripts/probe_tag_pages.py --extra-tags "${{ inputs.extra_tags }}"
+
+      # if: always() para conservar las respuestas parciales si algo falla.
+      - name: Subir artifact con respuestas crudas y resumen
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: probe-tag-pages
+          path: probe_out/
+          if-no-files-found: warn

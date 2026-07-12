@@ -1,0 +1,67 @@
+name: Discover tags (Bandcamp)
+
+# Scraper de descubrimiento por tags (ver scripts/discover_tags.py y
+# docs/scraping-method.md). Este workflow es la versión MANUAL: el
+# schedule mensual y la apertura automática del PR de candidatos llegan
+# en el siguiente PR acotado. NUNCA escribe en el repo: candidatos y
+# estado viajan como artifact.
+
+on:
+  workflow_dispatch:
+    inputs:
+      budget:
+        description: "Presupuesto de requests de la pasada"
+        required: false
+        default: "900"
+      tags:
+        description: "Override: solo estos tags (separados por comas). Vacío = lista cerrada de data/tag_candidates.json"
+        required: false
+        default: ""
+      month:
+        description: "Sufijo YYYY-MM del fichero de candidatos (vacío = mes actual)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+# Mismo group que scrape-covers: jamás dos scrapes a la vez contra Bandcamp.
+concurrency:
+  group: scrape-covers
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    # 900 requests x ~2,2s ≈ 33 min; margen holgado.
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Descubrimiento
+        run: |
+          python3 scripts/discover_tags.py \
+            --budget "${{ inputs.budget }}" \
+            --tags "${{ inputs.tags }}" \
+            ${{ inputs.month != '' && format('--month {0}', inputs.month) || '' }}
+
+      - name: Tabla de candidatos (resumen legible)
+        if: always()
+        run: |
+          ls data/candidates_*.json 2>/dev/null || { echo "sin fichero de candidatos"; exit 0; }
+          for f in data/candidates_*.json; do
+            echo "=== $f ==="
+            python3 scripts/discover_tags.py --table "$f"
+          done
+
+      # if: always() para conservar el progreso parcial ante timeout/cancel.
+      - name: Subir artifact con candidatos y estado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-output
+          path: |
+            data/candidates_*.json
+            data/discovery_state.json
+          if-no-files-found: warn
