@@ -681,18 +681,19 @@ def serialize(data):
 def validate(data):
     """Invariantes de esquema que ningún paso puede romper."""
     assert set(data.keys()) == {"albums", "artists", "tags", "years"}
-    base = {"id", "artist", "title", "genre", "year", "tags", "url"}
-    # merge_covers añade cover_url y album_id; el esquema base sigue
-    # siendo válido porque ese paso es no-op si falta data/covers.json.
-    extended = base | {"cover_url", "album_id"}
+    # Esquema consolidado tras el merge de portadas: los 9 campos son
+    # obligatorios en todos los álbumes. El canónico ya los lleva, así
+    # que el pipeline sigue ejecutable aunque falte data/covers.json
+    # (merge_covers sería no-op sobre un dataset ya completo).
+    expected = {"id", "artist", "title", "genre", "year", "tags", "url",
+                "cover_url", "album_id"}
     for album in data["albums"]:
-        keys = set(album.keys())
-        assert keys in (base, extended), f"esquema roto en album id={album.get('id')}"
-        if keys == extended:
-            assert album["cover_url"] is None or isinstance(album["cover_url"], str), \
-                f"cover_url no es string|null en album id={album.get('id')}"
-            assert album["album_id"] is None or isinstance(album["album_id"], int), \
-                f"album_id no es int|null en album id={album.get('id')}"
+        assert set(album.keys()) == expected, \
+            f"esquema roto en album id={album.get('id')}"
+        assert album["cover_url"] is None or isinstance(album["cover_url"], str), \
+            f"cover_url no es string|null en album id={album.get('id')}"
+        assert album["album_id"] is None or isinstance(album["album_id"], int), \
+            f"album_id no es int|null en album id={album.get('id')}"
 
 
 def main():
