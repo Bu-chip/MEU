@@ -21,15 +21,6 @@ on:
         description: "Sufijo YYYY-MM del fichero de candidatos (vacío = mes actual)"
         required: false
         default: ""
-  # La integración de la sesión de Claude no puede lanzar
-  # workflow_dispatch (403 actions:write); el push en la rama de trabajo
-  # dispara un SMOKE-TEST con presupuesto pequeño sobre tags menores.
-  # Retirar este trigger antes de mergear a main.
-  push:
-    branches: [claude/euskadi-catalog-expansion-choh0j]
-    paths:
-      - scripts/discover_tags.py
-      - .github/workflows/discover-tags.yml
 
 permissions:
   contents: read
@@ -50,17 +41,10 @@ jobs:
 
       - name: Descubrimiento
         run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            # Smoke-test: tags pequeños, presupuesto corto, mes fijo.
-            python3 scripts/discover_tags.py \
-              --budget 60 --tags "sestao,galdakao,basauri,hernani" \
-              --month smoke
-          else
-            python3 scripts/discover_tags.py \
-              --budget "${{ inputs.budget }}" \
-              --tags "${{ inputs.tags }}" \
-              ${{ inputs.month != '' && format('--month {0}', inputs.month) || '' }}
-          fi
+          python3 scripts/discover_tags.py \
+            --budget "${{ inputs.budget }}" \
+            --tags "${{ inputs.tags }}" \
+            ${{ inputs.month != '' && format('--month {0}', inputs.month) || '' }}
 
       - name: Tabla de candidatos (resumen legible)
         if: always()

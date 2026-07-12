@@ -13,27 +13,6 @@ on:
         description: "Mini-pasada: medir solo estos tags (separados por comas). Vacío = pasada completa (semilla + cosecha, ~200 requests)."
         required: false
         default: ""
-  # La integración de la sesión de Claude no puede lanzar
-  # workflow_dispatch (403 actions:write); el push del script en la
-  # rama de trabajo hace de disparador, acotado por branches+paths.
-  # Los pushes ejecutan la MINI-PASADA de los tags cosechados sin medir
-  # (decisión 3 del 2026-07-12), no la pasada completa de 200 requests.
-  push:
-    branches: [claude/euskadi-catalog-expansion-choh0j]
-    paths:
-      - scripts/research_tags.py
-      - .github/workflows/research-tags.yml
-
-env:
-  # Los 24 de meta.sin_medir de data/tag_candidates.json
-  # (donostia-san-sebastián exento: duplicado por acentos del ya medido).
-  MINIPASS_TAGS: >-
-    euskaldun,ezkerraldea,freeimprobilbao,freejazz-bilbao,freejazz-euskadi,
-    getaria,getxo-bilbao-gringo-rock,guernica,hardcore-bilbao,
-    improvisacion-libre-bilbao,improvisacionbilbao,musica-garage-bilbao,
-    ortuella,punk-rock-bilbao,rock-garage-bilbao,surf-bilbao,vasco,zalla,
-    basque-ambient,basque-country-rock-&-roll,basquemusic,euskal-rap,
-    euskalmusika,orereta
 
 permissions:
   contents: read
@@ -52,16 +31,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Prioridad: input del dispatch > mini-pasada por defecto en push.
-      # Un dispatch manual con tags vacío ejecuta la pasada completa.
       - name: Investigación (≤200 requests, 1 req/2s)
-        run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            TAGS="$(echo "$MINIPASS_TAGS" | tr -d ' ')"
-          else
-            TAGS="${{ inputs.tags }}"
-          fi
-          python3 scripts/research_tags.py --tags "$TAGS"
+        run: python3 scripts/research_tags.py --tags "${{ inputs.tags }}"
 
       # if: always() para conservar el resultado parcial si algo falla.
       - name: Subir artifact con el resultado
