@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import './FichaBar.css'
 
-// Mini-ficha inferior de los mockups: destino provisional del click en
-// disco hasta que F4 traiga la FICHA completa (#/disco/:id).
+// Mini-ficha inferior de los mockups: respuesta inmediata al click en
+// disco sin perder el muro ni el scroll; desde aquí, FICHA → profundiza.
 export function FichaBar({ album, onCerrar }) {
   useEffect(() => {
     if (!album) return
@@ -28,6 +28,9 @@ export function FichaBar({ album, onCerrar }) {
         <div className="fmeta">{meta}</div>
       </div>
       <div className="acciones">
+        <a className="ir-ficha" href={`#/disco/${album.id}`}>
+          FICHA →
+        </a>
         {album.url ? (
           <a href={album.url} target="_blank" rel="noopener noreferrer">
             abrir en bandcamp ↗
@@ -35,7 +38,6 @@ export function FichaBar({ album, onCerrar }) {
         ) : (
           <span className="stub">sin página en bandcamp</span>
         )}
-        <span className="stub">ficha completa → fase 4</span>
       </div>
     </div>
   )
