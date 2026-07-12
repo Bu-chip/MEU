@@ -1,9 +1,3 @@
-.cargando {
-  font-size: 11px;
-  padding: 24px 18px;
-  border-bottom: 2px solid var(--tinta);
-}
-
 /* ── mandos: fila segmentada compacta + banda de estado ── */
 .mandos { border-bottom: 2px solid var(--tinta); }
 .mandos .fila-botones {
@@ -168,10 +162,4 @@ button#m-discos:hover { background: var(--lima); color: var(--tinta); }
   font-size: 19px;
   line-height: .95;
   word-break: break-word;
-}
-
-.pie {
-  padding: 14px 18px 90px 18px;
-  font-size: 10px;
-  line-height: 1.7;
 }

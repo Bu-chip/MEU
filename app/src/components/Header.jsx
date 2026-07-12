@@ -1,12 +1,8 @@
+import { formato } from '../utils/formato.js'
 import './Header.css'
 
 // Contadores SIEMPRE calculados de los datos (decisión 8 de Fase 0),
 // nunca hardcodeados: los mockups arrastran cifras viejas (2.396/1.069).
-// Punto de millar manual: es-ES de CLDR no agrupa números de 4 cifras
-// (2364 → «2364») y el mockup exige «2.364».
-function formato(n) {
-  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.')
-}
 
 export function Header({ archive, size = 'grande' }) {
   const years = archive?.years ?? []
