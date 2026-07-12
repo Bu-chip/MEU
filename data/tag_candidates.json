@@ -1,0 +1,2818 @@
+{
+  "meta": {
+    "generated_at": "2026-07-12T18:26:14Z",
+    "budget_used": 200,
+    "budget_max": 200,
+    "seeds": {
+      "capital": [
+        "donostia",
+        "donosti",
+        "san-sebastian",
+        "san-sebastián",
+        "gasteiz",
+        "vitoria",
+        "vitoria-gasteiz",
+        "iruña",
+        "iruñea",
+        "pamplona",
+        "bilbao",
+        "bilbo"
+      ],
+      "territorio": [
+        "bizkaia",
+        "vizcaya",
+        "gipuzkoa",
+        "guipuzcoa",
+        "araba",
+        "alava",
+        "nafarroa",
+        "navarra"
+      ],
+      "identitario": [
+        "euskadi",
+        "euskal-herria",
+        "basque",
+        "basque-country",
+        "pais-vasco",
+        "euskal-musika",
+        "basque-music",
+        "euskaraz",
+        "euskal-rock",
+        "euskal-kantagintza"
+      ],
+      "municipio": [
+        "barakaldo",
+        "getxo",
+        "santurtzi",
+        "portugalete",
+        "sestao",
+        "basauri",
+        "galdakao",
+        "leioa",
+        "durango",
+        "gernika",
+        "bermeo",
+        "ondarroa",
+        "lekeitio",
+        "mungia",
+        "errenteria",
+        "eibar",
+        "tolosa",
+        "hernani",
+        "azpeitia",
+        "arrasate",
+        "zarautz",
+        "irun",
+        "hondarribia",
+        "oñati",
+        "zumaia",
+        "bergara",
+        "oiartzun",
+        "laudio",
+        "llodio",
+        "amurrio",
+        "tudela",
+        "tafalla",
+        "lizarra",
+        "estella",
+        "altsasu",
+        "baztan"
+      ]
+    },
+    "note": "Veredictos = propuesta para revisión humana. eh_share = fracción de band_location de la 1ª página que parecen de Euskal Herria; solape medido contra el canónico por album_id y URL normalizada.",
+    "run": "https://github.com/Bu-chip/MEU/actions/runs/29203596214",
+    "method": "scripts/research_tags.py (discover_web, 200 requests) + auditoría manual documentada en el campo 'audit'. verdict_auto = heurística del script; verdict = propuesta final tras auditoría. La heurística de eh_share solo reconocía municipios de la semilla: infravaloró tags con locations 'PV, Spain'/comarcas (falsos sospechosos) y no detectó tocayos extranjeros cuyo nombre coincide con el término (vitoria→Brasil, durango→Colorado/México).",
+    "sin_medir": {
+      "nota": "cosechados al agotarse el presupuesto de 200 requests; medibles en una segunda pasada o directamente en el scraper (coste: 1 request cada uno)",
+      "del_canonico": [
+        "euskaldun",
+        "ezkerraldea",
+        "freeimprobilbao",
+        "freejazz-bilbao",
+        "freejazz-euskadi",
+        "getaria",
+        "getxo-bilbao-gringo-rock",
+        "guernica",
+        "hardcore-bilbao",
+        "improvisacion-libre-bilbao",
+        "improvisacionbilbao",
+        "musica-garage-bilbao",
+        "ortuella",
+        "punk-rock-bilbao",
+        "rock-garage-bilbao",
+        "surf-bilbao",
+        "vasco",
+        "zalla"
+      ],
+      "de_fichas": [
+        "basque-ambient",
+        "basque-country-rock-&-roll",
+        "basquemusic",
+        "donostia-san-sebastián",
+        "euskal-rap",
+        "euskalmusika",
+        "orereta"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "tag": "donostia",
+      "source": "semilla:capital",
+      "result_count": 61,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 19,
+      "eh_share": 0.95,
+      "top_locations": [
+        "San Sebastián, Spain",
+        "Donostia, Spain",
+        "Donostia San Sebastian, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "massa confusa",
+          "title": "Mantras: Remixes and Reworks (EP)",
+          "location": "San Sebastián, Spain"
+        },
+        {
+          "artist": "Monsieur leCrêpe",
+          "title": "Venta Aundi",
+          "location": ""
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "donosti",
+      "source": "semilla:capital",
+      "result_count": 51,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.2,
+      "top_locations": [
+        "Madrid, Spain",
+        "Girona, Spain",
+        "Donostia San Sebastian, Spain"
+      ],
+      "reasons": [
+        "solo 20% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "raso.",
+          "title": "BARIRI - Después de esa nube",
+          "location": "Madrid, Spain"
+        },
+        {
+          "artist": "raso.",
+          "title": "BARIRI - Espejito espejito",
+          "location": "Madrid, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso",
+      "audit": "confirmado: top_locations Madrid/Girona — uso genérico del tag por gente de fuera"
+    },
+    {
+      "tag": "san-sebastian",
+      "source": "semilla:capital",
+      "result_count": 416,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 18,
+      "eh_share": 0.83,
+      "top_locations": [
+        "San Sebastián, Spain",
+        "San Sebastián, Puerto Rico",
+        "San Francisco, California"
+      ],
+      "reasons": [
+        "83% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Telmo Trenor",
+          "title": "Blow",
+          "location": "San Sebastián, Spain"
+        },
+        {
+          "artist": "Carabao",
+          "title": "พออยู่พอกิน Chapter 21",
+          "location": ""
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "audit": "mayoría EH; colisiones menores (San Sebastián PR, San Francisco)"
+    },
+    {
+      "tag": "san-sebastián",
+      "source": "semilla:capital",
+      "result_count": 416,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 18,
+      "eh_share": 0.83,
+      "top_locations": [
+        "San Sebastián, Spain",
+        "San Sebastián, Puerto Rico",
+        "San Francisco, California"
+      ],
+      "reasons": [
+        "83% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Telmo Trenor",
+          "title": "Blow",
+          "location": "San Sebastián, Spain"
+        },
+        {
+          "artist": "Carabao",
+          "title": "พออยู่พอกิน Chapter 21",
+          "location": ""
+        }
+      ],
+      "verdict_auto": "incluir",
+      "alias_of": "san-sebastian",
+      "verdict": "duplicado",
+      "audit": "la API pliega acentos: mismo tag que 'san-sebastian' (result_count idéntico)"
+    },
+    {
+      "tag": "gasteiz",
+      "source": "semilla:capital",
+      "result_count": 27,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 19,
+      "eh_share": 0.63,
+      "top_locations": [
+        "Vitoria Gasteiz, Spain",
+        "PV, Spain",
+        "Paris, France"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Remorse Records",
+          "title": "RRC-13 Giante - Beste norbait izan",
+          "location": "Paris, France"
+        },
+        {
+          "artist": "ZarataZarautz",
+          "title": "Daño Dolor (2025-10-09)",
+          "location": "Zarautz, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "vitoria",
+      "source": "semilla:capital",
+      "result_count": 400,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Vitoria, Brazil",
+        "Paris, France"
+      ],
+      "reasons": [
+        "95% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "PlusEleven",
+          "title": "We Exist! We Shout! (Demos)",
+          "location": "Vitoria, Brazil"
+        },
+        {
+          "artist": "Vento Contra",
+          "title": "DEMO",
+          "location": "Vitoria, Brazil"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "sospechoso",
+      "audit": "top_locations = Vitória (Brasil); el contenido EH ya se cubre vía vitoria-gasteiz/gasteiz"
+    },
+    {
+      "tag": "vitoria-gasteiz",
+      "source": "semilla:capital",
+      "result_count": 546,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Vitoria Gasteiz, Spain",
+        "Trøndelag, Norway"
+      ],
+      "reasons": [
+        "95% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "-Love-",
+          "title": "Death buzz",
+          "location": "Vitoria Gasteiz, Spain"
+        },
+        {
+          "artist": "Mono Cat 7 Records",
+          "title": "Art School",
+          "location": "Vitoria Gasteiz, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "iruña",
+      "source": "semilla:capital",
+      "result_count": 41,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 20,
+      "eh_share": 0.8,
+      "top_locations": [
+        "Pamplona, Spain",
+        "Wallonia, Belgium",
+        "NC, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Bris",
+          "title": "Gure Dorreak",
+          "location": "Pamplona, Spain"
+        },
+        {
+          "artist": "Mawashi Skins Records",
+          "title": "MSR-001 - STREETWISE - Deus Ez / Ikustezin",
+          "location": "Wallonia, Belgium"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "iruñea",
+      "source": "semilla:capital",
+      "result_count": 8,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 8,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Pamplona, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Islada",
+          "title": "Dudatan",
+          "location": "Pamplona, Spain"
+        },
+        {
+          "artist": "Borla",
+          "title": "Kordoba Bidea",
+          "location": "Pamplona, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "pamplona",
+      "source": "semilla:capital",
+      "result_count": 956,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Pamplona, Spain",
+        "Spain"
+      ],
+      "reasons": [
+        "95% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Jon G Labat",
+          "title": "Antagonía",
+          "location": "Pamplona, Spain"
+        },
+        {
+          "artist": "DavidKBD",
+          "title": "Sketch's Tunes (Videogames #6)",
+          "location": "Pamplona, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bilbao",
+      "source": "semilla:capital",
+      "result_count": 2621,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Bilbao, Spain",
+        "Zarautz, Spain",
+        "PV, Spain"
+      ],
+      "reasons": [
+        "95% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "ZarataZarautz",
+          "title": "1991 (2026-05-22)",
+          "location": "Zarautz, Spain"
+        },
+        {
+          "artist": "vilvao",
+          "title": "Vilvao",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bilbo",
+      "source": "semilla:capital",
+      "result_count": 75,
+      "overlap_url": 10,
+      "overlap_id": 10,
+      "locations_sampled": 20,
+      "eh_share": 0.7,
+      "top_locations": [
+        "Zarautz, Spain",
+        "PV, Spain",
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "ZarataZarautz",
+          "title": "1991 (2026-05-22)",
+          "location": "Zarautz, Spain"
+        },
+        {
+          "artist": "Brutality Sound System",
+          "title": "Jah's Mighty Hand",
+          "location": "Bilbo, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bizkaia",
+      "source": "semilla:territorio",
+      "result_count": 25,
+      "overlap_url": 6,
+      "overlap_id": 6,
+      "locations_sampled": 20,
+      "eh_share": 0.15,
+      "top_locations": [
+        "Sopelana, Spain",
+        "Bilbao, Spain",
+        "El Bierzo, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico",
+        "pero solo 15% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "QUEBRANTA RECORDS",
+          "title": "Ultravioleta",
+          "location": "El Bierzo, Spain"
+        },
+        {
+          "artist": "GAL",
+          "title": "BAKARKA EZIN DA",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "solape 6 con canónico; locations Sopelana/Bilbao — 'El Bierzo' es un sello, no colisión"
+    },
+    {
+      "tag": "vizcaya",
+      "source": "semilla:territorio",
+      "result_count": 4,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 4,
+      "eh_share": 0.25,
+      "top_locations": [
+        "Pau, France",
+        "PV, Spain",
+        "Sopelana, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "CrimeLab",
+          "title": "Meñakoz stone beach field recordings",
+          "location": "Pau, France"
+        },
+        {
+          "artist": "Wicked Wizzard",
+          "title": "Wicked Wizzard",
+          "location": "PV, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "gipuzkoa",
+      "source": "semilla:territorio",
+      "result_count": 20,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.8,
+      "top_locations": [
+        "Irun, Spain",
+        "Eibar, Spain",
+        "PV, Spain"
+      ],
+      "reasons": [
+        "80% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "The Vartools",
+          "title": "Awesome",
+          "location": "Eibar, Spain"
+        },
+        {
+          "artist": "Family Spree Recordings",
+          "title": "FSR093 Crap - We are... Crap (LP)",
+          "location": "Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "guipuzcoa",
+      "source": "semilla:territorio",
+      "result_count": 3,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 3,
+      "eh_share": 0.33,
+      "top_locations": [
+        "Andoain, Spain",
+        "Errenteria, Spain",
+        "Madrid, Spain"
+      ],
+      "reasons": [
+        "señal débil: solo 3 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "Camilo Mateo",
+          "title": "Iniciación",
+          "location": "Andoain, Spain"
+        },
+        {
+          "artist": "Sardeska",
+          "title": "R-evolution",
+          "location": "Errenteria, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso"
+    },
+    {
+      "tag": "araba",
+      "source": "semilla:territorio",
+      "result_count": 1,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 1,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Tbilisi, Georgia"
+      ],
+      "reasons": [
+        "señal débil: solo 1 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "Leno Records",
+          "title": "Chkimi Araba",
+          "location": "Tbilisi, Georgia"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso"
+    },
+    {
+      "tag": "alava",
+      "source": "semilla:territorio",
+      "result_count": 1,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Vitoria Gasteiz, Spain"
+      ],
+      "reasons": [
+        "señal débil: solo 1 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "Similar Interests",
+          "title": "Home-made",
+          "location": "Vitoria Gasteiz, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso"
+    },
+    {
+      "tag": "nafarroa",
+      "source": "semilla:territorio",
+      "result_count": 24,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 18,
+      "eh_share": 0.56,
+      "top_locations": [
+        "Bera, Spain",
+        "Nafarroa, Spain",
+        "Pamplona, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Rebels Riot Rec",
+          "title": "Murky Reflections",
+          "location": "Zizur Mayor, Spain"
+        },
+        {
+          "artist": "ZaragozaDesordenRecords",
+          "title": "ZDR 039 Obducción De La Amenaza - Zirt Zart Split (En Stock- EP)",
+          "location": "Zaragoza, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "navarra",
+      "source": "semilla:territorio",
+      "result_count": 33,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.7,
+      "top_locations": [
+        "Pamplona, Spain",
+        "Spain",
+        "Tudela, Spain"
+      ],
+      "reasons": [
+        "70% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "A Deshoras",
+          "title": "Deseos Y Maldiciones",
+          "location": "Spain"
+        },
+        {
+          "artist": "K O K O S H C A",
+          "title": "Divino Tesoro",
+          "location": "Pamplona, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "euskadi",
+      "source": "semilla:identitario",
+      "result_count": 363,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.6,
+      "top_locations": [
+        "Euskadi, Spain",
+        "Denmark",
+        "Donostia San Sebastián, Spain"
+      ],
+      "reasons": [
+        "60% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Joseba Irazoki",
+          "title": "ERREX",
+          "location": "Euskadi, Spain"
+        },
+        {
+          "artist": "ZaragozaDesordenRecords",
+          "title": "ZDR 095 Parëntesis 536 - Verdades Que Se Esconden, Mentiras Que Aparecen EP (En Stock)",
+          "location": "Zaragoza, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "euskal-herria",
+      "source": "semilla:identitario",
+      "result_count": 385,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 13,
+      "eh_share": 0.31,
+      "top_locations": [
+        "PV, Spain",
+        "Arratia Nerbioi, Spain",
+        "Pamplona, Spain"
+      ],
+      "reasons": [
+        "solo 31% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "GAL",
+          "title": "BAKARKA EZIN DA",
+          "location": null
+        },
+        {
+          "artist": "Arkaitz Miner",
+          "title": "BI GEHIO (Leinua Konpainia)",
+          "location": "PV, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "eh_share infravalorado: top_locations son 'PV, Spain', Arratia Nerbioi, Pamplona — todo EH"
+    },
+    {
+      "tag": "basque",
+      "source": "semilla:identitario",
+      "result_count": 188,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 17,
+      "eh_share": 0.35,
+      "top_locations": [
+        "PV, Spain",
+        "Portugalete, Spain",
+        "Oiartzun, Spain"
+      ],
+      "reasons": [
+        "solo 35% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "OROAT",
+          "title": "Maskarak fuera!",
+          "location": ""
+        },
+        {
+          "artist": "Goxoa Grooves",
+          "title": "Sentikariak Remixes",
+          "location": "Portugalete, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "eh_share infravalorado: PV/Portugalete/Oiartzun; algo de diáspora, filtrable por location"
+    },
+    {
+      "tag": "basque-country",
+      "source": "semilla:identitario",
+      "result_count": 921,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 19,
+      "eh_share": 0.42,
+      "top_locations": [
+        "PV, Spain",
+        "Pamplona, Spain",
+        "Basque Country, Spain"
+      ],
+      "reasons": [
+        "solo 42% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "Jillian Mixon",
+          "title": "Basque Country",
+          "location": "Olympia, Washington"
+        },
+        {
+          "artist": "The Flacotones",
+          "title": "THE FLACOTONES",
+          "location": "Gernika Lumo, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "921 releases; mezcla EH + Iparralde + diáspora — el filtro por location en el PR decide (Iparralde = oleada futura)"
+    },
+    {
+      "tag": "pais-vasco",
+      "source": "semilla:identitario",
+      "result_count": 238,
+      "overlap_url": 5,
+      "overlap_id": 5,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Bilbao, Spain",
+        "Vitoria Gasteiz, Spain",
+        "Hondarribia, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Mono Cat 7 Records",
+          "title": "Art School",
+          "location": "Vitoria Gasteiz, Spain"
+        },
+        {
+          "artist": "Mono Cat 7 Records",
+          "title": "2006",
+          "location": "Vitoria Gasteiz, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "euskal-musika",
+      "source": "semilla:identitario",
+      "result_count": 105,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 16,
+      "eh_share": 0.31,
+      "top_locations": [
+        "PV, Spain",
+        "Ondarroa, Spain",
+        "Arratia Nerbioi, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico",
+        "pero solo 31% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "OROAT",
+          "title": "Maskarak fuera!",
+          "location": ""
+        },
+        {
+          "artist": "Galazota",
+          "title": "Heldu Orduko Usteldu",
+          "location": "Arratia Nerbioi, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "eh_share infravalorado: PV/Ondarroa/Arratia; solape con canónico"
+    },
+    {
+      "tag": "basque-music",
+      "source": "semilla:identitario",
+      "result_count": 172,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 18,
+      "eh_share": 0.28,
+      "top_locations": [
+        "PV, Spain",
+        "Donostia San Sebastian, Spain",
+        "Arrigorriaga, Spain"
+      ],
+      "reasons": [
+        "solo 28% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "Ezta Ilen",
+          "title": "Oroituko Gara, Biharko Egunez",
+          "location": "Zaldibar, Spain"
+        },
+        {
+          "artist": "OROAT",
+          "title": "Maskarak fuera!",
+          "location": ""
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "eh_share infravalorado: PV/Donostia/Arrigorriaga"
+    },
+    {
+      "tag": "euskaraz",
+      "source": "semilla:identitario",
+      "result_count": 29,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 18,
+      "eh_share": 0.28,
+      "top_locations": [
+        "PV, Spain",
+        "Andoain, Spain",
+        "Bermeo, Spain"
+      ],
+      "reasons": [
+        "solo 28% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "lokatza",
+          "title": "Txarra kenduta ondo?",
+          "location": "PV, Spain"
+        },
+        {
+          "artist": "Addar",
+          "title": "Eztenak",
+          "location": "Bermeo, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "eh_share infravalorado: PV/Andoain/Bermeo"
+    },
+    {
+      "tag": "euskal-rock",
+      "source": "semilla:identitario",
+      "result_count": 25,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 18,
+      "eh_share": 0.33,
+      "top_locations": [
+        "PV, Spain",
+        "Bermeo, Spain",
+        "Villabona, Spain"
+      ],
+      "reasons": [
+        "solo 33% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "The Purples",
+          "title": "The Purples",
+          "location": "PV, Spain"
+        },
+        {
+          "artist": "Addar",
+          "title": "Eztenak",
+          "location": "Bermeo, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "aprobado en oleada 1; eh_share bajo por heurística estrecha, sin evidencia de colisión"
+    },
+    {
+      "tag": "euskal-kantagintza",
+      "source": "semilla:identitario",
+      "result_count": 3,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 3,
+      "eh_share": 0.33,
+      "top_locations": [
+        "Irouléguy, France",
+        "Hernani, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Ainara Ortega",
+          "title": "Scat",
+          "location": "Hernani, Spain"
+        },
+        {
+          "artist": "Ekhi Lambert",
+          "title": "Inbasioak",
+          "location": "Irouléguy, France"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "barakaldo",
+      "source": "semilla:municipio",
+      "result_count": 73,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 20,
+      "eh_share": 0.85,
+      "top_locations": [
+        "Barakaldo, Spain",
+        "Bilbao, Spain",
+        "Nashville, Tennessee"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "EDER VEGA",
+          "title": "HONORIS CAUSA",
+          "location": "Bilbao, Spain"
+        },
+        {
+          "artist": "KNUCKLES ON STUN",
+          "title": "Violentos Torpedos de Realidad",
+          "location": "Nashville, Tennessee"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "getxo",
+      "source": "semilla:municipio",
+      "result_count": 104,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Getxo, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Blackearth Sindustries Records",
+          "title": "Fuck",
+          "location": "Getxo, Spain"
+        },
+        {
+          "artist": "MONOS",
+          "title": "Pensamientos cayendo al vacío",
+          "location": "Getxo, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "santurtzi",
+      "source": "semilla:municipio",
+      "result_count": 84,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 20,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Santurtzi, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Bang! Records",
+          "title": "RTE 209 Blues (LP)",
+          "location": "Santurtzi, Spain"
+        },
+        {
+          "artist": "Muerte Matar Records",
+          "title": "Maere",
+          "location": "Santurtzi, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "portugalete",
+      "source": "semilla:municipio",
+      "result_count": 44,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Portugalete, Spain",
+        "PV, Spain",
+        "Santurtzi, Spain"
+      ],
+      "reasons": [
+        "95% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Goxoa Grooves",
+          "title": "Sentikariak Remixes",
+          "location": "Portugalete, Spain"
+        },
+        {
+          "artist": "RNORTE+",
+          "title": "EL BLUES GRIS",
+          "location": "Portugalete, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "sestao",
+      "source": "semilla:municipio",
+      "result_count": 6,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 6,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Sestao, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "aztentenaz",
+          "title": "JAHENDU THE BEAT: AMERICAN BOOTLEG",
+          "location": "Sestao, Spain"
+        },
+        {
+          "artist": "Infra records",
+          "title": "ONOFFON 2 canções de amor e dança",
+          "location": "Sestao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "basauri",
+      "source": "semilla:municipio",
+      "result_count": 11,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 11,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Basauri, Spain",
+        "Portugalete, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "smiling is not a crime records",
+          "title": "FÁBRICA DE MUERTE",
+          "location": "Portugalete, Spain"
+        },
+        {
+          "artist": "JMA",
+          "title": "Fábrica De Muerte",
+          "location": "Basauri, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "galdakao",
+      "source": "semilla:municipio",
+      "result_count": 7,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 7,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Galdakao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Calathea ",
+          "title": "Flowers & Knives",
+          "location": "Galdakao, Spain"
+        },
+        {
+          "artist": "Calathea",
+          "title": "Flowers & Knives",
+          "location": "Galdakao, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "leioa",
+      "source": "semilla:municipio",
+      "result_count": 49,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Leioa, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Inmsomnia",
+          "title": "XA",
+          "location": "Leioa, Spain"
+        },
+        {
+          "artist": "Inmsomnia",
+          "title": "Final Race",
+          "location": "Leioa, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "durango",
+      "source": "semilla:municipio",
+      "result_count": 502,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.85,
+      "top_locations": [
+        "Durango, Colorado",
+        "Durango, Mexico",
+        "Dgo., Mexico"
+      ],
+      "reasons": [
+        "85% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Eumemics",
+          "title": "Nice Mashups",
+          "location": "Durango, Colorado"
+        },
+        {
+          "artist": "Quaozy",
+          "title": "3 Previous EPs // a QUAOZY collection",
+          "location": "Durango, Colorado"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "sospechoso",
+      "audit": "top_locations = Durango (Colorado/México); el Durango vasco queda mezclado — requiere filtro por location"
+    },
+    {
+      "tag": "gernika",
+      "source": "semilla:municipio",
+      "result_count": 10,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 10,
+      "eh_share": 0.2,
+      "top_locations": [
+        "Guernica, Spain",
+        "Afghanistan",
+        "Gernika Lumo, Spain"
+      ],
+      "reasons": [
+        "solo 20% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "The Flacotones",
+          "title": "THE FLACOTONES",
+          "location": "Gernika Lumo, Spain"
+        },
+        {
+          "artist": "MAPATXE",
+          "title": "Emakume-bala",
+          "location": "Guernica, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "Guernica/Gernika Lumo (Spain) son EH; la grafía 'Guernica' no estaba en los términos"
+    },
+    {
+      "tag": "bermeo",
+      "source": "semilla:municipio",
+      "result_count": 57,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.75,
+      "top_locations": [
+        "Bermeo, Spain",
+        "Afghanistan",
+        "Euskadi, Spain"
+      ],
+      "reasons": [
+        "75% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Exitus band",
+          "title": "Itsosora exodue",
+          "location": "Bermeo, Spain"
+        },
+        {
+          "artist": "G.W.F.",
+          "title": "Vol2",
+          "location": "Bermeo, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "ondarroa",
+      "source": "semilla:municipio",
+      "result_count": 39,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Ondarroa, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Keu Agirretxea",
+          "title": "IMPROPHONO II",
+          "location": "Ondarroa, Spain"
+        },
+        {
+          "artist": "TU-K",
+          "title": "21 22 - 11",
+          "location": "Ondarroa, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "lekeitio",
+      "source": "semilla:municipio",
+      "result_count": 20,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.9,
+      "top_locations": [
+        "Lekeitio, Spain",
+        "Basque Country, Spain",
+        "Afghanistan"
+      ],
+      "reasons": [
+        "90% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Iban Martin",
+          "title": "Zaurietan lore",
+          "location": "Lekeitio, Spain"
+        },
+        {
+          "artist": "mitosia",
+          "title": "BALA DE AZKEN",
+          "location": "Lekeitio, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "mungia",
+      "source": "semilla:municipio",
+      "result_count": 17,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 17,
+      "eh_share": 0.88,
+      "top_locations": [
+        "Mungia, Spain",
+        "PV, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Los Moñas",
+          "title": "Yamomopipi-papo",
+          "location": "Mungia, Spain"
+        },
+        {
+          "artist": "Aramu",
+          "title": "Ostabe Zu",
+          "location": "Mungia, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "errenteria",
+      "source": "semilla:municipio",
+      "result_count": 60,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Errenteria, Spain",
+        "PV, Spain"
+      ],
+      "reasons": [
+        "95% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "JMAA",
+          "title": "Nepo Goddess Diva",
+          "location": "Errenteria, Spain"
+        },
+        {
+          "artist": "Esne Bidea Records",
+          "title": "Focus On The Inner Darkness",
+          "location": "PV, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "eibar",
+      "source": "semilla:municipio",
+      "result_count": 37,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Eibar, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Samuel's Decay",
+          "title": "To The Past & Back",
+          "location": "Eibar, Spain"
+        },
+        {
+          "artist": "Aitor Suárez",
+          "title": "The Last of Us - Urbexplay (Original Soundtrack)",
+          "location": "Eibar, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "tolosa",
+      "source": "semilla:municipio",
+      "result_count": 41,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 19,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Tolosa, Spain",
+        "Zarautz, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Glaukoma",
+          "title": "Kalima",
+          "location": "Tolosa, Spain"
+        },
+        {
+          "artist": "Glaukoma",
+          "title": "Vol.1",
+          "location": "Tolosa, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "hernani",
+      "source": "semilla:municipio",
+      "result_count": 30,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Hernani, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Ainara Ortega",
+          "title": "Scat",
+          "location": "Hernani, Spain"
+        },
+        {
+          "artist": "Superlore",
+          "title": "Arrakastaren Rave Eternalean",
+          "location": "Hernani, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "azpeitia",
+      "source": "semilla:municipio",
+      "result_count": 21,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 20,
+      "eh_share": 0.9,
+      "top_locations": [
+        "Azpeitia, Spain",
+        "Barcelona, Spain",
+        "PV, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Hit Bound",
+          "title": "Ghetto Rock / Golden Tile Dub",
+          "location": "Azpeitia, Spain"
+        },
+        {
+          "artist": "B.O.L. - Baserriko Ollaxkue Labien",
+          "title": "Peel Session 2024/05/10",
+          "location": "Azpeitia, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "arrasate",
+      "source": "semilla:municipio",
+      "result_count": 57,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Arrasate, Spain",
+        "Spain"
+      ],
+      "reasons": [
+        "95% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Maniaks",
+          "title": "Paradisu faltsuak (2026)",
+          "location": "Arrasate, Spain"
+        },
+        {
+          "artist": "Bat bat bi",
+          "title": "Mundu hau",
+          "location": "Arrasate, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "zarautz",
+      "source": "semilla:municipio",
+      "result_count": 282,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Zarautz, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "ZarataZarautz",
+          "title": "1991 (2026-05-22)",
+          "location": "Zarautz, Spain"
+        },
+        {
+          "artist": "ZarataZarautz",
+          "title": "Gaizkiñe (2026-05-09)",
+          "location": "Zarautz, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "irun",
+      "source": "semilla:municipio",
+      "result_count": 123,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.85,
+      "top_locations": [
+        "Irun, Spain",
+        "Zaragoza, Spain",
+        "Irun, Nigeria"
+      ],
+      "reasons": [
+        "85% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "ZaragozaDesordenRecords",
+          "title": "ZDR093 Antiregimen - 1984-85 LP (Avance)",
+          "location": "Zaragoza, Spain"
+        },
+        {
+          "artist": "ZaragozaDesordenRecords",
+          "title": "ZDR078 The Inductions - Rock & Roll Flames LP (Avance)",
+          "location": "Zaragoza, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir",
+      "audit": "mayoría Irun (Gipuzkoa) pero hay Irun (Nigeria) y spam de un sello de Zaragoza — revisar location en el PR"
+    },
+    {
+      "tag": "hondarribia",
+      "source": "semilla:municipio",
+      "result_count": 63,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 19,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Hondarribia, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "iiingles",
+          "title": "ERRAIETAKOA",
+          "location": "Hondarribia, Spain"
+        },
+        {
+          "artist": "ONAVIBE",
+          "title": "Mío",
+          "location": "Hondarribia, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "oñati",
+      "source": "semilla:municipio",
+      "result_count": 32,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Oñati, Spain",
+        "Euskadi, Spain",
+        "PV, Spain"
+      ],
+      "reasons": [
+        "95% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Aiert",
+          "title": "Arriskuaz Larrutan",
+          "location": "Oñati, Spain"
+        },
+        {
+          "artist": "Malko",
+          "title": "Minmugak",
+          "location": "Oñati, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "zumaia",
+      "source": "semilla:municipio",
+      "result_count": 24,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.9,
+      "top_locations": [
+        "Zumaia, Spain",
+        "Belgium",
+        "Berlin, Germany"
+      ],
+      "reasons": [
+        "90% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Big Boy",
+          "title": "Hildako anonimoak",
+          "location": "Zumaia, Spain"
+        },
+        {
+          "artist": "Big Boy",
+          "title": "Animaliak",
+          "location": "Zumaia, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bergara",
+      "source": "semilla:municipio",
+      "result_count": 18,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 18,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bergara, Spain",
+        "Zarautz, Spain",
+        "Irun, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Lemak",
+          "title": "Bi Zauri Bizi, Bi Lore Txiki, Bi Harribitxi",
+          "location": "Bergara, Spain"
+        },
+        {
+          "artist": "berbenir",
+          "title": "EndreDAWte",
+          "location": "Bergara, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "oiartzun",
+      "source": "semilla:municipio",
+      "result_count": 42,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 18,
+      "eh_share": 0.94,
+      "top_locations": [
+        "Oiartzun, Spain",
+        "Cambo Les Bains, France"
+      ],
+      "reasons": [
+        "94% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Txilly",
+          "title": "BMB",
+          "location": "Oiartzun, Spain"
+        },
+        {
+          "artist": "Txilly",
+          "title": "Banoa",
+          "location": "Oiartzun, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "laudio",
+      "source": "semilla:municipio",
+      "result_count": 23,
+      "overlap_url": 3,
+      "overlap_id": 3,
+      "locations_sampled": 20,
+      "eh_share": 0.9,
+      "top_locations": [
+        "Laudio, Spain",
+        "Zaragoza, Spain",
+        "PV, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "ZaragozaDesordenRecords",
+          "title": "ZDR099 Exorbitant Flatulence - Los Asintomaticos Estan Teniendo Secuelas C.D (En Stock)",
+          "location": "Zaragoza, Spain"
+        },
+        {
+          "artist": "Xabi Basterra",
+          "title": "Dos Amigos",
+          "location": "Laudio, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "llodio",
+      "source": "semilla:municipio",
+      "result_count": 2,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 2,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Zaragoza, Spain",
+        "London, UK"
+      ],
+      "reasons": [
+        "señal débil: solo 2 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "ZaragozaDesordenRecords",
+          "title": "ZDR099 Exorbitant Flatulence - Los Asintomaticos Estan Teniendo Secuelas C.D (En Stock)",
+          "location": "Zaragoza, Spain"
+        },
+        {
+          "artist": "LA VIDA ES UN MUS DISCOS",
+          "title": "Demo 1986",
+          "location": "London, UK"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso"
+    },
+    {
+      "tag": "amurrio",
+      "source": "semilla:municipio",
+      "result_count": 12,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 12,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Amurrio, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Zitalak",
+          "title": "30 Minututako une bat",
+          "location": "Amurrio, Spain"
+        },
+        {
+          "artist": "NØT",
+          "title": "Ikusi [EP]",
+          "location": "Amurrio, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "tudela",
+      "source": "semilla:municipio",
+      "result_count": 22,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Tudela, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "RedOx Punk Rock",
+          "title": "Selección Natural",
+          "location": "Tudela, Spain"
+        },
+        {
+          "artist": "TripleZeta",
+          "title": "PunkStar's",
+          "location": "Tudela, Spain"
+        }
+      ],
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "tafalla",
+      "source": "semilla:municipio",
+      "result_count": 3,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Tafalla, Spain"
+      ],
+      "reasons": [
+        "señal débil: solo 1 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "Joakin Taboada",
+          "title": "Viento, lluvia",
+          "location": "Tafalla, Spain"
+        },
+        {
+          "artist": "Rotten XIII",
+          "title": "Aurrera",
+          "location": ""
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso"
+    },
+    {
+      "tag": "lizarra",
+      "source": "semilla:municipio",
+      "result_count": 0,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 0,
+      "eh_share": null,
+      "top_locations": [],
+      "reasons": [
+        "0 resultados"
+      ],
+      "sample": [],
+      "verdict_auto": "descartar",
+      "verdict": "descartar"
+    },
+    {
+      "tag": "estella",
+      "source": "semilla:municipio",
+      "result_count": 1,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Estella, Spain"
+      ],
+      "reasons": [
+        "señal débil: solo 1 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "Melocotón Gigante",
+          "title": "Mutante",
+          "location": "Estella, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso"
+    },
+    {
+      "tag": "altsasu",
+      "source": "semilla:municipio",
+      "result_count": 1,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 1,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Alsasua – Altsasu, Spain"
+      ],
+      "reasons": [
+        "señal débil: solo 1 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "i+d",
+          "title": "I+D",
+          "location": "Alsasua – Altsasu, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso"
+    },
+    {
+      "tag": "baztan",
+      "source": "semilla:municipio",
+      "result_count": 1,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Iruña, Spain"
+      ],
+      "reasons": [
+        "señal débil: solo 1 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "Iturria",
+          "title": "Leihotik leihora",
+          "location": "Iruña, Spain"
+        }
+      ],
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso"
+    },
+    {
+      "tag": "euskara",
+      "source": "cosecha",
+      "result_count": 116,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 17,
+      "eh_share": 0.24,
+      "top_locations": [
+        "PV, Spain",
+        "Tolosa, Spain",
+        "Arratia Nerbioi, Spain"
+      ],
+      "reasons": [
+        "solo 24% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "Galazota",
+          "title": "Heldu Orduko Usteldu",
+          "location": "Arratia Nerbioi, Spain"
+        },
+        {
+          "artist": "Karm Hilak",
+          "title": "Erroiak begiradan",
+          "location": "Gernika Lumo, Spain"
+        }
+      ],
+      "harvest_freq": 6,
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "eh_share infravalorado: PV/Tolosa/Arratia"
+    },
+    {
+      "tag": "donostia-san-sebastian",
+      "source": "cosecha",
+      "result_count": 630,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Donostia / San Sebastián, Spain",
+        "Donostia San Sebastian, Spain"
+      ],
+      "reasons": [
+        "100% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Paulotronic",
+          "title": "Paulotronic-1",
+          "location": "Donostia / San Sebastián, Spain"
+        },
+        {
+          "artist": "TIMBA MUZIK LAB",
+          "title": "Déjame Ser Yo",
+          "location": "Donostia / San Sebastián, Spain"
+        }
+      ],
+      "harvest_freq": 4,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "euskal",
+      "source": "cosecha",
+      "result_count": 31,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 16,
+      "eh_share": 0.62,
+      "top_locations": [
+        "Euskadi, Spain",
+        "Itziar, Spain",
+        "Pamplona, Spain"
+      ],
+      "reasons": [
+        "62% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Iban Martin",
+          "title": "Zaurietan lore",
+          "location": "Lekeitio, Spain"
+        },
+        {
+          "artist": "The Vartools",
+          "title": "Awesome",
+          "location": "Eibar, Spain"
+        }
+      ],
+      "harvest_freq": 3,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "euskera",
+      "source": "cosecha",
+      "result_count": 61,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 18,
+      "eh_share": 0.56,
+      "top_locations": [
+        "Bilbao, Spain",
+        "Errenteria, Spain",
+        "PV, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "NUZZ",
+          "title": "Hara eta Hemen",
+          "location": "Bilbao, Spain"
+        },
+        {
+          "artist": "Hellmugan",
+          "title": "Iluntasunean Babesten",
+          "location": "Errenteria, Spain"
+        }
+      ],
+      "harvest_freq": 2,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "país-vasco",
+      "source": "cosecha",
+      "result_count": 238,
+      "overlap_url": 5,
+      "overlap_id": 5,
+      "locations_sampled": 20,
+      "eh_share": 0.95,
+      "top_locations": [
+        "Bilbao, Spain",
+        "Vitoria Gasteiz, Spain",
+        "Hondarribia, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Mono Cat 7 Records",
+          "title": "Art School",
+          "location": "Vitoria Gasteiz, Spain"
+        },
+        {
+          "artist": "Mono Cat 7 Records",
+          "title": "2006",
+          "location": "Vitoria Gasteiz, Spain"
+        }
+      ],
+      "harvest_freq": 2,
+      "verdict_auto": "incluir",
+      "alias_of": "pais-vasco",
+      "verdict": "duplicado",
+      "audit": "la API pliega acentos: mismo tag que 'pais-vasco' (result_count idéntico)"
+    },
+    {
+      "tag": "andoain",
+      "source": "cosecha",
+      "result_count": 35,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 20,
+      "eh_share": 0.05,
+      "top_locations": [
+        "Andoain, Spain",
+        "Zarautz, Spain"
+      ],
+      "reasons": [
+        "solo 5% de locations de EH (posible colisión)"
+      ],
+      "sample": [
+        {
+          "artist": "ZarataZarautz",
+          "title": "Gaizkiñe (2026-05-09)",
+          "location": "Zarautz, Spain"
+        },
+        {
+          "artist": "Bertzesfer",
+          "title": "Bertzesfer",
+          "location": "Andoain, Spain"
+        }
+      ],
+      "harvest_freq": 2,
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "locations Andoain/Zarautz — EH claro, término ausente de la heurística"
+    },
+    {
+      "tag": "basque-rock",
+      "source": "cosecha",
+      "result_count": 6,
+      "overlap_url": 0,
+      "overlap_id": 0,
+      "locations_sampled": 4,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bermeo, Spain"
+      ],
+      "reasons": [
+        "señal débil: solo 4 locations en la muestra"
+      ],
+      "sample": [
+        {
+          "artist": "Addar",
+          "title": "Eztenak",
+          "location": "Bermeo, Spain"
+        },
+        {
+          "artist": "Addar",
+          "title": "Kamiseta \"Otso\" Zuria",
+          "location": null
+        }
+      ],
+      "harvest_freq": 2,
+      "verdict_auto": "sospechoso",
+      "verdict": "sospechoso"
+    },
+    {
+      "tag": "amorebieta",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Amorebieta, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "pablo gil aguirre",
+          "title": "pintar con palabras",
+          "location": "Amorebieta, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "banda-femenina-bilbao",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "MoonShakers",
+          "title": "Visitantes",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "basque-alt-rock",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Mikel Uraken",
+          "title": "Izaki Bizidun Berriak",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "basque-folk",
+      "source": "cosecha",
+      "result_count": 21,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 20,
+      "eh_share": 0.4,
+      "top_locations": [
+        "PV, Spain",
+        "Donostia San Sebastian, Spain",
+        "Madrid, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico",
+        "pero solo 40% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Xabier Badiola",
+          "title": "Leiho Ondoan Xori Bat",
+          "location": "PV, Spain"
+        },
+        {
+          "artist": "gartxot",
+          "title": "bizirik gaude",
+          "location": "Donostia / San Sebastián, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "solape con canónico; eh_share infravalorado"
+    },
+    {
+      "tag": "bilbainadak",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Bilbao Musikak",
+          "title": "XXXIII. Concurso BILBAINADAS Lehiaketa",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bilbainadas",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Bilbao Musikak",
+          "title": "XXXIII. Concurso BILBAINADAS Lehiaketa",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bilbaokultura",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Bilbao Musikak",
+          "title": "XXXIII. Concurso BILBAINADAS Lehiaketa",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bilbaomusikak",
+      "source": "cosecha",
+      "result_count": 5,
+      "overlap_url": 5,
+      "overlap_id": 5,
+      "locations_sampled": 5,
+      "eh_share": 0.8,
+      "top_locations": [
+        "Bilbao, Spain",
+        "Melilla, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Chivani Records",
+          "title": "Te Kiero Matar - 3 Kg de Mierda",
+          "location": "Melilla, Spain"
+        },
+        {
+          "artist": "Intoxikado (Oficial)",
+          "title": "Rabia Acumulada",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bilbaoudala",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Bilbao Musikak",
+          "title": "XXXIII. Concurso BILBAINADAS Lehiaketa",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bilbo-zaharra",
+      "source": "cosecha",
+      "result_count": 3,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 3,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Te Kiero Matar",
+          "title": "Huele Peste",
+          "location": "Bilbao, Spain"
+        },
+        {
+          "artist": "Te Kiero Matar",
+          "title": "3kg de Mierda",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bilbocore",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "kalipotxo",
+          "title": "error bakui",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "bilboriginal",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Mr. Yogo",
+          "title": "¿Qué les dejaremos?",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "cantante-vasca",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Iratxe Mugire",
+          "title": "La piel transparente",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "crudobilbao",
+      "source": "cosecha",
+      "result_count": 7,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 7,
+      "eh_share": 0.29,
+      "top_locations": [
+        "Bilbao, Spain",
+        "Afghanistan",
+        "Madrid, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico",
+        "pero solo 29% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "CrudoBilbao",
+          "title": "Neodymium Chapter II",
+          "location": "Bilbao, Spain"
+        },
+        {
+          "artist": "Mendeku Diskak",
+          "title": "-013- CUERO \"Todo Hierro\" One-Sided 12\"",
+          "location": "Afghanistan"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "solape 2 con canónico; tag de escena bilbaína"
+    },
+    {
+      "tag": "enkarterri",
+      "source": "cosecha",
+      "result_count": 8,
+      "overlap_url": 2,
+      "overlap_id": 2,
+      "locations_sampled": 8,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Enkarterri, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico",
+        "pero solo 0% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Doministikum",
+          "title": "THIS IS HARDCORE NOT SPAIN 2",
+          "location": "Enkarterri, Spain"
+        },
+        {
+          "artist": "Doministikum",
+          "title": "MIERDA CITY SAMPLER 2025 V/A",
+          "location": "Enkarterri, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "comarca de Bizkaia; locations Enkarterri (Spain)"
+    },
+    {
+      "tag": "ermua",
+      "source": "cosecha",
+      "result_count": 18,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 18,
+      "eh_share": 0.0,
+      "top_locations": [
+        "Ermua, Spain",
+        "PV, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico",
+        "pero solo 0% de locations de EH"
+      ],
+      "sample": [
+        {
+          "artist": "Golanulao",
+          "title": "Inoiz Inork Eskatu Ez Digun Guztia",
+          "location": "Ermua, Spain"
+        },
+        {
+          "artist": "Golanulao",
+          "title": "KAOIS TREB",
+          "location": "Ermua, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "sospechoso",
+      "verdict": "incluir",
+      "audit": "locations Ermua (Spain) — EH claro, término ausente"
+    },
+    {
+      "tag": "euskal-rapa",
+      "source": "cosecha",
+      "result_count": 1,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 1,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "Sigeruban",
+          "title": "ManDriLL",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    },
+    {
+      "tag": "euskal-wave",
+      "source": "cosecha",
+      "result_count": 2,
+      "overlap_url": 1,
+      "overlap_id": 1,
+      "locations_sampled": 2,
+      "eh_share": 1.0,
+      "top_locations": [
+        "Bilbao, Spain"
+      ],
+      "reasons": [
+        "solape con el canónico"
+      ],
+      "sample": [
+        {
+          "artist": "SERPIENTE",
+          "title": "Krisanteilu",
+          "location": "Bilbao, Spain"
+        },
+        {
+          "artist": "SERPIENTE",
+          "title": "SERPIENTE",
+          "location": "Bilbao, Spain"
+        }
+      ],
+      "harvest_freq": 1,
+      "verdict_auto": "incluir",
+      "verdict": "incluir"
+    }
+  ]
+}
