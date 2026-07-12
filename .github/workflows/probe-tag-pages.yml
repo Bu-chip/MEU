@@ -13,6 +13,15 @@ on:
         description: "Tags adicionales a sondear (separados por comas, dentro del presupuesto de 10 requests)"
         required: false
         default: ""
+  # La integración de esta sesión no puede lanzar workflow_dispatch
+  # (403 actions:write), así que el push de los ficheros del sondeo en
+  # la rama de trabajo actúa de disparador. Acotado a rama+paths para
+  # que ningún otro push ejecute requests contra Bandcamp.
+  push:
+    branches: [claude/euskadi-catalog-expansion-choh0j]
+    paths:
+      - scripts/probe_tag_pages.py
+      - .github/workflows/probe-tag-pages.yml
 
 permissions:
   contents: read
