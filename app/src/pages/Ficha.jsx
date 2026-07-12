@@ -6,8 +6,8 @@ import { Portada } from '../components/Portada.jsx'
 import { BandcampPlayer } from '../components/BandcampPlayer.jsx'
 import './Ficha.css'
 
-// Spec congelada: design/meu-ficha-v1.html + extensiones de Fase 0:
-// portada real tratada, player click-para-cargar bajo las acciones, tags
+// Spec congelada: design/meu-ficha-v1.html + extensiones de Fase 0
+// (decisión 2 enmendada: el player carga automáticamente al entrar), tags
 // clicables que aterrizan en #/archivo?tag=…, similares al vuelo.
 // Sin header ni puertas: la ficha abre con su barra de retorno (mockup).
 //
