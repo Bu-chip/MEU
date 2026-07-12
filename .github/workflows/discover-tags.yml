@@ -85,10 +85,12 @@ jobs:
           # que persistir el estado aunque el scraper haya fallado.
           set +e
           python3 scripts/discover_tags.py --budget "$BUDGET" \
-            --tags "$TAGS" ${MONTH:+--month "$MONTH"}
-          rc=$?
+            --tags "$TAGS" ${MONTH:+--month "$MONTH"} 2>&1 | tee /tmp/scrape.log
+          rc=${PIPESTATUS[0]}
           set -e
+          USED=$(sed -n 's/^requests usados: //p' /tmp/scrape.log | tail -1)
           echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          echo "used=${USED:-?}" >> "$GITHUB_OUTPUT"
           echo "month=${MONTH:-$(date -u +%Y-%m)}" >> "$GITHUB_OUTPUT"
 
       # if: always() para conservar el progreso parcial ante timeout/cancel.
@@ -142,17 +144,47 @@ jobs:
             exit 0
           fi
           PENDING=$(python3 -c "import json, pathlib; p = pathlib.Path('data/discovery_state.json'); print(len(json.loads(p.read_text()).get('pending_fichas', {})) if p.exists() else 0)")
-          {
-            echo "PR generado automáticamente por el workflow \`discover-tags\` (run ${{ github.run_id }})."
-            echo
-            echo "**Revisión**: elimina del JSON las filas que no deban entrar y apunta su URL normalizada en \`data/rejected.json\` (convención en el meta del propio fichero) para que no se vuelvan a proponer. Los \`id\` definitivos se asignan al merge al canónico. Fichas pendientes para próximas pasadas: ${PENDING}."
-            echo
-            python3 scripts/discover_tags.py --table "$FILE"
-          } > /tmp/pr-body.md
+          BR="candidates/${MONTH}"
+          TABLA="data/candidates_${MONTH}_tabla.md"
+          # La tabla completa NO cabe en el body de un PR (límite 65.536
+          # caracteres con >1.000 candidatos): viaja como fichero
+          # commiteado en la rama y el body lleva solo un resumen.
+          python3 scripts/discover_tags.py --table "$FILE" > /tmp/tabla.md
+          python3 - "$FILE" "$MONTH" "${{ github.repository }}" "$BR" \
+            "$PENDING" "${{ steps.scrape.outputs.used }}" "${{ github.run_id }}" \
+            > /tmp/pr-body.md <<'PY'
+          import collections, json, sys
+          path, month, repo, br, pending, used, run = sys.argv[1:8]
+          d = json.load(open(path))
+          cands, deferred = d["candidates"], d["deferred_oleada2"]
+          by_tag = collections.Counter(c["source_tags"][0] for c in cands)
+          out = [
+              f"PR generado automáticamente por el workflow `discover-tags` (run {run}).",
+              "",
+              f"**{len(cands)} candidatos** (+{len(deferred)} en cola oleada-2 Iparralde). "
+              f"Tabla completa para revisión: "
+              f"[`data/candidates_{month}_tabla.md`](https://github.com/{repo}/blob/{br}/data/candidates_{month}_tabla.md).",
+              "",
+              f"Requests usados en el último run: {used}. "
+              f"Fichas pendientes para próximas pasadas: {pending}.",
+              "",
+              "**Revisión**: elimina del JSON las filas que no deban entrar y "
+              "apunta su URL normalizada en `data/rejected.json` (convención en "
+              "el meta del propio fichero) para que no se vuelvan a proponer. "
+              "Los `id` definitivos se asignan al merge al canónico.",
+              "",
+              "| Tag de origen | Candidatos |",
+              "|---|---:|",
+          ]
+          out += [f"| {tag} | {n} |" for tag, n in by_tag.most_common()]
+          body = "\n".join(out)
+          # Cinturón de seguridad muy por debajo del límite de GitHub.
+          assert len(body) < 30000, f"body de {len(body)} caracteres"
+          print(body)
+          PY
           cp "$FILE" /tmp/cands.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          BR="candidates/${MONTH}"
           if git fetch origin "$BR"; then
             git checkout -f -B "$BR" FETCH_HEAD
           else
@@ -161,7 +193,8 @@ jobs:
           fi
           mkdir -p data
           cp /tmp/cands.json "$FILE"
-          git add -f "$FILE"
+          cp /tmp/tabla.md "$TABLA"
+          git add -f "$FILE" "$TABLA"
           PUSHED=0
           if git diff --cached --quiet; then
             echo "candidatos sin cambios respecto a la rama $BR"
