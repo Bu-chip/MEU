@@ -194,13 +194,9 @@ export function Explorar({ archive }) {
       </div>
 
       <footer className="pie">
-        tres verbos, cero cajones: MÁS DISCOS rehace el muro con azar del archivo entero
-        (variedad de géneros garantizada) · GÉNERO AL AZAR te deja caer en un estilo que
-        no has elegido — dungeon synth, horror disco, poky… — y AÑO AL AZAR en un año
-        entre {years[0]} y {years[years.length - 1]} (a veces con 3 discos: eso también
-        es el archivo); el nombre o el año preside el muro; repetir = caer en otro; × =
-        deriva libre; género y año no se combinan — combinar es filtrar, y filtrar es de
-        la otra puerta · aquí no se elige ni se busca: para eso está la otra puerta
+        MÁS DISCOS: regenera el muro con 60 discos al azar. GÉNERO AL AZAR: filtra el
+        muro por un estilo aleatorio. AÑO AL AZAR: filtra por un año. Género y año no se
+        combinan. Para buscar o filtrar a voluntad, usa ARCHIVO.
       </footer>
 
       <FichaBar album={seleccion} onCerrar={() => setSeleccion(null)} />
