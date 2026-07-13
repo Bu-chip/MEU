@@ -11,5 +11,1231 @@
             }
         }
     },
-    "rejected": {}
+    "rejected": {
+        "aediy.bandcamp.com/album/sh-ck-alta-traici-n-ae-006-agotado-sold-out": {
+            "reason": "edición de sello sustituida por la del grupo (id 310: https://shockpunkbilbao.bandcamp.com/album/alta-traici-n)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "alonereggaeshop.bandcamp.com/album/7-bass-lee-enlightenment": {
+            "reason": "edición de sello sustituida por la del grupo (id 178: https://bassleemusic.bandcamp.com/album/7-enlightenment)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "alonereggaeshop.bandcamp.com/album/bass-lee-inna-one-drop-style-melodica-showcase": {
+            "reason": "edición de sello sustituida por la del grupo (id 495: https://bassleemusic.bandcamp.com/album/inna-one-drop-style-melodica-showcase)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "alonereggaeshop.bandcamp.com/album/bass-lee-roots": {
+            "reason": "edición de sello sustituida por la del grupo (id 12: https://bassleemusic.bandcamp.com/album/roots)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "alonereggaeshop.bandcamp.com/album/upyard-sufferahs-time": {
+            "reason": "edición de sello sustituida por la del grupo (id 293: https://upyard.bandcamp.com/album/sufferahs-time)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "andaluciauberalles.bandcamp.com/album/ezin-atera": {
+            "reason": "edición duplicada del mismo disco; entra https://orsiniband.bandcamp.com/album/ezin-atera",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "andaluciauberalles.bandcamp.com/album/m-rmol-nueva-generaci-n": {
+            "reason": "mismo disco ya en el canónico (id 1967) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "andaluciauberalles.bandcamp.com/album/m-rmol-nuevo-sol-lp": {
+            "reason": "edición de sello sustituida por la del grupo (id 306: https://marmolbilbao.bandcamp.com/album/nuevo-sol)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "andaluciauberalles.bandcamp.com/album/m-rmol-sokatira": {
+            "reason": "edición de sello sustituida por la del grupo (id 303: https://marmolbilbao.bandcamp.com/album/sokatira)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "andaluciauberalles.bandcamp.com/album/s-t-3": {
+            "reason": "edición duplicada del mismo disco; entra https://yunk.bandcamp.com/album/s-t",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "andaluciauberalles.bandcamp.com/album/working-class-pop": {
+            "reason": "edición duplicada del mismo disco; entra https://okimoki.bandcamp.com/album/working-class-pop",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "angelaaaux.bandcamp.com/album/wrap-your-troubles-in-dreams": {
+            "reason": "mismo disco ya en el canónico (id 957) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "asfaltica.bandcamp.com/album/poemaria": {
+            "reason": "mismo disco ya en el canónico (id 1160) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "azkarzintak.bandcamp.com/album/buffet": {
+            "reason": "edición duplicada del mismo disco; entra https://tenpera.bandcamp.com/album/buffet",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "azkarzintak.bandcamp.com/album/delirios-de-un-punk-en-la-era-digital": {
+            "reason": "edición duplicada del mismo disco; entra https://xfrustumx.bandcamp.com/album/delirios-de-un-punk-en-la-era-digital",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "azkarzintak.bandcamp.com/album/jon-lee": {
+            "reason": "edición duplicada del mismo disco; entra https://comicsans.bandcamp.com/album/jon-lee",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "azkarzintak.bandcamp.com/album/mastak-erorita-daudenean": {
+            "reason": "edición duplicada del mismo disco; entra https://ezinegon.bandcamp.com/album/mastak-erorita-daudenean",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "azkarzintak.bandcamp.com/album/ordara": {
+            "reason": "edición duplicada del mismo disco; entra https://ordara.bandcamp.com/album/ordara",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "azkarzintak.bandcamp.com/album/ramos-felices-y-no-lo-sab-amos": {
+            "reason": "edición duplicada del mismo disco; entra https://comicsans.bandcamp.com/album/ramos-felices-y-no-lo-sab-amos",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "barne.bandcamp.com/album/identikatea": {
+            "reason": "edición de sello sustituida por la del grupo (id 107: https://izena.bandcamp.com/album/identikatea)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/12-fight-down-babylon-women-in-reggae": {
+            "reason": "mismo disco ya en el canónico (id 389) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/7-east-bound": {
+            "reason": "mismo disco ya en el canónico (id 374) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/7-hotter-the-battle": {
+            "reason": "mismo disco ya en el canónico (id 120) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/7-life-is-free": {
+            "reason": "mismo disco ya en el canónico (id 218) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/7-live-not-for-vanity-pt-ii": {
+            "reason": "mismo disco ya en el canónico (id 204) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/7-more-differences": {
+            "reason": "mismo disco ya en el canónico (id 431) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/7-words-of-my-mouth": {
+            "reason": "mismo disco ya en el canónico (id 168) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/going-home": {
+            "reason": "mismo disco ya en el canónico (id 505) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/showcase-i": {
+            "reason": "mismo disco ya en el canónico (id 442) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/showcase-ii": {
+            "reason": "mismo disco ya en el canónico (id 304) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/sufferahs-time": {
+            "reason": "mismo disco ya en el canónico (id 293) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/sufferahs-time-in-dub": {
+            "reason": "edición duplicada del mismo disco; entra https://upyard.bandcamp.com/album/sufferahs-time-in-dub",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bassleemusic.bandcamp.com/album/true-love": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 448)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "belarri.bandcamp.com/album/betazalak": {
+            "reason": "edición duplicada del mismo disco; entra https://xabisansebastian.bandcamp.com/album/betazalak",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "betepaeta.bandcamp.com/album/anabasa": {
+            "reason": "edición duplicada del mismo disco; entra https://denaezer.bandcamp.com/album/anabasa",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bidehuts.bandcamp.com/album/anomia": {
+            "reason": "edición duplicada del mismo disco; entra https://albamusika.bandcamp.com/album/anomia",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bidehuts.bandcamp.com/album/iennei": {
+            "reason": "edición duplicada del mismo disco; entra https://inoreneroni1.bandcamp.com/album/iennei",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bidehuts.bandcamp.com/album/il-cercatore-di-perle": {
+            "reason": "edición duplicada del mismo disco; entra https://inoreneroni1.bandcamp.com/album/il-cercatore-di-perle",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bidehuts.bandcamp.com/album/oso-banda": {
+            "reason": "edición duplicada del mismo disco; entra https://josebairazoki.bandcamp.com/album/oso-banda",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bidehuts.bandcamp.com/album/pleistozenoko-astelehenak": {
+            "reason": "edición duplicada del mismo disco; entra https://jupiterjon.bandcamp.com/album/pleistozenoko-astelehenak",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "bidehuts.bandcamp.com/album/s-t-3": {
+            "reason": "edición duplicada del mismo disco; entra https://bidehuts.bandcamp.com/album/s-t",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "breathingthecore.bandcamp.com/album/ambition-999-deluxe-edition": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 1352)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "breathingthecore.bandcamp.com/album/compilation-vol-ii": {
+            "reason": "mismo disco ya en el canónico (id 1438) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "breathingthecore.bandcamp.com/album/compilation-vol-iii": {
+            "reason": "mismo disco ya en el canónico (id 2122) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "buskerjuice.bandcamp.com/album/busker-juice": {
+            "reason": "mismo disco ya en el canónico (id 1272) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "caleiah.bandcamp.com/album/malda": {
+            "reason": "edición duplicada del mismo disco; entra https://augerecords.bandcamp.com/album/malda",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "chin-chinrecordsmundiales.bandcamp.com/album/los-animalitos-del-bosque-3": {
+            "reason": "edición duplicada del mismo disco; entra https://chin-chinrecordsmundiales.bandcamp.com/album/los-animalitos-del-bosque",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "chivanirecords.bandcamp.com/album/te-kiero-matar-3-kg-de-mierda": {
+            "reason": "edición de sello sustituida por la del grupo (id 477: https://tekieromatar.bandcamp.com/album/3kg-de-mierda)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "clartycat.bandcamp.com/album/experiments": {
+            "reason": "edición duplicada del mismo disco; entra https://fivepencegame.bandcamp.com/album/experiments",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "clartycat.bandcamp.com/album/formoterol": {
+            "reason": "edición duplicada del mismo disco; entra https://fivepencegame.bandcamp.com/album/formoterol",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "clartycat.bandcamp.com/album/selected-live-recordings": {
+            "reason": "edición duplicada del mismo disco; entra https://fivepencegame.bandcamp.com/album/selected-live-recordings",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "colillarecords.bandcamp.com/album/declaraci-n-total-de-guerra": {
+            "reason": "edición duplicada del mismo disco; entra https://andaluciauberalles.bandcamp.com/album/declaraci-n-total-de-guerra",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "colillarecords.bandcamp.com/album/nuevo-sol": {
+            "reason": "mismo disco ya en el canónico (id 306) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "corsariosestudios.bandcamp.com/album/chica-zombi": {
+            "reason": "edición duplicada del mismo disco; entra https://inox.bandcamp.com/album/chica-zombi",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "criminalinstinct.bandcamp.com/album/demo-2012": {
+            "reason": "edición de sello sustituida por la del grupo (id 1495: https://crimentalhc.bandcamp.com/album/demo-2013)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "crystalmine.bandcamp.com/album/domaia": {
+            "reason": "edición de sello sustituida por la del grupo (id 5: https://kotoitxu.bandcamp.com/album/domaia)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "crystalmine.bandcamp.com/album/la-pena": {
+            "reason": "edición duplicada del mismo disco; entra https://clorah.bandcamp.com/album/la-pena-2",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "deadmusicatx.bandcamp.com/album/here-comes-krampus": {
+            "reason": "edición de sello sustituida por la del grupo (id 1434: https://trampas2rock.bandcamp.com/album/here-comes)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "detroitpowertrio.bandcamp.com/album/jugamos-como-nunca-y-perdimos-como-siempre-split": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 544)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "dexmusiccom.bandcamp.com/album/20-ep": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 2261)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "dinzuartefacts.bandcamp.com/album/don-treppenwitz": {
+            "reason": "edición de sello sustituida por la del grupo (id 2014: https://wolkokrots.bandcamp.com/album/don-treppenwitz)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "dirtyslaprecords.bandcamp.com/album/blessure": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 117)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "discosbanana1.bandcamp.com/album/canciones-b-licas-para-j-venes": {
+            "reason": "mismo disco ya en el canónico (id 1113) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "discosbanana1.bandcamp.com/album/colega-de-playa": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 1775)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "discosbanana1.bandcamp.com/album/cromosoma": {
+            "reason": "mismo disco ya en el canónico (id 190) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "discosbanana1.bandcamp.com/album/los-valientes-andan-solos": {
+            "reason": "mismo disco ya en el canónico (id 922) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "discosbanana1.bandcamp.com/album/nueva-especie-humana": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 1672)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "discosenfermospunk.bandcamp.com/album/de-78-aihotz-el-no-movimiento-cassette": {
+            "reason": "edición de sello sustituida por la del grupo (id 707: https://aihotz.bandcamp.com/album/el-no-movimiento)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "discosenfermospunk.bandcamp.com/album/de-95-aihotz-matar-al-superhombre-7": {
+            "reason": "edición de sello sustituida por la del grupo (id 879: https://aihotz.bandcamp.com/album/matar-al-superhombre)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "domurecords.bandcamp.com/album/dethroned-ep": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Belgium",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "domurecords.bandcamp.com/album/im-always-late-ep": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Belgium",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "eclecticreactionsrecords.bandcamp.com/album/er009-wldv-the-belief": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 534)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "eclecticreactionsrecords.bandcamp.com/album/er028-garazi-gorostiaga-irauten-ii": {
+            "reason": "edición de sello sustituida por la del grupo (id 1779: https://garazigorostiaga.bandcamp.com/album/irauten-ii)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "eclecticreactionsrecords.bandcamp.com/album/er043-dvoinoi-unit": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 433)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "elcrack.bandcamp.com/album/the-northagirres": {
+            "reason": "edición duplicada del mismo disco; entra https://thenorthagirres.bandcamp.com/album/the-northagirres-2",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "elektrikagrabaketak.bandcamp.com/album/the-crow-farm-have-a-nice-trip-2014": {
+            "reason": "edición de sello sustituida por la del grupo (id 1036: https://thecrowfarm.bandcamp.com/album/have-a-nice-trip)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "eliscasado.bandcamp.com/album/dystopika": {
+            "reason": "edición de sello sustituida por la del grupo (id 98: https://mooncluster.bandcamp.com/album/dystopika)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "elnebularecordings.bandcamp.com/album/melenas": {
+            "reason": "edición duplicada del mismo disco; entra https://melenas.bandcamp.com/album/melenas-2",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "elsarecords.bandcamp.com/album/vulk-beat-kamerlanden": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 791)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "esnebidearecords.bandcamp.com/album/hilesade": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 659)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "esnebidearecords.bandcamp.com/album/one-year-compilation": {
+            "reason": "mismo disco ya en el canónico (id 427) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "esnebidearecords.bandcamp.com/album/underground-sounds": {
+            "reason": "mismo disco ya en el canónico (id 169) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "exnovios1.bandcamp.com/album/exnovios-5": {
+            "reason": "edición duplicada del mismo disco; entra https://exnovios1.bandcamp.com/album/exnovios-2",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "falt.bandcamp.com/album/suspec-siluetti": {
+            "reason": "edición de sello sustituida por la del grupo (id 1958: https://wolkokrots.bandcamp.com/album/suspec-siluetti)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "familyspreerecordings.bandcamp.com/album/fsr144-los-paniks-the-panik-kontroversy-lp": {
+            "reason": "edición de sello sustituida por la del grupo (id 1158: https://paniks.bandcamp.com/album/the-panik-kontroversy)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "federaciondeuniversospop.bandcamp.com/album/r-o-arga": {
+            "reason": "edición duplicada del mismo disco; entra https://rioarga.bandcamp.com/album/r-o-arga-2",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "fil-phuse.bandcamp.com/album/basque": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Germany",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "flexidiscos.bandcamp.com/album/declaraci-n-total-de-guerra": {
+            "reason": "edición duplicada del mismo disco; entra https://andaluciauberalles.bandcamp.com/album/declaraci-n-total-de-guerra",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "flexidiscos.bandcamp.com/album/kordoba-bidea": {
+            "reason": "edición duplicada del mismo disco; entra https://borla.bandcamp.com/album/kordoba-bidea",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "flexidiscos.bandcamp.com/album/working-class-pop": {
+            "reason": "edición duplicada del mismo disco; entra https://okimoki.bandcamp.com/album/working-class-pop",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "folcrecords.bandcamp.com/album/folc063-dr-mahas-miracle-tonic-bank-robbers": {
+            "reason": "edición de sello sustituida por la del grupo (id 1459: https://drmahasmiracletonic.bandcamp.com/album/bank-robbers)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "forbiddencolours.bandcamp.com/album/instroak-vol-3": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 825)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "gafferrecords.bandcamp.com/album/industrial-sunbath": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 499)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "galvornrecords.bandcamp.com/album/amets-gaiztoen-liburua": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 148)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "galvornrecords.bandcamp.com/album/uhrikivi": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 172)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "gondolinrecords.bandcamp.com/album/all-points-into-dex-and-faith": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 23)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "gondolinrecords.bandcamp.com/album/for-when-the-night-comes": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 26)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "greedhc.bandcamp.com/album/the-purge-of-earth": {
+            "reason": "edición de sello sustituida por la del grupo (id 1021: https://fearth.bandcamp.com/album/the-purge)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "guiltyaschargedrecords.bandcamp.com/album/fiambre-solo-somos-carne": {
+            "reason": "edición de sello sustituida por la del grupo (id 1078: https://fiambre.bandcamp.com/album/solo-somos-carne)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "hiddenbayrecords.bandcamp.com/album/con-las-vantanas-tan-grandes-me-da-verg-enza-mirar-voy-tan-deprisa": {
+            "reason": "edición de sello sustituida por la del grupo (id 134: https://airu-wav.bandcamp.com/album/con-las-ventanas-tan-grandes-me-da-verg-enza-mirar-voy-tan-deprisa)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "hilotz.bandcamp.com/album/hil-ala-bizi-2012": {
+            "reason": "edición de sello sustituida por la del grupo (id 1040: https://haxotz.bandcamp.com/album/hil-ala-bizi)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "hiswounds.bandcamp.com/album/arvalastra-meditation-on-the-lunar-steppes": {
+            "reason": "edición de sello sustituida por la del grupo (id 42: https://arvalastra.bandcamp.com/album/meditation-on-the-lunar-steppes)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "hiswounds.bandcamp.com/album/arvalastra-the-key-to-the-shrine-of-putrefaction": {
+            "reason": "edición de sello sustituida por la del grupo (id 174: https://arvalastra.bandcamp.com/album/the-key-to-the-shrine-of-putrefaction)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "hurrahmusica.bandcamp.com/album/monstruoso": {
+            "reason": "edición duplicada del mismo disco; entra https://losnuevoshobbies.bandcamp.com/album/monstruoso",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "ibanaranaindependent666.bandcamp.com/album/exvoto-2": {
+            "reason": "edición duplicada del mismo disco; entra https://ibanaranaindependent666.bandcamp.com/album/exvoto",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "ibanaranaindependent666.bandcamp.com/album/exvoto-3": {
+            "reason": "edición duplicada del mismo disco; entra https://ibanaranaindependent666.bandcamp.com/album/exvoto",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "inthousandlakes1.bandcamp.com/album/age-of-decay": {
+            "reason": "mismo disco ya en el canónico (id 612) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "iorramrecords.bandcamp.com/album/a-b": {
+            "reason": "edición de sello sustituida por la del grupo (id 446: https://sutan.bandcamp.com/album/a-b)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "iparragirrerecords.bandcamp.com/album/errautsetatik": {
+            "reason": "edición duplicada del mismo disco; entra https://azkarzintak.bandcamp.com/album/errautsetatik",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "jillianmixon.bandcamp.com/album/basque-country": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Olympia, Washington",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "jollies.bandcamp.com/album/ilunpean-arnas-hotsa-entzuten": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Brooklyn, New York",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "jonathansoper.bandcamp.com/album/live-at-the-orpheum": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Michigan",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "jonathansoper.bandcamp.com/album/scratch-pop-hiss": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Michigan",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "josephvallehoag.bandcamp.com/album/heartbreak-vanity-attention-to-detail": {
+            "reason": "edición de sello sustituida por la del grupo (id 1969: https://hoahong1.bandcamp.com/album/hoa-hong-2-2)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "kaliyugayouth.bandcamp.com/album/know-your-place": {
+            "reason": "edición duplicada del mismo disco; entra https://detachedhc.bandcamp.com/album/know-your-place",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "kide.bandcamp.com/album/kide-3": {
+            "reason": "edición duplicada del mismo disco; entra https://kide.bandcamp.com/album/kide",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "killvinylrecords.bandcamp.com/album/argilun": {
+            "reason": "edición duplicada del mismo disco; entra https://bayoulabatre.bandcamp.com/album/argilun",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "killvinylrecords.bandcamp.com/album/narcisista": {
+            "reason": "edición duplicada del mismo disco; entra https://danodolor.bandcamp.com/album/narcisista",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "knekelput.bandcamp.com/album/the-key-to-the-shrine-of-putrefaction": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 174)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "knucklesonstun.bandcamp.com/album/violentos-torpedos-de-realidad": {
+            "reason": "edición duplicada del mismo disco; entra https://losretumbes.bandcamp.com/album/violentos-torpedos-de-realidad",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "laagoniadevivir.bandcamp.com/album/ladv214-alkuper-sendero-desesperanza-lp": {
+            "reason": "edición de sello sustituida por la del grupo (id 72: https://alkupera.bandcamp.com/album/sendero-desesperanza)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "ladlo.bandcamp.com/album/iluntasuna-besarkatu-nuen-betiko": {
+            "reason": "edición duplicada del mismo disco; entra https://numenblackmetal.bandcamp.com/album/iluntasuna-besarkatu-nuen-betiko",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lahumanidadeslaplaga.bandcamp.com/album/1991-fuego-y-hielo-lp": {
+            "reason": "edición de sello sustituida por la del grupo (id 675: https://1991taldea.bandcamp.com/album/fuego-y-hielo-lp)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lahumanidadeslaplaga.bandcamp.com/album/1991-s-t-lp": {
+            "reason": "edición de sello sustituida por la del grupo (id 589: https://1991taldea.bandcamp.com/album/s-t-lp)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lahumanidadeslaplaga.bandcamp.com/album/cult-of-misery-together-to-hell-lp": {
+            "reason": "edición de sello sustituida por la del grupo (id 407: https://cultofmisery.bandcamp.com/album/together-to-hell-lp)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lahumanidadeslaplaga.bandcamp.com/album/neila-danza-de-nieblas-lp": {
+            "reason": "edición de sello sustituida por la del grupo (id 626: https://neila.bandcamp.com/album/danza-de-nieblas)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lahumanidadeslaplaga.bandcamp.com/album/neila-tronos-ardiendo-lp": {
+            "reason": "edición de sello sustituida por la del grupo (id 454: https://neila.bandcamp.com/album/tronos-ardiendo)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lahumanidadeslaplaga.bandcamp.com/album/neila-unclean-cd": {
+            "reason": "edición de sello sustituida por la del grupo (id 154: https://neila.bandcamp.com/album/unclean)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lanegradiscos.bandcamp.com/album/alta-traici-n-2": {
+            "reason": "mismo disco ya en el canónico (id 310) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lanegradiscos.bandcamp.com/album/sh-ck-2": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 315)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lavidaesunmus.bandcamp.com/album/eztek-ber-besteik": {
+            "reason": "edición duplicada del mismo disco; entra https://flashrocks.bandcamp.com/album/eztek-ber-besteik",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lavidaesunmus.bandcamp.com/album/s-t-19": {
+            "reason": "edición duplicada del mismo disco; entra https://flashrocks.bandcamp.com/album/s-t",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lemansmusic.bandcamp.com/album/mi-novela-autobiogra-fica-2": {
+            "reason": "edición duplicada del mismo disco; entra https://lemansmusic.bandcamp.com/album/mi-novela-autobiogra-fica",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "losalamoslp.bandcamp.com/album/los-alamos-demo": {
+            "reason": "edición de sello sustituida por la del grupo (id 2330: https://losplomos.bandcamp.com/album/demo)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "losgalernasurf.bandcamp.com/album/surfusion": {
+            "reason": "edición duplicada del mismo disco; entra https://losgalerna.bandcamp.com/album/surfusion",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "losnuevoshobbies.bandcamp.com/album/los-nuevos-hobbies-2": {
+            "reason": "edición duplicada del mismo disco; entra https://losnuevoshobbies.bandcamp.com/album/los-nuevos-hobbies",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lostrecordings.bandcamp.com/album/empty-files-ep": {
+            "reason": "edición de sello sustituida por la del grupo (id 270: https://emptyfiles.bandcamp.com/album/lost-files)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lucindarecords.bandcamp.com/album/notes-from-a-recent-past": {
+            "reason": "edición duplicada del mismo disco; entra https://theyoungwait.bandcamp.com/album/notes-from-a-recent-past",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lunardiscos.bandcamp.com/album/el-ciclo-del-sol-y-el-fin-de-los-d-as": {
+            "reason": "edición duplicada del mismo disco; entra https://juarezescafandra.bandcamp.com/album/el-ciclo-del-sol-y-el-fin-de-los-d-as",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "lurrinoficial.bandcamp.com/album/kandela-baten-argitan": {
+            "reason": "edición duplicada del mismo disco; entra https://lurrin.bandcamp.com/album/kandela-baten-argitan",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "m3srecords.bandcamp.com/album/garun-ta-eztarri": {
+            "reason": "edición duplicada del mismo disco; entra https://bananas.bandcamp.com/album/garun-ta-eztarri",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "magmatones.bandcamp.com/album/dan-manialogism": {
+            "reason": "edición de sello sustituida por la del grupo (id 1998: https://wolkokrots.bandcamp.com/album/dan-manialogism)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "maishamc.bandcamp.com/album/vmme-sahar": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: San Francisco, California",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "mamavynilarecords.bandcamp.com/album/elogios-y-ampollas": {
+            "reason": "edición de sello sustituida por la del grupo (id 1182: https://villapellejos.bandcamp.com/album/elogios-y-ampollas)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "mamavynilarecords.bandcamp.com/album/un-estudio-de-la-vida-en-provincias-2": {
+            "reason": "edición duplicada del mismo disco; entra https://pape.bandcamp.com/album/un-estudio-de-la-vida-en-provincias",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "maukamusik.bandcamp.com/album/gato-por-liebre": {
+            "reason": "edición duplicada del mismo disco; entra https://brigadaimproductiva.bandcamp.com/album/gato-por-liebre",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "maukamusik.bandcamp.com/album/nomadak-eta-kofrea": {
+            "reason": "edición duplicada del mismo disco; entra https://keuagirretxea.bandcamp.com/album/nomadak-eta-kofrea",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "meechdefrance.bandcamp.com/album/echoing-the-city-vol-1-dub-version-meech-de-france-f-i-t-s-records": {
+            "reason": "edición de sello sustituida por la del grupo (id 1485: https://francodiscopunk.bandcamp.com/album/s-t)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "mekina.bandcamp.com/album/demo": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: San Sebastián, Puerto Rico",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "merien.bandcamp.com/album/valdok-atora-ep": {
+            "reason": "edición de sello sustituida por la del grupo (id 1639: https://valdokmusic.bandcamp.com/album/atora-ep)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "metrika1.bandcamp.com/album/fuerza-y-sangre": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: San Sebastián, Puerto Rico",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "metrika1.bandcamp.com/album/todos-somos-metrika": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: San Sebastián, Puerto Rico",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "meyorecords.bandcamp.com/album/death": {
+            "reason": "mismo disco ya en el canónico (id 1254) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "michaelwalsh1.bandcamp.com/album/quarehawk": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Sheffield, UK",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "miusichole.bandcamp.com/album/5000-rpm-manifesto-2011-mh-009": {
+            "reason": "edición de sello sustituida por la del grupo (id 908: https://5000rpm.bandcamp.com/album/manifesto-2011)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "miusichole.bandcamp.com/album/diana-lagarto-s-t-2014-mh021": {
+            "reason": "edición de sello sustituida por la del grupo (id 471: https://dianalagarto.bandcamp.com/album/s-t)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "miusichole.bandcamp.com/album/maderacore-el-camino-del-asombro-2013-mh-013": {
+            "reason": "edición de sello sustituida por la del grupo (id 783: https://maderacore.bandcamp.com/album/el-camino-del-asombro)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "miusichole.bandcamp.com/album/maderacore-la-importancia-de-llamarse-humano-2009-mh-006": {
+            "reason": "edición de sello sustituida por la del grupo (id 1284: https://maderacore.bandcamp.com/album/la-importancia-de-llamarse-humano)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "monasteriodeculturarec.bandcamp.com/album/danze-zizek-danze": {
+            "reason": "mismo disco ya en el canónico (id 1384) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "monasteriodeculturarec.bandcamp.com/album/puro-pl-stico": {
+            "reason": "mismo disco ya en el canónico (id 1132) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "mondocanaperecords.bandcamp.com/album/r-o-arga": {
+            "reason": "edición duplicada del mismo disco; entra https://rioarga.bandcamp.com/album/r-o-arga-2",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "mondocanaperecords.bandcamp.com/album/r-o-arga-2": {
+            "reason": "edición duplicada del mismo disco; entra https://rioarga.bandcamp.com/album/r-o-arga-2",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "montrealguitartrio.bandcamp.com/album/navid": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Montréal, Québec",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "muertematarrecords.bandcamp.com/album/ceremonia-animal": {
+            "reason": "edición duplicada del mismo disco; entra https://tres41.bandcamp.com/album/ceremonia-animal",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "muertematarrecords.bandcamp.com/album/overconfident": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 833)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "muertematarrecords.bandcamp.com/album/structures-of-decadence": {
+            "reason": "edición duplicada del mismo disco; entra https://uselesshead.bandcamp.com/album/structures-of-decadence",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "muertematarrecords.bandcamp.com/album/sup-rviv-nci": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 760)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "muertematarrecords.bandcamp.com/album/this-is-fine": {
+            "reason": "edición duplicada del mismo disco; entra https://giante.bandcamp.com/album/this-is-fine",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "muertematarrecords.bandcamp.com/album/we-are-the-mainstream": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 428)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "muertematarrecords.bandcamp.com/album/zandergraun": {
+            "reason": "mismo disco ya en el canónico (id 979) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "munsterrecords.bandcamp.com/album/blue-tales": {
+            "reason": "edición de sello sustituida por la del grupo (id 551: https://lasectabilbao.bandcamp.com/album/blue-tales)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "musicforunspecifiedaudience.bandcamp.com/album/no-future-except-this": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Munich, Germany",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "mvega.bandcamp.com/album/eolian-dawn": {
+            "reason": "mismo disco ya en el canónico (id 728) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "nabar.bandcamp.com/album/zazkel": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 759)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "nofuneralsound.bandcamp.com/album/flowers-knives": {
+            "reason": "edición duplicada del mismo disco; entra https://knr-calathea.bandcamp.com/album/flowers-knives",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "nooirax.bandcamp.com/album/double-dragon": {
+            "reason": "edición de sello sustituida por la del grupo (id 1369: https://meido.bandcamp.com/album/double-dragon)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "nooirax.bandcamp.com/album/trautzer-blaster": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 617)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "otoroku.bandcamp.com/album/gitarra-lekeitioak-onomatopeikoa-ii": {
+            "reason": "edición duplicada del mismo disco; entra https://bidehuts.bandcamp.com/album/gitarra-lekeitioak-onomatopeikoa-ii",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "paco-musika.bandcamp.com/album/planeten-lerroa": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Kiribati",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "pasidarykpatsrecords.bandcamp.com/album/pp-142-giante-beste-norbait-izan": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Lithuania",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "politburorecordingfiasco.bandcamp.com/album/killerkume-trautzer-blaster": {
+            "reason": "edición de sello sustituida por la del grupo (id 617: https://killerkume.bandcamp.com/album/trautzer-blaster)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "privateinstituteinheaven.bandcamp.com/album/86750": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: San Sebastián, Puerto Rico",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "privateinstituteinheaven.bandcamp.com/album/arboria": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: San Sebastián, Puerto Rico",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "privateinstituteinheaven.bandcamp.com/album/mother-of-pus": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: San Sebastián, Puerto Rico",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "produccionestudancas.bandcamp.com/album/bilintx-gonorriaga-split-lp-pt-051": {
+            "reason": "edición de sello sustituida por la del grupo (id 1093: https://gonorriaga.bandcamp.com/album/split)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "quebrantarecords.bandcamp.com/album/argilun-2": {
+            "reason": "edición duplicada del mismo disco; entra https://bayoulabatre.bandcamp.com/album/argilun",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "quebrantarecords.bandcamp.com/album/ezta-ilen": {
+            "reason": "edición duplicada del mismo disco; entra https://eztailen.bandcamp.com/album/ezta-ilen",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "quebrantarecords.bandcamp.com/album/ultravioleta": {
+            "reason": "edición duplicada del mismo disco; entra https://niunpeloderubiasrecords.bandcamp.com/album/ultravioleta",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "radixrecords.bandcamp.com/album/double-dragon": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 1369)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "radixrecords.bandcamp.com/album/el-foso": {
+            "reason": "mismo disco ya en el canónico (id 2345) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "radixrecords.bandcamp.com/album/malda-2": {
+            "reason": "edición duplicada del mismo disco; entra https://augerecords.bandcamp.com/album/malda",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "radixrecords.bandcamp.com/album/zandergraun": {
+            "reason": "mismo disco ya en el canónico (id 979) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "rafaberrio.bandcamp.com/album/diarios": {
+            "reason": "edición duplicada del mismo disco; entra https://diarios.bandcamp.com/album/diarios",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "rainbowdungeon.bandcamp.com/album/holy-love-empire-3": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Vienna, Austria",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "ramirotemple.bandcamp.com/album/forget-the-light": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: San Sebastián, Puerto Rico",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "ramirotemple.bandcamp.com/album/psycho-temple": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: San Sebastián, Puerto Rico",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "rawseryrecords.bandcamp.com/album/valdok-king-boa": {
+            "reason": "edición de sello sustituida por la del grupo (id 381: https://valdokmusic.bandcamp.com/album/king-boa)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "realityfade.bandcamp.com/album/chemical-obliteration": {
+            "reason": "edición de sello sustituida por la del grupo (id 439: https://mdmabrutaldeath.bandcamp.com/album/chemical-obliteration)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "realityfade.bandcamp.com/album/organic": {
+            "reason": "edición de sello sustituida por la del grupo (id 440: https://mdmabrutaldeath.bandcamp.com/album/organic)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "rioarga.bandcamp.com/album/r-o-arga-3": {
+            "reason": "edición duplicada del mismo disco; entra https://rioarga.bandcamp.com/album/r-o-arga-2",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "risingnemesisrecords.bandcamp.com/album/revelation-of-tortured-imprisonment": {
+            "reason": "edición de sello sustituida por la del grupo (id 780: https://fixationonsuffering.bandcamp.com/album/revelation-of-tortured-imprisonment)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "roctopusrecords.bandcamp.com/album/the-longboards-9-surf-shots": {
+            "reason": "edición de sello sustituida por la del grupo (id 1236: https://thelongboards.bandcamp.com/album/9-surf-shots)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "rosebudband.bandcamp.com/album/rosebud": {
+            "reason": "mismo disco ya en el canónico (id 1427) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "s3rpi3nt3.bandcamp.com/album/serpiente": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 732)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "saltamarges.bandcamp.com/album/errautsetatik": {
+            "reason": "edición duplicada del mismo disco; entra https://azkarzintak.bandcamp.com/album/errautsetatik",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "saltamarges.bandcamp.com/album/errekak-nola": {
+            "reason": "edición duplicada del mismo disco; entra https://bananas.bandcamp.com/album/errekak-nola",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "saltamarges.bandcamp.com/album/ramos-felices-y-no-lo-sab-amos": {
+            "reason": "edición duplicada del mismo disco; entra https://comicsans.bandcamp.com/album/ramos-felices-y-no-lo-sab-amos",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "santiagodelgadoylosrunawaylovers.bandcamp.com/album/por-amor-al-rock-n-roll": {
+            "reason": "mismo disco ya en el canónico (id 729) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "sevendipiarecords.bandcamp.com/album/stories": {
+            "reason": "edición duplicada del mismo disco; entra https://harrybaden.bandcamp.com/album/stories",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "shintoma.bandcamp.com/album/krakens": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 2255)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "skioakenfull.bandcamp.com/album/live-at-maida-vale-ep": {
+            "reason": "edición de sello sustituida por la del grupo (id 942: https://maidavale.bandcamp.com/album/ep)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "slowmoband.bandcamp.com/album/slowmo-ep": {
+            "reason": "mismo disco ya en el canónico (id 2156) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "smilingisnotacrimerecords.bandcamp.com/album/f-brica-de-muerte": {
+            "reason": "edición duplicada del mismo disco; entra https://jma-band.bandcamp.com/album/f-brica-de-muerte",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "snaprecordsspain.bandcamp.com/album/sh-ck-split-con-suzio-13-funlp-072": {
+            "reason": "edición de sello sustituida por la del grupo (id 309: https://shockpunkbilbao.bandcamp.com/album/split-suzio-13)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "snaprecordsspain.bandcamp.com/album/turbofuckers-rocknrollers-funlp-028": {
+            "reason": "edición de sello sustituida por la del grupo (id 1186: https://turbofuckers.bandcamp.com/album/rock-n-rollers)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "snaprecordsspain.bandcamp.com/album/txarly-usher-y-los-ejemplares-cuervo-coraz-n-y-cuchillos-funlp-065": {
+            "reason": "edición de sello sustituida por la del grupo (id 663: https://txarlyusher.bandcamp.com/album/cuervo-coraz-n-y-cuchillos)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "somosseresdeluz.bandcamp.com/album/algoritmos-de-destrucc-on-c-smica": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Portland, Oregon",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "staffofficial.bandcamp.com/album/staff": {
+            "reason": "mismo disco ya en el canónico (id 1559) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "sweetgroovesrecords.bandcamp.com/album/kinki-boys-nada-sold-out": {
+            "reason": "edición de sello sustituida por la del grupo (id 1092: https://kinkiboys.bandcamp.com/album/nada)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "symphonyofdestruction.bandcamp.com/album/s-t-9": {
+            "reason": "edición duplicada del mismo disco; entra https://yunk.bandcamp.com/album/s-t",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "taerecords.bandcamp.com/album/hexen-akt-1-die-frauenjagd-ep": {
+            "reason": "edición de sello sustituida por la del grupo (id 341: https://hexenband.bandcamp.com/album/die-frauenjagd)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "taerecords.bandcamp.com/album/hotza-esnatu-lp": {
+            "reason": "edición de sello sustituida por la del grupo (id 13: https://hotzalaoi.bandcamp.com/album/esnatu)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "thebravesrecords.bandcamp.com/album/tronos-ardiendo": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 454)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "theiarecords.bandcamp.com/album/thr016-helltzales-we-are-the-mainstream": {
+            "reason": "edición de sello sustituida por la del grupo (id 428: https://helltzales.bandcamp.com/album/we-are-the-mainstream)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "throatruinerrecords.bandcamp.com/album/consequences": {
+            "reason": "edición duplicada del mismo disco; entra https://music.therodeoidiotengine.com/album/consequences",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "twblabel.bandcamp.com/album/raving-lines-ep": {
+            "reason": "edición de sello sustituida por la del grupo (id 1273: https://linesbnd.bandcamp.com/album/ep)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "undergroundlegends.bandcamp.com/album/sewed-with-light": {
+            "reason": "edición duplicada del mismo disco; entra https://thesoulbreakercompany.bandcamp.com/album/sewed-with-light-2",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "vassalofdarkness.bandcamp.com/album/euskal-ziegetako-akelarrea": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 1696)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "vatapes.bandcamp.com/album/cryptcionsion": {
+            "reason": "edición de sello sustituida por la del grupo (id 2016: https://wolkokrots.bandcamp.com/album/cryptcionsion)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "vertebraebm.bandcamp.com/album/behold-the-unlighted": {
+            "reason": "mismo disco ya en el canónico (id 226) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "vertigopunk.bandcamp.com/album/7-split-w-1991": {
+            "reason": "edición de sello sustituida por la del grupo (id 1121: https://1991taldea.bandcamp.com/album/split-w-v-rtigo-7)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "villageharmonycamp.bandcamp.com/album/boston-harmony-spring-2017-concert": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Marshfield, Vermont",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "walkingisstillhonestdiy.bandcamp.com/album/marmol-declaraci-n-total-de-guerra": {
+            "reason": "edición de sello; el canónico tiene la del grupo (id 910)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "wearecalathea.bandcamp.com/album/flowers-knives": {
+            "reason": "edición duplicada del mismo disco; entra https://knr-calathea.bandcamp.com/album/flowers-knives",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "windborne.bandcamp.com/album/midwinter-meeting": {
+            "reason": "sin vínculo vasco detectable (tag genérico de pasada); ubicación: Massachusetts",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "withinthedarkwoods.bandcamp.com/album/antzinako-oihartzunak": {
+            "reason": "edición duplicada del mismo disco; entra https://iluntze.bandcamp.com/album/antzinako-oihartzunak",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "withinthedarkwoods.bandcamp.com/album/temple-of-desolation": {
+            "reason": "edición duplicada del mismo disco; entra https://nemesisocculta.bandcamp.com/album/temple-of-desolation",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "withinthedarkwoods.bandcamp.com/album/to-shine-to-rebel": {
+            "reason": "edición duplicada del mismo disco; entra https://nemesisocculta.bandcamp.com/album/to-shine-to-rebel",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "wolkokrots.bandcamp.com/album/etwas": {
+            "reason": "mismo disco ya en el canónico (id 2015) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "wolkokrots.bandcamp.com/album/invanskrue": {
+            "reason": "mismo disco ya en el canónico (id 2012) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "xedh.bandcamp.com/album/red-river-rio-tinto": {
+            "reason": "mismo disco ya en el canónico (id 1361) en otra edición; sello vs sello",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "xtreemmusic.bandcamp.com/album/age-of-decay": {
+            "reason": "edición de sello sustituida por la del grupo (id 612: https://inthousandlakes.bandcamp.com/album/age-of-decay)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "xtreemmusic.bandcamp.com/album/estasis-interrumpida": {
+            "reason": "edición de sello sustituida por la del grupo (id 1520: https://sonambula.bandcamp.com/album/estasis-interrumpida)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "xtreemmusic.bandcamp.com/album/evolution": {
+            "reason": "edición de sello sustituida por la del grupo (id 1017: https://inthousandlakes1.bandcamp.com/album/evolution)",
+            "date": "2026-07-13",
+            "pr": 23
+        },
+        "yonkidelbajo.bandcamp.com/album/yonki-del-bajo": {
+            "reason": "edición duplicada del mismo disco; entra https://untalasalsa.bandcamp.com/album/yonki-del-bajo",
+            "date": "2026-07-13",
+            "pr": 23
+        }
+    }
 }
