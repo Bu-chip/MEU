@@ -1,6 +1,12 @@
-## Candidatos (1123)
+## Candidatos (1905)
 
-### andoain (14)
+### amurrio (1)
+
+| Artista | Título | Año | Tags | Location | Otros tags de origen |
+|---|---|---|---|---|---|
+| HABEMUS PAPA(m) | [EKINTZA ZUZENA(Maketa)](https://habemuspapamamurrio.bandcamp.com/album/ekintza-zuzena-maketa) | 2013 | oi!, punk, amurrio | Amurrio, Spain | — |
+
+### andoain (19)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -11,6 +17,11 @@
 | Camilo Mateo | [Navidad 2009](https://camilomateo.bandcamp.com/album/navidad-2009) | 2009 | pop, rock, soul, andoain | Andoain, Spain | — |
 | Camilo Mateo | [Project Goalkeeper](https://camilomateo.bandcamp.com/album/project-goalkeeper) | 2001 | pop, electronic music, instrumental, rock, soul, andoain | Andoain, Spain | — |
 | Camilo Mateo | [Puzkarraren jolasa](https://camilomateo.bandcamp.com/album/puzkarraren-jolasa) | 2025 | pop, rock, soul, andoain | Andoain, Spain | — |
+| Dukkha | [Dukhha](https://dukkha.bandcamp.com/album/dukhha) | 2017 | rock, andoain | Andoain, Spain | — |
+| DUKKHA | [Jainko Berriak (des)Eraikiz](https://dukkha.bandcamp.com/album/jainko-berriak-des-eraikiz) | 2019 | rock, post-rock, andoain | Andoain, Spain | — |
+| Dukkha | [Zain](https://dukkha.bandcamp.com/album/zain) | 2022 | rock, andoain | Andoain, Spain | — |
+| Eris! | [I](https://erismusik.bandcamp.com/album/i) | 2017 | rock, southern rock, blues, psych, psychedelic, rock & roll… | Andoain, Spain | — |
+| FANTASMA!! | [666](https://fantasma666.bandcamp.com/album/666) | 2009 | metal, punk, rock, doom, hardcore, idustrial… | Andoain, Spain | — |
 | Mertxe Belamendia & Camilo Mateo | [Grupo 21](https://camilomateo.bandcamp.com/album/grupo-21) | 2007 | euskadi, pop, rock, soul, andoain | Andoain, Spain | euskadi |
 | Pedro Arroyo & Camilo Mateo | [Remember](https://camilomateo.bandcamp.com/album/remember) | 1983 | pop, rock, soul, andoain | Andoain, Spain | — |
 | Simeón Barroso & Camilo Mateo | [Amores y ficciones](https://cordelesdeviento.bandcamp.com/album/amores-y-ficciones) | 2000 | andoain, euskadi, pop, spain | PV, Spain | euskadi |
@@ -19,7 +30,7 @@
 | Sonia Ortiz de Arri & Camilo Mateo | [Qué bonito es ser tu hijo](https://camilomateo.bandcamp.com/album/qu-bonito-es-ser-tu-hijo) | 2022 | pop, rock, soul, andoain | Andoain, Spain | — |
 | Xalbardin & Camilo Mateo | [Bi JuanMari](https://camilomateo.bandcamp.com/album/bi-juanmari) | 2021 | pop, rock, soul, andoain | Andoain, Spain | — |
 
-### arrasate (8)
+### arrasate (11)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -31,14 +42,22 @@
 | CHILD ABUSE | [Dias De Blasfemia Y Ocio](https://childabuse90s.bandcamp.com/album/dias-de-blasfemia-y-ocio) | 2021 | black metal, crust punk, crust., death metal, extreme music, grindcore… | Arrasate, Spain | — |
 | CHILD ABUSE | [Live at Imer](https://childabuse90s.bandcamp.com/album/live-at-imer-2) | 2021 | black metal, crust, crust punk, death metal, extreme music, grindcore… | Arrasate, Spain | — |
 | CHILD ABUSE | [The Last Abuse](https://childabuse90s.bandcamp.com/album/the-last-abuse) | 2021 | black metal, crust, crust punk, death metal, extreme music, grindcore… | Arrasate, Spain | — |
+| EKiÑE | [BESTERIK EZ](https://ekine.bandcamp.com/album/besterik-ez) | 2021 | alternative, arrasate | Arrasate, Spain | — |
+| El Volquete | [el NO-DO de El Volquete](https://elvolquete.bandcamp.com/album/el-no-do-de-el-volquete) | 2024 | punk, punkrockpop, arrasate | Arrasate, Spain | — |
+| GOi! & BEGO | [GOi & BEGO- IZAN ZIRELAKO GARA](https://goianbego.bandcamp.com/album/goi-bego-izan-zirelako-gara) | 2019 | punk, rock, punk rock, ¡oi! streetpunk, arrasate | Arrasate, Spain | — |
 
-### azpeitia (1)
+### azpeitia (6)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | ARROITE | [Maketie zuzenien](https://arroite.bandcamp.com/album/maketie-zuzenien) | 2022 | oi!, punk, punk-oi!, street punk, azpeitia | Azpeitia, Spain | — |
+| Ezinean | [Berriz](https://ezinean.bandcamp.com/album/berriz) | 2014 | alternative, hardcore punk, azpeitia | Azpeitia, Spain | — |
+| Ezinean | [Ezinean](https://ezinean.bandcamp.com/album/ezinean) | 2006 | alternative, hardcore punk, azpeitia | Azpeitia, Spain | — |
+| Ezinean | [Zuretzat](https://ezinean.bandcamp.com/album/zuretzat) | 2008 | alternative, hardcore punk, azpeitia | Azpeitia, Spain | — |
+| Ezten Taldea | [Zapalduen Ereserkia](https://eztentaldea.bandcamp.com/album/zapalduen-ereserkia) | 2015 | metal, metal oi!, azpeitia | Azpeitia, Spain | — |
+| Hartz | [Iraungitze Datei](https://hartztaldea.bandcamp.com/album/iraungitze-datei) | 2018 | azpeitia, rock, alternative rock, basque, post-rock, spain | PV, Spain | basque |
 
-### barakaldo (9)
+### barakaldo (13)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -51,6 +70,10 @@
 | Brand New Sinclairs | [This is Brand New Sinclairs & other chronicles](https://brandnewsinclairs.bandcamp.com/album/this-is-brand-new-sinclairs-other-chronicles) | 2015 | r&b, r&b/soul, soul, garage, rhythm & blues, rock… | Barakaldo, Spain | — |
 | Ciclos Iturgaiz | [GUATEQUE](https://ciclositurgaiz.bandcamp.com/album/guateque) | 2012 | pop, eta, tecno, barakaldo | Barakaldo, Spain | — |
 | CICLOS ITURGAIZ | [¿TIENES WEBCAM?](https://ciclositurgaiz.bandcamp.com/album/tienes-webcam) | 2010 | pop, tecno, barakaldo | Barakaldo, Spain | — |
+| Desidia | [Los Besos De Judas](https://desidiaoficial.bandcamp.com/album/los-besos-de-judas) | 2016 | desidia, punk, batalla, credulo, judas, los besos de judas… | Barakaldo, Spain | basque-country |
+| Diablo Cuney | [Diablo Cuney](https://diablocuney.bandcamp.com/album/diablo-cuney) | 2018 | rock, blues, garage rock, punk, barakaldo | Barakaldo, Spain | — |
+| Eder Vega & Chest | [HONORIS CAUSA](https://edervxga.bandcamp.com/album/honoris-causa) | 2026 | dlr, hip hop, hip-hop/rap, rap, alternative, barakaldo… | Bilbao, Spain | bilbao |
+| Solomillo Wellington | [FSR161 Solomillo Wellington (SG)](https://familyspreerecordings.bandcamp.com/album/fsr161-solomillo-wellington-sg) | 2024 | punk, barakaldo, offensive punk, spain | Spain | — |
 
 ### basauri (2)
 
@@ -59,7 +82,7 @@
 | Bajo Presion | [S/T (2009)](https://bajopresion.bandcamp.com/album/s-t-2009) | 2009 | punk, punk hardcore, hardcore punk, punk rock, basauri | Basauri, Spain | euskadi |
 | Bajo Presión | [Elkarrekin](https://bajopresion.bandcamp.com/album/elkarrekin) | 2014 | punk, punk hardcore, basauri | Basauri, Spain | euskadi |
 
-### basque (19)
+### basque (34)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -78,12 +101,27 @@
 | Bi Bala | [Wasabi](https://bibala.bandcamp.com/album/wasabi) | 2014 | alternative, basque country, pop, rock, basque, bertso… | Magallanes y la Antártica Chilen, Chile | basque-country |
 | BIDAIA | [Agur Shiva](https://bidaia.bandcamp.com/album/agur-shiva) | 2011 | world, acoustic rock, basque, carnatic indian spanish, folk rock, traditional folk… | Biarritz, France | — |
 | dale kaligula | [Sasilanak](https://dalekaligula.bandcamp.com/album/sasilanak) | 2025 | rock, alternative pop rock, basque, basque rock alternative, pop, psychopunk… | Berango, Spain | — |
+| Diraki | [Arima](https://diraki.bandcamp.com/album/arima-2) | 2024 | punk, rock, street punk, basque, basqueland, punk rock… | Pamplona, Spain | pamplona |
+| Diraki | [Itzal ez dadin](https://diraki.bandcamp.com/album/itzal-ez-dadin) | 2022 | punk, rock, street punk, basque, basqueland, punk rock… | Pamplona, Spain | pamplona |
+| En-Kantu | [Música y Territorio / Musika eta Lurraldea](https://en-kantu.bandcamp.com/album/m-sica-y-territorio-musika-eta-lurraldea) | 2022 | folk, basque, navarre, revival, world music, iruña | Pamplona, Spain | pamplona |
+| ERASO! | [Inoren Lurretan](https://eraso.bandcamp.com/album/inoren-lurretan) | 2018 | rock, basque, crossover, emo, euskadi, inoren lurretan… | Zarautz, Spain | zarautz, euskadi |
+| Eths Amics | [Bigourdans en Balade](https://ethsamics.bandcamp.com/album/bigourdans-en-balade) | 2004 | folk, france, basque, corse, espagnol, occitan | Occitanie, France | — |
+| Eths Amics | [Eths Amics chantent Noël](https://ethsamics.bandcamp.com/album/eths-amics-chantent-no-l) | 2007 | folk, france, basque, corse, espagnol, occitan | Occitanie, France | — |
+| Eths Amics | [Les gars de la Bigorre](https://ethsamics.bandcamp.com/album/les-gars-de-la-bigorre) | 2002 | folk, france, basque, corse, espagnol, occitan | Occitanie, France | — |
+| Eths Amics | [Nous voici](https://ethsamics.bandcamp.com/album/nous-voici) | 2019 | folk, france, italy, euskal herria, basque, corse… | Occitanie, France | — |
+| Eths Amics | [U balat de cansous](https://ethsamics.bandcamp.com/album/u-balat-de-cansous) | 2009 | folk, france, basque, corse, espagnol, occitan | Occitanie, France | — |
+| Fil Phuse | [Basque](https://fil-phuse.bandcamp.com/album/basque) | 2017 | hip hop, hip-hop/rap, spain, basque, instrumental, germany | Germany | — |
+| HABIA | [Animalia naiz eta](https://habia.bandcamp.com/album/animalia-naiz-eta) | 2021 | alternative, basque, female vocals, strings, traditional, traditional jazz… | La Bastide Clairence, France | — |
+| HABIA | [omen](https://habia.bandcamp.com/album/omen) | 2026 | alternative, basque, female vocals, strings, traditional, traditional jazz… | La Bastide Clairence, France | — |
+| jurgi ekiza | [AMANITA SESSIONS EP (IO, 2016)](https://ekiza.com/album/amanita-sessions-ep-io-2016) | 2016 | alternative, basque, folk, grunge, indie, hasparren | Hasparren, France | — |
+| jurgi ekiza | [bH036-DG (studio album)](https://ekiza.com/album/bh036-dg-studio-album) | 2016 | alternative, basque, bidehuts, euskal herria, folk, grunge… | Hasparren, France | euskal-herria |
+| jurgi ekiza | [Etxeko lanak - Homeworks](https://ekiza.com/album/etxeko-lanak-homeworks) | 2016 | alternative, basque, folk, grunge, indie, hasparren | Hasparren, France | — |
 | Mitxu Nimaru | [Ask@tasun by Mitxu Nimaru](https://batchrecords.bandcamp.com/album/ask-tasun-by-mitxu-nimaru) | 2018 | alternative, electronic, alternative rock, basque, etno, independent… | Toulouse, France | — |
 | Thierry Biscary | [Manez B.](https://biscary.bandcamp.com/album/manez-b) | 2019 | world, anhaux, basque, biscary, folk, itxaro borda… | ? | — |
 | Thierry Biscary | [MANEZ ETA KOBREAK](https://biscary.bandcamp.com/album/manez-eta-kobreak) | 2018 | world, basque, biscary, folk, manez, traditional | ? | — |
 | Thierry Biscary | [MUDA](https://biscary.bandcamp.com/album/muda) | 2020 | world, basque, biscary, folk, manez, thierry biscary… | ? | — |
 
-### basque-country (58)
+### basque-country (100)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -144,18 +182,66 @@
 | Circuncelion | [Carved In Waters](https://circuncelion.bandcamp.com/album/carved-in-waters) | 2012 | acoustic, ambient, avant-garde, darkwave, world music, gothic rock… | Basque Country, Spain | — |
 | Crimental | [Demo 2013](https://crimentalhc.bandcamp.com/album/demo-2013) | 2013 | punk, hardcore, hardcore punk, bilbao | Bilbao, Spain | bilbao |
 | Dani Iglesias | [Kriptonita B](https://daniiglesias.bandcamp.com/album/kriptonita-b) | 2021 | basque country, country, pop, pop rock, singer-songwriter, spanish… | Spain | — |
+| Dientes de Luna | [Atmosfera](https://dientesdeluna.bandcamp.com/album/atmosfera) | 2019 | rock, rock & roll, alternative rock, country rock, pop rock, gernika lumo | Basque Country, Spain | — |
+| Dientes de Luna | [Esto sí que no me lo esperaba](https://dientesdeluna.bandcamp.com/album/esto-s-que-no-me-lo-esperaba) | 2012 | rock, rock & roll, alternative rock, country rock, pop rock, gernika lumo | Basque Country, Spain | — |
+| Dientes de Luna | [Medusa](https://dientesdeluna.bandcamp.com/album/medusa-2) | 2021 | rock, rock & roll, alternative rock, country rock, pop rock, gernika lumo | Basque Country, Spain | — |
+| Dientes de Luna | [Más vale tarde](https://dientesdeluna.bandcamp.com/album/m-s-vale-tarde) | 2015 | rock, rock & roll, alternative rock, country rock, pop rock, gernika lumo | Basque Country, Spain | — |
+| Dientes de Luna | [Utopista](https://dientesdeluna.bandcamp.com/album/utopista) | 2018 | rock, rock & roll, alternative rock, country rock, pop rock, gernika lumo | Basque Country, Spain | — |
+| DRAKKEN | [Jump To The Emptiness](https://drakkenmetalcore.bandcamp.com/album/jump-to-the-emptiness) | 2013 | basque country, drakken, jump to the emptiness, metal, metalcore, hardcore… | PV, Spain | — |
+| Dual-Split | [A Thank You EP](https://dual-split.bandcamp.com/album/a-thank-you-ep) | 2013 | bizi gara, dual-split, electronic, pop, rita and the labyrinth, teen… | Basque Country, Spain | — |
+| Dual-Split | [Brand New Rain](https://dual-split.bandcamp.com/album/brand-new-rain) | 2020 | electronic, dream pop, experimental, indie, psychedelic pop, pysch pop… | Basque Country, Spain | — |
+| Dual-Split | [Fuel](https://dual-split.bandcamp.com/album/fuel) | 2015 | electronic, experimental, indie, pop, psychedelic, psychedelic pop… | Basque Country, Spain | — |
+| Dubamix | [Alde Bietan](https://dubamix.bandcamp.com/album/alde-bietan) | 2023 | basque country, electronic, dnb, dub, electro, internationalism… | Paris, France | — |
+| Elimberri | [Elimberri](https://elimberri.bandcamp.com/album/elimberri) | 2026 | basque country, folk, occitany, poetry, voices, france | France | — |
+| entropía | [Eclipses (2023)](https://entropia27316.bandcamp.com/album/eclipses-2023) | 2023 | basque country, psychedelic prog, rock, hippie rock, mood rock, progressive rock… | PV, Spain | — |
+| entropía | [Invisible (2018)](https://entropia27316.bandcamp.com/album/invisible-2018) | 2018 | basque country, rock, progressive rock, psychedelic rock, space rock, stoner rock… | PV, Spain | — |
+| Estricalla | [FUEGOS OLIMPICOS [2011]](https://estricalla.bandcamp.com/album/fuegos-olimpicos-2011) | 2011 | devotional, euskal herria is not, spain | Basque Country, Spain | — |
+| Estricalla | [HUTSARTEA [2015]](https://estricalla.bandcamp.com/album/hutsartea-2015) | 2015 | devotional, euskal herria is not, spain | Basque Country, Spain | — |
+| Estricalla | [TRIPLE ASALTO MORTAL [2013]](https://estricalla.bandcamp.com/album/triple-asalto-mortal-2013) | 2013 | devotional, euskal herria is not, spain | Basque Country, Spain | — |
+| Estricallla | [DRAMATIK-THLON [2016]](https://estricalla.bandcamp.com/album/dramatik-thlon-2016) | 2006 | devotional, euskal herria is not, spain | Basque Country, Spain | — |
+| FIACHRAS | [fiachras](https://fiachras.bandcamp.com/album/fiachras) | 2008 | devotional, rock folk, spain | Basque Country, Spain | — |
+| FIACHRAS | [Hiltzera goaz](https://fiachras.bandcamp.com/album/hiltzera-goaz) | 2010 | devotional, rock folk, spain | Basque Country, Spain | — |
+| Flattened Frogs Massacre | [Aurreskuak](https://flattenedfrogsmassacreofficial.bandcamp.com/album/aurreskuak) | 2014 | deathcore, metal, beatdown, djent, down tempo, hardcore… | Basque Country, Spain | — |
+| Flattened Frogs Massacre | [Human Cienega](https://flattenedfrogsmassacreofficial.bandcamp.com/album/human-cienega) | 2012 | deathcore, metal, beatdown, djent, down tempo, hardcore… | Basque Country, Spain | — |
+| Fraktura | [Espiral del caos](https://fraktura.bandcamp.com/album/espiral-del-caos) | 2018 | basque country, metal, spain, en español, heavy metal, thrash metal | PV, Spain | — |
+| georg | [Amets Gaiztoak](https://georgmusika.bandcamp.com/album/amets-gaiztoak) | 2018 | alternative, basque country, doom, noise, post-rock, stoner… | Ascain, France | — |
+| georg | [Erost](https://georgmusika.bandcamp.com/album/erost) | 2015 | alternative, basque country, doom, noise, post-rock, stoner… | Ascain, France | — |
+| Gore & The covers project | [Covers vol.1](https://gorethecoversproject.bandcamp.com/album/covers-vol-1) | 2013 | acoustic, cover songs, girl group, soprano, spain | Basque Country, Spain | — |
+| GRANAIA | [GRANAIA -demo-](https://granaia.bandcamp.com/album/granaia-demo) | 2020 | basque country, d.i.y!, oi!, punk, xabier lete skins, zarata zikiña… | Navarre, Spain | — |
+| harat | [Harat](https://harat.bandcamp.com/album/harat) | 2022 | 90s rock, alternative, atala, basque country, borrokan, music… | Bera, Spain | — |
+| Iñigo Lunani | [FNVM](https://esnebidearecords.bandcamp.com/album/fnvm) | 2026 | basque country, bilbao, electronic, house, karrantza, minimal house… | PV, Spain | bilbao |
+| Killerkume | [Industrial Sunbath](https://gafferrecords.bandcamp.com/album/industrial-sunbath) | 2016 | alternative, basque country, free jazz, free rock, improv, improvised music… | Gothenburg, Sweden | — |
+| Kiratxa | [Giza Ustelkeria](https://distrocefalia.bandcamp.com/album/giza-ustelkeria) | 2024 | basque country, hardcore, hardcore punk, punk, d-beat, bogotá | Bogotá, Colombia | — |
+| Laua | [Hilesade](https://esnebidearecords.bandcamp.com/album/hilesade) | 2025 | 2-step garage, 2-step, 2step garage, basque country, bilbao, electronic… | PV, Spain | bilbao |
+| Lidvall | [I'm Always Late EP](https://domurecords.bandcamp.com/album/im-always-late-ep) | 2025 | basque country, spain, underground techno, belgium, eletronic, lidvall… | Belgium | — |
+| Lord Bakartia | [Amets Gaiztoen Liburua](https://galvornrecords.bandcamp.com/album/amets-gaiztoen-liburua) | 2025 | basque country, metal, black metal, dark ambient, dungeon black metal, dungeon synth… | Denmark | — |
+| Lord Bakartia | [Uhrikivi](https://galvornrecords.bandcamp.com/album/uhrikivi) | 2024 | basque country, metal, spain, black metal, dungeon black metal, dungeon synth… | Denmark | — |
+| Mikel Mix | [TD3 Acid House](https://esnebidearecords.bandcamp.com/album/td3-acid-house) | 2025 | 303, 80s house, basque country, bilbao, electronic, karrantza… | PV, Spain | bilbao |
+| Rüdiger | [Archipel Discoveries #2 | Rüdiger ''Before It's Vanished'' [LP​/​Album]](https://helloarchipel.bandcamp.com/album/archipel-discoveries-2-r-diger-before-its-vanished-lp-album) | 2020 | alternative, americana, basque country, bera, rock, archipel… | France | — |
+| Secret Love | [Pink Panther](https://esnebidearecords.bandcamp.com/album/pink-panther) | 2026 | 2-step, basque country, bilbao, electronic, karrantza, uk garage… | PV, Spain | bilbao |
+| Split // Estricalla + The Capaces | [CRASS PUNK OUTSIDERS [2012]](https://estricalla.bandcamp.com/album/crass-punk-outsiders-2012) | 2013 | devotional, euskal herria is not, spain | Basque Country, Spain | — |
+| Tensal | [Dethroned EP](https://domurecords.bandcamp.com/album/dethroned-ep) | 2024 | basque country, portugal, spain, tensal, underground techno, eletronic… | Belgium | — |
+| The Stalactites Of Pozalagua | [Anfibioak](https://esnebidearecords.bandcamp.com/album/anfibioak) | 2026 | basque country, bilbao, electronic, karrantza, breakbeat, breakbeats… | PV, Spain | bilbao |
 | Upyard | [Sufferah's Time](https://bassleemusic.bandcamp.com/album/sufferahs-time) | 2025 | basque country, reggae, roots reggae, dub, instrumental reggae, jata diskak… | Bilbao, Spain | bilbao |
+| Various Artists | [One Year Compilation](https://esnebidearecords.bandcamp.com/album/one-year-compilation) | 2023 | basque country, bilbao, cd compilation, electronic, karrantza, club culture… | PV, Spain | bilbao |
+| Various Artists | [Underground Sounds](https://esnebidearecords.bandcamp.com/album/underground-sounds) | 2025 | 2-step, 90s house, basque country, bilbao, electronic, karrantza… | PV, Spain | bilbao |
 
-### basque-folk (4)
+### basque-folk (10)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | AH! | [Ahots Hutsez](https://ahotshutsez.bandcamp.com/album/ahots-hutsez) | 2025 | basque country, basque folk, basque music, polifonia, world, vocal harmonies… | Hasparren, France | basque-music, basque-country |
 | Amaia Machine | [ARNAS GABEKO DANTZA](https://amaiamachine.bandcamp.com/album/arnas-gabeko-dantza) | 2025 | folk, basque folk, euskal herria, singer-songwriter, new york | New York, New York | euskal-herria |
+| Amaia Zubiria & Pascal Gaigne | [Egun Argi Hartan](https://elkarvinylcollection.bandcamp.com/album/egun-argi-hartan) | 2021 | 80s, basque folk, basque music, folk, jazz, progressive rock… | Donostia San Sebastian, Spain | basque-music, donostia-san-sebastian |
 | Antuxuna | [Baninduaien kantatzera (I)](https://antuxuna.bandcamp.com/album/baninduaien-kantatzera-i) | 2022 | alternative, basque folk, basque music, electronic, experimental, folk… | Zumaia, Spain | zumaia, basque-music |
 | Biersbreaker | [Reshout for War](https://biersbreaker.bandcamp.com/album/reshout-for-war) | 2022 | basque country, basque folk, basque music, metal, folk metal, heavy metal… | PV, Spain | basque-music, basque-country |
+| gartxot | [bizirik gaude](https://gartxot.bandcamp.com/album/bizirik-gaude) | 2026 | acoustic, basque country, basque folk, donostia / san sebastián | Donostia / San Sebastián, Spain | donostia-san-sebastian, basque-country |
+| gaueko | [gaueko](https://gaueko.bandcamp.com/album/gaueko-2) | 2023 | basque country, basque folk, experimental, mythology music, ambient, dark ambient… | PV, Spain | basque-country |
+| Jon Ander Sande | [Vuelta a Laboa](https://detripa.bandcamp.com/album/vuelta-a-laboa) | 2012 | basque folk, basque music, experimental, euskal herria, country, folk… | ? | basque-music |
+| Various Artists | [1972-1985 KATEBEGIAK Prog-Rock, Psych-Folk & Jazz-Rock Music from the Basque Country [Compiled by DJ Makala]](https://elkarvinylcollection.bandcamp.com/album/1972-1985-katebegiak-prog-rock-psych-folk-jazz-rock-music-from-the-basque-country-compiled-by-dj-makala) | 2021 | basque folk, basque music, folk, jazz, euskal herria, progressive rock… | Donostia San Sebastian, Spain | basque-music, donostia-san-sebastian |
+| William S. Fischer | [Akelarre Sorta Bat](https://elkarvinylcollection.bandcamp.com/album/akelarre-sorta-bat) | 2021 | atlantic records, basque folk, basque music, folk, jazz, progressive rock… | Donostia San Sebastian, Spain | basque-music, donostia-san-sebastian |
 
-### basque-music (16)
+### basque-music (37)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -172,7 +258,28 @@
 | Bea Asurmendi | [Asteartea](https://beaasurmendi.bandcamp.com/album/asteartea) | 2025 | basque music, world, contemporary jazz, folk, iberian folk, singer-songwriter… | London, UK | — |
 | Bris | [Hira](https://briscorp.bandcamp.com/album/hira) | 2024 | basque country, basque music, iruña, post-punk, post-punk revival, rock… | Pamplona, Spain | basque-country, pamplona |
 | Chamān | [The first Ritual](https://chamanband.bandcamp.com/album/the-first-ritual) | 2020 | basque music, metal, rock, doom, shaman, stoner rock… | Valle De Trápaga Trapagaran, Spain | — |
+| DEIMOCRACY | [Erebo](https://deimocracy.bandcamp.com/album/erebo) | 2023 | alternative, basque music, groove metal, metal, melodic deathmetal, progressive metal… | Logroño, Spain | — |
+| DEIMOCRACY | [Keep One Eye Open](https://deimocracy.bandcamp.com/album/keep-one-eye-open) | 2017 | alternative, basque music, groove metal, metal, deimo cracy, deimocracy… | Logroño, Spain | — |
+| DEIMOCRACY | [The Inner Fortress](https://deimocracy.bandcamp.com/album/the-inner-fortress) | 2026 | alternative, basque music, groove metal, metal, melodic death metal, melodic deathmetal… | Logroño, Spain | — |
+| DingwasH | [Par Delà Le Temps](https://dingwash.bandcamp.com/album/par-del-le-temps) | 2011 | basque country, basque music, diy, euskadi, euskal herria, reggae… | Aquitaine Limousin Poitou-Charen, France | euskadi, basque-country |
+| ENBOR ARNASA | [2025 maketak (Broken PC)](https://enborarnasa.bandcamp.com/album/2025-maketak-broken-pc) | 2025 | basque country, basque music, death metal, metal, thrash metal, heavy metal… | Arrigorriaga, Spain | basque-country |
+| ENBOR ARNASA | [Atzinetik zeharo izorraturik](https://enborarnasa.bandcamp.com/album/atzinetik-zeharo-izorraturik) | 2025 | basque country, basque music, death metal, metal, thrash metal, heavy metal… | Arrigorriaga, Spain | basque-country |
+| Enbor Arnasa | [Desagertarazitako iragan baten preso](https://enborarnasa.bandcamp.com/album/desagertarazitako-iragan-baten-preso) | 2024 | basque country, basque music, death metal, isma, metal, nakkiga… | Arrigorriaga, Spain | basque-country |
+| Enbor Arnasa | [Enbor Arnasa](https://enborarnasa.bandcamp.com/album/enbor-arnasa-2) | 2020 | basque country, basque music, death metal, metal, thrash metal, heavy metal… | Arrigorriaga, Spain | basque-country |
+| Enbor Arnasa | [ilunari argia](https://enborarnasa.bandcamp.com/album/ilunari-argia) | 2021 | basque country, basque music, death metal, metal, thrash metal, heavy metal… | Arrigorriaga, Spain | basque-country |
+| Enbor Arnasa | [Sentitu bahitu kateen hotsak](https://enborarnasa.bandcamp.com/album/sentitu-bahitu-kateen-hotsak) | 2023 | basque country, basque music, death metal, metal, thrash metal, heavy metal… | Arrigorriaga, Spain | basque-country |
+| ENBOR ARNASA | [Tronpeta maketak](https://enborarnasa.bandcamp.com/album/tronpeta-maketak) | 2025 | basque country, basque music, death metal, metal, thrash metal, heavy metal… | Arrigorriaga, Spain | basque-country |
+| Eventónica | [ITZALI EZIÑA inextinguible](https://eventonica.bandcamp.com/album/itzali-ezi-a-inextinguible) | 2026 | classical, basque music, classical contemporary, contemporary classical, modern classical, piano music… | Spain | — |
+| Ezta Ilen | [Bihotzez Naiz / Ahanztura ta Adio](https://eztailen.bandcamp.com/album/bihotzez-naiz-ahanztura-ta-adio) | 2025 | alternative, basque music, pop, post-punk, zaldibar | Zaldibar, Spain | — |
+| Ezta Ilen | [Ezta Ilen](https://eztailen.bandcamp.com/album/ezta-ilen) | 2023 | alternative, basque music, pop, post-punk, zaldibar | Zaldibar, Spain | — |
+| Ezta Ilen | [Oroituko Gara, Biharko Egunez](https://eztailen.bandcamp.com/album/oroituko-gara-biharko-egunez) | 2026 | alternative, basque music, pop, post-punk, zaldibar | Zaldibar, Spain | — |
 | Forma Norte | [Forma Norte II](https://deardogs.bandcamp.com/album/forma-norte-ii) | 2022 | alternative, basque music, folk, forma norte, grunge, rock… | France | — |
+| HABI | [Helmuga](https://habitaldea.bandcamp.com/album/helmuga) | 2022 | alternative rock, ambient rock, basque music, melodic rock, rock, basque… | Villabona, Spain | basque |
+| HABI | [Koloreak](https://habitaldea.bandcamp.com/album/koloreak-2) | 2020 | alternative rock, ambient rock, basque music, melodic rock, rock, basque… | Villabona, Spain | basque |
+| HABI | [Ohartu](https://habitaldea.bandcamp.com/album/ohartu) | 2023 | alternative rock, ambient rock, basque music, melodic rock, rock, basque… | Villabona, Spain | basque |
+| HATXE | [Panpin hautsien dantza](https://hatxe.bandcamp.com/album/panpin-hautsien-dantza) | 2020 | basque music, classical, euskal herria, dark ambient music, dark cabaret, piano… | PV, Spain | — |
+| jurgi ekiza | [ekiza 2016 IX 04 amanita studio (live acoustic album)](https://ekiza.com/album/ekiza-2016-ix-04-amanita-studio-live-acoustic-album) | 2017 | acoustic, alternative, basque music, acoustic guitar, acoustic rock, basque… | Hasparren, France | basque |
+| Telmo Trenor | [Z8rtziko [HOB006]](https://hausofbeats.bandcamp.com/album/z8rtziko-hob006) | 2021 | basque music, electronic, hip hop, house, downtempo, drum'n'bass… | PV, Spain | — |
 | Various Artist tape compilation  Epilectic Media Records | [Fast&Loud Epilectic Media Records various artists sampler](https://aterpe.bandcamp.com/album/fast-loud-epilectic-media-records-various-artists-sampler) | 2013 | aterpe, basque country, basque music, epilectic media records, punk, grind… | Thailand | basque-country |
 | Various Artists 7 inch Compilation | [C​ONTINUUM.​35-V/A "Tunes From The Toilet Vol.2" 57 Bands 7” Compilation (Ltd. to 300 copies)](https://aterpe.bandcamp.com/album/c-ontinuum-35-v-a-tunes-from-the-toilet-vol-2-57-bands-7-compilation-ltd-to-300-copies) | 2014 | basque country, basque music, punk, aterpe, continuum records, grindcore… | Thailand | basque-country |
 
@@ -185,14 +292,28 @@
 | Addar | [Gordinik](https://addar.bandcamp.com/album/gordinik) | 2022 | basque rock, rock, euskal rock, rock and roll, bermeo | Bermeo, Spain | euskal-rock, bermeo |
 | Addar | [Sugarra](https://addar.bandcamp.com/album/sugarra) | 2020 | basque rock, rock, euskal rock, rock and roll, bermeo | Bermeo, Spain | euskal-rock, bermeo |
 
-### bergara (2)
+### basquemusic (1)
+
+| Artista | Título | Año | Tags | Location | Otros tags de origen |
+|---|---|---|---|---|---|
+| Ekhi Lambert | [Haustura](https://ekhilambert.bandcamp.com/album/haustura) | 2019 | euskal kantagintza, folk, basque music, euskal musika, irouléguy | Irouléguy, France | euskal-kantagintza, euskalmusika |
+
+### bergara (10)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | berbenir | [Desgeneratzen](https://berbenir.bandcamp.com/album/desgeneratzen) | 2020 | basque country, experimental, bergara | Bergara, Spain | basque-country |
 | berbenir | [EndreDAWte](https://berbenir.bandcamp.com/album/endredawte) | 2024 | basque country, experimental, electronica, bergara | Bergara, Spain | basque-country |
+| Fly Shit | [1997, jam aretoan zuzenean.](https://flyshit.bandcamp.com/album/1997-jam-aretoan-zuzenean-2) | 2021 | punk, euskaraz, euskera, hardcore, post-hardcore, punk hardcore… | Bergara, Spain | euskaraz, euskera, euskadi |
+| Fly Shit | [20 urte bira, zuzenean](https://flyshit.bandcamp.com/album/20-urte-bira-zuzenean) | 2017 | punk, euskera, hardcore, post-hardcore, punk rock, punk hardcore… | Bergara, Spain | euskera, euskadi |
+| Fly Shit | [Fly Shit eta Brot Bord](https://flyshit.bandcamp.com/album/fly-shit-eta-brot-bord) | 2023 | punk, català, do it together, do it yourself, euskera, hardcore… | Bergara, Spain | euskera, euskadi |
+| Fly Shit/Managaitz | [FlyShit/Managaitz LP](https://flyshit.bandcamp.com/album/flyshit-managaitz-lp) | 2019 | punk, euskera, hardcore, post-hardcore, punk rock, bergara | Bergara, Spain | euskera, euskadi |
+| HARDFLIP | [Ke Kereis? (2010eko Ekaina)](https://hardflip.bandcamp.com/album/ke-kereis-2010eko-ekaina) | 2011 | metalcore, punk, punk rock, skate punk, hardcore, hardcore punk… | Bergara, Spain | — |
+| HARDFLIP | [Kopixau Ta Rulau! (2013ko Azaroa)](https://hardflip.bandcamp.com/album/kopixau-ta-rulau-2013ko-azaroa) | 2015 | metalcore, punk, punk rock, skate punk, hardcore, hardcore punk… | Bergara, Spain | — |
+| HARDFLIP | [Split  HF & HHD (2013ko Otsaila)](https://hardflip.bandcamp.com/album/split-hf-hhd-2013ko-otsaila) | 2014 | metalcore, punk, punk rock, skate punk, hardcore, hardcore punk… | Bergara, Spain | — |
+| Hegazkin | [Haize beltzak](https://hegazkin.bandcamp.com/album/haize-beltzak) | 2021 | pop, synthpop, trip hop, bergara | Bergara, Spain | — |
 
-### bermeo (5)
+### bermeo (15)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -201,8 +322,18 @@
 | Bakelite | [Deitu medikuari / Espektrua (single)](https://bakelite.bandcamp.com/album/deitu-medikuari-espektrua-single) | 2012 | alternative, country, folk, noise, rock, bermeo | Euskadi, Spain | euskadi |
 | Bakelite | [Zain / Arnasa](https://bakelite.bandcamp.com/album/zain-arnasa) | 2021 | alternative, country, folk, noise, rock, electronica… | Euskadi, Spain | euskadi |
 | Crisis | [Sudor, Salitre y Mucha Roña](https://crisisbermio.bandcamp.com/album/sudor-salitre-y-mucha-ro-a) | 2009 | punk, bermeo, garage, rock, rrb | Bermeo, Spain | pais-vasco |
+| DHR-020 | [Los Steaks "Something Special"](https://discoshumeantes.bandcamp.com/album/los-steaks-something-special) | 2011 | garage, indie, los steaks, punk, bermeo, españa… | Oviedo, Spain | — |
+| Drumm&Cat | [Drumm&cat-  Especie en extincion](https://drummandcat.bandcamp.com/album/drumm-cat-especie-en-extincion) | 2013 | hip-hop/rap, rapcore, rap & hip-hop, rapmetal, bermeo | Bermeo, Spain | — |
+| Elizabeltz | [Alabaren](https://elizabeltz.bandcamp.com/album/alabaren) | 2024 | black metal, black rock, metal, progressive rock, sinfonic metal, progressive metal… | Bermeo, Spain | — |
+| Etxekalte | [Gure Hizkeran](https://etxekalte.bandcamp.com/album/gure-hizkeran) | 2019 | alternative, alternative rock, euskera, melodic rock, post-rock, rock… | Bermeo, Spain | euskera |
+| Etxekalte | [Inertziak Estali](https://etxekalte.bandcamp.com/album/inertziak-estali) | 2024 | alternative, alternative rock, euskera, melodic rock, post-rock, rock… | Bermeo, Spain | euskera |
+| Etxekalte | [Nor Da Norbera?](https://etxekalte.bandcamp.com/album/nor-da-norbera) | 2022 | alternative, alternative rock, euskera, melodic rock, post-rock, rock… | Bermeo, Spain | euskera |
+| Eureka Hot 4 | [World Champions](https://eurekahot4.bandcamp.com/album/world-champions) | 2009 | garage, punk, rock'n'roll, soul, bermeo | Bermeo, Spain | — |
+| Exitus band | [Itsosora exodue](https://exitusband.bandcamp.com/album/itsosora-exodue) | 2025 | dancehall reggae, hip hop, rap, reggae, dub, bermeo | Bermeo, Spain | — |
+| G.W.F. | [Vol2](https://gwfgara.bandcamp.com/album/vol2) | 2025 | rock, rockpunkrockcircocabaret, bermeo | Bermeo, Spain | — |
+| GorriBaltz | [Zuen gainean](https://gorribaltz.bandcamp.com/album/zuen-gainean) | 2019 | punk, ekectronic, industrial, post-punk, psico, bermeo | Bermeo, Spain | — |
 
-### bilbao (87)
+### bilbao (157)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -210,6 +341,7 @@
 | 1991 | [S/T LP](https://1991taldea.bandcamp.com/album/s-t-lp) | 2014 | pop, animal rights, indie pop, post-punk, punk pop, vegan… | Bilbao, Spain | — |
 | 1991 | [split w/Vértigo 7"](https://1991taldea.bandcamp.com/album/split-w-v-rtigo-7) | 2018 | pop, punk pop, bilbao | Bilbao, Spain | — |
 | 5000 rpm | ["Manifesto" (2.011)](https://5000rpm.bandcamp.com/album/manifesto-2011) | 2011 | ambient, emotive punk, experimental, post-hardcore, progressive, bilbao | Bilbao, Spain | — |
+| Abyme Nabar / Passion Farolas eta Mikel Lauki | [ER051 Abyme Nabar & Passion Farolas eta Mikel Lauki - Split](https://eclecticreactionsrecords.bandcamp.com/album/er051-abyme-nabar-passion-farolas-eta-mikel-lauki-split) | 2025 | eclectic reactions, electronic, house, industrial, noise, ambient… | Bilbao, Spain | — |
 | AIHOTZ | [El no movimiento](https://aihotz.bandcamp.com/album/el-no-movimiento) | 2020 | metal, punk, machete, rápido y en tu cara, bilbao | Bilbao, Spain | — |
 | AIHOTZ | [Matar al Superhombre](https://aihotz.bandcamp.com/album/matar-al-superhombre) | 2021 | metal, punk, machete, rápido y en tu cara, bilbao | Bilbao, Spain | — |
 | airu | [Con las ventanas tan grandes me da vergüenza mirar / Voy tan deprisa](https://airu-wav.bandcamp.com/album/con-las-ventanas-tan-grandes-me-da-verg-enza-mirar-voy-tan-deprisa) | 2021 | alternative, bedroom pop, dream pop, indie, surf pop, bilbao | Bilbao, Spain | — |
@@ -240,6 +372,7 @@
 | Bass Lee | [Roots](https://bassleemusic.bandcamp.com/album/roots) | 2025 | bass lee, bass lee music, reggae, roots reggae, dub, instrumental reggae… | Bilbao, Spain | — |
 | Becken | [Distira](https://becken.bandcamp.com/album/distira) | 2026 | breakbeat, electronic, idm, uk garage, ambient, breaks… | Bilbao, Spain | — |
 | Benjammin | [7" Fire Burn](https://bassleemusic.bandcamp.com/album/7-fire-burn) | 2026 | bass lee music, reggae, roots reggae, benjammin, dub, instrumental reggae… | Bilbao, Spain | — |
+| Blessure | [Blessure](https://dirtyslaprecords.bandcamp.com/album/blessure) | 2023 | alternative, diy, lille, oi!, punk, bilbao… | Lille, France | — |
 | BORJA BARRUETA | [LAMBERTIANA](https://borjabarrueta.bandcamp.com/album/lambertiana) | 2026 | alternative, experimental, folk world country, soundtrack, jazz and improvised music, bilbao | Bilbao, Spain | — |
 | Borja Moskv | [[B]](https://borjamoskv.bandcamp.com/album/b) | 2025 | electronic, ambient., bilbao, club, dance, dream pop… | PV, Spain | — |
 | Borja Moskv | [After sin retorno](https://borjamoskv.bandcamp.com/album/after-sin-retorno) | 2025 | electronic, ambient, ambient., bilbao, downtempo, dream pop… | PV, Spain | — |
@@ -253,29 +386,80 @@
 | Breathing The Core | [Stay Core #1](https://breathingthecore.bandcamp.com/album/stay-core-1) | 2016 | deathcore, hardcore, metal, metalcore, djent, post-hardcore… | Bilbao, Spain | — |
 | Breathing The Core | [Undiscovered #2](https://breathingthecore.bandcamp.com/album/undiscovered-2) | 2026 | deathcore, metal, metalcore, djent, hardcore, post-hardcore… | Bilbao, Spain | — |
 | BSYHO | [Bossfight](https://deepnas.bandcamp.com/album/bossfight) | 2025 | electronic, bass music, dark dnb, deep dnb, dnb, drum and bass… | Bilbao, Spain | — |
+| Budrum & Filthy Peasant | [Grimoire of Sacrifice (Split)](https://dungeonlordrecords.bandcamp.com/album/grimoire-of-sacrifice-split) | 2025 | ambient, dark ambient, dark dungeon music, dungeon synth, lo-fi, old school dungeon synth… | Bilbao, Spain | — |
 | BURIAL | [Nightmare of the christian race](https://burial777.bandcamp.com/album/nightmare-of-the-christian-race) | 1992 | metal, bilbao, death metal | Bilbao, Spain | — |
+| CAMPAMENTO RUMANO | [El punk esta lleno de sinvergüenzas](https://discosbanana1.bandcamp.com/album/el-punk-esta-lleno-de-sinverg-enzas) | 2021 | punk, punk rock, synth punk, bilbao | Bilbao, Spain | — |
 | Chico y Chica | [Sí](https://chicoychica.bandcamp.com/album/s) | 2001 | latin, pop, synthpop, tecnopop, bilbao | Bilbao, Spain | — |
 | Clive Matthews | [7" Live not for Vanity pt. II](https://bassleemusic.bandcamp.com/album/7-live-not-for-vanity-pt-ii) | 2024 | jamaica, jamaican music, reggae, roots reggae, basslee, bassleemusic… | Bilbao, Spain | — |
 | Clive Matthews | [Going Home](https://bassleemusic.bandcamp.com/album/going-home) | 2025 | bass lee, jamaican music, reggae, roots reggae, clive matthews, dub… | Bilbao, Spain | — |
 | Clorah | [La Pena](https://clorah.bandcamp.com/album/la-pena-2) | 2018 | pop, trap-fusión triste, bedroom pop, electronic, fusion, trap… | Bilbao, Spain | — |
 | Clorah | [La Pena](https://crystalmine.bandcamp.com/album/la-pena) | 2018 | bilbao, experimental, anticopyright, pop, sad, trap-fusion… | Burgos, Spain | — |
 | coloso.band | [Pulso](https://colosoband.bandcamp.com/album/pulso) | 2025 | alternative, alternative rock, rock, bilbao | Bilbao, Spain | — |
+| CROMOSOMA | [Cromosoma](https://discosbanana1.bandcamp.com/album/cromosoma) | 2022 | punk, punk rock, synth punk, bilbao | Bilbao, Spain | — |
 | Cult of Misery | [Together to hell (LP)](https://cultofmisery.bandcamp.com/album/together-to-hell-lp) | 2019 | metal, punk, crust, death, rotten metal, stenchcore… | Bilbao, Spain | — |
 | D.Komin | [Djinn](https://deepnas.bandcamp.com/album/djinn) | 2025 | electronic, bass music, dancefloor dnb, dnb, drum and bass, jump up… | Bilbao, Spain | — |
+| Dark3z | [Modules](https://deepnas.bandcamp.com/album/modules) | 2025 | atmospheric dnb, deep dnb, deep drum and bass, dnb, drum and bass, electronic… | Bilbao, Spain | — |
 | Dave One | [Before Desahogo](https://daveone.bandcamp.com/album/before-desahogo) | 2012 | hip hop, hip-hop/rap, rap, rap & hip-hop underground, bilbao | Bilbao, Spain | — |
 | Dave One | [Bilbao City Is Mine](https://daveone.bandcamp.com/album/bilbao-city-is-mine) | 2010 | hip hop, hip-hop/rap, rap, rap & hip-hop underground, bilbao | Bilbao, Spain | — |
 | David Fendah | [7" Life is Free](https://bassleemusic.bandcamp.com/album/7-life-is-free) | 2024 | bass lee, bass lee music, david fendah, girona, reggae, roots reggae… | Bilbao, Spain | — |
 | David Fendah | [7" More Differences](https://bassleemusic.bandcamp.com/album/7-more-differences) | 2021 | a-lone ark, bass lee, reggae, roots reggae, roots reggae dub, david fendah… | Bilbao, Spain | — |
+| Detroit, We Are Apes, Hello! | [Jugamos como nunca y perdimos como siempre (Split)](https://detroitpowertrio.bandcamp.com/album/jugamos-como-nunca-y-perdimos-como-siempre-split) | 2023 | punk, rock, bilbao, emo, indie, power trio… | PV, Spain | — |
+| dHastHBeats | [dHastHBeats - On Air](https://dhasthbeatsoficial.bandcamp.com/album/dhasthbeats-on-air-2) | 2013 | hip hop, hip-hop/rap, rap, beat tape, beats, beats for sale… | Bilbao, Spain | — |
+| Diana Lagarto | [S/T](https://dianalagarto.bandcamp.com/album/s-t) | 2014 | punk, math rock, noise, post-hardcore, post-rock, screamo… | Bilbao, Spain | — |
+| Distant Future & Dr. THC | [Whales](https://deepnas.bandcamp.com/album/whales) | 2025 | 174bpm, drum & bass, liquid drum and bass, atmospheric drum & bass, deep drum and bass, neurodeep… | Bilbao, Spain | — |
+| Dj Lobo EDM | [My Remixed Anthems](https://djloboedm.bandcamp.com/album/my-remixed-anthems) | 2026 | edm, electronic, dance, dance music, eurodance, eurotrance… | Bilbao, Spain | — |
 | Dj Rumaniak Presenta Lo Mejor del Balkan Klezmer Peninsular | [Dj Rumaniak Presenta In Balkan Klezmer We Trust](https://bilbaobalkanbeatz.bandcamp.com/album/dj-rumaniak-presenta-in-balkan-klezmer-we-trust) | 2014 | world, balkan, cumbia, klezmer, bilbao | Bilbao, Spain | — |
+| doombloomdoom | ['el jardín'](https://doombloomdoom.bandcamp.com/album/el-jard-n) | 2025 | experimental, data sonification, econoise, field recording, frutiger, frutiger aero… | Bilbao, Spain | — |
+| Dvoinoi | [ER043 Dvoinoi - Unit](https://eclecticreactionsrecords.bandcamp.com/album/er043-dvoinoi-unit) | 2022 | dvoinoi, eclectic reactions, electro, electronic, house, abstract… | Bilbao, Spain | — |
 | Earl Sixteen, Linval Thompson & Sistah Lore | [Earl Sixteen - Vampire / Linval Thompson - One Drop](https://bombbasshifi.bandcamp.com/album/earl-sixteen-vampire-linval-thompson-one-drop) | 2012 | conscious music, dub, jah music, reggae, roots, sound system… | Bilbao, Spain | — |
+| ELBIS REVER | [holaaa](https://elbisrever.bandcamp.com/album/holaaa) | 2022 | bilbao, hong kong, pop | Hong Kong | — |
+| Elena Setién, Grande Days & Xabier Erkizia | [Mirande](https://forbiddencolours.bandcamp.com/album/mirande) | 2020 | bilbao | Bilbao, Spain | — |
+| ELVIS DE GOMA | [ELVIS DE GOMA](https://elvisdegoma1.bandcamp.com/album/elvis-de-goma) | 2026 | rock, blues, bossa nova, gipsy jazz, pop, bilbao | Bilbao, Spain | — |
+| EMPIRE OF DISEASE | [WHILE EVERYTHING COLLAPSES](https://empireofdisease.bandcamp.com/album/while-everything-collapses) | 2026 | death metal, groove metal, metal, metalcore, melodic death metal, thrash metal… | Bilbao, Spain | — |
+| Error de Paralaje | [Imagen Latente](https://discosbanana1.bandcamp.com/album/imagen-latente) | 2025 | granada, punk, d.i.y., dark pop, punk rock, synth punk… | Bilbao, Spain | — |
+| Esmegma | [Aberrato Ictus EP](https://esmegma.bandcamp.com/album/aberrato-ictus-ep) | 2010 | acousmatic, electronic, experimental, mugre, noise, ruido… | Bilbao, Spain | — |
 | Fade Duster | [Durdome](https://deepnas.bandcamp.com/album/durdome) | 2025 | electronic, bass music, dancefloor dnb, dnb, drum and bass, jump up dnb… | Bilbao, Spain | — |
 | Fatrоlla | [Da Boyz](https://deepnas.bandcamp.com/album/da-boyz) | 2025 | atmospheric dnb, bass music, deep dnb, deep drum and bass, dnb, drum and bass… | Bilbao, Spain | — |
+| Fear Crowd | [Ecos de Oscuridad](https://fearcrowd.bandcamp.com/album/ecos-de-oscuridad) | 2026 | metal, hard rock, heavy metal, bilbao | Bilbao, Spain | — |
+| FEARTH | [THE PURGE](https://fearth.bandcamp.com/album/the-purge) | 2016 | metal, beatdown, downtempo, hardcore, bilbao | Bilbao, Spain | — |
+| Fiambre | [Solo Somos Carne](https://fiambre.bandcamp.com/album/solo-somos-carne) | 2019 | hardcore, punk, bizarro, mugrepunk, ruido, bilbao | Bilbao, Spain | — |
+| Filthy Peasant | [Gaiztakerien Aroa!](https://dungeonlordrecords.bandcamp.com/album/gaiztakerien-aroa) | 2025 | ambient, black ambient. dsbm, dark ambient, dungeon synth, epic ambient, lo-fi… | Bilbao, Spain | — |
+| Fixation on Suffering | [Revelation of Tortured Imprisonment](https://fixationonsuffering.bandcamp.com/album/revelation-of-tortured-imprisonment) | 2017 | metal, brutal death metal, bilbao | Bilbao, Spain | — |
+| FLOR Y TROL | [SAMI](https://florytroltaldea.bandcamp.com/album/sami) | 2025 | pop, bilbao | Bilbao, Spain | — |
+| FLOR Y TROL | [SOPHI - EP](https://florytroltaldea.bandcamp.com/album/sophi-ep) | 2026 | pop, bilbao | Bilbao, Spain | — |
+| FORMA | [FORMA](https://formabnd.bandcamp.com/album/forma) | 2026 | punk, hardcore punk, pop, post-punk, bilbao | Bilbao, Spain | — |
+| Former Child | [Official Audio Researches Vol.I](https://formerchildband.bandcamp.com/album/official-audio-researches-vol-i) | 2025 | punk, noise, noise rock, psychedellic rock, bilbao | Bilbao, Spain | — |
+| Former Child | [The Ketamine Krokodile O'Klokk](https://formerchildband.bandcamp.com/album/the-ketamine-krokodile-oklokk) | 2026 | punk, noise, noise rock, psychedellic rock, bilbao | Bilbao, Spain | — |
+| Franco | [s/t](https://francodiscopunk.bandcamp.com/album/s-t) | 2014 | disco, electronic, franco, punk, bilbao | Bilbao, Spain | — |
+| Full Cab | [Full Cab](https://fullcabb.bandcamp.com/album/full-cab-2) | 2025 | alternative rock, garage rock, indie rock, noise pop, rock, bilbao | Bilbao, Spain | — |
+| Garazi Gorostiaga | [Irauten II](https://garazigorostiaga.bandcamp.com/album/irauten-ii) | 2001 | ambient, cinematic, dark ambient, drone, soundscapes, bilbao | Bilbao, Spain | — |
+| GLYDAN | [NEW EMOTIONS](https://glyyyydan.bandcamp.com/album/new-emotions) | 2024 | hip-hop/rap, instrumental hip-hop, abstract, atmospheric, cloudy, experimental hip-hop… | Bilbao, Spain | — |
+| GLYDAN | [NEW EMOTIONS II](https://glyyyydan.bandcamp.com/album/new-emotions-ii) | 2025 | hip-hop/rap, instrumental hip-hop, atmospheric, boom bap, concept album, dark… | Bilbao, Spain | — |
+| Gonorriaga | [Split](https://gonorriaga.bandcamp.com/album/split) | 2023 | punk, post-punk, bilbao | Bilbao, Spain | — |
+| Goodbye Keppler | [No hay futuro](https://goodbyekeppler.bandcamp.com/album/no-hay-futuro) | 2026 | alternative, dream pop, indie, indie rock, post-punk, shoegaze… | Bilbao, Spain | — |
+| Gravelbed | [Live Future (Remix Album)](https://gravelbed.bandcamp.com/album/live-future-remix-album) | 2025 | electronic, industrial, ukgrime, dub, experimental, experimental electronic… | Bilbao, Spain | — |
 | Green Harmony | [Merciful](https://bombbasshifi.bandcamp.com/album/merciful) | 2021 | conscious music, dub, jah music, limited edtition, reggae, roots… | Bilbao, Spain | — |
 | Grenouer | [Ambition 999 (Deluxe Edition)](https://breathingthecore.bandcamp.com/album/ambition-999-deluxe-edition) | 2020 | deathcore, metal, metalcore, djent, hardcore, post-hardcore… | Bilbao, Spain | — |
+| Grim Keep | [A Grim Quest (Demo II)](https://dungeonlordrecords.bandcamp.com/album/a-grim-quest-demo-ii) | 2026 | ambient, dark ambient, dungeon synth, lo-fi, old school dungeon synth, rpg music… | Bilbao, Spain | — |
+| Grim Keep | [Devoured By Night (Demo I)](https://dungeonlordrecords.bandcamp.com/album/devoured-by-night-demo-i) | 2025 | ambient, dark ambient, dark dungeon music, dungeon synth, fantasy music, lo-fi… | Bilbao, Spain | — |
+| h.101 | [101.0001](https://h101.bandcamp.com/album/1010001) | 2020 | experimental, bilbao | Bilbao, Spain | — |
+| h.101 | [101.01](https://h101.bandcamp.com/album/10101) | 2020 | experimental, bilbao | Bilbao, Spain | — |
 | Hector | [Citadel](https://deepnas.bandcamp.com/album/citadel) | 2025 | dark dnb, deep dnb, deep drum and bass, dnb, drum and bass, electronic… | Bilbao, Spain | — |
+| Heisenberg | [Heisenberg](https://heisenbergbilbo.bandcamp.com/album/heisenberg) | 2016 | r&b, rock, soul, funk, pop rock, psychedelic… | Bilbao, Spain | — |
+| Helltzales | [We are the Mainstream](https://helltzales.bandcamp.com/album/we-are-the-mainstream) | 2021 | diy, punk, punk hardcore, punk rock, bilbao | Bilbao, Spain | — |
+| Higrade | [Thought Experiments](https://deepnas.bandcamp.com/album/thought-experiments) | 2025 | deep dnb, deep drum and bass, dnb, drum and bass, electronic, neurodeep… | Bilbao, Spain | — |
 | Horace Martin & Dub Crucials, Sammy Gold & Raggattack | [Horace Martin - Dem Just a Push Me / Sammy Gold - Greatest Sound](https://bombbasshifi.bandcamp.com/album/horace-martin-dem-just-a-push-me-sammy-gold-greatest-sound) | 2010 | conscious music, dub, jah music, reggae, roots, sound system… | Bilbao, Spain | — |
+| Iker Munduate | [ER054 Iker Munduate - Komunikazioak](https://eclecticreactionsrecords.bandcamp.com/album/er054-iker-munduate-komunikazioak) | 2026 | electronic, house, ambient, contemporary, electroacustic, experimental… | Bilbao, Spain | — |
+| IOM & Usnea | [ER053 IOM & Usnea - Música Automática](https://eclecticreactionsrecords.bandcamp.com/album/er053-iom-usnea-m-sica-autom-tica) | 2025 | electronic, house, abstract, ambient, dark ambient, experimental… | Bilbao, Spain | — |
+| Joaquín Mendoza Sebastián | [ER014 Joaquin Mendoza Sebastián - …everything about the beating of dead horses](https://eclecticreactionsrecords.bandcamp.com/album/er014-joaquin-mendoza-sebasti-n-everything-about-the-beating-of-dead-horses) | 2017 | electronic, experimental, house, abstract, algorithmic, ambient… | Bilbao, Spain | — |
+| Joseba B. Lenoir | [Instroak Vol. 3](https://forbiddencolours.bandcamp.com/album/instroak-vol-3) | 2019 | bilbao | Bilbao, Spain | — |
+| judy | [Eŕoa Lau](https://erroa.bandcamp.com/album/e-oa-lau) | 2025 | electronic, experimental, drum & bass, dubstep, electronica, house… | Bilbao, Spain | — |
 | Juza | [True Love](https://bassleemusic.bandcamp.com/album/true-love) | 2019 | bass lee, critical sound, david fendah, gamba, gorka sánchez, juza… | Bilbao, Spain | — |
 | King Kong, Lone Ranger & Lone Ark Riddim Force | [King Kong - Some A Dem Say / Lone Ranger - Jah A Me Saviour](https://bombbasshifi.bandcamp.com/album/king-kong-some-a-dem-say-lone-ranger-jah-a-me-saviour) | 2019 | conscious music, dub, jah music, reggae, roots, sound system… | Bilbao, Spain | — |
+| Leire Sáenz Quevedo | [So Close](https://haziesporak.bandcamp.com/album/so-close) | 2026 | experimental, bilbao, drone, fangirl, hyper pop, improvisation… | Bilbao, Spain | — |
+| LOS PANIKS | [Los valientes andan solos](https://discosbanana1.bandcamp.com/album/los-valientes-andan-solos) | 2021 | punk, bilbao, punk rock, synth punk | Bilbao, Spain | — |
+| Malefic Rapture | [s/t (Demo I)](https://dungeonlordrecords.bandcamp.com/album/s-t-demo-i-2) | 2026 | ambient, dark ambient, dungeon synth, lo-fi, old school dungeon synth, bilbao | Bilbao, Spain | — |
+| Malinoviy John | [Geese](https://deepnas.bandcamp.com/album/geese) | 2025 | electronic, atmospheric dnb, deep dnb, deep drum and bass, dnb, drum and bass… | Bilbao, Spain | — |
 | Marmol | [Nuevo Sol](https://colillarecords.bandcamp.com/album/nuevo-sol) | 2017 | alternative, bilbao, power pop, punk, sevilla, pop… | Nice, France | — |
 | Message | [7" East Bound](https://bassleemusic.bandcamp.com/album/7-east-bound) | 2019 | messengers, reggae, roots reggae, a-lone ark muzik studio, dub, east bound… | Bilbao, Spain | — |
 | Message | [7" Hotter The Battle](https://bassleemusic.bandcamp.com/album/7-hotter-the-battle) | 2024 | reggae, roots reggae, roots reggae dub, dub, instrumental reggae, melodica… | Bilbao, Spain | — |
@@ -283,18 +467,35 @@
 | Message | [Showcase II](https://bassleemusic.bandcamp.com/album/showcase-ii) | 2024 | message roots, reggae, roots reggae, dub, instrumental dub, instrumental reggae… | Bilbao, Spain | — |
 | Mármol | [Declaración Total de Guerra](https://andaluciauberalles.bandcamp.com/album/declaraci-n-total-de-guerra) | 2021 | punk, bilbao, hardcore, pop, rock radical, sevilla | Seville, Spain | — |
 | Mármol | [Declaración total de guerra](https://colillarecords.bandcamp.com/album/declaraci-n-total-de-guerra) | 2021 | alternative, bilbao, power pop, punk, sevilla, pop… | Nice, France | — |
+| Mármol | [Declaración total de guerra](https://flexidiscos.bandcamp.com/album/declaraci-n-total-de-guerra) | 2022 | alternative, pop punk, punk, anarcopunk, bilbao, indie… | Valencia, Spain | — |
 | Mármol / Nueva Generación | [Mármol / Nueva Generación](https://andaluciauberalles.bandcamp.com/album/m-rmol-nueva-generaci-n) | 2019 | punk, bilbao, hardcore, murcia, pop, power punk… | Seville, Spain | — |
 | NERV3 | [Final Connection](https://deepnas.bandcamp.com/album/final-connection) | 2025 | electronic, atmospheric dnb, bass music, deep dnb, deep drum and bass, dnb… | Bilbao, Spain | — |
 | Orsini | [Ezin Atera](https://andaluciauberalles.bandcamp.com/album/ezin-atera) | 2026 | oi!, pop, punk, bilbao, diy punk, hardcore… | Seville, Spain | — |
+| PashaRav | [Phenomen](https://deepnas.bandcamp.com/album/phenomen) | 2025 | atmospheric dnb, bass music, dancefloor dnb, deep dnb, dnb, drum and bass… | Bilbao, Spain | — |
 | Radithor | [Al Aire](https://crystalmine.bandcamp.com/album/al-aire) | 2019 | experimental, anticopyright, bilbao, burgos | Burgos, Spain | — |
+| REDMOONRAGE | [ER050 REDMOONRAGE - Do Not Listen](https://eclecticreactionsrecords.bandcamp.com/album/er050-redmoonrage-do-not-listen) | 2026 | breaks, darkwave, ebm, electronic, house, synthwave… | Bilbao, Spain | — |
 | Roberto Sánchez | [7" Words Of My Mouth](https://bassleemusic.bandcamp.com/album/7-words-of-my-mouth) | 2025 | reggae, roots reggae, alone, dub, instrumental reggae, lone ark… | Bilbao, Spain | — |
+| Saint Rider | [FU2 / Huh](https://deepnas.bandcamp.com/album/fu2-huh) | 2025 | drum & bass, dnb, drum and bass, jump up, bilbao | Bilbao, Spain | — |
+| Selfshot | [19S - Single](https://dexmusiccom.bandcamp.com/album/19s-single) | 2014 | alternative, electronic, hip hop, nu metal, rap, bilbao | Bilbao, Spain | — |
+| Selfshot | [2.0 EP](https://dexmusiccom.bandcamp.com/album/20-ep) | 2014 | alternative, electronic, hip hop, nu metal, rap, bilbao | Bilbao, Spain | — |
 | Sista Kata & Sistah Lore | [12" Fight Down Babylon / Women in Reggae](https://bassleemusic.bandcamp.com/album/12-fight-down-babylon-women-in-reggae) | 2022 | 12" vinyl, bass lee, reggae, roots reggae, sista kata, sistah lore… | Bilbao, Spain | — |
+| Sistema de entretenimiento | [300 noches sin dormir](https://discosbanana1.bandcamp.com/album/300-noches-sin-dormir) | 2025 | punk, young punk, arcade punk, punk rock, synth punk, bilbao | Bilbao, Spain | — |
+| SISTEMA DE ENTRETENIMIENTO | [Canciones Bélicas para Jóvenes](https://discosbanana1.bandcamp.com/album/canciones-b-licas-para-j-venes) | 2022 | punk, punk rock, synth punk, bilbao | Bilbao, Spain | — |
+| Sublime Solitude | [Izarren aurkako guda... (Demo IV)](https://dungeonlordrecords.bandcamp.com/album/izarren-aurkako-guda-demo-iv) | 2025 | ambient, dark ambient, dark dungeon music, dungeon synth, lo-fi, old school dungeon synth… | Bilbao, Spain | — |
+| Sublime Solitude | [My Kindled Malice/Fantasy & Seclusion (Demos II-III)](https://dungeonlordrecords.bandcamp.com/album/my-kindled-malice-fantasy-seclusion-demos-ii-iii) | 2025 | ambient, comfy synth, dark ambient, dungeon synth, lo-fi, old school dungeon synth… | Bilbao, Spain | — |
+| Sublime Solitude | [s/t (Demo I)](https://dungeonlordrecords.bandcamp.com/album/s-t-demo-i) | 2024 | ambient, calming music, dark ambient, dungeon synth, lo-fi, old school dungeon synth… | Bilbao, Spain | — |
 | The Cherry Boppers | [Remix It Again](https://cherryboppers.bandcamp.com/album/remix-it-again) | 2024 | funk, intrumental funk, jazzgroove, bilbao | Bilbao, Spain | — |
+| TNNL | [TUNNEL](https://haziesporak.bandcamp.com/album/tunnel) | 2026 | bilbao., experimental, bilbao, collaboration, dark, deep… | Bilbao, Spain | — |
 | Upyard | [Sufferah's Time in Dub](https://bassleemusic.bandcamp.com/album/sufferahs-time-in-dub) | 2025 | bass lee, reggae, roots reggae, upyard, dub, instrumental reggae… | Bilbao, Spain | — |
+| Valerio Tricoli / Werner Dafeldecker / Mattin | [ER044 Valerio Tricoli / Werner Dafeldecker / Mattin - Le Diable probablement](https://eclecticreactionsrecords.bandcamp.com/album/er044-valerio-tricoli-werner-dafeldecker-mattin-le-diable-probablement) | 2022 | eclectic reactions, electronic, house, industrial, mattin, valerio tricoli… | Bilbao, Spain | — |
 | Various Artists | [Compilation Vol III](https://breathingthecore.bandcamp.com/album/compilation-vol-iii) | 2017 | deathcore, metal, metalcore, pop punk, djent, hardcore… | Bilbao, Spain | — |
 | Various Artists | [Compilation Vol.II](https://breathingthecore.bandcamp.com/album/compilation-vol-ii) | 2017 | deathcore, djent, metal, metalcore, pop punk, hardcore… | Bilbao, Spain | — |
+| Verzor | [Kto Kryakal?](https://deepnas.bandcamp.com/album/kto-kryakal) | 2025 | bass music, deep dnb, deep drum and bass, dnb, drum and bass, electronic… | Bilbao, Spain | — |
+| WALDO FALDO | [Colega de playa](https://discosbanana1.bandcamp.com/album/colega-de-playa) | 2021 | punk, madrid, punk rock, synth punk, bilbao | Bilbao, Spain | — |
+| WALDO FALDO | [Nueva Especie Humana](https://discosbanana1.bandcamp.com/album/nueva-especie-humana) | 2023 | punk, new wave, punk rock, synth punk, bilbao | Bilbao, Spain | — |
+| WLDV | [ER009 WLDV - The Belief](https://eclecticreactionsrecords.bandcamp.com/album/er009-wldv-the-belief) | 2019 | electronic, house, spoken word, ambient, ebm, electro… | Bilbao, Spain | — |
 
-### bilbo (5)
+### bilbo (6)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -302,15 +503,23 @@
 | Corbad | [Elf-friend](https://corbad.bandcamp.com/album/elf-friend) | 2011 | folk, lotr ep, bilbo, frodo, lord of the rings, the hobbit… | British Columbia | — |
 | Crossover | [Crossover](https://crossoverbilbao.bandcamp.com/album/crossover-2) | 2016 | euskadi, rock, bilbo, hardrock, bilbao | Bilbao, Spain | euskadi, bilbao |
 | Elbis Rever | [Sweet molly alone](https://crystalmine.bandcamp.com/album/sweet-molly-alone) | 2019 | experimental, anticopyright, astrabudua, bilbo, hong kong, live… | Burgos, Spain | — |
+| Electric Sound Muchachos | [Electric Sound](https://electricsoundmuchachos.bandcamp.com/album/electric-sound) | 2014 | bilbo, colombia, euskadi, experimental, falsepop, instrumental… | Bilbao, Spain | euskadi, bilbao |
 | Miguel A. García | [Qinide](https://crystalmine.bandcamp.com/album/qinide) | 2019 | experimental, anticopyright, bilbo, electroacoustic, noise, burgos | Burgos, Spain | — |
 
-### bizkaia (1)
+### bizkaia (2)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | Barraks Promotion | [BP005 - Chivo "Waiting For So Long"](https://barraks.bandcamp.com/album/bp005-chivo-waiting-for-so-long) | 2018 | metal, bizkaia, chivo, desert rock, doom, hardcore… | Sopelana, Spain | portugalete |
+| Erruki Jauna | [En chancletas no se puede hacer la revolución](https://errukijauna.bandcamp.com/album/en-chancletas-no-se-puede-hacer-la-revoluci-n) | 2020 | bizkaia, punk, chancletas, euskera, hardcore, hardcore punk… | PV, Spain | euskera |
 
-### donostia (8)
+### crudobilbao (1)
+
+| Artista | Título | Año | Tags | Location | Otros tags de origen |
+|---|---|---|---|---|---|
+| Dub Troubles feat. Tenor Youthman & Jah Rave | [Come Gather Round](https://fatbirdrecordings.bandcamp.com/album/come-gather-round) | 2015 | crudobilbao, digital, digital reggae, dub, dub troubles, fat bird recordings… | UK | — |
+
+### donostia (23)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -318,12 +527,27 @@
 | AMA | [AMA ante el virus de la rabia](https://amamusica.bandcamp.com/album/ama-ante-el-virus-de-la-rabia) | 2012 | donostia, pop, indie | PV | san-sebastian |
 | AMA | [Exposición permanente](https://amamusica.bandcamp.com/album/exposici-n-permanente) | 2009 | donostia, pop, indie | PV | san-sebastian |
 | AMA | [Yo no te quiero](https://amamusica.bandcamp.com/album/yo-no-te-quiero) | 2010 | donostia, pop | PV | san-sebastian |
+| Andres Doñate | [Gliss](https://elsarecords.bandcamp.com/album/gliss) | 2019 | basque country, donostia, electronic, experimental, abstract, archival… | San Sebastián, Spain | san-sebastian, basque-country |
 | Arroz y Pasta | [Integral](https://arrozypasta.bandcamp.com/album/integral) | 2021 | donostia, pop | Donostia San Sebastian, Spain | donostia-san-sebastian |
 | BASIC | [Burning Bright](https://basicbandmusic.bandcamp.com/album/burning-bright) | 2015 | basic, burning bright, rock, donostia, indie rock, pop | San Sebastián, Spain | san-sebastian |
+| Camping Gaz & Digi Random | [Circüs EP](https://gazyrandom.bandcamp.com/album/circ-s-ep) | 1999 | comedy, electronic, rock, soundtrack, beats, latin… | Donostia, Spain | — |
+| Camping Gaz & Digi Random | [Gaz EP](https://gazyrandom.bandcamp.com/album/gaz-ep) | 1995 | soundtrack, beats, latin, soul, symphony, synths… | Donostia, Spain | — |
+| Camping Gaz & Digi Random | [Gazoül EP](https://gazyrandom.bandcamp.com/album/gazo-l-ep) | 2000 | soundtrack, beats, latin, soul, symphony, synths… | Donostia, Spain | — |
 | Cold Revenge | [De Lo Malo, Lo Peor!](https://coldrevenge2.bandcamp.com/album/de-lo-malo-lo-peor) | 2011 | basque country, oi!, oi! punk, oi! streetpunk, punk, skinhead rock'n'roll… | Donostia, Spain | euskal-herria, basque-country |
+| Eraul | [Iraultza](https://eraul.bandcamp.com/album/iraultza) | 2017 | americana, basque country, folk, acoustic, blues, donostia… | San Sebastián, Spain | san-sebastian, basque-country |
 | Five Pence Game | [Experiments](https://clartycat.bandcamp.com/album/experiments) | 2022 | electronic, rock, ableton live, alchemy, ally morton, donostia… | San Sebastián, Spain | san-sebastian |
+| Five Pence Game | [Experiments](https://fivepencegame.bandcamp.com/album/experiments) | 2022 | electronic, ableton live, alchemy, ally morton, donostia, experimental… | San Sebastián, Spain | san-sebastian |
+| FOLC RECORDS | [FOLC047 SEÑOR NO - A Veces No - 7"](https://folcrecords.bandcamp.com/album/folc047-se-or-no-a-veces-no-7) | 2015 | rock, rock & roll, buenavista, donostia, garage punk, pub rock… | Madrid, Spain | — |
+| fustA! | [Bakarrik/Biluzik](https://fustacello.bandcamp.com/album/bakarrik-biluzik) | 2016 | alternative, barcelona, cello, covers and own songs, fusta, loop station… | Donostia, Spain | — |
+| fustA! | [Guiri trip](https://fustacello.bandcamp.com/album/guiri-trip) | 2016 | alternative, cello, covers and own songs, fusta, loop station, own song… | Donostia, Spain | — |
+| Giorgio Bassmatti | [De B-Alde](https://giorgiobassmatti.bandcamp.com/album/de-b-alde) | 2014 | donostia san sebastián, experimental, folk, indie, pop, donostia | Donostia | donostia-san-sebastian |
+| Giorgio Bassmatti | [DK53 Trencadís](https://discosdekirlian.bandcamp.com/album/dk53-trencad-s) | 2017 | pop, alternative, bassmatti, donostia, folk, pop san sebastián… | Barcelona, Spain | san-sebastian |
+| Giorgio Bassmatti | [Eutrapelia](https://giorgiobassmatti.bandcamp.com/album/eutrapelia) | 2022 | donostia san sebastián, experimental, folk, indie, pop, donostia | Donostia | donostia-san-sebastian |
+| Giorgio Bassmatti | [Kafea Eta Galletak](https://giorgiobassmatti.bandcamp.com/album/kafea-eta-galletak) | 2009 | donostia san sebastián, experimental, folk, indie, pop, donostia | Donostia | donostia-san-sebastian |
+| Giorgio Bassmatti | [Por ahora, así](https://giorgiobassmatti.bandcamp.com/album/por-ahora-as) | 2016 | donostia san sebastián, experimental, folk, indie, pop, donostia | Donostia | donostia-san-sebastian |
+| Manu fustA! | [Bakarrik-Biluzik / Guiri trip](https://fustacello.bandcamp.com/album/bakarrik-biluzik-guiri-trip) | 2021 | alternative, covers and own songs, donostia | Donostia, Spain | — |
 
-### donostia-san-sebastian (128)
+### donostia-san-sebastian (202)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -343,6 +567,8 @@
 | 6jerseys | [Otra vez](https://6jerseys.bandcamp.com/album/otra-vez) | 2026 | electronic, electro, electronica, house, techno, donostia | Donostia San Sebastian, Spain | — |
 | 6jerseys | [Paz y amor](https://6jerseys.bandcamp.com/album/paz-y-amor) | 2025 | electronic, electro, electronica, house, techno, donostia | Donostia San Sebastian, Spain | — |
 | 6jerseys | [Volando libre](https://6jerseys.bandcamp.com/album/volando-libre) | 2026 | electronic, electro, electronica, house, techno, donostia | Donostia San Sebastian, Spain | — |
+| Age Of Zighkar | [Age Of Zighkar](https://ekinmusic.bandcamp.com/album/age-of-zighkar) | 2020 | black, blackgaze, dark ambient, experimental, noise, post metal… | Donostia San Sebastian, Spain | — |
+| Age Of Zighkar | [Age Of Zighkar II](https://ekinmusic.bandcamp.com/album/age-of-zighkar-ii) | 2020 | experimental, gaze, psychedelic, ambient, doom, electronic… | Donostia San Sebastian, Spain | — |
 | ALEXiD | [Dolce Vita](https://alexid.bandcamp.com/album/dolce-vita) | 2023 | house, pop, reggaeton, urban pop, eurodance, donostia / san sebastián | Donostia / San Sebastián, Spain | — |
 | Alvaro Cano | [Noches De Fanta](https://alvarocano.bandcamp.com/album/noches-de-fanta) | 2023 | deep house, electronic, experimental, minimal, donostia | Donostia San Sebastian, Spain | — |
 | Alvaro Cano | [Searching Organic](https://alvarocano.bandcamp.com/album/searching-organic) | 2025 | deep house, electronic, experimental, ambient, drone ambient, minimal… | Donostia San Sebastian, Spain | — |
@@ -440,49 +666,139 @@
 | Costas | [It's Me Again EP](https://costasmusic.bandcamp.com/album/its-me-again-ep) | 2026 | deep house, electronic, house, dub techno, tech house, techno… | Donostia San Sebastian, Spain | — |
 | Costas | [Welcome To My Spaceship](https://costasmusic.bandcamp.com/album/welcome-to-my-spaceship) | 2023 | deep house, electronic, house, dub techno, tech house, techno… | Donostia San Sebastian, Spain | — |
 | Costas, Iuly.B & Direkt | [Feelin EP](https://costasmusic.bandcamp.com/album/feelin-ep) | 2024 | deep house, electronic, house, dub techno, tech house, techno… | Donostia San Sebastian, Spain | — |
+| Cricketballs | [Cricketballs](https://eihe-cricketballs.bandcamp.com/album/cricketballs) | 2019 | rock, conceptual, metal, stoner, donostia | Donostia San Sebastian, Spain | — |
+| Cricketballs | [Pantybreaker](https://eihe-cricketballs.bandcamp.com/album/pantybreaker) | 2023 | nerd rock, rock, concept album, math rock, metal, post-metal… | Donostia San Sebastian, Spain | — |
 | Crossed / Vibora | [PENA](https://azkarzintak.bandcamp.com/album/pena) | 2022 | punk, blackened hardcore, hardcore, post-hardcore, screamo, donostia | Donostia San Sebastian, Spain | — |
 | CØRRUPT TRAX | [Blasco (AR) - POWER TO HYPNOTIZE](https://corrupttrax.bandcamp.com/album/blasco-ar-power-to-hypnotize) | 2026 | electronic, schranz, donostia | Donostia San Sebastian, Spain | — |
 | CØRRUPT TRAX | [Portage -  Vinyl Ride](https://corrupttrax.bandcamp.com/album/portage-vinyl-ride) | 2026 | electronic, schranz, donostia | Donostia San Sebastian, Spain | — |
 | CØRRUPT TRAX | [ZTA - Kicks Are Loaded](https://corrupttrax.bandcamp.com/album/zta-kicks-are-loaded) | 2026 | electronic, schranz, donostia | Donostia San Sebastian, Spain | — |
 | DANAJAN | [Itzulera](https://danajan.bandcamp.com/album/itzulera) | 2025 | hard rock, rock, rock & roll, punk, punk rock, donostia | Donostia San Sebastian, Spain | — |
 | DANAJAN | [Zabor hipersonikoa](https://danajan.bandcamp.com/album/zabor-hipersonikoa) | 2022 | hard rock, rock, rock & roll, punk, punk rock, donostia | Donostia San Sebastian, Spain | — |
+| DEFRENIA | [DEFRENIA](https://defrenia.bandcamp.com/album/defrenia) | 2023 | metal, donostia | Donostia San Sebastian, Spain | — |
+| dialcava | [Part of All](https://dialcava.bandcamp.com/album/part-of-all) | 2014 | electronic, experimental, donostia | Donostia San Sebastian, Spain | — |
+| DiE HardSuave | [cheese and watermelon ep](https://diehardsuave.bandcamp.com/album/cheese-and-watermelon-ep) | 2024 | electronic, experimental, ghettotech, idm, trap beats, ambient… | Donostia San Sebastian, Spain | — |
+| DiE Hardsuave | [pxl](https://diehardsuave.bandcamp.com/album/pxl) | 2023 | drum & bass, electronic, ghettotech, idm, trap beats, ambient… | Donostia San Sebastian, Spain | — |
+| Diego Vasallo | [Malo ni bueno](https://diegovasallo.bandcamp.com/album/malo-ni-bueno) | 2023 | rock, blues, blues rock, folk, folk rock, donostia | Donostia San Sebastian, Spain | — |
+| Divorce From New York | [Jazzthetics](https://divorcefromnewyork.bandcamp.com/album/jazzthetics) | 2026 | broken beat, electronic, house, nujazz, beats, jungle… | Donostia San Sebastian, Spain | — |
+| Divorce From New York | [Sausalito](https://divorcefromnewyork.bandcamp.com/album/sausalito) | 2022 | broken beat, detroit techno, disco, electronic, house, nujazz… | Donostia San Sebastian, Spain | — |
+| Divorce From New York | [Sausalito Remixes](https://divorcefromnewyork.bandcamp.com/album/sausalito-remixes) | 2024 | 2-step, broken beat, chicago house, electronic, garage, house… | Donostia San Sebastian, Spain | — |
+| Divorce From New York | [This Ain´t Jazz No More](https://divorcefromnewyork.bandcamp.com/album/this-ain-t-jazz-no-more) | 2021 | broken beat, electronic, house, beats, jungle, nujazz… | Donostia San Sebastian, Spain | — |
+| DJ Rukhlove | [Post Orchestra](https://djrukhlove.bandcamp.com/album/post-orchestra) | 2025 | deep house, electronic, progressive house, techno, vocal house, donostia | Donostia San Sebastian, Spain | — |
+| Ekin | [Vol.0.1](https://ekinmusic.bandcamp.com/album/vol-01) | 2019 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [0.0.0.0.0.0.0.0.0.9](https://ekinmusic.bandcamp.com/album/0000000009-3) | 2020 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [0.0.0.0.0.0.0.0.8](https://ekinmusic.bandcamp.com/album/000000008) | 2020 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [0.0.0.0.0.0.0.7](https://ekinmusic.bandcamp.com/album/00000007) | 2019 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [0.0.0.0.0.0.6](https://ekinmusic.bandcamp.com/album/0000006) | 2019 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [0.0.0.0.0.5](https://ekinmusic.bandcamp.com/album/000005) | 2019 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [0.0.0.0.4](https://ekinmusic.bandcamp.com/album/00004) | 2019 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [2 recordings](https://ekinmusic.bandcamp.com/album/2-recordings) | 2025 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [@uitar.exe](https://ekinmusic.bandcamp.com/album/uitar-exe) | 2022 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [atonal free butterfly sky feel drop](https://ekinmusic.bandcamp.com/album/atonal-free-butterfly-sky-feel-drop) | 2021 | experimental, ambient, doom, electronic, free jazz, noise… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [be for e Be](https://ekinmusic.bandcamp.com/album/be-for-e-be) | 2022 | experimental, ambient, collage, doom, electronic, free jazz… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [Blue///Dream Space-Softness0101](https://ekinmusic.bandcamp.com/album/blue-dream-space-softness0101) | 2022 | experimental, ambient, breakcore, doom, electronic, glitch… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [BREAXS//AM:WN](https://ekinmusic.bandcamp.com/album/breaxs-am-wn) | 2022 | experimental, ambient, breakcore, doom, electronic, glitch… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [EKIN TORNER RECORDINGS 23/24 drop](https://ekinmusic.bandcamp.com/album/ekin-torner-recordings-23-24-drop) | 2025 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [For Alt](https://ekinmusic.bandcamp.com/album/for-alt) | 2021 | experimental, ambient, avant-garde, doom, electronic, free jazz… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [guitar synth sax improvisations](https://ekinmusic.bandcamp.com/album/guitar-synth-sax-improvisations) | 2021 | experimental, jazz fusion, ambient, doom, electronic, free jazz… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [HYPER//ROUTES](https://ekinmusic.bandcamp.com/album/hyper-routes) | 2022 | experimental, ambient, collage, doom, electronic, noise… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [Lo-fi Skramz Desidia](https://ekinmusic.bandcamp.com/album/lo-fi-skramz-desidia) | 2020 | emo, experimental, screamo, skramz, ambient, doom… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [sax undead drained brainless crypts](https://ekinmusic.bandcamp.com/album/sax-undead-drained-brainless-crypts) | 2021 | experimental, ambient, doom, electronic, free jazz, noise… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [Syekxas Smurd](https://ekinmusic.bandcamp.com/album/syekxas-smurd) | 2021 | experimental, ambient, doom, electronic, free impro, noise… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [Violencia visceral para las estrellas](https://ekinmusic.bandcamp.com/album/violencia-visceral-para-las-estrellas) | 2021 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [Vol.0.0.0.3/end/load-](https://ekinmusic.bandcamp.com/album/vol-0003-end-load) | 2019 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [Vol.0.0.2](https://ekinmusic.bandcamp.com/album/vol-002) | 2019 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [V E N U S: TRANSMISSION](https://ekinmusic.bandcamp.com/album/v-e-n-u-s-transmission) | 2023 | abstract, experimental, ambient, concrete music, doom, electronic… | Donostia San Sebastian, Spain | — |
+| Ekin Torner | [x2-toroidal](https://ekinmusic.bandcamp.com/album/x2-toroidal) | 2022 | experimental, ambient, collage, doom, electronic, noise… | Donostia San Sebastian, Spain | — |
+| Ekn/SalviaKlarea | [Ekn/SalviaKlarea ttan ttakun live](https://ekinmusic.bandcamp.com/album/ekn-salviaklarea-ttan-ttakun-live) | 2020 | experimental, ambient, doom, electronic, noise, donostia | Donostia San Sebastian, Spain | — |
+| El andorrano | [Roll!](https://elandorrano.bandcamp.com/album/roll) | 2019 | rock, classic rock, donostia | Donostia San Sebastian, Spain | — |
+| Envolandas | [Envolandas19](https://envolandas.bandcamp.com/album/envolandas19) | 2020 | pop, tecnopop, donostia | Donostia San Sebastian, Spain | — |
+| ezinegon | [3 way split](https://ezinegon.bandcamp.com/album/3-way-split) | 2022 | punk, emo, emoviolence, hardcore, screamo, skramz… | Donostia San Sebastian, Spain | — |
 | ezinegon | [Mastak Erorita Daudenean](https://azkarzintak.bandcamp.com/album/mastak-erorita-daudenean) | 2021 | punk, emo, emotional hardcore, emoviolence, hardcore, post-harcore… | Donostia San Sebastian, Spain | — |
+| ezinegon | [Mastak Erorita Daudenean](https://ezinegon.bandcamp.com/album/mastak-erorita-daudenean) | 2021 | punk, emo, emoviolence, hardcore, post-hardcore, screamo… | Donostia San Sebastian, Spain | — |
+| FAMILY | [Casete](https://familymusic.bandcamp.com/album/casete) | 2015 | aventuras de kirlian, carlos berlanga, el joven lagarto, elefant records, family, ibon errazkin… | Donostia San Sebastian, Spain | — |
+| FAMILY | [Un Soplo En El Corazón](https://familymusic.bandcamp.com/album/un-soplo-en-el-corazo-n) | 2003 | corazón, elefant records, family, javier aramburu, le mans, pop… | Donostia San Sebastian, Spain | — |
+| Flash | [S/T](https://flashrocks.bandcamp.com/album/s-t) | 2022 | punk, garage, hardcore, punk rock, donostia | Donostia San Sebastian, Spain | — |
+| Foehn | [Lilura](https://foehntaldea.bandcamp.com/album/lilura) | 2019 | alternative, alternative rock, progresive folk, donostia | Donostia San Sebastian, Spain | — |
+| Frank Blackfield | [Forever gone](https://frankblackfield.bandcamp.com/album/forever-gone) | 2020 | country, blues, country rock, folk, donostia | Donostia San Sebastian, Spain | — |
+| Frank Blackfield | [Keep on going](https://frankblackfield.bandcamp.com/album/keep-on-going) | 2023 | country, blues, country blues, country folk, country rock, folk… | Donostia San Sebastian, Spain | — |
+| Frank Blackfield | [Love & Loneliness](https://frankblackfield.bandcamp.com/album/love-loneliness) | 2018 | country, blues, country rock, folk, donostia | Donostia San Sebastian, Spain | — |
+| Frank Blackfield | [Nothing ever lasts](https://frankblackfield.bandcamp.com/album/nothing-ever-lasts) | 2014 | country, blues, country rock, folk, donostia | Donostia San Sebastian, Spain | — |
+| Frank Blackfield | [Still free 'n rockin'](https://frankblackfield.bandcamp.com/album/still-free-n-rockin) | 2020 | blues, country, folk, rock, country rock, donostia | Donostia San Sebastian, Spain | — |
+| Frank Blackfield | [We gotta move on](https://frankblackfield.bandcamp.com/album/we-gotta-move-on) | 2017 | country, blues, country rock, folk, donostia | Donostia San Sebastian, Spain | — |
+| Ghau | [arin nira](https://ghau.bandcamp.com/album/arin-nira) | 2023 | alternative, donostia | Donostia San Sebastian, Spain | — |
+| Ghau | [nora(ez)eroso](https://ghau.bandcamp.com/album/nora-ez-eroso) | 2022 | alternative, donostia | Donostia San Sebastian, Spain | — |
+| Gozer and the Gatekeeper | [Pulse / Slow Down](https://gozerandthegatekeeper.bandcamp.com/album/pulse-slow-down) | 2021 | alternative, electronic, rock, donostia | Donostia San Sebastian, Spain | — |
+| Guitar Cafe Music | [Fantasm from the Past](https://guitarcafemusic.bandcamp.com/album/fantasm-from-the-past) | 2024 | chill, jazz, smooth jazz, guitar, donostia | Donostia San Sebastian, Spain | — |
+| Guitar Cafe Music | [Fantasm from the Past Backing Tracks](https://guitarcafemusic.bandcamp.com/album/fantasm-from-the-past-backing-tracks) | 2024 | chill, jazz, smooth jazz, guitar, donostia | Donostia San Sebastian, Spain | — |
+| Guitar Cafe Music | [Guitar Cafe Backing Tracks Volume 1](https://guitarcafemusic.bandcamp.com/album/guitar-cafe-backing-tracks-volume-1) | 2021 | chill, jazz, smooth jazz, guitar, donostia | Donostia San Sebastian, Spain | — |
+| Guitar Cafe Music | [Let's Chill Together](https://guitarcafemusic.bandcamp.com/album/lets-chill-together) | 2021 | chill, jazz, smooth jazz, guitar, donostia | Donostia San Sebastian, Spain | — |
+| Guitar Cafe Music | [Smooth Sunset Serenade](https://guitarcafemusic.bandcamp.com/album/smooth-sunset-serenade) | 2024 | chill, jazz, smooth jazz, guitar, donostia | Donostia San Sebastian, Spain | — |
+| Guitar Cafe Music | [Smooth Sunset Serenade | Smooth Jazz Guitar Backing Tracks Vol 2](https://guitarcafemusic.bandcamp.com/album/smooth-sunset-serenade-smooth-jazz-guitar-backing-tracks-vol-2) | 2024 | chill, jazz, smooth jazz, guitar, donostia | Donostia San Sebastian, Spain | — |
+| Harry Baden | [1973](https://harrybaden.bandcamp.com/album/1973) | 2020 | electronic, ambient, modern classical, techno, donostia | Donostia San Sebastian, Spain | — |
+| Harry Baden | [Stories](https://harrybaden.bandcamp.com/album/stories) | 2019 | electronic, ambient, techno, donostia | Donostia San Sebastian, Spain | — |
+| Harry Baden | [Travesía/Pasaje](https://harrybaden.bandcamp.com/album/traves-a-pasaje) | 2020 | electronic, ambient, techno, donostia | Donostia San Sebastian, Spain | — |
+| Haziak | [Males Herbes](https://haziak.bandcamp.com/album/males-herbes) | 2025 | progressive rock, rock, alternative rock, donostia | Donostia San Sebastian, Spain | — |
+| Helldamm | [HELLDAMM](https://helldamm.bandcamp.com/album/helldamm) | 2013 | groove metal, metal, power metal, trash metal, bass, guitar… | Donostia San Sebastián, Spain | basque-country |
+| Helldamm | [Pythium](https://helldamm.bandcamp.com/album/pythium) | 2017 | metal, power metal, trash metal, guitar rock, heavy metal, shredding… | Donostia San Sebastián, Spain | basque-country |
+| KatanaKill | [Seppuku Dreamers](https://ekinmusic.bandcamp.com/album/seppuku-dreamers) | 2021 | drone doom, experimental, ambient, doom, electronic, noise… | Donostia San Sebastian, Spain | — |
+| Kingdom of Dead Flowers | [Escape from the wizard castle](https://ekinmusic.bandcamp.com/album/escape-from-the-wizard-castle) | 2022 | experimental, ambient, comfy synth, dark ambient, doom, dungeon synth… | Donostia San Sebastian, Spain | — |
 | Kokoshca | [Hay Una Luz](https://ayosilver.bandcamp.com/album/hay-una-luz) | 2013 | españa, iruña, psych, rock, garage, nueva ola… | Donostia San Sebastián, Spain | basque-country, pamplona |
 | Nuclearnoise / Issuna | [split](https://azkarzintak.bandcamp.com/album/split) | 2022 | punk, crust, d-beat, fastcore, hardcore, powerviolence… | Donostia San Sebastian, Spain | — |
+| Olor | [Esperantza - DOF016](https://deofora.bandcamp.com/album/esperantza-dof016) | 2022 | donostia san sebastián, punk, electronic punk, electronica, experiemental, industrial… | Barcelona, Spain | — |
 | Ordara | [Ordara](https://azkarzintak.bandcamp.com/album/ordara) | 2022 | punk, emo, emotional hardcore, emoviolence, hardcore, post-hardcore… | Donostia San Sebastian, Spain | — |
 | Promising/Youngster | [Time & Space EP](https://dantzrecords.bandcamp.com/album/time-space-ep) | 2025 | electro, electronic, house, idm, techno, donostia | Donostia San Sebastian, Spain | — |
+| Ro Ortega & Ekin Torner | [Theremin & Computer Sampling Improv](https://ekinmusic.bandcamp.com/album/theremin-computer-sampling-improv) | 2024 | experimental, ambient, concrete music, doom, electroacustica, electronic… | Donostia San Sebastian, Spain | — |
 | Tenpera | [Buffet](https://azkarzintak.bandcamp.com/album/buffet) | 2021 | punk, emo, emocore, indie, noise, post-hardcore… | Donostia San Sebastian, Spain | — |
 | Tooth | [Errautsetatik](https://azkarzintak.bandcamp.com/album/errautsetatik) | 2023 | punk, hardcore, noise rock, post-hardcore, screamo, donostia | Donostia San Sebastian, Spain | — |
 | Various Artists | [Network Vol. 1](https://dantzrecords.bandcamp.com/album/network-vol-1) | 2025 | electro, electronic, house, idm, techno, donostia | Donostia San Sebastian, Spain | — |
 | xFRUSTUMx | [Delirios de un punk en la era digital](https://azkarzintak.bandcamp.com/album/delirios-de-un-punk-en-la-era-digital) | 2021 | punk, cybernetic, digital, fastcore, hardcore, linux… | Donostia San Sebastian, Spain | — |
+| ĒTHĘR ensemble | [ĒTHĘR's Symphony 1: Aro Berria.](https://etherensemble.bandcamp.com/album/th-rs-symphony-1-aro-berria) | 2019 | experimental, donostia | Donostia San Sebastian, Spain | — |
 
-### eibar (3)
+### eibar (8)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | Aitor Suarez | [Syberia Urbexplay (Original Soundtrack)](https://aitorsu.bandcamp.com/album/syberia-urbexplay-original-soundtrack) | 2022 | ambient, electronic, film scoring, progressive, rock, soundtrack… | Eibar, Spain | — |
 | Aitor Suárez | [Mi Padre (Original Soundtrack)](https://aitorsu.bandcamp.com/album/mi-padre-original-soundtrack) | 2024 | ambient, electronic, film scoring, progressive, rock, soundtrack… | Eibar, Spain | — |
 | Aitor Suárez | [The Last of Us - Urbexplay (Original Soundtrack)](https://aitorsu.bandcamp.com/album/the-last-of-us-urbexplay-original-soundtrack) | 2025 | ambient, country, electronic, film scoring, progressive, rock… | Eibar, Spain | — |
+| Hellwatch | [Decadencia total](https://hellwatch.bandcamp.com/album/decadencia-total) | 2023 | death metal, groove metal, metal, grindcore, groove death metal, hardcore… | Eibar, Spain | — |
+| HellwatcH | [Demo 2020](https://hellwatch.bandcamp.com/album/demo-2020) | 2021 | death metal, groove metal, metal, doom metal, groove death metal, eibar | Eibar, Spain | — |
+| HellwatcH | [First Time Live (Demo)](https://hellwatch.bandcamp.com/album/first-time-live-demo) | 2020 | death metal, groove metal, metal, groove death metal, eibar | Eibar, Spain | — |
+| HellwatcH | [Mondra Assault (Live)](https://hellwatch.bandcamp.com/album/mondra-assault-live) | 2022 | death metal, groove metal, metal, mondra, groove death metal, eibar | Eibar, Spain | — |
+| HellWatcH | [No Hope No Time](https://hellwatch.bandcamp.com/album/no-hope-no-time) | 2022 | death metal, groove metal, metal, groove death metal, eibar | Eibar, Spain | — |
 
-### enkarterri (1)
+### enkarterri (5)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | Blakkat Mentxu | [Blakkat Mentxu](https://blakkatmentxu.bandcamp.com/album/blakkat-mentxu) | 2026 | rock, alternative-rock, enkarterri | Enkarterri, Spain | — |
+| Doministikum | [Crida salvatge - Doministikum Bi hardcore, borroka bakarra - Dos hardocores, una lluita.](https://doministikumtaldea.bandcamp.com/album/crida-salvatge-doministikum-bi-hardcore-borroka-bakarra-dos-hardocores-una-lluita) | 2024 | punk, crida salvatge, hardcore punk, enkarterri | Enkarterri, Spain | — |
+| Doministikum | [Doministikum](https://doministikumtaldea.bandcamp.com/album/doministikum) | 2023 | punk, hardcore punk, enkarterri | Enkarterri, Spain | — |
+| DOMINISTIKUM | [MIERDA CITY SAMPLER 2025 V/A](https://doministikumtaldea.bandcamp.com/album/mierda-city-sampler-2025-v-a) | 2025 | punk, hardcore punk, enkarterri | Enkarterri, Spain | — |
+| DOMINISTIKUM | [THIS IS HARDCORE NOT SPAIN 2](https://doministikumtaldea.bandcamp.com/album/this-is-hardcore-not-spain-2) | 2026 | punk, hardcore punk, enkarterri | Enkarterri, Spain | — |
 
-### ermua (1)
+### ermua (5)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | Black Redding | [Pure Redding](https://blackredding.bandcamp.com/album/pure-redding) | 2015 | rock, ermua | Ermua, Spain | — |
+| Fractality | [DEMON](https://fractality1.bandcamp.com/album/demon) | 2018 | ermua, metal, brutal death metal, death metal, hellgoibar, old school… | PV, Spain | — |
+| Golanulao | [Golanulao](https://golanulao.bandcamp.com/album/golanulao) | 2024 | alternative, golanulao records, impure records, stoner punk rock, ermua | Ermua, Spain | — |
+| Golanulao | [Inoiz Inork Eskatu Ez Digun Guztia](https://golanulao.bandcamp.com/album/inoiz-inork-eskatu-ez-digun-guztia) | 2025 | alternative, stoner punk rock, ermua | Ermua, Spain | — |
+| Golanulao | [KAOIS TREB](https://golanulao.bandcamp.com/album/kaois-treb) | 2025 | alternative, stoner punk rock, punk rock, stoner, ermua | Ermua, Spain | — |
 
-### errenteria (1)
+### errenteria (6)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
+| Guzural | [Split LP](https://guzural.bandcamp.com/album/split-lp) | 2020 | experimental, industrial, industrial techno, post-industrial, errenteria | Errenteria, Spain | — |
+| Guzural | [Zhizn Za Zhizn](https://guzural.bandcamp.com/album/zhizn-za-zhizn) | 2018 | experimental, industrial, industrial techno, post-industrial, errenteria | Errenteria, Spain | — |
+| Hellmugan | [Hellmugan E.P (2023)](https://hellmugan.bandcamp.com/album/hellmugan-e-p-2023) | 2025 | basque country, groove metal, metal, metalcore, thrash metal, euskal metal heads… | Errenteria, Spain | euskera, basque-country |
+| Hellmugan | [Iluntasunean Babesten](https://hellmugan.bandcamp.com/album/iluntasunean-babesten) | 2025 | basque country, groove metal, metal, thrash metal, euskera, metal spain.… | Errenteria, Spain | euskera, basque-country |
 | J.G. | [Versos Violados](https://boogievan.bandcamp.com/album/versos-violados) | 2014 | 70, led zeppelin, rock, boogie, boogievan, tolareberri… | Errenteria, Spain | basque-country |
+| RedWine House | [Waiting](https://flooprecordings.bandcamp.com/album/waiting-2) | 2026 | electronic, house, errenteria | Errenteria, Spain | — |
 
-### euskadi (35)
+### euskadi (71)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -520,9 +836,45 @@
 | Cohen | [Rooms (2014)](https://cohenmusika.bandcamp.com/album/rooms-2014) | 2014 | post-hardcore, progressive rock, punk rock, rock, urnieta | Urnieta, Spain | — |
 | Cohen | [Subconscious Mind (2010)](https://cohenmusika.bandcamp.com/album/subconscious-mind-2010) | 2010 | post-hardcore, punk rock, rock, urnieta | Urnieta, Spain | — |
 | Countach | [Countach! (2012)](https://countach.bandcamp.com/album/countach-2012) | 2012 | alternative, desert, desert rock, funk, fuzz, fuzzy… | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| Cubo | [Cubo - Ritmos Brutos](https://djcubo.bandcamp.com/album/cubo-ritmos-brutos) | 2000 | dj cubo, electronic, euskadi, instrumental hip-hop, silum soundz, beats… | PV, Spain | — |
+| Deiedra | [Ehorzlearen Kantuak](https://deiedra.bandcamp.com/album/ehorzlearen-kantuak) | 2016 | basque country, celtic, folk, euskal herria, punk, bluegrass… | Euskadi, Spain | basque-country |
+| doves blood | [doves blood](https://elcrack.bandcamp.com/album/doves-blood) | 1997 | rock, country, experiemental, folk, pop, soft rock… | Euskadi, Spain | — |
+| Dr. Sax | [ELLIS EP](https://drsax.bandcamp.com/album/ellis-ep) | 2019 | acustico, alice in veins, arenna, dixon ii, dr.sax, drsax… | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| Dr. Sax | [LIVE AL SUR DEL SUR](https://drsax.bandcamp.com/album/live-al-sur-del-sur) | 2020 | acustico, folk-rock mantrautor, folk, music, folk rock, vitoria gasteiz | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| Dr. Sax | [MANTRAS OF THE RAINY NIGHT](https://drsax.bandcamp.com/album/mantras-of-the-rainy-night) | 2012 | acustico, alice in veins, arenna, dixon ii, dr.sax, drsax… | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| Dr. Sax | [VOL. II](https://drsax.bandcamp.com/album/vol-ii) | 2014 | acustico, alice in veins, arenna, dixon ii, dr.sax, drsax… | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| Dr. Sax | [VOL. III](https://drsax.bandcamp.com/album/vol-iii) | 2016 | acustico, alice in veins, arenna, dixon ii, dr.sax, drsax… | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| Dr. Sax | [VOL. IV](https://drsax.bandcamp.com/album/vol-iv) | 2021 | acustico, alice in veins, arenna, death buridan, dixon ii, dr.sax… | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| Efrén López & Milo ke Mandarini | [Live in Mas de Flors (full 5-track EP) [2021]](https://efrenlopez.bandcamp.com/album/live-in-mas-de-flors-full-5-track-ep-2021) | 2021 | acoustic, folk, medieval, mediterranean, middle east, cretan… | El Mas De Flors, Spain | — |
+| elcrack | [...floor](https://elcrack.bandcamp.com/album/floor) | 2018 | experimental, rock, country, experiemental, folk, instrumental… | Euskadi, Spain | — |
+| elcrack | [b - 2020](https://elcrack.bandcamp.com/album/b-2020) | 2020 | rock, country, experiemental, folk, pop, soft rock… | Euskadi, Spain | — |
+| elcrack | [drones](https://elcrack.bandcamp.com/album/drones) | 2020 | rock, country, experiemental, folk, pop, soft rock… | Euskadi, Spain | — |
+| elcrack | [elcrack 2020](https://elcrack.bandcamp.com/album/elcrack-2020) | 2020 | rock, country, experiemental, folk, pop, soft rock… | Euskadi, Spain | — |
+| elcrack | [painful 2](https://elcrack.bandcamp.com/album/painful-2) | 2004 | pop punk, punk rock, rock, country, experiemental, folk… | Euskadi, Spain | — |
+| elcrack | [painful 3](https://elcrack.bandcamp.com/album/painful-3) | 2005 | rock, country, experiemental, folk, pop, pop rock… | Euskadi, Spain | — |
+| ero | [Garaiz gaude](https://erotuta.bandcamp.com/album/garaiz-gaude) | 2016 | metal, rock, hardcore, pop rock, punk rock, spain | Euskadi, Spain | — |
+| Flash | [Eztek ber besteik](https://flashrocks.bandcamp.com/album/eztek-ber-besteik) | 2023 | punk, rrv, euskadi, garage, hardcore, punk rock… | Donostia San Sebastian, Spain | donostia-san-sebastian |
+| FUNKTROPIA | [FUNKTROPIA](https://funktropia.bandcamp.com/album/funktropia) | 2026 | disco, euskadi, funk, funktropia, groove, nación funk… | Barcelona, Spain | — |
+| Giranice | [Enea](https://giranice.bandcamp.com/album/enea) | 2012 | rock, ambient, experimental, instrumental, math-rock, original soundtrack… | Orio, Spain | — |
+| GIRANICE | [Giranice](https://giranice.bandcamp.com/album/giranice) | 2011 | rock, ambient, experimental, giranice, instrumental, math-rock… | Orio, Spain | — |
+| Giranice | [Studio Live Session](https://giranice.bandcamp.com/album/studio-live-session) | 2021 | rock, ambient, experimental, instrumental, math-rock, post-rock… | Orio, Spain | — |
+| Giranice | [Ur](https://giranice.bandcamp.com/album/ur) | 2015 | rock, ambient, experimental, instrumental, instrumental rock, math-rock… | Orio, Spain | — |
+| Green Dog | [Green Dog](https://greendogband.bandcamp.com/album/green-dog) | 2015 | euskadi, rock, metal, scandinavian, skate, erandio | Erandio, Spain | — |
 | Guillaume Chavanne | [LE BATON #3 - Les panthères du Baztan](https://antoinebellanger.bandcamp.com/album/le-baton-3-les-panth-res-du-baztan) | 2020 | euskadi, experimental, pyrenees, ambient, chanson, fiedrecording… | ? | — |
+| Helin Roman Crockett | [MAKETIA](https://helinromancrockett.bandcamp.com/album/maketia) | 2012 | rock, blues, country, soul, southern rock, soraluze placencia de las armas | Soraluze Placencia De Las Armas, Spain | — |
+| Hell Division | [El ángel de la destrucción](https://helldivision.bandcamp.com/album/el-ngel-de-la-destrucci-n) | 2025 | metalpunk, punk, crust, hardcore, donostia san sebastián | Donostia San Sebastián, Spain | donostia-san-sebastian |
+| Hell Division | [Hell Division (LP)](https://helldivision.bandcamp.com/album/hell-division-lp) | 2016 | metalpunk, punk, crust, hardcore, donostia san sebastián | Donostia San Sebastián, Spain | donostia-san-sebastian |
+| Hell Division | [La solución final (EP)](https://helldivision.bandcamp.com/album/la-soluci-n-final-ep) | 2010 | metalpunk, punk, crust, hardcore, donostia san sebastián | Donostia San Sebastián, Spain | donostia-san-sebastian |
+| Lord Bakartia | [All Points Into Dex And Faith](https://gondolinrecords.bandcamp.com/album/all-points-into-dex-and-faith) | 2025 | ambient, basque country, dark dungeon music, dungeon synth, epic dungeon synth, euskadi… | Denmark | basque-country |
+| Lord Bakartia | [For When The Night Comes](https://gondolinrecords.bandcamp.com/album/for-when-the-night-comes) | 2024 | ambient, basque country, euskadi, dark dungeon music, dungeon synth, epic dungeon synth… | Denmark | basque-country |
+| Lord Bakartia | [Priscilla's Dagger](https://gondolinrecords.bandcamp.com/album/priscillas-dagger) | 2025 | ambient, basque country, dark dungeon music, dungeon synth, epic dungeon synth, euskadi… | Denmark | basque-country |
+| Lord Bakartia | [Where silence speaks in hushed tones](https://gondolinrecords.bandcamp.com/album/where-silence-speaks-in-hushed-tones) | 2026 | ambient, basque country, euskadi, dark dungeon music, dungeon synth, epic dungeon synth… | Denmark | basque-country |
+| Nakkiga / Kult et Morte / Stormstone / Dilaghran | [Ancient Ceremonies, New Wisdom](https://dilaghran.bandcamp.com/album/ancient-ceremonies-new-wisdom) | 2023 | atmospheric black metal, black metal, euskadi, metal, raw black metal, ambient… | Andorra | — |
+| painful | [painful](https://elcrack.bandcamp.com/album/painful) | 2002 | rock, country, experiemental, folk, pop, pop rock… | Euskadi, Spain | — |
+| the northagirres | [the northagirres](https://elcrack.bandcamp.com/album/the-northagirres) | 2013 | rock, urretxu, country, experiemental, folk, pop… | Euskadi, Spain | — |
+| The Steps | [steps of the investigtion](https://elcrack.bandcamp.com/album/steps-of-the-investigtion) | 1998 | rock, country, experiemental, folk, pop, soft rock… | Euskadi, Spain | — |
 
-### euskal (6)
+### euskal (7)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -532,8 +884,9 @@
 | ANESTESIA | [Anestesia "FENIX" (2022)](https://anestesia.bandcamp.com/album/anestesia-fenix-2022) | 2022 | crossover, death metal, metal, punk, doom, euskal… | ? | — |
 | Arrutiko Intxaurrak | [Arrutiko Intxaurrak - maketa](https://arrutikointxaurrak.bandcamp.com/album/arrutiko-intxaurrak-maketa) | 2012 | acoustic, euskal herria, euskal, euskara, zarautz | Zarautz, Spain | euskara, pais-vasco, zarautz, euskal-herria |
 | cant explain | [ARMY-ARMAK](https://cantexplain.bandcamp.com/album/army-armak) | 2016 | alternative, army-armak, basque, cant explain, cantexplain, euskal… | Orio, Spain | basque, pais-vasco, euskal-herria |
+| DingwasH | [Back To Basics](https://dingwash.bandcamp.com/album/back-to-basics) | 2017 | euskadi, euskal herria, reggae, roots reggae dub, cover, dub… | Aquitaine Limousin Poitou-Charen, France | euskadi |
 
-### euskal-herria (84)
+### euskal-herria (98)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -577,12 +930,25 @@
 | Dead Sequoia | [Casquería fina](https://deadsequoia.bandcamp.com/album/casquer-a-fina) | 2024 | euskal herria, rock, garage, garaje, punk, surf… | PV, Spain | — |
 | Dead Sequoia | [Dead Sequoia](https://deadsequoia.bandcamp.com/album/dead-sequoia) | 2019 | euskal herria, rock, garage, garaje, punk, surf… | PV, Spain | — |
 | Dena | [ANABASA](https://betepaeta.bandcamp.com/album/anabasa) | 2025 | basque country, euskal herria, punk, emo punk, independent, post-hardcore… | ? | basque-country |
+| EJE | [II](https://ejetaldea.bandcamp.com/album/ii) | 2024 | baltimore, basque country, black metal, nwobhck, new york, punk… | ? | basque-country |
+| Elortegi Anayak | [Elortegi](https://elortegi.bandcamp.com/album/elortegi) | 2016 | basque country, euskal herria, rock, pop rock, punk rock, spain | PV, Spain | basque-country |
+| Enoch's vision | [Ras King Leo - No se por qué me tienen tanto odio](https://enochsvision.bandcamp.com/album/ras-king-leo-no-se-por-que-me-tienen-tanto-odio) | 2019 | cuba, euskal herria, jah rastafari, reggae, roots, digital reggae… | San Sebastián, Spain | san-sebastian |
+| Eraldatzen | [Eraldatzen](https://eraldatzen.bandcamp.com/album/eraldatzen) | 2025 | hard rock, hardcore, metal, punk, rock, euskal herria… | Azkoitia, Spain | — |
+| Eraldatzen | [Eraldatzen EP](https://eraldatzen.bandcamp.com/album/eraldatzen-ep) | 2024 | hard rock, metal, punk, rock, euskal herria, hardcore… | Azkoitia, Spain | — |
+| eutsi! | [eutsi!](https://eutsi.bandcamp.com/album/eutsi) | 2023 | basque country, diy, euskal herria, oi!, oi! punk, punk… | Havana, Cuba | basque-country |
+| FERMIN MUGURUZA | [AKELARRE ANTIFASCISTA (MADRID 15-02-2025)](https://ferminmuguruza.bandcamp.com/album/akelarre-antifascista-madrid-15-02-2025) | 2025 | fermin muguruza, kortatu, negu gorriak, rock, euskal herria | ? | — |
 | GAILU | [Autosuntsipena Hasia Da 3,2,1...Znort!!!](https://bidehuts.bandcamp.com/album/autosuntsipena-hasia-da-321-znort) | 2023 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
 | Gaizka Insunza | [Gaizka Insunza](https://bidehuts.bandcamp.com/album/gaizka-insunza) | 2019 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
 | Gaizka Insunza | [IAZ](https://bidehuts.bandcamp.com/album/iaz) | 2024 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
+| Giante | [This Is Fine](https://giante.bandcamp.com/album/this-is-fine) | 2018 | basque country, euskal herria, punk, gasteiz, emo, post-hardcore… | Vitoria Gasteiz, Spain | vitoria-gasteiz, basque-country |
+| Glory Howl | [Kairos](https://gloryhowl.bandcamp.com/album/kairos) | 2019 | donostia san sebastián, rock, world, euskal herria, donostia | San Sebastián, Spain | san-sebastian, donostia-san-sebastian |
+| Glory Howl | [M5](https://gloryhowl.bandcamp.com/album/m5) | 2016 | donostia san sebastián, rock, world, euskal herria, donostia | San Sebastián, Spain | san-sebastian, donostia-san-sebastian |
 | Gora Japon | [s/t](https://bidehuts.bandcamp.com/album/s-t) | 2008 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
 | Gora Japon | [s/t](https://bidehuts.bandcamp.com/album/s-t-3) | 2013 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
+| haatik | [EP](https://haatik.bandcamp.com/album/ep) | 2020 | euskal herria, latin, punk, spoken word, hardcore, post-hardcore | ? | — |
+| haatik | [Gutxi gehienez](https://haatik.bandcamp.com/album/gutxi-gehienez) | 2025 | euskal herria, latin, punk, spoken word, emo, emotional hardcore… | ? | — |
 | Hotel | [Suites](https://bidehuts.bandcamp.com/album/suites) | 2007 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
+| Hägëndäs | [Hägëndäs](https://hagendas.bandcamp.com/album/h-g-nd-s) | 2018 | rock, euskal herria, trash, trashcore, zarata, zaratazarautz… | Punta Del Este, Uruguay | — |
 | inoren ero  ni / lisabö | [cOUPAGES #01](https://bidehuts.bandcamp.com/album/coupages-01) | 2008 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
 | inoren ero ni | [Fosbury](https://bidehuts.bandcamp.com/album/fosbury) | 2009 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
 | inoren ero ni | [Fregoli](https://bidehuts.bandcamp.com/album/fregoli) | 2011 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
@@ -615,6 +981,7 @@
 | Nire | [Hemeretzi](https://bidehuts.bandcamp.com/album/hemeretzi) | 2018 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
 | Sacco | [Basa](https://bidehuts.bandcamp.com/album/basa) | 2022 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
 | Sacco | [s/t](https://bidehuts.bandcamp.com/album/s-t-2) | 2014 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
+| SUAIA | [Adoktrinatuak](https://gorkasuaia.bandcamp.com/album/adoktrinatuak) | 2017 | dancehall, hip hop, rap, reggae, euskal herria, jungle… | Punta Del Este, Uruguay | — |
 | Txaranga Urretabizkaia | [Zortzia etzan](https://bidehuts.bandcamp.com/album/zortzia-etzan) | 2025 | alternative, txaranga urretabizkaia, basque-country, bidehuts, euskal-herria, rock… | ? | basque-country |
 | Xabier Montoia | [Montoiaren Mundu Miresgarria](https://bidehuts.bandcamp.com/album/montoiaren-mundu-miresgarria) | 2011 | alternative, basque-country, bidehuts, euskal-herria, rock, selfmanagement and free creation | ? | basque-country |
 | Yaw | [Malda](https://augerecords.bandcamp.com/album/malda) | 2013 | auge, auge records, alternative, basque country, diy, folk… | Salamanca, Spain | basque-country |
@@ -628,7 +995,7 @@
 |---|---|---|---|---|---|
 | Ainara Ortega | [Scat](https://ainaraortega.bandcamp.com/album/scat-2) | 2015 | jazz, bebop, brasil, cantautor, clásica, euskal kantagintza… | Hernani, Spain | hernani |
 
-### euskal-musika (34)
+### euskal-musika (46)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -654,6 +1021,18 @@
 | Burutik | [Ipuinak](https://burutik.bandcamp.com/album/ipuinak) | 2025 | basque music, experimental, pop, progressive rock, euskal musika, pop rock… | Pamplona, Spain | basque-music, pamplona |
 | Burutik | [Paradisua](https://burutik.bandcamp.com/album/paradisua-2) | 2020 | basque music, experimental, euskal herria, pop, progressive rock, alternative rock… | Pamplona, Spain | basque-music, basque, pamplona |
 | Burutik | [Zerua eta Zorua: Hiru Kanta Bakardadeari](https://burutik.bandcamp.com/album/zerua-eta-zorua-hiru-kanta-bakardadeari) | 2023 | basque music, experimental, pop, progressive rock, euskal musika, pop rock… | Pamplona, Spain | basque-music, pamplona |
+| DingwasH | [Outatime](https://dingwash.bandcamp.com/album/outatime) | 2019 | euskadi, jamaica, reggae, roots reggae dub, bob marley, cover… | Aquitaine Limousin Poitou-Charen, France | euskadi |
+| Don't Save The Queen | [BERPIZTEA - MAKETA 2](https://dontsavethequeen.bandcamp.com/album/berpiztea-maketa-2) | 2017 | euskal herria, rock, dontsavethequeen, dstq, euskal musika, power trio | ? | euskal-herria |
+| Don't Save The Queen | [Iritziak eta Sentimenduak](https://dontsavethequeen.bandcamp.com/album/iritziak-eta-sentimenduak) | 2023 | euskal herria, punk, rock, rock & roll, baskcountry, dontsavethequeen… | ? | euskal-herria |
+| Eli eta Manex Pagola | [Bertso Musikatuak](https://elietamanexpagola.bandcamp.com/album/bertso-musikatuak) | 2020 | bertso musikatuak, folk, bertsoak, electrofolk, euskal musika, ereñotzu | Ereñotzu, Spain | — |
+| Empty Files | [Lost Files](https://emptyfiles.bandcamp.com/album/lost-files) | 2021 | alternative, basque music, electronic rock, industrial, trip hop, daydream… | Bilbao, Spain | basque-music, pais-vasco, bilbao |
+| ENE KANTAK | [BISONTE MASTODONTEAREN BILA](https://enekantak.bandcamp.com/album/bisonte-mastodontearen-bila) | 2024 | euskal herria, infantil, kids, euskal musika, euskara, haurrentzako… | PV, Spain | euskara, euskal-herria |
+| ENE KANTAK | [ERAGIN, ERAGIN!](https://enekantak.bandcamp.com/album/eragin-eragin) | 2022 | kids, euskal herria, euskal musika, euskara, haurrentzako, infantil… | PV, Spain | euskara, euskal-herria |
+| ENE KANTAK | [NATURAREKIN DANTZAN](https://enekantak.bandcamp.com/album/naturarekin-dantzan) | 2023 | euskal herria, infantil, kids, euskal musika, euskara, haurrentzako… | PV, Spain | euskara, euskal-herria |
+| Eneritz Furyak | [hhh](https://eneritzfuryak.bandcamp.com/album/hhh) | 2024 | electronic, electronic music, euskal musika, experimental, indie pop, synthpop… | PV, Spain | euskara |
+| Eneritz Furyak | [Zaldi zuria / Maskara](https://eneritzfuryak.bandcamp.com/album/zaldi-zuria-maskara) | 2018 | electronic, experimental, euskal musika, euskara, pop, post-folk… | PV, Spain | euskara |
+| Galazota | [Heldu Orduko Usteldu](https://galazota.bandcamp.com/album/heldu-orduko-usteldu) | 2026 | rock, euskal herria, euskal musika, euskara, punk rock, arratia nerbioi | Arratia Nerbioi, Spain | euskara, euskal-herria |
+| Giante | [Hamaika](https://giante.bandcamp.com/album/hamaika) | 2021 | basque country, basque music, euskal herria, punk, gasteiz, emo… | Vitoria Gasteiz, Spain | basque-music, euskal-herria, vitoria-gasteiz, basque-country |
 | Jean Louis Hargous | [Chants électromagnétiques](https://belarri.bandcamp.com/album/chants-lectromagn-tiques) | 2023 | basque country, belarri, experimental, world, acousmatic music, acousmatic tape music… | Cambo Les Bains, France | basque-country |
 | Jexuxmai Lopetegi & Noizbehinka banda | [Barrakoian 25 urte](https://belarri.bandcamp.com/album/barrakoian-25-urte) | 2020 | basque country, belarri, world, euskal musika, iparralde, musika… | Cambo Les Bains, France | basque-country |
 | LarreAlde Trikilariak | [Zirimiri](https://belarri.bandcamp.com/album/zirimiri) | 2021 | basque country, belarri, world, euskal musika, iparralde, musika… | Cambo Les Bains, France | basque-country |
@@ -673,7 +1052,7 @@
 |---|---|---|---|---|---|
 | 2ZIO | [Orain eta hemen (2018)](https://2zio.bandcamp.com/album/orain-eta-hemen-2018) | 2018 | euskal rap, hip-hop/rap, euskal herria, is not spain not, france | France | euskal-herria |
 
-### euskal-rock (4)
+### euskal-rock (8)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -681,6 +1060,10 @@
 | BIHOZKADA | [BI HOZKADA](https://bihozkada.bandcamp.com/album/bi-hozkada) | 2019 | power pop rock, rock, euskal musika, euskal rock, euskara, pop rock… | Villabona, Spain | euskal-musika, euskara |
 | BIHOZKADA | [ZURE AURREAN](https://bihozkada.bandcamp.com/album/zure-aurrean) | 2019 | power pop rock, rock, euskal musika, euskal rock, euskara, pop rock… | Villabona, Spain | euskal-musika, euskara |
 | Dead Sequoia | [Bailando solo](https://deadsequoia.bandcamp.com/album/bailando-solo) | 2018 | euskal herria, punk, rock, euskal rock, garage, garaje… | PV, Spain | euskal-herria |
+| Deus Ez | [Sherpak](https://deusez.bandcamp.com/album/sherpak) | 2019 | euskadi, rock, euskal herria, euskal rock, euskaraz, grunge… | PV, Spain | euskaraz, euskadi, euskal-herria |
+| Deus Ez | [Urrun EP](https://deusez.bandcamp.com/album/urrun-ep) | 2019 | euskadi, rock, euskal herria, euskal rock, euskaraz, grunge… | PV, Spain | euskaraz, euskadi, euskal-herria |
+| Elea Boa | [Etxean](https://eleaboa.bandcamp.com/album/etxean) | 2024 | 90s rock, alternative, elea boa, etxean, euskal musika, euskal rock… | Los Angeles, California | euskal-musika |
+| frikun | [Ezerezko Herria](https://frikun.bandcamp.com/album/ezerezko-herria) | 2022 | afro rock afro-beat blues, world, afro beat, basque, euskal herria, euskal rock… | Bayonne, France | basque, euskal-herria |
 
 ### euskaldun (1)
 
@@ -688,14 +1071,37 @@
 |---|---|---|---|---|---|
 | Xalbardin & Camilo Mateo | [Bertsoak bakarrik](https://camilomateo.bandcamp.com/album/bertsoak-bakarrik) | 2012 | pop, euskaldun, rock, soul, andoain | Andoain, Spain | andoain |
 
-### euskara (2)
+### euskara (25)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
+| [GAUR EZ] | [II](https://gaurez.bandcamp.com/album/ii) | 2017 | rock, euskara, iruña | Pamplona, Spain | pamplona |
 | Andoken | [Maxi-Môme](https://andoken.bandcamp.com/album/maxi-m-me) | 2020 | andoken, hip-hop/rap, rap, rap fr, boom bap, euskara… | Biarritz, France | — |
 | Dejabu sormen laborategia | [Itzulera SB](https://anderfernandez.bandcamp.com/album/itzulera-sb) | 2025 | soundtrack, antzerkia, euskara, instrumental, teatro, theatre… | Hendaye, France | — |
+| Diabolo Kiwi | [Kokinkeriak Fini](https://diabolokiwi.bandcamp.com/album/kokinkeriak-fini) | 2019 | funk, rnb, basque, euskara, jazz, pop… | PV, Spain | basque |
+| ENE KANTAK | [ASTONAUTA](https://enekantak.bandcamp.com/album/astonauta) | 2025 | kids, euskal herria, euskara, haurrentzako, infantil, infantiles… | PV, Spain | euskal-herria |
+| Ene Kantak | [Ene Kantak](https://enekantak.bandcamp.com/album/ene-kantak) | 2011 | kids, euskal herria, euskara, haurrentzako, infantil, infantiles… | PV, Spain | euskal-herria |
+| ENE KANTAK | [IZAN ZORIONTSU!](https://enekantak.bandcamp.com/album/izan-zoriontsu) | 2025 | kids, euskal herria, euskara, haurrentzako, infantil, infantiles… | PV, Spain | euskal-herria |
+| ENE KANTAK | [LILURAGARRIA](https://enekantak.bandcamp.com/album/liluragarria) | 2025 | kids, euskal herria, euskara, haurrentzako, infantil, infantiles… | PV, Spain | euskal-herria |
+| Ene Kantak | [NEGUARI ABESTEN](https://enekantak.bandcamp.com/album/neguari-abesten) | 2012 | kids, euskal herria, euskara, haurrentzako, infantil, infantiles… | PV, Spain | euskal-herria |
+| Ene Kantak | [ONEKA](https://enekantak.bandcamp.com/album/oneka) | 2014 | kids, euskal herria, euskara, haurrentzako, infantil, infantiles… | PV, Spain | euskal-herria |
+| ENE KANTAK | [SATORJATOR](https://enekantak.bandcamp.com/album/satorjator) | 2025 | kids, euskal herria, euskara, haurrentzako, infantil, infantiles… | PV, Spain | euskal-herria |
+| ENE KANTAK | [TRAKTORE DOTORE ETA IPUIN KLASIKOAK](https://enekantak.bandcamp.com/album/traktore-dotore-eta-ipuin-klasikoak) | 2026 | kids, euskal herria, euskara, haurrentzako, infantil, infantiles… | PV, Spain | euskal-herria |
+| ENEKORA | [KORA IZPIAK](https://enekora.bandcamp.com/album/kora-izpiak) | 2013 | acoustic, africa, euskara, kora, strings, world… | Zestoa, Spain | — |
+| ENEKORA | [MAITATZEA NAHIAGO](https://enekora.bandcamp.com/album/maitatzea-nahiago) | 2017 | acoustic, africa, african world music, arpa, eneko, euskara… | Zestoa, Spain | — |
+| Eneritz Furyak | [Emaizkidan - Emadan Remixes/Reworks](https://eneritzfuryak.bandcamp.com/album/emaizkidan-emadan-remixes-reworks) | 2023 | electronic, experimental, euskara, post-folk, singer-songwriter, synths… | PV, Spain | — |
+| Eneritz Furyak | [Eneritz Furyak](https://eneritzfuryak.bandcamp.com/album/eneritz-furyak) | 2017 | basque country, basque music, electronic, experimental, euskal herria, bakarlaria… | PV, Spain | basque-music, basque-country |
+| Eneritz Furyak | [hhhRA EKARRIAK remixes](https://eneritzfuryak.bandcamp.com/album/hhhra-ekarriak-remixes) | 2025 | electronic, experimental, euskara, post-folk, singer-songwriter, synths… | PV, Spain | — |
+| Eratu | [Bidea](https://eratu.bandcamp.com/album/bidea) | 2015 | hard rock, rock, euskara, pop rock, punk rock, spain | Basque Country, Spain | basque-country |
+| Gabezia | [Bilanx](https://gabezia.bandcamp.com/album/bilanx) | 2014 | 2014, alternative, basque country, donostia san sebastián, euskadi, metal… | San Sebastián, Spain | euskadi, san-sebastian, donostia-san-sebastian, basque-country |
+| Gabezia | [Gizakia Etsai](https://gabezia.bandcamp.com/album/gizakia-etsai) | 2013 | alternative, basque country, donostia san sebastián, euskadi, metal, euskara… | San Sebastián, Spain | euskadi, san-sebastian, donostia-san-sebastian, basque-country |
+| Gabezia | [HAZI](https://gabezia.bandcamp.com/album/hazi) | 2019 | alternative, basque country, donostia san sebastián, euskadi, metal, basque… | San Sebastián, Spain | basque, euskadi, san-sebastian, donostia-san-sebastian, basque-country |
+| Gabezia | [Orain](https://gabezia.bandcamp.com/album/orain) | 2015 | alternative, basque country, donostia san sebastián, euskadi, metal, euskara… | San Sebastián, Spain | euskadi, san-sebastian, donostia-san-sebastian, basque-country |
+| Herabe | [Egiari zor](https://herabe.bandcamp.com/album/egiari-zor) | 2018 | metal, euskal herria, euskara, hardcore, thrash metal, burlada | Burlada, Spain | euskal-herria |
+| jurgi ekiza | [ARGITZALA (studio album)](https://ekiza.com/album/argitzala-studio-album) | 2025 | alternative, basque country, basque, euskal herria, euskara, folk… | Hasparren, France | basque, euskal-herria, basque-country |
+| Maddi | [Amaitasuna](https://emeadedei.bandcamp.com/album/amaitasuna) | 2024 | alternative, basque music, electronic, classic, euskara, lyrical… | PV, Spain | basque-music |
 
-### euskaraz (4)
+### euskaraz (7)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -703,14 +1109,23 @@
 | BANANAS | [Garun Ta Eztarri](https://bananas.bandcamp.com/album/garun-ta-eztarri) | 2021 | alternative, emo, euskal herria, euskaraz, euskera, hardcore… | San Sebastián, Spain | euskera, euskal-herria, san-sebastian |
 | BELHARRA | [Howdy Bluegrass Euskaraz](https://belharramusika.bandcamp.com/album/howdy-bluegrass-euskaraz) | 2023 | country, bluegrass, euskara, euskaraz, folk, donostia | Donostia San Sebastian, Spain | euskara, donostia-san-sebastian |
 | Bi zaldi | [Lo zena](https://bizaldi.bandcamp.com/album/lo-zena) | 2021 | acoustic, experimental, bertsioak, bi zaldi, covers, euskara… | Zaldibia, Spain | euskara |
+| Eneritz Furyak | [Emadan](https://eneritzfuryak.bandcamp.com/album/emadan) | 2021 | electronic, experimental, art pop, euskal musika, euskara, euskaraz… | PV, Spain | euskal-musika, euskara |
+| Erruki Jauna | [Mundu hau pikutara doa](https://errukijauna.bandcamp.com/album/mundu-hau-pikutara-doa) | 2024 | euskal herria, punk, euskaraz, hardcore, hardcore punk, hc… | PV, Spain | euskal-herria |
+| Ezin eta | [Itzaletik](https://ezineta.bandcamp.com/album/itzaletik) | 2017 | basque, metal, euskaraz, métal, punk, saint jean de luz | Saint Jean De Luz, France | basque |
 
-### euskera (4)
+### euskera (10)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | Azken Aukera | [Eguzkia Ezkutatzean](https://azkenaukera.bandcamp.com/album/eguzkia-ezkutatzean) | 2016 | alternative, basque music, melodic rock, alternative rock, euskal herria, euskera… | Vitoria Gasteiz, Spain | basque-music, euskal-herria, vitoria-gasteiz |
 | Azken Aukera | [Ἴκαρος](https://azkenaukera.bandcamp.com/album/-) | 2017 | alternative, gasteiz, alternative rock, basque music, euskal herria, euskera… | Vitoria Gasteiz, Spain | basque-music, euskal-herria, vitoria-gasteiz |
 | BAZKA | [Basoaren ilunean dantza](https://bazka.bandcamp.com/album/basoaren-ilunean-dantza) | 2022 | punk, altenative, euskera, grunge, noise, spain | PV, Spain | — |
+| Didubz Sound - Serious Ting Records | [Ez al da Nahiko](https://didubzsound.bandcamp.com/album/ez-al-da-nahiko) | 2021 | reggae, digital, dub, euskera, sound system, steppa… | Valencia, Spain | — |
+| Enbor Arnasa | [Erreinua irudikatzen](https://enborarnasa.bandcamp.com/album/erreinua-irudikatzen) | 2024 | basque country, basque music, death metal, experitone, metal, rock… | Arrigorriaga, Spain | euskara, basque-music, basque-country |
+| Gauak | [Kontra](https://gauak.bandcamp.com/album/kontra) | 2024 | electronic, darkwave, euskera, experimental, syntpop, trip hop… | Berlin, Germany | — |
+| Gorrotoa Gorroto | [Jano](https://gorrotoagorroto.bandcamp.com/album/jano) | 2023 | alternative, euskal herria, oi!, punk, euskera, punk rock… | Otxandio, Spain | euskal-herria |
+| Gorrotoa Gorroto | [Ugerra](https://gorrotoagorroto.bandcamp.com/album/ugerra) | 2025 | alternative, euskal herria, oi!, punk, rock, euskera… | Otxandio, Spain | euskal-herria |
+| Haxotz | [Hil ala bizi](https://haxotz.bandcamp.com/album/hil-ala-bizi) | 2010 | rock, berri txarrak, euskal herria, euskal musika, euskera, gatibu… | Bilbao, Spain | euskal-musika, pais-vasco, euskal-herria, bilbao |
 | N2OGU | [N2OGU](https://beatsaladrecords.bandcamp.com/album/n2ogu) | 2020 | hip-hop/rap, boom-bap, euskal herria, euskera, instrumental hip-hop, rap… | Durango, Spain | euskal-herria |
 
 ### galdakao (1)
@@ -719,14 +1134,29 @@
 |---|---|---|---|---|---|
 | BREA | [Purga Natural](https://breagdko.bandcamp.com/album/purga-natural) | 2022 | punk, rock, punk hardcore, punk rock, galdakao | Galdakao, Spain | — |
 
-### gasteiz (2)
+### gasteiz (9)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | Akabera | [No Habrá Piedad](https://akabera.bandcamp.com/album/no-habr-piedad) | 2016 | gasteiz, hardcore, hc punk, hxc punk, punk, street punk… | Vitoria Gasteiz, Spain | euskal-herria, vitoria-gasteiz |
 | Arenna | [Beats of Olarizu (2011)](https://arenna.bandcamp.com/album/beats-of-olarizu-2011) | 2011 | psychedelic, rock, stoner, arenna, beats of olarizu, gasteiz… | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| D-TOX Distorsión Tóxica | [12 Canciones que no conocías antes de escucharlas](https://distorsiontoxica.bandcamp.com/album/12-canciones-que-no-conoc-as-antes-de-escucharlas) | 2015 | alternative, basque country, basque music, diy, eh, gasteiz… | Vitoria Gasteiz, Spain | basque-music, vitoria-gasteiz, basque-country |
+| D-TOX Distorsión Tóxica | [Demolición](https://distorsiontoxica.bandcamp.com/album/demolici-n) | 2018 | basque country, basque music, eh, gasteiz, punk, alternative rock… | Vitoria Gasteiz, Spain | basque-music, vitoria-gasteiz, basque-country |
+| D-TOX Distorsión Tóxica | [El Sacamantecas](https://distorsiontoxica.bandcamp.com/album/el-sacamantecas) | 2012 | alternative, basque country, diy, eh, gasteiz, euskal herria… | Vitoria Gasteiz, Spain | vitoria-gasteiz, basque-country |
+| D-TOX Distorsión Tóxica | [POSTMORTEM](https://distorsiontoxica.bandcamp.com/album/postmortem) | 2020 | eh, gasteiz, punk, political punk rock, punk rock, vitoria gasteiz | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| D-TOX Distorsión Tóxica | [Risa&Rabia](https://distorsiontoxica.bandcamp.com/album/risa-rabia) | 2013 | alternative, basque country, diy, eh, gasteiz, euskal herria… | Vitoria Gasteiz, Spain | vitoria-gasteiz, basque-country |
+| Flesh for Cannibals | [Overlord of the Outerspace](https://fleshforcannibals.bandcamp.com/album/overlord-of-the-outerspace) | 2014 | punk, euskal herria, gasteiz, hardcore, punk rock, rock… | Vitoria Gasteiz, Spain | euskal-herria, vitoria-gasteiz |
+| garimba rekords | [EP - SKA Vol 1](https://garimbarekords.bandcamp.com/album/ep-ska-vol-1) | 2018 | gr, garimba rekords, gasteiz, metal, punk, rap… | PV, Spain | — |
 
-### getxo (27)
+### getaria (3)
+
+| Artista | Título | Año | Tags | Location | Otros tags de origen |
+|---|---|---|---|---|---|
+| GZR | [Hordo Txikira](https://gzrgzrgzr.bandcamp.com/album/hordo-txikira) | 2022 | punk, getaria | Getaria, Spain | — |
+| GZR | [Nola Hil Nahi Dek?](https://gzrgzrgzr.bandcamp.com/album/nola-hil-nahi-dek) | 2025 | basque country, punk, rock, basque, hardcore, pirate… | Getaria, Spain | basque, basque-country |
+| Unai Bellamy | [Focus On The Inner Darkness](https://esnebidearecords.bandcamp.com/album/focus-on-the-inner-darkness) | 2026 | 90s house, basque country, bilbao, electronic, errenteria, getaria… | PV, Spain | errenteria, basque-country, bilbao |
+
+### getxo (34)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -743,9 +1173,16 @@
 | Cristina Narea | [Huesos de mar](https://cristinanarea.bandcamp.com/album/huesos-de-mar) | 2014 | world, alotroladomusic, cantautora, folk rock, música chilena, música mujeres… | Getxo, Spain | — |
 | Cristina Narea | [Viento sur](https://cristinanarea.bandcamp.com/album/viento-sur) | 2023 | world, alotroladomusic, cantautora, diosamari, eguzkilore, folk rock… | Getxo, Spain | — |
 | DADABE | [EP](https://dadabe.bandcamp.com/album/ep) | 2022 | indie rock, alternative, noise rock, shoegaze, getxo | Getxo, Spain | — |
+| Endika Sangroniz | [Corny Songs For Corny People](https://endikasangroniz.bandcamp.com/album/corny-songs-for-corny-people) | 2021 | alternative, indie folk rock, indie rock, singer-songwriter, synthpop, getxo | Getxo, Spain | — |
+| Endika Sangroniz | [From My World To Yours](https://endikasangroniz.bandcamp.com/album/from-my-world-to-yours) | 2019 | acoustic, alternative, independent, getxo | Getxo, Spain | — |
+| Endika Sangroniz | [Illusion](https://endikasangroniz.bandcamp.com/album/illusion) | 2016 | alternative, algorta, endika sangroniz, ep, getxo, illusion… | Getxo, Spain | — |
+| Endika Sangroniz | [Please, Don't Come Back](https://endikasangroniz.bandcamp.com/album/please-dont-come-back) | 2022 | alternative, folk rock, indie pop, indie rock, singer-songwriter, getxo | Getxo, Spain | — |
+| Endika Sangroniz | [Who Am I Speaking To?](https://endikasangroniz.bandcamp.com/album/who-am-i-speaking-to) | 2022 | alternative, spoken word, dark pop, darkwave, experimental rock, new wave… | Getxo, Spain | — |
+| ERTZ | [Eskuen Artean](https://ertz.bandcamp.com/album/eskuen-artean) | 2012 | alternative, deathcore, metal, alternative rock, hardcore, melodic death metal… | Getxo, Spain | pais-vasco |
 | La Grieta | [Askeroso Getxo Sound 2005-2015](https://crystalmine.bandcamp.com/album/askeroso-getxo-sound-2005-2015) | 2021 | experimental, anticopyright, getxo, burgos | Burgos, Spain | — |
 | Llyosha & Unlit Soil | [Fuck](https://blackearthsindustriesrecords.bandcamp.com/album/fuck) | 2026 | ambient, basque country, drone, dub, electronica, experimental… | Getxo, Spain | basque-country |
 | Taunting Unlit Soil | [Taunting Unlit Soil - At The Time When](https://blackearthsindustriesrecords.bandcamp.com/album/taunting-unlit-soil-at-the-time-when) | 2022 | experimental, electronica, experimental electronic, industrial, postindustrial, post-punk… | Getxo, Spain | — |
+| Tom Boyle | [Agur](https://discosdekirlian.bandcamp.com/album/agur) | 2015 | agur, getxo, pop, rock, tom boyle, indie… | Barcelona, Spain | — |
 | Unai Azkune | [Abesti bat herri bat izan daiteke](https://azkune.bandcamp.com/album/abesti-bat-herri-bat-izan-daiteke) | 2017 | acoustic, ambient, electricguitar, getxo | Getxo, Spain | — |
 | Unai Azkune | [Aurkitutako Zenbakiak](https://azkune.bandcamp.com/album/aurkitutako-zenbakiak) | 2018 | acoustic, getxo | Getxo, Spain | — |
 | Unai Azkune | [Bremerhaven ep](https://azkune.bandcamp.com/album/bremerhaven-ep) | 2015 | acoustic, getxo | Getxo, Spain | — |
@@ -758,7 +1195,15 @@
 | Unai Azkune | [Rooms](https://azkune.bandcamp.com/album/rooms) | 2011 | acoustic, getxo | Getxo, Spain | — |
 | Unai Azkune | [The Pinecone](https://azkune.bandcamp.com/album/the-pinecone) | 2016 | acoustic, getxo | Getxo, Spain | — |
 
-### gipuzkoa (5)
+### getxo-bilbao-gringo-rock (3)
+
+| Artista | Título | Año | Tags | Location | Otros tags de origen |
+|---|---|---|---|---|---|
+| Gringo | [A Devastating Wave Of...](https://gringorock.bandcamp.com/album/a-devastating-wave-of) | 2010 | getxo bilbao gringo rock, rock, getxo | Getxo, Spain | getxo |
+| Gringo | [Riptides](https://gringorock.bandcamp.com/album/riptides) | 2019 | getxo bilbao gringo rock, rock, getxo | Getxo, Spain | getxo |
+| Gringo | [The Return of the Fucking Losers](https://gringorock.bandcamp.com/album/the-return-of-the-fucking-losers) | 2006 | getxo bilbao gringo rock, rock, getxo | Getxo, Spain | getxo |
+
+### gipuzkoa (8)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -767,14 +1212,24 @@
 | APURTU | [Apurtu](https://apurtu.bandcamp.com/album/apurtu-2) | 1998 | 77 punk, 82 punk, irun, punk, euskal herria, gipuzkoa… | Irun, Spain | irun, euskal-herria |
 | APURTU | [Harian](https://apurtu.bandcamp.com/album/harian) | 2009 | 77 punk, 82 punk, irun, punk, euskal herria, gipuzkoa… | Irun, Spain | irun, euskal-herria |
 | APURTU | [Tik Tak](https://apurtu.bandcamp.com/album/tik-tak) | 2012 | 77 punk, 82 punk, irun, punk, euskal herria, gipuzkoa… | Irun, Spain | irun, euskal-herria |
+| Crap | [FSR093 Crap - We are... Crap (LP)](https://familyspreerecordings.bandcamp.com/album/fsr093-crap-we-are-crap-lp) | 2021 | arrasate, gipuzkoa, punk, punk rock, rock'n'roll, spain | Spain | arrasate |
+| Deus Ez | [Deus Ez](https://deusez.bandcamp.com/album/deus-ez) | 2017 | rock, eibar, euskal, euskal herria, euskara, euskaraz… | PV, Spain | euskaraz, euskal, eibar, euskara, euskal-herria |
+| elCrack | [Summer Cowboy Walks](https://elcrack.bandcamp.com/album/summer-cowboy-walks) | 2012 | brian eno, caballero reynaldo, euskal herria, gipuzkoa, gypsy, mantra… | Euskadi, Spain | euskadi, euskal-herria |
 
-### guernica (4)
+### guernica (11)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | agur | [Demo - EP](https://agurtaldea.bandcamp.com/album/demo-ep) | 2022 | rock, punk, rock and roll, guernica | Guernica, Spain | — |
 | agur | [Garena Gara - LP](https://agurtaldea.bandcamp.com/album/garena-gara-lp) | 2023 | rock, punk, rock and roll, roll, guernica | Guernica, Spain | — |
 | agur | [Hil egingo zara](https://agurtaldea.bandcamp.com/album/hil-egingo-zara) | 2024 | rock, punk, rock and roll, guernica | Guernica, Spain | — |
+| Etorkizun Beltza | [Ekaitzen Osteko Sua](https://etorkizunbeltza.bandcamp.com/album/ekaitzen-osteko-sua) | 2020 | heavy metal, melodic metal, metal, thrash metal, guernica | Guernica, Spain | — |
+| Etorkizun Beltza | [Esnatu Gara?](https://etorkizunbeltza.bandcamp.com/album/esnatu-gara) | 2015 | heavy metal, melodic metal, metal, thrash metal, guernica | Guernica, Spain | — |
+| Etorkizun Beltza | [Etorkizun Beltza](https://etorkizunbeltza.bandcamp.com/album/etorkizun-beltza) | 2010 | heavy metal, melodic metal, metal, thrash metal, guernica | Guernica, Spain | — |
+| Etorkizun Beltza | [Garrasi Hutsak](https://etorkizunbeltza.bandcamp.com/album/garrasi-hutsak) | 2026 | heavy metal, melodic metal, metal, thrash metal, heavy, heavy rock… | Guernica, Spain | — |
+| Etorkizun Beltza | [Zoramenaren Maisuak](https://etorkizunbeltza.bandcamp.com/album/zoramenaren-maisuak) | 2012 | heavy metal, melodic metal, metal, thrash metal, guernica | Guernica, Spain | — |
+| Grio Negga | [GRIO NEGGA - GUERNICA](https://grionegga.bandcamp.com/album/grio-negga-guernica) | 2012 | hip hop, hip-hop/rap, rap, grio negga, guernica, rap français… | France | — |
+| Guernica | [Arc I: In Fear of Waking](https://guernicamusic.bandcamp.com/album/arc-i-in-fear-of-waking) | 2011 | acoustic, alternative, ambient, folk, rock, arc i… | Jonesboro, Arkansas | — |
 | คาราบาว | [ลูกลุงขี้เมา Chapter 26](https://carabao.bandcamp.com/album/chapter-26) | 2007 | alexandria, arkansas, ben folds, everett, grunge-rock, guernica… | ? | — |
 
 ### guipuzcoa (1)
@@ -794,7 +1249,7 @@
 | Bihotx | [Norabide Guztiak](https://bihotx.bandcamp.com/album/norabide-guztiak) | 2020 | alternative, basque country, euskal herria, folk, txalaparta, world… | Hernani, Spain | euskal-herria, basque-country |
 | Christian Goex | [Seven Chakras](https://christiangoex.bandcamp.com/album/seven-chakras) | 2025 | india, world, didgeridoo, flamenco, percussions, tabla… | Hernani, Spain | — |
 
-### hondarribia (8)
+### hondarribia (17)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -806,8 +1261,17 @@
 | Bahatawi Records | [Bahatawi Records Instrumentals Vol III](https://bahatawi.bandcamp.com/album/bahatawi-records-instrumentals-vol-iii) | 2021 | dub, reggae, instrumental, riddim, roots, stepper one drop dub two drops… | Hondarribia, Spain | pais-vasco |
 | Bahatawi Records | [Bahatawi Records Instrumentals Vol. IV](https://bahatawi.bandcamp.com/album/bahatawi-records-instrumentals-vol-iv) | 2024 | dub, reggae, roots reggae dub, instrumentals, lovers, hondarribia | Hondarribia, Spain | pais-vasco |
 | Bahatawi Records | [Bahatawi Records Instrumentals Vol.V](https://bahatawi.bandcamp.com/album/bahatawi-records-instrumentals-vol-v) | 2024 | dub, reggae, roots reggae, music, new, one drop… | Hondarribia, Spain | pais-vasco |
+| Dj Mau | [Maumousse](https://djmau.bandcamp.com/album/maumousse) | 2007 | r&b/soul, varios generos, hondarribia | Hondarribia, Spain | pais-vasco |
+| Dj Mau | [Solo quiero ser tu amig@](https://djmau.bandcamp.com/album/solo-quiero-ser-tu-amig) | 2005 | r&b/soul, varios generos, hondarribia | Hondarribia, Spain | pais-vasco |
+| DJ XABI | [COLORAINES](https://djxabi.bandcamp.com/album/coloraines) | 2021 | hip-hop/rap, abstract hip-hop, hondarribia | Hondarribia, Spain | — |
+| Dublingo | [Moodles #1](https://dublingo.bandcamp.com/album/moodles-1) | 2015 | soundtrack, ambient, dub, dub noir, exotica, waltz… | Hondarribia, Spain | — |
+| Dublingo | [Moodles #2](https://dublingo.bandcamp.com/album/moodles-2) | 2017 | soundtrack, ambient, bladerunner, dub, exotica, waltz… | Hondarribia, Spain | — |
+| EndOfBlock_EOB | [Empty_Spaces](https://eob0001.bandcamp.com/album/empty-spaces) | 2024 | electronic, acid, ambient, breaks, techno, hondarribia | Hondarribia, Spain | — |
+| Gorpuzkingz | [Hondarribiagra](https://gorpuzkingz.bandcamp.com/album/hondarribiagra) | 2019 | hip-hop/rap, trap, basquetrap, euskaltrap, euskara, hondarribia | Hondarribia, Spain | euskara |
+| Gorpuzkingz | [JAIO.DIRUA.HIL Spilt Mutilated judge](https://gorpuzkingz.bandcamp.com/album/jaio-dirua-hil-spilt-mutilated-judge) | 2020 | hip-hop/rap, trap, basquetrap, euskaltrap, euskara, hondarribia | Hondarribia, Spain | euskara |
+| Gorpuzkingz | [Mixtape BAT](https://gorpuzkingz.bandcamp.com/album/mixtape-bat) | 2018 | hip-hop/rap, trap, basquetrap, euskaltrap, euskara, hondarribia | Hondarribia, Spain | euskara |
 
-### irun (7)
+### irun (14)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -818,16 +1282,27 @@
 | APURTU | [Isolatua](https://apurtu.bandcamp.com/album/isolatua) | 2001 | 77 punk, 82 punk, irun, punk, punk rock | Irun, Spain | — |
 | APURTU | [Katuen Hirian](https://apurtu.bandcamp.com/album/katuen-hirian) | 2014 | 77 punk, 82 punk, irun, punk, euskadi, euskal herria… | Irun, Spain | euskadi, euskal-herria |
 | APURTU | [Orain aske zara](https://apurtu.bandcamp.com/album/orain-aske-zara) | 2015 | 77 punk, 82 punk, irun, punk, baskenland, euskal herria… | Irun, Spain | euskal-herria |
+| Djrask | [DJ RASK - UNDOGROUND THE MIXTAPE](https://djrask.bandcamp.com/album/dj-rask-undoground-the-mixtape) | 2014 | beats..., funk, hip hop, hip-hop/rap, soul, turntablism… | Irun, Spain | — |
+| EGUN BELTZAK | [A Bask Tribute to Yanka Dyagileva](https://egunbeltzak.bandcamp.com/album/a-bask-tribute-to-yanka-dyagileva) | 2022 | alternative, punk, folk, pop, post-punk, irun | Irun, Nigeria | — |
+| FUFU | [ERROAK](https://fufubandcampa.bandcamp.com/album/erroak) | 2023 | rock, noise, post-hardcore, irun | Irun, Nigeria | — |
+| FUFU | [ESKUAK](https://fufubandcampa.bandcamp.com/album/eskuak) | 2021 | rock, noise, post-hardcore, irun | Irun, Nigeria | — |
+| FUFU | [LABANAK](https://fufubandcampa.bandcamp.com/album/labanak) | 2022 | rock, noise, post-hardcore, irun | Irun, Nigeria | — |
+| FUFU | [LERDEA](https://fufubandcampa.bandcamp.com/album/lerdea) | 2020 | rock, noise, post-hardcore, psych rock, irun | Irun, Nigeria | — |
+| Herber | [I left the land (EP)](https://herberband.bandcamp.com/album/i-left-the-land-ep) | 2013 | 24-bit, alternative, ep, euskadi, euskal herria, rock… | Irun, Spain | pais-vasco, euskadi, basque-country |
 
-### iruña (5)
+### iruña (9)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | Anlaki | [Wind Call](https://anlaki.bandcamp.com/album/wind-call) | 2024 | alternative, breakcore, dream pop, emo, folk, glitch pop… | Pamplona, Spain | pamplona |
 | Aschen | [Aschen](https://aschen1.bandcamp.com/album/aschen) | 2024 | aschen, bera, iruña, metal, basque black metal, black death… | Pamplona, Spain | pamplona |
+| Borla | [Kordoba Bidea](https://flexidiscos.bandcamp.com/album/kordoba-bidea) | 2024 | alternative, iruña, punk, euskal herria, indie, pop… | Valencia, Spain | euskal-herria, pamplona |
 | Brigada Improductiva | [¡¡Manos Arriba!!](https://brigadaimproductiva.bandcamp.com/album/manos-arriba) | 2012 | rock, caña, iruña, ska | Pamplona, Spain | pamplona |
 | Bris | [Gure Dorreak](https://briscorp.bandcamp.com/album/gure-dorreak) | 2026 | iruña, post-punk, rock, coldwave, euskal herria | Pamplona, Spain | euskal-herria, pamplona |
 | Candidato Manchú | [Hartza](https://candidatomanchu.bandcamp.com/album/hartza) | 2018 | alternative, iruña, rock, alternative rock, euskal musika, grunge… | Pamplona, Spain | euskal-musika, pamplona |
+| demokrazia zero | [jodida juventud normal](https://demokraziazero.bandcamp.com/album/jodida-juventud-normal) | 2018 | punk, hardcore punk, melodic hardcore, punk rock, iruña | Alto Paraná Department, Paraguay | — |
+| Demokrazia Zero 2016 | [Si no hay revolución, este no es mi baile](https://demokraziazero.bandcamp.com/album/si-no-hay-revoluci-n-este-no-es-mi-baile) | 2016 | punk, melodic hardcore, punk rock, iruña | Alto Paraná Department, Paraguay | — |
+| En Ruinas | [1.0](https://enruinas.bandcamp.com/album/10) | 2015 | en ruinas, hip hop, hip-hop/rap, iruña, rap, underground hip hop | Pamplona, Spain | pamplona |
 
 ### iruñea (5)
 
@@ -839,11 +1314,26 @@
 | Borla | [Kordoba Bidea](https://borla.bandcamp.com/album/kordoba-bidea) | 2024 | alternative, iruñea, pop, pop punk, euskal herria, post-punk… | Pamplona, Spain | euskal-herria, pamplona |
 | Brigada Improductiva | [Gato Por Liebre](https://brigadaimproductiva.bandcamp.com/album/gato-por-liebre) | 2016 | rock, caña, euskal herria, iruña, iruñea, ska | Pamplona, Spain | iruña, euskal-herria, pamplona |
 
-### laudio (1)
+### laudio (4)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | AMANKOMUN | [HOMBRE ANIMAL](https://amankomun.bandcamp.com/album/hombre-animal) | 2019 | black metal, death metal, metal, thrash metal, laudio | Laudio, Spain | — |
+| djfuni prod | [Klase Teorika Riddim](https://djfuniprod.bandcamp.com/album/klase-teorika-riddim) | 2016 | rap, reggae, dancehall, db, dubsteppa, laudio | Laudio, Spain | — |
+| Dr. Lawson | [Tal y como siempre](https://drlawsonoficial.bandcamp.com/album/tal-y-como-siempre) | 2018 | rock, alternative rock, indie, pop rock, laudio | Laudio, Spain | — |
+| Gerrak | [Gerrak](https://gerrak.bandcamp.com/album/gerrak) | 2017 | alternative, laudio | Laudio, Spain | — |
+
+### lekeitio (7)
+
+| Artista | Título | Año | Tags | Location | Otros tags de origen |
+|---|---|---|---|---|---|
+| Eskafandra | [Eskafandra](https://eskafandra.bandcamp.com/album/eskafandra) | 2025 | alternative, indie, euskal herria, lekeitio | Lekeitio, Spain | euskal-herria |
+| G.A.Z LIMBO | [19/7](https://gazlimbo.bandcamp.com/album/19-7) | 2020 | hip hop, hip-hop/rap, rap, trap, cloud rap, lekeitio | Lekeitio, Spain | — |
+| G.A.Z LIMBO | [Buruaz beste](https://gazlimbo.bandcamp.com/album/buruaz-beste) | 2019 | hip hop, hip-hop/rap, rap, trap, cloud rap, lekeitio | Lekeitio, Spain | — |
+| G.A.Z LIMBO | [Deathorkizuna](https://gazlimbo.bandcamp.com/album/deathorkizuna) | 2020 | hip hop, hip-hop/rap, rap, trap, cloud rap, lekeitio | Lekeitio, Spain | — |
+| G.A.Z LIMBO | [EZ DAUKO BIXIRIK](https://gazlimbo.bandcamp.com/album/ez-dauko-bixirik) | 2021 | hip hop, hip-hop/rap, rap, trap, cloud rap, lekeitio | Lekeitio, Spain | — |
+| G.A.Z LIMBO | [G.A.A.Z](https://gazlimbo.bandcamp.com/album/g-a-a-z) | 2020 | hip hop, hip-hop/rap, rap, trap, cloud rap, lekeitio | Lekeitio, Spain | — |
+| G.A.Z LIMBO & DUMB BOYS | [Limboys](https://gazlimbo.bandcamp.com/album/limboys) | 2020 | 808, hip hop, hip-hop/rap, rap, trap, cloud rap… | Lekeitio, Spain | — |
 
 ### mungia (2)
 
@@ -852,7 +1342,14 @@
 | Aramu | [Aramu](https://aramutaldea.bandcamp.com/album/aramu) | 2024 | pop, mungia | Mungia, Spain | — |
 | Aramu | [Ostabe Zu](https://aramutaldea.bandcamp.com/album/ostabe-zu) | 2025 | alternative, pop, indie, mungia, power pop | Mungia, Spain | — |
 
-### navarra (4)
+### nafarroa (2)
+
+| Artista | Título | Año | Tags | Location | Otros tags de origen |
+|---|---|---|---|---|---|
+| Félix Marqués | [Cumbres](https://felixmarques.bandcamp.com/album/cumbres) | 2013 | alternative, spanish, ambient, atmospheric, blues, chamber… | Nafarroa, Spain | — |
+| Félix Marqués | [Garabatos](https://felixmarques.bandcamp.com/album/garabatos) | 2014 | alternative, spanish, apuntes, chamber, demos, prog… | Nafarroa, Spain | — |
+
+### navarra (5)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -860,8 +1357,9 @@
 | A Deshoras | [Kamikaze de los sueños](https://adeshoras.bandcamp.com/album/kamikaze-de-los-sue-os) | 2025 | hard rock, iruña, rock, rock & roll, navarra, rock español… | Spain | pamplona |
 | Allowance | [Unbreakable](https://allowance.bandcamp.com/album/unbreakable) | 2014 | death metal, metal, navarra, thrash metal, heavy metal, melodic… | Pamplona, Spain | pamplona |
 | Bolbora | [badator su ta eztanda](https://bolbora.bandcamp.com/album/badator-su-ta-eztanda) | 2015 | balcan, ska, tango, world, tumbao, arellano | Arellano, Spain | — |
+| Eclectic Celtic Band | [Baile de Luna](https://eclecticcelticband.bandcamp.com/album/baile-de-luna) | 2022 | folk, navarra, bluegrass. spain, celtic, irish trad, iruña | Pamplona, Spain | pamplona |
 
-### oiartzun (5)
+### oiartzun (6)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -869,9 +1367,10 @@
 | Ayende | [PAIN](https://ayende.bandcamp.com/album/pain) | 2024 | acoustic, baladas, fusion rap, pop rock, oiartzun | Oiartzun, Spain | — |
 | Chase The Mayhem | [ANBAIN](https://chasethemayhem.bandcamp.com/album/anbain) | 2011 | anbain, antxusta productions, basque country, chase, chase the mayhem, donosti… | Donostia, Spain | donostia, euskadi, basque-country |
 | Chase The Mayhem | [Noli Timere](https://chasethemayhem.bandcamp.com/album/noli-timere) | 2014 | 413, basque country, donostia san sebastián, experimental, metal, oiartzun… | Donostia, Spain | donostia, euskadi, donostia-san-sebastian, basque-country |
+| ETIAM | [ETIAM](https://etiam.bandcamp.com/album/etiam-2) | 2015 | folk, rock, acoustic, country, oiartzun | Oiartzun, Spain | — |
 | Philippe Albor, Arantxa Hirigoyen & Amaia Carrere | [Ttinka](https://belarri.bandcamp.com/album/ttinka) | 2022 | amaia carrere, arantxa hirigoyen, basque country, belarri, haur kantuak, kanbo… | Cambo Les Bains, France | euskal-musika, euskara, basque-country |
 
-### ondarroa (9)
+### ondarroa (16)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -884,6 +1383,19 @@
 | BRAULIO | [BRAULIO](https://braulio.bandcamp.com/album/braulio) | 2020 | rock, ondarroa | Ondarroa, Spain | — |
 | BRAULIO | [Lur Azpira Itzuli](https://braulio.bandcamp.com/album/lur-azpira-itzuli-2) | 2023 | ondarru, rock, noise, ondarroa | Ondarroa, Spain | — |
 | BÑT | [Desorekan euskarri](https://bnte.bandcamp.com/album/desorekan-euskarri) | 2021 | drum & bass, electronic, idm, ondarroa | Ondarroa, Spain | — |
+| DENA | [ANABASA](https://denaezer.bandcamp.com/album/anabasa) | 2025 | diy, punk, rock, alternative rock, emo, euskal herria… | Ondarroa, Spain | euskal-herria |
+| DENA | [Ezer Sentitzeko](https://denaezer.bandcamp.com/album/ezer-sentitzeko) | 2020 | diy, rock, alternative rock, euskal herria, post-hardcore, screamo… | Ondarroa, Spain | euskal-herria |
+| DENA | [Zure mugadun hutsune](https://denaezer.bandcamp.com/album/zure-mugadun-hutsune) | 2022 | diy, rock, alternative rock, euskal herria, post-hardcore, punk… | Ondarroa, Spain | euskal-herria |
+| ETZI DAMU | [ETZI DAMU](https://etzidamutaldea.bandcamp.com/album/etzi-damu) | 2023 | death metal, hardcore metal, metal, alternative metal, nu metal, ondarroa | Ondarroa, Spain | — |
+| EZBAIAN | [Ezbaian](https://ezbaiantaldea.bandcamp.com/album/ezbaian) | 2019 | rock, pop punk, punk rock, ondarroa | Ondarroa, Spain | — |
+| Gatz | [Ez Dut Nahi](https://gatztaldea.bandcamp.com/album/ez-dut-nahi) | 2018 | hardcore, jonny gerriwelt, oí!, punk, punk rock, rock… | Ondarroa, Spain | — |
+| GATZ | [Gatz (demo)](https://gatztaldea.bandcamp.com/album/gatz-demo) | 2015 | punk, punk rock, ondarroa | Ondarroa, Spain | — |
+
+### ortuella (1)
+
+| Artista | Título | Año | Tags | Location | Otros tags de origen |
+|---|---|---|---|---|---|
+| EFB | [EFB - Moments EP](https://efbmusic1.bandcamp.com/album/efb-moments-ep) | 2017 | classical, ost, ortuella | PV, Spain | — |
 
 ### oñati (10)
 
@@ -900,7 +1412,7 @@
 | BROKEN LEGACY | [ORTZIMUGA](https://brokenlegacy.bandcamp.com/album/ortzimuga) | 2022 | metal, metalcore, oñati | Oñati, Spain | — |
 | BROKEN LEGACY | [XIX](https://brokenlegacy.bandcamp.com/album/xix) | 2019 | metal, metalcore, oñati | Oñati, Spain | — |
 
-### pais-vasco (10)
+### pais-vasco (21)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -912,13 +1424,26 @@
 | Balvada Dieng | [Wellcome 2 My Mbedd "The Net Tape"](https://afrihooop.bandcamp.com/album/wellcome-2-my-mbedd-the-net-tape) | 2012 | hip hop, hip-hop/rap, africanhiphop, afrihooop, rap & hip-hop, underground hiphop… | Vitoria Gasteiz, Spain | vitoria-gasteiz |
 | Barraks Promotion | [BP006 - R.O.L.F. "Taró de Muerto"](https://barraks.bandcamp.com/album/bp006-r-o-l-f-tar-de-muerto) | 2018 | donostia san sebastián, metal, euskal herria, barraks promotion, doom, hardcore… | Sopelana, Spain | euskal-herria, donostia-san-sebastian |
 | Camille Levecque | [Alte Mainbrücke](https://camillelevecque.bandcamp.com/album/alte-mainbr-cke) | 2012 | bretagne, celtic, euskadi, folk, euskal herria, breizh… | Spain | euskadi |
+| Despeñaperros | ["El Foso" (2013)](https://despeaperros.bandcamp.com/album/el-foso-2013) | 2013 | punk, crust, grind, rock, sludge metal, bilbao | Bilbao, Spain | bilbao |
+| diskoiraa | [Play eta record ep](https://diskoiraapunk.bandcamp.com/album/play-eta-record-ep) | 2020 | punk, hardcore, zarautz | Zarautz, Spain | zarautz |
+| diskoiraa | [Split con metralleta](https://diskoiraapunk.bandcamp.com/album/split-con-metralleta) | 2020 | punk, hardcore, zarautz | Zarautz, Spain | zarautz |
+| Dr. Maha´s Miracle Tonic | [BANK ROBBERS](https://drmahasmiracletonic.bandcamp.com/album/bank-robbers) | 2016 | rock, western swing, country, rhythm & blues, swing, bilbao | Bilbao, Spain | bilbao |
+| El Ultimo Txikitero | [JAI ALAI](https://elultimotxikitero.bandcamp.com/album/jai-alai) | 2014 | punk, punk rock, verbenero, vitoria gasteiz | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| El Ultimo Txikitero | [RUNNERS](https://elultimotxikitero.bandcamp.com/album/runners) | 2015 | punk, punk rock, verbenero, vitoria gasteiz | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| Elbereth | [Omen](https://elbereth.bandcamp.com/album/omen) | 2024 | black metal, death metal, groove metal, heavy metal, metal, thrash metal… | Legazpi, Spain | — |
+| Emily Plays | [Back to Summer](https://emilyplays2004.bandcamp.com/album/back-to-summer) | 2013 | 2004, basque country, euskal herria, pop, spain, vitoria… | Vitoria Gasteiz, Spain | vitoria-gasteiz, basque-country |
+| Fourscore | [El placer del rencor](https://fourscore.bandcamp.com/album/el-placer-del-rencor) | 2010 | comeback kid, hardcore, old school, punk, vitoria, vitoria gasteiz | Vitoria Gasteiz, Spain | vitoria-gasteiz |
+| Gareth Kitch | [peace](https://garethk.bandcamp.com/album/peace) | 2026 | pop, ambient, meditation, minimalist, relaxation, singer-songwriter… | Bilbao, Spain | bilbao |
 | Hurricane Studio & Afrihooop | [African FemMc's Vol 1](https://afrihooop.bandcamp.com/album/african-femmcs-vol-1) | 2012 | hip hop, hip-hop/rap, africanfemmcs, africanhiphop, afrihooop, euskadi… | Vitoria Gasteiz, Spain | euskadi, vitoria-gasteiz |
+| Vulk | [Vulk - Beat Kamerlanden](https://elsarecords.bandcamp.com/album/vulk-beat-kamerlanden) | 2017 | basque country, euskal herria, artpunk, bilbao, post-punk, punk… | San Sebastián, Spain | san-sebastian, basque-country, bilbao |
 | Yaw | [Malda](https://caleiah.bandcamp.com/album/malda) | 2013 | euskal herria, punk, caleiah, emo, hardcore, madrid… | Madrid, Spain | — |
 
-### pamplona (195)
+### pamplona (299)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
+| (H)ERO | [(H)ERO](https://herotaldea.bandcamp.com/album/h-ero-2) | 2026 | indie rock, metal, punk, rock, stoner rock, iruña | Pamplona, Spain | — |
+| /GÖO! | [June - ep](https://djgoo.bandcamp.com/album/june-ep) | 2020 | electronic, house, june, lauer, dark ambient, dub reggae… | Pamplona, Spain | — |
 | A.KLEE | [FOR MA PEEPZ EP](https://andreiklee.bandcamp.com/album/for-ma-peepz-ep) | 2020 | hip-hop/rap, iruña, beats, instrumentals, spain | Spain | — |
 | A.Klee & Gab | [FULGOR](https://andreiklee.bandcamp.com/album/fulgor) | 2019 | future garage, hip-hop/rap, iruña, chill hop, downtempo, spain | Spain | — |
 | ABOGADOS DEL RITMO | [AdR - II](https://abogadosdelritmo.bandcamp.com/album/adr-ii) | 2023 | hard rock, r&r, rock, bluesy, iruña | Pamplona, Spain | — |
@@ -959,6 +1484,7 @@
 | Attikus Finch | [Arcadia Feliz](https://attikusfinch.bandcamp.com/album/arcadia-feliz) | 2017 | hard rock, rock, alternative rock, funk rock, grunge, iruña | Pamplona, Spain | — |
 | Babau & Mondo Lava | [Curb Your Idols!](https://artetetra.bandcamp.com/album/curb-your-idols) | 2022 | california, experimental, iruña, abstract rock, exotica, fifth world… | Milan, Italy | — |
 | Backflip | [Back To The Beginning](https://backflip.bandcamp.com/album/back-to-the-beginning) | 2013 | punk, punk rock, punk rock pamplona spain, iruña | Pamplona, Spain | — |
+| Bananas | [Hazlo girar](https://gramacionesgrabofonicas.bandcamp.com/album/hazlo-girar) | 2013 | bananas, grabofonías, madrid, iruña, pop, garage… | Madrid, Spain | — |
 | Banda Batxoki | [Bake garaietarako borroka kantak](https://bandabatxoki.bandcamp.com/album/bake-garaietarako-borroka-kantak) | 2011 | punk, banda batxoki, txantrea, iruña | Pamplona, Spain | — |
 | Banda Batxoki | [Jan goikoa eta lege txarra](https://bandabatxoki.bandcamp.com/album/jan-goikoa-eta-lege-txarra) | 2005 | punk, banda batxoki, txantrea, iruña | Pamplona, Spain | — |
 | Banda Batxoki | [Zaharragoak, gaiztoagoak](https://bandabatxoki.bandcamp.com/album/zaharragoak-gaiztoagoak) | 2007 | punk, banda batxoki, txantrea, iruña | Pamplona, Spain | — |
@@ -1017,6 +1543,7 @@
 | campingás | [Demuéstrame Que No Eres Una Máquina.](https://campingas.bandcamp.com/album/demu-strame-que-no-eres-una-m-quina) | 2012 | alternative, el hombre es una loba, ibiza, campingás, cullera, indie rock… | Vigo, Spain | — |
 | Campingás | [La Diéresis Del Pingüino](https://campingas.bandcamp.com/album/la-di-resis-del-ping-ino) | 2011 | alternative, ibiza, campingás, cullera, indie rock, la diéresis del pingüino… | Vigo, Spain | — |
 | Candidato Manchú | [EP](https://candidatomanchu.bandcamp.com/album/ep) | 2016 | alternative, rock, grunge, post-hardcore, iruña | Pamplona, Spain | — |
+| Carlos Native, Slit Observers, NegociusMan, Allumynd, Komatssu, Irrational Language feat.Lucky | [INFINITE BRAIN](https://dialectoperiferico.bandcamp.com/album/infinite-brain) | 2025 | electronic, breaks, electro, electro electrobass breaks bass, electrobass, iruña | Pamplona, Spain | — |
 | Chernobyl | [Decay Of The Western Civilization](https://chernobylthrashmetal.bandcamp.com/album/decay-of-the-western-civilization) | 2026 | death metal, metal, thrash metal, alternative metal, iruña | Pamplona, Spain | — |
 | Chill Mafia Records | [EZORREGATIK X BERPIZKUNDEA](https://chillmafia.bandcamp.com/album/ezorregatik-x-berpizkundea) | 2021 | hip-hop/rap, reggaeton, dub, folclore, punk, reggae… | Pamplona, Spain | — |
 | Chotakabra | [Autoestima EP](https://chotakabra.bandcamp.com/album/autoestima-ep) | 2017 | crossover, hardcore, metal, punk, iruña | Pamplona, Spain | — |
@@ -1036,6 +1563,7 @@
 | Curse | [Raise the evil](https://curse3.bandcamp.com/album/raise-the-evil) | 2023 | metal, nwothm, speed metal, thrash metal, old school metal, iruña | Pamplona, Colombia | — |
 | Curse | [The Sorcerer's Wrath](https://curse3.bandcamp.com/album/the-sorcerers-wrath) | 2025 | metal, speed metal, thrash metal, thrash black, iruña | Pamplona, Colombia | — |
 | D Castro | [En Pamplona (82-95)](https://dcastrov.bandcamp.com/album/en-pamplona-82-95) | 2026 | pop, acoustic pop, indie pop, iruña | Pamplona, Spain | — |
+| Dagga y Manao, Lord Jalapeños, Saigg, PromisingYoungster, Korrupted brothers y Vema-Diodes | [OTHER SIZE](https://dialectoperiferico.bandcamp.com/album/other-size) | 2024 | electronic, electro electrobass breaks bass, iruña | Pamplona, Spain | — |
 | Damned Ritual | [Obliteration](https://damnedritual.bandcamp.com/album/obliteration) | 2023 | black metal, damned ritual, death metal, deathcore, extreme metal, melodic death metal… | Pamplona, Spain | — |
 | Damned Ritual | [Roots of Evil](https://damnedritual.bandcamp.com/album/roots-of-evil) | 2017 | damned ritual, death metal, deathcore, extreme metal, metal, metalcore… | Pamplona, Spain | — |
 | Dani Amatriain | [Silvio](https://daniamatriain.bandcamp.com/album/silvio) | 2018 | acoustic, cantautor, piano, silvio rodriguez, voice, iruña | Pamplona, Spain | — |
@@ -1096,26 +1624,125 @@
 | DeathBear | [The Fellowship Of The Ring, a Piano Journey](https://deathbear15.bandcamp.com/album/the-fellowship-of-the-ring-a-piano-journey) | 2024 | metal, symphonic metal, dungeon synth, piano, soundtrack, iruña | Pamplona, Spain | — |
 | DeathBear | [Èlan (feat. Leire Rey)](https://deathbear15.bandcamp.com/album/lan-feat-leire-rey) | 2022 | metal, symphonic metal, dungeon synth, iruña | Pamplona, Spain | — |
 | DeathBear | [Èlan (piano version)](https://deathbear15.bandcamp.com/album/lan-piano-version) | 2025 | metal, symphonic metal, dungeon synth, iruña | Pamplona, Spain | — |
+| Descalzos 66 | [Seventies Cars](https://descalzos66.bandcamp.com/album/seventies-cars) | 2020 | acoustic, folk pop, indie, melancholic, westerns, iruña | Pamplona, Spain | — |
+| Detached | [DEMOS 2018 "Denial Of Dualism"](https://detachedhc.bandcamp.com/album/demos-2018-denial-of-dualism) | 2020 | metal, beatdown, crowdkill, hardcore, hardcore punk, slamming beatdown… | Pamplona, Spain | — |
+| Detached | [Denial Of Dualism](https://detachedhc.bandcamp.com/album/denial-of-dualism) | 2019 | extreme metal, metal, beatdown, crowdkill, extreme, hardcore… | Pamplona, Spain | — |
+| Detached | [Know Your Place](https://detachedhc.bandcamp.com/album/know-your-place) | 2023 | metal, beatdown, crowdkill, hardcore, hardcore punk, slamming beatdown… | Pamplona, Spain | — |
+| Diabulus In Musica | [Argia](https://diabulusinmusica.bandcamp.com/album/argia) | 2014 | metal, gothic metal, heavy metal, power metal, speed metal, symphonic metal… | Pamplona, Spain | — |
+| Diabulus In Musica | [Dirge For The Archons](https://diabulusinmusica.bandcamp.com/album/dirge-for-the-archons) | 2016 | metal, gothic metal, heavy metal, power metal, speed metal, symphonic metal… | Pamplona, Spain | — |
+| Diabulus In Musica | [Euphonic Entropy](https://diabulusinmusica.bandcamp.com/album/euphonic-entropy) | 2020 | metal, gothic metal, heavy metal, power metal, speed metal, symphonic metal… | Pamplona, Spain | — |
+| Diabulus In Musica | [The Wanderer](https://diabulusinmusica.bandcamp.com/album/the-wanderer) | 2012 | metal, gothic metal, heavy metal, power metal, speed metal, symphonic metal… | Pamplona, Spain | — |
+| Discos Walden | [Club del Single #4: Invierno 2012](https://discoswalden.bandcamp.com/album/club-del-single-4-invierno-2012) | 2012 | club del single, discos walden, madrid, pop, asturias, barcelona… | Madrid, Spain | — |
+| Djonny | [Lightstorm](https://djonny.bandcamp.com/album/lightstorm) | 2020 | edm, electronic, house, ambient, techno, iruña | Pamplona, Spain | — |
+| DOÑA | [Hiperespacio yo](https://doniaband.bandcamp.com/album/hiperespacio-yo) | 2023 | alternative, iruña | Pamplona, Spain | — |
+| DOÑA | [KENAI](https://doniaband.bandcamp.com/album/kenai) | 2017 | alternative, iruña | Pamplona, Spain | — |
+| DOÑA | [OLA GRINGO](https://doniaband.bandcamp.com/album/ola-gringo) | 2018 | alternative, iruña | Pamplona, Spain | — |
+| Dreaming For A Day | [Losing Everything](https://dreamingforaday.bandcamp.com/album/losing-everything) | 2015 | alternative, pop, iruña | Pamplona, Spain | — |
+| DUM DUM PACHECOS | [I](https://dumdumpachecos.bandcamp.com/album/i-2) | 2025 | rock, folk, pop, psicodelia, rock & roll, iruña | Pamplona, Spain | — |
+| Edu Errea | [I Became When I Hated](https://eduerreaband.bandcamp.com/album/i-became-when-i-hated) | 2023 | folk, americana, americana rock alt-folk, folk rock, iruña | Pamplona, Spain | — |
+| Eduardo Zamora | [Karaoke songs](https://eduardozr.bandcamp.com/album/karaoke-songs) | 2019 | rock, guitar instrumental, iruña | Pamplona, Spain | — |
+| EDUARDO ZR | [JUST ANOTHER INSTRUMENTAL GUITAR PLAYER](https://eduardozr.bandcamp.com/album/just-another-instrumental-guitar-player) | 2018 | rock, guitar instrumental, iruña | Pamplona, Spain | — |
+| El Desván | [Al Descubierto](https://eldesvan.bandcamp.com/album/al-descubierto) | 2014 | rock, pop, iruña | Pamplona, Spain | — |
+| El Desván | [La suerte también sangra](https://eldesvan.bandcamp.com/album/la-suerte-tambi-n-sangra) | 2026 | rock, pop, iruña | Pamplona, Spain | — |
+| El Desván | [La Taberna del Infierno](https://eldesvan.bandcamp.com/album/la-taberna-del-infierno) | 2017 | rock, pop, iruña | Pamplona, Spain | — |
+| El mudo kon voz | [Rascasuelos](https://elmudokonvoz.bandcamp.com/album/rascasuelos) | 2022 | rock, iruña | Pamplona, Spain | — |
+| El Nébula Recordings | [Melenas - Ya no me importa / Si tú me quieres](https://elnebularecordings.bandcamp.com/album/melenas-ya-no-me-importa-si-t-me-quieres) | 2019 | reverbcore, rock, garage, glam, rock and roll, iruña | Pamplona, Spain | — |
+| El Nébula Recordings | [Oihana & Tamu · Figuritas de Star Wars / Por fin Navidad](https://elnebularecordings.bandcamp.com/album/oihana-tamu-figuritas-de-star-wars-por-fin-navidad) | 2019 | reverbcore, rock, garage, glam, rock and roll, iruña | Pamplona, Spain | — |
+| El Señor Ramón | [El Buen Ladrón](https://elsrramon.bandcamp.com/album/el-buen-ladr-n) | 2010 | pop, rock, otro, iruña | Pamplona, Spain | — |
+| El Sr Ramon | [2012](https://elsrramon.bandcamp.com/album/2012) | 2012 | pop, rock, otro, iruña | Pamplona, Spain | — |
+| El Tren | [Actitud](https://eltren.bandcamp.com/album/actitud) | 2022 | 80's hard rock, hard rock, rock, rock and roll, rock urbano, iruña | Pamplona, Spain | — |
+| Electric Riders | [The Trial](https://electricriders.bandcamp.com/album/the-trial) | 2020 | rock, psychedelic rock, iruña | Pamplona, Spain | — |
+| ELECTRIKEEL | [Solve Et Coagula](https://electrikeel.bandcamp.com/album/solve-et-coagula) | 2026 | black thrash metal, crossover thrash, metal, thrash metal, iruña | Pamplona, Spain | — |
+| ELECTRIKEEL | [Straight Outta Depths](https://electrikeel.bandcamp.com/album/straight-outta-depths-2) | 2023 | black thrash metal, blackened crossover thrash, blackened thrash metal, crossover thrash, metal, thrash metal… | Pamplona, Spain | — |
+| ELECTRIKEEL | [To Protect And Sever](https://electrikeel.bandcamp.com/album/to-protect-and-sever) | 2019 | black thrash metal, crossover thrash, metal, thrash metal, iruña | Pamplona, Spain | — |
+| elixir | [CUANDO ALGUIEN SE VA](https://elixirmusic.bandcamp.com/album/cuando-alguien-se-va) | 2015 | metal, rock, heavy rock, iruña | Pamplona, Spain | — |
+| Elliot Swauger | [Disconnect](https://elliotswauger.bandcamp.com/album/disconnect) | 2008 | acoustic, happy hardcore, punk, folk, post-punk, iruña | Pamplona, Spain | — |
+| Elliot Swauger | [Things I Overheard in a Nursing Home](https://elliotswauger.bandcamp.com/album/things-i-overheard-in-a-nursing-home) | 2007 | acoustic, happy hardcore, punk, folk, post-punk, iruña | Pamplona, Spain | — |
+| Eric Deza Group | [First Step](https://ericdezagroup.bandcamp.com/album/first-step) | 2016 | jazz, iruña | Pamplona, Spain | — |
+| Espiral Fm Pamplona | [Espiral Fm Pamplona Compilation - Movie Edition](https://espiralfmpamplona.bandcamp.com/album/espiral-fm-pamplona-compilation-movie-edition) | 2012 | dance, electro house, electronic, house, progressive house, techno… | Pamplona, Spain | — |
+| Evil Killer | [Lethal Assault](https://evilkiller.bandcamp.com/album/lethal-assault) | 2015 | demo, evil killer, fight, heavy metal, lp, metal… | Pamplona, Spain | — |
+| Evil Killer | [WITCHCRAFT](https://evilkiller.bandcamp.com/album/witchcraft) | 2016 | heavy metal, metal, speed metal, thrash metal, heavymetal, iruña | Pamplona, Spain | — |
+| Exnovios | [amor-droga](https://exnovios1.bandcamp.com/album/amor-droga) | 2017 | experimental, pop-psicodelia-reverb core, iruña | Pamplona, Spain | — |
+| Exnovios | [Demo](https://exnovios1.bandcamp.com/album/demo) | 2015 | experimental, pop-psicodelia-reverb core, iruña | Pamplona, Spain | — |
+| Exnovios | [Exnovios](https://exnovios1.bandcamp.com/album/exnovios-2) | 2016 | experimental, pop-psicodelia-reverb core, iruña | Pamplona, Spain | — |
+| Exnovios | [EXNOVIOS](https://exnovios1.bandcamp.com/album/exnovios-5) | 2018 | experimental, indie rock, pop, pop-psicodelia-reverb core, psychedelic, psychedelic rock… | Pamplona, Spain | — |
+| EXNOVIOS | [EXNOVIOS (APACHE)](https://exnovios1.bandcamp.com/album/exnovios-apache) | 2020 | experimental, pop-psicodelia-reverb core, iruña | Pamplona, Spain | — |
+| Exnovios | [Extras LP](https://exnovios1.bandcamp.com/album/extras-lp) | 2017 | experimental, neo-psychedelia, pop-psicodelia-reverb core, iruña | Pamplona, Spain | — |
+| Exuvia | [Un día ahí dentro](https://exuvia-banda.bandcamp.com/album/un-d-a-ah-dentro) | 2026 | rock, alternative rock, indie punk, stoner rock, iruña | Pamplona, Spain | — |
+| Ezkutu | [Barne piztiak](https://ezkutu.bandcamp.com/album/barne-piztiak) | 2023 | metal, rock, punk, iruña | Pamplona, Spain | — |
+| Ezkutu | [Sua](https://ezkutu.bandcamp.com/album/sua) | 2026 | metal, rock, punk, iruña | Pamplona, Spain | — |
+| EZR | [MY COVERS](https://eduardozr.bandcamp.com/album/my-covers) | 2018 | rock, guitar instrumental, iruña | Pamplona, Spain | — |
+| f-megahertz | [LOKOHEADS](https://f-megahertz.bandcamp.com/album/lokoheads) | 2013 | beatmaker, dj, hip hop, hip-hop/rap, producer, iruña | Pamplona, Spain | — |
+| f-megahertz | [Street knowledge](https://f-megahertz.bandcamp.com/album/street-knowledge) | 2019 | beatmaker, dj, hip hop, hip-hop/rap, producer, iruña | Pamplona, Spain | — |
+| Faster | [Speed for Satan](https://faster969.bandcamp.com/album/speed-for-satan) | 2025 | metal, nwothm, speed metal, thrash metal, heavy metal, old school metal… | Pamplona, Colombia | — |
+| Frank Le Blue | [the black hole](https://frankleblue.bandcamp.com/album/the-black-hole) | 2017 | deep house, electronic, house, trance, iruña | Pamplona, Spain | — |
+| Gaueko Goñi | [Future Architecture](https://gauekogoni.bandcamp.com/album/future-architecture) | 2026 | soundtrack, thematic and programmatic music., iruña | Pamplona, Spain | — |
+| Gaueko Goñi | [Hijos del norte](https://gauekogoni.bandcamp.com/album/hijos-del-norte) | 2023 | soundtrack, thematic and programmatic music., fantasy ambient, sountrack, iruña | Pamplona, Spain | — |
+| Gaueko Goñi | [Inferno:Impromptu No.1,Op.1](https://gauekogoni.bandcamp.com/album/inferno-impromptu-no-1-op-1-4) | 2022 | soundtrack, thematic and programmatic music., iruña | Pamplona, Spain | — |
+| Gaueko Goñi | [Interstellar Journey](https://gauekogoni.bandcamp.com/album/interstellar-journey) | 2025 | soundtrack, thematic and programmatic music., iruña | Pamplona, Spain | — |
+| Gaueko Goñi | [Música junto al fuego negro de invierno](https://gauekogoni.bandcamp.com/album/m-sica-junto-al-fuego-negro-de-invierno) | 2022 | soundtrack, thematic and programmatic music., iruña | Pamplona, Spain | — |
+| Gaueko Goñi | [The Anomaly Manor (Original Videogame Soundtrack)](https://gauekogoni.bandcamp.com/album/the-anomaly-manor-original-videogame-soundtrack) | 2025 | soundtrack, thematic and programmatic music., iruña | Pamplona, Spain | — |
+| Gaur Ez | [[GAUR EZ]](https://gaurez.bandcamp.com/album/gaur-ez) | 2012 | rock, iruña | Pamplona, Spain | — |
+| Geminiss | [Ava Ville EP](https://geminiss.bandcamp.com/album/ava-ville-ep) | 2014 | glam, rock, pop, rock and roll, iruña | Pamplona, Spain | — |
+| Geminiss | [Canciones de O EP](https://geminiss.bandcamp.com/album/canciones-de-o-ep) | 2018 | glam, rock, pop, rock and roll, iruña | Pamplona, Spain | — |
+| Geminiss | [maquetas](https://geminiss.bandcamp.com/album/maquetas) | 2024 | glam, rock, disco, pop, rock and roll, iruña | Pamplona, Spain | — |
+| Geminiss | [Sueños, ideas y recuerdos LP](https://geminiss.bandcamp.com/album/sue-os-ideas-y-recuerdos-lp) | 2025 | glam, rock, pop, rock and roll, iruña | Pamplona, Spain | — |
 | Germán Carrascosa y la Alegría del Barrio | [Caballito EP](https://caballitorecords.bandcamp.com/album/caballito-ep) | 2019 | alternative, caballito records, germán carrascosa, la alegría del barrio, iruña, dream pop… | La Línea De La Concepción, Spain | — |
+| Germán Carrascosa y la Alegría del Barrio | [Hay un lugar](https://discoswalden.bandcamp.com/album/hay-un-lugar) | 2015 | barcelona, discos walden, madrid, iruña, pop, desobediencia civil… | Madrid, Spain | — |
+| Germán y la Alegría del Barrio | [Tambor, guitarra y voz](https://discoswalden.bandcamp.com/album/tambor-guitarra-y-voz) | 2014 | barcelona, discos walden, germán carrascosa, madrid, iruña, pop… | Madrid, Spain | — |
+| Gregario de Luxe | [Hallelujah! (I wanna shout)](https://gregariodeluxe.bandcamp.com/album/hallelujah-i-wanna-shout) | 2012 | gospel, hallelujah, memphis, r&b, r&b/soul, soul… | Pamplona, Spain | — |
+| Gregario de Luxe | [LIFE!](https://gregariodeluxe.bandcamp.com/album/life) | 2016 | gospel, hallelujah, r&b/soul, soul, iruña, rhythm & blues | Pamplona, Spain | — |
+| Gregario de Luxe | [THAT GROOVY NIGHT (LIVE AT ZENTRAL)](https://gregariodeluxe.bandcamp.com/album/that-groovy-night-live-at-zentral) | 2015 | gospel, hallelujah, r&b, r&b/soul, soul, iruña… | Pamplona, Spain | — |
+| GUSSY | [EN DIRECTO](https://gussycanciones.bandcamp.com/album/en-directo) | 2020 | rock, acustica, cantautor, country rock, directo, folk… | Pamplona, Spain | — |
+| GUSSY | [Está prohibido rendirse](https://gussycanciones.bandcamp.com/album/est-prohibido-rendirse) | 2022 | rock, acustica, cantautor, country rock, folk, singer-songwriter… | Pamplona, Spain | — |
+| GUSSY | [HORIZONTES](https://gussycanciones.bandcamp.com/album/horizontes) | 2017 | rock, acustica, cantautor, country rock, folk, singer-songwriter… | Pamplona, Spain | — |
+| GUSSY | [IMPOSIBLE](https://gussycanciones.bandcamp.com/album/imposible) | 2015 | rock, acustica, cantautor, country rock, folk, singer-songwriter… | Pamplona, Spain | — |
+| Gussy | [Inercia](https://gussycanciones.bandcamp.com/album/inercia) | 2024 | rock, acustica, americana, cantautor, country rock, folk… | Pamplona, Spain | — |
+| GUSSY | [Nos mojaremos cuando llueva](https://gussycanciones.bandcamp.com/album/nos-mojaremos-cuando-llueva) | 2016 | rock, acustica, cantautor, country rock, folk, singer-songwriter… | Pamplona, Spain | — |
+| Gussy | [Somos más felices de lo que nos pensamos](https://gussycanciones.bandcamp.com/album/somos-m-s-felices-de-lo-que-nos-pensamos) | 2026 | rock, acustica, cantautor, country rock, folk, singer-songwriter… | Pamplona, Spain | — |
+| Gussy & Los Tripulantes | [Canciones cortas para viajes largos](https://gussycanciones.bandcamp.com/album/canciones-cortas-para-viajes-largos) | 2019 | rock, acustica, cantautor, country rock, folk, singer-songwriter… | Pamplona, Spain | — |
+| Half Foot Outside | [Heavenly](https://halffootoutside.bandcamp.com/album/heavenly) | 2009 | rock, iruña | Pamplona, Spain | — |
+| Half Foot Outside | [So Called...](https://halffootoutside.bandcamp.com/album/so-called) | 1998 | rock, iruña | Pamplona, Spain | — |
+| Hedoi Etxarte | [Sortaldekoak](https://hedoietxarte.bandcamp.com/album/sortaldekoak) | 2021 | spoken word, iruña | Pamplona, Spain | — |
+| Hegaz | [Hegoak Loratuz](https://hegaz.bandcamp.com/album/hegoak-loratuz) | 2019 | alternative, alternative pop, alternative rock, indie pop, pop rock, iruña | Pamplona, Spain | — |
+| Heil Hipster | [Fresco](https://heilhipster1.bandcamp.com/album/fresco) | 2018 | metal, funk, groove, metal alternativo, rapmetal, iruña | Pamplona, Spain | — |
+| Heil Hipster | [La Postmobestia](https://heilhipster1.bandcamp.com/album/la-postmobestia) | 2019 | metal, funk, gonorrhea, groove, metal alternativo, rapmetal… | Pamplona, Spain | — |
+| Herdoil | [Inboluzioa](https://herdoil.bandcamp.com/album/inboluzioa) | 2020 | iruña, punk | Pamplona, Spain | — |
+| Herdoil | [Iparra Galdu Barik](https://herdoil.bandcamp.com/album/iparra-galdu-barik) | 2021 | iruña, punk | Pamplona, Spain | — |
+| Hermann Gäns | [Contra la luz blanca](https://hermanngans.bandcamp.com/album/contra-la-luz-blanca) | 2024 | electronic, experimental electronic, feedback, noise, repetitive music, iruña | Pamplona, Spain | — |
+| Hermann Gäns | [Le Moulin](https://hermanngans.bandcamp.com/album/le-moulin) | 2025 | electronic, experimental electronic, noise, repetitive music, iruña | Pamplona, Spain | — |
+| Imanol Lezaun | [Hasta Que Salga El Sol](https://gritossordos.bandcamp.com/album/hasta-que-salga-el-sol) | 2012 | pop punk punk rock, pop punk spain gritos sordos, rock, iruña | Pamplona, Spain | — |
+| Imanol Lezaun | [Whaddsdascoops](https://gritossordos.bandcamp.com/album/whaddsdascoops) | 2017 | pop punk punk rock, rock, iruña | Pamplona, Spain | — |
 | Juárez | [Boreal [LP]](https://caballitorecords.bandcamp.com/album/boreal-lp) | 2018 | alternative, iruña, dream pop, indie pop, indie rock, lo-fi… | La Línea De La Concepción, Spain | — |
 | Juárez | [Entre palmeras [LP]](https://caballitorecords.bandcamp.com/album/entre-palmeras-lp) | 2020 | alternative, iruña, dream pop, indie pop, indie rock, lo-fi… | La Línea De La Concepción, Spain | — |
 | Juárez | [Luna menguante [LP]](https://caballitorecords.bandcamp.com/album/luna-menguante-lp) | 2022 | alternative, iruña, dream pop, indie pop, indie rock, lo-fi… | La Línea De La Concepción, Spain | — |
 | La Prima de Riesgo | [Brecha [EP]](https://caballitorecords.bandcamp.com/album/brecha-ep) | 2018 | alternative, iruña, dream pop, indie pop, indie rock, lo-fi… | La Línea De La Concepción, Spain | — |
 | Las Chicas Cocodrilo | [Las Chicas Cocodrilo](https://chin-chinrecordsmundiales.bandcamp.com/album/las-chicas-cocodrilo) | 2014 | chin chin records mundiales, pop, pop-abilly, iruña | Pamplona, Spain | — |
+| Linye | [Anacronia](https://dela537xlinye.bandcamp.com/album/anacronia) | 2025 | afro beat, afrobeat, cuban music, detroit regae, hip hop, r&b/soul… | Pamplona, Spain | — |
 | Los Animalitos del Bosque | [Los Animalitos del Bosque](https://chin-chinrecordsmundiales.bandcamp.com/album/los-animalitos-del-bosque) | 2014 | chin chin records mundiales, pop, pop-abilly, iruña | Pamplona, Spain | — |
 | Los Animalitos del Bosque | [Los Animalitos del Bosque](https://chin-chinrecordsmundiales.bandcamp.com/album/los-animalitos-del-bosque-3) | 2014 | chin chin records mundiales, pop, pop-abilly, iruña | Pamplona, Spain | — |
 | Los Jambos | [Chicos formales [LP]](https://caballitorecords.bandcamp.com/album/chicos-formales-lp) | 2019 | alternative, los jambos, iruña, dream pop, indie pop, indie rock… | La Línea De La Concepción, Spain | — |
 | Los Urogallos & Las Chinchetas | [Brindis, Picnics y Bongos Beatniks!!!](https://chin-chinrecordsmundiales.bandcamp.com/album/brindis-picnics-y-bongos-beatniks) | 2012 | chin chin records mundiales, pop, pop-abilly, iruña | Pamplona, Spain | — |
+| Melenas | [Melenas](https://elnebularecordings.bandcamp.com/album/melenas) | 2017 | reverbcore, rock, garage, glam, rock and roll, iruña | Pamplona, Spain | — |
+| MO&CO | [MO&CO](https://granmoco.bandcamp.com/album/mo-co) | 2014 | rock, iruña | Pamplona, Spain | — |
+| Nuevos Hobbies | [DK81 Monstruoso](https://discosdekirlian.bandcamp.com/album/dk81-monstruoso) | 2021 | iruña, pop, alternative, guitarpop, indie pop, jangle pop… | Barcelona, Spain | — |
 | PEDRO ( A.Klee&Pedro - SdS) | [QUIHICA](https://akleepedro-sds.bandcamp.com/album/quihica) | 2015 | hip-hop/rap, abstract hip-hop, ambient, downtempo, experimental hip-hop, iruña | Pamplona, Spain | — |
 | QWER (Antigua Y Barbuda) | [Ombligoo Chronicles EP (2005)](https://antiguaybarbuda.bandcamp.com/album/ombligoo-chronicles-ep-2005) | 2005 | alternative, antigua y barbuda, circulos de amigos, la piramide invertida, mastering of the universe, montreal studios… | Pamplona, Spain | — |
+| Roberto C. Meyer & Alpha 60 | [Roberto C. Meyer & Alpha 60 · Shelter from the Dark](https://elnebularecordings.bandcamp.com/album/roberto-c-meyer-alpha-60-shelter-from-the-dark) | 2017 | country, reverb, reverbcore, rock, garage, glam… | Pamplona, Spain | — |
 | Río Arga | [Piscinas y lagos [LP]](https://caballitorecords.bandcamp.com/album/piscinas-y-lagos-lp) | 2021 | alternative, iruña, dream pop, indie pop, indie rock, lo-fi… | La Línea De La Concepción, Spain | — |
+| Río Arga | [Río Arga](https://federaciondeuniversospop.bandcamp.com/album/r-o-arga) | 2018 | iruña, pop, san fermín, discos fup, discos que cambian la vida, electropop… | Madrid, Spain | — |
 | Río Arga | [Río Arga [EP]](https://caballitorecords.bandcamp.com/album/r-o-arga-ep) | 2018 | alternative, iruña, río arga, dream pop, galaxie 500, indie pop… | La Línea De La Concepción, Spain | — |
 | Río Arga | [Río Arga [LP]](https://caballitorecords.bandcamp.com/album/r-o-arga-lp) | 2019 | alternative, iruña, río arga, dream pop, indie pop, indie rock… | La Línea De La Concepción, Spain | — |
+| Tamu & J'aime | [Tamu & J'aime cantan a la Navidad](https://elnebularecordings.bandcamp.com/album/tamu-jaime-cantan-a-la-navidad) | 2017 | reverbcore, rock, garage, glam, rock and roll, iruña | Pamplona, Spain | — |
 | Tote Garjon | [Antes De Jugar](https://angelocray.bandcamp.com/album/antes-de-jugar) | 2020 | latin, pop-flamenco, iruña | Pamplona, Spain | — |
+| Txo!? [Elurmaluta] | [Ba Dabiltza](https://elurmaluta.bandcamp.com/album/ba-dabiltza) | 2017 | electronic, experimental, live, noise, iruña | Pamplona, Spain | — |
+| Txo!? [Elurmaluta] | [RedRapper's Delight Soundz](https://elurmaluta.bandcamp.com/album/redrappers-delight-soundz) | 2017 | electronic, experimental, noise, iruña | Pamplona, Spain | — |
+| Varios artistas | [NO FUTURE](https://dialectoperiferico.bandcamp.com/album/no-future) | 2025 | electronic, breaks, electro, electro electrobass breaks bass, electronica, iruña | Pamplona, Spain | — |
+| Vema_Roid_The Bandit | [DIODES 10 YEARS](https://dialectoperiferico.bandcamp.com/album/diodes-10-years) | 2023 | electronic, electro electrobass breaks bass, iruña | Pamplona, Spain | — |
 | VV AA | [Así que esto es el fin (4 canciones para Josetxo)](https://brisadelapalma.bandcamp.com/album/as-que-esto-es-el-fin-4-canciones-para-josetxo) | 2014 | rock, iruña | Pamplona, Spain | — |
 | VVV [Trippin' you], YUNG PRADO, GAZZI, Miguel Grimaldo, CHILL MAFIA | [EZORREGATIK X BERPIZKUNDEA REMIXES EP](https://chillmafia.bandcamp.com/album/ezorregatik-x-berpizkundea-remixes-ep) | 2021 | hip-hop/rap, rave, iruña | Pamplona, Spain | — |
 
-### portugalete (10)
+### portugalete (27)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -1129,8 +1756,25 @@
 | Crownledge | [Smrt fašizmu, sloboda narodu!](https://crownledge.bandcamp.com/album/smrt-fa-izmu-sloboda-narodu) | 2023 | experimental, rock, dark ambient, inmersive., kraut, psychedelic… | Portugalete, Spain | — |
 | Crownledge Collective | [Ashes Of The Black Easter](https://crownledge.bandcamp.com/album/ashes-of-the-black-easter) | 2020 | experimental, rock, dark ambient, inmersive., kraut, psychedelic… | Portugalete, Spain | — |
 | Dark Harmony | [r2con 2024](https://darkharmony.bandcamp.com/album/r2con-2024) | 2024 | electronic, chiptune, experimental electronic, lo-fi, portugalete | Portugalete, Spain | — |
+| Desorden | [Mucho kaos...](https://desordenpunkrock.bandcamp.com/album/mucho-kaos) | 2018 | punk, garage rock, punk rock, portugalete | Portugalete, Spain | — |
+| El Mito | [Mundo De Cristal](https://elmitobilbao.bandcamp.com/album/mundo-de-cristal) | 2012 | alternative, pop, punk rock, rock alternativo, portugalete | Portugalete, Spain | pais-vasco |
+| Goxoa Grooves | [Canzonissima (GX003)](https://goxoa.bandcamp.com/album/canzonissima-gx003) | 2021 | deep house, electronic, basque, beattape, hip hop, house… | Portugalete, Spain | basque |
+| Goxoa Grooves | [Goxoa Selection](https://goxoa.bandcamp.com/album/goxoa-selection) | 2021 | electronic, basque, beattape, hip hop, world beats, portugalete | Portugalete, Spain | basque |
+| Goxoa Grooves | [Goxoa Selection II](https://goxoa.bandcamp.com/album/goxoa-selection-ii) | 2021 | electronic, basque, beattape, hip hop, world beats, portugalete | Portugalete, Spain | basque |
+| Goxoa Grooves | [Sentikaria (GX012)](https://goxoa.bandcamp.com/album/sentikaria-gx012) | 2024 | electronic, basque, beattape, folk, hip hop, mikel laboa… | Portugalete, Spain | basque |
+| Goxoa Grooves | [Sentikariak](https://goxoa.bandcamp.com/album/sentikariak) | 2025 | electronic, afrobeat, amapiano, basque, beattape, euskal herria… | Portugalete, Spain | basque, euskal-herria |
+| Goxoa Grooves | [Sentikariak Remixes](https://goxoa.bandcamp.com/album/sentikariak-remixes) | 2026 | electronic, basque, beattape, breaks, dnb, drum n bass… | Portugalete, Spain | basque |
+| Lindano | [Gorila (GX009)](https://goxoa.bandcamp.com/album/gorila-gx009) | 2023 | electronic, hip hop, rap, barakaldo, basque, beattape… | Portugalete, Spain | barakaldo, basque |
+| Mitto Koronkon & Vic Vega | [Dame La Luz / My Thing (GX004)](https://goxoa.bandcamp.com/album/dame-la-luz-my-thing-gx004) | 2021 | electronic, basque, beattape, hip hop, world beats, portugalete | Portugalete, Spain | basque |
+| Restrepo | [Restrepo](https://goxoa.bandcamp.com/album/restrepo-3) | 2013 | electronic, basque, beattape, hip hop, world beats, portugalete | Portugalete, Spain | basque |
+| RidgeXraceR | [Beats To Not Study To (GX002)](https://goxoa.bandcamp.com/album/beats-to-not-study-to-gx002) | 2021 | 90s, electronic, basque, beattape, bedroom, futurama… | Portugalete, Spain | basque |
+| Vic Vega | [Bahia | Veracruz (GX001)](https://goxoa.bandcamp.com/album/bahia-veracruz-gx001) | 2021 | electronic, basque, beattape, brasil, brazil, caribe… | Portugalete, Spain | basque |
+| Vic Vega | [Balas Sobre El Puente](https://goxoa.bandcamp.com/album/balas-sobre-el-puente) | 2008 | electronic, basque, beattape, euskal herria, hip hop, world beats… | Portugalete, Spain | basque, euskal-herria |
+| Vic Vega | [Neo Noir (GX007)](https://goxoa.bandcamp.com/album/neo-noir-gx007) | 2022 | electronic, basque, beattape, film noir, hip hop, score… | Portugalete, Spain | basque |
+| Vic Vega | [Noir](https://goxoa.bandcamp.com/album/noir) | 2018 | electronic, instrumental hip-hop, basque, beattape, chill, hip hop… | Portugalete, Spain | basque |
+| Vic Vega & Priteo | [De Galernas (GX010)](https://goxoa.bandcamp.com/album/de-galernas-gx010) | 2023 | electronic, basque, beattape, hip hop, lluvia, mar… | Portugalete, Spain | basque |
 
-### san-sebastian (91)
+### san-sebastian (145)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -1194,14 +1838,60 @@
 | Danoise | [Aside: Ouroboros](https://danoise.bandcamp.com/album/aside-ouroboros) | 2014 | hip-hop/rap, horrorcore, rapcore, donostia | San Sebastián, Spain | — |
 | Danoise | [Haters EP](https://danoise.bandcamp.com/album/haters-ep) | 2014 | hip-hop/rap, horrorcore, rapcore, donostia | San Sebastián, Spain | — |
 | Danoise | [The Danoise B-side](https://danoise.bandcamp.com/album/the-danoise-b-side) | 2013 | hip-hop/rap, horrorcore, rap, rapcore, donostia | San Sebastián, Spain | — |
+| Dirty Eyes | [Rock Is Getting Harder](https://dirtyeyes.bandcamp.com/album/rock-is-getting-harder) | 2014 | hard rock, rock, sleaze rock, donostia | San Sebastián, Spain | — |
+| Disco Bambinos | [Base al agua](https://discobambinos.bandcamp.com/album/base-al-agua) | 2016 | electronic, italo disco, mallsoft, seapunk, vaporwave, donostia | San Sebastián, Spain | — |
+| Discos Walden | [Club del Single #1: Primavera 2012](https://discoswalden.bandcamp.com/album/club-del-single-1-primavera-2012) | 2012 | club del single, discos walden, madrid, iruña, pop, donostia… | Madrid, Spain | pamplona |
+| El espiritu de la golosina | [El espiritu de la golosina](https://elespiritudelagolosina.bandcamp.com/album/el-espiritu-de-la-golosina) | 2015 | rock, donostia | San Sebastián, Spain | — |
+| Emilio Azkarate & Fenan Dj. | [Helio](https://emilioazcarate.bandcamp.com/album/helio) | 2015 | pop, donostia | San Sebastián, Spain | — |
+| Enoch's vision | [Ali Congoman - Jah people plot in vain](https://enochsvision.bandcamp.com/album/ali-congoman-jah-people-plot-in-vain) | 2018 | reggae, digital reggae, dub, roots, steppers, donostia | San Sebastián, Spain | — |
+| Enoch's vision | [Dub Alkimista - Antzin Etorkizuna](https://enochsvision.bandcamp.com/album/dub-alkimista-antzin-etorkizuna) | 2019 | reggae, digital reggae, dub, instrumental reggae, morning star vibes, roots… | San Sebastián, Spain | — |
+| Enoch's vision | [Dub Alkimista - Ehun Ate](https://enochsvision.bandcamp.com/album/dub-alkimista-ehun-ate) | 2019 | reggae, digital reggae, dub, roots, steppers, donostia | San Sebastián, Spain | — |
+| Enoch's vision | [Dub Alkimista - Melodia infinituak](https://enochsvision.bandcamp.com/album/dub-alkimista-melodia-infinituak) | 2018 | reggae, digital reggae, dub, roots, steppers, donostia | San Sebastián, Spain | — |
+| Enoch's vision | [Y ahora que - Takin ova lova](https://enochsvision.bandcamp.com/album/y-ahora-que-takin-ova-lova) | 2022 | reggae, digital reggae, dub, roots, steppers, donostia | San Sebastián, Spain | — |
+| Enoch's vision | [Zergatia - Unai Reparation](https://enochsvision.bandcamp.com/album/zergatia-unai-reparation) | 2022 | reggae, digital reggae, dub, roots, steppers, donostia | San Sebastián, Spain | — |
+| Eraul | [Dabadaba zuzenean](https://eraul.bandcamp.com/album/dabadaba-zuzenean) | 2024 | americana, basque country, folk, acoustic, blues, pop… | San Sebastián, Spain | basque-country |
+| Eraul | [Eraul](https://eraul.bandcamp.com/album/eraul) | 2015 | americana, basque country, folk, acoustic, blues, indie… | San Sebastián, Spain | basque-country |
+| Eraul | [Kontadores zuzenean](https://eraul.bandcamp.com/album/kontadores-zuzenean) | 2023 | acoustic, americana, basque country, folk, blues, pop… | San Sebastián, Spain | basque-country |
+| Eraul | [Landuko dun lurra eta lurrak haziko hau](https://eraul.bandcamp.com/album/landuko-dun-lurra-eta-lurrak-haziko-hau) | 2024 | americana, basque country, folk, acoustic, blues, pop… | San Sebastián, Spain | basque-country |
+| Espagueti | [EP1](https://espagueti.bandcamp.com/album/ep1) | 2015 | donostia san sebastián, pop, pop punk, donosti sound, nueva ola, pop alternativo… | San Sebastián, Spain | donostia-san-sebastian |
+| Espagueti | [EP2](https://espagueti.bandcamp.com/album/ep2) | 2016 | donostia san sebastián, pop, pop punk, nueva ola, pop en español, pop rock… | San Sebastián, Spain | donostia-san-sebastian |
+| Espagueti | [EP3](https://espagueti.bandcamp.com/album/ep3) | 2016 | donostia san sebastián, pop, pop punk, nueva ola, pop en español, pop rock… | San Sebastián, Spain | donostia-san-sebastian |
+| Espagueti | [EP4](https://espagueti.bandcamp.com/album/ep4) | 2020 | donostia san sebastián, pop, pop punk, nueva ola, pop en español, pop rock… | San Sebastián, Spain | donostia-san-sebastian |
+| finegiro | [el hamster LP](https://finegiro.bandcamp.com/album/el-hamster-lp) | 2014 | electronic, experimental, rock, pop, donostia | San Sebastián, Spain | — |
+| Five Pence Game | [Cetirizine](https://fivepencegame.bandcamp.com/album/cetirizine) | 2013 | electronic, ally morton, massa confusa, preqwal, donostia | San Sebastián, Spain | — |
+| Five Pence Game | [Fire](https://fivepencegame.bandcamp.com/album/fire) | 2017 | electronic, ilser, massa confusa, outside your house, retriever, skull puppies… | San Sebastián, Spain | — |
 | Five Pence Game | [Five Pence Game - Cetirizine / Loratadine EPs](https://clartycat.bandcamp.com/album/five-pence-game-cetirizine-loratadine-eps) | 2016 | electronic, rock, pop punk, post-punk, punk, donostia | San Sebastián, Spain | — |
 | Five Pence Game | [Five Pence Game - Fire](https://clartycat.bandcamp.com/album/five-pence-game-fire) | 2017 | electronic, rock, ilser, massa confusa, outside your house, pop punk… | San Sebastián, Spain | — |
 | Five Pence Game | [Five Pence Game - Fuel EP](https://clartycat.bandcamp.com/album/five-pence-game-fuel-ep) | 2017 | electronic, rock, ally morton, aran glover, ben bowsher, ian cowie… | San Sebastián, Spain | — |
 | Five Pence Game | [Five Pence Game - Heat EP](https://clartycat.bandcamp.com/album/five-pence-game-heat-ep) | 2017 | electronic, rock, andrew paget, jack fallows, jackie purver, massa confusa… | San Sebastián, Spain | — |
 | Five Pence Game | [Five Pence Game - Oxygen EP](https://clartycat.bandcamp.com/album/five-pence-game-oxygen-ep) | 2017 | electronic, rock, jackie purver, jenny gilberg, kate edwards, massa confusa… | San Sebastián, Spain | — |
 | Five Pence Game | [Formoterol](https://clartycat.bandcamp.com/album/formoterol) | 2019 | electronic, fyb, rock, ilser, kobadelta, mama lips… | San Sebastián, Spain | — |
+| Five Pence Game | [Formoterol](https://fivepencegame.bandcamp.com/album/formoterol) | 2019 | electronic, fyb, ilser, kobadelta, mama lips, massa confusa… | San Sebastián, Spain | — |
+| Five Pence Game | [Fuel EP](https://fivepencegame.bandcamp.com/album/fuel-ep) | 2017 | electronic, ally morton, aran glover, ben bowsher, ian cowie, jack fallows… | San Sebastián, Spain | — |
+| Five Pence Game | [Heat EP](https://fivepencegame.bandcamp.com/album/heat-ep) | 2017 | electronic, andrew paget, jack fallows, jackie purver, massa confusa, retriever… | San Sebastián, Spain | — |
+| Five Pence Game | [Loratadine](https://fivepencegame.bandcamp.com/album/loratadine) | 2014 | electronic, ally morton, massa confusa, preqwal, donostia | San Sebastián, Spain | — |
+| Five Pence Game | [Oxygen EP](https://fivepencegame.bandcamp.com/album/oxygen-ep) | 2017 | electronic, jackie purver, jenny gilberg, kate edwards, massa confusa, outside your house… | San Sebastián, Spain | — |
 | Five Pence Game | [Selected live recordings](https://clartycat.bandcamp.com/album/selected-live-recordings) | 2018 | electronic, rock, ilser, massa confusa, outside your house, pop punk… | San Sebastián, Spain | — |
+| Five Pence Game | [Selected live recordings](https://fivepencegame.bandcamp.com/album/selected-live-recordings) | 2018 | electronic, ilser, massa confusa, outside your house, retriever, skull puppies… | San Sebastián, Spain | — |
+| FLORES | [Azul casi gris](https://flores.bandcamp.com/album/azul-casi-gris) | 2018 | pop, electropop, indie pop, donostia | San Sebastián, Spain | — |
+| Frank | [Atlas](https://frankfrankfrank.bandcamp.com/album/atlas) | 2018 | americana, rock, folk rock, donostia | San Sebastián, Spain | — |
+| FRANK | [My Wild Kingdom](https://frankfrankfrank.bandcamp.com/album/my-wild-kingdom) | 2014 | americana, donostia san sebastián, rock, folk rock, donostia | San Sebastián, Spain | donostia-san-sebastian |
+| Frank | [The Mud And The Thirst](https://frankfrankfrank.bandcamp.com/album/the-mud-and-the-thirst) | 2016 | americana, donostia san sebastián, rock, folk rock, donostia | San Sebastián, Spain | donostia-san-sebastian |
+| Garob Band | [Bidaia](https://garob-band.bandcamp.com/album/bidaia) | 2016 | aaron castrillo, alvaro del valle, daniel juarez, electronic, erik niemietz, jazz… | San Sebastián, Spain | — |
+| Garob Band | [NewFace](https://garob-band.bandcamp.com/album/newface) | 2017 | donostia san sebastián, electronic, jazz, jazz fusion, madrid, spain, contemporary jazz… | San Sebastián, Spain | donostia-san-sebastian |
+| Garón | [Garón Basic](https://garon.bandcamp.com/album/gar-n-basic) | 2016 | folk, donostia, amor, cantautor, comedia, comedy… | Donostia San Sebastian, Spain | donostia-san-sebastian |
+| Garón | [Última noche en la Habana Live Sessions](https://garon.bandcamp.com/album/ltima-noche-en-la-habana-live-sessions) | 2017 | folk, donostia, amor, cantautor, cantautore, comedia… | Donostia San Sebastian, Spain | donostia-san-sebastian |
+| Garón, David Pher | [Garón en Directo con David Pher](https://garon.bandcamp.com/album/gar-n-en-directo-con-david-pher) | 2022 | folk, donostia, cantautor, folclore, folk rock | Donostia San Sebastian, Spain | donostia-san-sebastian |
+| Giorgio Bassmatti | [El glaciar](https://discosdekirlian.bandcamp.com/album/el-glaciar) | 2017 | alternative, bassmatti, donostia san sebastián, pop, donostia, donosti… | Barcelona, Spain | donostia-san-sebastian |
+| Goragaleak | [Goragaleak](https://goragaleak.bandcamp.com/album/goragaleak) | 2014 | hard rock, rock, not, donostia | San Sebastián, Spain | — |
+| Gran Yate Especial | [Gran Yate Especial](https://granyateespecial.bandcamp.com/album/gran-yate-especial) | 2013 | garage, power pop, rock, rock´n´roll, rock - garage, donostia | San Sebastián, Spain | — |
+| Grande Days | [A Way to Collapse](https://grandedays.bandcamp.com/album/a-way-to-collapse) | 2019 | alternative, experimental, experimental rock, indie rock, indie rock., post-rock… | San Sebastián, Spain | — |
+| Grande Days | [Spark](https://grandedays.bandcamp.com/album/spark) | 2016 | alternative, experimental, ambient, indie rock, post-rock, donostia | San Sebastián, Spain | — |
 | INOX | [Chica Zombi](https://corsariosestudios.bandcamp.com/album/chica-zombi) | 2016 | devotional, donostia | San Sebastián, Spain | — |
+| Javier Zubiria (Guitarra y Voz), Rafa Balmaseda (Bajo), Alvaro Enparantza (Bateria) | [DOSIS GRAY](https://dosisgray.bandcamp.com/album/dosis-gray) | 2016 | punk, rock, punk rock, donostia | San Sebastián, Spain | — |
+| Junior Dread feat. Interdimensional dub band | [Junior Dread feat. Interdimensional dub band - Guide us 7' inch limited edition](https://enochsvision.bandcamp.com/album/junior-dread-feat-interdimensional-dub-band-guide-us-7-inch-limited-edition) | 2022 | reggae, roots reggae dub, digital reggae, dub, roots, steppers… | San Sebastián, Spain | — |
+| Junior Dread feat. Interdimensional dub band | [Junior Dread playing by Interdimensional dub band](https://enochsvision.bandcamp.com/album/junior-dread-playing-by-interdimensional-dub-band) | 2021 | reggae, digital reggae, dub, roots, steppers, donostia | San Sebastián, Spain | — |
+| Ka Dub & Rebel I | [Capitalism](https://gudaridubrecords.bandcamp.com/album/capitalism) | 2017 | gudaridub, reggae, dub, dubwise, steppa, uk steppa… | San Sebastián, Spain | — |
 | Let The Music Speak | [Amaranthine](https://adamwoolf.bandcamp.com/album/amaranthine) | 2016 | alternative, baroque, classical, crossover, jazz, world… | San Sebastián, Spain | — |
 | Massa Confusa | [Evolve EP](https://clartycat.bandcamp.com/album/evolve-ep) | 2020 | electronic, rock, ally morton, diy, north east, pop punk… | San Sebastián, Spain | — |
 | Massa Confusa | [Guiri](https://clartycat.bandcamp.com/album/guiri) | 2019 | electronic, rock, ally morton, diy, durham, matt o'brien… | San Sebastián, Spain | — |
@@ -1217,16 +1907,24 @@
 | Massa Confusa | [Massa Confusa - Two Man-Machine](https://clartycat.bandcamp.com/album/massa-confusa-two-man-machine) | 2016 | electronic, rock, ally morton, bea garcia cisneros, clarty cat records, jackie purver… | San Sebastián, Spain | — |
 | Miss Danby & The What | [Like Greta Garbo EP](https://clartycat.bandcamp.com/album/like-greta-garbo-ep) | 2017 | donostia san sebastián, electronic, newcastle upon tyne, rock, clarty cat records, diy… | San Sebastián, Spain | donostia-san-sebastian |
 | Oki Moki | [Working Class Pop](https://andaluciauberalles.bandcamp.com/album/working-class-pop) | 2020 | punk, hardcore, indie, lo-fi, pop, punk pop… | Seville, Spain | — |
+| Oki Moki | [Working Class Pop](https://flexidiscos.bandcamp.com/album/working-class-pop) | 2020 | alternative, pop punk, punk, donostia, bedroom pop, indie… | Valencia, Spain | — |
+| Rafael Berrio | [Diarios](https://diarios.bandcamp.com/album/diarios) | 2012 | comedy, varietés, vaudeville, donostia | San Sebastián, Spain | — |
 | Rafael Berrio | [Paradoja de Rafael Berrio](https://berrio1.bandcamp.com/album/paradoja-de-rafael-berrio) | 2016 | rock, donostia | San Sebastián, Spain | — |
 | Skull Puppies | [Skull Puppies - Critical Failures](https://clartycat.bandcamp.com/album/skull-puppies-critical-failures) | 2014 | electronic, rock, emo, nerds, pop, pop punk… | San Sebastián, Spain | — |
 | Skull Puppies | [Skull Puppies - Endless Dungeon Crawl](https://clartycat.bandcamp.com/album/skull-puppies-endless-dungeon-crawl) | 2016 | electronic, rock, clarty cat records, diy, geek, massa confusa… | San Sebastián, Spain | — |
 | Skull Puppies | [Skull Puppies - Venus Crytrap](https://clartycat.bandcamp.com/album/skull-puppies-venus-crytrap) | 2014 | electronic, rock, emo, nerd, pop, pop punk… | San Sebastián, Spain | — |
 | Sleepwalk | [Sleepwalk - Rise And Fall single](https://clartycat.bandcamp.com/album/sleepwalk-rise-and-fall-single) | 2016 | diy, electronic, rock, ally morton, five pence game, fomo… | San Sebastián, Spain | — |
+| Tru Moses | [Messages from the rocket](https://gudaridubrecords.bandcamp.com/album/messages-from-the-rocket-2) | 2017 | gudaridub, reggae, dub, dubwise, steppa, uk steppa… | San Sebastián, Spain | — |
+| V.A. | [Interdimensional dub band playing and mixing other dimension riddims](https://enochsvision.bandcamp.com/album/interdimensional-dub-band-playing-and-mixing-other-dimension-riddims) | 2022 | reggae, digital reggae, dub, roots, steppers, donostia | San Sebastián, Spain | — |
+| V.A. | [Interdimensional dub band presents False leaders riddim](https://enochsvision.bandcamp.com/album/interdimensional-dub-band-presents-false-leaders-riddim) | 2023 | reggae, digital reggae, dub, roots, steppers, donostia | San Sebastián, Spain | — |
+| Variedub, Irie Nanara | [Irie Nanara meets Variedub](https://gudaridubrecords.bandcamp.com/album/irie-nanara-meets-variedub) | 2017 | gudaridub, irie nanara, reggae, dub, dubwise, steppa… | San Sebastián, Spain | — |
 | Various Artists | [Massa Confusa Presents Compilation Volume 1](https://clartycat.bandcamp.com/album/massa-confusa-presents-compilation-volume-1) | 2015 | electronic, rock, pop punk, post-punk, punk, donostia | San Sebastián, Spain | — |
 | Various Artists | [Massa Confusa Presents Compilation Volume 2](https://clartycat.bandcamp.com/album/massa-confusa-presents-compilation-volume-2) | 2016 | electronic, rock, clarty cat records, massa confusa, matt o'brien, pop punk… | San Sebastián, Spain | — |
+| VVAA | [DK10 Todo otra vez. Canciones de Aventuras de Kirlian](https://discosdekirlian.bandcamp.com/album/dk10-todo-otra-vez-canciones-de-aventuras-de-kirlian) | 2018 | aventuras de kirlian, cd, donosti sound, homenaje, ibon errazkin, pop… | Barcelona, Spain | — |
+| XYZ | [XYZ - One](https://gaziarecords.bandcamp.com/album/xyz-one) | 2019 | electronic, alternative rock, ambient, downtempo, experiemental, experimental… | San Sebastián, Spain | — |
 | คาราบาว | [พออยู่พอกิน Chapter 21](https://carabao.bandcamp.com/album/chapter-21) | 1998 | cardigan, cosmic horror, country-soul rock n roll, heavy., pacific northwest, peter hook… | ? | — |
 
-### santurtzi (24)
+### santurtzi (28)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -1238,6 +1936,10 @@
 | Brian Henry Hooper | [What Would I Know? (LP)](https://bangrecords.bandcamp.com/album/what-would-i-know-lp) | 2018 | alternative, oz rock, grunge, high energy rock, noise rock, punk… | Santurtzi, Spain | — |
 | Damus Fragile | [El rey del espanto](https://damusfragile.bandcamp.com/album/el-rey-del-espanto) | 2013 | metal, thrash metal, hardcore, thrashcore, santurtzi | Santurtzi, Spain | — |
 | Damus Fragile | [Obsesiones](https://damusfragile.bandcamp.com/album/obsesiones) | 2013 | metal, thrash metal, trash metal, harcore, hardcore, thrashcore… | Santurtzi, Spain | — |
+| Días Negros | [Envuelto En Llamas](https://diasnegros.bandcamp.com/album/envuelto-en-llamas) | 2015 | alternative rock, heavy metal, metal, rock, santurtzi | Santurtzi, Spain | — |
+| Frantzeska | [BasauriOn! EP](https://frantzeska.bandcamp.com/album/basaurion-ep) | 2013 | electronic, eskorbuto, euskal herria, hc, jazz, punk… | Santurtzi, Spain | euskadi, euskal-herria |
+| Frantzeska | [F](https://frantzeska.bandcamp.com/album/f) | 2012 | electronic, punk, reagge, funk, hardcore, ska… | Santurtzi, Spain | euskadi |
+| Frantzeska | [SSMMXIV (dvd)](https://frantzeska.bandcamp.com/album/ssmmxiv-dvd) | 2016 | electronic, punk, reagge, funk, hardcore, live… | Santurtzi, Spain | euskadi |
 | GG Allin & Antiseen | [Murder Junkies (LP)](https://bangrecords.bandcamp.com/album/murder-junkies-lp) | 2022 | alternative, oz rock, punk, grunge, high energy rock, punk rock… | Santurtzi, Spain | — |
 | Honeymoon Killers | [Hung For Low (LP)](https://bangrecords.bandcamp.com/album/hung-for-low-lp) | 2021 | alternative, oz rock, grunge, high energy rock, lo-fi, punk… | Santurtzi, Spain | — |
 | Hugo Race And The True Spirit | [Spiritual Thirst (LP)](https://bangrecords.bandcamp.com/album/spiritual-thirst-lp) | 2017 | alternative, oz rock, swamp blues, alternative rock, grunge, high energy rock… | Santurtzi, Spain | — |
@@ -1261,7 +1963,7 @@
 |---|---|---|---|---|---|
 | Azten | [JAHENDU THE BEAT: AMERICAN BOOTLEG](https://aztentenaz.bandcamp.com/album/jahendu-the-beat-american-bootleg) | 2024 | hip-hop/rap, rap, rap type beats, sestao | Sestao, Spain | — |
 
-### tolosa (11)
+### tolosa (20)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -1275,16 +1977,26 @@
 | Belarmiñak | [Lehenengo pausoak.](https://belarmi-ak.bandcamp.com/album/lehenengo-pausoak) | 2014 | experimental, tolosa | Tolosa, Spain | — |
 | Belarmiñak | [Neketsua](https://belarmi-ak.bandcamp.com/album/neketsua) | 2015 | experimental, tolosa | Tolosa, Spain | — |
 | belarmiñak | [Zerbaitengatik](https://belarmi-ak.bandcamp.com/album/zerbaitengatik) | 2017 | experimental, power pop - rock and roll, tolosa | Tolosa, Spain | — |
+| Broken Faces | [GKDIY001 - BROKEN FACES](https://gkdiy.bandcamp.com/album/gkdiy001-broken-faces) | 2013 | broken, faces, kaleko punk-oi! fanzinie, punk, rock n oi!, tolosa… | Caldwell, Idaho | — |
 | Cadaver Putrefacto | [Demo 2013](https://cadaverputrefacto.bandcamp.com/album/demo-2013) | 2013 | death metal, gore grind, grind core, metal, tolosa | Tolosa, Spain | — |
+| Desordutan | [Eromena zor dizut](https://desordutan.bandcamp.com/album/eromena-zor-dizut) | 2018 | rock, indie rock, power pop, tolosa | Tolosa, Spain | — |
+| euphoric | [SOUND OF STEEL 2](https://euphoricmetal.bandcamp.com/album/sound-of-steel-2) | 2015 | metal, thrash metal, heavy, heavy metal, rockmetal, tolosa | Tolosa, Spain | — |
+| Eztanda | [Errua Norena Da?](https://eztanda.bandcamp.com/album/errua-norena-da) | 2019 | alternative rock, metal, progressive rock, rock, alternative metal, progressive metal… | Tolosa, Spain | — |
+| Eztanda | [Maketa](https://eztanda.bandcamp.com/album/maketa) | 2018 | alternative rock, metal, progressive rock, rock, tolosa | Tolosa, Spain | — |
+| Gatas Peludas | [-EP- Ranchos de cuidad Gótica](https://elladogthegataspeludas.bandcamp.com/album/ep-ranchos-de-cuidad-g-tica) | 2014 | experimental, piel de gallina y catedral, tolosa, lo-fi, la plata | La Plata, Argentina | — |
+| Glaukoma | [Kalima](https://glaukomaband.bandcamp.com/album/kalima) | 2025 | rap, reggae, dancehall, euskara, raggae, raggamuffin… | Tolosa, Spain | euskara |
+| Glaukoma | [Vol.1](https://glaukomaband.bandcamp.com/album/vol-1-2) | 2025 | rap, reggae, dancehall, euskara, raggae, raggamuffin… | Tolosa, Spain | euskara |
+| Glaukoma | [Vol.2](https://glaukomaband.bandcamp.com/album/vol-2) | 2025 | rap, reggae, dancehall, euskara, raggae, raggamuffin… | Tolosa, Spain | euskara |
 
-### tudela (2)
+### tudela (3)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
 | Con x the banjo | [El Epicentro](https://conxthebanjo.bandcamp.com/album/el-epicentro) | 2020 | alternative, rock alternativo, tudela | Tudela, Spain | navarra |
 | Con x the banjo | [El Placer de Sobrevivir](https://conxthebanjo.bandcamp.com/album/el-placer-de-sobrevivir-2) | 2018 | alternative, rock alternativo, tudela | Tudela, Spain | navarra |
+| Edu Zardoya | [Cantando Versos, Contando Estrellas](https://eduzardoya.bandcamp.com/album/cantando-versos-contando-estrellas) | 2017 | rock, folk, punk rock, rock acústico, tudela | Tudela, Spain | — |
 
-### vitoria-gasteiz (79)
+### vitoria-gasteiz (151)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -1293,6 +2005,7 @@
 | 20 Dedos | [O Santo](https://cactuslabel.bandcamp.com/album/o-santo) | 2020 | hip-hop/rap, pop hip-hop, rnb, soul, hip hop, lo-fi… | Vitoria Gasteiz, Spain | — |
 | A-Soma & David F. Brandon | [Jokers](https://a-somadavidfbrandon.bandcamp.com/album/jokers) | 2023 | a-soma, a-soma & david f. brandon, a-soma & the unlightened, alternative, alternative rock, david f. brandon… | Vitoria Gasteiz, Spain | — |
 | abenúe (avenue) | [one year later](https://abenue.bandcamp.com/album/one-year-later) | 2004 | alternative, grunge, punk, punk rock, rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Adur Etake, Ángela Lozano, Ariana RAC, Inés E., Irati Antia, Matixa Gabirondo Zubiria | [hemen zaude](https://hemenzaude.bandcamp.com/album/hemen-zaude) | 2025 | spoken word, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Afire | [Afire](https://afire.bandcamp.com/album/afire) | 2015 | metal, rock, thrash metal, alternative metal, grunge, thrash… | Vitoria Gasteiz, Spain | — |
 | Afire | [Sleepdancer](https://afire.bandcamp.com/album/sleepdancer) | 2016 | metal, rock, thrash metal, alternative metal, grunge, thrash… | Vitoria Gasteiz, Spain | — |
 | Agua | [All consuming decease called life](https://aguamusic.bandcamp.com/album/all-consuming-decease-called-life) | 2025 | black metal, metal, ambient, doom metal, horror, noise… | Vitoria Gasteiz, Spain | — |
@@ -1314,12 +2027,18 @@
 | Aldakan | [Cumbia Sobre El Mar (remixes)](https://aldakan.bandcamp.com/album/cumbia-sobre-el-mar-remixes) | 2022 | afro-latin, latin, world, cumbia, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Aldakan | [Izarran Live](https://aldakan.bandcamp.com/album/izarran-live) | 2018 | afro-latin, latin, world, cumbia, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Aldakan | [Marakuyeah](https://aldakan.bandcamp.com/album/marakuyeah) | 2021 | afro-latin, afrobeat, latin, new orleans, world, cumbia… | Vitoria Gasteiz, Spain | — |
+| Alfonso García de la Torre | [Habitando el olvido](https://ensemblesinkro.bandcamp.com/album/habitando-el-olvido) | 2025 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Alfonso García de la Torre, Ignacio Monterrubio, Guillermo Lauzurika | [SIRIUS](https://ensemblesinkro.bandcamp.com/album/sirius) | 2018 | classical, electronic, avant-garde, contemporary, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Alfonso Gómez | [Bakarrizketak](https://ensemblesinkro.bandcamp.com/album/bakarrizketak) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Alfonso Gómez | [Félix Ibarrondo - L´ouvre Pour Piano](https://ensemblesinkro.bandcamp.com/album/f-lix-ibarrondo-l-ouvre-pour-piano) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Alfonso Gómez | [Morfología Sonora](https://ensemblesinkro.bandcamp.com/album/morfolog-a-sonora) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Ander Ibañez de Gauna | [The Last Pirate Adventure: Drake's Treasure (Original Videogame Soundtrack)](https://anderibz.bandcamp.com/album/the-last-pirate-adventure-drakes-treasure-original-videogame-soundtrack) | 2021 | soundtrack, soundtrack music, game soundtrack, soundtracks, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | ANIMA | [Anima EP](https://animametalband.bandcamp.com/album/anima-ep) | 2016 | basque country, metal, spain, gasteiz, heavymetal, vitoria gasteiz | Vitoria Gasteiz, Spain | basque-country |
 | Arenna | [Demo (2007)](https://arenna.bandcamp.com/album/demo-2007) | 2007 | psychedelic, rock, stoner, arenna, psychedelic rock, stoner rock… | Vitoria Gasteiz, Spain | — |
 | Arenna | [Given to Emptiness (2015)](https://arenna.bandcamp.com/album/given-to-emptiness-2015) | 2015 | nasoni records, psychedelic, rock, stoner, psychedelic rock, stoner rock… | Vitoria Gasteiz, Spain | — |
 | Arenna | [Long Blind Wild Sky (2015 single)](https://arenna.bandcamp.com/album/long-blind-wild-sky-2015-single) | 2015 | psychedelic, rock, stoner, psychedelic rock, stoner rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Arri! | [Ekam](https://arri.bandcamp.com/album/ekam) | 2021 | electronic, rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Asier Lopez Iraola | [Bigarren Sexua](https://ensemblesinkro.bandcamp.com/album/bigarren-sexua) | 2023 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Azillion Beatz | [AZILLION TAPE I](https://azillionbeatz.bandcamp.com/album/azillion-tape-i) | 2024 | hip-hop/rap, trap, beats for sale, beats hiphop, drill, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Azillion Beatz | [AZILLION TAPE II](https://azillionbeatz.bandcamp.com/album/azillion-tape-ii) | 2024 | hip-hop/rap, trap, beats for sale, beats hiphop, drill, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Azillion Beatz | [Dark Drift](https://azillionbeatz.bandcamp.com/album/dark-drift) | 2023 | hip hop, hip-hop/rap, rap, trap, beats, beats for sale… | Vitoria Gasteiz, Spain | — |
@@ -1335,6 +2054,7 @@
 | benizze | [Benizze](https://benizze.bandcamp.com/album/benizze) | 2022 | deep house, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Bidelapurrak | [Gorriak Eta Bi](https://bidelapurrak.bandcamp.com/album/gorriak-eta-bi) | 2018 | folk, folk; country; rock, blues, country, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Black Cassy ak Malabo freedom(New Billy Don) | [Sentimiento frío](https://clanthewarriors.bandcamp.com/album/sentimiento-fr-o) | 2015 | hip hop, hip-hop/rap, rap, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Build Me A Bomb | [BUILD ME A BOMB “Pasión por la autodestrucción”](https://grabacionesviscerales.bandcamp.com/album/build-me-a-bomb-pasi-n-por-la-autodestrucci-n) | 2025 | crossover, punk, fastcore, hardcore, hardcore punk, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Buridan | [En este mar de dudas...](https://buridan.bandcamp.com/album/en-este-mar-de-dudas) | 2024 | heavy quejio, naranonaino psych, rock, rock flamensivo, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Buridan | [Nada está perdio (demo)](https://buridan.bandcamp.com/album/nada-est-perdio-demo) | 2022 | heavy quejio, naranonaino psych, rock, rock flamensivo, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Bëlañø | [Itxaropena izango da gure mendekua](https://belano.bandcamp.com/album/itxaropena-izango-da-gure-mendekua) | 2024 | punk, crust, d-beat, emo, melodic crust, punx… | Vitoria Gasteiz, Spain | — |
@@ -1349,7 +2069,59 @@
 | Daddy's Funclub | [You Better Run](https://daddysfunclub.bandcamp.com/album/you-better-run) | 2018 | aor, country, rock, rock & roll, blues, funk rythm & blues… | Vitoria Gasteiz, Spain | — |
 | Daño Dolor | [Narcisista](https://danodolor.bandcamp.com/album/narcisista) | 2024 | punk, blackened hardcore, hardcore, noise rock, noisecore, sludge… | Vitoria Gasteiz, Spain | — |
 | Death In Effigy | [DEATH IN EFFIGY](https://deathineffigy.bandcamp.com/album/death-in-effigy) | 2020 | black metal, death metal, metal, thrash metal, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| DejaVu | [Colours](https://dejavusoulband.bandcamp.com/album/colours) | 2021 | neo-soul, r&b/soul, rock, indie pop, indie rock, jazz… | Vitoria Gasteiz, Spain | — |
+| DELA POST | [PASSERBY](https://delapost.bandcamp.com/album/passerby) | 2022 | rock, alternative rock, gothic rock, post-punk, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Delenda Est | [The Odd One Out](https://delendaest.bandcamp.com/album/the-odd-one-out) | 2022 | metal, alternative metal, melodic metalcore, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Devil`s Gardens | [Demo 2017](https://devilsgardens.bandcamp.com/album/demo-2017) | 2017 | heavy-psycho, rock, heavy psych, progressive, stoner, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Dezepcion | [Por primera vez caigo dos veces](https://dezepcion.bandcamp.com/album/por-primera-vez-caigo-dos-veces-2) | 2015 | funk., rock, alternative rock, independent, rock and roll, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Diggin' Sound | [Diggin’ Sound – The Curse of the Red Room Vol. 1](https://digginsound.bandcamp.com/album/diggin-sound-the-curse-of-the-red-room-vol-1) | 2025 | boom bap rap, dark boom bap, hip-hop/rap, boom bap, cult, dark jazz… | Vitoria Gasteiz, Spain | — |
+| Diggin' Sound | [The Wind Children – Vol. II](https://digginsound.bandcamp.com/album/the-wind-children-vol-ii) | 2026 | boom bap rap, dark boom bap, hip-hop/rap, boom bap, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Diggin’ Sound | [Budokai Tenkaichi](https://digginsound.bandcamp.com/album/budokai-tenkaichi) | 2024 | boom bap rap, budokai tenkaichi, dark boom bap, hip hop, hip-hop/rap, rap… | Vitoria Gasteiz, Spain | — |
+| Diggin’ Sound | [SNOWTAPE – Fantasmas del Invierno](https://digginsound.bandcamp.com/album/snowtape-fantasmas-del-invierno) | 2026 | boom bap rap, dark boom bap, hip hop, hip-hop/rap, rap, boom bap… | Vitoria Gasteiz, Spain | — |
+| DJ ATTaCK! | [B-Shield (2004)](https://djattack.bandcamp.com/album/b-shield-2004) | 2004 | electronic, house, techno, trance, hard house, zaragoza… | Vitoria Gasteiz, Spain | — |
+| DJ ATTaCK! | [DJ ATTaCK! - 25th anniversary](https://djattack.bandcamp.com/album/dj-attack-25th-anniversary) | 2018 | electronic, house, techno, trance, vitoria, zaragoza… | Vitoria Gasteiz, Spain | — |
+| DJ ATTaCK! | [Le Navigateur (2001)](https://djattack.bandcamp.com/album/le-navigateur-2001) | 2001 | electronic, house, techno, trance, hard house, zaragoza… | Vitoria Gasteiz, Spain | — |
+| Djadó L k-brón | [Las putas aventuras de ese M.C. Djado L K-bron](https://djadolk-bron.bandcamp.com/album/las-putas-aventuras-de-ese-m-c-djado-l-k-bron) | 2019 | flowz, hip hop español, hip hop, hip-hop/rap, rap, trap music… | Vitoria Gasteiz, Spain | — |
 | Doctor Sax | [Vol. II](https://cosmictentacles.bandcamp.com/album/vol-ii) | 2014 | metal, rock, vitoria gasteiz, acustic, folk, spain | PV, Spain | — |
+| DRESDEN | [REBORN](https://dresdenband.bandcamp.com/album/reborn) | 2019 | hardrock, rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Duelø | [Duelø](https://duelogara.bandcamp.com/album/duel) | 2024 | punk, darkwave, post-punk, synth, synthpop, synthwave… | Vitoria Gasteiz, Spain | — |
+| Duelø | [チョッパー](https://duelogara.bandcamp.com/album/-) | 2024 | punk, darkwave, post-punk, synth, synthpop, synthwave… | Vitoria Gasteiz, Spain | — |
+| Duna | [Demo](https://dunaband.bandcamp.com/album/demo) | 2019 | rock, desert rock, instrumental rock, post-rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Duna | [Duna](https://dunaband.bandcamp.com/album/duna-2) | 2021 | rock, desert rock, instrumental rock, post-rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Eidhonrov | [Feel Pain](https://eidhonrov.bandcamp.com/album/feel-pain) | 2019 | industrial metal, metal, goth, punk rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ekin! | [EKIN](https://ekin.bandcamp.com/album/ekin) | 2015 | punk-rock, reggae, rock, ska, dena delakoa!, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| EL ARRABAL | [REALIDAD](https://elarrabal.bandcamp.com/album/realidad) | 2016 | alternative, musician, rap, composer, consciente, lirico… | Vitoria Gasteiz, Spain | — |
+| El Asno de Oro | [Album](https://elasnodeoro.bandcamp.com/album/album) | 2022 | acoustic, acousti…, reggae, rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| elh malick | [DJIKO](https://elhmalick1.bandcamp.com/album/djiko) | 2019 | r&b, reggae, blues, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Emily Plays | [Green Fairy Sessions](https://emilyplays2004.bandcamp.com/album/green-fairy-sessions) | 2005 | 2004, pop, spain, gasteiz, indie pop, pop rock… | Vitoria Gasteiz, Spain | — |
+| engandina | [Once created, once sold...](https://engandina.bandcamp.com/album/once-created-once-sold) | 2022 | metal, post black metal, hardcore, post-hardcore, screamo, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ensemble Notenkonferenz | [I bin dao](https://ensemblenotenkonferenz.bandcamp.com/album/i-bin-dao) | 2022 | acoustic, experimental, singer-songwriter, world music, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ensemble Notenkonferenz | [Vermisst: Gustav!](https://ensemblenotenkonferenz.bandcamp.com/album/vermisst-gustav) | 2023 | acoustic, experimental, singer-songwriter, world music, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ensemble Sinkro | [25 years of Vitoria-Gasteiz electroacoustic music laboratory](https://ensemblesinkro.bandcamp.com/album/25-years-of-vitoria-gasteiz-electroacoustic-music-laboratory) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ensemble Sinkro | [Alfonso García de la Torre](https://ensemblesinkro.bandcamp.com/album/alfonso-garc-a-de-la-torre-2) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ensemble SInkro | [Carmelo Bernaola](https://ensemblesinkro.bandcamp.com/album/carmelo-bernaola) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ensemble Sinkro | [Félix Ibarrondo](https://ensemblesinkro.bandcamp.com/album/f-lix-ibarrondo) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ensemble Sinkro | [Sofía Martínez](https://ensemblesinkro.bandcamp.com/album/sof-a-mart-nez) | 2022 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ensemble SInkro | [Zuriñe F. Gerenabarrena](https://ensemblesinkro.bandcamp.com/album/zuri-e-f-gerenabarrena) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Exvirgilio | [Manuales para la derrota (Álbum completo)](https://exvirgilio.bandcamp.com/album/manuales-para-la-derrota-lbum-completo) | 2021 | rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Father Alien | [Born](https://fatheralien.bandcamp.com/album/born) | 2020 | beats., electronic, ambient, beat, electronica, instrumental… | Vitoria Gasteiz, Spain | — |
+| Father Alien | [OLOKUN](https://fatheralien.bandcamp.com/album/olokun) | 2021 | electronic, ambient, beat, instrumental, nujazz, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Father Alien | [ROTO](https://fatheralien.bandcamp.com/album/roto) | 2020 | electronic, ambient, beat, instrumental, nujazz, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Father Alien feat. Beauty Spot | [It Is So Good](https://fatheralien.bandcamp.com/album/it-is-so-good) | 2022 | electronic, ambient, beat, instrumental, nujazz, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Francisco Domínguez | [Arrosa xuriaren artean](https://ensemblesinkro.bandcamp.com/album/arrosa-xuriaren-artean) | 2024 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ganzúa | [Ganzúa](https://ganzuapunk.bandcamp.com/album/ganz-a) | 2023 | crossover, punk, thrash metal, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ganzúa | [Gasteizko Gaztetxean](https://ganzuapunk.bandcamp.com/album/gasteizko-gaztetxean) | 2025 | crossover, punk, thrash metal, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Ganzúa | [Zuzenean Maeztun 24/06/08](https://ganzuapunk.bandcamp.com/album/zuzenean-maeztun-24-06-08) | 2024 | crossover, punk, thrash metal, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Giante | [Beste Norbait Izan](https://giante.bandcamp.com/album/beste-norbait-izan) | 2026 | punk, emo, post-hardcore, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Giante | [Beste Norbait Izan (ERR-001)](https://erraldoirecords.bandcamp.com/album/beste-norbait-izan-err-001) | 2026 | alternative, emo, post-hardcore, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| GO! | [GO! - Impact](https://grabacionesviscerales.bandcamp.com/album/go-impact) | 2024 | crossover, punk, fastcore, hard core punk, hardcore, hardcore punk… | Vitoria Gasteiz, Spain | — |
+| Gold Kiss Experience | [Deja de pensar](https://goldkissexperience.bandcamp.com/album/deja-de-pensar) | 2018 | hard rock, metal, punk, rock, heavy metal, punk rock… | Vitoria Gasteiz, Spain | — |
+| Guillermo Lauzurika | [Jokoa](https://ensemblesinkro.bandcamp.com/album/jokoa) | 2022 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Guillermo Lauzurika | [Zatiketa](https://ensemblesinkro.bandcamp.com/album/zatiketa) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Harakin Gasteiz | [Skins Gasteiz!](https://harakingasteiz.bandcamp.com/album/skins-gasteiz) | 2024 | oi!, punk, punk hardcore, punk rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Harrobi Records | [ZU|LO](https://harrobirecords.bandcamp.com/album/zu-lo) | 2025 | electronic, techno, club, harrika, harrikadafestibala, harrobi… | Vitoria Gasteiz, Spain | — |
+| Henda | [I](https://henda.bandcamp.com/album/i) | 2013 | alternative, instrumental, post-metal, post-rock, progressive, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Henda | [II](https://henda.bandcamp.com/album/ii) | 2015 | alternative, diy, metal, rock, instrumental, post-hardcore… | Vitoria Gasteiz, Spain | — |
 | HyraX | [Agate Deuna: Una Oda a Sta. Agueda (single)](https://cosmichyrax.bandcamp.com/album/agate-deuna-una-oda-a-sta-agueda-single) | 2013 | ambient, euskal dark folk, dark ambient, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | HyraX | [Catharsis EP](https://cosmichyrax.bandcamp.com/album/catharsis-ep) | 2016 | ambient, dark ambient, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | HyraX | [DEATH OF SYMBOLS](https://cosmichyrax.bandcamp.com/album/death-of-symbols) | 2014 | ambient, dark ambient, drone, experimental, field recordings, phonography… | Vitoria Gasteiz, Spain | — |
@@ -1363,10 +2135,22 @@
 | HyraX | [Tales of Death, Sins and Glory](https://cosmichyrax.bandcamp.com/album/tales-of-death-sins-and-glory) | 2016 | ambient, dark ambient, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | HyraX | [the end of dreams](https://cosmichyrax.bandcamp.com/album/the-end-of-dreams) | 2018 | ambient, dark ambient, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | HyraX | StillMe. | [LET THE SUN BURN AND PURIFY YOU](https://cosmichyrax.bandcamp.com/album/let-the-sun-burn-and-purify-you) | 2012 | ambient, dark ambient, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Jabi Alonso | [AmetsOLAK](https://ensemblesinkro.bandcamp.com/album/ametsolak) | 2019 | classical, electronic, avant-garde, contemporary, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 | Javier Burgui | [...Y cayó el telón de las ilusiones](https://burgui.bandcamp.com/album/y-cay-el-tel-n-de-las-ilusiones) | 2026 | progressive rock, rock, trash metal, experimental rock, psichedelic rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Jeff Kaiser & Luis Tabuenca | [The Forgetting Machine - Systematic and Quantitative](https://ensemblesinkro.bandcamp.com/album/the-forgetting-machine-systematic-and-quantitative) | 2019 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| John Edwards, Guillermo Lauzurica, Ignacio Monterrubio, Luis Tabuenca | [El Gran Chiflado](https://ensemblesinkro.bandcamp.com/album/el-gran-chiflado) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Joseba Martinez de San Vicente, Patxi Novo, Iñaki Noriega, Ramón Varela | [No Me Gusta Bailar](https://demoniodenino.bandcamp.com/album/no-me-gusta-bailar) | 2020 | rock, garage rock, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Luis Tabuenca, Ignacio Monterrubio | [Non Sequitur](https://ensemblesinkro.bandcamp.com/album/non-sequitur) | 2018 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| ROUSE | [ROUSE “Deep Inside + Early Recordings & Unreleased Stuff”](https://grabacionesviscerales.bandcamp.com/album/rouse-deep-inside-early-recordings-unreleased-stuff) | 2025 | crossover, punk, fastcore, hardcore, hardcore punk, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Sergio Gutiérrez Rodríguez | [Tribute around piano music](https://ensemblesinkro.bandcamp.com/album/tribute-around-piano-music) | 2022 | classical, avant-garde, contemporary, electronic, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Superlore | [Arrakastaren Rave Eternalean (ERR-002)](https://erraldoirecords.bandcamp.com/album/arrakastaren-rave-eternalean-err-002) | 2026 | alternative, emo, post-hardcore, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| The Brontës | [The Brontës "Que la tierra te sea leve"](https://hangthedjrecords.bandcamp.com/album/the-bront-s-que-la-tierra-te-sea-leve) | 2013 | dinosaur jr, dorian guitars, paco loco, rock, vitoria gasteiz, barcelona… | Barcelona, Spain | — |
 | The Dealers | [I Can´t Win / Hypochondria](https://actionweekend.bandcamp.com/album/i-can-t-win-hypochondria) | 2012 | action weekend, bickerton, hypochondria, r&b, rock, the dealers… | Spain | — |
 | The Dealers | [Serendipic Breakfast](https://actionweekend.bandcamp.com/album/serendipic-breakfast) | 2015 | rock, vitoria gasteiz, freakbeat, garage rock, psychedelic, spain | Spain | — |
 | The Dealers | [Turning Upside Down](https://actionweekend.bandcamp.com/album/turning-upside-down) | 2017 | rock, gasteiz, beat, garage rock, psicodelia, psychedelic… | Spain | — |
+| Troners | [TRONERS "Troners"](https://grabacionesviscerales.bandcamp.com/album/troners-troners) | 2024 | crossover, punk, fastcore, hardcore, hardcore punk, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Varios artistas | [VV/AA "Tributo a Subterranean Kids"](https://grabacionesviscerales.bandcamp.com/album/vv-aa-tributo-a-subterranean-kids) | 2024 | crossover, punk, fastcore, hardcore, hardcore punk, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
+| Vitu´s Dance | [Vitu´s Dance "Mentes Uniformemente Aceleradas"."](https://grabacionesviscerales.bandcamp.com/album/vitu-s-dance-mentes-uniformemente-aceleradas) | 2023 | crossover, punk, fastcore, hardcore, hardcore punk, vitoria gasteiz | Vitoria Gasteiz, Spain | — |
 
 ### vizcaya (1)
 
@@ -1374,7 +2158,7 @@
 |---|---|---|---|---|---|
 | Barraks Promotion | [BP004 - Keziah "The Ocean Is Not Silent" (EP)](https://barraks.bandcamp.com/album/bp004-keziah-the-ocean-is-not-silent-ep) | 2017 | metal, ahkvan, bizkaia, chivo, doom, hardcore… | Sopelana, Spain | bizkaia |
 
-### zarautz (33)
+### zarautz (71)
 
 | Artista | Título | Año | Tags | Location | Otros tags de origen |
 |---|---|---|---|---|---|
@@ -1407,10 +2191,48 @@
 | Alternatived Music | [AM025__ Stan Garac - U Can Shake it](https://alternativedmusic.bandcamp.com/album/am025-stan-garac-u-can-shake-it) | 2024 | deep house, deep tech, electronic, house, minimal house, tech house… | Zarautz, Spain | — |
 | Amiltzen | [Maketa](https://amiltzen.bandcamp.com/album/maketa) | 2022 | hard rock, melodic metal, pop, rock, alternative metal, zarautz | Zarautz, Spain | — |
 | Anlaki | [Anlaki Ep](https://anlaki.bandcamp.com/album/anlaki-ep) | 2013 | alternative, korean pop, noise, zarautz, dream pop, emo… | Pamplona, Spain | pamplona |
+| BEÑARANKS, GHETTO FYAH | [KORRIKA RIDDIM](https://ghettogunshotrecords.bandcamp.com/album/korrika-riddim) | 2023 | casiotone, mt40, reggae, dancehall, digital, dub… | Zarautz, Spain | — |
+| BOJAMAN STYLE, GHETTO FYAH | [GG 0701 MONEY MONEY RIDDIM](https://ghettogunshotrecords.bandcamp.com/album/gg-0701-money-money-riddim) | 2020 | basque country, reggae, dancehall, digital, dinero, dub… | Zarautz, Spain | basque-country |
 | Bojaman, Kini DK, Beñaranks, Eira, Lua, Gustab, George Palmer, TalirasT, IbañezSound, | [BOJAMAN - THE MEETING](https://bojamanstyle.bandcamp.com/album/bojaman-the-meeting) | 2019 | reggae, bojaman, dancehall, digital, dub, newroots… | Zarautz, Spain | — |
 | Buffalo | [Buffalo](https://buffaloband.bandcamp.com/album/buffalo) | 2012 | alternative, instrumental, instrumental rock, zarautz | Zarautz, Spain | — |
 | Buffalo | [ULU](https://buffaloband.bandcamp.com/album/ulu) | 2018 | alternative, instrumental, instrumental rock, zarautz | Zarautz, Spain | — |
 | Buffalo | [Zinematik](https://buffaloband.bandcamp.com/album/zinematik) | 2015 | alternative, instrumental, instrumental rock, post-rock, zarautz | Zarautz, Spain | — |
+| DJ Makala | ["Caetano Veloso (DJ Makala Re-Edit)"](https://djmakala.bandcamp.com/album/caetano-veloso-dj-makala-re-edit) | 2021 | brazil, brazilian music, world, global bass, jazz, latin… | Zarautz, Spain | — |
+| DJ Makala | [Global Funk Remixes 2004-2014](https://djmakala.bandcamp.com/album/global-funk-remixes-2004-2014) | 2014 | world, global bass, jazz, latin, nujazz, tropical bass… | Zarautz, Spain | — |
+| DJ Makala | [Re-works, Re-edits, Rareties & More](https://djmakala.bandcamp.com/album/re-works-re-edits-rareties-more) | 2000 | world, global bass, jazz, latin, nujazz, tropical bass… | Zarautz, Spain | — |
+| Dr Mugre | [DR MUGRE - El resurgir de los despojos](https://drmugre.bandcamp.com/album/dr-mugre-el-resurgir-de-los-despojos) | 2019 | goregrind, metal, grindcore, mugre, one man band, zarautz | Zarautz, Spain | — |
+| Dr Mugre | [FLESHWORK](https://drmugre.bandcamp.com/album/fleshwork) | 2022 | 2022, death metal, doctor, goregrind, metal, death meta… | Zarautz, Spain | — |
+| DR MUGRE | [PROFESSIONAL DISSECTION](https://drmugre.bandcamp.com/album/professional-dissection) | 2020 | dissection, doctor, goregrind, metal, surgeon, grindcore… | Zarautz, Spain | — |
+| Dr Mugre | [Terror stories before sex](https://drmugre.bandcamp.com/album/terror-stories-before-sex) | 2025 | 2025, goregrind, metal, band, drum programming, electric guitar… | Zarautz, Spain | euskal-herria |
+| DR MUGRE & TUNIKAH | [1MAN BAND´S ROTTEN SPLIT](https://drmugre.bandcamp.com/album/1man-band-s-rotten-split) | 2019 | 7" split, black metal, goregrind, metal, dr mugre, grindcore… | Zarautz, Spain | — |
+| DR MUGRE, TUNIKAH | [DR MUGRE / TUNIKAH - TWIN SPLIT](https://drmugre.bandcamp.com/album/dr-mugre-tunikah-twin-split) | 2022 | basque country, black metal, euskadi, goregrind, metal, grindcore… | Zarautz, Spain | euskadi, basque-country |
+| Drumkopters | [DRUMKOPTERS](https://drumkopters.bandcamp.com/album/drumkopters) | 2018 | punk, garage, garage rock, post-punk, queer, riot… | Zarautz, Spain | — |
+| ERASO! | [Azken batean](https://eraso.bandcamp.com/album/azken-batean) | 2024 | rock, crossover, emo, metal, zarautz | Zarautz, Spain | — |
+| ERASO! | [Erantzunaren Geroa - BONUS TRACKS](https://eraso.bandcamp.com/album/erantzunaren-geroa-bonus-tracks) | 2016 | rock, crossover, emo, metal, zarautz | Zarautz, Spain | — |
+| ERASO! | [Erantzunik gabe](https://eraso.bandcamp.com/album/erantzunik-gabe) | 1999 | rock, basque country, crossover, emo, metal, trash… | Zarautz, Spain | basque-country |
+| ERASO! | [Ez gara inoiz hilko](https://eraso.bandcamp.com/album/ez-gara-inoiz-hilko) | 2012 | rock, crossover, emo, metal, zarautz | Zarautz, Spain | — |
+| ERASO! | [Grisez bustitako egunak](https://eraso.bandcamp.com/album/grisez-bustitako-egunak) | 2003 | rock, basque country, crossover, emo, metal, trash… | Zarautz, Spain | basque-country |
+| ERASO! | [Kaiolatik Ihes](https://eraso.bandcamp.com/album/kaiolatik-ihes) | 2016 | rock, crossover, emo, kaiolatik ihes, metal, vinyl… | Zarautz, Spain | — |
+| ERASO! | [Kontra](https://eraso.bandcamp.com/album/kontra) | 2005 | rock, basque country, crossover, emo, metal, zarautz | Zarautz, Spain | basque-country |
+| ERASO! | [Oraina eta geroa](https://eraso.bandcamp.com/album/oraina-eta-geroa) | 2001 | rock, basque country, crossover, emo, metal, trash… | Zarautz, Spain | basque-country |
+| ESTIGIA | [BORN GUILTY](https://estigia.bandcamp.com/album/born-guilty) | 2014 | metal, metalcore, rock, thrash metal, heavy, heavy metal… | Zarautz, Spain | — |
+| ESTIGIA | [DEMO /89](https://estigia.bandcamp.com/album/demo-89) | 1989 | heavy, heavy metal, metal, rock, tharsh, thrash metal… | Zarautz, Spain | — |
+| ESTIGIA | [REGRESSION](https://estigia.bandcamp.com/album/regression) | 2015 | metal, rock, speed metal, thrash metal, heavy, heavy metal… | Zarautz, Spain | — |
+| ESTIGIA | [TRIP TO NOWHERE](https://estigia.bandcamp.com/album/trip-to-nowhere) | 1995 | metal, rock, thrash metal, heavy, heavy metal - hard rock, thrash… | Zarautz, Spain | — |
+| GHETTO FYAH SOUND, BOJAMAN STYLE, KINI DK | [DANCEHALL DE BARRIO](https://ghettogunshotrecords.bandcamp.com/album/dancehall-de-barrio) | 2018 | basque country, dancehall reggae, reggae, dancehall, dub, north coast… | Zarautz, Spain | basque-country |
+| GHETTO GUNSHOT RECORDS | [DIGITAL LOVER´S RIDDIM](https://ghettogunshotrecords.bandcamp.com/album/digital-lover-s-riddim) | 2019 | reggae, dancehall, dub, raggamuffin, roots, rub a dub… | Zarautz, Spain | — |
+| GHETTO GUNSHOT RECORDS | [ESE MAN](https://ghettogunshotrecords.bandcamp.com/album/ese-man) | 2023 | 2023, reggae, dancehall, dub, raggamuffin, roots… | Zarautz, Spain | — |
+| GHETTO GUNSHOT RECORDS | [ESPUMA RIDDIM](https://ghettogunshotrecords.bandcamp.com/album/espuma-riddim) | 2024 | reggae, teenage engineering, dancehall, digital, digital reggae, dub… | Zarautz, Spain | — |
+| GHETTO GUNSHOT RECORDS | [GG 0702 NUNCHAKU RIDDIM](https://ghettogunshotrecords.bandcamp.com/album/gg-0702-nunchaku-riddim) | 2020 | reggae, dancehall, dub, raggamuffin, roots, rub a dub… | Zarautz, Spain | — |
+| GHETTO GUNSHOT RECORDS | [GG 0704 - RAINY DAYS](https://ghettogunshotrecords.bandcamp.com/album/gg-0704-rainy-days) | 2021 | reggae, dancehall, digital, dub, party, raggamuffin… | Zarautz, Spain | — |
+| GHETTO GUNSHOT RECORDS | [GG 0705 ORIGINAL SMOKA](https://ghettogunshotrecords.bandcamp.com/album/gg-0705-original-smoka) | 2021 | reggae, dancehall, dub, raggamuffin, roots, rub a dub… | Zarautz, Spain | — |
+| GHETTO GUNSHOT RECORDS | [GG 0706 ARCADE GAME](https://ghettogunshotrecords.bandcamp.com/album/gg-0706-arcade-game) | 2021 | reggae, dancehall, dub, raggamuffin, roots, rub a dub… | Zarautz, Spain | — |
+| GHETTO GUNSHOT RECORDS | [MACONHA VIBEZ RIDDIM](https://ghettogunshotrecords.bandcamp.com/album/maconha-vibez-riddim) | 2019 | reggae, dancehall, dub, raggamuffin, roots, rub a dub… | Zarautz, Spain | — |
+| GHETTO GUNSHOT RECORDS | [MT40 TRIBUTE](https://ghettogunshotrecords.bandcamp.com/album/mt40-tribute) | 2021 | reggae, dancehall, digital, dub, night nurse, punnany… | Zarautz, Spain | — |
+| Ginger | [Ginger](https://gingerband.bandcamp.com/album/ginger-2) | 2022 | punk, rock, post-punk, zarautz | Zarautz, Spain | — |
+| Ginger | [Narras](https://gingerband.bandcamp.com/album/narras) | 2023 | rock, zarautz | Zarautz, Spain | — |
+| Goma-2 | [Goma-2 EP](https://goma-2.bandcamp.com/album/goma-2-ep) | 2023 | punk, fast punk, hardcore punk, new school hardcore, new york hardcore, political punk… | Zarautz, Spain | — |
+| GROMPY, GHETTO FYAH SOUND, GHETTO GUNSHOT | [GG 0703 GAME BOY RIDDIM](https://ghettogunshotrecords.bandcamp.com/album/gg-0703-game-boy-riddim) | 2020 | game boy music, reggae, chiptune, dancehall, digital, dub… | Zarautz, Spain | — |
 
 ### zumaia (11)
 
