@@ -98,7 +98,7 @@ function Tile({ album, variante, onAbrir }) {
 }
 
 export function Explorar({ archive }) {
-  // modo: null = deriva libre | {tipo:'tag'|'anio', valor, total}
+  // modo: null = sin filtro | {tipo:'tag'|'anio', valor, total}
   const [modo, setModo] = useState(null)
   // Muro inicial sembrado una vez por archivo; los mandos lo sustituyen.
   const semilla = useMemo(() => archive && muroLibre(archive.albums), [archive])
@@ -137,7 +137,7 @@ export function Explorar({ archive }) {
     setMuro(shuffle(releases).slice(0, TAM_MURO))
   }
 
-  const derivaLibre = () => {
+  const quitarFiltro = () => {
     setModo(null)
     setMuro(muroLibre(archive.albums))
   }
@@ -172,12 +172,12 @@ export function Explorar({ archive }) {
               <span className="donde-n">
                 {modo.total} {modo.total === 1 ? 'release' : 'releases'}
               </span>
-              <button className="salir" onClick={derivaLibre}>
-                × deriva libre
+              <button className="salir" onClick={quitarFiltro}>
+                × quitar filtro
               </button>
             </>
           ) : (
-            <span className="donde-libre">deriva libre · archivo entero</span>
+            <span className="donde-libre">sin filtro · archivo entero</span>
           )}
         </div>
       </div>
