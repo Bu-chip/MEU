@@ -1,0 +1,603 @@
+{
+    "meta": {
+        "que_es": "Pendientes de revisión manual tras el merge de candidates/2026-07 (PR #23). No bloquean el canónico.",
+        "date": "2026-07-13",
+        "canon_sospechosos_homonimos": [
+            {
+                "canon_id": 1205,
+                "nota": "heisenbergny.bandcamp.com — ¿Heisenberg de New York?",
+                "url": "https://heisenbergny.bandcamp.com/album/heisenberg"
+            },
+            {
+                "canon_id": 1464,
+                "nota": "crossover-darkbeat.bandcamp.com — URL apunta a 'fantasmo', ni siquiera coincide el título",
+                "url": "https://crossover-darkbeat.bandcamp.com/album/fantasmo"
+            },
+            {
+                "canon_id": 2095,
+                "nota": "meridianbandaus.bandcamp.com — ¿Meridian de Australia?",
+                "url": "https://meridianbandaus.bandcamp.com/album/meridian"
+            },
+            {
+                "canon_id": 2292,
+                "nota": "humano-ec.bandcamp.com — ¿HUMANO de Ecuador? (además la URL apunta a 'danza', no a 'HUMANO')",
+                "url": "https://humano-ec.bandcamp.com/album/danza"
+            }
+        ]
+    },
+    "sello_vs_sello": [
+        {
+            "candidato_url": "https://andaluciauberalles.bandcamp.com/album/m-rmol-nueva-generaci-n",
+            "canon_id": 1967,
+            "canon_url": "https://colillarecords.bandcamp.com/album/m-rmol-nueva-generaci-n",
+            "artist": "Mármol / Nueva Generación",
+            "title": "Mármol / Nueva Generación"
+        },
+        {
+            "candidato_url": "https://angelaaaux.bandcamp.com/album/wrap-your-troubles-in-dreams",
+            "canon_id": 957,
+            "canon_url": "https://heinerhendrix.bandcamp.com/album/wrap-your-troubles-in-dreams",
+            "artist": "Angela Aux",
+            "title": "Wrap Your Troubles in Dreams"
+        },
+        {
+            "candidato_url": "https://asfaltica.bandcamp.com/album/poemaria",
+            "canon_id": 1160,
+            "canon_url": "https://passionfarolas.bandcamp.com/album/poemaria",
+            "artist": "asfàltica + Passion Farolas",
+            "title": "Poemaria"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/12-fight-down-babylon-women-in-reggae",
+            "canon_id": 389,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/12-sista-kata-sistah-lore-fight-down-babylon-women-in-reggae",
+            "artist": "Sista Kata & Sistah Lore",
+            "title": "12\" Fight Down Babylon / Women in Reggae"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/7-east-bound",
+            "canon_id": 374,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/7-message-east-bound",
+            "artist": "Message",
+            "title": "7\" East Bound"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/7-hotter-the-battle",
+            "canon_id": 120,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/7-message-hotter-the-battle",
+            "artist": "Message",
+            "title": "7\" Hotter The Battle"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/7-life-is-free",
+            "canon_id": 218,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/7-david-fendah-life-is-free",
+            "artist": "David Fendah",
+            "title": "7\" Life is Free"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/7-live-not-for-vanity-pt-ii",
+            "canon_id": 204,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/7-clive-matthews-live-not-for-vanity-pt-ii",
+            "artist": "Clive Matthews",
+            "title": "7\" Live not for Vanity pt. II"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/7-more-differences",
+            "canon_id": 431,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/7-david-fendah-more-differences",
+            "artist": "David Fendah",
+            "title": "7\" More Differences"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/7-words-of-my-mouth",
+            "canon_id": 168,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/7-roberto-s-nchez-words-of-my-mouth",
+            "artist": "Roberto Sánchez",
+            "title": "7\" Words Of My Mouth"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/going-home",
+            "canon_id": 505,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/clive-matthews-going-home",
+            "artist": "Clive Matthews",
+            "title": "Going Home"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/showcase-i",
+            "canon_id": 442,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/message-showcase-i",
+            "artist": "Message",
+            "title": "Showcase I"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/showcase-ii",
+            "canon_id": 304,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/message-showcase-ii",
+            "artist": "Message",
+            "title": "Showcase II"
+        },
+        {
+            "candidato_url": "https://bassleemusic.bandcamp.com/album/sufferahs-time",
+            "canon_id": 293,
+            "canon_url": "https://alonereggaeshop.bandcamp.com/album/upyard-sufferahs-time",
+            "artist": "Upyard",
+            "title": "Sufferah's Time"
+        },
+        {
+            "candidato_url": "https://breathingthecore.bandcamp.com/album/compilation-vol-ii",
+            "canon_id": 1438,
+            "canon_url": "https://noredseas.bandcamp.com/album/no-dead-seas-no-red-seas-vol-ii",
+            "artist": "Various Artists",
+            "title": "Compilation Vol.II"
+        },
+        {
+            "candidato_url": "https://breathingthecore.bandcamp.com/album/compilation-vol-iii",
+            "canon_id": 2122,
+            "canon_url": "https://therealhfn.bandcamp.com/album/hfn-various-compilation-vol-iii",
+            "artist": "Various Artists",
+            "title": "Compilation Vol III"
+        },
+        {
+            "candidato_url": "https://buskerjuice.bandcamp.com/album/busker-juice",
+            "canon_id": 1272,
+            "canon_url": "https://buskerjuice.bandcamp.com/album/busker-juice-2",
+            "artist": "Busker Juice",
+            "title": "Busker Juice"
+        },
+        {
+            "candidato_url": "https://colillarecords.bandcamp.com/album/nuevo-sol",
+            "canon_id": 306,
+            "canon_url": "https://andaluciauberalles.bandcamp.com/album/m-rmol-nuevo-sol-lp",
+            "artist": "Marmol",
+            "title": "Nuevo Sol"
+        },
+        {
+            "candidato_url": "https://discosbanana1.bandcamp.com/album/canciones-b-licas-para-j-venes",
+            "canon_id": 1113,
+            "canon_url": "https://jgcproducciones.bandcamp.com/album/canciones-b-licas-para-jovenes-st",
+            "artist": "SISTEMA DE ENTRETENIMIENTO",
+            "title": "Canciones Bélicas para Jóvenes"
+        },
+        {
+            "candidato_url": "https://discosbanana1.bandcamp.com/album/cromosoma",
+            "canon_id": 190,
+            "canon_url": "https://flexidiscos.bandcamp.com/album/cromosoma",
+            "artist": "CROMOSOMA",
+            "title": "Cromosoma"
+        },
+        {
+            "candidato_url": "https://discosbanana1.bandcamp.com/album/los-valientes-andan-solos",
+            "canon_id": 922,
+            "canon_url": "https://politburorecordingfiasco.bandcamp.com/album/los-paniks-los-valientes-andan-solos",
+            "artist": "LOS PANIKS",
+            "title": "Los valientes andan solos"
+        },
+        {
+            "candidato_url": "https://esnebidearecords.bandcamp.com/album/one-year-compilation",
+            "canon_id": 427,
+            "canon_url": "https://wavememory.net/album/one-year-compilation",
+            "artist": "Various Artists",
+            "title": "One Year Compilation"
+        },
+        {
+            "candidato_url": "https://esnebidearecords.bandcamp.com/album/underground-sounds",
+            "canon_id": 169,
+            "canon_url": "https://soundsofsurvival.bandcamp.com/album/sounds-of-survival-from-ukrainian-underground",
+            "artist": "Various Artists",
+            "title": "Underground Sounds"
+        },
+        {
+            "candidato_url": "https://inthousandlakes1.bandcamp.com/album/age-of-decay",
+            "canon_id": 612,
+            "canon_url": "https://inthousandlakes.bandcamp.com/album/age-of-decay",
+            "artist": "IN THOUSAND LAKES",
+            "title": "Age Of Decay"
+        },
+        {
+            "candidato_url": "https://lanegradiscos.bandcamp.com/album/alta-traici-n-2",
+            "canon_id": 310,
+            "canon_url": "https://aediy.bandcamp.com/album/sh-ck-alta-traici-n-ae-006-agotado-sold-out",
+            "artist": "Shöck",
+            "title": "Alta Traición"
+        },
+        {
+            "candidato_url": "https://meyorecords.bandcamp.com/album/death",
+            "canon_id": 1254,
+            "canon_url": "https://familyspreerecordings.bandcamp.com/album/fsr007-king-cayman-death-lp",
+            "artist": "KING CAYMAN",
+            "title": "DEATH"
+        },
+        {
+            "candidato_url": "https://monasteriodeculturarec.bandcamp.com/album/danze-zizek-danze",
+            "canon_id": 1384,
+            "canon_url": "https://miusichole.bandcamp.com/album/los-cosm-ticos-danze-zizek-danze-2016-mh024",
+            "artist": "Los Cosméticos",
+            "title": "DANZE! ZIZEK! DANZE!"
+        },
+        {
+            "candidato_url": "https://monasteriodeculturarec.bandcamp.com/album/puro-pl-stico",
+            "canon_id": 1132,
+            "canon_url": "https://miusichole.bandcamp.com/album/los-cosm-ticos-puro-pl-stico-2018-mh025",
+            "artist": "Los Cosméticos",
+            "title": "Puro Plástico"
+        },
+        {
+            "candidato_url": "https://muertematarrecords.bandcamp.com/album/zandergraun",
+            "canon_id": 979,
+            "canon_url": "https://cosmictentacles.bandcamp.com/album/zandergraun",
+            "artist": "MEIDO",
+            "title": "Zandergraun"
+        },
+        {
+            "candidato_url": "https://mvega.bandcamp.com/album/eolian-dawn",
+            "canon_id": 728,
+            "canon_url": "https://sentenciarecords.bandcamp.com/album/eolian-dawn",
+            "artist": "Imbernon & Mikel Vega",
+            "title": "Eolian Dawn"
+        },
+        {
+            "candidato_url": "https://radixrecords.bandcamp.com/album/el-foso",
+            "canon_id": 2345,
+            "canon_url": "https://miusichole.bandcamp.com/album/despe-aperros-el-foso-7-2013-mh019",
+            "artist": "Despeñaperros",
+            "title": "El Foso"
+        },
+        {
+            "candidato_url": "https://radixrecords.bandcamp.com/album/zandergraun",
+            "canon_id": 979,
+            "canon_url": "https://cosmictentacles.bandcamp.com/album/zandergraun",
+            "artist": "Meido",
+            "title": "Zandergraun"
+        },
+        {
+            "candidato_url": "https://rosebudband.bandcamp.com/album/rosebud",
+            "canon_id": 1427,
+            "canon_url": "https://rosebudnoise.bandcamp.com/album/rosebud-3",
+            "artist": "Rosebud",
+            "title": "Rosebud"
+        },
+        {
+            "candidato_url": "https://santiagodelgadoylosrunawaylovers.bandcamp.com/album/por-amor-al-rock-n-roll",
+            "canon_id": 729,
+            "canon_url": "https://runawaylovers.bandcamp.com/album/fsr074-santiago-delgado-y-los-runaway-lovers-por-amor-al-rocknroll-10-aniversario-lp",
+            "artist": "SANTIAGO DELGADO Y LOS RUNAWAY LOVERS",
+            "title": "POR AMOR AL ROCK´N´ROLL"
+        },
+        {
+            "candidato_url": "https://slowmoband.bandcamp.com/album/slowmo-ep",
+            "canon_id": 2156,
+            "canon_url": "https://slowmoayachi.bandcamp.com/album/slowmo-ayachi-ep",
+            "artist": "Slowmo",
+            "title": "Slowmo EP"
+        },
+        {
+            "candidato_url": "https://staffofficial.bandcamp.com/album/staff",
+            "canon_id": 1559,
+            "canon_url": "https://staff.bandcamp.com/album/staff-ep",
+            "artist": "STAFF",
+            "title": "STAFF"
+        },
+        {
+            "candidato_url": "https://vertebraebm.bandcamp.com/album/behold-the-unlighted",
+            "canon_id": 226,
+            "canon_url": "https://hexandhell.bandcamp.com/album/behold-the-unlighted",
+            "artist": "Hex",
+            "title": "Behold the Unlighted"
+        },
+        {
+            "candidato_url": "https://wolkokrots.bandcamp.com/album/etwas",
+            "canon_id": 2015,
+            "canon_url": "https://tanukirecords.bandcamp.com/album/etwas",
+            "artist": "Ilia Belorukov, Alfredo Costa Monteiro, Miguel A. García",
+            "title": "Etwas"
+        },
+        {
+            "candidato_url": "https://wolkokrots.bandcamp.com/album/invanskrue",
+            "canon_id": 2012,
+            "canon_url": "https://intonema.bandcamp.com/album/invanskrue",
+            "artist": "Ilia Belorukov, Miguel A. García, Jason Kahn, Frantz Loriot",
+            "title": "Invanskrue"
+        },
+        {
+            "candidato_url": "https://xedh.bandcamp.com/album/red-river-rio-tinto",
+            "canon_id": 1361,
+            "canon_url": "https://pilgrimtalk.bandcamp.com/album/red-river-rio-tinto",
+            "artist": "miguel a. garcía",
+            "title": "red river / rio tinto"
+        }
+    ],
+    "internos_ambiguos": [
+        {
+            "artist": "Mármol",
+            "title": "Declaración Total de Guerra",
+            "elegido": "https://andaluciauberalles.bandcamp.com/album/declaraci-n-total-de-guerra",
+            "alternativas": [
+                "https://colillarecords.bandcamp.com/album/declaraci-n-total-de-guerra",
+                "https://flexidiscos.bandcamp.com/album/declaraci-n-total-de-guerra"
+            ]
+        },
+        {
+            "artist": "Yaw",
+            "title": "Malda",
+            "elegido": "https://augerecords.bandcamp.com/album/malda",
+            "alternativas": [
+                "https://caleiah.bandcamp.com/album/malda",
+                "https://radixrecords.bandcamp.com/album/malda-2"
+            ]
+        },
+        {
+            "artist": "Tooth",
+            "title": "Errautsetatik",
+            "elegido": "https://azkarzintak.bandcamp.com/album/errautsetatik",
+            "alternativas": [
+                "https://iparragirrerecords.bandcamp.com/album/errautsetatik",
+                "https://saltamarges.bandcamp.com/album/errautsetatik"
+            ]
+        },
+        {
+            "artist": "Joseba Irazoki",
+            "title": "Gitarra Lekeitioak (Onomatopeikoa II)",
+            "elegido": "https://bidehuts.bandcamp.com/album/gitarra-lekeitioak-onomatopeikoa-ii",
+            "alternativas": [
+                "https://otoroku.bandcamp.com/album/gitarra-lekeitioak-onomatopeikoa-ii"
+            ]
+        },
+        {
+            "artist": "Gora Japon",
+            "title": "s/t",
+            "elegido": "https://bidehuts.bandcamp.com/album/s-t",
+            "alternativas": [
+                "https://bidehuts.bandcamp.com/album/s-t-3"
+            ]
+        },
+        {
+            "artist": "Los Animalitos del Bosque",
+            "title": "Los Animalitos del Bosque",
+            "elegido": "https://chin-chinrecordsmundiales.bandcamp.com/album/los-animalitos-del-bosque",
+            "alternativas": [
+                "https://chin-chinrecordsmundiales.bandcamp.com/album/los-animalitos-del-bosque-3"
+            ]
+        },
+        {
+            "artist": "Rafael Berrio",
+            "title": "Diarios",
+            "elegido": "https://diarios.bandcamp.com/album/diarios",
+            "alternativas": [
+                "https://rafaberrio.bandcamp.com/album/diarios"
+            ]
+        },
+        {
+            "artist": "Exnovios",
+            "title": "Exnovios",
+            "elegido": "https://exnovios1.bandcamp.com/album/exnovios-2",
+            "alternativas": [
+                "https://exnovios1.bandcamp.com/album/exnovios-5"
+            ]
+        },
+        {
+            "artist": "Río Arga",
+            "title": "RÍO ARGA",
+            "elegido": "https://rioarga.bandcamp.com/album/r-o-arga-2",
+            "alternativas": [
+                "https://federaciondeuniversospop.bandcamp.com/album/r-o-arga",
+                "https://mondocanaperecords.bandcamp.com/album/r-o-arga",
+                "https://mondocanaperecords.bandcamp.com/album/r-o-arga-2",
+                "https://rioarga.bandcamp.com/album/r-o-arga-3"
+            ]
+        },
+        {
+            "artist": "Iban Arana Productions",
+            "title": "EXVOTO",
+            "elegido": "https://ibanaranaindependent666.bandcamp.com/album/exvoto",
+            "alternativas": [
+                "https://ibanaranaindependent666.bandcamp.com/album/exvoto-2",
+                "https://ibanaranaindependent666.bandcamp.com/album/exvoto-3"
+            ]
+        },
+        {
+            "artist": "JMA",
+            "title": "Fábrica De Muerte",
+            "elegido": "https://jma-band.bandcamp.com/album/f-brica-de-muerte",
+            "alternativas": [
+                "https://smilingisnotacrimerecords.bandcamp.com/album/f-brica-de-muerte"
+            ]
+        },
+        {
+            "artist": "Kide",
+            "title": "Kide",
+            "elegido": "https://kide.bandcamp.com/album/kide",
+            "alternativas": [
+                "https://kide.bandcamp.com/album/kide-3"
+            ]
+        },
+        {
+            "artist": "Calathea ",
+            "title": "Flowers & Knives",
+            "elegido": "https://knr-calathea.bandcamp.com/album/flowers-knives",
+            "alternativas": [
+                "https://nofuneralsound.bandcamp.com/album/flowers-knives",
+                "https://wearecalathea.bandcamp.com/album/flowers-knives"
+            ]
+        },
+        {
+            "artist": "LE MANS",
+            "title": "Mi Novela Autobiográfica",
+            "elegido": "https://lemansmusic.bandcamp.com/album/mi-novela-autobiogra-fica",
+            "alternativas": [
+                "https://lemansmusic.bandcamp.com/album/mi-novela-autobiogra-fica-2"
+            ]
+        },
+        {
+            "artist": "Los Galerna",
+            "title": "Surfusion",
+            "elegido": "https://losgalerna.bandcamp.com/album/surfusion",
+            "alternativas": [
+                "https://losgalernasurf.bandcamp.com/album/surfusion"
+            ]
+        },
+        {
+            "artist": "Nuevos Hobbies",
+            "title": "Los nuevos hobbies",
+            "elegido": "https://losnuevoshobbies.bandcamp.com/album/los-nuevos-hobbies",
+            "alternativas": [
+                "https://losnuevoshobbies.bandcamp.com/album/los-nuevos-hobbies-2"
+            ]
+        },
+        {
+            "artist": "Lurrin",
+            "title": "Kandela Baten Argitan",
+            "elegido": "https://lurrin.bandcamp.com/album/kandela-baten-argitan",
+            "alternativas": [
+                "https://lurrinoficial.bandcamp.com/album/kandela-baten-argitan"
+            ]
+        },
+        {
+            "artist": "The Rodeo Idiot Engine",
+            "title": "Consequences",
+            "elegido": "https://music.therodeoidiotengine.com/album/consequences",
+            "alternativas": [
+                "https://throatruinerrecords.bandcamp.com/album/consequences"
+            ]
+        },
+        {
+            "artist": "Cordura",
+            "title": "Ultravioleta",
+            "elegido": "https://niunpeloderubiasrecords.bandcamp.com/album/ultravioleta",
+            "alternativas": [
+                "https://quebrantarecords.bandcamp.com/album/ultravioleta"
+            ]
+        },
+        {
+            "artist": "BRAVA & METRAKIT",
+            "title": "YONKI DEL BAJO",
+            "elegido": "https://untalasalsa.bandcamp.com/album/yonki-del-bajo",
+            "alternativas": [
+                "https://yonkidelbajo.bandcamp.com/album/yonki-del-bajo"
+            ]
+        }
+    ],
+    "urls_desplazadas": [
+        {
+            "canon_id": 16,
+            "url_corrupta": "https://bloxhamtapes.bandcamp.com/album/man-is-an-insect",
+            "url_correcta": "https://atatatat.bandcamp.com/album/at"
+        },
+        {
+            "canon_id": 1751,
+            "url_corrupta": "https://elbisrever.bandcamp.com/album/holaaa-2",
+            "url_correcta": "https://elbisrever.bandcamp.com/album/holaaa"
+        },
+        {
+            "canon_id": 1942,
+            "url_corrupta": "https://h101.bandcamp.com/album/101001",
+            "url_correcta": "https://h101.bandcamp.com/album/1010001"
+        },
+        {
+            "canon_id": 1945,
+            "url_corrupta": "https://h101.bandcamp.com/album/101001",
+            "url_correcta": "https://h101.bandcamp.com/album/10101"
+        },
+        {
+            "canon_id": 2173,
+            "url_corrupta": "https://martinikulture.bandcamp.com/album/god-killing-himself-volume-ii-paper-metal",
+            "url_correcta": "https://iikrisgm.bandcamp.com/album/--3"
+        },
+        {
+            "canon_id": 1243,
+            "url_corrupta": "https://boniver.bandcamp.com/album/i-i",
+            "url_correcta": "https://iikrisgm.bandcamp.com/album/i"
+        },
+        {
+            "canon_id": 2124,
+            "url_corrupta": "https://cameronwilson.bandcamp.com/album/ii-i-iv",
+            "url_correcta": "https://iikrisgm.bandcamp.com/album/i-iv"
+        },
+        {
+            "canon_id": 2190,
+            "url_corrupta": "https://ongoingbox.bandcamp.com/album/hsob086-vv-ii-ss-ii-oo-nn-i-wait-in-the-darkness",
+            "url_correcta": "https://iikrisgm.bandcamp.com/album/oo"
+        },
+        {
+            "canon_id": 2050,
+            "url_corrupta": "https://x-img.bandcamp.com/album/self-aware-ii-x-img04",
+            "url_correcta": "https://iikrisgm.bandcamp.com/album/x"
+        },
+        {
+            "canon_id": 2257,
+            "url_corrupta": "https://sigloxx.bandcamp.com/album/dreams-of-pleasure-ii",
+            "url_correcta": "https://iikrisgm.bandcamp.com/album/x-x"
+        },
+        {
+            "canon_id": 2153,
+            "url_corrupta": "https://irixx.bandcamp.com/album/etudes-ii",
+            "url_correcta": "https://iikrisgm.bandcamp.com/album/xx"
+        },
+        {
+            "canon_id": 2106,
+            "url_corrupta": "https://andybeatz.bandcamp.com/album/couleurs-ii",
+            "url_correcta": "https://iikrisgm.bandcamp.com/album/y"
+        },
+        {
+            "canon_id": 1543,
+            "url_corrupta": "https://inigolunani.bandcamp.com/album/lni05",
+            "url_correcta": "https://inigolunani.bandcamp.com/album/lni01"
+        },
+        {
+            "canon_id": 1541,
+            "url_corrupta": "https://inigolunani.bandcamp.com/album/lni05",
+            "url_correcta": "https://inigolunani.bandcamp.com/album/lni02"
+        },
+        {
+            "canon_id": 1540,
+            "url_corrupta": "https://inigolunani.bandcamp.com/album/lni05",
+            "url_correcta": "https://inigolunani.bandcamp.com/album/lni03"
+        },
+        {
+            "canon_id": 1533,
+            "url_corrupta": "https://inigolunani.bandcamp.com/album/lni05",
+            "url_correcta": "https://inigolunani.bandcamp.com/album/lni04"
+        },
+        {
+            "canon_id": 263,
+            "url_corrupta": "https://inigolunani.bandcamp.com/album/lni05",
+            "url_correcta": "https://inigolunani.bandcamp.com/album/lni06-2"
+        },
+        {
+            "canon_id": 2300,
+            "url_corrupta": "https://motorsex.bandcamp.com/album/single-iii",
+            "url_correcta": "https://motorsex.bandcamp.com/album/single-vii"
+        },
+        {
+            "canon_id": 2306,
+            "url_corrupta": "https://noname-music.bandcamp.com/album/noname",
+            "url_correcta": "https://n0name.bandcamp.com/album/n-name"
+        },
+        {
+            "canon_id": 882,
+            "url_corrupta": "https://thedaltonics.bandcamp.com/album/3",
+            "url_correcta": "https://thedaltonics.bandcamp.com/album/the-daltonics"
+        },
+        {
+            "canon_id": 1507,
+            "url_corrupta": "https://txopet.bandcamp.com/album/ostabe-zuloan-remixak",
+            "url_correcta": "https://txopet.bandcamp.com/album/ostabe-zuloan"
+        }
+    ],
+    "retenidos_homonimo": [
+        {
+            "candidato_url": "https://crossoverbilbao.bandcamp.com/album/crossover-2",
+            "artist": "Crossover",
+            "title": "Crossover",
+            "canon_id": 1464,
+            "nota": "retenido hasta revisar el homónimo del canónico"
+        },
+        {
+            "candidato_url": "https://meridianrockband.bandcamp.com/album/meridian",
+            "artist": "Meridian",
+            "title": "Meridian",
+            "canon_id": 2095,
+            "nota": "retenido hasta revisar el homónimo del canónico"
+        }
+    ]
+}
