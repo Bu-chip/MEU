@@ -58,9 +58,10 @@ curación la decide una persona.
   [`docs/scraping-method.md`](docs/scraping-method.md).
 - Scripts: [`scripts/discover_tags.py`](scripts/), `research_tags.py`, `probe_tag_pages.py`.
   Workflows: `discover-tags.yml`, `research-tags.yml` (cron mensual + ejecución manual).
-- El scraper escribe **solo** ficheros de candidatos (`data/candidates_YYYY-MM.json`),
-  nunca el canónico. Deduplica por `album_id` + URL normalizada contra el catálogo y contra
-  `rejected.json` (las URLs descartadas no se vuelven a proponer).
+- El scraper escribe **solo** ficheros de revisión de candidatos bajo `data/` (p.ej.
+  `revision_2026-07.json`), nunca el canónico; la lista de tags a rastrear vive en
+  `data/tag_candidates.json`. Deduplica por `album_id` + URL normalizada contra el catálogo
+  y contra `rejected.json` (las URLs descartadas no se vuelven a proponer).
 
 ## Estructura del repo
 
