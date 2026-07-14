@@ -1,7 +1,6 @@
 import './Puertas.css'
 
-// «sobre el proyecto» queda inerte igual que en los mockups congelados;
-// tendrá destino cuando el diseño lo defina.
+// «sobre el proyecto» ya tiene destino: #/sobre (spec de la página SOBRE).
 export function Puertas({ activa }) {
   return (
     <nav className="puertas">
@@ -11,7 +10,7 @@ export function Puertas({ activa }) {
       <a href="#/archivo" className={`puerta ${activa === 'archivo' ? 'activa' : ''}`}>
         ARCHIVO
       </a>
-      <a href="#/" className="sobre" onClick={(e) => e.preventDefault()}>
+      <a href="#/sobre" className={`sobre ${activa === 'sobre' ? 'activa' : ''}`}>
         sobre el proyecto
       </a>
     </nav>

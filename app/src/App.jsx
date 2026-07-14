@@ -5,11 +5,13 @@ import { Puertas } from './components/Puertas.jsx'
 import { Explorar } from './pages/Explorar.jsx'
 import { Archivo } from './pages/Archivo.jsx'
 import { Ficha } from './pages/Ficha.jsx'
+import { Sobre } from './pages/Sobre.jsx'
 import './App.css'
 
 const PAGINAS = {
   explorar: Explorar,
   archivo: Archivo,
+  sobre: Sobre,
 }
 
 export default function App() {
