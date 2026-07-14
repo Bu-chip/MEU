@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 //   #/                → EXPLORAR
 //   #/archivo?q=…     → ARCHIVO con filtros compartibles
 //   #/disco/:id       → FICHA (id del JSON como clave estable)
+//   #/sobre           → SOBRE (texto fijo del proyecto)
 // Cualquier hash desconocido cae en EXPLORAR.
 export function parseRoute(hash) {
   const raw = hash.replace(/^#/, '')
@@ -14,6 +15,7 @@ export function parseRoute(hash) {
   const disco = path.match(/^\/disco\/(\d+)$/)
   if (disco) return { page: 'disco', id: Number(disco[1]), params }
   if (path === '/archivo') return { page: 'archivo', id: null, params }
+  if (path === '/sobre') return { page: 'sobre', id: null, params }
   return { page: 'explorar', id: null, params }
 }
 
