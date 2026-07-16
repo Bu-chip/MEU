@@ -57,6 +57,12 @@ jobs:
           mkdir -p publish/v2
           rsync -a app/dist/ publish/v2/
           touch publish/.nojekyll
+          # Dominio custom: el paso de publicación hace `git init` + push
+          # --force de un árbol nuevo en cada deploy, así que borraría el
+          # CNAME que la UI de Pages escribe en la rama gh-pages. Lo
+          # regeneramos aquí (después de los rsync, para que nada lo pise)
+          # y así el dominio sobrevive a cada deploy.
+          echo "mapa.queimadacircuitrecords.com" > publish/CNAME
 
       - name: Publish to gh-pages branch
         env:
