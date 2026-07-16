@@ -141,9 +141,8 @@ export function Ficha({ route, archive }) {
       </div>
 
       <footer className="pie">
-        la ficha donde desembocan las dos puertas · tags clicables → filtro en ARCHIVO ·
-        «otro al azar» = seguir la deriva sin volver atrás · portada tratada, nunca foto
-        limpia; sin portada = hueco honesto
+        Toca un tag para filtrar ARCHIVO por él. OTRO AL AZAR abre otra ficha cualquiera.
+        Si el disco no tiene portada en Bandcamp, se muestra un hueco en su lugar.
       </footer>
     </>
   )
