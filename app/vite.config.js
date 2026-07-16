@@ -3,9 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // Convivencia (F1–F4): la app vive en /MEU/v2/ mientras el sitio vanilla
-  // sigue en /MEU/. El cutover de F5 cambia esta base.
-  base: '/MEU/v2/',
+  // Post-cutover (F5): la app es el sitio y se sirve desde la raíz del
+  // dominio custom (mapa.queimadacircuitrecords.com). El vanilla salió del
+  // deploy; su fuente sigue en main. (Antes: base '/MEU/v2/' en convivencia.)
+  base: '/',
   server: {
     port: parseInt(process.env.PORT || '5173'),
     fs: {

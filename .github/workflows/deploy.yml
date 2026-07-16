@@ -1,9 +1,9 @@
-# Deploy híbrido de convivencia (F1–F4, opción A de la Fase 0):
-#   raíz de gh-pages  = copia fiel del sitio vanilla tal cual está en main
-#   /v2/              = build de Vite de app/ (base /MEU/v2/)
-# GitHub Pages debe apuntar a la rama gh-pages (cambio único de settings).
-# El sitio vanilla sigue byte-idéntico en bu-chip.github.io/MEU/ hasta el
-# cutover de F5, que moverá el build a la raíz.
+# Deploy post-cutover (F5):
+#   raíz de gh-pages = build de Vite de app/ (base '/'), servido en el
+#                      dominio custom mapa.queimadacircuitrecords.com.
+# El sitio vanilla salió del deploy en el cutover: su fuente (index.html,
+# assets/, …) sigue intacta en main y es reversible (ver paso Assemble site).
+# GitHub Pages apunta a la rama gh-pages; el CNAME se regenera en cada deploy.
 name: Deploy to GitHub Pages
 
 on:
@@ -40,22 +40,19 @@ jobs:
         working-directory: app
         run: npm run build
 
-      - name: Assemble site (vanilla en raíz + app en /v2/)
+      - name: Assemble site (app de Vite en la raíz)
         run: |
           set -euo pipefail
           rm -rf publish
           mkdir publish
-          # Espejo fiel del sitio vanilla: todo main menos el código de la
-          # app, el CI y el propio directorio de publicación. Así ninguna
-          # URL servida hoy (index, assets/, data/, design/, …) se rompe.
-          rsync -a \
-            --exclude '.git' \
-            --exclude '.github' \
-            --exclude 'app' \
-            --exclude 'publish' \
-            ./ publish/
-          mkdir -p publish/v2
-          rsync -a app/dist/ publish/v2/
+          # Cutover F5: el build de la app (base '/') ES el sitio y va a la
+          # raíz de publish/. El JSON canónico viaja dentro del build,
+          # hasheado en dist/assets (import ?url en useArchive.js), así que
+          # no hace falta copiar data/ aparte.
+          rsync -a app/dist/ publish/
+          # El sitio vanilla ya NO se copia al deploy. Su fuente (index.html,
+          # assets/css, assets/js, data/, …) sigue intacta en main; esto es
+          # reversible restaurando el rsync del espejo raíz + build en /v2/.
           touch publish/.nojekyll
           # Dominio custom: el paso de publicación hace `git init` + push
           # --force de un árbol nuevo en cada deploy, así que borraría el
