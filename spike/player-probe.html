@@ -90,6 +90,13 @@
   para esa variante</span> — apunta cuál. Si ninguna suena sola, H2 descartada.
   Nota: prueba también tocando el botón dos veces seguidas — en iPad el primer toque cuenta
   como gesto de usuario y podría desbloquear el audio del segundo intento.</p>
+  <p class="nota"><b>Lo que dice la investigación:</b> Bandcamp declara oficialmente que el
+  player embebido NO tiene auto-start (política deliberada), ningún integrador serio
+  (Jetpack, Iframely…) conoce tal parámetro, y el parser ignora segmentos desconocidos.
+  El <code>autoplay=1</code> que circula por ahí es un rumor de CodePen sin evidencia de que
+  funcione. Además, en iPad WebKit exige un toque real para audio con sonido aunque el
+  parámetro existiera. <span class="avisa">Expectativa: ninguna variante arranca sola.</span>
+  Esta prueba es la confirmación empírica.</p>
 
   <div id="variantes"></div>
   <iframe id="player-autoplay" height="120" allow="autoplay" src="about:blank"></iframe>
@@ -103,6 +110,12 @@
   con origen y payload. Dale al play, pausa, cambia de pista y <b>deja acabar una pista</b>
   mirando el panel. <span class="ok">Si aparecen mensajes verdes (origen bandcamp) al terminar
   una pista, H3 tiene recorrido.</span> Si el panel se queda en silencio, H3 descartada.</p>
+  <p class="nota"><b>Lo que dice la investigación:</b> el bundle del player emite UN único
+  mensaje en toda su vida — la cadena <code>"playerinited"</code> al terminar de cargar — y no
+  escucha ninguno (no se le pueden mandar órdenes). <span class="avisa">Expectativa: verás un
+  «playerinited» verde por cada iframe que cargue y silencio absoluto después</span> — ni play,
+  ni pausa, ni fin de pista. Si al dejar acabar el disco no aparece nada, H3 queda descartada
+  empíricamente.</p>
   <button id="btn-limpiar">LIMPIAR PANEL</button>
   <button id="btn-marca">MARCAR MOMENTO (separador)</button>
   <div id="log"><div class="msg otro">— esperando mensajes… (los de origen bandcamp.com saldrán en verde) —</div></div>
