@@ -100,7 +100,10 @@
   border: 2px solid var(--tinta);
   cursor: default;
 }
-.acciones button.azar {
+/* azar y compartir comparten reglas: misma tira de botones encadenados
+   (border-left: none apoya el borde en el elemento anterior) */
+.acciones button.azar,
+.acciones button.compartir {
   font-family: var(--display);
   text-transform: uppercase;
   font-weight: 700;
@@ -113,7 +116,8 @@
   padding: 12px 22px 14px 22px;
   cursor: pointer;
 }
-.acciones button.azar:hover { background: var(--lima); }
+.acciones button.azar:hover,
+.acciones button.compartir:hover { background: var(--lima); }
 .player { margin-top: 18px; }
 
 /* similares: líneas de registro con la cuenta de tags compartidos */
