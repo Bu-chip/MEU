@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { BandcampPlayer } from './BandcampPlayer.jsx'
+import { useCompartir } from '../hooks/useCompartir.js'
 import './FichaBar.css'
 
 // Mini-ficha inferior de los mockups: respuesta inmediata al click en
@@ -8,6 +9,8 @@ import './FichaBar.css'
 // que saltar de tile a tile desmonta el iframe anterior (nunca dos
 // sonando a la vez). Los 27 sin album_id no muestran player ni hueco.
 export function FichaBar({ album, onCerrar }) {
+  const { compartir, copiado } = useCompartir(album)
+
   useEffect(() => {
     if (!album) return
     const onKey = (e) => {
@@ -39,9 +42,19 @@ export function FichaBar({ album, onCerrar }) {
         </div>
       )}
       <div className="acciones">
-        <a className="ir-ficha" href={`#/disco/${album.id}`}>
-          FICHA →
-        </a>
+        {/* Compartir compacto: mismo useCompartir que la FICHA; el aviso
+            del fallback aquí es el swap de glifo ↑ → ✓ (U+2713, sin
+            variante emoji, monocromo garantizado). Clase propia
+            compartir-mini: esta columna también se llama .acciones y la
+            regla .acciones button.compartir de Ficha.css la alcanzaría. */}
+        <div className="fila-acciones">
+          <button className="compartir-mini" onClick={compartir} aria-label="compartir" title="compartir">
+            {copiado ? '✓' : '↑'}
+          </button>
+          <a className="ir-ficha" href={`#/disco/${album.id}`}>
+            FICHA →
+          </a>
+        </div>
         {album.url && album.album_id ? (
           <a href={album.url} target="_blank" rel="noopener noreferrer">
             abrir en bandcamp ↗

@@ -30,6 +30,13 @@
 }
 .ficha-bar a { color: var(--papel); font-size: 11px; text-decoration: underline; }
 .ficha-bar a:hover { background: var(--lima); color: var(--tinta); }
+/* fila ↑ | FICHA →: dos cajas hermanas de igual altura, alineadas al
+   borde derecho como el resto de la columna de acciones */
+.ficha-bar .fila-acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
 .ficha-bar a.ir-ficha {
   font-family: var(--display);
   text-transform: uppercase;
@@ -39,6 +46,22 @@
   border: 1px solid var(--papel);
   padding: 2px 10px;
 }
+/* compartir compacto: caja clonada de ir-ficha, en negativo como toda
+   la barra (papel sobre tinta, lima en interacción). compartir-mini y no
+   compartir: Ficha.css estila .acciones button.compartir y esta columna
+   también se llama .acciones */
+.ficha-bar button.compartir-mini {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: inherit;
+  background: transparent;
+  color: var(--papel);
+  border: 1px solid var(--papel);
+  padding: 2px 10px;
+  cursor: pointer;
+}
+.ficha-bar button.compartir-mini:hover { background: var(--lima); color: var(--tinta); }
 .ficha-bar .stub { font-size: 9px; opacity: .55; }
 .ficha-bar .cerrar {
   position: absolute;
