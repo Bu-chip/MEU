@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { getIndices } from '../utils/indices.js'
 import { similares } from '../utils/similares.js'
 import { navegar, hashArchivo } from '../hooks/useHashRoute.js'
+import { useCompartir } from '../hooks/useCompartir.js'
 import { Portada } from '../components/Portada.jsx'
 import { BandcampPlayer } from '../components/BandcampPlayer.jsx'
 import './Ficha.css'
@@ -17,11 +18,8 @@ import './Ficha.css'
 //             sin link muerto ni player
 //   sinurl  → url null (16): ficha documental, sin ESCUCHAR ni player
 //
-// COMPARTIR entrega la URL del stub estático /d/:id/ (og:tags por disco),
-// no el hash: es lo que hace que el chat pinte portada y título. Dominio
-// fijo a propósito — también desde dev se comparte la URL de producción,
-// que es la única con stub detrás.
-const DOMINIO = 'https://mapa.queimadacircuitrecords.com'
+// COMPARTIR: lógica y racional en hooks/useCompartir.js (compartida con
+// el FichaBar); aquí el aviso del fallback es el texto ENLACE COPIADO.
 
 function Retorno() {
   return (
@@ -34,9 +32,10 @@ function Retorno() {
 }
 
 export function Ficha({ route, archive }) {
-  // El aviso ENLACE COPIADO guarda el id del disco copiado, no un booleano:
-  // así muere solo al navegar a otra ficha, sin efecto que lo resetee.
-  const [copiadoId, setCopiadoId] = useState(null)
+  // El álbum se resuelve antes de los early-returns porque el hook de
+  // compartir (reglas de hooks) debe llamarse incondicionalmente.
+  const album = archive ? getIndices(archive).byId.get(route.id) : null
+  const { compartir, copiado } = useCompartir(album)
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -50,8 +49,6 @@ export function Ficha({ route, archive }) {
       </>
     )
   }
-
-  const album = getIndices(archive).byId.get(route.id)
 
   if (!album) {
     return (
@@ -77,24 +74,6 @@ export function Ficha({ route, archive }) {
       otro = archive.albums[Math.floor(Math.random() * archive.albums.length)]
     } while (otro.id === album.id)
     navegar(`#/disco/${otro.id}`)
-  }
-
-  // Web Share donde exista (Safari iPad: hoja nativa del sistema); si no,
-  // copiar al portapapeles con aviso efímero en el propio botón. Cancelar
-  // la hoja lanza AbortError: no es un error, se traga.
-  const compartir = async () => {
-    const url = `${DOMINIO}/d/${album.id}/`
-    if (navigator.share) {
-      try {
-        await navigator.share({ title: `${album.artist} — ${album.title}`, url })
-      } catch {
-        /* hoja cancelada */
-      }
-    } else {
-      await navigator.clipboard.writeText(url)
-      setCopiadoId(album.id)
-      setTimeout(() => setCopiadoId(null), 2000)
-    }
   }
 
   return (
@@ -140,7 +119,7 @@ export function Ficha({ route, archive }) {
               OTRO AL AZAR ⟳
             </button>
             <button className="compartir" onClick={compartir}>
-              {copiadoId === album.id ? 'ENLACE COPIADO' : 'COMPARTIR ↑'}
+              {copiado ? 'ENLACE COPIADO' : 'COMPARTIR ↑'}
             </button>
           </div>
           {poblacion === 'ok' && (
