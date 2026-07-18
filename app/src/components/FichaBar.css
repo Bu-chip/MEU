@@ -93,4 +93,12 @@
 @media (max-width: 820px) {
   .ficha-bar.con-player { grid-template-columns: 1fr auto; }
   .ficha-bar .player-mini { grid-column: 1 / -1; }
+  /* Acciones compacto en móvil: bandcamp pegado a la fila ↑|FICHA→ y el
+     bloque apoyado abajo-derecha en vez de centrado. Ahorro de alto
+     modesto (~4px por el padding); el grueso lo pone el player (42px). */
+  .ficha-bar { padding: 10px 14px; }
+  .ficha-bar .acciones {
+    gap: 2px;
+    align-self: end;
+  }
 }
