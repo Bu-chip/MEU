@@ -50,6 +50,11 @@ jobs:
           # hasheado en dist/assets (import ?url en useArchive.js), así que
           # no hace falta copiar data/ aparte.
           rsync -a app/dist/ publish/
+          # Stubs de compartir (F6): una página estática por disco en
+          # /d/:id/ con og:tags propios, generadas desde el JSON canónico.
+          # Van después del rsync para que nada las pise; el push --force
+          # de un árbol nuevo limpia solo los stubs de discos de baja.
+          node app/scripts/gen-stubs.mjs publish
           # El sitio vanilla ya NO se copia al deploy. Su fuente (index.html,
           # assets/css, assets/js, data/, …) sigue intacta en main; esto es
           # reversible restaurando el rsync del espejo raíz + build en /v2/.
