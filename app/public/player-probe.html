@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>MEU · sondeo player persistente</title>
+<style>
+  /* Material desechable: sin sistema visual, solo legibilidad táctil. */
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 12px;
+    font: 16px/1.45 -apple-system, system-ui, sans-serif;
+    background: #111; color: #eee;
+  }
+  h1 { font-size: 20px; margin: 4px 0 2px; }
+  h2 { font-size: 17px; margin: 0 0 8px; color: #a3e635; }
+  .nota { color: #999; font-size: 14px; margin: 0 0 12px; }
+  section {
+    background: #1c1c1c; border: 1px solid #333; border-radius: 10px;
+    padding: 12px; margin: 0 0 16px;
+  }
+  button {
+    font: inherit; font-weight: 600;
+    min-height: 48px; padding: 10px 14px; margin: 4px 6px 4px 0;
+    border: 1px solid #555; border-radius: 8px;
+    background: #2a2a2a; color: #eee;
+  }
+  button.activo { background: #a3e635; color: #111; border-color: #a3e635; }
+  iframe { border: 0; width: 100%; max-width: 700px; }
+  .vista {
+    min-height: 90px; padding: 10px; margin: 8px 0;
+    border: 1px dashed #555; border-radius: 8px;
+    font-size: 15px; color: #ccc;
+  }
+  #log {
+    background: #000; border: 1px solid #333; border-radius: 8px;
+    padding: 8px; min-height: 70px; max-height: 320px; overflow-y: auto;
+    font: 12px/1.5 ui-monospace, Menlo, monospace;
+    word-break: break-all; -webkit-overflow-scrolling: touch;
+  }
+  #log .msg { border-bottom: 1px solid #222; padding: 4px 0; }
+  #log .bc { color: #a3e635; }
+  #log .otro { color: #888; }
+  #log .meta { color: #6cf; }
+  .ok { color: #a3e635; } .avisa { color: #fc6; }
+  code { background: #000; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>MEU · sondeo player persistente</h1>
+<p class="nota">Material desechable del spike. Cuatro pruebas, en orden. No hace falta consola: todo se pinta en pantalla.</p>
+
+<!-- ============ H1: PERSISTENCIA ============ -->
+<section>
+  <h2>PRUEBA 1 · H1 persistencia</h2>
+  <p class="nota">1) Dale al play en el iframe de abajo. 2) Toca los botones de «vista»
+  (cambian el hash de la URL y el contenido, como haría el router, pero el iframe no se toca).
+  <span class="ok">Si el audio sigue sonando al cambiar de vista, H1 confirmada.</span></p>
+
+  <div id="vistas">
+    <button data-vista="explorar" class="activo">EXPLORAR</button>
+    <button data-vista="archivo">ARCHIVO</button>
+    <button data-vista="ficha">FICHA</button>
+    <button data-vista="sobre">SOBRE</button>
+  </div>
+  <div class="vista" id="contenido-vista"></div>
+
+  <!-- El iframe vive AQUÍ, fuera del div que se re-renderiza: es el «shell». -->
+  <iframe id="player-persistente" height="120"
+    src="https://bandcamp.com/EmbeddedPlayer/album=2842819630/size=large/bgcol=333333/linkcol=a3e635/tracklist=false/artwork=small/transparent=true/"
+    seamless></iframe>
+  <p class="nota">COBRA — «Henko» (album_id 2842819630, del catálogo).</p>
+
+  <!-- ============ cambio de disco ============ -->
+  <p class="nota"><b>PRUEBA 1b · cambio de disco:</b> con el audio sonando, toca el botón.
+  Se sustituye el <code>src</code> por otro álbum.
+  <span class="avisa">Lo esperado es que el sonido SE CORTE y cargue el player del otro disco.</span></p>
+  <button id="btn-swap">CAMBIAR A OTRO ÁLBUM (NightWaves EP)</button>
+  <span id="swap-estado" class="nota"></span>
+</section>
+
+<!-- ============ H2: AUTOPLAY ============ -->
+<section>
+  <h2>PRUEBA 2 · H2 autoplay</h2>
+  <p class="nota">Cada botón carga en el iframe de abajo una variante del embed con un
+  candidato a parámetro de autoplay. El iframe lleva <code>allow="autoplay"</code>.
+  <span class="ok">Si con alguna variante el audio arranca solo (sin tocar play), H2 confirmada
+  para esa variante</span> — apunta cuál. Si ninguna suena sola, H2 descartada.
+  Nota: prueba también tocando el botón dos veces seguidas — en iPad el primer toque cuenta
+  como gesto de usuario y podría desbloquear el audio del segundo intento.</p>
+  <p class="nota"><b>Lo que dice la investigación:</b> Bandcamp declara oficialmente que el
+  player embebido NO tiene auto-start (política deliberada), ningún integrador serio
+  (Jetpack, Iframely…) conoce tal parámetro, y el parser ignora segmentos desconocidos.
+  El <code>autoplay=1</code> que circula por ahí es un rumor de CodePen sin evidencia de que
+  funcione. Además, en iPad WebKit exige un toque real para audio con sonido aunque el
+  parámetro existiera. <span class="avisa">Expectativa: ninguna variante arranca sola.</span>
+  Esta prueba es la confirmación empírica.</p>
+
+  <div id="variantes"></div>
+  <iframe id="player-autoplay" height="120" allow="autoplay" src="about:blank"></iframe>
+  <p class="nota" id="autoplay-estado">Sin variante cargada todavía.</p>
+</section>
+
+<!-- ============ H3: POSTMESSAGE ============ -->
+<section>
+  <h2>PRUEBA 3 · H3 postMessage</h2>
+  <p class="nota">Abajo se pinta TODO mensaje <code>postMessage</code> que llegue a esta página,
+  con origen y payload. Dale al play, pausa, cambia de pista y <b>deja acabar una pista</b>
+  mirando el panel. <span class="ok">Si aparecen mensajes verdes (origen bandcamp) al terminar
+  una pista, H3 tiene recorrido.</span> Si el panel se queda en silencio, H3 descartada.</p>
+  <p class="nota"><b>Lo que dice la investigación:</b> el bundle del player emite UN único
+  mensaje en toda su vida — la cadena <code>"playerinited"</code> al terminar de cargar — y no
+  escucha ninguno (no se le pueden mandar órdenes). <span class="avisa">Expectativa: verás un
+  «playerinited» verde por cada iframe que cargue y silencio absoluto después</span> — ni play,
+  ni pausa, ni fin de pista. Si al dejar acabar el disco no aparece nada, H3 queda descartada
+  empíricamente.</p>
+  <button id="btn-limpiar">LIMPIAR PANEL</button>
+  <button id="btn-marca">MARCAR MOMENTO (separador)</button>
+  <div id="log"><div class="msg otro">— esperando mensajes… (los de origen bandcamp.com saldrán en verde) —</div></div>
+</section>
+
+<script>
+(function () {
+  'use strict';
+
+  // Álbums reales del catálogo (data/bandcamp_bilbaotags_clean.json):
+  var ALBUM_A = '2842819630';  // COBRA — Henko
+  var ALBUM_B = '3220383915';  // NightWaves — NightWaves EP
+  var BASE = 'https://bandcamp.com/EmbeddedPlayer/album=';
+  var COLA = 'size=large/bgcol=333333/linkcol=a3e635/tracklist=false/artwork=small/transparent=true/';
+
+  // ---------- PRUEBA 1: vistas simuladas (el iframe no se toca) ----------
+  var TEXTOS = {
+    explorar: 'VISTA EXPLORAR — contenido simulado. El hash es ahora #/ y este bloque se ha re-renderizado, pero el iframe de abajo no se ha desmontado.',
+    archivo:  'VISTA ARCHIVO — contenido simulado (#/archivo). ¿Sigue sonando el audio?',
+    ficha:    'VISTA FICHA — contenido simulado (#/disco/999). En la app real el player vive aquí dentro y muere al salir; en este banco vive fuera.',
+    sobre:    'VISTA SOBRE — contenido simulado (#/sobre). Última parada: si el audio ha sobrevivido al paseo, H1 confirmada.'
+  };
+  var HASHES = { explorar: '#/', archivo: '#/archivo', ficha: '#/disco/999', sobre: '#/sobre' };
+
+  function pintarVista(v) {
+    document.getElementById('contenido-vista').textContent = TEXTOS[v] || TEXTOS.explorar;
+    var botones = document.querySelectorAll('#vistas button');
+    for (var i = 0; i < botones.length; i++) {
+      botones[i].className = botones[i].getAttribute('data-vista') === v ? 'activo' : '';
+    }
+  }
+  document.getElementById('vistas').addEventListener('click', function (e) {
+    var v = e.target.getAttribute && e.target.getAttribute('data-vista');
+    if (!v) return;
+    // Como el hash router real: cambiamos el hash y re-renderizamos el contenido.
+    location.hash = HASHES[v];
+    pintarVista(v);
+  });
+  window.addEventListener('hashchange', function () {
+    // El botón atrás del navegador también re-renderiza, como en la app.
+    var h = location.hash;
+    var v = 'explorar';
+    if (h.indexOf('#/archivo') === 0) v = 'archivo';
+    else if (h.indexOf('#/disco') === 0) v = 'ficha';
+    else if (h.indexOf('#/sobre') === 0) v = 'sobre';
+    pintarVista(v);
+  });
+  pintarVista('explorar');
+
+  // ---------- PRUEBA 1b: cambio de src ----------
+  var enB = false;
+  document.getElementById('btn-swap').addEventListener('click', function () {
+    enB = !enB;
+    var id = enB ? ALBUM_B : ALBUM_A;
+    document.getElementById('player-persistente').src = BASE + id + '/' + COLA;
+    document.getElementById('swap-estado').textContent = enB
+      ? '→ cargado NightWaves EP (el audio anterior debería haberse cortado)'
+      : '→ de vuelta a COBRA — Henko';
+    this.textContent = enB ? 'VOLVER AL PRIMER ÁLBUM (COBRA)' : 'CAMBIAR A OTRO ÁLBUM (NightWaves EP)';
+  });
+
+  // ---------- PRUEBA 2: variantes de autoplay ----------
+  // Candidatos: ninguno está documentado oficialmente; esto es sondeo puro.
+  var VARIANTES = [
+    { etiqueta: 'sin parámetro (control)', extra: '' },
+    { etiqueta: 'autoplay=true',  extra: 'autoplay=true/' },
+    { etiqueta: 'autoplay=1',     extra: 'autoplay=1/' },
+    { etiqueta: 'autostart=true', extra: 'autostart=true/' },
+    { etiqueta: 'autostart=1',    extra: 'autostart=1/' },
+    { etiqueta: 'play=true',      extra: 'play=true/' }
+  ];
+  var contVar = document.getElementById('variantes');
+  VARIANTES.forEach(function (v) {
+    var b = document.createElement('button');
+    b.textContent = v.etiqueta;
+    b.addEventListener('click', function () {
+      var url = BASE + ALBUM_A + '/' + COLA + v.extra;
+      document.getElementById('player-autoplay').src = url;
+      document.getElementById('autoplay-estado').innerHTML =
+        'Cargada variante <b>' + v.etiqueta + '</b> · src: <code>…/' + (v.extra || '(base)') + '</code>' +
+        ' — espera unos segundos: ¿arranca solo?';
+      var botones = contVar.querySelectorAll('button');
+      for (var i = 0; i < botones.length; i++) botones[i].className = '';
+      b.className = 'activo';
+    });
+    contVar.appendChild(b);
+  });
+
+  // ---------- PRUEBA 3: listener de postMessage ----------
+  var log = document.getElementById('log');
+  function linea(clase, texto) {
+    var d = document.createElement('div');
+    d.className = 'msg ' + clase;
+    d.textContent = texto;
+    log.insertBefore(d, log.firstChild); // lo más nuevo arriba, sin scroll
+    while (log.childNodes.length > 200) log.removeChild(log.lastChild);
+  }
+  window.addEventListener('message', function (e) {
+    var esBandcamp = /bandcamp\.com$/.test((e.origin || '').replace(/^https?:\/\//, '').split('/')[0]);
+    var payload;
+    try {
+      payload = typeof e.data === 'string' ? e.data : JSON.stringify(e.data);
+    } catch (err) {
+      payload = '[no serializable: ' + Object.prototype.toString.call(e.data) + ']';
+    }
+    if (payload && payload.length > 600) payload = payload.slice(0, 600) + ' …[recortado]';
+    var hora = new Date().toTimeString().slice(0, 8);
+    linea(esBandcamp ? 'bc' : 'otro',
+      hora + ' · origen: ' + e.origin + ' · ' + payload);
+  });
+  document.getElementById('btn-limpiar').addEventListener('click', function () {
+    log.innerHTML = '';
+    linea('otro', '— panel limpiado —');
+  });
+  document.getElementById('btn-marca').addEventListener('click', function () {
+    linea('meta', '———— MARCA ' + new Date().toTimeString().slice(0, 8) + ' ————');
+  });
+
+  // Los load de los iframes también van al panel, para contexto.
+  ['player-persistente', 'player-autoplay'].forEach(function (id) {
+    document.getElementById(id).addEventListener('load', function () {
+      var src = this.src === 'about:blank' ? 'about:blank' : this.src.replace(BASE, '…album=');
+      linea('meta', 'iframe #' + id + ' cargado: ' + src);
+    });
+  });
+})();
+</script>
+</body>
+</html>
