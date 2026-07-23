@@ -38,6 +38,14 @@ jobs:
 
       - name: Build
         working-directory: app
+        # Capa de cuentas (opcional y aditiva): las env vars llegan al build
+        # de Vite desde secrets del repo. Solo la clave anon/publishable, que
+        # es pública por diseño (RLS protege los datos); NUNCA la service_role.
+        # Si los secrets no están definidos, Vite las inyecta vacías y la app
+        # degrada limpio (supabase = null), sin auth pero entera.
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
         run: npm run build
 
       - name: Assemble site (app de Vite en la raíz)
