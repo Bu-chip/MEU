@@ -14,24 +14,23 @@ function MarcaUsuario() {
   // apunta a #/entrar, donde vive el botón de salir.
   const destino = '#/entrar'
 
+  // Zócalo = tres piezas en flex (patitas · inicial · patitas): el hueco lo
+  // fija el CSS (gap), idéntico para cualquier inicial, sin depender del
+  // ancho del glifo.
+  const patitas = (
+    <svg viewBox="0 0 5 36" width="4" height="24" aria-hidden="true">
+      <path d="M0 12h5M0 18h5M0 24h5" stroke="currentColor" strokeWidth="2.2" />
+    </svg>
+  )
+
   if (session) {
     return (
       <a className="marca-usuario dentro" href={destino} title="tu cuenta" aria-label="tu cuenta">
-        <svg viewBox="0 0 36 36" width="24" height="24" aria-hidden="true">
-          <g stroke="currentColor" strokeWidth="2.2">
-            <path d="M5 12h4M5 18h4M5 24h4M27 12h4M27 18h4M27 24h4" />
-          </g>
-          <text
-            x="18"
-            y="24"
-            textAnchor="middle"
-            fontFamily="var(--display)"
-            fontSize="18"
-            fill="currentColor"
-          >
-            {inicial}
-          </text>
-        </svg>
+        <span className="marca-chip">
+          {patitas}
+          <span className="marca-inicial">{inicial}</span>
+          {patitas}
+        </span>
         {/* PR B: hueco del contador de discos guardados, sin número aún. */}
       </a>
     )
@@ -39,11 +38,10 @@ function MarcaUsuario() {
 
   return (
     <a className="marca-usuario" href="#/entrar" title="entrar" aria-label="entrar">
-      <svg viewBox="0 0 36 36" width="24" height="24" aria-hidden="true">
-        <g stroke="currentColor" strokeWidth="2.2">
-          <path d="M5 12h4M5 18h4M5 24h4M27 12h4M27 18h4M27 24h4" />
-        </g>
-      </svg>
+      <span className="marca-chip">
+        {patitas}
+        {patitas}
+      </span>
       <span className="marca-txt">ENTRAR</span>
     </a>
   )

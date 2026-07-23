@@ -23,17 +23,11 @@ export function Entrar() {
   }
 
   if (session) {
-    const quien = user?.user_metadata?.name || user?.email || 'tu cuenta'
+    const quien = user?.email || ''
     return (
       <main className="entrar-pagina">
-        <h1>ESTÁS DENTRO</h1>
-        <p>
-          Sesión iniciada como <b>{quien}</b>.
-        </p>
-        <p className="nota">
-          Tu colección de discos aparecerá aquí próximamente. De momento el acceso no cambia
-          nada de lo que ya podías hacer sin cuenta.
-        </p>
+        <h1>DENTRO</h1>
+        <p>{quien}</p>
         <div className="vias">
           <button className="salir-btn" onClick={salir}>
             SALIR
@@ -59,8 +53,9 @@ export function Entrar() {
     <main className="entrar-pagina">
       <h1>ENTRAR</h1>
       <p>
-        Guardar discos en una colección personal es opcional. El mapa, el archivo y las fichas
-        funcionan igual sin cuenta — esto solo añade una estantería tuya encima.
+        un sitio donde guardar los discos que encuentres.
+        <br />
+        la cuenta no hace nada más — ni perfil, ni muro, ni recomendaciones.
       </p>
 
       <div className="vias">
@@ -69,21 +64,16 @@ export function Entrar() {
         </button>
 
         <div className="sep">
-          <span>o con tu correo</span>
+          <span>o</span>
         </div>
 
-        {enviado ? (
-          <p className="enviado">
-            Enlace enviado. Revisa tu correo <b>{email}</b> y abre el enlace de acceso en este
-            mismo dispositivo.
-          </p>
-        ) : (
+        {!enviado && (
           <form className="via-email" onSubmit={onMagic}>
             <input
               type="email"
               required
               autoComplete="email"
-              placeholder="tu@correo.com"
+              placeholder="tu correo"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -96,10 +86,9 @@ export function Entrar() {
         {errorMsg && <p className="err">{errorMsg}</p>}
       </div>
 
-      <p className="nota">
-        Sin contraseñas: entras con un enlace de un solo uso o con Google. No perfilamos ni
-        vendemos nada.
-      </p>
+      {/* Pie del campo: siempre visible. Al enviar, el formulario desaparece
+          y este pie queda como confirmación, sin inventar copy nueva. */}
+      <p className="nota">te llega un enlace. lo abres y estás dentro. sin contraseña.</p>
     </main>
   )
 }

@@ -48,11 +48,20 @@ nav.puertas a.marca-usuario {
 }
 nav.puertas a.marca-usuario:hover { background: var(--lima); }
 nav.puertas a.marca-usuario svg { display: block; }
-/* El var(--display) del atributo SVG no siempre resuelve; se garantiza
-   la fuente display de la inicial también por CSS, sin redibujar el SVG. */
-nav.puertas a.marca-usuario svg text {
+/* Zócalo en tres piezas: el hueco entre patitas e inicial lo fija este gap,
+   idéntico para cualquier inicial (una I no queda suelta, una M no aprieta).
+   --marca-gap es el punto de afinado. */
+nav.puertas a.marca-usuario .marca-chip {
+  --marca-gap: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--marca-gap);
+}
+nav.puertas a.marca-usuario .marca-inicial {
   font-family: var(--display);
-  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: currentColor;
 }
 nav.puertas a.marca-usuario .marca-txt {
   font-family: var(--mono);
