@@ -17,6 +17,12 @@ export function Header({ archive, size = 'grande' }) {
           </h1>
         </div>
         <div className="counters">
+          {/* «sobre el proyecto» vive en el bloque de identidad, primera línea
+              de la columna, por encima de las cifras (antes estaba en la barra
+              de puertas). Mismo destino y texto: solo cambia dónde se pinta. */}
+          <a className="sobre-link" href="#/sobre">
+            sobre el proyecto
+          </a>
           <b>{archive ? formato(archive.albums.length) : '—'}</b> releases
           <br />
           <b>{archive ? formato(archive.artists.length) : '—'}</b> artistas

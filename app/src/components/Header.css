@@ -21,9 +21,23 @@
   font-size: 11px;
   line-height: 1.7;
   text-align: right;
-  padding-bottom: 6px;
+  /* La columna cuelga desde arriba: su borde superior a la altura del borde
+     superior del titular (la cabecera alinea al final por defecto). */
+  align-self: start;
   white-space: nowrap;
 }
 .counters b { font-weight: 700; }
+/* «sobre el proyecto»: primera línea de la columna de identidad, mismo mono
+   y tamaño, alineada a la derecha. Bloque propio con aire debajo para que no
+   se lea como una cifra más. Subrayada para leerse como enlace; hover lima
+   como el resto de enlaces de la barra. */
+.counters .sobre-link {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--tinta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.counters .sobre-link:hover { background: var(--lima); }
 .firma { font-size: 11px; padding: 6px 18px 0 18px; }
 .firma b { font-weight: 700; }

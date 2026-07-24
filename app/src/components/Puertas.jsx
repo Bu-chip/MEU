@@ -2,10 +2,10 @@ import { supabase } from '../lib/supabase.js'
 import { useAuth } from '../auth/useAuth.js'
 import './Puertas.css'
 
-// Marca de usuario: al extremo derecho de la barra, DESPUÉS de «sobre el
-// proyecto» (no es una tercera puerta). Solo se pinta si hay Supabase; sin
-// cuentas la barra queda exactamente como estaba. El hueco del contador
-// (nº de discos guardados) se deja preparado — sin pintar nada — para PR B.
+// Marca de usuario: sola al extremo derecho de la barra (no es una tercera
+// puerta). Solo se pinta si hay Supabase; sin cuentas la barra queda con
+// EXPLORAR · ARCHIVO y nada a la derecha. El hueco del contador (nº de
+// discos guardados) se deja preparado — sin pintar nada — para PR B.
 function MarcaUsuario() {
   const { session, inicial } = useAuth()
   if (!supabase) return null
@@ -47,7 +47,6 @@ function MarcaUsuario() {
   )
 }
 
-// «sobre el proyecto» ya tiene destino: #/sobre (spec de la página SOBRE).
 export function Puertas({ activa }) {
   return (
     <nav className="puertas">
@@ -56,9 +55,6 @@ export function Puertas({ activa }) {
       </a>
       <a href="#/archivo" className={`puerta ${activa === 'archivo' ? 'activa' : ''}`}>
         ARCHIVO
-      </a>
-      <a href="#/sobre" className={`sobre ${activa === 'sobre' ? 'activa' : ''}`}>
-        sobre el proyecto
       </a>
       <MarcaUsuario />
     </nav>

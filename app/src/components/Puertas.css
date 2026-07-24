@@ -20,23 +20,13 @@ nav.puertas a.puerta {
 }
 nav.puertas a.puerta:hover { background: var(--lima); color: var(--tinta); }
 nav.puertas a.activa { background: var(--tinta); color: var(--papel); }
-nav.puertas a.sobre {
-  margin-left: auto;
-  align-self: center;
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--tinta);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  padding: 0 16px;
-  white-space: nowrap;
-}
-nav.puertas a.sobre:hover { background: var(--lima); }
 
-/* Marca de usuario: al extremo derecho, después de «sobre el proyecto».
+/* Marca de usuario: sola al extremo derecho (margin-left:auto la empuja;
+   antes ese margen lo llevaba «sobre el proyecto», ya movido a la cabecera).
    Hereda la tinta vía currentColor (nada de hex a pelo). Mismo criterio
    monocromo del resto de la barra; hover lima como las puertas. */
 nav.puertas a.marca-usuario {
+  margin-left: auto;
   align-self: center;
   display: flex;
   align-items: center;
