@@ -62,6 +62,13 @@
    umbral con margen. Orden: titular / cifras corridas / firma + enlace. */
 @media (max-width: 480px) {
   .cabecera { grid-template-columns: 1fr; }
+  /* Titular a todo el ancho útil (100vw menos los 36px de padding). El
+     renglón más ancho de Big Shoulders 900 con tracking -0.01em es MAPA
+     EUSKADI: 5,717× el font-size (UNDERGROUND casi clava, 5,702×), así
+     que el factor es 1/5,717 con una pizca de holgura de redondeo. Un vw
+     puro no puede quedar a ras a la vez en 320 y 380 por el descuento
+     fijo del padding; el calc sí. */
+  .logotype { font-size: clamp(44px, calc((100vw - 36px) * 0.1745), 110px); }
   /* Cifras en una línea corrida, estilo de «sin filtro · archivo entero»
      (mono 10px al 60%). Si no cabe entera, parte por los separadores. */
   .counters {
