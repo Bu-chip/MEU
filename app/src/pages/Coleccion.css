@@ -1,0 +1,54 @@
+/* COLECCIÓN: cabecera tipográfica sobre el muro compartido con EXPLORAR
+   (.grid/.tile en components/Tile.css). Tokens congelados: papel/tinta/lima,
+   sin radius ni sombras. */
+main.coleccion-pagina {
+  padding-bottom: 90px; /* sitio para la mini-ficha fija, como .pie */
+}
+.coleccion-cab {
+  padding: 26px 22px 18px 22px;
+}
+.coleccion-cab h1 {
+  font-family: var(--display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(34px, 5.5vw, 72px);
+  line-height: 0.88;
+}
+/* Contador de escala: guardados / total del archivo, mismo punto de millar
+   que la cabecera. */
+.coleccion-cab .escala {
+  font-family: var(--mono);
+  font-size: 12px;
+  margin-top: 10px;
+}
+/* El muro arranca con su propia regla superior (en EXPLORAR se la presta
+   el borde inferior de los mandos). */
+main.coleccion-pagina .grid {
+  border-top: 2px solid var(--tinta);
+}
+/* Estado vacío: dos líneas en mono y nada más. */
+.coleccion-vacia {
+  padding: 4px 22px 0 22px;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.9;
+}
+/* SALIR: al pie y en voz baja — mono pequeño con borde fino, el mismo
+   gesto que «× quitar filtro» en EXPLORAR. */
+.coleccion-pie {
+  padding: 34px 22px 0 22px;
+}
+.coleccion-pie .salir {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--tinta);
+  border: 1px solid var(--tinta);
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.coleccion-pie .salir:hover {
+  background: var(--lima);
+}

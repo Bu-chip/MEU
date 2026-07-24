@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react'
 //   #/disco/:id       → FICHA (id del JSON como clave estable)
 //   #/sobre           → SOBRE (texto fijo del proyecto)
 //   #/entrar          → ENTRAR (login opcional; solo si hay Supabase)
+//   #/coleccion       → COLECCIÓN (los guardados; pide sesión)
 // Cualquier hash desconocido cae en EXPLORAR.
 export function parseRoute(hash) {
   const raw = hash.replace(/^#/, '')
@@ -18,6 +19,7 @@ export function parseRoute(hash) {
   if (path === '/archivo') return { page: 'archivo', id: null, params }
   if (path === '/sobre') return { page: 'sobre', id: null, params }
   if (path === '/entrar') return { page: 'entrar', id: null, params }
+  if (path === '/coleccion') return { page: 'coleccion', id: null, params }
   return { page: 'explorar', id: null, params }
 }
 

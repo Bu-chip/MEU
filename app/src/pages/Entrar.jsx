@@ -1,18 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useAuth } from '../auth/useAuth.js'
+import { reemplazar } from '../hooks/useHashRoute.js'
 import './Entrar.css'
 
 // Página ENTRAR: login opcional, tratada como SOBRE (sobria, tipográfica,
 // sin ventanas flotantes — MEU no tiene ninguna). Dos vías sin contraseña:
 // Google (botón monocromo, sin logo a color) y magic link por email.
-// Con sesión abierta, la página cambia a «estás dentro» + SALIR (el botón
-// de salir vive aquí, no en un menú desplegable).
+// Solo el formulario: con sesión abierta no hay nada que hacer aquí y la
+// página manda a #/coleccion (donde ahora vive SALIR).
 export function Entrar() {
-  const { session, user, entrarGoogle, entrarEmail, salir, cargando } = useAuth()
+  const { session, entrarGoogle, entrarEmail, cargando } = useAuth()
   const [email, setEmail] = useState('')
   const [enviado, setEnviado] = useState(false)
   const [enviando, setEnviando] = useState(false)
   const [errorMsg, setErrorMsg] = useState(null)
+
+  useEffect(() => {
+    if (!cargando && session) reemplazar('#/coleccion')
+  }, [cargando, session])
 
   if (cargando) {
     return (
@@ -22,20 +27,7 @@ export function Entrar() {
     )
   }
 
-  if (session) {
-    const quien = user?.email || ''
-    return (
-      <main className="entrar-pagina">
-        <h1>DENTRO</h1>
-        <p>{quien}</p>
-        <div className="vias">
-          <button className="salir-btn" onClick={salir}>
-            SALIR
-          </button>
-        </div>
-      </main>
-    )
-  }
+  if (session) return null // redirigiendo a #/coleccion
 
   const onMagic = async (e) => {
     e.preventDefault()

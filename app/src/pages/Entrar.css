@@ -30,9 +30,8 @@ main.entrar-pagina .vias {
   gap: 14px;
 }
 
-/* Botón principal (Google y salir): mismo peso que .principal de la FICHA. */
-main.entrar-pagina .via-google,
-main.entrar-pagina .salir-btn {
+/* Botón principal (Google): mismo peso que .principal de la FICHA. */
+main.entrar-pagina .via-google {
   font-family: var(--display);
   text-transform: uppercase;
   font-weight: 700;
@@ -45,8 +44,7 @@ main.entrar-pagina .salir-btn {
   cursor: pointer;
   text-align: center;
 }
-main.entrar-pagina .via-google:hover,
-main.entrar-pagina .salir-btn:hover {
+main.entrar-pagina .via-google:hover {
   background: var(--lima);
   color: var(--tinta);
 }

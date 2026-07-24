@@ -8,6 +8,7 @@ import { Archivo } from './pages/Archivo.jsx'
 import { Ficha } from './pages/Ficha.jsx'
 import { Sobre } from './pages/Sobre.jsx'
 import { Entrar } from './pages/Entrar.jsx'
+import { Coleccion } from './pages/Coleccion.jsx'
 import './App.css'
 
 const PAGINAS = {
@@ -15,6 +16,7 @@ const PAGINAS = {
   archivo: Archivo,
   sobre: Sobre,
   entrar: Entrar,
+  coleccion: Coleccion,
 }
 
 export default function App() {
@@ -31,9 +33,10 @@ export default function App() {
     return <Ficha route={route} archive={archive} />
   }
 
-  // #/entrar solo existe si hay Supabase: sin cuentas cae en EXPLORAR, sin
-  // ruta muerta ni página vacía (degradación limpia).
-  const page = route.page === 'entrar' && !supabase ? 'explorar' : route.page
+  // #/entrar y #/coleccion solo existen si hay Supabase: sin cuentas caen en
+  // EXPLORAR, sin ruta muerta ni página vacía (degradación limpia).
+  const rutaCuentas = route.page === 'entrar' || route.page === 'coleccion'
+  const page = rutaCuentas && !supabase ? 'explorar' : route.page
   const Pagina = PAGINAS[page]
   return (
     <>
