@@ -46,11 +46,12 @@
   border: 1px solid var(--papel);
   padding: 2px 10px;
 }
-/* compartir compacto: caja clonada de ir-ficha, en negativo como toda
-   la barra (papel sobre tinta, lima en interacción). compartir-mini y no
-   compartir: Ficha.css estila .acciones button.compartir y esta columna
-   también se llama .acciones */
-.ficha-bar button.compartir-mini {
+/* compartir y guardar compactos: caja clonada de ir-ficha, en negativo
+   como toda la barra (papel sobre tinta, lima en interacción). Clases
+   -mini y no compartir/guardar: Ficha.css estila .acciones button.… y
+   esta columna también se llama .acciones */
+.ficha-bar button.compartir-mini,
+.ficha-bar button.guardar-mini {
   font-family: var(--display);
   font-weight: 700;
   font-size: 15px;
@@ -61,7 +62,8 @@
   padding: 2px 10px;
   cursor: pointer;
 }
-.ficha-bar button.compartir-mini:hover { background: var(--lima); color: var(--tinta); }
+.ficha-bar button.compartir-mini:hover,
+.ficha-bar button.guardar-mini:hover { background: var(--lima); color: var(--tinta); }
 .ficha-bar .stub { font-size: 9px; opacity: .55; }
 .ficha-bar .cerrar {
   position: absolute;

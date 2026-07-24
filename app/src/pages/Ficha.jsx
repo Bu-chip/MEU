@@ -5,6 +5,7 @@ import { navegar, hashArchivo } from '../hooks/useHashRoute.js'
 import { useCompartir } from '../hooks/useCompartir.js'
 import { useGuardar } from '../hooks/useGuardar.js'
 import { supabase } from '../lib/supabase.js'
+import { Corazon } from '../components/Corazon.jsx'
 import { Portada } from '../components/Portada.jsx'
 import { BandcampPlayer } from '../components/BandcampPlayer.jsx'
 import './Ficha.css'
@@ -126,10 +127,10 @@ export function Ficha({ route, archive }) {
             </button>
             {/* GUARDAR se ve siempre, con y sin sesión (sin ella manda a
                 #/entrar y vuelve); solo desaparece si no hay Supabase.
-                ☆/★ (U+2606/U+2605), monocromos en iOS — nunca ⭐ (emoji). */}
+                El corazón es SVG (ver Corazon.jsx), nunca Unicode/emoji. */}
             {supabase && (
               <button className="guardar" onClick={alternar}>
-                {guardado ? 'GUARDADO ★' : 'GUARDAR ☆'}
+                {guardado ? 'GUARDADO' : 'GUARDAR'} <Corazon lleno={guardado} />
               </button>
             )}
           </div>
