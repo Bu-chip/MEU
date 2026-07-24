@@ -17,21 +17,32 @@ export function Header({ archive }) {
           </h1>
         </div>
         <div className="counters">
-          {/* «sobre el proyecto» vive en el bloque de identidad, primera línea
-              de la columna, por encima de las cifras (antes estaba en la barra
-              de puertas). Mismo destino y texto: solo cambia dónde se pinta. */}
+          {/* «sobre el proyecto» encabeza la columna en escritorio; en móvil
+              se oculta y el enlace pasa a la línea de la firma. Los «·» solo
+              se pintan en móvil, donde las cifras van corridas en línea. */}
           <a className="sobre-link" href="#/sobre">
             sobre el proyecto
           </a>
-          <b>{archive ? formato(archive.albums.length) : '—'}</b> releases
-          <br />
-          <b>{archive ? formato(archive.artists.length) : '—'}</b> artistas
-          <br />
-          <b>{rango}</b> · bandcamp
+          <span className="dato">
+            <b>{archive ? formato(archive.albums.length) : '—'}</b> releases
+          </span>
+          <span className="sep">·</span>
+          <span className="dato">
+            <b>{archive ? formato(archive.artists.length) : '—'}</b> artistas
+          </span>
+          <span className="sep">·</span>
+          <span className="dato">
+            <b>{rango}</b> · bandcamp
+          </span>
         </div>
       </header>
       <p className="firma">
-        la guía de <b>Queimada Circuit Records</b> a la música underground de Euskadi
+        <span>
+          la guía de <b>Queimada Circuit Records</b> a la música underground de Euskadi
+        </span>
+        <a className="sobre-link firma-enlace" href="#/sobre">
+          sobre el proyecto
+        </a>
       </p>
     </>
   )
