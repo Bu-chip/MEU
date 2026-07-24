@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useAuth } from '../auth/useAuth.js'
 import { reemplazar } from '../hooks/useHashRoute.js'
+import { formato } from '../utils/formato.js'
 import './Entrar.css'
 
 // Página ENTRAR: login opcional, tratada como SOBRE (sobria, tipográfica,
@@ -8,7 +9,7 @@ import './Entrar.css'
 // Google (botón monocromo, sin logo a color) y magic link por email.
 // Solo el formulario: con sesión abierta no hay nada que hacer aquí y la
 // página manda a #/coleccion (donde ahora vive SALIR).
-export function Entrar() {
+export function Entrar({ archive }) {
   const { session, entrarGoogle, entrarEmail, cargando } = useAuth()
   const [email, setEmail] = useState('')
   const [enviado, setEnviado] = useState(false)
@@ -46,8 +47,15 @@ export function Entrar() {
       <h1>ENTRAR</h1>
       <p>
         un sitio donde guardar los discos que encuentres.
-        <br />
-        la cuenta no hace nada más — ni perfil, ni muro, ni recomendaciones.
+        {/* Cifra viva del archivo (decisión 8: nunca hardcodeada), con el
+            punto de millar de la cabecera. Sin archivo aún, la línea entera
+            se calla — ni cero ni hueco. */}
+        {archive && (
+          <>
+            <br />
+            tienes {formato(archive.albums.length)} álbumes por explorar.
+          </>
+        )}
       </p>
 
       <div className="vias">
