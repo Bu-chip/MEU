@@ -53,6 +53,21 @@ nav.puertas a.marca-usuario .marca-inicial {
   line-height: 1;
   color: currentColor;
 }
+/* Contador de guardados: bloque lima con la cifra en tinta. Al hover la
+   marca entera se pone lima, así que el bloque invierte a tinta/papel para
+   no fundirse con el fondo. */
+nav.puertas a.marca-usuario .marca-cuenta {
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1;
+  background: var(--lima);
+  color: var(--tinta);
+  padding: 2px 4px;
+}
+nav.puertas a.marca-usuario:hover .marca-cuenta {
+  background: var(--tinta);
+  color: var(--papel);
+}
 nav.puertas a.marca-usuario .marca-txt {
   font-family: var(--mono);
   font-size: 10px;

@@ -100,10 +100,11 @@
   border: 2px solid var(--tinta);
   cursor: default;
 }
-/* azar y compartir comparten reglas: misma tira de botones encadenados
-   (border-left: none apoya el borde en el elemento anterior) */
+/* azar, compartir y guardar comparten reglas: misma tira de botones
+   encadenados (border-left: none apoya el borde en el elemento anterior) */
 .acciones button.azar,
-.acciones button.compartir {
+.acciones button.compartir,
+.acciones button.guardar {
   font-family: var(--display);
   text-transform: uppercase;
   font-weight: 700;
@@ -117,7 +118,8 @@
   cursor: pointer;
 }
 .acciones button.azar:hover,
-.acciones button.compartir:hover { background: var(--lima); }
+.acciones button.compartir:hover,
+.acciones button.guardar:hover { background: var(--lima); }
 .player { margin-top: 18px; }
 
 /* similares: líneas de registro con la cuenta de tags compartidos */

@@ -1,13 +1,16 @@
 import { supabase } from '../lib/supabase.js'
 import { useAuth } from '../auth/useAuth.js'
+import { useColeccion } from '../hooks/useColeccion.js'
+import { formato } from '../utils/formato.js'
 import './Puertas.css'
 
 // Marca de usuario: sola al extremo derecho de la barra (no es una tercera
 // puerta). Solo se pinta si hay Supabase; sin cuentas la barra queda con
-// EXPLORAR · ARCHIVO y nada a la derecha. El hueco del contador (nº de
-// discos guardados) se deja preparado — sin pintar nada — para PR B.
+// EXPLORAR · ARCHIVO y nada a la derecha. Con sesión lleva al lado el
+// contador de discos guardados (PR B).
 function MarcaUsuario() {
   const { session, inicial } = useAuth()
+  const { ids } = useColeccion()
   if (!supabase) return null
 
   // Con sesión, el destino final es #/coleccion (aún no existe): de momento
@@ -31,7 +34,10 @@ function MarcaUsuario() {
           <span className="marca-inicial">{inicial}</span>
           {patitas}
         </span>
-        {/* PR B: hueco del contador de discos guardados, sin número aún. */}
+        {/* El contador nace con el primer disco (con cero no se pinta) y se
+            mueve en vivo al guardar/quitar vía el singleton de useColeccion.
+            Sin capar: punto de millar como el 7.568 de la cabecera. */}
+        {ids.size > 0 && <span className="marca-cuenta">{formato(ids.size)}</span>}
       </a>
     )
   }

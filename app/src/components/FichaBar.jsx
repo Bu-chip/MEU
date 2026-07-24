@@ -1,6 +1,9 @@
 import { useEffect } from 'react'
 import { BandcampPlayer } from './BandcampPlayer.jsx'
+import { Corazon } from './Corazon.jsx'
 import { useCompartir } from '../hooks/useCompartir.js'
+import { useGuardar } from '../hooks/useGuardar.js'
+import { supabase } from '../lib/supabase.js'
 import './FichaBar.css'
 
 // Mini-ficha inferior de los mockups: respuesta inmediata al click en
@@ -10,6 +13,7 @@ import './FichaBar.css'
 // sonando a la vez). Los 27 sin album_id no muestran player ni hueco.
 export function FichaBar({ album, onCerrar }) {
   const { compartir, copiado } = useCompartir(album)
+  const { guardado, alternar } = useGuardar(album)
 
   useEffect(() => {
     if (!album) return
@@ -51,6 +55,20 @@ export function FichaBar({ album, onCerrar }) {
           <button className="compartir-mini" onClick={compartir} aria-label="compartir" title="compartir">
             {copiado ? '✓' : '↑'}
           </button>
+          {/* Guardar compacto: solo el corazón (aquí compartir también es
+              solo glifo), mismo useGuardar que la FICHA — el singleton de
+              useColeccion mantiene ambos botones en el mismo estado. Sobre
+              el fondo tinta de la barra hereda papel vía currentColor. */}
+          {supabase && (
+            <button
+              className="guardar-mini"
+              onClick={alternar}
+              aria-label={guardado ? 'guardado' : 'guardar'}
+              title={guardado ? 'guardado' : 'guardar'}
+            >
+              <Corazon lleno={guardado} />
+            </button>
+          )}
           <a className="ir-ficha" href={`#/disco/${album.id}`}>
             FICHA →
           </a>
