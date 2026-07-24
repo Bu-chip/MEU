@@ -4,13 +4,13 @@ import './Header.css'
 // Contadores SIEMPRE calculados de los datos (decisión 8 de Fase 0),
 // nunca hardcodeados: los mockups arrastran cifras viejas (2.396/1.069).
 
-export function Header({ archive, size = 'grande' }) {
+export function Header({ archive }) {
   const years = archive?.years ?? []
   const rango = years.length ? `${years[0]}–${years[years.length - 1]}` : '—'
 
   return (
     <>
-      <header className={`cabecera ${size}`}>
+      <header className="cabecera">
         <div>
           <h1 className="logotype">
             MAPA EUSKADI<span className="l2">UNDERGROUND</span>

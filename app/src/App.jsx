@@ -37,7 +37,7 @@ export default function App() {
   const Pagina = PAGINAS[page]
   return (
     <>
-      <Header archive={archive} size={page === 'explorar' ? 'grande' : 'compacta'} />
+      <Header archive={archive} />
       <Puertas activa={page} />
       <Pagina route={route} archive={archive} />
     </>
