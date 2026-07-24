@@ -32,12 +32,25 @@
    se lea como una cifra más. Subrayada para leerse como enlace; hover lima
    como el resto de enlaces de la barra. */
 .counters .sobre-link {
+  /* Bloque propio pero encogido al texto (fit-content + margin-left auto):
+     la zona pulsable y el hover lima cubren solo las palabras, no la fila. */
   display: block;
-  margin-bottom: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-bottom: 16px;
   color: var(--tinta);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 .counters .sobre-link:hover { background: var(--lima); }
+/* En estrecho la columna no cabe al lado del titular (deja de caber hacia
+   los ~435px medidos: logotype en su suelo de 44px ≈ 251px + columna 132px
+   + gap y paddings) y se recortaba contra el borde. Por debajo de 480px
+   —el umbral real redondeado con margen— pasa debajo del titular, a todo
+   el ancho, y sigue alineada a la derecha. */
+@media (max-width: 480px) {
+  .cabecera { grid-template-columns: 1fr; }
+  .counters { align-self: auto; margin-top: 8px; }
+}
 .firma { font-size: 11px; padding: 6px 18px 0 18px; }
 .firma b { font-weight: 700; }
