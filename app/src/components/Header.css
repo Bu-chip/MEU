@@ -1,9 +1,11 @@
 .cabecera {
   display: grid;
-  grid-template-columns: 1fr auto;
+  /* El titular manda: su columna nunca baja de su contenido (max-content);
+     la que cede es la de contadores (a ≤480px pasa debajo). */
+  grid-template-columns: minmax(max-content, 1fr) auto;
   align-items: end;
-  gap: 16px;
-  padding: 22px 18px 0 18px;
+  gap: 6px 12px;
+  padding: 12px 18px 0 18px;
 }
 .logotype {
   font-family: var(--display);
@@ -11,19 +13,81 @@
   letter-spacing: -0.01em;
   font-weight: 900;
   line-height: .86;
+  /* Talla única en todas las puertas (antes EXPLORAR 9vw y ARCHIVO 6vw,
+     cada mockup fijaba la suya): el titular es idéntico en las dos y no
+     salta al cambiar de puerta. */
+  font-size: clamp(44px, 9vw, 110px);
 }
-/* Dos tamaños de logotype según puerta (EXPLORAR grande, ARCHIVO compacta),
-   tal cual los fijan los dos mockups. */
-.cabecera.grande .logotype { font-size: clamp(44px, 9vw, 110px); }
-.cabecera.compacta .logotype { font-size: clamp(34px, 6vw, 72px); }
 .logotype .l2 { display: block; }
-.counters {
-  font-size: 11px;
-  line-height: 1.7;
-  text-align: right;
-  padding-bottom: 6px;
-  white-space: nowrap;
-}
+
+.counters { font-size: 11px; line-height: 1.7; }
 .counters b { font-weight: 700; }
-.firma { font-size: 11px; padding: 6px 18px 0 18px; }
+.sobre-link {
+  color: var(--tinta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.sobre-link:hover { background: var(--lima); }
+.firma { font-size: 11px; padding: 4px 18px 0 18px; }
 .firma b { font-weight: 700; }
+
+/* ── Escritorio (>480px): columna a la derecha del titular ─────────────
+   «sobre el proyecto» arriba con aire, cifras apiladas debajo. El enlace
+   duplicado de la firma no se pinta. */
+@media (min-width: 481px) {
+  .counters {
+    text-align: right;
+    /* La columna cuelga desde arriba: su borde superior a la altura del
+       borde superior del titular (la cabecera alinea al final). */
+    align-self: start;
+    white-space: nowrap;
+  }
+  .counters .dato { display: block; }
+  .counters .sep { display: none; }
+  .counters .sobre-link {
+    /* Bloque propio encogido al texto: la zona pulsable y el hover lima
+       cubren solo las palabras, no la fila. Aire debajo para que no se
+       lea como una cifra más. */
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
+  .firma .firma-enlace { display: none; }
+}
+
+/* ── Móvil (≤480px): todo a líneas bajo el titular ─────────────────────
+   La columna deja de caber hacia los ~431px medidos (logotype en su suelo
+   de 44px ≈ 251px + columna 132px + gap y paddings); 480 redondea ese
+   umbral con margen. Orden: titular / cifras corridas / firma + enlace. */
+@media (max-width: 480px) {
+  .cabecera { grid-template-columns: 1fr; }
+  /* Titular a todo el ancho útil (100vw menos los 36px de padding). El
+     renglón más ancho de Big Shoulders 900 con tracking -0.01em es MAPA
+     EUSKADI: 5,717× el font-size (UNDERGROUND casi clava, 5,702×), así
+     que el factor es 1/5,717 con una pizca de holgura de redondeo. Un vw
+     puro no puede quedar a ras a la vez en 320 y 380 por el descuento
+     fijo del padding; el calc sí. */
+  .logotype { font-size: clamp(44px, calc((100vw - 36px) * 0.1745), 110px); }
+  /* Cifras en una línea corrida, estilo de «sin filtro · archivo entero»
+     (mono 10px al 60%). Si no cabe entera, parte por los separadores. */
+  .counters {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6px;
+    font-size: 10px;
+    line-height: 1.4;
+    opacity: .6;
+  }
+  .counters .sobre-link { display: none; }
+  /* Subtítulo y enlace en la misma línea (el enlace empujado a la derecha);
+     si no caben sin tocarse, el enlace baja a su propia línea y el
+     margin-left auto lo mantiene pegado a la derecha. Sin más breakpoints. */
+  .firma {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 2px;
+  }
+  .firma .firma-enlace { margin-left: auto; }
+}
