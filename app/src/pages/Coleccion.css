@@ -22,9 +22,21 @@ main.coleccion-pagina {
   margin-top: 10px;
 }
 /* El muro arranca con su propia regla superior (en EXPLORAR se la presta
-   el borde inferior de los mandos). */
+   el borde inferior de los mandos).
+   Además, fondo papel en vez del tinta que .grid trae de Tile.css: aquel
+   fondo existe solo para dibujar las juntas de 1px entre tiles (asoma por
+   el gap), pero aquí el muro rara vez cierra la última fila y las celdas
+   vacías lo dejaban a la vista como una franja negra. Con fondo papel la
+   fila incompleta se lee como espacio en blanco, y las juntas las pinta
+   cada tile con un box-shadow de 1px que rellena exactamente el gap (los
+   de tiles vecinos se solapan en la misma línea). Acotado a COLECCIÓN
+   para no tocar el muro de EXPLORAR desde este fix. */
 main.coleccion-pagina .grid {
   border-top: 2px solid var(--tinta);
+  background: var(--papel);
+}
+main.coleccion-pagina .tile {
+  box-shadow: 0 0 0 1px var(--tinta);
 }
 /* Estado vacío: dos líneas en mono y nada más. */
 .coleccion-vacia {
@@ -34,9 +46,12 @@ main.coleccion-pagina .grid {
   line-height: 1.9;
 }
 /* SALIR: al pie y en voz baja — mono pequeño con borde fino, el mismo
-   gesto que «× quitar filtro» en EXPLORAR. */
+   gesto que «× quitar filtro» en EXPLORAR. Pegado al muro a una distancia
+   de respiro, no perdido al fondo: el colchón grande de la página (el
+   padding inferior del main para la mini-ficha fija) queda DESPUÉS del
+   botón, no antes. */
 .coleccion-pie {
-  padding: 34px 22px 0 22px;
+  padding: 14px 22px 0 22px;
 }
 .coleccion-pie .salir {
   font-family: var(--mono);
