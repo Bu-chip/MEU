@@ -3,6 +3,8 @@ import { getIndices } from '../utils/indices.js'
 import { similares } from '../utils/similares.js'
 import { navegar, hashArchivo } from '../hooks/useHashRoute.js'
 import { useCompartir } from '../hooks/useCompartir.js'
+import { useGuardar } from '../hooks/useGuardar.js'
+import { supabase } from '../lib/supabase.js'
 import { Portada } from '../components/Portada.jsx'
 import { BandcampPlayer } from '../components/BandcampPlayer.jsx'
 import './Ficha.css'
@@ -36,6 +38,7 @@ export function Ficha({ route, archive }) {
   // compartir (reglas de hooks) debe llamarse incondicionalmente.
   const album = archive ? getIndices(archive).byId.get(route.id) : null
   const { compartir, copiado } = useCompartir(album)
+  const { guardado, alternar } = useGuardar(album)
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -121,6 +124,14 @@ export function Ficha({ route, archive }) {
             <button className="compartir" onClick={compartir}>
               {copiado ? 'ENLACE COPIADO' : 'COMPARTIR ↑'}
             </button>
+            {/* GUARDAR se ve siempre, con y sin sesión (sin ella manda a
+                #/entrar y vuelve); solo desaparece si no hay Supabase.
+                ☆/★ (U+2606/U+2605), monocromos en iOS — nunca ⭐ (emoji). */}
+            {supabase && (
+              <button className="guardar" onClick={alternar}>
+                {guardado ? 'GUARDADO ★' : 'GUARDAR ☆'}
+              </button>
+            )}
           </div>
           {poblacion === 'ok' && (
             <div className="player">

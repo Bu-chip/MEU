@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../lib/supabase.js'
 import { AuthCtx } from './context.js'
+import { CLAVE_DESTINO, guardarDestino } from './destino.js'
 
 // Capa de cuentas ADITIVA Y OPCIONAL. Si supabase es null (faltan las env
 // vars) el Provider monta igual y sirve session=null, cargando=false: el
@@ -12,21 +13,10 @@ import { AuthCtx } from './context.js'
 // la URL tras el canje preservando el hash, y (2) restaura el hash de
 // origen que se guardó antes de lanzar el login (vuelta al origen).
 
-const CLAVE_DESTINO = 'meu:destino'
 // redirectTo SIEMPRE la raíz del dominio (o localhost en dev). NUNCA una
 // URL /d/:id/: los stubs hacen location.replace absoluto y se comen la
 // query, matando el ?code= en silencio.
 const REDIRECT = window.location.origin + '/'
-
-// Guarda el hash actual como destino de vuelta. Blindado ante localStorage
-// no disponible (modo privado, permisos).
-function guardarDestino() {
-  try {
-    localStorage.setItem(CLAVE_DESTINO, window.location.hash || '')
-  } catch {
-    /* localStorage no disponible: la vuelta al origen degrada a no-op */
-  }
-}
 
 export function AuthProvider({ children }) {
   const [session, setSession] = useState(null)
