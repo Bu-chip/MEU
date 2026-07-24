@@ -13,7 +13,9 @@ export function Header({ archive }) {
       <header className="cabecera">
         <div>
           <h1 className="logotype">
-            MAPA EUSKADI<span className="l2">UNDERGROUND</span>
+            <a href="#/">
+              MAPA EUSKADI<span className="l2">UNDERGROUND</span>
+            </a>
           </h1>
         </div>
         <div className="counters">
@@ -38,7 +40,16 @@ export function Header({ archive }) {
       </header>
       <p className="firma">
         <span>
-          la guía de <b>Queimada Circuit Records</b> a la música underground de Euskadi
+          la guía de{' '}
+          <a
+            className="qcr-link"
+            href="https://queimadacircuitrecords.com"
+            target="_blank"
+            rel="noopener"
+          >
+            <b>Queimada Circuit Records</b>
+          </a>{' '}
+          a la música underground de Euskadi
         </span>
         <a className="sobre-link firma-enlace" href="#/sobre">
           sobre el proyecto
