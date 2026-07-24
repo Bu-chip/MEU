@@ -13,9 +13,8 @@ function MarcaUsuario() {
   const { ids } = useColeccion()
   if (!supabase) return null
 
-  // Con sesión, el destino final es #/coleccion (aún no existe): de momento
-  // apunta a #/entrar, donde vive el botón de salir.
-  const destino = '#/entrar'
+  // Con sesión, la marca lleva a la colección (SALIR también vive allí).
+  const destino = '#/coleccion'
 
   // Zócalo = tres piezas en flex (patitas · inicial · patitas): el hueco lo
   // fija el CSS (gap), idéntico para cualquier inicial, sin depender del

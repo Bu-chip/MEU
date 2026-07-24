@@ -8,8 +8,13 @@ import { useAuth } from '../auth/useAuth.js'
 // una carga por sesión compartida por todos los componentes, así el botón de
 // la FICHA y el contador de la cabecera ven el mismo Set y se mueven a la
 // vez. Sin sesión (o sin Supabase): Set vacío y ni una llamada a la red.
+//
+// Junto al Set (pertenencia O(1) para el corazón), `orden`: los mismos ids
+// como array, guardado más reciente primero (created_at desc), que es el
+// orden del muro de COLECCIÓN. Las dos estructuras se mueven siempre juntas.
 
 let ids = new Set()
+let orden = [] // ids, guardado más reciente primero
 let cargando = false
 let cargadaPara = null // user.id de la colección en memoria
 const oyentes = new Set()
@@ -25,6 +30,7 @@ function sincronizar(user) {
     if (cargadaPara !== null) {
       cargadaPara = null
       ids = new Set()
+      orden = []
       cargando = false
       emitir()
     }
@@ -36,12 +42,16 @@ function sincronizar(user) {
   emitir()
   supabase
     .from('saved_albums')
-    .select('disco_id')
+    .select('disco_id, created_at')
     .eq('user_id', user.id)
+    .order('created_at', { ascending: false })
     .then(({ data, error }) => {
       if (cargadaPara !== user.id) return // la sesión cambió mientras cargaba
       cargando = false
-      if (!error && data) ids = new Set(data.map((r) => r.disco_id))
+      if (!error && data) {
+        orden = data.map((r) => r.disco_id)
+        ids = new Set(orden)
+      }
       emitir()
     })
 }
@@ -53,6 +63,7 @@ function sincronizar(user) {
 async function insertar(user, discoId) {
   if (!supabase || !user || ids.has(discoId)) return
   ids = new Set(ids).add(discoId)
+  orden = [discoId, ...orden] // recién guardado → cabeza del muro
   emitir()
   const { error } = await supabase
     .from('saved_albums')
@@ -60,6 +71,7 @@ async function insertar(user, discoId) {
   if (error && error.code !== '23505') {
     ids = new Set(ids)
     ids.delete(discoId)
+    orden = orden.filter((id) => id !== discoId)
     emitir()
   }
 }
@@ -68,6 +80,8 @@ async function borrar(user, discoId) {
   if (!supabase || !user || !ids.has(discoId)) return
   ids = new Set(ids)
   ids.delete(discoId)
+  const pos = orden.indexOf(discoId) // para reponerlo en su sitio si falla
+  orden = orden.filter((id) => id !== discoId)
   emitir()
   const { error } = await supabase
     .from('saved_albums')
@@ -76,6 +90,7 @@ async function borrar(user, discoId) {
     .eq('disco_id', discoId)
   if (error) {
     ids = new Set(ids).add(discoId)
+    orden = [...orden.slice(0, pos), discoId, ...orden.slice(pos)]
     emitir()
   }
 }
@@ -97,6 +112,7 @@ export function useColeccion() {
 
   return {
     ids,
+    orden,
     cargando,
     guardar: (discoId) => insertar(user, discoId),
     quitar: (discoId) => borrar(user, discoId),

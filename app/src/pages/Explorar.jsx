@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import { getIndices } from '../utils/indices.js'
 import { shuffle, muroLibre, alAzarDistinto, TAM_MURO } from '../utils/azar.js'
 import { FichaBar } from '../components/FichaBar.jsx'
-import { miniatura } from '../utils/portadas.js'
+import { Tile } from '../components/Tile.jsx'
 import './Explorar.css'
 
 // Spec congelada: design/meu-explorar-v8-deriva.html. Tres mandos de
@@ -28,73 +28,12 @@ const TIPOGRAFICAS = [
 
 // Variante por posición en el muro: v-portada repartida al RATIO_PORTADA
 // (acumulador tipo Bresenham), el resto recorre la rotación tipográfica
-// sin saltarse ninguna.
+// sin saltarse ninguna. El tile en sí vive en components/Tile.jsx desde
+// que COLECCIÓN comparte el muro.
 function varianteEn(i) {
   const previas = Math.floor(i * RATIO_PORTADA)
   if (Math.floor((i + 1) * RATIO_PORTADA) > previas) return 'v-portada'
   return TIPOGRAFICAS[(i - previas) % TIPOGRAFICAS.length]
-}
-
-// Sustitutas tipográficas para los discos sin cover_url (27) o con la
-// imagen rota: estables por disco para que regenerar el muro no baile.
-const RESERVAS = ['v-inicial', 'v-negra', 'v-titulo', 'v-split']
-
-function Tile({ album, variante, onAbrir }) {
-  const [rota, setRota] = useState(false)
-  if (variante === 'v-portada' && (!album.cover_url || rota)) {
-    variante = RESERVAS[album.id % RESERVAS.length]
-  }
-  const inicial = (album.artist || '?').trim().charAt(0).toUpperCase()
-  const metaGY = (album.genre || '') + (album.year ? ' · ' + album.year : '')
-
-  return (
-    <div
-      className={`tile ${variante}`}
-      tabIndex={0}
-      onClick={onAbrir}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter') onAbrir()
-      }}
-    >
-      {variante === 'v-negra' && <div className="tt">{album.title}</div>}
-      {variante === 'v-inicial' && (
-        <>
-          <div className="ini">{inicial}</div>
-          <div className="aa">{album.artist}</div>
-        </>
-      )}
-      {variante === 'v-split' && (
-        <>
-          <div className="top">{album.artist}</div>
-          <div className="bot">{album.title}</div>
-        </>
-      )}
-      {variante === 'v-titulo' && <div className="big">{album.title}</div>}
-      {variante === 'v-portada' && (
-        <>
-          <img
-            className="tratada"
-            src={miniatura(album.cover_url)}
-            alt=""
-            loading="lazy"
-            decoding="async"
-            onError={() => setRota(true)}
-          />
-          <div className="pa">{album.artist}</div>
-        </>
-      )}
-      <div className="meta">
-        <div>
-          <div className="a">{album.artist}</div>
-          <div className="t">{album.title}</div>
-        </div>
-        <div className="g">
-          <span>{metaGY}</span>
-          <span className="play">▶</span>
-        </div>
-      </div>
-    </div>
-  )
 }
 
 export function Explorar({ archive }) {
