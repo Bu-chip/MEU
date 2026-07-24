@@ -13,7 +13,8 @@ export function Sobre() {
       </p>
       <h2>Cómo funciona</h2>
       <p>
-        No hay algoritmo, ni cuentas, ni nada que te vigile. Solo un catálogo curado con
+        No hay algoritmo ni nada que te vigile. La cuenta es opcional y solo sirve para
+        guardarte discos. Solo un catálogo curado con
         criterio maximalista: ante la duda, un disco entra; solo queda fuera lo clarísimamente
         ajeno a la escena. Cada ficha apunta a Bandcamp — la idea es que escuches, y si algo te
         gusta, lo compres ahí y apoyes a quien lo hace.
