@@ -19,6 +19,15 @@
   font-size: clamp(44px, 9vw, 110px);
 }
 .logotype .l2 { display: block; }
+/* El titular es enlace a la portada pero en reposo no se delata: mismo
+   color, sin subrayado. inline-block para que el hover lima abrace solo
+   el texto y no la columna entera. */
+.logotype a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+.logotype a:hover { background: var(--lima); }
 
 .counters { font-size: 11px; line-height: 1.7; }
 .counters b { font-weight: 700; }
@@ -30,6 +39,15 @@
 .sobre-link:hover { background: var(--lima); }
 .firma { font-size: 11px; padding: 4px 18px 0 18px; }
 .firma b { font-weight: 700; }
+/* El nombre del sello enlaza a su web: negrita intacta y subrayado en
+   reposo como «sobre el proyecto» — sin él, la única pista sería el
+   hover, que en táctil no existe. */
+.firma .qcr-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.firma .qcr-link:hover { background: var(--lima); }
 
 /* ── Escritorio (>480px): columna a la derecha del titular ─────────────
    «sobre el proyecto» arriba con aire, cifras apiladas debajo. El enlace
