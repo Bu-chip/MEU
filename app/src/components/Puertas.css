@@ -32,3 +32,41 @@ nav.puertas a.sobre {
   white-space: nowrap;
 }
 nav.puertas a.sobre:hover { background: var(--lima); }
+
+/* Marca de usuario: al extremo derecho, después de «sobre el proyecto».
+   Hereda la tinta vía currentColor (nada de hex a pelo). Mismo criterio
+   monocromo del resto de la barra; hover lima como las puertas. */
+nav.puertas a.marca-usuario {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--tinta);
+  text-decoration: none;
+  padding: 0 16px;
+  white-space: nowrap;
+}
+nav.puertas a.marca-usuario:hover { background: var(--lima); }
+nav.puertas a.marca-usuario svg { display: block; }
+/* Zócalo en tres piezas: el hueco entre patitas e inicial lo fija este gap,
+   idéntico para cualquier inicial (una I no queda suelta, una M no aprieta).
+   --marca-gap es el punto de afinado. */
+nav.puertas a.marca-usuario .marca-chip {
+  --marca-gap: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--marca-gap);
+}
+nav.puertas a.marca-usuario .marca-inicial {
+  font-family: var(--display);
+  font-size: 20px;
+  line-height: 1;
+  color: currentColor;
+}
+nav.puertas a.marca-usuario .marca-txt {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--tinta);
+}
