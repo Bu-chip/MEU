@@ -7,24 +7,49 @@ main.coleccion-pagina {
 .coleccion-cab {
   padding: 26px 22px 18px 22px;
 }
-/* Barra de cuenta: identidad a la izquierda, SALIR a la derecha, en voz baja
-   y sobre el titular. Es el «menú de cuenta» del MEU sin ventana flotante —la
-   página COLECCIÓN es el panel (decisión: sin desplegables). */
+/* Fila superior: titular a un lado y bloque de cuenta al otro, con los pies
+   a la misma altura (align-items:flex-end). Equilibrio pedido: COLECCIÓN
+   ocupa su mitad, la cuenta la suya. Es el «menú de cuenta» del MEU sin
+   ventana flotante —la página COLECCIÓN es el panel (decisión: sin
+   desplegables). */
+.coleccion-cab .cab-fila {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.coleccion-cab .cab-fila h1 {
+  min-width: 0;
+}
+/* Bloque de cuenta: nombre sobre SALIR, alineado a la derecha, como una
+   sola unidad (antes iban sueltos y descolocados). */
 .coleccion-cab .cuenta-barra {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 14px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex: none;
+  text-align: right;
 }
 .coleccion-cab .cuenta-quien {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.5px;
   color: var(--tinta);
+  max-width: 60vw;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+/* Móvil: el titular a tamaño mínimo (34px) más el bloque de cuenta no caben
+   en una fila; la fila pasa a columna y la cuenta baja bajo el titular, pero
+   sigue alineada a la derecha (su propio align-items:flex-end), agrupada. */
+@media (max-width: 520px) {
+  .coleccion-cab .cab-fila {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
 }
 .coleccion-cab h1 {
   font-family: var(--display);
