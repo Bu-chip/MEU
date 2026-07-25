@@ -1,0 +1,43 @@
+name: Índice de sellos (labels, derivado)
+
+# Deriva el índice de sellos desde el canónico (solo lectura) y sube los dos
+# derivados como artifact del run, para poder disparar y leer el informe desde
+# el iPad sin terminal. Fase 1 READ-ONLY: no escribe nada en el repo.
+on:
+  workflow_dispatch:
+
+# Solo lectura del repo: el script LEE el canónico y escribe en data/derived/,
+# que viaja únicamente como artifact. Nada se commitea aquí.
+permissions:
+  contents: read
+
+jobs:
+  labels-index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # El script usa solo la librería estándar (json, re, urllib, pathlib):
+      # no hay deps que instalar. El paso queda como gancho explícito por si en
+      # el futuro se añaden.
+      - name: Instalar dependencias
+        run: echo "Sin dependencias externas (solo stdlib)."
+
+      - name: Derivar índice de sellos
+        run: python3 scripts/labels_index.py
+
+      - name: Subir derivados como artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: labels-index
+          path: |
+            data/derived/labels_report.md
+            data/derived/labels.json
+          if-no-files-found: error
