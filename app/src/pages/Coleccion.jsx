@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useAuth } from '../auth/useAuth.js'
 import { useColeccion } from '../hooks/useColeccion.js'
+import { useVistos } from '../hooks/useVistos.js'
 import { reemplazar } from '../hooks/useHashRoute.js'
 import { formato } from '../utils/formato.js'
 import { Tile } from '../components/Tile.jsx'
@@ -15,8 +16,9 @@ import './Coleccion.css'
 // desaparezca del muro y baje el contador en el acto. El click en el tile
 // abre la misma mini-ficha inferior que en EXPLORAR.
 export function Coleccion({ archive }) {
-  const { session, cargando: cargandoSesion, salir } = useAuth()
+  const { session, cargando: cargandoSesion, salir, nombre, inicial } = useAuth()
   const { orden, quitar, cargando } = useColeccion()
+  const { ids: vistos } = useVistos()
   const [seleccion, setSeleccion] = useState(null)
 
   // Página con dueño: sin sesión, a #/entrar. Con replace, no con navegar:
@@ -39,12 +41,28 @@ export function Coleccion({ archive }) {
   // romper: el contador cuenta lo que el muro enseña.
   const discos = orden.map((id) => porId.get(id)).filter(Boolean)
 
+  const total = archive.albums.length
+
   return (
     <main className="coleccion-pagina">
       <header className="coleccion-cab">
+        {/* Barra de cuenta: quién eres (nombre de Google si lo hay, si no la
+            inicial — nunca el email) y SALIR a mano, no perdido al pie. */}
+        <div className="cuenta-barra">
+          <span className="cuenta-quien">{nombre || inicial}</span>
+          <button className="salir" onClick={salir}>
+            SALIR
+          </button>
+        </div>
         <h1>COLECCIÓN</h1>
-        <p className="escala">
-          {formato(discos.length)} / {formato(archive.albums.length)} discos
+        {/* Dos ejes independientes: guardar es intención (guardados, lima);
+            haber pasado por un disco es recorrido (vistos, tinta). Cifras
+            siempre calculadas del dato, con el punto de millar de la cabecera. */}
+        <p className="escala guardados">
+          <b>{formato(discos.length)}</b> / {formato(total)} guardados
+        </p>
+        <p className="escala vistos">
+          <b>{formato(vistos.size)}</b> / {formato(total)} vistos
         </p>
       </header>
 
@@ -67,14 +85,10 @@ export function Coleccion({ archive }) {
         </div>
       )}
 
-      {/* SALIR vive aquí (antes en #/entrar): al pie, discreto, en mono.
-          Al cerrar sesión el efecto de arriba ya manda a #/entrar. */}
-      <footer className="coleccion-pie">
-        <button className="salir" onClick={salir}>
-          SALIR
-        </button>
-      </footer>
-
+      {/* SALIR se subió a la barra de cuenta de la cabecera (antes vivía aquí
+          al pie): cerrar sesión es una opción básica y debe descubrirse sin
+          bajar hasta el final del muro. Al salir, el efecto de arriba manda a
+          #/entrar. */}
       <FichaBar album={seleccion} onCerrar={() => setSeleccion(null)} />
     </main>
   )
