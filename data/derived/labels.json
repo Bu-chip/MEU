@@ -953,8 +953,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 94,
     "n_discos": 97,
+    "origen": "umbral",
     "url": "https://zaratazarautz.bandcamp.com"
   },
   {
@@ -1802,8 +1805,11 @@
     "flags": [
       "posible_VA"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 81,
     "n_discos": 105,
+    "origen": "umbral",
     "url": "https://musexindustries.bandcamp.com"
   },
   {
@@ -2356,8 +2362,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 51,
     "n_discos": 82,
+    "origen": "umbral",
     "url": "https://polygonnetwork.bandcamp.com"
   },
   {
@@ -2853,9 +2862,17 @@
         ]
       }
     ],
-    "flags": [],
+    "flags": [
+      "posible_VA"
+    ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 48,
     "n_discos": 53,
+    "origen": "ambos",
     "url": "https://eclecticreactionsrecords.bandcamp.com"
   },
   {
@@ -3222,8 +3239,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 35,
     "n_discos": 40,
+    "origen": "ambos",
     "url": "https://muertematarrecords.bandcamp.com"
   },
   {
@@ -3584,8 +3607,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 33,
     "n_discos": 51,
+    "origen": "umbral",
     "url": "https://crudobilbao.com"
   },
   {
@@ -3866,8 +3892,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 24,
     "n_discos": 52,
+    "origen": "umbral",
     "url": "https://bidehuts.bandcamp.com"
   },
   {
@@ -4115,8 +4144,11 @@
     "flags": [
       "posible_VA"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 23,
     "n_discos": 27,
+    "origen": "umbral",
     "url": "https://inguma.bandcamp.com"
   },
   {
@@ -4342,8 +4374,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 20,
     "n_discos": 34,
+    "origen": "ambos",
     "url": "https://esnebidearecords.bandcamp.com"
   },
   {
@@ -4547,8 +4585,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 18,
     "n_discos": 29,
+    "origen": "umbral",
     "url": "https://timbamuziklab.bandcamp.com"
   },
   {
@@ -4742,8 +4783,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 18,
     "n_discos": 20,
+    "origen": "ambos",
     "url": "https://bangrecords.bandcamp.com"
   },
   {
@@ -4935,8 +4982,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 18,
     "n_discos": 18,
+    "origen": "umbral",
     "url": "https://somniferumrec.bandcamp.com"
   },
   {
@@ -5109,8 +5159,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 16,
     "n_discos": 17,
+    "origen": "umbral",
     "url": "https://bombbasshifi.bandcamp.com"
   },
   {
@@ -5273,8 +5326,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 15,
     "n_discos": 16,
+    "origen": "umbral",
     "url": "https://forbiddencolours.bandcamp.com"
   },
   {
@@ -5436,8 +5492,11 @@
     "flags": [
       "posible_VA"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 14,
     "n_discos": 22,
+    "origen": "umbral",
     "url": "https://zawpklem.bandcamp.com"
   },
   {
@@ -5593,8 +5652,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 14,
     "n_discos": 16,
+    "origen": "umbral",
     "url": "https://bassleemusic.bandcamp.com"
   },
   {
@@ -5769,8 +5831,13 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "diskak"
+    ],
     "n_artistas": 13,
     "n_discos": 45,
+    "origen": "ambos",
     "url": "https://orruadiskak.bandcamp.com"
   },
   {
@@ -5912,8 +5979,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 13,
     "n_discos": 13,
+    "origen": "umbral",
     "url": "https://belarri.bandcamp.com"
   },
   {
@@ -6055,8 +6125,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 13,
     "n_discos": 13,
+    "origen": "umbral",
     "url": "https://deepnas.bandcamp.com"
   },
   {
@@ -6199,8 +6272,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 12,
     "n_discos": 20,
+    "origen": "umbral",
     "url": "https://ensemblesinkro.bandcamp.com"
   },
   {
@@ -6348,8 +6424,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 11,
     "n_discos": 35,
+    "origen": "umbral",
     "url": "https://raperosdeemaus.bandcamp.com"
   },
   {
@@ -6468,8 +6547,11 @@
       "posible_VA",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 9,
     "n_discos": 22,
+    "origen": "umbral",
     "url": "https://secretsocietychile.bandcamp.com"
   },
   {
@@ -6572,8 +6654,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 8,
     "n_discos": 17,
+    "origen": "umbral",
     "url": "https://sustraidunyouths.bandcamp.com"
   },
   {
@@ -6668,8 +6753,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 8,
     "n_discos": 11,
+    "origen": "umbral",
     "url": "https://vyramed.bandcamp.com"
   },
   {
@@ -6765,8 +6853,13 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "discos"
+    ],
     "n_artistas": 8,
     "n_discos": 10,
+    "origen": "ambos",
     "url": "https://discosbanana1.bandcamp.com"
   },
   {
@@ -6860,8 +6953,15 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "record",
+      "recordings",
+      "recording"
+    ],
     "n_artistas": 8,
     "n_discos": 10,
+    "origen": "ambos",
     "url": "https://senoidrecordings.bandcamp.com"
   },
   {
@@ -6955,8 +7055,15 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "record",
+      "recordings",
+      "recording"
+    ],
     "n_artistas": 8,
     "n_discos": 8,
+    "origen": "ambos",
     "url": "https://familyspreerecordings.bandcamp.com"
   },
   {
@@ -7050,8 +7157,11 @@
     "flags": [
       "posible_VA"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 8,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://haziesporak.bandcamp.com"
   },
   {
@@ -7157,8 +7267,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 7,
     "n_discos": 31,
+    "origen": "umbral",
     "url": "https://ekinmusic.bandcamp.com"
   },
   {
@@ -7260,8 +7373,11 @@
     "flags": [
       "posible_VA"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 7,
     "n_discos": 25,
+    "origen": "umbral",
     "url": "https://clartycat.bandcamp.com"
   },
   {
@@ -7366,8 +7482,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 7,
     "n_discos": 25,
+    "origen": "umbral",
     "url": "https://josebairazoki.bandcamp.com"
   },
   {
@@ -7457,8 +7576,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 7,
     "n_discos": 15,
+    "origen": "umbral",
     "url": "https://goxoa.bandcamp.com"
   },
   {
@@ -7544,8 +7666,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 7,
     "n_discos": 11,
+    "origen": "umbral",
     "url": "https://untalasalsa.bandcamp.com"
   },
   {
@@ -7631,8 +7756,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 7,
     "n_discos": 11,
+    "origen": "ambos",
     "url": "https://zaragozadesordenrecords.bandcamp.com"
   },
   {
@@ -7714,8 +7845,13 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "zintak"
+    ],
     "n_artistas": 7,
     "n_discos": 7,
+    "origen": "ambos",
     "url": "https://kristonzintak.bandcamp.com"
   },
   {
@@ -7800,8 +7936,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 6,
     "n_discos": 17,
+    "origen": "umbral",
     "url": "https://javiersun.bandcamp.com"
   },
   {
@@ -7883,8 +8022,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 6,
     "n_discos": 16,
+    "origen": "ambos",
     "url": "https://rawsurfacerecords.bandcamp.com"
   },
   {
@@ -7966,8 +8111,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 6,
     "n_discos": 14,
+    "origen": "umbral",
     "url": "https://camilomateo.bandcamp.com"
   },
   {
@@ -8048,8 +8196,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 6,
     "n_discos": 13,
+    "origen": "umbral",
     "url": "https://wolkokrots.bandcamp.com"
   },
   {
@@ -8127,8 +8278,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 6,
     "n_discos": 9,
+    "origen": "umbral",
     "url": "https://thetitanians.bandcamp.com"
   },
   {
@@ -8201,8 +8355,13 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "grabaciones"
+    ],
     "n_artistas": 6,
     "n_discos": 7,
+    "origen": "ambos",
     "url": "https://tritonegrabaciones.bandcamp.com"
   },
   {
@@ -8274,8 +8433,13 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "grabaciones"
+    ],
     "n_artistas": 6,
     "n_discos": 6,
+    "origen": "ambos",
     "url": "https://grabacionesviscerales.bandcamp.com"
   },
   {
@@ -8347,8 +8511,14 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 5,
     "n_discos": 13,
+    "origen": "ambos",
     "url": "https://ghettogunshotrecords.bandcamp.com"
   },
   {
@@ -8415,8 +8585,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 5,
     "n_discos": 10,
+    "origen": "umbral",
     "url": "https://alonereggaeshop.bandcamp.com"
   },
   {
@@ -8482,8 +8655,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 5,
     "n_discos": 9,
+    "origen": "ambos",
     "url": "https://caballitorecords.bandcamp.com"
   },
   {
@@ -8549,8 +8728,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 5,
     "n_discos": 9,
+    "origen": "umbral",
     "url": "https://edervxga.bandcamp.com"
   },
   {
@@ -8615,8 +8797,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 5,
     "n_discos": 8,
+    "origen": "ambos",
     "url": "https://dungeonlordrecords.bandcamp.com"
   },
   {
@@ -8681,8 +8869,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 5,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://monocat7.bandcamp.com"
   },
   {
@@ -8749,8 +8940,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 5,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://txiltxoko.bandcamp.com"
   },
   {
@@ -8817,8 +9011,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 5,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://valdokmusic.bandcamp.com"
   },
   {
@@ -8884,8 +9081,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 5,
     "n_discos": 7,
+    "origen": "umbral",
     "url": "https://maukamusik.bandcamp.com"
   },
   {
@@ -8947,8 +9147,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 5,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://unsound-methods.bandcamp.com"
   },
   {
@@ -9056,8 +9259,11 @@
       "posible_VA",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 57,
+    "origen": "umbral",
     "url": "https://breathingthecore.bandcamp.com"
   },
   {
@@ -9124,8 +9330,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 17,
+    "origen": "umbral",
     "url": "https://sergiozurutuza.bandcamp.com"
   },
   {
@@ -9186,8 +9395,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 10,
+    "origen": "umbral",
     "url": "https://elcrack.bandcamp.com"
   },
   {
@@ -9246,8 +9458,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 9,
+    "origen": "umbral",
     "url": "https://antoinebellanger.bandcamp.com"
   },
   {
@@ -9301,8 +9516,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://raso.bandcamp.com"
   },
   {
@@ -9355,8 +9573,13 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "zintak"
+    ],
     "n_artistas": 4,
     "n_discos": 5,
+    "origen": "ambos",
     "url": "https://azkarzintak.bandcamp.com"
   },
   {
@@ -9408,9 +9631,16 @@
         ]
       }
     ],
-    "flags": [],
+    "flags": [
+      "posible_VA"
+    ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "discos"
+    ],
     "n_artistas": 4,
     "n_discos": 5,
+    "origen": "ambos",
     "url": "https://discosdekirlian.bandcamp.com"
   },
   {
@@ -9463,8 +9693,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://kaliyugayouth.bandcamp.com"
   },
   {
@@ -9518,8 +9751,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://lavidaesunmus.bandcamp.com"
   },
   {
@@ -9571,8 +9807,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 4,
     "n_discos": 4,
+    "origen": "ambos",
     "url": "https://chin-chinrecordsmundiales.bandcamp.com"
   },
   {
@@ -9624,8 +9866,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://crystalmine.bandcamp.com"
   },
   {
@@ -9677,8 +9922,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://dialectoperiferico.bandcamp.com"
   },
   {
@@ -9730,8 +9978,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 4,
     "n_discos": 4,
+    "origen": "ambos",
     "url": "https://infrarecords.bandcamp.com"
   },
   {
@@ -9785,8 +10039,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://isuo.bandcamp.com"
   },
   {
@@ -9838,8 +10095,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 4,
     "n_discos": 4,
+    "origen": "ambos",
     "url": "https://sustraiakrecords.bandcamp.com"
   },
   {
@@ -9891,8 +10154,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://xedh.bandcamp.com"
   },
   {
@@ -9944,8 +10210,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 4,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://zulo8.bandcamp.com"
   },
   {
@@ -10012,8 +10281,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 23,
+    "origen": "umbral",
     "url": "https://joanakaredmoon.bandcamp.com"
   },
   {
@@ -10074,8 +10346,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 22,
+    "origen": "umbral",
     "url": "https://miusichole.bandcamp.com"
   },
   {
@@ -10128,8 +10403,11 @@
       "posible_VA",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 11,
+    "origen": "umbral",
     "url": "https://enochsvision.bandcamp.com"
   },
   {
@@ -10179,8 +10457,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 9,
+    "origen": "umbral",
     "url": "https://txarlyusher.bandcamp.com"
   },
   {
@@ -10228,8 +10509,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 7,
+    "origen": "umbral",
     "url": "https://25thcomingfire.bandcamp.com"
   },
   {
@@ -10277,8 +10561,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 7,
+    "origen": "umbral",
     "url": "https://jamesroom.bandcamp.com"
   },
   {
@@ -10325,8 +10612,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://maitelarburu.bandcamp.com"
   },
   {
@@ -10373,8 +10663,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://poder.bandcamp.com"
   },
   {
@@ -10419,8 +10712,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://sonidomuchacho.bandcamp.com"
   },
   {
@@ -10467,8 +10763,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://wilhelmusic.bandcamp.com"
   },
   {
@@ -10514,8 +10813,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://antiguaybarbuda.bandcamp.com"
   },
   {
@@ -10561,8 +10863,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://aterpe.bandcamp.com"
   },
   {
@@ -10608,8 +10913,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://estricalla.bandcamp.com"
   },
   {
@@ -10653,8 +10961,13 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "tapes"
+    ],
     "n_artistas": 3,
     "n_discos": 5,
+    "origen": "ambos",
     "url": "https://presidentetapes.bandcamp.com"
   },
   {
@@ -10700,8 +11013,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://shintoma.bandcamp.com"
   },
   {
@@ -10747,8 +11063,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://thewrongcorner.bandcamp.com"
   },
   {
@@ -10793,8 +11112,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://afrihooop.bandcamp.com"
   },
   {
@@ -10839,8 +11161,13 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "discos"
+    ],
     "n_artistas": 3,
     "n_discos": 4,
+    "origen": "ambos",
     "url": "https://discoswalden.bandcamp.com"
   },
   {
@@ -10885,8 +11212,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://eliscasado.bandcamp.com"
   },
   {
@@ -10931,8 +11261,15 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "record",
+      "recordings",
+      "recording"
+    ],
     "n_artistas": 3,
     "n_discos": 4,
+    "origen": "ambos",
     "url": "https://elnebularecordings.bandcamp.com"
   },
   {
@@ -10977,8 +11314,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://silikonanswerindustries.bandcamp.com"
   },
   {
@@ -11021,8 +11361,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://withinthedarkwoods.bandcamp.com"
   },
   {
@@ -11067,8 +11410,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://ziztadarlantz.bandcamp.com"
   },
   {
@@ -11112,8 +11458,14 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "ambos",
     "url": "https://brutalarratiarecords.bandcamp.com"
   },
   {
@@ -11155,8 +11507,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://corsariosestudios.bandcamp.com"
   },
   {
@@ -11200,8 +11555,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://eduardozr.bandcamp.com"
   },
   {
@@ -11245,8 +11603,11 @@
     "flags": [
       "posible_VA"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://elkarvinylcollection.bandcamp.com"
   },
   {
@@ -11288,8 +11649,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "ambos",
     "url": "https://gudaridubrecords.bandcamp.com"
   },
   {
@@ -11331,8 +11698,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://javip3z.bandcamp.com"
   },
   {
@@ -11376,8 +11746,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://kontra-k.bandcamp.com"
   },
   {
@@ -11419,8 +11792,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://moimoicollectif.bandcamp.com"
   },
   {
@@ -11462,8 +11838,14 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "ambos",
     "url": "https://queimada-circuit-records.bandcamp.com"
   },
   {
@@ -11507,8 +11889,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://rolangarces.bandcamp.com"
   },
   {
@@ -11550,8 +11935,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://samelevel.bandcamp.com"
   },
   {
@@ -11595,8 +11983,11 @@
     "flags": [
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://thecovenantband.bandcamp.com"
   },
   {
@@ -11638,8 +12029,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://truthtown.bandcamp.com"
   },
   {
@@ -11681,8 +12075,11 @@
       }
     ],
     "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 3,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://yojimboi.bandcamp.com"
   },
   {
@@ -11765,8 +12162,14 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 49,
+    "origen": "ambos",
     "url": "https://petruskarecords.bandcamp.com"
   },
   {
@@ -11841,8 +12244,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 41,
+    "origen": "umbral",
     "url": "https://theetherensemble.bandcamp.com"
   },
   {
@@ -11904,10 +12310,14 @@
     ],
     "flags": [
       "borde_2artistas",
+      "posible_VA",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 31,
+    "origen": "umbral",
     "url": "https://wldv.bandcamp.com"
   },
   {
@@ -11958,8 +12368,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 17,
+    "origen": "umbral",
     "url": "https://revolutionarybrothers.bandcamp.com"
   },
   {
@@ -12007,8 +12420,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 15,
+    "origen": "umbral",
     "url": "https://laagoniadevivir.bandcamp.com"
   },
   {
@@ -12054,8 +12470,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 14,
+    "origen": "umbral",
     "url": "https://glyyyydan.bandcamp.com"
   },
   {
@@ -12102,8 +12521,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 13,
+    "origen": "umbral",
     "url": "https://cosmichyrax.bandcamp.com"
   },
   {
@@ -12150,8 +12572,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 13,
+    "origen": "umbral",
     "url": "https://kalekourdangak.bandcamp.com"
   },
   {
@@ -12196,8 +12621,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 11,
+    "origen": "umbral",
     "url": "https://rivendel.bandcamp.com"
   },
   {
@@ -12242,8 +12670,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 10,
+    "origen": "umbral",
     "url": "https://uyulala.bandcamp.com"
   },
   {
@@ -12286,8 +12717,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 9,
+    "origen": "umbral",
     "url": "https://gravelbed.bandcamp.com"
   },
   {
@@ -12332,8 +12766,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 9,
+    "origen": "umbral",
     "url": "https://keuagirretxea.bandcamp.com"
   },
   {
@@ -12376,8 +12813,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 9,
+    "origen": "umbral",
     "url": "https://kultokultibo.bandcamp.com"
   },
   {
@@ -12418,8 +12858,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 9,
+    "origen": "umbral",
     "url": "https://txomusika.bandcamp.com"
   },
   {
@@ -12461,8 +12904,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://angelocray.bandcamp.com"
   },
   {
@@ -12503,8 +12949,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://elbisrever.bandcamp.com"
   },
   {
@@ -12547,8 +12996,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://gussycanciones.bandcamp.com"
   },
   {
@@ -12589,8 +13041,11 @@
       "borde_2artistas",
       "nombre_anidado"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://jonmusika.bandcamp.com"
   },
   {
@@ -12631,8 +13086,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://mondolava.bandcamp.com"
   },
   {
@@ -12673,8 +13131,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 8,
+    "origen": "umbral",
     "url": "https://niacoyoteetachicotornado.bandcamp.com"
   },
   {
@@ -12716,8 +13177,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 7,
+    "origen": "umbral",
     "url": "https://juantxozeberioetxetxipia.bandcamp.com"
   },
   {
@@ -12758,8 +13222,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 7,
+    "origen": "umbral",
     "url": "https://naveartificial.bandcamp.com"
   },
   {
@@ -12800,8 +13267,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 7,
+    "origen": "umbral",
     "url": "https://phlgz.bandcamp.com"
   },
   {
@@ -12843,8 +13313,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://drmugre.bandcamp.com"
   },
   {
@@ -12884,8 +13357,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://gazlimbo.bandcamp.com"
   },
   {
@@ -12928,8 +13404,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://janjodidaactitudnormal.bandcamp.com"
   },
   {
@@ -12969,8 +13448,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://jimmybidaurreta.bandcamp.com"
   },
   {
@@ -13010,8 +13492,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://juanortiz.bandcamp.com"
   },
   {
@@ -13051,8 +13536,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://muyfellini.bandcamp.com"
   },
   {
@@ -13092,8 +13580,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://obstetragrind.bandcamp.com"
   },
   {
@@ -13133,8 +13624,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://passionfarolas.bandcamp.com"
   },
   {
@@ -13174,8 +13668,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://samuelcano.bandcamp.com"
   },
   {
@@ -13215,8 +13712,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://tartalomusic.bandcamp.com"
   },
   {
@@ -13254,8 +13754,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://themussels.bandcamp.com"
   },
   {
@@ -13294,8 +13797,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 6,
+    "origen": "umbral",
     "url": "https://zarataselektion.bandcamp.com"
   },
   {
@@ -13334,8 +13840,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://12tribu.bandcamp.com"
   },
   {
@@ -13372,8 +13881,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://1991taldea.bandcamp.com"
   },
   {
@@ -13411,8 +13923,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://djyuju.bandcamp.com"
   },
   {
@@ -13451,8 +13966,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://garazigorostiaga.bandcamp.com"
   },
   {
@@ -13491,8 +14009,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://losrequesones.bandcamp.com"
   },
   {
@@ -13530,8 +14051,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://nicolasceretti.bandcamp.com"
   },
   {
@@ -13569,8 +14093,14 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "ambos",
     "url": "https://notokarrecords.bandcamp.com"
   },
   {
@@ -13609,8 +14139,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://perlata.bandcamp.com"
   },
   {
@@ -13647,8 +14180,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://sosharp.bandcamp.com"
   },
   {
@@ -13687,8 +14223,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://telmotrenor.bandcamp.com"
   },
   {
@@ -13728,8 +14267,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://viborahc.bandcamp.com"
   },
   {
@@ -13768,8 +14310,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 5,
+    "origen": "umbral",
     "url": "https://ziakhus.bandcamp.com"
   },
   {
@@ -13807,8 +14352,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://costasmusic.bandcamp.com"
   },
   {
@@ -13844,8 +14392,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://dexmusiccom.bandcamp.com"
   },
   {
@@ -13883,8 +14434,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://fatheralien.bandcamp.com"
   },
   {
@@ -13922,8 +14476,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://flyshit.bandcamp.com"
   },
   {
@@ -13960,8 +14517,11 @@
       "borde_2artistas",
       "nombre_anidado"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://hirugarrenbelarria.bandcamp.com"
   },
   {
@@ -13999,8 +14559,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://imago4.bandcamp.com"
   },
   {
@@ -14036,8 +14599,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://jabalinamusica.bandcamp.com"
   },
   {
@@ -14074,8 +14640,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://lasonrisametalica.bandcamp.com"
   },
   {
@@ -14111,8 +14680,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://liot103.bandcamp.com"
   },
   {
@@ -14149,8 +14721,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://losnerviosos.bandcamp.com"
   },
   {
@@ -14190,8 +14765,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://surfinkaos.bandcamp.com"
   },
   {
@@ -14229,8 +14807,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://veronicaolmos.bandcamp.com"
   },
   {
@@ -14268,8 +14849,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 4,
+    "origen": "umbral",
     "url": "https://xabibasterra.bandcamp.com"
   },
   {
@@ -14305,8 +14889,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://adamwoolf.bandcamp.com"
   },
   {
@@ -14342,8 +14929,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://aitorrubio.bandcamp.com"
   },
   {
@@ -14380,8 +14970,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://barbakorehc.bandcamp.com"
   },
   {
@@ -14418,8 +15011,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://crownledge.bandcamp.com"
   },
   {
@@ -14456,8 +15052,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://empireofdisease.bandcamp.com"
   },
   {
@@ -14494,8 +15093,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://fustacello.bandcamp.com"
   },
   {
@@ -14532,8 +15134,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://garon.bandcamp.com"
   },
   {
@@ -14570,8 +15175,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://intoxikado.bandcamp.com"
   },
   {
@@ -14608,8 +15216,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://jupiterjon.bandcamp.com"
   },
   {
@@ -14646,8 +15257,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://kamorrah.bandcamp.com"
   },
   {
@@ -14684,8 +15298,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://leilasix.bandcamp.com"
   },
   {
@@ -14722,8 +15339,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://lodor.bandcamp.com"
   },
   {
@@ -14760,8 +15380,14 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "ambos",
     "url": "https://lurrikararecords.bandcamp.com"
   },
   {
@@ -14796,8 +15422,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://mktdiy.bandcamp.com"
   },
   {
@@ -14835,8 +15464,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://mondocanetaldea.bandcamp.com"
   },
   {
@@ -14874,8 +15506,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://mryogo.bandcamp.com"
   },
   {
@@ -14911,8 +15546,11 @@
       "borde_2artistas",
       "nombre_anidado"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://mvega.bandcamp.com"
   },
   {
@@ -14949,8 +15587,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://nokomplytaldea.bandcamp.com"
   },
   {
@@ -14987,8 +15628,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://pomeray.bandcamp.com"
   },
   {
@@ -15023,8 +15667,14 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "ambos",
     "url": "https://radixrecords.bandcamp.com"
   },
   {
@@ -15060,8 +15710,11 @@
       "borde_2artistas",
       "nombre_anidado"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://seriesnegras.bandcamp.com"
   },
   {
@@ -15098,8 +15751,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://showsaone.bandcamp.com"
   },
   {
@@ -15136,8 +15792,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://sigeruban.bandcamp.com"
   },
   {
@@ -15175,8 +15834,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://siracoel.bandcamp.com"
   },
   {
@@ -15212,8 +15874,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://sunnywrightiv.bandcamp.com"
   },
   {
@@ -15250,8 +15915,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 3,
+    "origen": "umbral",
     "url": "https://wavyrootz.bandcamp.com"
   },
   {
@@ -15287,8 +15955,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://ainaraortega.bandcamp.com"
   },
   {
@@ -15324,8 +15995,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://aitorhuergo.bandcamp.com"
   },
   {
@@ -15359,8 +16033,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://alfredadler.bandcamp.com"
   },
   {
@@ -15395,8 +16072,11 @@
       "borde_2artistas",
       "nombre_anidado"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://andreiklee.bandcamp.com"
   },
   {
@@ -15431,8 +16111,11 @@
       "borde_2artistas",
       "nombre_anidado"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://atta.bandcamp.com"
   },
   {
@@ -15466,8 +16149,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://ayosilver.bandcamp.com"
   },
   {
@@ -15503,8 +16189,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://benaranks.bandcamp.com"
   },
   {
@@ -15539,8 +16228,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://bizarraetaberegitarrazaharra.bandcamp.com"
   },
   {
@@ -15574,8 +16266,14 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "ambos",
     "url": "https://blackearthsindustriesrecords.bandcamp.com"
   },
   {
@@ -15611,8 +16309,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://brayanroman.bandcamp.com"
   },
   {
@@ -15646,8 +16347,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://chillmafia.bandcamp.com"
   },
   {
@@ -15682,8 +16386,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://corvuscaelum.bandcamp.com"
   },
   {
@@ -15717,8 +16424,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://cosmictentacles.bandcamp.com"
   },
   {
@@ -15752,8 +16462,14 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "ambos",
     "url": "https://cromrecords.bandcamp.com"
   },
   {
@@ -15788,8 +16504,14 @@
       "borde_2artistas",
       "posible_VA"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "ambos",
     "url": "https://dantzrecords.bandcamp.com"
   },
   {
@@ -15825,8 +16547,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://demokraziazero.bandcamp.com"
   },
   {
@@ -15861,8 +16586,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://elsrramon.bandcamp.com"
   },
   {
@@ -15896,8 +16624,14 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "ambos",
     "url": "https://erraldoirecords.bandcamp.com"
   },
   {
@@ -15931,8 +16665,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://hombremontana.bandcamp.com"
   },
   {
@@ -15967,8 +16704,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://hostoak.bandcamp.com"
   },
   {
@@ -16003,8 +16743,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://humanosintentandolo.bandcamp.com"
   },
   {
@@ -16039,8 +16782,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://iont.bandcamp.com"
   },
   {
@@ -16076,8 +16822,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://isvkmyr.bandcamp.com"
   },
   {
@@ -16113,8 +16862,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://jauja1.bandcamp.com"
   },
   {
@@ -16148,8 +16900,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://javiercpc.bandcamp.com"
   },
   {
@@ -16183,8 +16938,13 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "producciones"
+    ],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "ambos",
     "url": "https://jgcproducciones.bandcamp.com"
   },
   {
@@ -16220,8 +16980,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://jonminer.bandcamp.com"
   },
   {
@@ -16257,8 +17020,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://kalipotxo.bandcamp.com"
   },
   {
@@ -16292,8 +17058,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://knekelput.bandcamp.com"
   },
   {
@@ -16327,8 +17096,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://ktcdomesticproductions.bandcamp.com"
   },
   {
@@ -16362,8 +17134,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://latxosa.bandcamp.com"
   },
   {
@@ -16397,8 +17172,14 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "ambos",
     "url": "https://lucindarecords.bandcamp.com"
   },
   {
@@ -16434,8 +17215,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://luzdeputas.bandcamp.com"
   },
   {
@@ -16471,8 +17255,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://magmadam.bandcamp.com"
   },
   {
@@ -16507,8 +17294,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://mikelirazabal.bandcamp.com"
   },
   {
@@ -16542,8 +17332,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://monasteriodeculturarec.bandcamp.com"
   },
   {
@@ -16578,8 +17371,11 @@
       "borde_2artistas",
       "posible_VA"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://nigma.bandcamp.com"
   },
   {
@@ -16613,8 +17409,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://nooirax.bandcamp.com"
   },
   {
@@ -16649,8 +17448,11 @@
       "borde_2artistas",
       "nombre_anidado"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://onmusika.bandcamp.com"
   },
   {
@@ -16685,8 +17487,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://prismates.bandcamp.com"
   },
   {
@@ -16720,8 +17525,14 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "ambos",
     "url": "https://repentinorecords.bandcamp.com"
   },
   {
@@ -16757,8 +17568,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://runawaylovers.bandcamp.com"
   },
   {
@@ -16794,8 +17608,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://shibaritaldea.bandcamp.com"
   },
   {
@@ -16830,8 +17647,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://sonaraccionesylugares.bandcamp.com"
   },
   {
@@ -16866,8 +17686,11 @@
       "borde_2artistas",
       "nombre_anidado"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://sweattaste.bandcamp.com"
   },
   {
@@ -16903,8 +17726,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://themclovings.bandcamp.com"
   },
   {
@@ -16940,8 +17766,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://thexbeats90.bandcamp.com"
   },
   {
@@ -16975,8 +17804,11 @@
     "flags": [
       "borde_2artistas"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://tibprod.bandcamp.com"
   },
   {
@@ -17011,8 +17843,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://tkuento.bandcamp.com"
   },
   {
@@ -17047,8 +17882,11 @@
       "borde_2artistas",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://uhinzine.bandcamp.com"
   },
   {
@@ -17084,8 +17922,11 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://ulzion.bandcamp.com"
   },
   {
@@ -17121,8 +17962,2344 @@
       "nombre_anidado",
       "posible_autocuenta"
     ],
+    "lexico_subtipo": null,
+    "marcadores": [],
     "n_artistas": 2,
     "n_discos": 2,
+    "origen": "umbral",
     "url": "https://weareapeshello.bandcamp.com"
+  },
+  {
+    "account_id": "mendekudiskak",
+    "album_ids": [
+      308736977,
+      316159932,
+      324908490,
+      339304327,
+      730948944,
+      745737432,
+      812332580,
+      1082242734,
+      1108578173,
+      1215151554,
+      1344621543,
+      1783731450,
+      1927384025,
+      2228519303,
+      2314663325,
+      2438428691,
+      2472669811,
+      2596380399,
+      2836497669,
+      3385425813,
+      3479794094,
+      3543199601,
+      3788327811,
+      4104192921
+    ],
+    "artistas": [
+      "Mendeku Diskak"
+    ],
+    "clusters": [
+      {
+        "display": "Mendeku Diskak",
+        "fold": "mendekudiskak",
+        "n_discos": 24,
+        "variantes": [
+          "Mendeku Diskak"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "diskak"
+    ],
+    "n_artistas": 1,
+    "n_discos": 24,
+    "origen": "lexico",
+    "url": "https://mendekudiskak.bandcamp.com"
+  },
+  {
+    "account_id": "makramerecords",
+    "album_ids": [
+      473441715,
+      965251273,
+      1278253290,
+      1338372223,
+      1718204425,
+      1990912398,
+      2027424330,
+      2218362255,
+      2525746403,
+      2747101219,
+      3079718428,
+      3106732376,
+      3144945232,
+      3158378126,
+      3542484755,
+      3547263351,
+      3604757740,
+      3772909789,
+      3832546990,
+      3957246561,
+      4138963846
+    ],
+    "artistas": [
+      "makrame records"
+    ],
+    "clusters": [
+      {
+        "display": "makrame records",
+        "fold": "makramerecords",
+        "n_discos": 21,
+        "variantes": [
+          "makrame records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 21,
+    "origen": "lexico",
+    "url": "https://makramerecords.bandcamp.com"
+  },
+  {
+    "account_id": "zirikaturecords",
+    "album_ids": [
+      70538154,
+      422707794,
+      485099267,
+      582239498,
+      672174196,
+      935692927,
+      1027867036,
+      1193250640,
+      1296275320,
+      1741568727,
+      1742743658,
+      2004533955,
+      2263377876,
+      3071999578,
+      3290960721,
+      3531708248,
+      3574892927,
+      4068904463,
+      4118836290
+    ],
+    "artistas": [
+      "Zirikatu Records"
+    ],
+    "clusters": [
+      {
+        "display": "Zirikatu Records",
+        "fold": "zirikaturecords",
+        "n_discos": 19,
+        "variantes": [
+          "Zirikatu Records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 19,
+    "origen": "lexico",
+    "url": "https://zirikaturecords.bandcamp.com"
+  },
+  {
+    "account_id": "blackvoguerecords",
+    "album_ids": [
+      127850324,
+      571478565,
+      647505259,
+      756174352,
+      758590115,
+      908592655,
+      1289120876,
+      1482538577,
+      2633607432,
+      2727427979,
+      2900186754,
+      3071317656,
+      3336092583,
+      3497239110,
+      3511511806,
+      3585822020,
+      3928548689
+    ],
+    "artistas": [
+      "BlackVogue Records"
+    ],
+    "clusters": [
+      {
+        "display": "BlackVogue Records",
+        "fold": "blackvoguerecords",
+        "n_discos": 17,
+        "variantes": [
+          "BlackVogue Records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 17,
+    "origen": "lexico",
+    "url": "https://blackvoguerecords.bandcamp.com"
+  },
+  {
+    "account_id": "daimnicagrabaciones",
+    "album_ids": [
+      228694150,
+      921745923,
+      2498745304,
+      2813095719,
+      3322005755,
+      3324907247,
+      3657280500,
+      3759460970,
+      3808671470
+    ],
+    "artistas": [
+      "DAIMÓNICA (Grabaciones)"
+    ],
+    "clusters": [
+      {
+        "display": "DAIMÓNICA (Grabaciones)",
+        "fold": "daimonicagrabaciones",
+        "n_discos": 9,
+        "variantes": [
+          "DAIMÓNICA (Grabaciones)"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "grabaciones"
+    ],
+    "n_artistas": 1,
+    "n_discos": 9,
+    "origen": "lexico",
+    "url": "https://daimnicagrabaciones.bandcamp.com"
+  },
+  {
+    "account_id": "hopeandfaithrecords",
+    "album_ids": [
+      884080699,
+      1097612578,
+      1831844838,
+      2031859704,
+      2152730646,
+      3116601007,
+      3928023460
+    ],
+    "artistas": [
+      "Hope & Faith Records"
+    ],
+    "clusters": [
+      {
+        "display": "Hope & Faith Records",
+        "fold": "hopefaithrecords",
+        "n_discos": 7,
+        "variantes": [
+          "Hope & Faith Records"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 7,
+    "origen": "lexico",
+    "url": "https://hopeandfaithrecords.bandcamp.com"
+  },
+  {
+    "account_id": "gatazkabasslabel",
+    "album_ids": [
+      1294206517,
+      1350114832,
+      1826824143,
+      2325945930,
+      4129174314
+    ],
+    "artistas": [
+      "Gatazka Bass Label"
+    ],
+    "clusters": [
+      {
+        "display": "Gatazka Bass Label",
+        "fold": "gatazkabasslabel",
+        "n_discos": 5,
+        "variantes": [
+          "Gatazka Bass Label"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "label"
+    ],
+    "n_artistas": 1,
+    "n_discos": 5,
+    "origen": "lexico",
+    "url": "https://gatazkabasslabel.bandcamp.com"
+  },
+  {
+    "account_id": "produccionestudancas",
+    "album_ids": [
+      415158497,
+      750472661,
+      1384542897,
+      2722661934,
+      2995842093
+    ],
+    "artistas": [
+      "Producciones Tudancas"
+    ],
+    "clusters": [
+      {
+        "display": "Producciones Tudancas",
+        "fold": "produccionestudancas",
+        "n_discos": 5,
+        "variantes": [
+          "Producciones Tudancas"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "producciones"
+    ],
+    "n_artistas": 1,
+    "n_discos": 5,
+    "origen": "lexico",
+    "url": "https://produccionestudancas.bandcamp.com"
+  },
+  {
+    "account_id": "gbcrecords",
+    "album_ids": [
+      107573969,
+      357493656,
+      2089132558,
+      3654395845
+    ],
+    "artistas": [
+      "GBC"
+    ],
+    "clusters": [
+      {
+        "display": "GBC",
+        "fold": "gbc",
+        "n_discos": 4,
+        "variantes": [
+          "GBC"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 4,
+    "origen": "lexico",
+    "url": "https://gbcrecords.bandcamp.com"
+  },
+  {
+    "account_id": "cactuslabel",
+    "album_ids": [
+      1881930750,
+      2088236095,
+      3437187795
+    ],
+    "artistas": [
+      "20 Dedos"
+    ],
+    "clusters": [
+      {
+        "display": "20 Dedos",
+        "fold": "20dedos",
+        "n_discos": 3,
+        "variantes": [
+          "20 Dedos"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "label"
+    ],
+    "n_artistas": 1,
+    "n_discos": 3,
+    "origen": "lexico",
+    "url": "https://cactuslabel.bandcamp.com"
+  },
+  {
+    "account_id": "gondolinrecords",
+    "album_ids": [
+      464339184,
+      1732558331
+    ],
+    "artistas": [
+      "Lord Bakartia"
+    ],
+    "clusters": [
+      {
+        "display": "Lord Bakartia",
+        "fold": "lordbakartia",
+        "n_discos": 2,
+        "variantes": [
+          "Lord Bakartia"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 2,
+    "origen": "lexico",
+    "url": "https://gondolinrecords.bandcamp.com"
+  },
+  {
+    "account_id": "nunatakrecords",
+    "album_ids": [
+      726065465,
+      3619804268
+    ],
+    "artistas": [
+      "Tipico Pero Cierto"
+    ],
+    "clusters": [
+      {
+        "display": "Tipico Pero Cierto",
+        "fold": "tipicoperocierto",
+        "n_discos": 2,
+        "variantes": [
+          "Tipico Pero Cierto"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 2,
+    "origen": "lexico",
+    "url": "https://nunatakrecords.bandcamp.com"
+  },
+  {
+    "account_id": "slowdownrecords",
+    "album_ids": [
+      3114027837,
+      3508856890
+    ],
+    "artistas": [
+      "Slow Down Records"
+    ],
+    "clusters": [
+      {
+        "display": "Slow Down Records",
+        "fold": "slowdownrecords",
+        "n_discos": 2,
+        "variantes": [
+          "Slow Down Records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 2,
+    "origen": "lexico",
+    "url": "https://slowdownrecords.bandcamp.com"
+  },
+  {
+    "account_id": "augerecords",
+    "album_ids": [
+      1681205777
+    ],
+    "artistas": [
+      "Yaw"
+    ],
+    "clusters": [
+      {
+        "display": "Yaw",
+        "fold": "yaw",
+        "n_discos": 1,
+        "variantes": [
+          "Yaw"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://augerecords.bandcamp.com"
+  },
+  {
+    "account_id": "batchrecords",
+    "album_ids": [
+      1381616756
+    ],
+    "artistas": [
+      "Mitxu Nimaru"
+    ],
+    "clusters": [
+      {
+        "display": "Mitxu Nimaru",
+        "fold": "mitxunimaru",
+        "n_discos": 1,
+        "variantes": [
+          "Mitxu Nimaru"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://batchrecords.bandcamp.com"
+  },
+  {
+    "account_id": "beatsaladrecords",
+    "album_ids": [
+      1574181198
+    ],
+    "artistas": [
+      "N2OGU"
+    ],
+    "clusters": [
+      {
+        "display": "N2OGU",
+        "fold": "n2ogu",
+        "n_discos": 1,
+        "variantes": [
+          "N2OGU"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://beatsaladrecords.bandcamp.com"
+  },
+  {
+    "account_id": "colillarecords",
+    "album_ids": [
+      3759994929
+    ],
+    "artistas": [
+      "Mármol / Nueva Generación"
+    ],
+    "clusters": [
+      {
+        "display": "Mármol / Nueva Generación",
+        "fold": "marmolnuevageneracion",
+        "n_discos": 1,
+        "variantes": [
+          "Mármol / Nueva Generación"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://colillarecords.bandcamp.com"
+  },
+  {
+    "account_id": "crapouletrecords",
+    "album_ids": [
+      607295345
+    ],
+    "artistas": [
+      "REPRESION"
+    ],
+    "clusters": [
+      {
+        "display": "REPRESION",
+        "fold": "represion",
+        "n_discos": 1,
+        "variantes": [
+          "REPRESION"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://crapouletrecords.bandcamp.com"
+  },
+  {
+    "account_id": "cruelnaturerecordings",
+    "album_ids": [
+      160900026
+    ],
+    "artistas": [
+      "AR Guda"
+    ],
+    "clusters": [
+      {
+        "display": "AR Guda",
+        "fold": "arguda",
+        "n_discos": 1,
+        "variantes": [
+          "AR Guda"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "record",
+      "recordings",
+      "recording"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://cruelnaturerecordings.bandcamp.com"
+  },
+  {
+    "account_id": "ddtbanaketakbilbo",
+    "album_ids": [
+      3249681280
+    ],
+    "artistas": [
+      "DDTbanaketak"
+    ],
+    "clusters": [
+      {
+        "display": "DDTbanaketak",
+        "fold": "ddtbanaketak",
+        "n_discos": 1,
+        "variantes": [
+          "DDTbanaketak"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "banaketak"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://ddtbanaketakbilbo.bandcamp.com"
+  },
+  {
+    "account_id": "discoshumeantes",
+    "album_ids": [
+      1944828009
+    ],
+    "artistas": [
+      "DHR-020"
+    ],
+    "clusters": [
+      {
+        "display": "DHR-020",
+        "fold": "dhr020",
+        "n_discos": 1,
+        "variantes": [
+          "DHR-020"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "discos"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://discoshumeantes.bandcamp.com"
+  },
+  {
+    "account_id": "elsarecords",
+    "album_ids": [
+      2007475932
+    ],
+    "artistas": [
+      "Andres Doñate"
+    ],
+    "clusters": [
+      {
+        "display": "Andres Doñate",
+        "fold": "andresdonate",
+        "n_discos": 1,
+        "variantes": [
+          "Andres Doñate"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://elsarecords.bandcamp.com"
+  },
+  {
+    "account_id": "extralovelyrecords",
+    "album_ids": [
+      136336637
+    ],
+    "artistas": [
+      "lowveld"
+    ],
+    "clusters": [
+      {
+        "display": "lowveld",
+        "fold": "lowveld",
+        "n_discos": 1,
+        "variantes": [
+          "lowveld"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://extralovelyrecords.bandcamp.com"
+  },
+  {
+    "account_id": "fatbirdrecordings",
+    "album_ids": [
+      1364252844
+    ],
+    "artistas": [
+      "Dub Troubles feat. Tenor Youthman & Jah Rave"
+    ],
+    "clusters": [
+      {
+        "display": "Dub Troubles feat. Tenor Youthman & Jah Rave",
+        "fold": "dubtroublesfeattenoryouthmanjahrave",
+        "n_discos": 1,
+        "variantes": [
+          "Dub Troubles feat. Tenor Youthman & Jah Rave"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "record",
+      "recordings",
+      "recording"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://fatbirdrecordings.bandcamp.com"
+  },
+  {
+    "account_id": "flexidiscos",
+    "album_ids": [
+      3293886443
+    ],
+    "artistas": [
+      "Cromosoma"
+    ],
+    "clusters": [
+      {
+        "display": "Cromosoma",
+        "fold": "cromosoma",
+        "n_discos": 1,
+        "variantes": [
+          "Cromosoma"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "discos"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://flexidiscos.bandcamp.com"
+  },
+  {
+    "account_id": "flooprecordings",
+    "album_ids": [
+      781119336
+    ],
+    "artistas": [
+      "RedWine House"
+    ],
+    "clusters": [
+      {
+        "display": "RedWine House",
+        "fold": "redwinehouse",
+        "n_discos": 1,
+        "variantes": [
+          "RedWine House"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "record",
+      "recordings",
+      "recording"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://flooprecordings.bandcamp.com"
+  },
+  {
+    "account_id": "folcrecords",
+    "album_ids": [
+      3243725096
+    ],
+    "artistas": [
+      "FOLC RECORDS"
+    ],
+    "clusters": [
+      {
+        "display": "FOLC RECORDS",
+        "fold": "folcrecords",
+        "n_discos": 1,
+        "variantes": [
+          "FOLC RECORDS"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://folcrecords.bandcamp.com"
+  },
+  {
+    "account_id": "furiousrecords",
+    "album_ids": [
+      3144832556
+    ],
+    "artistas": [
+      "Marmol"
+    ],
+    "clusters": [
+      {
+        "display": "Marmol",
+        "fold": "marmol",
+        "n_discos": 1,
+        "variantes": [
+          "Marmol"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://furiousrecords.bandcamp.com"
+  },
+  {
+    "account_id": "gaziarecords",
+    "album_ids": [
+      1103899001
+    ],
+    "artistas": [
+      "XYZ"
+    ],
+    "clusters": [
+      {
+        "display": "XYZ",
+        "fold": "xyz",
+        "n_discos": 1,
+        "variantes": [
+          "XYZ"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://gaziarecords.bandcamp.com"
+  },
+  {
+    "account_id": "greencookierecords",
+    "album_ids": [
+      1373392586
+    ],
+    "artistas": [
+      "The Bardulians"
+    ],
+    "clusters": [
+      {
+        "display": "The Bardulians",
+        "fold": "thebardulians",
+        "n_discos": 1,
+        "variantes": [
+          "The Bardulians"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://greencookierecords.bandcamp.com"
+  },
+  {
+    "account_id": "hangthedjrecords",
+    "album_ids": [
+      4231403898
+    ],
+    "artistas": [
+      "The Brontës"
+    ],
+    "clusters": [
+      {
+        "display": "The Brontës",
+        "fold": "thebrontes",
+        "n_discos": 1,
+        "variantes": [
+          "The Brontës"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://hangthedjrecords.bandcamp.com"
+  },
+  {
+    "account_id": "harrobirecords",
+    "album_ids": [
+      1271868485
+    ],
+    "artistas": [
+      "Harrobi Records"
+    ],
+    "clusters": [
+      {
+        "display": "Harrobi Records",
+        "fold": "harrobirecords",
+        "n_discos": 1,
+        "variantes": [
+          "Harrobi Records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://harrobirecords.bandcamp.com"
+  },
+  {
+    "account_id": "holaediciones",
+    "album_ids": [
+      4134564124
+    ],
+    "artistas": [
+      "Elbis Rever - Elsa de Alfonso - Joana Guerra"
+    ],
+    "clusters": [
+      {
+        "display": "Elbis Rever - Elsa de Alfonso - Joana Guerra",
+        "fold": "elbisreverelsadealfonsojoanaguerra",
+        "n_discos": 1,
+        "variantes": [
+          "Elbis Rever - Elsa de Alfonso - Joana Guerra"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "ediciones"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://holaediciones.bandcamp.com"
+  },
+  {
+    "account_id": "homerecordsbe",
+    "album_ids": [
+      4240781807
+    ],
+    "artistas": [
+      "Ialma, Manu Sabaté, Iñaki Plaza, Ciscu Cardona, Nicolas Scalliet"
+    ],
+    "clusters": [
+      {
+        "display": "Ialma, Manu Sabaté, Iñaki Plaza, Ciscu Cardona, Nicolas Scalliet",
+        "fold": "ialmamanusabateinakiplazaciscucardonanicolasscalliet",
+        "n_discos": 1,
+        "variantes": [
+          "Ialma, Manu Sabaté, Iñaki Plaza, Ciscu Cardona, Nicolas Scalliet"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://homerecordsbe.bandcamp.com"
+  },
+  {
+    "account_id": "idealstaterecordings",
+    "album_ids": [
+      193733917
+    ],
+    "artistas": [
+      "miguel a. garcía . tomas gris . lee noyes"
+    ],
+    "clusters": [
+      {
+        "display": "miguel a. garcía . tomas gris . lee noyes",
+        "fold": "miguelagarciatomasgrisleenoyes",
+        "n_discos": 1,
+        "variantes": [
+          "miguel a. garcía . tomas gris . lee noyes"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "record",
+      "recordings",
+      "recording"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://idealstaterecordings.bandcamp.com"
+  },
+  {
+    "account_id": "intergalacticrecords",
+    "album_ids": [
+      685996788
+    ],
+    "artistas": [
+      "Ternura"
+    ],
+    "clusters": [
+      {
+        "display": "Ternura",
+        "fold": "ternura",
+        "n_discos": 1,
+        "variantes": [
+          "Ternura"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://intergalacticrecords.bandcamp.com"
+  },
+  {
+    "account_id": "isilyarecords",
+    "album_ids": [
+      3095543468
+    ],
+    "artistas": [
+      "Sublime Solitude"
+    ],
+    "clusters": [
+      {
+        "display": "Sublime Solitude",
+        "fold": "sublimesolitude",
+        "n_discos": 1,
+        "variantes": [
+          "Sublime Solitude"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://isilyarecords.bandcamp.com"
+  },
+  {
+    "account_id": "kastillorecords",
+    "album_ids": [
+      798387198
+    ],
+    "artistas": [
+      "Kastillo Records"
+    ],
+    "clusters": [
+      {
+        "display": "Kastillo Records",
+        "fold": "kastillorecords",
+        "n_discos": 1,
+        "variantes": [
+          "Kastillo Records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://kastillorecords.bandcamp.com"
+  },
+  {
+    "account_id": "kilkirrecords",
+    "album_ids": [
+      2633086957
+    ],
+    "artistas": [
+      "PPR y DJ Dresss"
+    ],
+    "clusters": [
+      {
+        "display": "PPR y DJ Dresss",
+        "fold": "pprydjdresss",
+        "n_discos": 1,
+        "variantes": [
+          "PPR y DJ Dresss"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://kilkirrecords.bandcamp.com"
+  },
+  {
+    "account_id": "killvinylrecords",
+    "album_ids": [
+      4134458437
+    ],
+    "artistas": [
+      "Materia"
+    ],
+    "clusters": [
+      {
+        "display": "Materia",
+        "fold": "materia",
+        "n_discos": 1,
+        "variantes": [
+          "Materia"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://killvinylrecords.bandcamp.com"
+  },
+  {
+    "account_id": "kumbalenetlabel",
+    "album_ids": [
+      724048342
+    ],
+    "artistas": [
+      "ANDRES DIGITAL"
+    ],
+    "clusters": [
+      {
+        "display": "ANDRES DIGITAL",
+        "fold": "andresdigital",
+        "n_discos": 1,
+        "variantes": [
+          "ANDRES DIGITAL"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "label"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://kumbalenetlabel.bandcamp.com"
+  },
+  {
+    "account_id": "lafamiliarevolucionrecords",
+    "album_ids": [
+      2361714922
+    ],
+    "artistas": [
+      "HURACAN ROSE"
+    ],
+    "clusters": [
+      {
+        "display": "HURACAN ROSE",
+        "fold": "huracanrose",
+        "n_discos": 1,
+        "variantes": [
+          "HURACAN ROSE"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://lafamiliarevolucionrecords.bandcamp.com"
+  },
+  {
+    "account_id": "lenorecords",
+    "album_ids": [
+      892442858
+    ],
+    "artistas": [
+      "Margalbeat"
+    ],
+    "clusters": [
+      {
+        "display": "Margalbeat",
+        "fold": "margalbeat",
+        "n_discos": 1,
+        "variantes": [
+          "Margalbeat"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://lenorecords.bandcamp.com"
+  },
+  {
+    "account_id": "likidorecords",
+    "album_ids": [
+      3648773766
+    ],
+    "artistas": [
+      "Louware"
+    ],
+    "clusters": [
+      {
+        "display": "Louware",
+        "fold": "louware",
+        "n_discos": 1,
+        "variantes": [
+          "Louware"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://likidorecords.bandcamp.com"
+  },
+  {
+    "account_id": "madschnauzerrecords",
+    "album_ids": [
+      2742737233
+    ],
+    "artistas": [
+      "Addenda"
+    ],
+    "clusters": [
+      {
+        "display": "Addenda",
+        "fold": "addenda",
+        "n_discos": 1,
+        "variantes": [
+          "Addenda"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://madschnauzerrecords.bandcamp.com"
+  },
+  {
+    "account_id": "mamavynilarecords",
+    "album_ids": [
+      296496459
+    ],
+    "artistas": [
+      "Gonorriaga & Bilintx"
+    ],
+    "clusters": [
+      {
+        "display": "Gonorriaga & Bilintx",
+        "fold": "gonorriagabilintx",
+        "n_discos": 1,
+        "variantes": [
+          "Gonorriaga & Bilintx"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://mamavynilarecords.bandcamp.com"
+  },
+  {
+    "account_id": "mawashiskinsrecords",
+    "album_ids": [
+      4289738536
+    ],
+    "artistas": [
+      "Streetwise"
+    ],
+    "clusters": [
+      {
+        "display": "Streetwise",
+        "fold": "streetwise",
+        "n_discos": 1,
+        "variantes": [
+          "Streetwise"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://mawashiskinsrecords.bandcamp.com"
+  },
+  {
+    "account_id": "meyorecords",
+    "album_ids": [
+      2922395597
+    ],
+    "artistas": [
+      "VULK"
+    ],
+    "clusters": [
+      {
+        "display": "VULK",
+        "fold": "vulk",
+        "n_discos": 1,
+        "variantes": [
+          "VULK"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://meyorecords.bandcamp.com"
+  },
+  {
+    "account_id": "mundiscos",
+    "album_ids": [
+      553970231
+    ],
+    "artistas": [
+      "Positive Hardcore"
+    ],
+    "clusters": [
+      {
+        "display": "Positive Hardcore",
+        "fold": "positivehardcore",
+        "n_discos": 1,
+        "variantes": [
+          "Positive Hardcore"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "discos"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://mundiscos.bandcamp.com"
+  },
+  {
+    "account_id": "musikagelarecords",
+    "album_ids": [
+      1216762073
+    ],
+    "artistas": [
+      "Autumn"
+    ],
+    "clusters": [
+      {
+        "display": "Autumn",
+        "fold": "autumn",
+        "n_discos": 1,
+        "variantes": [
+          "Autumn"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://musikagelarecords.bandcamp.com"
+  },
+  {
+    "account_id": "niunpeloderubiasrecords",
+    "album_ids": [
+      2811848513
+    ],
+    "artistas": [
+      "Cordura"
+    ],
+    "clusters": [
+      {
+        "display": "Cordura",
+        "fold": "cordura",
+        "n_discos": 1,
+        "variantes": [
+          "Cordura"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://niunpeloderubiasrecords.bandcamp.com"
+  },
+  {
+    "account_id": "noaloharecords",
+    "album_ids": [
+      1279202060
+    ],
+    "artistas": [
+      "Edu Errea"
+    ],
+    "clusters": [
+      {
+        "display": "Edu Errea",
+        "fold": "eduerrea",
+        "n_discos": 1,
+        "variantes": [
+          "Edu Errea"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://noaloharecords.bandcamp.com"
+  },
+  {
+    "account_id": "nortepuromusicrecords",
+    "album_ids": [
+      1464936582
+    ],
+    "artistas": [
+      "Nolove, C.Manson"
+    ],
+    "clusters": [
+      {
+        "display": "Nolove, C.Manson",
+        "fold": "nolovecmanson",
+        "n_discos": 1,
+        "variantes": [
+          "Nolove, C.Manson"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://nortepuromusicrecords.bandcamp.com"
+  },
+  {
+    "account_id": "notomorrowrecords",
+    "album_ids": [
+      3741716926
+    ],
+    "artistas": [
+      "No Tomorrow Records"
+    ],
+    "clusters": [
+      {
+        "display": "No Tomorrow Records",
+        "fold": "notomorrowrecords",
+        "n_discos": 1,
+        "variantes": [
+          "No Tomorrow Records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://notomorrowrecords.bandcamp.com"
+  },
+  {
+    "account_id": "origamirecords",
+    "album_ids": [
+      3498174562
+    ],
+    "artistas": [
+      "Grises"
+    ],
+    "clusters": [
+      {
+        "display": "Grises",
+        "fold": "grises",
+        "n_discos": 1,
+        "variantes": [
+          "Grises"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://origamirecords.bandcamp.com"
+  },
+  {
+    "account_id": "plasticwoundrecords",
+    "album_ids": [
+      787344768
+    ],
+    "artistas": [
+      "Plastic Wound Records"
+    ],
+    "clusters": [
+      {
+        "display": "Plastic Wound Records",
+        "fold": "plasticwoundrecords",
+        "n_discos": 1,
+        "variantes": [
+          "Plastic Wound Records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://plasticwoundrecords.bandcamp.com"
+  },
+  {
+    "account_id": "politburorecordingfiasco",
+    "album_ids": [
+      2383435168
+    ],
+    "artistas": [
+      "LOS PANIKS"
+    ],
+    "clusters": [
+      {
+        "display": "LOS PANIKS",
+        "fold": "lospaniks",
+        "n_discos": 1,
+        "variantes": [
+          "LOS PANIKS"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "record",
+      "recording"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://politburorecordingfiasco.bandcamp.com"
+  },
+  {
+    "account_id": "psilocybina-records",
+    "album_ids": [
+      784647512
+    ],
+    "artistas": [
+      "Psilocybina Records"
+    ],
+    "clusters": [
+      {
+        "display": "Psilocybina Records",
+        "fold": "psilocybinarecords",
+        "n_discos": 1,
+        "variantes": [
+          "Psilocybina Records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": "autoacreditada",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://psilocybina-records.bandcamp.com"
+  },
+  {
+    "account_id": "quebrantarecords",
+    "album_ids": [
+      2408268299
+    ],
+    "artistas": [
+      "CORDURA"
+    ],
+    "clusters": [
+      {
+        "display": "CORDURA",
+        "fold": "cordura",
+        "n_discos": 1,
+        "variantes": [
+          "CORDURA"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://quebrantarecords.bandcamp.com"
+  },
+  {
+    "account_id": "remorserecords",
+    "album_ids": [
+      2442898190
+    ],
+    "artistas": [
+      "Giant"
+    ],
+    "clusters": [
+      {
+        "display": "Giant",
+        "fold": "giant",
+        "n_discos": 1,
+        "variantes": [
+          "Giant"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://remorserecords.bandcamp.com"
+  },
+  {
+    "account_id": "reposerecords",
+    "album_ids": [
+      973740974
+    ],
+    "artistas": [
+      "Elffor"
+    ],
+    "clusters": [
+      {
+        "display": "Elffor",
+        "fold": "elffor",
+        "n_discos": 1,
+        "variantes": [
+          "Elffor"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://reposerecords.bandcamp.com"
+  },
+  {
+    "account_id": "rockizarrecords",
+    "album_ids": [
+      3265276689
+    ],
+    "artistas": [
+      "Trastorna2"
+    ],
+    "clusters": [
+      {
+        "display": "Trastorna2",
+        "fold": "trastorna2",
+        "n_discos": 1,
+        "variantes": [
+          "Trastorna2"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://rockizarrecords.bandcamp.com"
+  },
+  {
+    "account_id": "saturnorecords",
+    "album_ids": [
+      4265189985
+    ],
+    "artistas": [
+      "LOS JAMBOS"
+    ],
+    "clusters": [
+      {
+        "display": "LOS JAMBOS",
+        "fold": "losjambos",
+        "n_discos": 1,
+        "variantes": [
+          "LOS JAMBOS"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://saturnorecords.bandcamp.com"
+  },
+  {
+    "account_id": "sentenciarecords",
+    "album_ids": [
+      608925563
+    ],
+    "artistas": [
+      "Imbernon & Mikel Vega"
+    ],
+    "clusters": [
+      {
+        "display": "Imbernon & Mikel Vega",
+        "fold": "imbernonmikelvega",
+        "n_discos": 1,
+        "variantes": [
+          "Imbernon & Mikel Vega"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://sentenciarecords.bandcamp.com"
+  },
+  {
+    "account_id": "smilingisnotacrimerecords",
+    "album_ids": [
+      1178096803
+    ],
+    "artistas": [
+      "HARDCORE HITS CANCER BENEFIT"
+    ],
+    "clusters": [
+      {
+        "display": "HARDCORE HITS CANCER BENEFIT",
+        "fold": "hardcorehitscancerbenefit",
+        "n_discos": 1,
+        "variantes": [
+          "HARDCORE HITS CANCER BENEFIT"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://smilingisnotacrimerecords.bandcamp.com"
+  },
+  {
+    "account_id": "steadyriotrecords",
+    "album_ids": [
+      3394572024
+    ],
+    "artistas": [
+      "Fire Cult"
+    ],
+    "clusters": [
+      {
+        "display": "Fire Cult",
+        "fold": "firecult",
+        "n_discos": 1,
+        "variantes": [
+          "Fire Cult"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://steadyriotrecords.bandcamp.com"
+  },
+  {
+    "account_id": "stonehengerecords",
+    "album_ids": [
+      1257563047
+    ],
+    "artistas": [
+      "ASFIXIA / ANNUNAKI REVENGE"
+    ],
+    "clusters": [
+      {
+        "display": "ASFIXIA / ANNUNAKI REVENGE",
+        "fold": "asfixiaannunakirevenge",
+        "n_discos": 1,
+        "variantes": [
+          "ASFIXIA / ANNUNAKI REVENGE"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://stonehengerecords.bandcamp.com"
+  },
+  {
+    "account_id": "subspecieslabel",
+    "album_ids": [
+      124222151
+    ],
+    "artistas": [
+      "Various Artists"
+    ],
+    "clusters": [
+      {
+        "display": "Various Artists",
+        "fold": "variousartists",
+        "n_discos": 1,
+        "variantes": [
+          "Various Artists"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_VA"
+    ],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "label"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://subspecieslabel.bandcamp.com"
+  },
+  {
+    "account_id": "szenarecords",
+    "album_ids": [
+      2810070289
+    ],
+    "artistas": [
+      "Álvaro Cano"
+    ],
+    "clusters": [
+      {
+        "display": "Álvaro Cano",
+        "fold": "alvarocano",
+        "n_discos": 1,
+        "variantes": [
+          "Álvaro Cano"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://szenarecords.bandcamp.com"
+  },
+  {
+    "account_id": "taerecords",
+    "album_ids": [
+      1115090801
+    ],
+    "artistas": [
+      "Tough Ain't Enough"
+    ],
+    "clusters": [
+      {
+        "display": "Tough Ain't Enough",
+        "fold": "toughaintenough",
+        "n_discos": 1,
+        "variantes": [
+          "Tough Ain't Enough"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://taerecords.bandcamp.com"
+  },
+  {
+    "account_id": "tanukirecords",
+    "album_ids": [
+      186859786
+    ],
+    "artistas": [
+      "Ilia Belorukov, Alfredo Costa Monteiro, Miguel A. García"
+    ],
+    "clusters": [
+      {
+        "display": "Ilia Belorukov, Alfredo Costa Monteiro, Miguel A. García",
+        "fold": "iliabelorukovalfredocostamonteiromiguelagarcia",
+        "n_discos": 1,
+        "variantes": [
+          "Ilia Belorukov, Alfredo Costa Monteiro, Miguel A. García"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://tanukirecords.bandcamp.com"
+  },
+  {
+    "account_id": "tayulrecords",
+    "album_ids": [
+      38064146
+    ],
+    "artistas": [
+      "Sonidero 13 + Miguel A. Garcia"
+    ],
+    "clusters": [
+      {
+        "display": "Sonidero 13 + Miguel A. Garcia",
+        "fold": "sonidero13miguelagarcia",
+        "n_discos": 1,
+        "variantes": [
+          "Sonidero 13 + Miguel A. Garcia"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://tayulrecords.bandcamp.com"
+  },
+  {
+    "account_id": "theiarecords",
+    "album_ids": [
+      3361633194
+    ],
+    "artistas": [
+      "Despeñaperros"
+    ],
+    "clusters": [
+      {
+        "display": "Despeñaperros",
+        "fold": "despenaperros",
+        "n_discos": 1,
+        "variantes": [
+          "Despeñaperros"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://theiarecords.bandcamp.com"
+  },
+  {
+    "account_id": "throatruinerrecords",
+    "album_ids": [
+      2497767608
+    ],
+    "artistas": [
+      "Palecoal"
+    ],
+    "clusters": [
+      {
+        "display": "Palecoal",
+        "fold": "palecoal",
+        "n_discos": 1,
+        "variantes": [
+          "Palecoal"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://throatruinerrecords.bandcamp.com"
+  },
+  {
+    "account_id": "uglyandproudrecords",
+    "album_ids": [
+      917575561
+    ],
+    "artistas": [
+      "Vibora"
+    ],
+    "clusters": [
+      {
+        "display": "Vibora",
+        "fold": "vibora",
+        "n_discos": 1,
+        "variantes": [
+          "Vibora"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://uglyandproudrecords.bandcamp.com"
+  },
+  {
+    "account_id": "urticariarecords",
+    "album_ids": [
+      2975579501
+    ],
+    "artistas": [
+      "Allusion"
+    ],
+    "clusters": [
+      {
+        "display": "Allusion",
+        "fold": "allusion",
+        "n_discos": 1,
+        "variantes": [
+          "Allusion"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 1,
+    "n_discos": 1,
+    "origen": "lexico",
+    "url": "https://urticariarecords.bandcamp.com"
   }
 ]
