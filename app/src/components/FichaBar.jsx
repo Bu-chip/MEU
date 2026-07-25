@@ -3,6 +3,7 @@ import { BandcampPlayer } from './BandcampPlayer.jsx'
 import { Corazon } from './Corazon.jsx'
 import { useCompartir } from '../hooks/useCompartir.js'
 import { useGuardar } from '../hooks/useGuardar.js'
+import { useVistos } from '../hooks/useVistos.js'
 import { supabase } from '../lib/supabase.js'
 import './FichaBar.css'
 
@@ -14,6 +15,7 @@ import './FichaBar.css'
 export function FichaBar({ album, onCerrar }) {
   const { compartir, copiado } = useCompartir(album)
   const { guardado, alternar } = useGuardar(album)
+  const { marcar } = useVistos()
 
   useEffect(() => {
     if (!album) return
@@ -23,6 +25,15 @@ export function FichaBar({ album, onCerrar }) {
     document.addEventListener('keydown', onKey)
     return () => document.removeEventListener('keydown', onKey)
   }, [album, onCerrar])
+
+  // Abrir la mini-ficha carga el player small automáticamente: es el
+  // equivalente detectable de «darle al play» en EXPLORAR (el play real del
+  // embed de Bandcamp no es detectable). Así escuchar desde el muro sin abrir
+  // la FICHA completa también cuenta como visto —si no, habría disonancia.
+  useEffect(() => {
+    if (album) marcar(album.id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [album?.id])
 
   if (!album) return null
 
