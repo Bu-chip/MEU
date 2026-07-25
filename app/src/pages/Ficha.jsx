@@ -4,6 +4,7 @@ import { similares } from '../utils/similares.js'
 import { navegar, hashArchivo } from '../hooks/useHashRoute.js'
 import { useCompartir } from '../hooks/useCompartir.js'
 import { useGuardar } from '../hooks/useGuardar.js'
+import { useVistos } from '../hooks/useVistos.js'
 import { supabase } from '../lib/supabase.js'
 import { Corazon } from '../components/Corazon.jsx'
 import { Portada } from '../components/Portada.jsx'
@@ -40,10 +41,19 @@ export function Ficha({ route, archive }) {
   const album = archive ? getIndices(archive).byId.get(route.id) : null
   const { compartir, copiado } = useCompartir(album)
   const { guardado, alternar } = useGuardar(album)
+  const { marcar } = useVistos()
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [route.id])
+
+  // Recorrido, no intención: abrir una ficha con sesión la marca como VISTA
+  // (seen_albums). Idempotente y silencioso —el hook traga el duplicado y
+  // cualquier fallo—; sin sesión o sin Supabase, marcar() no toca la red.
+  useEffect(() => {
+    if (album) marcar(album.id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [album?.id])
 
   if (!archive) {
     return (
