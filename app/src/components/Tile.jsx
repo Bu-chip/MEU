@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Corazon } from './Corazon.jsx'
+import { Play } from './Play.jsx'
 import { miniatura } from '../utils/portadas.js'
 import './Tile.css'
 
@@ -63,7 +64,9 @@ export function Tile({ album, variante, onAbrir, quitar }) {
         </div>
         <div className="g">
           <span>{metaGY}</span>
-          <span className="play">▶</span>
+          <span className="play">
+            <Play size={11} />
+          </span>
         </div>
       </div>
       {/* Corazón de quitar (solo COLECCIÓN): esquina superior derecha, donde

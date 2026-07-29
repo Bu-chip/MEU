@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { BandcampPlayer } from './BandcampPlayer.jsx'
 import { Corazon } from './Corazon.jsx'
+import { Externo } from './Externo.jsx'
 import { useCompartir } from '../hooks/useCompartir.js'
 import { useGuardar } from '../hooks/useGuardar.js'
 import { useVistos } from '../hooks/useVistos.js'
@@ -86,7 +87,7 @@ export function FichaBar({ album, onCerrar }) {
         </div>
         {album.url && album.album_id ? (
           <a href={album.url} target="_blank" rel="noopener noreferrer">
-            abrir en bandcamp ↗
+            abrir en bandcamp <Externo size={9} />
           </a>
         ) : (
           // 11 borrados (url muerta) y 16 sin url: aviso honesto, nunca
