@@ -7,6 +7,7 @@ import { useGuardar } from '../hooks/useGuardar.js'
 import { useVistos } from '../hooks/useVistos.js'
 import { supabase } from '../lib/supabase.js'
 import { Corazon } from '../components/Corazon.jsx'
+import { Externo } from '../components/Externo.jsx'
 import { Portada } from '../components/Portada.jsx'
 import { BandcampPlayer } from '../components/BandcampPlayer.jsx'
 import './Ficha.css'
@@ -120,7 +121,7 @@ export function Ficha({ route, archive }) {
           <div className="acciones">
             {poblacion === 'ok' && (
               <a className="principal" href={album.url} target="_blank" rel="noopener noreferrer">
-                ESCUCHAR EN BANDCAMP ↗
+                ESCUCHAR EN BANDCAMP <Externo size="0.8em" />
               </a>
             )}
             {poblacion === 'borrado' && (
