@@ -4990,6 +4990,201 @@
     "url": "https://somniferumrec.bandcamp.com"
   },
   {
+    "account_id": "makramerecords",
+    "album_ids": [
+      473441715,
+      965251273,
+      1278253290,
+      1338372223,
+      1718204425,
+      1990912398,
+      2027424330,
+      2218362255,
+      2525746403,
+      2747101219,
+      3079718428,
+      3106732376,
+      3144945232,
+      3158378126,
+      3542484755,
+      3547263351,
+      3604757740,
+      3772909789,
+      3832546990,
+      3957246561,
+      4138963846
+    ],
+    "artistas": [
+      "Ashtray Navigations",
+      "Aum Sahib",
+      "Baldruin",
+      "Bolide",
+      "Flamingo Creatures",
+      "J.Collin",
+      "John Jasnoch & Charlie Collins",
+      "Keijo",
+      "Mike & Cara Gangloff",
+      "Pan del Indio",
+      "Parashi",
+      "Part Wild Horses Mane On Both Sides",
+      "Schrein",
+      "Tulasi",
+      "Uton",
+      "Vlubä",
+      "makrame records"
+    ],
+    "clusters": [
+      {
+        "display": "Ashtray Navigations",
+        "fold": "ashtraynavigations",
+        "n_discos": 1,
+        "variantes": [
+          "Ashtray Navigations"
+        ]
+      },
+      {
+        "display": "Aum Sahib",
+        "fold": "aumsahib",
+        "n_discos": 1,
+        "variantes": [
+          "Aum Sahib"
+        ]
+      },
+      {
+        "display": "Baldruin",
+        "fold": "baldruin",
+        "n_discos": 1,
+        "variantes": [
+          "Baldruin"
+        ]
+      },
+      {
+        "display": "Bolide",
+        "fold": "bolide",
+        "n_discos": 1,
+        "variantes": [
+          "Bolide"
+        ]
+      },
+      {
+        "display": "Flamingo Creatures",
+        "fold": "flamingocreatures",
+        "n_discos": 1,
+        "variantes": [
+          "Flamingo Creatures"
+        ]
+      },
+      {
+        "display": "J.Collin",
+        "fold": "jcollin",
+        "n_discos": 1,
+        "variantes": [
+          "J.Collin"
+        ]
+      },
+      {
+        "display": "John Jasnoch & Charlie Collins",
+        "fold": "johnjasnochcharliecollins",
+        "n_discos": 1,
+        "variantes": [
+          "John Jasnoch & Charlie Collins"
+        ]
+      },
+      {
+        "display": "Keijo",
+        "fold": "keijo",
+        "n_discos": 1,
+        "variantes": [
+          "Keijo"
+        ]
+      },
+      {
+        "display": "Mike & Cara Gangloff",
+        "fold": "mikecaragangloff",
+        "n_discos": 1,
+        "variantes": [
+          "Mike & Cara Gangloff"
+        ]
+      },
+      {
+        "display": "Pan del Indio",
+        "fold": "pandelindio",
+        "n_discos": 1,
+        "variantes": [
+          "Pan del Indio"
+        ]
+      },
+      {
+        "display": "Parashi",
+        "fold": "parashi",
+        "n_discos": 1,
+        "variantes": [
+          "Parashi"
+        ]
+      },
+      {
+        "display": "Part Wild Horses Mane On Both Sides",
+        "fold": "partwildhorsesmaneonbothsides",
+        "n_discos": 1,
+        "variantes": [
+          "Part Wild Horses Mane On Both Sides"
+        ]
+      },
+      {
+        "display": "Schrein",
+        "fold": "schrein",
+        "n_discos": 1,
+        "variantes": [
+          "Schrein"
+        ]
+      },
+      {
+        "display": "Tulasi",
+        "fold": "tulasi",
+        "n_discos": 1,
+        "variantes": [
+          "Tulasi"
+        ]
+      },
+      {
+        "display": "Uton",
+        "fold": "uton",
+        "n_discos": 1,
+        "variantes": [
+          "Uton"
+        ]
+      },
+      {
+        "display": "Vlubä",
+        "fold": "vluba",
+        "n_discos": 1,
+        "variantes": [
+          "Vlubä"
+        ]
+      },
+      {
+        "display": "makrame records",
+        "fold": "makramerecords",
+        "n_discos": 5,
+        "variantes": [
+          "makrame records"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 17,
+    "n_discos": 21,
+    "origen": "ambos",
+    "url": "https://makramerecords.bandcamp.com"
+  },
+  {
     "account_id": "bombbasshifi",
     "album_ids": [
       187168914,
@@ -6133,6 +6328,158 @@
     "url": "https://deepnas.bandcamp.com"
   },
   {
+    "account_id": "mendekudiskak",
+    "album_ids": [
+      308736977,
+      316159932,
+      324908490,
+      339304327,
+      730948944,
+      745737432,
+      812332580,
+      1082242734,
+      1108578173,
+      1215151554,
+      1344621543,
+      1783731450,
+      1927384025,
+      2228519303,
+      2314663325,
+      2438428691,
+      2472669811,
+      2596380399,
+      2836497669,
+      3385425813,
+      3479794094,
+      3543199601,
+      3788327811,
+      4104192921
+    ],
+    "artistas": [
+      "ARESI",
+      "BELLUM",
+      "CUERO",
+      "IRMO",
+      "KOLPEKA",
+      "Mendeku Diskak",
+      "OGRO",
+      "ORREAGA 778",
+      "PURO ODIO",
+      "REVERTT",
+      "STA. CRUZ",
+      "ZIKIN"
+    ],
+    "clusters": [
+      {
+        "display": "ARESI",
+        "fold": "aresi",
+        "n_discos": 2,
+        "variantes": [
+          "ARESI"
+        ]
+      },
+      {
+        "display": "BELLUM",
+        "fold": "bellum",
+        "n_discos": 1,
+        "variantes": [
+          "BELLUM"
+        ]
+      },
+      {
+        "display": "CUERO",
+        "fold": "cuero",
+        "n_discos": 3,
+        "variantes": [
+          "CUERO"
+        ]
+      },
+      {
+        "display": "IRMO",
+        "fold": "irmo",
+        "n_discos": 1,
+        "variantes": [
+          "IRMO"
+        ]
+      },
+      {
+        "display": "KOLPEKA",
+        "fold": "kolpeka",
+        "n_discos": 2,
+        "variantes": [
+          "KOLPEKA"
+        ]
+      },
+      {
+        "display": "Mendeku Diskak",
+        "fold": "mendekudiskak",
+        "n_discos": 5,
+        "variantes": [
+          "Mendeku Diskak"
+        ]
+      },
+      {
+        "display": "OGRO",
+        "fold": "ogro",
+        "n_discos": 2,
+        "variantes": [
+          "OGRO"
+        ]
+      },
+      {
+        "display": "ORREAGA 778",
+        "fold": "orreaga778",
+        "n_discos": 2,
+        "variantes": [
+          "ORREAGA 778"
+        ]
+      },
+      {
+        "display": "PURO ODIO",
+        "fold": "puroodio",
+        "n_discos": 1,
+        "variantes": [
+          "PURO ODIO"
+        ]
+      },
+      {
+        "display": "REVERTT",
+        "fold": "revertt",
+        "n_discos": 2,
+        "variantes": [
+          "REVERTT"
+        ]
+      },
+      {
+        "display": "STA. CRUZ",
+        "fold": "stacruz",
+        "n_discos": 1,
+        "variantes": [
+          "STA. CRUZ"
+        ]
+      },
+      {
+        "display": "ZIKIN",
+        "fold": "zikin",
+        "n_discos": 2,
+        "variantes": [
+          "ZIKIN"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "diskak"
+    ],
+    "n_artistas": 12,
+    "n_discos": 24,
+    "origen": "ambos",
+    "url": "https://mendekudiskak.bandcamp.com"
+  },
+  {
     "account_id": "ensemblesinkro",
     "album_ids": [
       61221013,
@@ -6278,6 +6625,147 @@
     "n_discos": 20,
     "origen": "umbral",
     "url": "https://ensemblesinkro.bandcamp.com"
+  },
+  {
+    "account_id": "laagoniadevivir",
+    "album_ids": [
+      262980317,
+      444668900,
+      847040140,
+      1232650862,
+      1845929248,
+      1887047991,
+      2149445517,
+      2233289320,
+      3043169698,
+      3233000682,
+      3399851741,
+      3400350081,
+      3684279036,
+      3729234297,
+      3948985203
+    ],
+    "artistas": [
+      "1991",
+      "ANCIENT EMBLEM",
+      "BANANAS",
+      "COMIC SANS",
+      "CULT OF MISERY",
+      "DESPEÑAPERROS",
+      "DIANA LAGARTO",
+      "La Agonía de Vivir",
+      "MÁRMOL",
+      "OHIL",
+      "URA",
+      "YAW"
+    ],
+    "clusters": [
+      {
+        "display": "1991",
+        "fold": "1991",
+        "n_discos": 1,
+        "variantes": [
+          "1991"
+        ]
+      },
+      {
+        "display": "ANCIENT EMBLEM",
+        "fold": "ancientemblem",
+        "n_discos": 1,
+        "variantes": [
+          "ANCIENT EMBLEM"
+        ]
+      },
+      {
+        "display": "BANANAS",
+        "fold": "bananas",
+        "n_discos": 1,
+        "variantes": [
+          "BANANAS"
+        ]
+      },
+      {
+        "display": "COMIC SANS",
+        "fold": "comicsans",
+        "n_discos": 1,
+        "variantes": [
+          "COMIC SANS"
+        ]
+      },
+      {
+        "display": "CULT OF MISERY",
+        "fold": "cultofmisery",
+        "n_discos": 1,
+        "variantes": [
+          "CULT OF MISERY"
+        ]
+      },
+      {
+        "display": "DESPEÑAPERROS",
+        "fold": "despenaperros",
+        "n_discos": 2,
+        "variantes": [
+          "DESPEÑAPERROS"
+        ]
+      },
+      {
+        "display": "DIANA LAGARTO",
+        "fold": "dianalagarto",
+        "n_discos": 1,
+        "variantes": [
+          "DIANA LAGARTO"
+        ]
+      },
+      {
+        "display": "La Agonía de Vivir",
+        "fold": "laagoniadevivir",
+        "n_discos": 3,
+        "variantes": [
+          "La Agonía de Vivir"
+        ]
+      },
+      {
+        "display": "MÁRMOL",
+        "fold": "marmol",
+        "n_discos": 1,
+        "variantes": [
+          "MÁRMOL"
+        ]
+      },
+      {
+        "display": "OHIL",
+        "fold": "ohil",
+        "n_discos": 1,
+        "variantes": [
+          "OHIL"
+        ]
+      },
+      {
+        "display": "URA",
+        "fold": "ura",
+        "n_discos": 1,
+        "variantes": [
+          "URA"
+        ]
+      },
+      {
+        "display": "YAW",
+        "fold": "yaw",
+        "n_discos": 1,
+        "variantes": [
+          "YAW"
+        ]
+      }
+    ],
+    "flags": [
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": null,
+    "marcadores": [],
+    "n_artistas": 12,
+    "n_discos": 15,
+    "origen": "umbral",
+    "url": "https://laagoniadevivir.bandcamp.com"
   },
   {
     "account_id": "raperosdeemaus",
@@ -6553,6 +7041,125 @@
     "n_discos": 22,
     "origen": "umbral",
     "url": "https://secretsocietychile.bandcamp.com"
+  },
+  {
+    "account_id": "zirikaturecords",
+    "album_ids": [
+      70538154,
+      422707794,
+      485099267,
+      582239498,
+      672174196,
+      935692927,
+      1027867036,
+      1193250640,
+      1296275320,
+      1741568727,
+      1742743658,
+      2004533955,
+      2263377876,
+      3071999578,
+      3290960721,
+      3531708248,
+      3574892927,
+      4068904463,
+      4118836290
+    ],
+    "artistas": [
+      "AKAINAK",
+      "DISWAR",
+      "INSOLVENTES",
+      "INZESTO",
+      "LA SOGA DEL MUERTO",
+      "NEGRACALAVERA",
+      "SENCILLOS & ELEGANTES",
+      "SERES NOCTURNOS MUERTOS DIURNOS",
+      "SKLEROSIS"
+    ],
+    "clusters": [
+      {
+        "display": "AKAINAK",
+        "fold": "akainak",
+        "n_discos": 4,
+        "variantes": [
+          "AKAINAK"
+        ]
+      },
+      {
+        "display": "DISWAR",
+        "fold": "diswar",
+        "n_discos": 2,
+        "variantes": [
+          "DISWAR"
+        ]
+      },
+      {
+        "display": "INSOLVENTES",
+        "fold": "insolventes",
+        "n_discos": 2,
+        "variantes": [
+          "INSOLVENTES"
+        ]
+      },
+      {
+        "display": "INZESTO",
+        "fold": "inzesto",
+        "n_discos": 3,
+        "variantes": [
+          "INZESTO"
+        ]
+      },
+      {
+        "display": "LA SOGA DEL MUERTO",
+        "fold": "lasogadelmuerto",
+        "n_discos": 1,
+        "variantes": [
+          "LA SOGA DEL MUERTO"
+        ]
+      },
+      {
+        "display": "NEGRACALAVERA",
+        "fold": "negracalavera",
+        "n_discos": 1,
+        "variantes": [
+          "NEGRACALAVERA"
+        ]
+      },
+      {
+        "display": "SENCILLOS & ELEGANTES",
+        "fold": "sencilloselegantes",
+        "n_discos": 2,
+        "variantes": [
+          "SENCILLOS & ELEGANTES"
+        ]
+      },
+      {
+        "display": "SERES NOCTURNOS MUERTOS DIURNOS",
+        "fold": "seresnocturnosmuertosdiurnos",
+        "n_discos": 1,
+        "variantes": [
+          "SERES NOCTURNOS MUERTOS DIURNOS"
+        ]
+      },
+      {
+        "display": "SKLEROSIS",
+        "fold": "sklerosis",
+        "n_discos": 3,
+        "variantes": [
+          "SKLEROSIS"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 9,
+    "n_discos": 19,
+    "origen": "ambos",
+    "url": "https://zirikaturecords.bandcamp.com"
   },
   {
     "account_id": "sustraidunyouths",
@@ -12376,58 +12983,6 @@
     "url": "https://revolutionarybrothers.bandcamp.com"
   },
   {
-    "account_id": "laagoniadevivir",
-    "album_ids": [
-      262980317,
-      444668900,
-      847040140,
-      1232650862,
-      1845929248,
-      1887047991,
-      2149445517,
-      2233289320,
-      3043169698,
-      3233000682,
-      3399851741,
-      3400350081,
-      3684279036,
-      3729234297,
-      3948985203
-    ],
-    "artistas": [
-      "La Agonía Vivir",
-      "La Agonía de Vivir"
-    ],
-    "clusters": [
-      {
-        "display": "La Agonía Vivir",
-        "fold": "laagoniavivir",
-        "n_discos": 8,
-        "variantes": [
-          "La Agonía Vivir"
-        ]
-      },
-      {
-        "display": "La Agonía de Vivir",
-        "fold": "laagoniadevivir",
-        "n_discos": 7,
-        "variantes": [
-          "La Agonía de Vivir"
-        ]
-      }
-    ],
-    "flags": [
-      "borde_2artistas",
-      "posible_autocuenta"
-    ],
-    "lexico_subtipo": null,
-    "marcadores": [],
-    "n_artistas": 2,
-    "n_discos": 15,
-    "origen": "umbral",
-    "url": "https://laagoniadevivir.bandcamp.com"
-  },
-  {
     "account_id": "glyyyydan",
     "album_ids": [
       380742804,
@@ -17970,159 +18525,6 @@
     "url": "https://weareapeshello.bandcamp.com"
   },
   {
-    "account_id": "mendekudiskak",
-    "album_ids": [
-      308736977,
-      316159932,
-      324908490,
-      339304327,
-      730948944,
-      745737432,
-      812332580,
-      1082242734,
-      1108578173,
-      1215151554,
-      1344621543,
-      1783731450,
-      1927384025,
-      2228519303,
-      2314663325,
-      2438428691,
-      2472669811,
-      2596380399,
-      2836497669,
-      3385425813,
-      3479794094,
-      3543199601,
-      3788327811,
-      4104192921
-    ],
-    "artistas": [
-      "Mendeku Diskak"
-    ],
-    "clusters": [
-      {
-        "display": "Mendeku Diskak",
-        "fold": "mendekudiskak",
-        "n_discos": 24,
-        "variantes": [
-          "Mendeku Diskak"
-        ]
-      }
-    ],
-    "flags": [
-      "posible_autocuenta"
-    ],
-    "lexico_subtipo": "autoacreditada",
-    "marcadores": [
-      "diskak"
-    ],
-    "n_artistas": 1,
-    "n_discos": 24,
-    "origen": "lexico",
-    "url": "https://mendekudiskak.bandcamp.com"
-  },
-  {
-    "account_id": "makramerecords",
-    "album_ids": [
-      473441715,
-      965251273,
-      1278253290,
-      1338372223,
-      1718204425,
-      1990912398,
-      2027424330,
-      2218362255,
-      2525746403,
-      2747101219,
-      3079718428,
-      3106732376,
-      3144945232,
-      3158378126,
-      3542484755,
-      3547263351,
-      3604757740,
-      3772909789,
-      3832546990,
-      3957246561,
-      4138963846
-    ],
-    "artistas": [
-      "makrame records"
-    ],
-    "clusters": [
-      {
-        "display": "makrame records",
-        "fold": "makramerecords",
-        "n_discos": 21,
-        "variantes": [
-          "makrame records"
-        ]
-      }
-    ],
-    "flags": [
-      "posible_autocuenta"
-    ],
-    "lexico_subtipo": "autoacreditada",
-    "marcadores": [
-      "records",
-      "record"
-    ],
-    "n_artistas": 1,
-    "n_discos": 21,
-    "origen": "lexico",
-    "url": "https://makramerecords.bandcamp.com"
-  },
-  {
-    "account_id": "zirikaturecords",
-    "album_ids": [
-      70538154,
-      422707794,
-      485099267,
-      582239498,
-      672174196,
-      935692927,
-      1027867036,
-      1193250640,
-      1296275320,
-      1741568727,
-      1742743658,
-      2004533955,
-      2263377876,
-      3071999578,
-      3290960721,
-      3531708248,
-      3574892927,
-      4068904463,
-      4118836290
-    ],
-    "artistas": [
-      "Zirikatu Records"
-    ],
-    "clusters": [
-      {
-        "display": "Zirikatu Records",
-        "fold": "zirikaturecords",
-        "n_discos": 19,
-        "variantes": [
-          "Zirikatu Records"
-        ]
-      }
-    ],
-    "flags": [
-      "posible_autocuenta"
-    ],
-    "lexico_subtipo": "autoacreditada",
-    "marcadores": [
-      "records",
-      "record"
-    ],
-    "n_artistas": 1,
-    "n_discos": 19,
-    "origen": "lexico",
-    "url": "https://zirikaturecords.bandcamp.com"
-  },
-  {
     "account_id": "blackvoguerecords",
     "album_ids": [
       127850324,
@@ -19634,22 +20036,20 @@
       3741716926
     ],
     "artistas": [
-      "No Tomorrow Records"
+      "NUEVO CATECISMO CATÓLICO"
     ],
     "clusters": [
       {
-        "display": "No Tomorrow Records",
-        "fold": "notomorrowrecords",
+        "display": "NUEVO CATECISMO CATÓLICO",
+        "fold": "nuevocatecismocatolico",
         "n_discos": 1,
         "variantes": [
-          "No Tomorrow Records"
+          "NUEVO CATECISMO CATÓLICO"
         ]
       }
     ],
-    "flags": [
-      "posible_autocuenta"
-    ],
-    "lexico_subtipo": "autoacreditada",
+    "flags": [],
+    "lexico_subtipo": "acto_distinto",
     "marcadores": [
       "records",
       "record"
