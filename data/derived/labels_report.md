@@ -6,7 +6,7 @@ Dato derivado del subdominio de `url` en el canónico. Una cuenta entra en el í
 
 - Cuentas totales (con cuenta atribuible): **2588**
 - **Candidatas a sello (total): 320**
-- Candidatos **antes / después** de añadir la vía léxica: **244 → 320** (+76)
+- Candidatos **antes / después** de añadir la vía léxica: **247 → 320** (+73)
 - Discos cubiertos por candidatas: **2405** de 7568 (**31.8%** del catálogo)
 - Cuentas con dominio propio (`custom:`): **6**
 - Huecos honestos (url vacía o `bandcamp.com`): **5**
@@ -14,25 +14,25 @@ Dato derivado del subdominio de `url` en el canónico. Una cuenta entra en el í
 ### Desglose por origen de entrada
 
 - `umbral` (solo por >= 2 artistas): **206**
-- `ambos` (umbral **y** marcador léxico): **38**
-- `lexico` (solo por marcador léxico; 1 cluster, antes invisibles): **76**
+- `ambos` (umbral **y** marcador léxico): **41**
+- `lexico` (solo por marcador léxico; 1 cluster, antes invisibles): **73**
 
-> Nota: las 76 entradas que entran **solo por léxico** (1 cluster) son **dos poblaciones distintas**, y conviene tratarlas aparte (detalle más abajo):
+> Nota: las 73 entradas que entran **solo por léxico** (1 cluster) son **dos poblaciones distintas**, y conviene tratarlas aparte (detalle más abajo):
 >
-> - **14 auto-acreditadas**: el sello firma como artista (`mendekudiskak` → "Mendeku Diskak"). Aquí `posible_autocuenta` dispara y **es lo esperado**, no una alarma: es justo por lo que el umbral no las veía.
-> - **62 con acto de nombre distinto**: el único artista no es el sello (`gondolinrecords` → "Lord Bakartia", `meyorecords` → "VULK"). No disparan `posible_autocuenta`. No es mala detección: es señal de que el scraper solo ha capturado **un acto** de ese sello (cobertura incompleta).
+> - **10 auto-acreditadas**: el sello firma como artista (`mendekudiskak` → "Mendeku Diskak"). Aquí `posible_autocuenta` dispara y **es lo esperado**, no una alarma: es justo por lo que el umbral no las veía.
+> - **63 con acto de nombre distinto**: el único artista no es el sello (`gondolinrecords` → "Lord Bakartia", `meyorecords` → "VULK"). No disparan `posible_autocuenta`. No es mala detección: es señal de que el scraper solo ha capturado **un acto** de ese sello (cobertura incompleta).
 >
 > `borde_2artistas` y `nombre_anidado` no aplican con un solo cluster.
 
-Nota histórica: al endurecer la normalización de artistas los candidatos por umbral pasaron de 335 a 244 (dedup dura por clave `fold`).
+Nota histórica: al endurecer la normalización de artistas los candidatos por umbral pasaron de 338 a 247 (dedup dura por clave `fold`).
 
 ### Recuento por flag (dentro de las candidatas)
 
-- `borde_2artistas` (exactamente 2 artistas): **138**
+- `borde_2artistas` (exactamente 2 artistas): **137**
 - `posible_VA` (Various Artists / VA / V.A. / Various): **15**
 - `nombre_anidado` (2 clusters, uno contenido en el otro; featurings/alias): **78**
-- `posible_autocuenta` (id de cuenta ≈ nombre de un artista propio; tiene falsos positivos, revisión humana): **158**
-- **Sin ningún flag** (sellos limpios): **113**
+- `posible_autocuenta` (id de cuenta ≈ nombre de un artista propio; tiene falsos positivos, revisión humana): **156**
+- **Sin ningún flag** (sellos limpios): **115**
 
 ## Histograma: cuentas por nº de discos
 
@@ -85,17 +85,14 @@ Nota histórica: al endurecer la normalización de artistas los candidatos por u
 
 ## Entran solo por léxico
 
-Cuentas con un **solo** cluster de artista (no llegaban al umbral) que entran por llevar un marcador de sello en el account_id. Es el hallazgo principal de esta fase: **76** cuentas antes invisibles. Son **dos poblaciones distintas** (campo `lexico_subtipo` en labels.json). Tablas ordenadas por nº de discos.
+Cuentas con un **solo** cluster de artista (no llegaban al umbral) que entran por llevar un marcador de sello en el account_id. Es el hallazgo principal de esta fase: **73** cuentas antes invisibles. Son **dos poblaciones distintas** (campo `lexico_subtipo` en labels.json). Tablas ordenadas por nº de discos.
 
-### Auto-acreditadas — el sello firma como artista (14)
+### Auto-acreditadas — el sello firma como artista (10)
 
 `posible_autocuenta` dispara y **es lo esperado**: es justo el caso que el umbral no veía. Sellos reales acreditados a su propio nombre.
 
 | account_id | n_discos | artista único | marcador(es) |
 | :--- | ---: | :--- | :--- |
-| mendekudiskak | 24 | Mendeku Diskak | `diskak` |
-| makramerecords | 21 | makrame records | `records`, `record` |
-| zirikaturecords | 19 | Zirikatu Records | `records`, `record` |
 | blackvoguerecords | 17 | BlackVogue Records | `records`, `record` |
 | gatazkabasslabel | 5 | Gatazka Bass Label | `label` |
 | produccionestudancas | 5 | Producciones Tudancas | `producciones` |
@@ -104,11 +101,10 @@ Cuentas con un **solo** cluster de artista (no llegaban al umbral) que entran po
 | folcrecords | 1 | FOLC RECORDS | `records`, `record` |
 | harrobirecords | 1 | Harrobi Records | `records`, `record` |
 | kastillorecords | 1 | Kastillo Records | `records`, `record` |
-| notomorrowrecords | 1 | No Tomorrow Records | `records`, `record` |
 | plasticwoundrecords | 1 | Plastic Wound Records | `records`, `record` |
 | psilocybina-records | 1 | Psilocybina Records | `records`, `record` |
 
-### Con acto de nombre distinto — cobertura incompleta (62)
+### Con acto de nombre distinto — cobertura incompleta (63)
 
 El único artista capturado no es el sello. No es mala detección: el scraper solo ha traído **un acto** de este sello, así que se ve como cuenta de un artista. Señal de **cobertura incompleta**, candidatos a re-scrapear.
 
@@ -156,6 +152,7 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | niunpeloderubiasrecords | 1 | Cordura | `records`, `record` |
 | noaloharecords | 1 | Edu Errea | `records`, `record` |
 | nortepuromusicrecords | 1 | Nolove, C.Manson | `records`, `record` |
+| notomorrowrecords | 1 | NUEVO CATECISMO CATÓLICO | `records`, `record` |
 | origamirecords | 1 | Grises | `records`, `record` |
 | politburorecordingfiasco | 1 | LOS PANIKS | `record`, `recording` |
 | quebrantarecords | 1 | CORDURA | `records`, `record` |
@@ -193,6 +190,7 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | timbamuziklab | umbral | 29 | 18 | — |
 | bangrecords | ambos | 20 | 18 | — |
 | somniferumrec | umbral | 18 | 18 | — |
+| makramerecords | ambos | 21 | 17 | posible_autocuenta |
 | bombbasshifi | umbral | 17 | 16 | — |
 | forbiddencolours | umbral | 16 | 15 | — |
 | zawpklem | umbral | 22 | 14 | posible_VA |
@@ -200,9 +198,12 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | orruadiskak | ambos | 45 | 13 | — |
 | belarri | umbral | 13 | 13 | — |
 | deepnas | umbral | 13 | 13 | — |
+| mendekudiskak | ambos | 24 | 12 | posible_autocuenta |
 | ensemblesinkro | umbral | 20 | 12 | posible_autocuenta |
+| laagoniadevivir | umbral | 15 | 12 | posible_autocuenta |
 | raperosdeemaus | umbral | 35 | 11 | posible_autocuenta |
 | secretsocietychile | umbral | 22 | 9 | posible_VA, posible_autocuenta |
+| zirikaturecords | ambos | 19 | 9 | — |
 | sustraidunyouths | umbral | 17 | 8 | posible_autocuenta |
 | vyramed | umbral | 11 | 8 | — |
 | discosbanana1 | ambos | 10 | 8 | posible_autocuenta |
@@ -291,7 +292,6 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | theetherensemble | umbral | 41 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | wldv | umbral | 31 | 2 | borde_2artistas, posible_VA, posible_autocuenta |
 | revolutionarybrothers | umbral | 17 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
-| laagoniadevivir | umbral | 15 | 2 | borde_2artistas, posible_autocuenta |
 | glyyyydan | umbral | 14 | 2 | borde_2artistas |
 | cosmichyrax | umbral | 13 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | kalekourdangak | umbral | 13 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
@@ -425,9 +425,6 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | uhinzine | umbral | 2 | 2 | borde_2artistas, posible_autocuenta |
 | ulzion | umbral | 2 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | weareapeshello | umbral | 2 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
-| mendekudiskak | lexico | 24 | 1 | posible_autocuenta |
-| makramerecords | lexico | 21 | 1 | posible_autocuenta |
-| zirikaturecords | lexico | 19 | 1 | posible_autocuenta |
 | blackvoguerecords | lexico | 17 | 1 | posible_autocuenta |
 | daimnicagrabaciones | lexico | 9 | 1 | — |
 | hopeandfaithrecords | lexico | 7 | 1 | — |
@@ -478,7 +475,7 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | niunpeloderubiasrecords | lexico | 1 | 1 | — |
 | noaloharecords | lexico | 1 | 1 | — |
 | nortepuromusicrecords | lexico | 1 | 1 | — |
-| notomorrowrecords | lexico | 1 | 1 | posible_autocuenta |
+| notomorrowrecords | lexico | 1 | 1 | — |
 | origamirecords | lexico | 1 | 1 | — |
 | plasticwoundrecords | lexico | 1 | 1 | posible_autocuenta |
 | politburorecordingfiasco | lexico | 1 | 1 | — |
@@ -521,6 +518,7 @@ Candidatas que no disparan ninguna bandera: los sellos más claros.
 | orruadiskak | 45 | 13 |
 | belarri | 13 | 13 |
 | deepnas | 13 | 13 |
+| zirikaturecords | 19 | 9 |
 | vyramed | 11 | 8 |
 | senoidrecordings | 10 | 8 |
 | ekinmusic | 31 | 7 |
@@ -602,6 +600,7 @@ Candidatas que no disparan ninguna bandera: los sellos más claros.
 | niunpeloderubiasrecords | 1 | 1 |
 | noaloharecords | 1 | 1 |
 | nortepuromusicrecords | 1 | 1 |
+| notomorrowrecords | 1 | 1 |
 | origamirecords | 1 | 1 |
 | politburorecordingfiasco | 1 | 1 |
 | quebrantarecords | 1 | 1 |
