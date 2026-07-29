@@ -46,15 +46,20 @@ export function Coleccion({ archive }) {
   return (
     <main className="coleccion-pagina">
       <header className="coleccion-cab">
-        {/* Barra de cuenta: quién eres (nombre de Google si lo hay, si no la
-            inicial — nunca el email) y SALIR a mano, no perdido al pie. */}
-        <div className="cuenta-barra">
-          <span className="cuenta-quien">{nombre || inicial}</span>
-          <button className="salir" onClick={salir}>
-            SALIR
-          </button>
+        {/* Fila superior equilibrada: el titular a un lado y el bloque de
+            cuenta al otro. El bloque agrupa quién eres (nombre de Google si
+            lo hay, si no la inicial — nunca el email) sobre SALIR, alineado a
+            la derecha; antes iban sueltos (nombre arriba-izquierda, SALIR
+            arriba-derecha) y quedaban descolocados en iPad y móvil. */}
+        <div className="cab-fila">
+          <h1>COLECCIÓN</h1>
+          <div className="cuenta-barra">
+            <span className="cuenta-quien">{nombre || inicial}</span>
+            <button className="salir" onClick={salir}>
+              SALIR
+            </button>
+          </div>
         </div>
-        <h1>COLECCIÓN</h1>
         {/* Dos ejes independientes: guardar es intención (guardados, lima);
             haber pasado por un disco es recorrido (vistos, tinta). Cifras
             siempre calculadas del dato, con el punto de millar de la cabecera. */}
