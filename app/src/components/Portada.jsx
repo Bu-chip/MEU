@@ -16,7 +16,7 @@ export function Portada({ album }) {
     return (
       <div className="portada vacia">
         <span className="aviso">
-          {album.cover_url ? 'PORTADA NO DISPONIBLE' : 'SIN PORTADA · HUECO HONESTO'}
+          {album.cover_url ? 'PORTADA NO DISPONIBLE' : 'SIN PORTADA'}
         </span>
         <div className="ph">{titulo}</div>
       </div>
