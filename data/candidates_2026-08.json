@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "generated_at": "2026-08-03T07:53:15Z",
+    "month": "2026-08",
+    "schema": "candidato = canónico sin id + band_location, source_tags, discovered_at; los id se asignan al merge"
+  },
+  "candidates": [
+    {
+      "artist": "MARIA ERREA (CLUELESS GAZELLE)",
+      "title": "Life Changes",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "pop",
+        "iruña"
+      ],
+      "url": "https://cluelessgazelle.bandcamp.com/album/life-changes",
+      "cover_url": "https://f4.bcbits.com/img/a3328148023_5.jpg",
+      "album_id": 4094515998,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [
+        "pamplona"
+      ],
+      "discovered_at": "2026-08-03T07:49:58Z"
+    },
+    {
+      "artist": "CØRRUPT TRAX",
+      "title": "B1GG4 - Whats This",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "schranz",
+        "donostia"
+      ],
+      "url": "https://corrupttrax.bandcamp.com/album/b1gg4-whats-this",
+      "cover_url": "https://f4.bcbits.com/img/a0068059784_5.jpg",
+      "album_id": 3340657046,
+      "band_location": "Donostia San Sebastian, Spain",
+      "source_tags": [
+        "donostia-san-sebastian"
+      ],
+      "discovered_at": "2026-08-03T07:49:50Z"
+    },
+    {
+      "artist": "Dark Harmony",
+      "title": "CHEAP MALWARE",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "metal",
+        "cheapbin",
+        "chiptune",
+        "chiptunes",
+        "experimental electronic",
+        "malware",
+        "portugalete"
+      ],
+      "url": "https://darkharmony.bandcamp.com/album/cheap-malware",
+      "cover_url": "https://f4.bcbits.com/img/a1298065608_5.jpg",
+      "album_id": 1994982252,
+      "band_location": "Portugalete, Spain",
+      "source_tags": [
+        "portugalete"
+      ],
+      "discovered_at": "2026-08-03T07:48:46Z"
+    },
+    {
+      "artist": "EFO",
+      "title": "TROZOS DE MI VIDA(EFADAS)",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "hard rock",
+        "metal",
+        "heavy metal",
+        "heavy metal - hard rock",
+        "bilbao"
+      ],
+      "url": "https://efogrupo.bandcamp.com/album/trozos-de-mi-vida-efadas",
+      "cover_url": "https://f4.bcbits.com/img/a2746273947_5.jpg",
+      "album_id": 4072269755,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "el ciudadano x",
+      "title": "Equis",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "alternative",
+        "basque country",
+        "post-hardcore",
+        "post-rock",
+        "rock",
+        "vitoria gasteiz"
+      ],
+      "url": "https://elciudadanox.bandcamp.com/album/equis",
+      "cover_url": "https://f4.bcbits.com/img/a1401577051_5.jpg",
+      "album_id": 3601724479,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [
+        "vitoria-gasteiz",
+        "basque-country"
+      ],
+      "discovered_at": "2026-08-03T07:49:45Z"
+    },
+    {
+      "artist": "In Tenebris",
+      "title": "Mortuus Solís",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "black metal",
+        "metal",
+        "dark",
+        "mungia"
+      ],
+      "url": "https://in666tenebris.bandcamp.com/album/mortuus-sol-s",
+      "cover_url": "https://f4.bcbits.com/img/a1284281659_5.jpg",
+      "album_id": 2796896067,
+      "band_location": "Mungia, Spain",
+      "source_tags": [
+        "mungia"
+      ],
+      "discovered_at": "2026-08-03T07:47:34Z"
+    },
+    {
+      "artist": "-Love-",
+      "title": "Immolate, assimilate",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "black metal",
+        "deathcore",
+        "metal",
+        "djent",
+        "grindcore",
+        "slam",
+        "vitoria gasteiz"
+      ],
+      "url": "https://love-evolmusic.bandcamp.com/album/immolate-assimilate",
+      "cover_url": "https://f4.bcbits.com/img/a2508726975_5.jpg",
+      "album_id": 2528954930,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [
+        "vitoria-gasteiz"
+      ],
+      "discovered_at": "2026-08-03T07:49:45Z"
+    },
+    {
+      "artist": "-Love-",
+      "title": "Love of ash",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "black metal",
+        "deathcore",
+        "metal",
+        "djent",
+        "grindcore",
+        "slam",
+        "vitoria gasteiz"
+      ],
+      "url": "https://love-evolmusic.bandcamp.com/album/love-of-ash",
+      "cover_url": "https://f4.bcbits.com/img/a0012005380_5.jpg",
+      "album_id": 463489170,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [
+        "vitoria-gasteiz"
+      ],
+      "discovered_at": "2026-08-03T07:49:45Z"
+    },
+    {
+      "artist": "-Love-",
+      "title": "Steal survivors",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "black metal",
+        "deathcore",
+        "metal",
+        "djent",
+        "grindcore",
+        "slam",
+        "vitoria gasteiz"
+      ],
+      "url": "https://love-evolmusic.bandcamp.com/album/steal-survivors",
+      "cover_url": "https://f4.bcbits.com/img/a0548887845_5.jpg",
+      "album_id": 4109308316,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [
+        "vitoria-gasteiz"
+      ],
+      "discovered_at": "2026-08-03T07:49:45Z"
+    },
+    {
+      "artist": "Nudebot",
+      "title": "nudebot",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "alternative",
+        "indie electronic rock",
+        "rock",
+        "bilbao"
+      ],
+      "url": "https://nudebot.bandcamp.com/album/nudebot",
+      "cover_url": "https://f4.bcbits.com/img/a3533595865_5.jpg",
+      "album_id": 2362258203,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "Paté de Rata",
+      "title": "Primates",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "pop rock",
+        "rock",
+        "pop",
+        "punk rock",
+        "rock español",
+        "bilbao"
+      ],
+      "url": "https://patederata.bandcamp.com/album/primates",
+      "cover_url": "https://f4.bcbits.com/img/a1325541207_5.jpg",
+      "album_id": 917533014,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "Paulotronic",
+      "title": "M3rcurio R3trógrado",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "electronica",
+        "electroacustica",
+        "electronica experimental",
+        "narración sonora",
+        "donostia / san sebastián"
+      ],
+      "url": "https://paulotronic.bandcamp.com/album/m3rcurio-r3tr-grado",
+      "cover_url": "https://f4.bcbits.com/img/a0906493368_5.jpg",
+      "album_id": 1618872606,
+      "band_location": "Donostia / San Sebastián, Spain",
+      "source_tags": [
+        "donostia-san-sebastian"
+      ],
+      "discovered_at": "2026-08-03T07:49:50Z"
+    },
+    {
+      "artist": "PIC22",
+      "title": "CvC",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "experimental",
+        "laudio"
+      ],
+      "url": "https://pic22.bandcamp.com/album/cvc",
+      "cover_url": "https://f4.bcbits.com/img/a1512062832_5.jpg",
+      "album_id": 1907675725,
+      "band_location": "Laudio, Spain",
+      "source_tags": [
+        "laudio"
+      ],
+      "discovered_at": "2026-08-03T07:47:55Z"
+    },
+    {
+      "artist": "PIC22",
+      "title": "CvC",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "experimental",
+        "laudio"
+      ],
+      "url": "https://pic22.bandcamp.com/album/cvc-2",
+      "cover_url": "https://f4.bcbits.com/img/a1512062832_5.jpg",
+      "album_id": 212400483,
+      "band_location": "Laudio, Spain",
+      "source_tags": [
+        "laudio"
+      ],
+      "discovered_at": "2026-08-03T07:47:55Z"
+    },
+    {
+      "artist": "Clawfinger",
+      "title": "Biggest & the Best",
+      "genre": null,
+      "year": 2013,
+      "tags": [
+        "euskal rock",
+        "keyboard rock",
+        "metal progressif",
+        "new wave of american heavy metal",
+        "pagan rock",
+        "rock",
+        "singer-songwriter folk folkrock",
+        "super rock",
+        "theatrical rock",
+        "traditional rock",
+        "whitemetal"
+      ],
+      "url": "https://rap-rockfusion.bandcamp.com/album/biggest-the-best",
+      "cover_url": "https://f4.bcbits.com/img/a2473070714_5.jpg",
+      "album_id": 3122391911,
+      "band_location": null,
+      "source_tags": [
+        "euskal-rock"
+      ],
+      "discovered_at": "2026-08-03T07:48:08Z"
+    },
+    {
+      "artist": "SARCOMA",
+      "title": "DANCEFLOORREACTION (LP)",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "dancefloor reaction",
+        "ebm",
+        "experimental",
+        "industrial",
+        "noise",
+        "post-punk",
+        "punk",
+        "rave",
+        "trans",
+        "transbitcheswithproblems",
+        "vitoria gasteiz"
+      ],
+      "url": "https://sarcomanoise.bandcamp.com/album/dancefloorreaction-lp",
+      "cover_url": "https://f4.bcbits.com/img/a1900511902_5.jpg",
+      "album_id": 1660716184,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [
+        "vitoria-gasteiz"
+      ],
+      "discovered_at": "2026-08-03T07:49:45Z"
+    },
+    {
+      "artist": "qzn",
+      "title": "hartkore",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "techno",
+        "iruña"
+      ],
+      "url": "https://technoprostitute.bandcamp.com/album/hartkore",
+      "cover_url": "https://f4.bcbits.com/img/a3117372978_5.jpg",
+      "album_id": 3597315173,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [
+        "pamplona"
+      ],
+      "discovered_at": "2026-08-03T07:49:58Z"
+    },
+    {
+      "artist": "qzn",
+      "title": "martillo loco",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "techno",
+        "iruña"
+      ],
+      "url": "https://technoprostitute.bandcamp.com/album/martillo-loco",
+      "cover_url": "https://f4.bcbits.com/img/a0095185216_5.jpg",
+      "album_id": 3755797848,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [
+        "pamplona"
+      ],
+      "discovered_at": "2026-08-03T07:49:58Z"
+    },
+    {
+      "artist": "qzn",
+      "title": "tartaria",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "techno",
+        "iruña"
+      ],
+      "url": "https://technoprostitute.bandcamp.com/album/tartaria",
+      "cover_url": "https://f4.bcbits.com/img/a0844554923_5.jpg",
+      "album_id": 1431258127,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [
+        "pamplona"
+      ],
+      "discovered_at": "2026-08-03T07:49:58Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "Cuatro Patas...Animal o Banco",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/cuatro-patas-animal-o-banco",
+      "cover_url": "https://f4.bcbits.com/img/a2842508965_5.jpg",
+      "album_id": 2369001227,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "Dispares",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/dispares",
+      "cover_url": "https://f4.bcbits.com/img/a1306299392_5.jpg",
+      "album_id": 1335732923,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "El Camino del Poeta",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/el-camino-del-poeta",
+      "cover_url": "https://f4.bcbits.com/img/a1858812734_5.jpg",
+      "album_id": 166306365,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "Enemigo Público Z",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/enemigo-p-blico-z",
+      "cover_url": "https://f4.bcbits.com/img/a2046746232_5.jpg",
+      "album_id": 1671798925,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "Gasolina Y Fuego",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/gasolina-y-fuego",
+      "cover_url": "https://f4.bcbits.com/img/a0407350005_5.jpg",
+      "album_id": 598427897,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "Los Antisistema - La Resistencia",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/los-antisistema-la-resistencia",
+      "cover_url": "https://f4.bcbits.com/img/a0151635641_5.jpg",
+      "album_id": 3614491145,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "Otro Sintecho Mas",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/otro-sintecho-mas",
+      "cover_url": "https://f4.bcbits.com/img/a0987633918_5.jpg",
+      "album_id": 4245143708,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "Sin Noticias Cercanas. Stop.",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/sin-noticias-cercanas-stop",
+      "cover_url": "https://f4.bcbits.com/img/a2320316325_5.jpg",
+      "album_id": 2683148298,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-08-03T07:50:03Z"
+    },
+    {
+      "artist": "Zarata",
+      "title": "dena mierda bat da",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "alt rock",
+        "alternative",
+        "funk",
+        "metal",
+        "punk",
+        "mixed",
+        "iruña"
+      ],
+      "url": "https://zaratataldea.bandcamp.com/album/dena-mierda-bat-da",
+      "cover_url": "https://f4.bcbits.com/img/a0879341265_5.jpg",
+      "album_id": 3946569150,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [
+        "pamplona"
+      ],
+      "discovered_at": "2026-08-03T07:49:58Z"
+    },
+    {
+      "artist": "Uzu",
+      "title": "Uzu (2026-05-22)",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "punk",
+        "anarchopunk",
+        "arabic punk",
+        "crust punk",
+        "hardcore",
+        "hardcore punk",
+        "live",
+        "live recording",
+        "montreal",
+        "post punk.",
+        "zarautz"
+      ],
+      "url": "https://zaratazarautz.bandcamp.com/album/uzu-2026-05-22",
+      "cover_url": "https://f4.bcbits.com/img/a2205131121_5.jpg",
+      "album_id": 387483699,
+      "band_location": "Zarautz, Spain",
+      "source_tags": [
+        "zarautz"
+      ],
+      "discovered_at": "2026-08-03T07:49:33Z"
+    }
+  ],
+  "deferred_oleada2": []
+}
