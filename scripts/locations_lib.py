@@ -291,10 +291,14 @@ class Normalizer:
 
     def __init__(self, places, rules):
         self.places = {p["id"]: p for p in places}
-        self.alias = {}
+        # alias normalizado → ids (varios si dos municipios oficiales
+        # comparten nombre en distintos países: Getaria / Guéthary).
+        self.alias = defaultdict(list)
         for p in places:
             for name in [p["name"], *p.get("aliases", [])]:
-                self.alias.setdefault(norm_text(name), p["id"])
+                ids = self.alias[norm_text(name)]
+                if p["id"] not in ids:
+                    ids.append(p["id"])
         self.regions = rules.get("regions", {})
         self.region_alias = {}
         for rid, r in self.regions.items():
@@ -303,8 +307,10 @@ class Normalizer:
         self.value_rules = rules.get("values", {})
         self.outside = {norm_text(x) for x in rules.get("outside", [])}
 
-    def place_for_text(self, text):
-        return self.alias.get(norm_text(text))
+    def place_for_text(self, text, tail=None):
+        ids = self.alias.get(norm_text(text)) or []
+        ok = [i for i in ids if self._country_ok(i, tail)]
+        return ok[0] if len(ok) == 1 else None
 
     def classify(self, raw):
         """→ dict {category, place?, region?, reason}. Nunca lanza."""
@@ -340,22 +346,31 @@ class Normalizer:
         if len(head_parts) > 1:
             heads.append(norm_text(head_parts[0]))
         for h in heads:
-            pid = self.alias.get(h)
-            if pid:
-                if in_home_country and self._country_ok(pid, tail):
-                    return {"category": "resolved", "place": pid,
+            ids = self.alias.get(h)
+            if ids:
+                ok = [i for i in ids if in_home_country and self._country_ok(i, tail)]
+                if len(ok) == 1:
+                    return {"category": "resolved", "place": ok[0],
                             "reason": "alias del registro"}
-                return {"category": "unexpected", "place_collision": pid,
+                if len(ok) > 1:
+                    return {"category": "ambiguous", "candidates": ok,
+                            "reason": "el nombre corresponde a varios municipios"}
+                return {"category": "unexpected", "place_collision": ids[0],
                         "reason": f"topónimo del ámbito con país «{parts[-1]}»"}
             if h in self.region_alias and in_home_country:
                 return {"category": "region_only", "region": self.region_alias[h],
                         "reason": "región/comarca, sin municipio"}
+        if any(h in self.outside for h in heads) or whole in self.outside:
+            return {"category": "outside_scope", "reason": "lugar fuera del ámbito (lista controlada)"}
         if in_home_country:
-            if any(h in self.outside for h in heads):
-                return {"category": "outside_scope", "reason": "lugar fuera del ámbito"}
             return {"category": "unresolved",
                     "reason": "no está en el registro: revisar (¿municipio nuevo?)"}
-        # País extranjero sin colisión con el ámbito.
+        # País extranjero: si la cabeza es una región del ámbito («Navarre,
+        # Florida») es una colisión, no un dato a aceptar sin más.
+        if any(h in self.region_alias for h in heads):
+            rid = next(self.region_alias[h] for h in heads if h in self.region_alias)
+            return {"category": "unexpected", "place_collision": rid,
+                    "reason": f"región del ámbito con país «{parts[-1]}»"}
         return {"category": "outside_scope", "reason": f"fuera de ES/FR ({parts[-1]})"}
 
     def _country_ok(self, pid, tail):
@@ -368,8 +383,9 @@ class Normalizer:
         """Un tag es pista de lugar solo si coincide EXACTAMENTE con un
         nombre/alias del registro (o de una región). Nunca es resolución."""
         t = norm_text(tag)
-        if t in self.alias:
-            return ("place", self.alias[t])
+        ids = self.alias.get(t)
+        if ids and len(ids) == 1:
+            return ("place", ids[0])
         if t in self.region_alias:
             return ("region", self.region_alias[t])
         return None
@@ -433,6 +449,7 @@ def resolve_catalog(albums, obs_by_key, normalizer, label_accounts=frozenset(), 
     """
     manual = manual or {}
     manual_rel = manual.get("releases", {})
+    manual_acc = manual.get("accounts", {})
     by_url, by_account = index_observations(obs_by_key)
     cls_cache = {}
 
@@ -496,13 +513,14 @@ def resolve_catalog(albums, obs_by_key, normalizer, label_accounts=frozenset(), 
             res["tag_hints"] = hints
 
         chosen = None
-        if str(rid) in manual_rel:
-            m = manual_rel[str(rid)]
+        m = manual_rel.get(str(rid)) or manual_acc.get(b["account"] or "")
+        if m:
             res.update(type="manual", place=m.get("place"))
             res["evidence"].append({"kind": "manual", "place": m.get("place"),
+                                    "scope": "release" if str(rid) in manual_rel else "account",
                                     "note": m.get("note"), "decided_at": m.get("decided_at")})
-            if m.get("category"):
-                res["type"] = m["category"] if m["category"] in RESOLUTION_TYPES else "manual"
+            if not m.get("place"):
+                res["type"] = m.get("category") if m.get("category") in RESOLUTION_TYPES else "unresolved"
         else:
             chosen = _pick(municipal(b["direct"]))
             if chosen:
@@ -546,29 +564,40 @@ def resolve_catalog(albums, obs_by_key, normalizer, label_accounts=frozenset(), 
             res["evidence"].insert(0, chosen)
             res["value"] = chosen["value"]
 
-        # Contradicciones: evidencia Bandcamp con otro municipio o categoría
-        # problemática, y pistas de tag con otro municipio.
+        # Contradicciones = evidencia que apunta a OTRO municipio (Bandcamp o
+        # tag). Los valores descartados por su categoría (unexpected,
+        # invalid, ambiguous…) van aparte, una vez por valor.
+        seen_conflicts = set()
+        rejected = {}
         for e in all_evidence:
             if e is chosen or e["value"] is None:
                 continue
             if e["category"] == "resolved" and e.get("place") != res["place"]:
-                res["conflicts"].append({"kind": e["kind"], "value": e["value"], "place": e["place"],
-                                         "source_url": e["source_url"]})
-            elif e["category"] in ("unexpected", "invalid", "ambiguous", "unresolved") and res["type"] != "manual":
-                res["conflicts"].append({"kind": e["kind"], "value": e["value"],
-                                         "category": e["category"], "source_url": e["source_url"]})
+                sig = (e["kind"], e["place"])
+                if sig not in seen_conflicts:
+                    seen_conflicts.add(sig)
+                    res["conflicts"].append({"kind": e["kind"], "value": e["value"], "place": e["place"],
+                                             "source_url": e["source_url"]})
+            elif e["category"] in ("unexpected", "invalid", "ambiguous", "unresolved"):
+                rejected.setdefault(e["value"], e["category"])
+        if rejected:
+            res["rejected_values"] = dict(sorted(rejected.items()))
         if res["place"] and res["type"] != "tag_hint":
             other = [h for h in hints if h != res["place"]]
             if other and res["place"] not in hints:
                 res["conflicts"].append({"kind": "tag", "places": other})
-        # Evidencias vacías (Bandcamp consultado sin ubicación): trazables.
-        if not all_evidence or all(e["value"] is None for e in all_evidence):
-            if all_evidence:
-                res["checked_empty"] = True
-        # Deduplicar evidencias adicionales (máx. 5 de cuenta para no inflar).
-        extra = [e for e in b["direct"] if e is not chosen]
-        extra += [e for e in b["same_account"] if e is not chosen][:5]
-        res["evidence"] += extra
+        # Bandcamp consultado sin ubicación: hueco trazable.
+        if all_evidence and all(e["value"] is None for e in all_evidence):
+            res["checked_empty"] = True
+        # Evidencia directa restante completa; la de cuenta, resumida por
+        # valor (en Bandcamp es la misma ubicación de cuenta repetida).
+        res["evidence"] += [e for e in b["direct"] if e is not chosen]
+        if b["same_account"]:
+            res["same_account_values"] = dict(sorted(
+                Counter(e["value"] or "∅" for e in b["same_account"]).items()))
+        for e in res["evidence"]:
+            if e.get("account") == res["account"]:
+                e.pop("account", None)
         if not res["conflicts"]:
             del res["conflicts"]
         out[rid] = res
@@ -594,12 +623,19 @@ def lift(count_in_place, place_total, count_global, global_total):
     return (count_in_place / place_total) / (count_global / global_total)
 
 
+MIN_LOCAL = 3    # releases del tag en el lugar
+MIN_GLOBAL = 10  # releases del tag en todo el archivo
+
+
 def overrepresented_tags(place_ids, albums_by_id, global_tag_counts, global_total,
-                         min_count=3, limit=10, exclude=frozenset()):
+                         min_count=MIN_LOCAL, limit=10, exclude=frozenset(), min_global=MIN_GLOBAL):
     """Tags sobrerrepresentados en un conjunto de releases.
 
-    Filtro mínimo `min_count` releases en el lugar para que un tag con 1
-    disco no dé un ×40 espurio. Orden: lift desc, luego nº de releases.
+    Dos umbrales para que el ranking no lo dominen tags raros: al menos
+    `min_count` releases en el lugar y `min_global` en todo el archivo (un
+    tag que solo existe en un sitio daría un lift enorme y vacío).
+    Orden: lift desc, luego nº de releases. Misma métrica en la app
+    (app/src/utils/mapa.js).
     """
     total = len(place_ids)
     counts = Counter()
@@ -609,7 +645,7 @@ def overrepresented_tags(place_ids, albums_by_id, global_tag_counts, global_tota
                 counts[t] += 1
     rows = []
     for t, n in counts.items():
-        if n < min_count:
+        if n < min_count or global_tag_counts[t] < min_global:
             continue
         rows.append((t, n, lift(n, total, global_tag_counts[t], global_total)))
     rows.sort(key=lambda r: (-r[2], -r[1], r[0]))

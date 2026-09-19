@@ -1,0 +1,400 @@
+{
+ "meta": {
+  "note": "Reglas controladas de normalización (docs/mapa.md). Editar a mano y regenerar con `python3 scripts/locations.py all`. regions: textos que solo nombran una región/país (region_only, nunca municipio). outside: lugares reales fuera de Euskal Herria cuando el país dado es España o Francia (outside_scope). place_overrides: alias extra por id de places.json. values: decisiones por texto crudo exacto (mandan sobre todo)."
+ },
+ "regions": {
+  "euskal-herria": {
+   "name": "Euskal Herria",
+   "level": "country",
+   "aliases": [
+    "Basque Country",
+    "Basque Country, Spain",
+    "Euskadi",
+    "Euskadi, Spain",
+    "Euskal Herria, Spain",
+    "País Vasco",
+    "País Vasco, Spain",
+    "Pais Vasco",
+    "PV",
+    "PV, Spain",
+    "Basque",
+    "Basque Country Spain",
+    "Euskal Herria / Basque Country",
+    "Pays Basque, Spain",
+    "Euskal Herriak"
+   ]
+  },
+  "iparralde": {
+   "name": "Iparralde",
+   "level": "region",
+   "aliases": [
+    "Pays Basque",
+    "Pays Basque, France",
+    "Northern Basque Country",
+    "Iparralde, France",
+    "Pays basque français",
+    "Basque Country, France"
+   ]
+  },
+  "bizkaia": {
+   "name": "Bizkaia",
+   "level": "territory",
+   "territory": "Bizkaia",
+   "aliases": [
+    "Biscay",
+    "Vizcaya",
+    "Biscaye"
+   ]
+  },
+  "gipuzkoa": {
+   "name": "Gipuzkoa",
+   "level": "territory",
+   "territory": "Gipuzkoa",
+   "aliases": [
+    "Guipúzcoa",
+    "Guipuzcoa",
+    "Guipuzkoa"
+   ]
+  },
+  "araba": {
+   "name": "Araba",
+   "level": "territory",
+   "territory": "Araba",
+   "aliases": [
+    "Álava",
+    "Alava",
+    "Araba/Álava"
+   ]
+  },
+  "nafarroa": {
+   "name": "Nafarroa",
+   "level": "territory",
+   "territory": "Nafarroa",
+   "aliases": [
+    "Navarra",
+    "Navarre",
+    "Navarra, Spain",
+    "Nafarroa, Spain",
+    "Comunidad Foral de Navarra"
+   ]
+  },
+  "lapurdi": {
+   "name": "Lapurdi",
+   "level": "territory",
+   "territory": "Iparralde",
+   "aliases": [
+    "Labourd"
+   ]
+  },
+  "nafarroa-beherea": {
+   "name": "Nafarroa Beherea",
+   "level": "territory",
+   "territory": "Iparralde",
+   "aliases": [
+    "Basse-Navarre",
+    "Basse Navarre"
+   ]
+  },
+  "zuberoa": {
+   "name": "Zuberoa",
+   "level": "territory",
+   "territory": "Iparralde",
+   "aliases": [
+    "Soule",
+    "Xiberoa"
+   ]
+  },
+  "enkarterri": {
+   "name": "Enkarterri",
+   "level": "comarca",
+   "territory": "Bizkaia",
+   "aliases": [
+    "Encartaciones",
+    "Las Encartaciones"
+   ]
+  },
+  "arratia-nerbioi": {
+   "name": "Arratia-Nerbioi",
+   "level": "comarca",
+   "territory": "Bizkaia",
+   "aliases": [
+    "Arratia Nerbioi",
+    "Arratia-Nervión"
+   ]
+  },
+  "busturialdea": {
+   "name": "Busturialdea",
+   "level": "comarca",
+   "territory": "Bizkaia",
+   "aliases": [
+    "Urdaibai"
+   ]
+  },
+  "uribe": {
+   "name": "Uribe",
+   "level": "comarca",
+   "territory": "Bizkaia",
+   "aliases": [
+    "Uribe Kosta",
+    "Uribe Costa"
+   ]
+  },
+  "durangaldea": {
+   "name": "Durangaldea",
+   "level": "comarca",
+   "territory": "Bizkaia",
+   "aliases": [
+    "Duranguesado"
+   ]
+  },
+  "lea-artibai": {
+   "name": "Lea-Artibai",
+   "level": "comarca",
+   "territory": "Bizkaia",
+   "aliases": []
+  },
+  "ezkerraldea": {
+   "name": "Ezkerraldea",
+   "level": "comarca",
+   "territory": "Bizkaia",
+   "aliases": [
+    "Margen Izquierda",
+    "Meatzaldea",
+    "Zona Minera"
+   ]
+  },
+  "bilbo-handia": {
+   "name": "Bilbo Handia",
+   "level": "comarca",
+   "territory": "Bizkaia",
+   "aliases": [
+    "Gran Bilbao",
+    "Greater Bilbao"
+   ]
+  },
+  "debagoiena": {
+   "name": "Debagoiena",
+   "level": "comarca",
+   "territory": "Gipuzkoa",
+   "aliases": [
+    "Alto Deba"
+   ]
+  },
+  "debabarrena": {
+   "name": "Debabarrena",
+   "level": "comarca",
+   "territory": "Gipuzkoa",
+   "aliases": [
+    "Bajo Deba"
+   ]
+  },
+  "goierri": {
+   "name": "Goierri",
+   "level": "comarca",
+   "territory": "Gipuzkoa",
+   "aliases": []
+  },
+  "tolosaldea": {
+   "name": "Tolosaldea",
+   "level": "comarca",
+   "territory": "Gipuzkoa",
+   "aliases": []
+  },
+  "urola-kosta": {
+   "name": "Urola Kosta",
+   "level": "comarca",
+   "territory": "Gipuzkoa",
+   "aliases": [
+    "Urola Costa"
+   ]
+  },
+  "donostialdea": {
+   "name": "Donostialdea",
+   "level": "comarca",
+   "territory": "Gipuzkoa",
+   "aliases": []
+  },
+  "bidasoa": {
+   "name": "Bidasoa",
+   "level": "comarca",
+   "territory": "Gipuzkoa",
+   "aliases": [
+    "Bidasoa-Txingudi",
+    "Txingudi"
+   ]
+  },
+  "oarsoaldea": {
+   "name": "Oarsoaldea",
+   "level": "comarca",
+   "territory": "Gipuzkoa",
+   "aliases": []
+  },
+  "aiaraldea": {
+   "name": "Aiaraldea",
+   "level": "comarca",
+   "territory": "Araba",
+   "aliases": [
+    "Cuadrilla de Ayala"
+   ]
+  },
+  "errioxa": {
+   "name": "Arabako Errioxa",
+   "level": "comarca",
+   "territory": "Araba",
+   "aliases": [
+    "Rioja Alavesa",
+    "Arabako Errioxa"
+   ]
+  },
+  "sakana": {
+   "name": "Sakana",
+   "level": "comarca",
+   "territory": "Nafarroa",
+   "aliases": []
+  },
+  "erribera": {
+   "name": "Erribera",
+   "level": "comarca",
+   "territory": "Nafarroa",
+   "aliases": [
+    "Ribera de Navarra",
+    "La Ribera"
+   ]
+  },
+  "spain": {
+   "name": "Spain",
+   "level": "state",
+   "aliases": [
+    "Spain",
+    "España",
+    "Espainia",
+    "Spain, Spain"
+   ]
+  },
+  "france": {
+   "name": "France",
+   "level": "state",
+   "aliases": [
+    "France",
+    "Frantzia",
+    "Francia"
+   ]
+  },
+  "nouvelle-aquitaine": {
+   "name": "Nouvelle-Aquitaine",
+   "level": "region",
+   "aliases": [
+    "Nouvelle-Aquitaine",
+    "Aquitaine Limousin Poitou-Charen",
+    "Aquitaine Limousin Poitou-Charentes",
+    "Aquitaine"
+   ],
+   "note": "Contiene Iparralde pero es mucho más amplia: no permite ubicar."
+  }
+ },
+ "outside": [
+  "Alicante",
+  "Andorra",
+  "Angers",
+  "Argentina",
+  "Asturias",
+  "Barcelona",
+  "Belgium",
+  "British Columbia",
+  "Brittany",
+  "Burgos",
+  "Castellón De La Plana",
+  "Czech Republic",
+  "Denmark",
+  "El Bierzo",
+  "El Mas De Flors",
+  "Germany",
+  "Girona",
+  "Hong Kong",
+  "Italy",
+  "Kiribati",
+  "La Frontera",
+  "La Línea De La Concepción",
+  "Lille",
+  "Lithuania",
+  "Logroño",
+  "Madrid",
+  "Marseille",
+  "Massachusetts",
+  "Michigan",
+  "Murcia",
+  "Nantes",
+  "Nice",
+  "Nigrán",
+  "Norfolk Island",
+  "Occitanie",
+  "Ontario",
+  "Oviedo",
+  "Paris",
+  "Pau",
+  "Pinto",
+  "Pratdip",
+  "Principado de Asturias",
+  "Puerto Rico",
+  "Salamanca",
+  "Santander",
+  "Sevilla",
+  "Seville",
+  "Sweden",
+  "Talavera De La Reina",
+  "Tarragona",
+  "Thailand",
+  "Toreno",
+  "Toulouse",
+  "Tours",
+  "UK",
+  "Valencia",
+  "Vietnam",
+  "Vigo",
+  "Western Sahara",
+  "Zaragoza"
+ ],
+ "place_overrides": {
+  "donostia": {
+   "aliases": [
+    "Donosti"
+   ]
+  },
+  "irunea": {
+   "aliases": [
+    "Iruña",
+    "Pamplona-Iruña"
+   ]
+  },
+  "gernika-lumo": {
+   "aliases": [
+    "Guernica",
+    "Gernika"
+   ]
+  },
+  "hernani": {
+   "aliases": [
+    "Ereñotzu"
+   ],
+   "note": "Ereñotzu: barrio de Hernani"
+  }
+ },
+ "values": {
+  "Afghanistan": {
+   "category": "invalid",
+   "note": "ubicación no literal: la usa solo la cuenta del sello navarro Mendeku Diskak (Orreaga 778, Cuero…); revisado 2026-09-19"
+  },
+  "NC, Spain": {
+   "category": "invalid",
+   "note": "abreviatura sin significado geográfico claro"
+  },
+  "AL, Spain": {
+   "category": "invalid",
+   "note": "abreviatura sin significado geográfico claro"
+  },
+  "PM": {
+   "category": "invalid",
+   "note": "abreviatura sin significado geográfico claro"
+  }
+ }
+}
