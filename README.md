@@ -15,28 +15,34 @@ Bandcamp — a comprar la música y apoyar a quien la hace.
   de **9 campos** por álbum: `id`, `artist`, `title`, `genre`, `year`, `tags`, `url`,
   `cover_url`, `album_id`. El CSV de origen no está versionado; **el JSON es la única
   fuente de verdad** y no se toca desde ningún proceso automático.
-- **App:** migración a Vite + React **completa (F1→F4) y en producción**, conviviendo con
-  el sitio vanilla hasta el cutover (F5, pendiente).
+- **App:** Vite + React en producción en la raíz de
+  [mapa.queimadacircuitrecords.com](https://mapa.queimadacircuitrecords.com) (cutover F5
+  hecho: el sitio vanilla salió del deploy; su fuente sigue en `main`, reversible).
+- **Ubicaciones:** capa separada del canónico en [`data/locations/`](data/locations/). Ver
+  [`docs/mapa.md`](docs/mapa.md) y la auditoría viva en
+  [`docs/mapa-data-audit.md`](docs/mapa-data-audit.md).
 
 ## Arquitectura
 
-Arquitectura **estática, sin backend**, desplegada en GitHub Pages.
+Arquitectura **estática, sin backend**, desplegada en GitHub Pages. El workflow
+`deploy.yml` compila `app/` y publica el build en la rama `gh-pages` con el CNAME del
+dominio propio.
 
-- El sitio **vanilla** (histórico) se publica en la raíz: `bu-chip.github.io/MEU/`.
-- La **app Vite + React** vive en [`app/`](app/) y se despliega bajo `/MEU/v2/`. El
-  workflow `deploy.yml` publica ambos en la rama `gh-pages` (vanilla en la raíz, build de
-  Vite en `/v2/`), de modo que conviven durante la migración. El cutover final (destino
-  definitivo y retirada/archivo del vanilla) es la fase **F5**, aún por decidir.
-- Routing por **hash router** artesanal (`#/`, `#/archivo`, `#/disco/:id`). CSS propio
-  contra design tokens; sin librerías de UI.
+- Routing por **hash router** artesanal (`#/`, `#/archivo`, `#/mapa`, `#/disco/:id`). CSS
+  propio contra design tokens; sin librerías de UI ni de mapas.
 
-La app son **tres puertas a un mismo archivo**:
+La app son **cuatro puertas a un mismo archivo**:
 
-- **EXPLORAR** — muro tipográfico de descubrimiento (más discos / género al azar / año al
+- **EXPLORAR**: muro tipográfico de descubrimiento (más discos, género al azar, año al
   azar), con portadas tratadas.
-- **ARCHIVO** — índice de artistas + registro filtrable por facetas, con los filtros
+- **ARCHIVO**: índice de artistas y registro filtrable por facetas, con los filtros
   reflejados en la URL y una capa de alias de tags para la búsqueda.
-- **FICHA** — página de disco con portada tratada, reproductor embebido de Bandcamp, tags
+- **MAPA**: el mismo archivo interrogado desde los lugares. Municipios de Euskal Herria
+  sobre una retícula de puntos cuadrados, con los mismos filtros que ARCHIVO más rango de
+  años, territorio y procedencia de la ubicación. Tiene panel de municipio (tags
+  principales y sobrerrepresentados, artistas, releases) y panel de tag (reparto por
+  municipio). Los huecos siempre están a la vista. Ver [`docs/mapa.md`](docs/mapa.md).
+- **FICHA**: página de disco con portada tratada, reproductor embebido de Bandcamp, tags
   clicables y discos similares por solape de tags.
 
 ## Datos y pipeline
@@ -63,14 +69,41 @@ curación la decide una persona.
   `data/tag_candidates.json`. Deduplica por `album_id` + URL normalizada contra el catálogo
   y contra `rejected.json` (las URLs descartadas no se vuelven a proponer).
 
+## Ubicaciones y MAPA
+
+La ubicación de Bandcamp (`band_location`) se usaba solo como filtro durante el
+descubrimiento y se perdía en el merge al canónico. Ahora vive **fuera del canónico**, en
+capas separadas (evidencia → normalización → resolución → índice del mapa), todas
+reproducibles con [`scripts/locations.py`](scripts/locations.py):
+
+| Comando | Qué hace |
+|---|---|
+| `ingest FICHERO` / `check` | Registra el `band_location` de un fichero de candidatos como observación; la guardia falla si alguno se perdería (también en CI). |
+| `recover` | Reconstruye observaciones desde todo el histórico git local. |
+| `scrape` | Visita una ficha por cuenta sin evidencia (ritmo y presupuesto del scraper). |
+| `gazetteer` / `places` | Nomenclátor de Wikidata y registro controlado de municipios. |
+| `normalize` / `resolve` / `audit` / `build` / `all` | Categorías por texto crudo, resolución trazable por release, auditoría e índice del mapa. |
+| `query --place X` / `--tag Y` | Cruces municipio × tag desde la terminal. |
+
+**Limitaciones:**
+- La ubicación es la **actual** de la **cuenta que publica** (grupo o sello), no la
+  residencia histórica de nadie.
+- La unidad es el municipio, dibujado en un punto representativo.
+- Lo que solo dice «Basque Country», lo que está fuera de Euskal Herria y lo no resuelto se
+  cuenta pero no se dibuja.
+
+Tests: `python3 -m unittest discover tests` y `npm --prefix app test` (workflow `Tests`).
+
 ## Estructura del repo
 
 ```
-data/     JSON canónico + ficheros de candidatos/descartes
-app/      aplicación Vite + React (se despliega en /MEU/v2/)
-scripts/  pipeline de datos y scrapers (Python, stdlib)
-docs/     método de scraping, diagnósticos, historia del proyecto
-design/   mockups HTML del sistema visual congelado
+data/            JSON canónico + ficheros de candidatos/descartes
+data/locations/  ubicaciones: observaciones, registro de lugares, reglas, resolución, índice del mapa
+app/             aplicación Vite + React (se despliega en la raíz del dominio)
+scripts/         pipeline de datos y scrapers (Python, stdlib)
+tests/           tests de la capa de ubicaciones (unittest)
+docs/            método de scraping, mapa, auditorías, historia del proyecto
+design/          mockups HTML del sistema visual congelado
 ```
 
 ## Sistema visual

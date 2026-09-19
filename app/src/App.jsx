@@ -5,6 +5,7 @@ import { Header } from './components/Header.jsx'
 import { Puertas } from './components/Puertas.jsx'
 import { Explorar } from './pages/Explorar.jsx'
 import { Archivo } from './pages/Archivo.jsx'
+import { Mapa } from './pages/Mapa.jsx'
 import { Ficha } from './pages/Ficha.jsx'
 import { Sobre } from './pages/Sobre.jsx'
 import { Entrar } from './pages/Entrar.jsx'
@@ -14,6 +15,7 @@ import './App.css'
 const PAGINAS = {
   explorar: Explorar,
   archivo: Archivo,
+  mapa: Mapa,
   sobre: Sobre,
   entrar: Entrar,
   coleccion: Coleccion,

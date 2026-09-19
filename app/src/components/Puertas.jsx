@@ -6,7 +6,7 @@ import './Puertas.css'
 
 // Marca de usuario: sola al extremo derecho de la barra (no es una tercera
 // puerta). Solo se pinta si hay Supabase; sin cuentas la barra queda con
-// EXPLORAR · ARCHIVO y nada a la derecha. Con sesión lleva al lado el
+// EXPLORAR · ARCHIVO · MAPA y nada a la derecha. Con sesión lleva al lado el
 // contador de discos guardados (PR B).
 function MarcaUsuario() {
   const { session, inicial } = useAuth()
@@ -60,6 +60,10 @@ export function Puertas({ activa }) {
       </a>
       <a href="#/archivo" className={`puerta ${activa === 'archivo' ? 'activa' : ''}`}>
         ARCHIVO
+      </a>
+      {/* MAPA: el mismo archivo interrogado desde los lugares. */}
+      <a href="#/mapa" className={`puerta ${activa === 'mapa' ? 'activa' : ''}`}>
+        MAPA
       </a>
       <MarcaUsuario />
     </nav>
