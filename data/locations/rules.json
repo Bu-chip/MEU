@@ -22,7 +22,8 @@
     "Euskal Herria / Basque Country",
     "Pays Basque, Spain",
     "Euskal Herriak"
-   ]
+   ],
+   "note": "«PV, Spain» es el código ISO 3166-2 ES-PV (País Vasco = CAV) del selector de Bandcamp"
   },
   "iparralde": {
    "name": "Iparralde",
@@ -75,8 +76,10 @@
     "Navarre",
     "Navarra, Spain",
     "Nafarroa, Spain",
-    "Comunidad Foral de Navarra"
-   ]
+    "Comunidad Foral de Navarra",
+    "NC, Spain"
+   ],
+   "note": "«NC, Spain» es el código ISO 3166-2 ES-NC (Navarra) del selector de Bandcamp"
   },
   "lapurdi": {
    "name": "Lapurdi",
@@ -297,15 +300,19 @@
   "Andorra",
   "Angers",
   "Argentina",
+  "Armenia",
   "Asturias",
   "Barcelona",
   "Belgium",
+  "Bordeaux",
   "British Columbia",
   "Brittany",
   "Burgos",
+  "CT",
   "Castellón De La Plana",
   "Czech Republic",
   "Denmark",
+  "Don Benito",
   "El Bierzo",
   "El Mas De Flors",
   "Germany",
@@ -321,6 +328,7 @@
   "Madrid",
   "Marseille",
   "Massachusetts",
+  "Medina De Pomar",
   "Michigan",
   "Murcia",
   "Nantes",
@@ -332,7 +340,9 @@
   "Oviedo",
   "Paris",
   "Pau",
+  "Pennsylvania",
   "Pinto",
+  "Portugal",
   "Pratdip",
   "Principado de Asturias",
   "Puerto Rico",
@@ -340,14 +350,18 @@
   "Santander",
   "Sevilla",
   "Seville",
+  "Singapore",
   "Sweden",
+  "Switzerland",
   "Talavera De La Reina",
   "Tarragona",
   "Thailand",
   "Toreno",
+  "Torrevieja",
   "Toulouse",
   "Tours",
   "UK",
+  "Ukraine",
   "Valencia",
   "Vietnam",
   "Vigo",
@@ -384,17 +398,13 @@
    "category": "invalid",
    "note": "ubicación no literal: la usa solo la cuenta del sello navarro Mendeku Diskak (Orreaga 778, Cuero…); revisado 2026-09-19"
   },
-  "NC, Spain": {
-   "category": "invalid",
-   "note": "abreviatura sin significado geográfico claro"
-  },
   "AL, Spain": {
-   "category": "invalid",
-   "note": "abreviatura sin significado geográfico claro"
+   "category": "ambiguous",
+   "note": "posible código de provincia (Almería) o de comunidad; sin municipio"
   },
   "PM": {
-   "category": "invalid",
-   "note": "abreviatura sin significado geográfico claro"
+   "category": "ambiguous",
+   "note": "posible código de provincia (Baleares); sin país ni municipio"
   }
  }
 }

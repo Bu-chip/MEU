@@ -245,5 +245,47 @@ class Metrica(unittest.TestCase):
         self.assertEqual(L.lift(1, 0, 1, 1), 0.0)
 
 
+class RegistroReal(unittest.TestCase):
+    """Regresión sobre data/locations/places.json + rules.json reales."""
+
+    @classmethod
+    def setUpClass(cls):
+        import json
+        root = Path(__file__).resolve().parent.parent / "data" / "locations"
+        places = json.loads((root / "places.json").read_text(encoding="utf-8"))["places"]
+        rules = json.loads((root / "rules.json").read_text(encoding="utf-8"))
+        cls.n = L.Normalizer(places, rules)
+
+    def test_casos_reales(self):
+        casos = {
+            "Donostia San Sebastian, Spain": ("resolved", "donostia"),
+            "Donostia / San Sebastián, Spain": ("resolved", "donostia"),
+            "San Sebastián, Spain": ("resolved", "donostia"),
+            "Vitoria Gasteiz, Spain": ("resolved", "gasteiz"),
+            "Pamplona, Spain": ("resolved", "irunea"),
+            "Bilbo, Spain": ("resolved", "bilbo"),
+            "Guernica, Spain": ("resolved", "gernika-lumo"),
+            "Getaria, Spain": ("resolved", "getaria-gipuzkoa"),
+            "Cambo Les Bains, France": ("resolved", "kanbo"),
+            "Alsasua – Altsasu, Spain": ("resolved", "altsasu"),
+            "Ereñotzu, Spain": ("resolved", "hernani"),
+        }
+        for raw, (cat, place) in casos.items():
+            c = self.n.classify(raw)
+            self.assertEqual((c["category"], c.get("place")), (cat, place), raw)
+
+    def test_codigos_iso_y_regiones(self):
+        self.assertEqual(self.n.classify("NC, Spain")["region"], "nafarroa")
+        self.assertEqual(self.n.classify("PV, Spain")["region"], "euskal-herria")
+        self.assertEqual(self.n.classify("CT, Spain")["category"], "outside_scope")
+        self.assertEqual(self.n.classify("Basque Country, France")["region"], "iparralde")
+
+    def test_aberraciones_reales(self):
+        for raw in ("Pamplona, Colombia", "Irun, Nigeria", "Navarre, Florida", "Guernica, Argentina"):
+            self.assertEqual(self.n.classify(raw)["category"], "unexpected", raw)
+        self.assertEqual(self.n.classify("Afghanistan")["category"], "invalid")
+        self.assertEqual(self.n.classify("Madrid, Spain")["category"], "outside_scope")
+
+
 if __name__ == "__main__":
     unittest.main()

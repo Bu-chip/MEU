@@ -1038,7 +1038,14 @@ def audit_stats(catalog, norm, res):
     reliable = sum(1 for r in res.values() if r["type"] in RELIABLE_TYPES and r.get("place"))
     label_loc = sum(1 for r in res.values() if r["type"] in DEFAULT_MAP_TYPES and r.get("place")
                     and r["account_kind"] == "label")
-    checked_empty = sum(1 for r in res.values() if r.get("checked_empty"))
+    not_located = [r for r in res.values() if not (r["type"] in DEFAULT_MAP_TYPES and r.get("place"))]
+    checked_empty = sum(1 for r in not_located if r.get("checked_empty"))
+    unresolved = [r for r in res.values() if r["type"] == "unresolved"]
+    unresolved_breakdown = {
+        "bandcamp_sin_ubicacion": sum(1 for r in unresolved if r.get("checked_empty")),
+        "evidencia_descartada": sum(1 for r in unresolved if r.get("rejected_values") and not r.get("checked_empty")),
+        "sin_evidencia": sum(1 for r in unresolved if not r.get("checked_empty") and not r.get("rejected_values")),
+    }
     rejected = Counter(v for r in res.values() for v in r.get("rejected_values", {}))
     questions = {}
     if "zarautz" in an.by_place:
@@ -1055,6 +1062,7 @@ def audit_stats(catalog, norm, res):
         "located_via_label_account": label_loc,
         "not_located": len(res) - located,
         "checked_empty": checked_empty,
+        "unresolved_breakdown": unresolved_breakdown,
         "municipalities": len(an.by_place),
         "territories": dict(territory),
         "regions_only": dict(region_counts),
@@ -1099,11 +1107,15 @@ def render_audit(s):
         f"**{s['located_default']}** ({pct(s['located_default'], T)}).",
         f"- **Fiables** (Bandcamp de la propia cuenta o decisión manual, sin inferencia): "
         f"**{s['reliable']}** ({pct(s['reliable'], T)}).",
-        f"- Situadas por la ubicación de una **cuenta-sello** (es la ciudad del sello, no "
-        f"necesariamente la del grupo): {s['located_via_label_account']}.",
+        f"- Situadas por la ubicación de una **cuenta con varios artistas** (probable sello, "
+        f"índice `data/derived/labels.json`): {s['located_via_label_account']}. Su lugar es el "
+        f"de esa cuenta, no necesariamente el del grupo.",
         f"- **Sin municipio** en el mapa por defecto: **{s['not_located']}** "
         f"({pct(s['not_located'], T)}); de ellas, {s['checked_empty']} consultadas en Bandcamp "
         f"sin ubicación.",
+        f"- Sin resolver ({t.get('unresolved', 0)}): {s['unresolved_breakdown']['bandcamp_sin_ubicacion']} "
+        f"porque Bandcamp no da ubicación, {s['unresolved_breakdown']['evidencia_descartada']} con "
+        f"evidencia descartada (ver abajo) y {s['unresolved_breakdown']['sin_evidencia']} sin evidencia.",
         f"- Municipios con al menos una release: **{s['municipalities']}**.",
         f"- Releases con contradicciones registradas: {s['releases_with_conflicts']} "
         f"({', '.join(f'{k} {v}' for k, v in sorted(s['conflicts'].items())) or 'ninguna'}).",
@@ -1130,7 +1142,7 @@ def render_audit(s):
            "de 3 releases del tag en el municipio y 10 en el archivo, sin contar tags que son "
            "topónimos.",
            "",
-           "| Municipio | Territorio | Releases | Artistas | Años | % cuenta-sello | Tags principales | Sobrerrepresentados |",
+           "| Municipio | Territorio | Releases | Artistas | Años | % cuenta multiartista | Tags principales | Sobrerrepresentados |",
            "|---|---|---:|---:|---|---:|---|---|"]
     for p in s["places"]:
         years = f"{p['years'][0]}–{p['years'][1]}" if p["years"] else "—"
@@ -1287,6 +1299,10 @@ def cmd_build(args):
                      | (2 if r.get("conflicts") else 0)
                      | (4 if r.get("checked_empty") else 0))
     reg_meta = rules.get("regions", {})
+    # Tags que son topónimos (pistas): la app los excluye del cálculo de
+    # tags sobrerrepresentados, igual que la auditoría.
+    tag_counts = Counter(t for a in catalog["albums"] for t in set(a["tags"]))
+    geo_tags = sorted(t for t in tag_counts if norm.tag_hint(t))
     doc = {
         "meta": {
             "generated_by": "python3 scripts/locations.py build",
@@ -1302,6 +1318,7 @@ def cmd_build(args):
                      reg_meta.get(rid, {}).get("territory")] for rid in regions],
         "grid": grid,
         "places": places,
+        "geo_tags": geo_tags,
         "releases": {"id": ids, "place": place, "type": typ, "region": region, "flags": flags},
     }
     write_text(MAP_INDEX_FILE, json.dumps(doc, ensure_ascii=False, separators=(",", ":")) + "\n")
