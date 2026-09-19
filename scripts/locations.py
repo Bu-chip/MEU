@@ -280,7 +280,11 @@ def cmd_recover(args):
         write_obs_file(OBS_DIR / target, meta, merged)
         written[target] = merged
 
-    stats = recovery_stats(load_all_observations())
+    # El informe describe SOLO lo recuperado del histórico (discover_web);
+    # las fichas scrapeadas (fase 3) tienen su propio fichero y caché.
+    discover_only = {k: [o for o in v if o["source_type"] == L.OBS_SOURCE_DISCOVER]
+                     for k, v in load_all_observations().items()}
+    stats = recovery_stats({k: v for k, v in discover_only.items() if v})
     stats["sources"] = [{"provenance": p, "target": t, "observations": n, "with_value": nv}
                         for p, t, n, nv in source_rows]
     stats["files"] = {t: sum(len(v) for v in m.values()) for t, m in written.items()}
@@ -332,7 +336,7 @@ def recovery_stats(obs):
         "observation_keys_total": len(obs),
         "contradictory_releases": contradictory,
         "accounts_with_multiple_values": account_conflicts,
-        "top_values_in_catalog": values.most_common(40),
+        "top_values_in_catalog": sorted(values.items(), key=lambda x: (-x[1], x[0]))[:40],
     }
 
 
@@ -829,12 +833,36 @@ def catalog_value_counts(catalog, obs):
     return counts
 
 
+def catalog_relevant(obs, catalog):
+    keys = set()
+    accounts = set()
+    for a in catalog["albums"]:
+        if a.get("album_id") is not None:
+            keys.add(f"bc:{a['album_id']}")
+        keys.add(f"url:{L.normalize_url(a.get('url'))}")
+        acc = L.account_of(a.get("url"))
+        if acc:
+            accounts.add(acc)
+            keys.add(f"acct:{acc}")
+    urls = {L.normalize_url(a.get("url")) for a in catalog["albums"]}
+    out = {}
+    for k, lst in obs.items():
+        keep = [o for o in lst if k in keys or o.get("account") in accounts
+                or L.normalize_url(o.get("source_url")) in urls]
+        if keep:
+            out[k] = keep
+    return out
+
+
 def cmd_normalize(args):
     """Clasifica cada texto crudo observado → data/locations/normalized.json
     y data/locations/reports/review.md (todo lo que pide ojo humano)."""
     norm = make_normalizer()
-    obs = load_all_observations()
     catalog = load_catalog()
+    # Solo evidencia que afecta al canónico (sus releases o sus cuentas):
+    # los candidatos pendientes no cambian los derivados hasta su merge, así
+    # que un PR de candidatos no desactualiza nada (check de CI).
+    obs = catalog_relevant(load_all_observations(), catalog)
     obs_counts = Counter(o["value"] for lst in obs.values() for o in lst if o["value"])
     cat_counts = catalog_value_counts(catalog, obs)
     accounts = defaultdict(set)
@@ -986,7 +1014,9 @@ class Analysis:
     def top_tags(self, pid, limit=10):
         c = Counter(t for rid in self.by_place[pid] for t in set(self.albums[rid]["tags"])
                     if t not in self.geo_tags)
-        return c.most_common(limit)
+        # Desempate alfabético explícito: el orden de un set de cadenas
+        # cambia entre procesos (hash aleatorio) y rompería el determinismo.
+        return sorted(c.items(), key=lambda x: (-x[1], x[0]))[:limit]
 
     def tag_places(self, tag, limit=15):
         rows = []
@@ -1069,7 +1099,7 @@ def audit_stats(catalog, norm, res):
         "decades": {d: dict(c) for d, c in sorted(decades.items())},
         "conflicts": dict(conflicts),
         "releases_with_conflicts": sum(1 for r in res.values() if r.get("conflicts")),
-        "rejected_values": dict(rejected.most_common()),
+        "rejected_values": dict(sorted(rejected.items(), key=lambda x: (-x[1], x[0]))),
         "places": per_place,
         "questions": questions,
     }

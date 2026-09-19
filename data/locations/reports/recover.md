@@ -86,15 +86,15 @@ Ninguna.
 | Eibar, Spain | 34 |
 | Tolosa, Spain | 34 |
 | Andoain, Spain | 33 |
-| Spain | 29 |
-| Oñati, Spain | 29 |
-| Hernani, Spain | 29 |
 | Bilbo, Spain | 29 |
+| Hernani, Spain | 29 |
+| Oñati, Spain | 29 |
+| Spain | 29 |
 | Guernica, Spain | 28 |
 | Afghanistan | 24 |
-| Zumaia, Spain | 22 |
 | Tudela, Spain | 22 |
-| Laudio, Spain | 18 |
+| Zumaia, Spain | 22 |
 | Azpeitia, Spain | 18 |
 | Donostia, Spain | 18 |
+| Laudio, Spain | 18 |
 | Bergara, Spain | 16 |

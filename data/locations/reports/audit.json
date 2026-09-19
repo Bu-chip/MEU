@@ -472,7 +472,7 @@
           100
         ],
         [
-          "live recording",
+          "crust punk",
           97
         ],
         [
@@ -480,7 +480,7 @@
           97
         ],
         [
-          "crust punk",
+          "live recording",
           97
         ],
         [
@@ -652,11 +652,11 @@
           20
         ],
         [
-          "pop",
+          "alternative",
           16
         ],
         [
-          "alternative",
+          "pop",
           16
         ],
         [
@@ -664,15 +664,15 @@
           13
         ],
         [
-          "indie",
-          10
-        ],
-        [
-          "noise",
-          10
-        ],
-        [
           "hardrock",
+          10
+        ],
+        [
+          "heavy rock",
+          10
+        ],
+        [
+          "heavymetal",
           10
         ]
       ],
@@ -744,7 +744,7 @@
           44
         ],
         [
-          "grindcore",
+          "crust",
           40
         ],
         [
@@ -752,7 +752,7 @@
           40
         ],
         [
-          "crust",
+          "grindcore",
           40
         ],
         [
@@ -760,7 +760,7 @@
           23
         ],
         [
-          "swamp rock",
+          "grunge",
           20
         ],
         [
@@ -851,7 +851,7 @@
           7
         ],
         [
-          "underground",
+          "folk",
           6
         ],
         [
@@ -922,11 +922,7 @@
           29
         ],
         [
-          "hyper pop",
-          24
-        ],
-        [
-          "internetcore",
+          "digicore",
           24
         ],
         [
@@ -934,11 +930,15 @@
           24
         ],
         [
+          "hyper pop",
+          24
+        ],
+        [
           "internet music",
           24
         ],
         [
-          "digicore",
+          "internetcore",
           24
         ],
         [
@@ -1034,11 +1034,11 @@
           7
         ],
         [
-          "pop",
+          "metal",
           6
         ],
         [
-          "metal",
+          "pop",
           6
         ]
       ],
@@ -1118,11 +1118,11 @@
           9
         ],
         [
-          "death metal",
+          "black metal",
           7
         ],
         [
-          "black metal",
+          "death metal",
           7
         ],
         [
@@ -1174,19 +1174,19 @@
           2
         ],
         [
-          "lo-fi",
+          "8bits",
           1
         ],
         [
-          "beat",
+          "ambience",
+          1
+        ],
+        [
+          "ambient",
           1
         ],
         [
           "anime",
-          1
-        ],
-        [
-          "neurofunk",
           1
         ]
       ],
@@ -1258,19 +1258,19 @@
           10
         ],
         [
-          "hardcore",
-          7
-        ],
-        [
           "hard rock",
           7
         ],
         [
-          "rock and roll",
-          5
+          "hardcore",
+          7
         ],
         [
           "alternative",
+          5
+        ],
+        [
+          "melodic rock",
           5
         ],
         [
@@ -1278,7 +1278,7 @@
           5
         ],
         [
-          "melodic rock",
+          "rock and roll",
           5
         ]
       ],
@@ -1343,15 +1343,15 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
+          "metal",
+          11
+        ],
+        [
           "punk",
           11
         ],
         [
           "rock",
-          11
-        ],
-        [
-          "metal",
           11
         ],
         [
@@ -1442,11 +1442,11 @@
           16
         ],
         [
-          "world beats",
+          "beattape",
           15
         ],
         [
-          "beattape",
+          "world beats",
           15
         ],
         [
@@ -1462,7 +1462,7 @@
           5
         ],
         [
-          "funk",
+          "alternative",
           4
         ]
       ],
@@ -1641,11 +1641,11 @@
           5
         ],
         [
-          "groove metal",
+          "death metal",
           5
         ],
         [
-          "death metal",
+          "droneambient",
           5
         ]
       ],
@@ -1724,11 +1724,11 @@
           9
         ],
         [
-          "trap",
+          "hardcore",
           8
         ],
         [
-          "hardcore",
+          "oi",
           8
         ],
         [
@@ -1736,7 +1736,7 @@
           8
         ],
         [
-          "oi",
+          "trap",
           8
         ]
       ],
@@ -1803,11 +1803,11 @@
           9
         ],
         [
-          "metal",
+          "grindcore",
           8
         ],
         [
-          "grindcore",
+          "metal",
           8
         ],
         [
@@ -1902,11 +1902,11 @@
           14
         ],
         [
-          "experimental",
+          "electronic",
           9
         ],
         [
-          "electronic",
+          "experimental",
           9
         ],
         [
@@ -1994,19 +1994,19 @@
           10
         ],
         [
-          "skinhead",
-          8
-        ],
-        [
           "oi! streetpunk",
           8
         ],
         [
-          "reggae",
-          6
+          "skinhead",
+          8
         ],
         [
           "hardcore",
+          6
+        ],
+        [
+          "reggae",
           6
         ],
         [
@@ -2080,7 +2080,11 @@
           5
         ],
         [
-          "post-hardcore",
+          "70s",
+          3
+        ],
+        [
+          "free jazz",
           3
         ],
         [
@@ -2088,15 +2092,11 @@
           3
         ],
         [
+          "post-hardcore",
+          3
+        ],
+        [
           "post-punk",
-          3
-        ],
-        [
-          "70s",
-          3
-        ],
-        [
-          "free jazz",
           3
         ]
       ],
@@ -2183,11 +2183,11 @@
           3
         ],
         [
-          "post-punk",
+          "garage rock",
           3
         ],
         [
-          "garage rock",
+          "post-punk",
           3
         ]
       ],
@@ -2262,7 +2262,7 @@
           6
         ],
         [
-          "folk",
+          "blues",
           5
         ],
         [
@@ -2270,7 +2270,7 @@
           5
         ],
         [
-          "blues",
+          "folk",
           5
         ],
         [
@@ -2349,15 +2349,15 @@
           4
         ],
         [
+          "alternative rock;  laudio",
+          4
+        ],
+        [
           "cantautor",
           4
         ],
         [
           "folk pop",
-          4
-        ],
-        [
-          "alternative rock;  laudio",
           4
         ],
         [
@@ -2433,7 +2433,7 @@
           3
         ],
         [
-          "oi!",
+          "instrumental rock",
           2
         ],
         [
@@ -2441,7 +2441,7 @@
           2
         ],
         [
-          "instrumental rock",
+          "oi!",
           2
         ]
       ],
@@ -2504,10 +2504,6 @@
           6
         ],
         [
-          "trap",
-          6
-        ],
-        [
           "hip hop",
           6
         ],
@@ -2520,11 +2516,15 @@
           6
         ],
         [
-          "punk",
-          5
+          "trap",
+          6
         ],
         [
           "hardcore",
+          5
+        ],
+        [
+          "punk",
           5
         ],
         [
@@ -2615,11 +2615,11 @@
           4
         ],
         [
-          "skate punk",
+          "hardcore punk",
           3
         ],
         [
-          "hardcore punk",
+          "metalcore",
           3
         ]
       ],
@@ -2683,7 +2683,7 @@
           3
         ],
         [
-          "stoner punk rock",
+          "diy",
           3
         ],
         [
@@ -2691,11 +2691,11 @@
           3
         ],
         [
-          "diy",
+          "stoner punk rock",
           3
         ],
         [
-          "punk rock",
+          "pop rock",
           2
         ]
       ],
@@ -2763,11 +2763,11 @@
           4
         ],
         [
-          "indie",
+          "dub",
           2
         ],
         [
-          "roots",
+          "indie",
           2
         ],
         [
@@ -2832,6 +2832,14 @@
           6
         ],
         [
+          "bidehuts",
+          4
+        ],
+        [
+          "drummond",
+          4
+        ],
+        [
           "italo noise",
           4
         ],
@@ -2840,19 +2848,11 @@
           4
         ],
         [
-          "drummond",
-          4
-        ],
-        [
-          "bidehuts",
-          4
-        ],
-        [
           "willis",
           4
         ],
         [
-          "punk",
+          "hardcore",
           3
         ]
       ],
@@ -2895,11 +2895,7 @@
       "territory": "Iparralde",
       "top_tags": [
         [
-          "world",
-          13
-        ],
-        [
-          "musika",
+          "belarri",
           13
         ],
         [
@@ -2907,15 +2903,19 @@
           13
         ],
         [
-          "belarri",
+          "musika",
           13
         ],
         [
-          "experimental",
-          2
+          "world",
+          13
         ],
         [
           "contemporary",
+          2
+        ],
+        [
+          "experimental",
           2
         ],
         [
@@ -2923,7 +2923,7 @@
           1
         ],
         [
-          "acousmatique",
+          "acousmatic tape music",
           1
         ]
       ],
@@ -2975,7 +2975,11 @@
           5
         ],
         [
-          "thash",
+          "alternative",
+          4
+        ],
+        [
+          "crossover",
           4
         ],
         [
@@ -2987,15 +2991,11 @@
           4
         ],
         [
-          "crossover",
-          4
-        ],
-        [
-          "alternative",
-          4
-        ],
-        [
           "sustraiakrec",
+          4
+        ],
+        [
+          "thash",
           4
         ],
         [
@@ -3040,15 +3040,7 @@
           10
         ],
         [
-          "instrumental",
-          1
-        ],
-        [
-          "euskara",
-          1
-        ],
-        [
-          "soundtrack",
+          "alternative",
           1
         ],
         [
@@ -3056,11 +3048,19 @@
           1
         ],
         [
-          "theatre",
+          "electronic",
           1
         ],
         [
-          "teatro",
+          "euskara",
+          1
+        ],
+        [
+          "euskaraz",
+          1
+        ],
+        [
+          "folk",
           1
         ]
       ],
@@ -3123,19 +3123,7 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "hardcore",
-          5
-        ],
-        [
-          "experimental",
-          5
-        ],
-        [
-          "industrial",
-          5
-        ],
-        [
-          "idm",
+          "ambient",
           5
         ],
         [
@@ -3143,7 +3131,19 @@
           5
         ],
         [
-          "ambient",
+          "experimental",
+          5
+        ],
+        [
+          "hardcore",
+          5
+        ],
+        [
+          "idm",
+          5
+        ],
+        [
+          "industrial",
           5
         ],
         [
@@ -3204,11 +3204,7 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "punk",
-          10
-        ],
-        [
-          "rock",
+          "electronica",
           10
         ],
         [
@@ -3216,7 +3212,11 @@
           10
         ],
         [
-          "electronica",
+          "punk",
+          10
+        ],
+        [
+          "rock",
           10
         ],
         [
@@ -3305,19 +3305,15 @@
           10
         ],
         [
-          "sludge",
-          9
-        ],
-        [
           "metal",
           9
         ],
         [
-          "rock",
-          5
+          "sludge",
+          9
         ],
         [
-          "stoner",
+          "black metal",
           5
         ],
         [
@@ -3325,7 +3321,11 @@
           5
         ],
         [
-          "black metal",
+          "rock",
+          5
+        ],
+        [
+          "stoner",
           5
         ]
       ],
@@ -3390,7 +3390,7 @@
           3
         ],
         [
-          "surf punk",
+          "rock",
           3
         ],
         [
@@ -3402,11 +3402,11 @@
           3
         ],
         [
-          "rock",
+          "surf punk",
           3
         ],
         [
-          "punk hardcore",
+          "psicocríticopunk",
           2
         ]
       ],
@@ -3452,11 +3452,11 @@
           9
         ],
         [
-          "pop rock",
+          "eklektrik",
           9
         ],
         [
-          "eklektrik",
+          "pop rock",
           9
         ],
         [
@@ -3468,11 +3468,11 @@
           2
         ],
         [
-          "euskara",
+          "ambient",
           1
         ],
         [
-          "rocksteady",
+          "cinematic",
           1
         ]
       ],
@@ -3529,6 +3529,10 @@
           5
         ],
         [
+          "punk rock",
+          5
+        ],
+        [
           "rock",
           5
         ],
@@ -3537,19 +3541,15 @@
           5
         ],
         [
-          "punk rock",
-          5
-        ],
-        [
-          "melodic doom death metal",
-          3
-        ],
-        [
           "death metal",
           3
         ],
         [
           "melodic death metal",
+          3
+        ],
+        [
+          "melodic doom death metal",
           3
         ],
         [
@@ -3609,10 +3609,6 @@
           8
         ],
         [
-          "thrash metal",
-          8
-        ],
-        [
           "heavy metal",
           8
         ],
@@ -3621,11 +3617,15 @@
           8
         ],
         [
-          "isma",
+          "thrash metal",
+          8
+        ],
+        [
+          "euskara",
           1
         ],
         [
-          "nakkiga",
+          "euskera",
           1
         ],
         [
@@ -3675,11 +3675,11 @@
           2
         ],
         [
-          "borrokan",
+          "90s rock",
           1
         ],
         [
-          "musika",
+          "angry",
           1
         ],
         [
@@ -3687,11 +3687,11 @@
           1
         ],
         [
-          "taldea",
+          "borrokan",
           1
         ],
         [
-          "music",
+          "elektronika",
           1
         ]
       ],
@@ -3729,7 +3729,11 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "rock",
+          "bloody rock",
+          6
+        ],
+        [
+          "hard rock",
           6
         ],
         [
@@ -3741,15 +3745,11 @@
           6
         ],
         [
-          "bloody rock",
+          "rock",
           6
         ],
         [
           "scandinavian rock",
-          6
-        ],
-        [
-          "hard rock",
           6
         ],
         [
@@ -3818,15 +3818,15 @@
           5
         ],
         [
-          "rock and roll",
-          4
-        ],
-        [
           "blues rock",
           4
         ],
         [
           "country",
+          4
+        ],
+        [
+          "rock and roll",
           4
         ],
         [
@@ -3889,11 +3889,11 @@
           5
         ],
         [
-          "indie",
+          "grunge",
           5
         ],
         [
-          "grunge",
+          "indie",
           5
         ],
         [
@@ -3905,11 +3905,11 @@
           2
         ],
         [
-          "world",
+          "acoustic",
           1
         ],
         [
-          "basque folk",
+          "acoustic guitar",
           1
         ]
       ],
@@ -3954,7 +3954,7 @@
           2
         ],
         [
-          "rock",
+          "metal",
           2
         ],
         [
@@ -3962,7 +3962,7 @@
           2
         ],
         [
-          "metal",
+          "rock",
           2
         ],
         [
@@ -3970,7 +3970,7 @@
           1
         ],
         [
-          "pop punk",
+          "hardcore",
           1
         ]
       ],
@@ -4017,15 +4017,7 @@
           6
         ],
         [
-          "doom",
-          6
-        ],
-        [
           "beruna",
-          6
-        ],
-        [
-          "sludge",
           6
         ],
         [
@@ -4033,15 +4025,23 @@
           6
         ],
         [
+          "doom",
+          6
+        ],
+        [
+          "sludge",
+          6
+        ],
+        [
           "concert",
           1
         ],
         [
-          "raw",
+          "live",
           1
         ],
         [
-          "live",
+          "lvr",
           1
         ]
       ],
@@ -4067,7 +4067,7 @@
           2
         ],
         [
-          "euskal musika",
+          "black metal",
           2
         ],
         [
@@ -4075,11 +4075,7 @@
           2
         ],
         [
-          "thrash metal",
-          2
-        ],
-        [
-          "black metal",
+          "euskal musika",
           2
         ],
         [
@@ -4087,11 +4083,15 @@
           2
         ],
         [
-          "experimental electronic",
+          "thrash metal",
+          2
+        ],
+        [
+          "acoustic",
           1
         ],
         [
-          "progressive metal",
+          "basque music",
           1
         ]
       ],
@@ -4119,11 +4119,7 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "techno punk",
-          4
-        ],
-        [
-          "techno house",
+          "electro glam",
           4
         ],
         [
@@ -4131,23 +4127,27 @@
           4
         ],
         [
-          "electro glam",
+          "techno house",
           4
         ],
         [
-          "hip-hop/rap",
+          "techno punk",
+          4
+        ],
+        [
+          "batucada",
           1
         ],
         [
-          "rap type beats",
+          "bolero tech",
           1
         ],
         [
-          "rap",
+          "bossa nova",
           1
         ],
         [
-          "dubstep",
+          "canson",
           1
         ]
       ],
@@ -4199,19 +4199,7 @@
           5
         ],
         [
-          "punk",
-          4
-        ],
-        [
-          "rock",
-          4
-        ],
-        [
           "indie",
-          4
-        ],
-        [
-          "punk rock",
           4
         ],
         [
@@ -4219,11 +4207,23 @@
           4
         ],
         [
+          "punk",
+          4
+        ],
+        [
+          "punk rock",
+          4
+        ],
+        [
+          "rock",
+          4
+        ],
+        [
           "hardcore",
           2
         ],
         [
-          "berri txarrak",
+          "alternative",
           1
         ]
       ],
@@ -4275,7 +4275,7 @@
           5
         ],
         [
-          "instrumental",
+          "ambient",
           4
         ],
         [
@@ -4283,7 +4283,7 @@
           4
         ],
         [
-          "post-rock",
+          "instrumental",
           4
         ],
         [
@@ -4291,7 +4291,7 @@
           4
         ],
         [
-          "ambient",
+          "post-rock",
           4
         ],
         [
@@ -4353,15 +4353,15 @@
           2
         ],
         [
-          "progressive rock",
-          1
-        ],
-        [
           "alternative metal",
           1
         ],
         [
           "alternative rock",
+          1
+        ],
+        [
+          "progressive rock",
           1
         ]
       ],
@@ -4423,11 +4423,7 @@
           5
         ],
         [
-          "pop rock",
-          3
-        ],
-        [
-          "melodic rock",
+          "alternative rock",
           3
         ],
         [
@@ -4439,15 +4435,19 @@
           3
         ],
         [
-          "alternative rock",
-          3
-        ],
-        [
           "grunge",
           3
         ],
         [
-          "euskal rock",
+          "melodic rock",
+          3
+        ],
+        [
+          "pop rock",
+          3
+        ],
+        [
+          "euskal musika",
           2
         ]
       ],
@@ -4490,11 +4490,7 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "power metal",
-          4
-        ],
-        [
-          "death metal",
+          "black metal",
           4
         ],
         [
@@ -4502,11 +4498,15 @@
           4
         ],
         [
-          "black metal",
+          "death metal",
           4
         ],
         [
           "metal",
+          4
+        ],
+        [
+          "power metal",
           4
         ],
         [
@@ -4562,19 +4562,19 @@
           2
         ],
         [
-          "punk",
+          "beleak",
           1
         ],
         [
-          "euskaraz",
+          "botibol",
           1
         ],
         [
-          "métal",
+          "electro",
           1
         ],
         [
-          "metal",
+          "electronica",
           1
         ]
       ],
@@ -4602,11 +4602,11 @@
       "territory": "Nafarroa",
       "top_tags": [
         [
-          "punk",
+          "noáin, navarra",
           4
         ],
         [
-          "noáin, navarra",
+          "punk",
           4
         ],
         [
@@ -4652,11 +4652,11 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "punk",
+          "getaria",
           4
         ],
         [
-          "getaria",
+          "punk",
           4
         ],
         [
@@ -4668,6 +4668,10 @@
           3
         ],
         [
+          "hardcore punk",
+          2
+        ],
+        [
           "melodic hardcore",
           2
         ],
@@ -4676,11 +4680,7 @@
           2
         ],
         [
-          "hardcore punk",
-          2
-        ],
-        [
-          "rock",
+          "pirate",
           1
         ]
       ],
@@ -4713,16 +4713,12 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "rock",
-          3
-        ],
-        [
           "hardcore",
           3
         ],
         [
-          "punk",
-          2
+          "rock",
+          3
         ],
         [
           "hard rock",
@@ -4733,15 +4729,19 @@
           2
         ],
         [
+          "punk",
+          2
+        ],
+        [
+          "matadeixe",
+          1
+        ],
+        [
           "post-rock",
           1
         ],
         [
-          "underground",
-          1
-        ],
-        [
-          "matadeixe",
+          "psicodelic",
           1
         ]
       ],
@@ -4767,19 +4767,15 @@
           2
         ],
         [
-          "euskara",
+          "acoustic rock",
           1
         ],
         [
-          "independent",
+          "andoken",
           1
         ],
         [
-          "le fond de la classe",
-          1
-        ],
-        [
-          "hip hop",
+          "bask and world music",
           1
         ],
         [
@@ -4787,11 +4783,15 @@
           1
         ],
         [
-          "rappeur",
+          "carnatic indian spanish",
           1
         ],
         [
-          "hip-hop/rap",
+          "electro",
+          1
+        ],
+        [
+          "euskara",
           1
         ]
       ],
@@ -4839,11 +4839,7 @@
       "territory": "Iparralde",
       "top_tags": [
         [
-          "roots",
-          3
-        ],
-        [
-          "raggamuffin",
+          "dub",
           3
         ],
         [
@@ -4851,11 +4847,15 @@
           3
         ],
         [
+          "raggamuffin",
+          3
+        ],
+        [
           "reggae",
           3
         ],
         [
-          "dub",
+          "roots",
           3
         ],
         [
@@ -4863,11 +4863,11 @@
           1
         ],
         [
-          "mauléon",
+          "euskal reggae",
           1
         ],
         [
-          "maule",
+          "eüskal herri",
           1
         ]
       ],
@@ -4905,15 +4905,15 @@
       "territory": "Araba",
       "top_tags": [
         [
+          "blues",
+          3
+        ],
+        [
           "punk",
           3
         ],
         [
           "rock",
-          3
-        ],
-        [
-          "blues",
           3
         ],
         [
@@ -4964,7 +4964,7 @@
           3
         ],
         [
-          "post-punk",
+          "basque music",
           3
         ],
         [
@@ -4972,7 +4972,7 @@
           3
         ],
         [
-          "basque music",
+          "post-punk",
           3
         ]
       ],
@@ -5002,15 +5002,15 @@
           2
         ],
         [
+          "noise",
+          2
+        ],
+        [
           "post-rock",
           2
         ],
         [
           "stoner",
-          2
-        ],
-        [
-          "noise",
           2
         ]
       ],
@@ -5032,16 +5032,20 @@
       "territory": "Iparralde",
       "top_tags": [
         [
-          "medieval",
+          "black metal",
           2
         ],
         [
-          "black metal",
+          "medieval",
           2
         ],
         [
           "metal",
           2
+        ],
+        [
+          "dark medieval",
+          1
         ],
         [
           "history",
@@ -5053,10 +5057,6 @@
         ],
         [
           "pagan",
-          1
-        ],
-        [
-          "dark medieval",
           1
         ]
       ],
@@ -5082,11 +5082,11 @@
           2
         ],
         [
-          "strings",
+          "female vocals",
           2
         ],
         [
-          "female vocals",
+          "strings",
           2
         ],
         [
@@ -5116,27 +5116,11 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "skinhead",
+          "composer",
           1
         ],
         [
-          "punk",
-          1
-        ],
-        [
-          "rock & roll",
-          1
-        ],
-        [
-          "punk rock",
-          1
-        ],
-        [
-          "oi!punk",
-          1
-        ],
-        [
-          "instrumental",
+          "diy",
           1
         ],
         [
@@ -5144,7 +5128,23 @@
           1
         ],
         [
-          "composer",
+          "instrumental",
+          1
+        ],
+        [
+          "midi",
+          1
+        ],
+        [
+          "oi!punk",
+          1
+        ],
+        [
+          "progressive rock",
+          1
+        ],
+        [
+          "punk",
           1
         ]
       ],
@@ -5166,11 +5166,11 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "barruko",
+          "aitor huergo",
           2
         ],
         [
-          "aitor huergo",
+          "barruko",
           2
         ],
         [
@@ -5178,11 +5178,11 @@
           2
         ],
         [
-          "paisaiak",
+          "folk",
           2
         ],
         [
-          "folk",
+          "paisaiak",
           2
         ],
         [
@@ -5190,11 +5190,11 @@
           1
         ],
         [
-          "vasque music",
+          "autoproduction",
           1
         ],
         [
-          "guitar",
+          "euskal musika",
           1
         ]
       ],
@@ -5216,27 +5216,7 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "funk",
-          1
-        ],
-        [
-          "rock",
-          1
-        ],
-        [
-          "soul",
-          1
-        ],
-        [
-          "hard rock",
-          1
-        ],
-        [
-          "instrumental hip-hop",
-          1
-        ],
-        [
-          "underground hip-hop",
+          "boom-bap",
           1
         ],
         [
@@ -5244,7 +5224,27 @@
           1
         ],
         [
-          "senegal",
+          "funk",
+          1
+        ],
+        [
+          "hard rock",
+          1
+        ],
+        [
+          "hip-hop/rap",
+          1
+        ],
+        [
+          "instrumental hip-hop",
+          1
+        ],
+        [
+          "rap",
+          1
+        ],
+        [
+          "rock",
           1
         ]
       ],
@@ -5270,11 +5270,11 @@
           2
         ],
         [
-          "rock",
+          "folk",
           2
         ],
         [
-          "folk",
+          "rock",
           2
         ]
       ],
@@ -5300,11 +5300,11 @@
           2
         ],
         [
-          "sermonds",
+          "rock roll punk-rock-stoner",
           2
         ],
         [
-          "rock roll punk-rock-stoner",
+          "sermonds",
           2
         ]
       ],
@@ -5326,15 +5326,15 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "punk",
-          2
-        ],
-        [
           "hardcore",
           2
         ],
         [
           "hardcore punk",
+          2
+        ],
+        [
+          "punk",
           2
         ]
       ],
@@ -5391,11 +5391,11 @@
       "territory": "Nafarroa",
       "top_tags": [
         [
-          "rock",
+          "pop rock",
           2
         ],
         [
-          "pop rock",
+          "rock",
           2
         ],
         [
@@ -5425,19 +5425,19 @@
           2
         ],
         [
-          "punk",
-          2
-        ],
-        [
           "euskera",
           2
         ],
         [
-          "punk rock",
+          "oi!",
           2
         ],
         [
-          "oi!",
+          "punk",
+          2
+        ],
+        [
+          "punk rock",
           2
         ],
         [
@@ -5463,7 +5463,15 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "spanish",
+          "blues",
+          1
+        ],
+        [
+          "country",
+          1
+        ],
+        [
+          "metal",
           1
         ],
         [
@@ -5475,23 +5483,15 @@
           1
         ],
         [
-          "metal",
-          1
-        ],
-        [
           "rock",
           1
         ],
         [
-          "blues",
+          "soul",
           1
         ],
         [
           "southern rock",
-          1
-        ],
-        [
-          "country",
           1
         ]
       ],
@@ -5517,10 +5517,6 @@
           2
         ],
         [
-          "rock",
-          2
-        ],
-        [
           "euskara",
           2
         ],
@@ -5533,15 +5529,19 @@
           2
         ],
         [
-          "two-piece band two-piece band",
-          2
-        ],
-        [
           "power duo",
           2
         ],
         [
+          "rock",
+          2
+        ],
+        [
           "stoner rock",
+          2
+        ],
+        [
+          "two-piece band two-piece band",
           2
         ]
       ],
@@ -5567,14 +5567,6 @@
           2
         ],
         [
-          "version",
-          2
-        ],
-        [
-          "q ez da",
-          2
-        ],
-        [
           "bertsioak",
           2
         ],
@@ -5583,7 +5575,15 @@
           2
         ],
         [
-          "experimental",
+          "q ez da",
+          2
+        ],
+        [
+          "version",
+          2
+        ],
+        [
+          "bi zaldi",
           1
         ],
         [
@@ -5617,15 +5617,11 @@
           2
         ],
         [
+          "africa",
+          2
+        ],
+        [
           "euskara",
-          2
-        ],
-        [
-          "world",
-          2
-        ],
-        [
-          "strings",
           2
         ],
         [
@@ -5633,15 +5629,19 @@
           2
         ],
         [
-          "africa",
+          "strings",
           2
         ],
         [
-          "harp",
+          "world",
+          2
+        ],
+        [
+          "african world music",
           1
         ],
         [
-          "eneko",
+          "arpa",
           1
         ]
       ],
@@ -5663,22 +5663,6 @@
       "territory": "Iparralde",
       "top_tags": [
         [
-          "experimental",
-          1
-        ],
-        [
-          "ghostfolk",
-          1
-        ],
-        [
-          "post barn folk",
-          1
-        ],
-        [
-          "folk minimal",
-          1
-        ],
-        [
           "bilau",
           1
         ],
@@ -5687,7 +5671,23 @@
           1
         ],
         [
+          "experimental",
+          1
+        ],
+        [
+          "folk minimal",
+          1
+        ],
+        [
+          "ghostfolk",
+          1
+        ],
+        [
           "minimalist",
+          1
+        ],
+        [
+          "post barn folk",
           1
         ]
       ],
@@ -5709,11 +5709,7 @@
       "territory": "Nafarroa",
       "top_tags": [
         [
-          "punk",
-          1
-        ],
-        [
-          "hardcore",
+          "album",
           1
         ],
         [
@@ -5721,15 +5717,15 @@
           1
         ],
         [
-          "album",
+          "disasko",
           1
         ],
         [
-          "musica",
+          "disbrigade",
           1
         ],
         [
-          "lokal",
+          "hardcore",
           1
         ],
         [
@@ -5737,7 +5733,11 @@
           1
         ],
         [
-          "disasko",
+          "lokal",
+          1
+        ],
+        [
+          "musica",
           1
         ]
       ],
@@ -5759,7 +5759,11 @@
       "territory": "Iparralde",
       "top_tags": [
         [
-          "world",
+          "chant",
+          1
+        ],
+        [
+          "gascon",
           1
         ],
         [
@@ -5771,11 +5775,7 @@
           1
         ],
         [
-          "chant",
-          1
-        ],
-        [
-          "gascon",
+          "world",
           1
         ]
       ],
@@ -5797,14 +5797,6 @@
       "territory": "Araba",
       "top_tags": [
         [
-          "rock",
-          1
-        ],
-        [
-          "rock'n'roll",
-          1
-        ],
-        [
           "album release",
           1
         ],
@@ -5813,11 +5805,19 @@
           1
         ],
         [
+          "basque rock alternative",
+          1
+        ],
+        [
           "phoenix",
           1
         ],
         [
-          "basque rock alternative",
+          "rock",
+          1
+        ],
+        [
+          "rock'n'roll",
           1
         ]
       ],
@@ -5843,11 +5843,7 @@
           1
         ],
         [
-          "tumbao",
-          1
-        ],
-        [
-          "world",
+          "ska",
           1
         ],
         [
@@ -5855,7 +5851,11 @@
           1
         ],
         [
-          "ska",
+          "tumbao",
+          1
+        ],
+        [
+          "world",
           1
         ]
       ],
@@ -5877,15 +5877,7 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "pop",
-          1
-        ],
-        [
-          "nhilband",
-          1
-        ],
-        [
-          "soul",
+          "euskal musika",
           1
         ],
         [
@@ -5893,7 +5885,15 @@
           1
         ],
         [
-          "euskal musika",
+          "nhilband",
+          1
+        ],
+        [
+          "pop",
+          1
+        ],
+        [
+          "soul",
           1
         ]
       ],
@@ -5915,15 +5915,7 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "rock",
-          1
-        ],
-        [
           "alternative pop rock",
-          1
-        ],
-        [
-          "pop",
           1
         ],
         [
@@ -5931,7 +5923,15 @@
           1
         ],
         [
+          "pop",
+          1
+        ],
+        [
           "psychopunk",
+          1
+        ],
+        [
+          "rock",
           1
         ]
       ],
@@ -5961,11 +5961,11 @@
           1
         ],
         [
-          "thrash metal",
+          "metal",
           1
         ],
         [
-          "metal",
+          "thrash metal",
           1
         ]
       ],
@@ -5987,7 +5987,7 @@
       "territory": "Iparralde",
       "top_tags": [
         [
-          "duo",
+          "alternative rock",
           1
         ],
         [
@@ -5995,7 +5995,15 @@
           1
         ],
         [
-          "rock",
+          "drums",
+          1
+        ],
+        [
+          "duo",
+          1
+        ],
+        [
+          "euskal",
           1
         ],
         [
@@ -6007,15 +6015,7 @@
           1
         ],
         [
-          "alternative rock",
-          1
-        ],
-        [
-          "drums",
-          1
-        ],
-        [
-          "euskal",
+          "rock",
           1
         ]
       ],
@@ -6037,11 +6037,11 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "rock",
+          "metal",
           1
         ],
         [
-          "skate",
+          "rock",
           1
         ],
         [
@@ -6049,7 +6049,7 @@
           1
         ],
         [
-          "metal",
+          "skate",
           1
         ]
       ],
@@ -6097,15 +6097,15 @@
       "territory": "Araba",
       "top_tags": [
         [
+          "hardcore punk",
+          1
+        ],
+        [
           "punk",
           1
         ],
         [
           "punk oi!",
-          1
-        ],
-        [
-          "hardcore punk",
           1
         ],
         [
@@ -6161,11 +6161,11 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "electronic rock",
+          "electronic",
           1
         ],
         [
-          "rock",
+          "electronic rock",
           1
         ],
         [
@@ -6173,7 +6173,7 @@
           1
         ],
         [
-          "electronic",
+          "rock",
           1
         ]
       ],
@@ -6199,11 +6199,11 @@
           1
         ],
         [
-          "punk",
+          "mala ostia",
           1
         ],
         [
-          "mala ostia",
+          "punk",
           1
         ]
       ],
@@ -6225,19 +6225,7 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "instrumental",
-          1
-        ],
-        [
           "beat",
-          1
-        ],
-        [
-          "r&b",
-          1
-        ],
-        [
-          "hip hop soul",
           1
         ],
         [
@@ -6245,11 +6233,23 @@
           1
         ],
         [
-          "soul",
+          "hip hop instrumentals",
+          1
+        ],
+        [
+          "hip hop soul",
           1
         ],
         [
           "hip-hop/rap",
+          1
+        ],
+        [
+          "instrumental",
+          1
+        ],
+        [
+          "r&b",
           1
         ],
         [
@@ -6275,19 +6275,19 @@
       "territory": "Nafarroa",
       "top_tags": [
         [
-          "rock and roll",
-          1
-        ],
-        [
           "blues",
           1
         ],
         [
-          "show",
+          "humor",
           1
         ],
         [
-          "humor",
+          "rock and roll",
+          1
+        ],
+        [
+          "show",
           1
         ]
       ],
@@ -6313,7 +6313,7 @@
           1
         ],
         [
-          "new age music",
+          "classical",
           1
         ],
         [
@@ -6321,15 +6321,15 @@
           1
         ],
         [
-          "relaxing",
-          1
-        ],
-        [
-          "classical",
+          "new age music",
           1
         ],
         [
           "piano solo",
+          1
+        ],
+        [
+          "relaxing",
           1
         ]
       ],
@@ -6351,11 +6351,19 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "rock",
+          "basque music",
           1
         ],
         [
           "doom",
+          1
+        ],
+        [
+          "metal",
+          1
+        ],
+        [
+          "rock",
           1
         ],
         [
@@ -6364,14 +6372,6 @@
         ],
         [
           "stoner rock",
-          1
-        ],
-        [
-          "basque music",
-          1
-        ],
-        [
-          "metal",
           1
         ]
       ],
@@ -6393,7 +6393,7 @@
       "territory": "Nafarroa",
       "top_tags": [
         [
-          "punk",
+          "diy",
           1
         ],
         [
@@ -6401,15 +6401,15 @@
           1
         ],
         [
-          "rural streetpunk",
-          1
-        ],
-        [
           "garage",
           1
         ],
         [
-          "diy",
+          "punk",
+          1
+        ],
+        [
+          "rural streetpunk",
           1
         ]
       ],
@@ -6435,15 +6435,15 @@
           1
         ],
         [
-          "rock",
-          1
-        ],
-        [
           "hard rock",
           1
         ],
         [
           "kamuts",
+          1
+        ],
+        [
+          "rock",
           1
         ]
       ],
@@ -6465,11 +6465,7 @@
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "rock",
-          1
-        ],
-        [
-          "pop",
+          "electronic",
           1
         ],
         [
@@ -6477,11 +6473,15 @@
           1
         ],
         [
-          "electronic",
+          "pop",
           1
         ],
         [
           "rap",
+          1
+        ],
+        [
+          "rock",
           1
         ]
       ],
@@ -6503,7 +6503,7 @@
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "rock",
+          "kon",
           1
         ],
         [
@@ -6515,7 +6515,7 @@
           1
         ],
         [
-          "kon",
+          "rock",
           1
         ]
       ],
@@ -6541,14 +6541,6 @@
           1
         ],
         [
-          "rebels",
-          1
-        ],
-        [
-          "techno; downtempo; electro",
-          1
-        ],
-        [
           "electronic",
           1
         ],
@@ -6557,11 +6549,19 @@
           1
         ],
         [
+          "rebels",
+          1
+        ],
+        [
           "riot",
           1
         ],
         [
           "techno",
+          1
+        ],
+        [
+          "techno; downtempo; electro",
           1
         ]
       ],
@@ -6587,7 +6587,7 @@
           1
         ],
         [
-          "ronda",
+          "hip-hop/rap",
           1
         ],
         [
@@ -6595,7 +6595,7 @@
           1
         ],
         [
-          "hip-hop/rap",
+          "ronda",
           1
         ]
       ],

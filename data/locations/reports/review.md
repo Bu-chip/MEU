@@ -8,7 +8,7 @@ Cada fila es un **texto crudo** tal como lo dio Bandcamp. `rel.` = releases del 
 
 Ninguno.
 
-## Topónimo del ámbito con país incoherente — 7 valores, 27 releases
+## Topónimo del ámbito con país incoherente — 6 valores, 27 releases
 
 | Texto crudo | rel. | obs. | cuentas | Motivo |
 |---|---:|---:|---:|---|
@@ -18,14 +18,12 @@ Ninguno.
 | Bayonne, New Jersey | 1 | 1 | 1 | topónimo del ámbito con país «New Jersey» (baiona) |
 | Guernica, Argentina | 1 | 1 | 1 | topónimo del ámbito con país «Argentina» (gernika-lumo) |
 | San Sebastián, Chile | 1 | 1 | 1 | topónimo del ámbito con país «Chile» (donostia) |
-| San Sebastián, Puerto Rico | 0 | 8 | 4 | topónimo del ámbito con país «Puerto Rico» (donostia) |
 
-## Ambiguos — 2 valores, 1 releases
+## Ambiguos — 1 valores, 1 releases
 
 | Texto crudo | rel. | obs. | cuentas | Motivo |
 |---|---:|---:|---:|---|
 | PM | 1 | 1 | 1 | manual: posible código de provincia (Baleares); sin país ni municipio |
-| AL, Spain | 0 | 1 | 1 | manual: posible código de provincia (Almería) o de comunidad; sin municipio |
 
 ## Inválidos o improbables (regla manual) — 1 valores, 24 releases
 
@@ -33,37 +31,36 @@ Ninguno.
 |---|---:|---:|---:|---|
 | Afghanistan | 24 | 24 | 1 | manual: ubicación no literal: la usa solo la cuenta del sello navarro Mendeku Diskak (Orreaga 778, Cuero…); revisado 2026-09-19 |
 
-## Fuera de Euskal Herria — 134 valores, 282 releases
+## Fuera de Euskal Herria — 114 valores, 282 releases
 
 | Texto crudo | rel. | obs. | cuentas | Motivo |
 |---|---:|---:|---:|---|
-| Madrid, Spain | 53 | 61 | 24 | lugar fuera del ámbito (lista controlada) |
-| Barcelona, Spain | 19 | 21 | 17 | lugar fuera del ámbito (lista controlada) |
+| Madrid, Spain | 53 | 57 | 21 | lugar fuera del ámbito (lista controlada) |
+| Barcelona, Spain | 19 | 20 | 16 | lugar fuera del ámbito (lista controlada) |
 | Punta Del Este, Uruguay | 10 | 10 | 5 | fuera de ES/FR (Uruguay) |
 | Zaragoza, Spain | 10 | 10 | 2 | lugar fuera del ámbito (lista controlada) |
 | La Línea De La Concepción, Spain | 9 | 9 | 1 | lugar fuera del ámbito (lista controlada) |
 | Buenos Aires, Argentina | 7 | 7 | 5 | fuera de ES/FR (Argentina) |
 | Paris, France | 7 | 7 | 6 | lugar fuera del ámbito (lista controlada) |
-| London, UK | 6 | 9 | 3 | fuera de ES/FR (UK) |
+| London, UK | 6 | 8 | 2 | fuera de ES/FR (UK) |
 | Berlin, Germany | 5 | 6 | 5 | fuera de ES/FR (Germany) |
 | Occitanie, France | 5 | 5 | 1 | lugar fuera del ámbito (lista controlada) |
 | Santander, Spain | 5 | 5 | 3 | lugar fuera del ámbito (lista controlada) |
 | Thailand | 5 | 5 | 1 | lugar fuera del ámbito (lista controlada) |
 | Burgos, Spain | 4 | 5 | 1 | lugar fuera del ámbito (lista controlada) |
 | Logroño, Spain | 4 | 4 | 2 | lugar fuera del ámbito (lista controlada) |
-| Denmark | 3 | 7 | 3 | lugar fuera del ámbito (lista controlada) |
+| Denmark | 3 | 5 | 2 | lugar fuera del ámbito (lista controlada) |
 | Argentina | 3 | 3 | 2 | lugar fuera del ámbito (lista controlada) |
 | Los Angeles, California | 3 | 3 | 3 | fuera de ES/FR (California) |
 | Magallanes y la Antártica Chilen, Chile | 3 | 3 | 1 | fuera de ES/FR (Chile) |
 | Oviedo, Spain | 3 | 3 | 3 | lugar fuera del ámbito (lista controlada) |
 | Toulouse, France | 3 | 3 | 3 | lugar fuera del ámbito (lista controlada) |
 | UK | 3 | 3 | 3 | lugar fuera del ámbito (lista controlada) |
-| Seville, Spain | 2 | 7 | 3 | lugar fuera del ámbito (lista controlada) |
+| Seville, Spain | 2 | 6 | 2 | lugar fuera del ámbito (lista controlada) |
 | Valencia, Spain | 2 | 5 | 3 | lugar fuera del ámbito (lista controlada) |
-| Belgium | 2 | 4 | 3 | lugar fuera del ámbito (lista controlada) |
 | Nantes, France | 2 | 3 | 2 | lugar fuera del ámbito (lista controlada) |
-| San Francisco, California | 2 | 3 | 2 | fuera de ES/FR (California) |
 | Alto Paraná Department, Paraguay | 2 | 2 | 1 | fuera de ES/FR (Paraguay) |
+| Belgium | 2 | 2 | 2 | lugar fuera del ámbito (lista controlada) |
 | Brighton And Hove, UK | 2 | 2 | 2 | fuera de ES/FR (UK) |
 | Castellón De La Plana, Spain | 2 | 2 | 2 | lugar fuera del ámbito (lista controlada) |
 | Chiyoda, Japan | 2 | 2 | 1 | fuera de ES/FR (Japan) |
@@ -73,6 +70,7 @@ Ninguno.
 | Norfolk Island | 2 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
 | Pau, France | 2 | 2 | 2 | lugar fuera del ámbito (lista controlada) |
 | Principado de Asturias, Spain | 2 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
+| San Francisco, California | 2 | 2 | 1 | fuera de ES/FR (California) |
 | Stavanger, Norway | 2 | 2 | 1 | fuera de ES/FR (Norway) |
 | Sweden | 2 | 2 | 2 | lugar fuera del ámbito (lista controlada) |
 | Súa, Gabon | 2 | 2 | 1 | fuera de ES/FR (Gabon) |
@@ -80,7 +78,6 @@ Ninguno.
 | Vietnam | 2 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
 | Vigo, Spain | 2 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
 | El Bierzo, Spain | 1 | 4 | 1 | lugar fuera del ámbito (lista controlada) |
-| Girona, Spain | 1 | 4 | 2 | lugar fuera del ámbito (lista controlada) |
 | Talavera De La Reina, Spain | 1 | 3 | 1 | lugar fuera del ámbito (lista controlada) |
 | Italy | 1 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
 | Nashville, Tennessee | 1 | 2 | 1 | fuera de ES/FR (Tennessee) |
@@ -104,6 +101,7 @@ Ninguno.
 | Dublin, Ireland | 1 | 1 | 1 | fuera de ES/FR (Ireland) |
 | El Mas De Flors, Spain | 1 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
 | Fukuoka, Japan | 1 | 1 | 1 | fuera de ES/FR (Japan) |
+| Girona, Spain | 1 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
 | Goldendale, Washington | 1 | 1 | 1 | fuera de ES/FR (Washington) |
 | Havana, Cuba | 1 | 1 | 1 | fuera de ES/FR (Cuba) |
 | Helsinki, Finland | 1 | 1 | 1 | fuera de ES/FR (Finland) |
@@ -149,38 +147,18 @@ Ninguno.
 | Washington, D.C. | 1 | 1 | 1 | fuera de ES/FR (D.C.) |
 | Western Sahara | 1 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
 | Worcester, UK | 1 | 1 | 1 | fuera de ES/FR (UK) |
-| Alicante, Spain | 0 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
-| Michigan | 0 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
 | Nice, France | 0 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
 | Brittany, France | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Brooklyn, New York | 0 | 1 | 1 | fuera de ES/FR (New York) |
-| Dubai, UAE | 0 | 1 | 1 | fuera de ES/FR (UAE) |
-| Germany | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Gothenburg, Sweden | 0 | 1 | 1 | fuera de ES/FR (Sweden) |
-| Kiribati | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Lille, France | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Lithuania | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Marshfield, Vermont | 0 | 1 | 1 | fuera de ES/FR (Vermont) |
-| Massachusetts | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Montréal, Québec | 0 | 1 | 1 | fuera de ES/FR (Québec) |
-| Munich, Germany | 0 | 1 | 1 | fuera de ES/FR (Germany) |
-| Murcia, Spain | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Olympia, Washington | 0 | 1 | 1 | fuera de ES/FR (Washington) |
-| Ontario | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Pinto, Spain | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Portland, Oregon | 0 | 1 | 1 | fuera de ES/FR (Oregon) |
-| Sheffield, UK | 0 | 1 | 1 | fuera de ES/FR (UK) |
-| Vienna, Austria | 0 | 1 | 1 | fuera de ES/FR (Austria) |
 
 ## Solo región, comarca o país (sin municipio) — 14 valores, 513 releases
 
 | Texto crudo | rel. | obs. | cuentas | Motivo |
 |---|---:|---:|---:|---|
-| PV, Spain | 184 | 190 | 97 | el valor completo es una región (euskal-herria) |
+| PV, Spain | 184 | 189 | 96 | el valor completo es una región (euskal-herria) |
 | Basque Country, Spain | 117 | 117 | 34 | el valor completo es una región (euskal-herria) |
 | Euskadi, Spain | 76 | 77 | 18 | el valor completo es una región (euskal-herria) |
-| France | 73 | 77 | 13 | el valor completo es una región (france) |
-| Spain | 33 | 43 | 23 | el valor completo es una región (spain) |
+| France | 73 | 76 | 12 | el valor completo es una región (france) |
+| Spain | 33 | 40 | 21 | el valor completo es una región (spain) |
 | Enkarterri, Spain | 6 | 6 | 3 | región/comarca, sin municipio (enkarterri) |
 | Navarre, Spain | 6 | 6 | 4 | región/comarca, sin municipio (nafarroa) |
 | PV | 5 | 5 | 3 | el valor completo es una región (euskal-herria) |
