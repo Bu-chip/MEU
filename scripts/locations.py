@@ -138,6 +138,7 @@ def ingest_doc(doc, source_name, provenance):
         "source": source_name,
         "source_type": L.OBS_SOURCE_DISCOVER,
         "subject": L.OBS_SUBJECT,
+        "sources_read": sorted(set(meta.get("sources_read", [])) | {provenance}),
         "note": "band_location de discover_web, tal cual (sin normalizar). "
                 "value=null: Bandcamp no daba ubicación. Ubicación de la cuenta "
                 "que publica (grupo o sello), actual y sin fecha.",
@@ -252,16 +253,29 @@ def cmd_recover(args):
                             sum(1 for v in obs.values() for o in v if o["value"] is not None)))
 
     written = {}
-    for target, groups in sorted(per_file.items()):
-        meta, existing = load_obs_file(OBS_DIR / target)
+    sources_by_target = defaultdict(list)
+    for prov, target, _, _ in source_rows:
+        sources_by_target[target].append(prov)
+    candidate_targets = sorted(t for t in per_file if not t.startswith("discovery_state"))
+    for target in candidate_targets + ["discovery_state_pending.json"]:
+        groups = per_file.get(target)
+        if not groups:
+            continue
+        _, existing = load_obs_file(OBS_DIR / target)
         merged = L.merge_observations(existing, *groups)
+        if target.startswith("discovery_state"):
+            # Solo lo que no llegó a ningún fichero de candidatos.
+            merged = L.drop_known(merged, L.merge_observations(*written.values()))
+            note = "parciales pendientes de ficha en discovery_state.json que nunca llegaron a candidatos"
+        else:
+            note = "band_location de discover_web, tal cual (sin normalizar)"
         meta = {
             "source": target,
             "source_type": L.OBS_SOURCE_DISCOVER,
             "subject": L.OBS_SUBJECT,
-            "note": ("parciales pendientes de ficha en discovery_state.json" if target.startswith("discovery_state")
-                     else "band_location de discover_web, tal cual (sin normalizar)")
-            + ". value=null: Bandcamp no daba ubicación. Ubicación de la cuenta que publica, actual y sin fecha.",
+            "sources_read": sorted(set(sources_by_target[target])),
+            "note": note + ". value=null: Bandcamp no daba ubicación. Ubicación de la cuenta "
+                    "que publica (grupo o sello), actual y sin fecha.",
         }
         write_obs_file(OBS_DIR / target, meta, merged)
         written[target] = merged

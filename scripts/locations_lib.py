@@ -168,8 +168,10 @@ def merge_observations(*groups):
     """Une grupos {key: [obs]} sin perder nada.
 
     Dos observaciones son la misma si coinciden valor, tipo de fuente y URL:
-    se conserva la de fecha más antigua y se acumulan sus procedencias.
-    Una observación distinta (otro valor) NUNCA pisa a otra: se añade.
+    se conserva UNA, con la fecha más antigua y la procedencia del primer
+    grupo en que apareció (los grupos se pasan de más a menos autorizado;
+    el `meta` de cada fichero lista todas las fuentes leídas). Una
+    observación distinta (otro valor) NUNCA pisa a otra: se añade.
     """
     merged = {}
     for group in groups:
@@ -180,13 +182,10 @@ def merge_observations(*groups):
                 prev = slot.get(ident)
                 if prev is None:
                     o = dict(o)
-                    prov = o.get("provenance")
-                    o["provenance"] = sorted(set(prov if isinstance(prov, list) else [prov])) if prov else []
+                    if isinstance(o.get("provenance"), list):
+                        o["provenance"] = o["provenance"][0] if o["provenance"] else None
                     slot[ident] = o
                     continue
-                prov = o.get("provenance")
-                prov = prov if isinstance(prov, list) else ([prov] if prov else [])
-                prev["provenance"] = sorted(set(prev["provenance"]) | set(prov))
                 if o.get("retrieved_at") and (
                     not prev.get("retrieved_at") or o["retrieved_at"] < prev["retrieved_at"]
                 ):
@@ -196,6 +195,17 @@ def merge_observations(*groups):
             o.get("retrieved_at") or "", o.get("source_type") or "", o.get("value") or ""))
         for key, slot in sorted(merged.items())
     }
+
+
+def drop_known(obs_by_key, known):
+    """Quita de un grupo las observaciones ya presentes en `known`."""
+    out = {}
+    for key, lst in obs_by_key.items():
+        idents = {_obs_identity(o) for o in known.get(key, [])}
+        rest = [o for o in lst if _obs_identity(o) not in idents]
+        if rest:
+            out[key] = rest
+    return out
 
 
 def index_observations(obs_by_key):

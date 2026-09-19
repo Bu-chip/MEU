@@ -71,7 +71,8 @@ class PreservacionBandLocation(unittest.TestCase):
         values = sorted(o["value"] for o in m["bc:11"])
         self.assertEqual(values, ["Donostia, Spain", "Zarautz, Spain"])
         z = [o for o in m["bc:11"] if o["value"] == "Zarautz, Spain"][0]
-        self.assertEqual(z["provenance"], ["v1"], "misma observación repetida no se duplica")
+        self.assertEqual(z["provenance"], "v1", "misma observación repetida no se duplica")
+        self.assertEqual(len(m["bc:11"]), 2)
 
     def test_idempotente(self):
         a = L.observations_from_candidates(self.doc, "v1")
