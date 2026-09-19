@@ -1318,9 +1318,15 @@ def cmd_build(args):
         alt = sorted({v for v in p["names"].values() if v != p["name"]})
         places.append([pid, p["name"], *xy(p["lat"], p["lon"]),
                        TERRITORIES.index(p["territory"]), " · ".join(alt)])
-    ids, place, typ, region, flags = [], [], [], [], []
+    # Cuentas de Bandcamp: el panel del mapa lista los sellos de un
+    # municipio y la procedencia por cuenta sin cargar resolutions.json.
+    labels = label_accounts()
+    accounts = sorted({r["account"] for r in res.values() if r.get("account")})
+    aidx = {acc: i for i, acc in enumerate(accounts)}
+    ids, place, typ, region, flags, account = [], [], [], [], [], []
     for a in sorted(catalog["albums"], key=lambda a: a["id"]):
         r = res[a["id"]]
+        account.append(aidx[r["account"]] if r.get("account") else -1)
         ids.append(a["id"])
         place.append(pidx[r["place"]] if r.get("place") else -1)
         typ.append(MAP_TYPES.index(r["type"]))
@@ -1349,7 +1355,10 @@ def cmd_build(args):
         "grid": grid,
         "places": places,
         "geo_tags": geo_tags,
-        "releases": {"id": ids, "place": place, "type": typ, "region": region, "flags": flags},
+        # [id de cuenta, 1 si el índice de sellos la marca como multiartista]
+        "accounts": [[acc, 1 if acc in labels else 0] for acc in accounts],
+        "releases": {"id": ids, "place": place, "type": typ, "region": region,
+                     "flags": flags, "account": account},
     }
     write_text(MAP_INDEX_FILE, json.dumps(doc, ensure_ascii=False, separators=(",", ":")) + "\n")
     print(f"{rel(MAP_INDEX_FILE)}: {len(places)} lugares, {len(grid['cells'])} celdas, "

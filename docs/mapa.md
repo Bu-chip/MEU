@@ -51,16 +51,28 @@ El canónico (`data/bandcamp_bilbaotags_clean.json`) **no se toca**: sigue con s
 
 Cada release del canónico tiene exactamente un tipo. Si hay varias evidencias, se elige por este orden y la que apunta a **otro** municipio queda en `conflicts`:
 
-| Tipo | Significa | ¿Sale en el mapa? |
-|---|---|---|
-| `manual` | Decisión humana (`manual.json`) | Sí (con «directas») |
-| `direct` | Bandcamp, observado en **esta** release | Sí |
-| `same_account` | Bandcamp, observado en **otra release de la misma cuenta**. En Bandcamp la ubicación es de la cuenta, así que es el mismo dato | Sí |
-| `artist_inferred` | Otras releases del **mismo artista** (clave `fold`) en cuentas que **no son sello**, todas en el mismo municipio. Si discrepan, no se infiere y queda `artist_disagreement` | Sí (desactivable) |
-| `region_only` | Solo región o país | No: se cuenta |
-| `outside_scope` | Fuera de Euskal Herria | No: se cuenta |
-| `tag_hint` | Sin evidencia de Bandcamp; un único tag geográfico | Solo si se activa «pistas de tag» |
-| `unresolved` | Nada útil, o evidencia descartada (`rejected_values`) | No: se cuenta |
+| Tipo | Significa | Procedencia en la app | ¿Sale en el mapa? |
+|---|---|---|---|
+| `manual` | Decisión humana (`manual.json`) | `d` directas | Sí |
+| `direct` | Bandcamp, observado en **esta** release | `d` directas | Sí |
+| `same_account` | Bandcamp, observado en **otra release de la misma cuenta**. En Bandcamp la ubicación es de la cuenta, así que es el mismo dato | `c` si la cuenta es de un solo artista; `m` si es una cuenta con varios artistas | `c` sí; `m` no (activable) |
+| `artist_inferred` | Otras releases del **mismo artista** (clave `fold`) en cuentas que **no son sello**, todas en el mismo municipio. Si discrepan, no se infiere y queda `artist_disagreement` | `a` | Sí (desactivable) |
+| `region_only` | Solo región o país | — | No: se cuenta |
+| `outside_scope` | Fuera de Euskal Herria | — | No: se cuenta |
+| `tag_hint` | Sin evidencia de Bandcamp; un único tag geográfico | `t` | No (activable) |
+| `unresolved` | Nada útil, o evidencia descartada (`rejected_values`) | — | No: se cuenta |
+
+### Qué se dibuja por defecto: el «escenario D»
+
+La resolución **no cambia** según lo que se dibuje: `resolutions.json` y la auditoría son siempre las mismas. Lo que cambia es qué entra en el mapa.
+
+Por defecto entran `d + c + a` (**5.904 releases, 78 % del catálogo, 104 municipios**) y quedan fuera `m` (misma cuenta, pero con varios artistas) y `t` (pistas de tag). El motivo está medido en `data/locations/reports/multiartist-audit.md`:
+
+- Incluirlo todo (escenario A) daba 6.522, pero 618 de esas ubicaciones venían de cuentas con varios artistas, casi todas en Bilbo (612): eran la ciudad del sello, no la del grupo.
+- Quedarse solo con las directas (escenario B) daba 4.953, y hundía Bilbo de 2.440 a 941 por un artefacto del método: el scrapeo visitó **una ficha por cuenta**, así que el resto de releases de una cuenta de un solo artista quedaron como `same_account` siendo el mismo dato.
+- El escenario D quita solo lo dudoso: Bilbo queda en 1.828.
+
+Se activan en la propia página, en **Más filtros → Ubicaciones incluidas**, o por URL con `ubic` (por ejemplo `#/mapa?ubic=dcamt`). Al activarlas, el mapa dibuja con trazo discontinuo los municipios que **solo** tienen ese tipo de evidencia, y la línea de cobertura y el desplegable «Cobertura y metodología» actualizan sus cifras.
 
 Otros campos de `resolutions.json`:
 - `account_kind: label`: la cuenta está en el índice de sellos (`data/derived/labels.json`, heurístico: cuentas con varios artistas o léxico de sello). Su ubicación es **la de esa cuenta** y nunca se propaga a sus artistas.
@@ -116,7 +128,19 @@ Tests: `python3 -m unittest discover tests` (capa de datos) y `npm --prefix app 
 
 `data/locations/reports/review.md` lista cada texto crudo que no es `resolved`, con cuántas releases y cuentas lo usan y por qué quedó así, y al final todos los resueltos agrupados por municipio para revisarlos de un vistazo. `docs/mapa-data-audit.md` resume los tipos de resolución, las contradicciones y los valores descartados.
 
-## 8. Cómo se cruzan mapa y tags
+## 8. La página
+
+La tarea de `#/mapa` es explorar el archivo por lugares, así que el mapa domina y el resto aparece por capas:
+
+- **Cabecera compacta** (solo en esta vista) y las tres puertas EXPLORAR · ARCHIVO · MAPA.
+- **Una línea de filtros**: búsqueda, `Género` (con el campo de tag), `Territorio`, `Años` (con el recorrido año a año) y `Más filtros` (procedencias). Debajo, los **chips** de lo que esté filtrando.
+- **Una línea de cobertura**: `N releases localizadas · N municipios`, con «Cobertura y metodología →», que despliega el desglose completo: qué se dibuja, qué queda excluido ahora (con enlace para incluirlo) y qué no tiene municipio.
+- **Mapa (≈65 %) + panel de contexto (≈35 %)**, ambos del alto de la ventana: entran sin scroll.
+- **Rótulos por densidad**: en la vista general solo las capitales y los municipios más densos que quepan (7); al ampliar a un territorio, hasta 18. Lo seleccionado y lo apuntado se rotulan siempre. Los territorios son orientación de fondo.
+- **Panel de municipio**: nombre, territorio, cifras, 6 tags y 4 releases. El resto (Artistas, Releases, Sellos y cuentas, Estadísticas, Procedencia) vive en secciones plegadas.
+- **El lima** solo marca selección y filtro activo.
+
+## 9. Cómo se cruzan mapa y tags
 
 - Los filtros son los de ARCHIVO: texto (con alias de tags), género, tag, artista y años (`desde`/`hasta`, compartidos con ARCHIVO). El mapa añade territorio y procedencia.
 - Con un **tag** activo, cada municipio muestra solo sus releases con ese tag. El cuadro fantasma indica su total sin filtros, y el panel ordena los municipios por releases con el tag y su **lift**.
@@ -131,7 +155,9 @@ Tests: `python3 -m unittest discover tests` (capa de datos) y `npm --prefix app 
 #/mapa?tag=noise
 #/mapa?tag=noise&desde=2005&hasta=2012     (también se aceptan from/to)
 #/mapa?territorio=Gipuzkoa&genero=electronic
-#/mapa?ubic=dcat                           (procedencias: d directas, c misma cuenta, a artista, t tag)
+#/mapa?ubic=dcamt                          (d directas · c misma cuenta (un artista) ·
+                                            a por artista · m cuenta multiartista · t pista de tag;
+                                            por defecto dca)
 ```
 
 Recargar conserva la vista, y atrás/adelante recorren los cambios. Esc sube un nivel: municipio → territorio → Euskal Herria.

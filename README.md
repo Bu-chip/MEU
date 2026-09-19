@@ -39,9 +39,12 @@ La app son **cuatro puertas a un mismo archivo**:
   reflejados en la URL y una capa de alias de tags para la búsqueda.
 - **MAPA**: el mismo archivo interrogado desde los lugares. Municipios de Euskal Herria
   sobre una retícula de puntos cuadrados, con los mismos filtros que ARCHIVO más rango de
-  años, territorio y procedencia de la ubicación. Tiene panel de municipio (tags
-  principales y sobrerrepresentados, artistas, releases) y panel de tag (reparto por
-  municipio). Los huecos siempre están a la vista. Ver [`docs/mapa.md`](docs/mapa.md).
+  años, territorio y procedencia de la ubicación. El mapa domina la página y el detalle
+  aparece por capas: panel de municipio (cifras, tags, releases y secciones plegadas de
+  artistas, sellos, estadísticas y procedencia) y panel de tag (reparto por municipio).
+  Por defecto dibuja el **escenario D** (5.904 releases): fuera las inferencias desde
+  cuentas con varios artistas y las pistas de tag, activables en «Más filtros». Ver
+  [`docs/mapa.md`](docs/mapa.md).
 - **FICHA**: página de disco con portada tratada, reproductor embebido de Bandcamp, tags
   clicables y discos similares por solape de tags.
 

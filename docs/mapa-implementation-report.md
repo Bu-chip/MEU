@@ -136,6 +136,22 @@ Detalle completo en `data/locations/reports/review.md`.
 
 Sus observaciones ya están en `data/locations/observations/candidates_2026-0{8,9}.json`. Tras su script de merge al canónico hay que ejecutar `python3 scripts/locations.py all` y commitear. Si no se hace, el workflow Tests lo marca («derivados desactualizados»).
 
+## Rediseño de la vista (20 sep 2026)
+
+Segunda iteración sobre la misma rama, sin tocar datos ni resolución. La tarea de la página es explorar el archivo por lugares, así que el mapa pasa a dominar y el resto aparece por capas.
+
+**Escenario D por defecto.** El mapa dibuja `directas + misma cuenta (de un solo artista) + inferidas por artista` = 5.904 releases (78 % del catálogo) en 104 municipios; Bilbo queda en 1.828 en vez de 2.440. Quedan fuera, activables en «Más filtros» o con `?ubic=dcamt`, las 618 inferencias desde cuentas con varios artistas y las 36 pistas de tag. `resolutions.json`, la auditoría y la procedencia almacenada **no cambian**: solo cambia qué se dibuja.
+
+**Divulgación progresiva.** A primer nivel quedan la búsqueda, género/tag, territorio, años, los chips de lo activo, una línea de cobertura y el mapa con el panel. Se han plegado: procedencias y controles metodológicos («Más filtros»), el desglose de huecos («Cobertura y metodología»), y dentro del municipio, artistas, releases, sellos, estadísticas y procedencia.
+
+**Densidad del mapa.** En la vista general se rotulan como mucho 7 municipios (capitales primero, luego densidad); al ampliar a un territorio, 18. Lo seleccionado y lo apuntado siempre. Los territorios bajan a fondo (17 % de opacidad). La procedencia deja de codificarse en el mapa salvo que se activen datos débiles, y el lima queda para selección y estado activo.
+
+**Estructura y medidas.** Cabecera compacta solo en MAPA (sin contadores globales ni firma); mapa 65 % / panel 35 %; el cuerpo mide el alto de la ventana menos las filas visibles, así que mapa y panel entran sin scroll. En móvil, una columna con el municipio bajo el mapa.
+
+**Índice.** `map_index.json` incorpora la cuenta de cada release (2.588 cuentas, con marca de multiartista): permite el escenario D y la sección «Sellos y cuentas» sin cargar `resolutions.json`. Pasa de 125 KB a 209 KB (57 KB con gzip).
+
+**Antes → después (densidad en la primera pantalla, 1440×900):** de 3 filas de filtros con ~45 controles a la vista, 4 cifras de cobertura en franja grande y un panel que obligaba a bajar, a 1 fila con 5 controles, 1 línea de cobertura y el panel completo visible; los rótulos del mapa pasan de ~30 a 7.
+
 ## Propuestas para una fase futura
 
 1. **Ubicación y procedencia en la FICHA** de cada disco, con enlace «ver en el mapa».

@@ -4,9 +4,28 @@ import './Header.css'
 // Contadores SIEMPRE calculados de los datos (decisión 8 de Fase 0),
 // nunca hardcodeados: los mockups arrastran cifras viejas (2.396/1.069).
 
-export function Header({ archive }) {
+// `compacta`: en MAPA la cabecera cede el sitio al mapa (el elemento
+// dominante de esa vista). Mantiene identidad y acceso a SOBRE, pero deja
+// fuera los contadores globales y la firma, que allí competirían con los
+// contadores de cobertura del propio mapa.
+export function Header({ archive, compacta = false }) {
   const years = archive?.years ?? []
   const rango = years.length ? `${years[0]}–${years[years.length - 1]}` : '—'
+
+  if (compacta) {
+    return (
+      <header className="cabecera compacta">
+        <h1 className="logotype">
+          <a href="#/">
+            MAPA EUSKADI<span className="l2">UNDERGROUND</span>
+          </a>
+        </h1>
+        <a className="sobre-link" href="#/sobre">
+          sobre el proyecto
+        </a>
+      </header>
+    )
+  }
 
   return (
     <>

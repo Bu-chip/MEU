@@ -11,16 +11,31 @@
 
 import { filtra } from './busqueda.js'
 
-// Procedencias activables. Cada código agrupa tipos de resolución.
-// `manual` va con las directas: es una decisión humana verificada.
+// Procedencias activables, una por código. El defecto es el «escenario D»
+// de data/locations/reports/multiartist-audit.md: entra todo menos lo que
+// depende de cuentas con varios artistas (probables sellos), porque ahí la
+// ubicación puede ser la del sello y no la del grupo, y menos las pistas de
+// tag, que no son evidencia de ubicación. Nada se borra: se activa aquí.
 export const PROCEDENCIAS = [
-  { code: 'd', tipos: ['direct', 'manual'], label: 'directas', ayuda: 'Bandcamp, esta release (o decisión manual)' },
-  { code: 'c', tipos: ['same_account'], label: 'misma cuenta', ayuda: 'Bandcamp, otra release de la misma cuenta' },
-  { code: 'a', tipos: ['artist_inferred'], label: 'inferidas por artista', ayuda: 'el mismo artista en su propia cuenta' },
-  { code: 't', tipos: ['tag_hint'], label: 'pistas de tag', ayuda: 'solo un tag geográfico: la más débil' },
+  { code: 'd', label: 'directas', ayuda: 'Bandcamp, en esta misma release (o decisión manual)' },
+  { code: 'c', label: 'misma cuenta', ayuda: 'otra release de la misma cuenta, de un solo artista' },
+  { code: 'a', label: 'inferidas por artista', ayuda: 'el mismo artista en sus cuentas propias' },
+  { code: 'm', label: 'cuentas multiartista', ayuda: 'otra release de una cuenta con varios artistas (probable sello): puede ser la ciudad del sello' },
+  { code: 't', label: 'pistas de tag', ayuda: 'solo un tag geográfico: la evidencia más débil' },
 ]
 export const UBIC_DEFECTO = 'dca'
-export const TIPOS_FIABLES = new Set(['direct', 'manual', 'same_account'])
+export const FLAG_MULTIARTISTA = 1
+export const FLAG_CONFLICTO = 2
+
+// Procedencia de una release ya resuelta, a partir de su tipo y sus flags.
+export function procedenciaDe(g) {
+  if (!g || g.place < 0) return null
+  if (g.type === 'direct' || g.type === 'manual') return 'd'
+  if (g.type === 'same_account') return g.flags & FLAG_MULTIARTISTA ? 'm' : 'c'
+  if (g.type === 'artist_inferred') return 'a'
+  if (g.type === 'tag_hint') return 't'
+  return null
+}
 
 const normUbic = (s) =>
   PROCEDENCIAS.map((p) => p.code)
@@ -87,12 +102,16 @@ export function preparaGeo(index) {
       type: index.types[r.type[k]],
       region: r.region[k] >= 0 ? index.regions[r.region[k]] : null,
       flags: r.flags[k],
+      account: r.account ? r.account[k] : -1,
     })
   }
   geo = {
     places,
     placeById: new Map(places.map((p) => [p.id, p])),
     rel,
+    // [{id, sello}] por índice: el panel lista los sellos de un municipio
+    // sin cargar resolutions.json.
+    accounts: (index.accounts ?? []).map(([id, sello]) => ({ id, sello: Boolean(sello) })),
     grid: index.grid,
     territories: index.territories,
     geoTags: new Set(index.geo_tags ?? []),
@@ -106,25 +125,25 @@ export function preparaGeo(index) {
 // Reparte releases ya filtradas entre municipios y huecos. Cuenta todo:
 // nada se oculta sin decirlo.
 export function agrega(rows, geo, { ubic = UBIC_DEFECTO, territorio = null } = {}) {
-  const activos = new Set(PROCEDENCIAS.filter((p) => ubic.includes(p.code)).flatMap((p) => p.tipos))
+  const activas = new Set([...(ubic ?? '')])
   const porLugar = new Map()
   const cuenta = {
     filtradas: rows.length,
     localizadas: 0,
     otroTerritorio: 0,
-    ocultasProcedencia: 0,
+    excluidas: 0,
     region_only: 0,
     outside_scope: 0,
     unresolved: 0,
-    tag_hint: 0,
   }
+  for (const p of PROCEDENCIAS) cuenta[p.code] = 0
   for (const a of rows) {
     const g = geo.rel.get(a.id)
-    const type = g?.type ?? 'unresolved'
-    if (g && g.place >= 0) {
-      if (!activos.has(type)) {
-        if (type === 'tag_hint') cuenta.tag_hint++
-        else cuenta.ocultasProcedencia++
+    const proc = procedenciaDe(g)
+    if (proc) {
+      cuenta[proc]++
+      if (!activas.has(proc)) {
+        cuenta.excluidas++
         continue
       }
       const p = geo.places[g.place]
@@ -136,13 +155,14 @@ export function agrega(rows, geo, { ubic = UBIC_DEFECTO, territorio = null } = {
       const lista = porLugar.get(g.place)
       if (lista) lista.push(a)
       else porLugar.set(g.place, [a])
-    } else if (type === 'region_only' || type === 'outside_scope') {
-      cuenta[type]++
+    } else if (g && (g.type === 'region_only' || g.type === 'outside_scope')) {
+      cuenta[g.type]++
     } else {
       cuenta.unresolved++
     }
   }
-  cuenta.sinMunicipio = cuenta.region_only + cuenta.outside_scope + cuenta.unresolved + cuenta.tag_hint
+  cuenta.sinMunicipio = cuenta.region_only + cuenta.outside_scope + cuenta.unresolved
+  cuenta.fuera = cuenta.sinMunicipio + cuenta.excluidas
   return { porLugar, cuenta }
 }
 
@@ -150,6 +170,34 @@ export function rankingLugares(porLugar, geo) {
   return [...porLugar.entries()]
     .map(([i, rows]) => ({ lugar: geo.places[i], n: rows.length, rows }))
     .sort((x, y) => y.n - x.n || x.lugar.name.localeCompare(y.lugar.name))
+}
+
+// ── Etiquetas del mapa ────────────────────────────────────────────────
+
+// En la vista de Euskal Herria el mapa no rotula 40 municipios: solo las
+// cabeceras de territorio, lo seleccionado/apuntado y los más densos que
+// quepan. Al ampliar a un territorio (o al filtrar por él) caben más.
+export const CAPITALES = ['bilbo', 'donostia', 'gasteiz', 'irunea', 'baiona']
+
+export function etiquetasPrioritarias(marcas, { max = 7, seleccion = null, hover = null } = {}) {
+  const por = (id) => marcas.find((m) => m.lugar.id === id)
+  const conDiscos = marcas
+    .filter((m) => m.n > 0)
+    .sort((a, b) => b.n - a.n || a.lugar.id.localeCompare(b.lugar.id))
+  const orden = [
+    por(seleccion),
+    por(hover),
+    ...CAPITALES.map(por).filter((m) => m && m.n > 0),
+    ...conDiscos,
+  ]
+  const visto = new Set()
+  const out = []
+  for (const m of orden) {
+    if (!m || visto.has(m.lugar.id) || out.length >= max) continue
+    visto.add(m.lugar.id)
+    out.push(m)
+  }
+  return out
 }
 
 // ── Métricas del panel ────────────────────────────────────────────────
@@ -203,14 +251,26 @@ const fold = (s) =>
 
 export function resumenLugar(rows, geo) {
   const porTipo = {}
+  const porProcedencia = {}
+  const cuentas = new Map()
   let sello = 0
+  let conflictos = 0
   let min = null
   let max = null
   const artistas = new Map()
   for (const a of rows) {
     const g = geo.rel.get(a.id)
     porTipo[g.type] = (porTipo[g.type] ?? 0) + 1
-    if (g.flags & 1) sello++
+    const proc = procedenciaDe(g)
+    if (proc) porProcedencia[proc] = (porProcedencia[proc] ?? 0) + 1
+    if (g.flags & FLAG_MULTIARTISTA) sello++
+    if (g.flags & FLAG_CONFLICTO) conflictos++
+    const acc = geo.accounts[g.account]
+    if (acc) {
+      const prev = cuentas.get(acc.id)
+      if (prev) prev.n++
+      else cuentas.set(acc.id, { ...acc, n: 1 })
+    }
     if (a.year) {
       min = min === null ? a.year : Math.min(min, a.year)
       max = max === null ? a.year : Math.max(max, a.year)
@@ -223,9 +283,12 @@ export function resumenLugar(rows, geo) {
   return {
     releases: rows.length,
     artistas: [...artistas.values()].sort((x, y) => y.n - x.n || x.nombre.localeCompare(y.nombre)),
+    cuentas: [...cuentas.values()].sort((x, y) => y.n - x.n || x.id.localeCompare(y.id)),
     anios: min === null ? null : [min, max],
     porTipo,
+    porProcedencia,
     sello,
+    conflictos,
   }
 }
 

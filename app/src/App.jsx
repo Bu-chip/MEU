@@ -42,7 +42,8 @@ export default function App() {
   const Pagina = PAGINAS[page]
   return (
     <>
-      <Header archive={archive} />
+      {/* MAPA usa la cabecera compacta: el mapa manda en esa vista. */}
+      <Header archive={archive} compacta={page === 'mapa'} />
       <Puertas activa={page} />
       <Pagina route={route} archive={archive} />
     </>
