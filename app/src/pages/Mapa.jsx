@@ -728,6 +728,9 @@ function Hoja({ estado, setEstado, resumen, children }) {
       >
         <span className="asa" />
         <span className="resumen">{resumen}</span>
+        <span className="flecha-hoja" aria-hidden="true">
+          {estado === 'expandida' ? '▾' : '▴'}
+        </span>
       </div>
       <div className="hoja-contenido">{children}</div>
     </section>
@@ -971,11 +974,19 @@ export function Mapa({ route, archive }) {
   }
 
   // Línea de la hoja plegada: dice qué hay debajo sin abrirla.
-  const resumenHoja = lugarSel
-    ? `${lugarSel.name} · ${formato((porLugar.get(lugarSel.i) ?? []).length)} releases`
-    : filtros.tag
-      ? `${filtros.tag} · ${formato(cuenta.localizadas)} releases en ${ranking.length} municipios`
-      : `${formato(ranking.length)} municipios · toca uno en el mapa`
+  const resumenHoja = lugarSel ? (
+    <>
+      <b>{lugarSel.name}</b> · {formato((porLugar.get(lugarSel.i) ?? []).length)} releases
+    </>
+  ) : filtros.tag ? (
+    <>
+      <b>{filtros.tag}</b> · {formato(cuenta.localizadas)} releases en {ranking.length} municipios
+    </>
+  ) : (
+    <>
+      <b>{formato(ranking.length)} municipios</b> · toca uno en el mapa
+    </>
+  )
 
   const barraFiltros = (
     <div className="barra" ref={barraRef}>
