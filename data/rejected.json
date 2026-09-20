@@ -1236,6 +1236,16 @@
             "reason": "edición duplicada del mismo disco; entra https://untalasalsa.bandcamp.com/album/yonki-del-bajo",
             "date": "2026-07-13",
             "pr": 23
+        },
+        "pic22.bandcamp.com/album/cvc-2": {
+            "reason": "edición duplicada del mismo disco; entra https://pic22.bandcamp.com/album/cvc",
+            "date": "2026-09-20",
+            "pr": 65
+        },
+        "ice-kolari.bandcamp.com/album/eterno-domingo": {
+            "reason": "mismo disco ya en el canónico (id 1871) en otra edición; sello vs sello",
+            "date": "2026-09-20",
+            "pr": 66
         }
     }
 }

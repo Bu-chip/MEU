@@ -1,0 +1,27 @@
+{
+    "meta": {
+        "que_es": "Pendientes de revisión manual tras el merge de candidates/2026-08. No bloquean el canónico.",
+        "date": "2026-09-20",
+        "pr": 65
+    },
+    "sello_vs_sello": [],
+    "internos_ambiguos": [
+        {
+            "artist": "PIC22",
+            "title": "CvC",
+            "elegido": "https://pic22.bandcamp.com/album/cvc",
+            "alternativas": [
+                "https://pic22.bandcamp.com/album/cvc-2"
+            ]
+        }
+    ],
+    "retenidos": [
+        {
+            "artist": "Clawfinger",
+            "title": "Biggest & the Best",
+            "url": "https://rap-rockfusion.bandcamp.com/album/biggest-the-best",
+            "cuenta": "rap-rockfusion",
+            "nota": "cuenta ajena al artista, sin ubicación y sin señal vasca propia: ni entra ni se rechaza, pendiente de revisión"
+        }
+    ]
+}

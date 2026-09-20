@@ -66,10 +66,10 @@ Cada release del canónico tiene exactamente un tipo. Si hay varias evidencias, 
 
 La resolución **no cambia** según lo que se dibuje: `resolutions.json` y la auditoría son siempre las mismas. Lo que cambia es qué entra en el mapa.
 
-Por defecto entran `d + c + a` (**5.904 releases, 78 % del catálogo, 104 municipios**) y quedan fuera `m` (misma cuenta, pero con varios artistas) y `t` (pistas de tag). El motivo está medido en `data/locations/reports/multiartist-audit.md`:
+Por defecto entran `d + c + a` (**5.969 releases, 78 % del catálogo, 104 municipios**) y quedan fuera `m` (misma cuenta, pero con varios artistas) y `t` (pistas de tag). El motivo está medido en `data/locations/reports/multiartist-audit.md`:
 
-- Incluirlo todo (escenario A) daba 6.522, pero 618 de esas ubicaciones venían de cuentas con varios artistas, casi todas en Bilbo (612): eran la ciudad del sello, no la del grupo.
-- Quedarse solo con las directas (escenario B) daba 4.953, y hundía Bilbo de 2.440 a 941 por un artefacto del método: el scrapeo visitó **una ficha por cuenta**, así que el resto de releases de una cuenta de un solo artista quedaron como `same_account` siendo el mismo dato.
+- Incluirlo todo (escenario A) da 6.587, pero 618 de esas ubicaciones vienen de cuentas con varios artistas, casi todas en Bilbo: son la ciudad del sello, no la del grupo.
+- Quedarse solo con las directas (escenario B) da 5.018, y hunde Bilbo por un artefacto del método: el scrapeo visitó **una ficha por cuenta**, así que el resto de releases de una cuenta de un solo artista quedaron como `same_account` siendo el mismo dato.
 - El escenario D quita solo lo dudoso: Bilbo queda en 1.828.
 
 Se activan en la propia página, en **Más filtros → Ubicaciones incluidas**, o por URL con `ubic` (por ejemplo `#/mapa?ubic=dcamt`). Al activarlas, el mapa dibuja con trazo discontinuo los municipios que **solo** tienen ese tipo de evidencia, y la línea de cobertura y el desplegable «Cobertura y metodología» actualizan sus cifras.

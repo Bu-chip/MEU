@@ -10,6 +10,7 @@
       311245285,
       332086709,
       380705629,
+      387483699,
       402879088,
       407361669,
       413052054,
@@ -192,6 +193,7 @@
       "Urgull",
       "Usura",
       "Utopie",
+      "Uzu",
       "Yunk",
       "ZarataZarautz",
       "Zikin"
@@ -926,6 +928,14 @@
         ]
       },
       {
+        "display": "Uzu",
+        "fold": "uzu",
+        "n_discos": 1,
+        "variantes": [
+          "Uzu"
+        ]
+      },
+      {
         "display": "Yunk",
         "fold": "yunk",
         "n_discos": 1,
@@ -955,8 +965,8 @@
     ],
     "lexico_subtipo": null,
     "marcadores": [],
-    "n_artistas": 94,
-    "n_discos": 97,
+    "n_artistas": 95,
+    "n_discos": 98,
     "origen": "umbral",
     "url": "https://zaratazarautz.bandcamp.com"
   },
@@ -9273,6 +9283,79 @@
     "url": "https://caballitorecords.bandcamp.com"
   },
   {
+    "account_id": "dungeonlordrecords",
+    "album_ids": [
+      91059845,
+      228248310,
+      1041185274,
+      1247743733,
+      1958717964,
+      2423878300,
+      2468042490,
+      3227446167,
+      3443702487
+    ],
+    "artistas": [
+      "Budrum & Filthy Peasant",
+      "Filthy Peasant",
+      "Grim Keep",
+      "Malefic Rapture",
+      "Sublime Solitude"
+    ],
+    "clusters": [
+      {
+        "display": "Budrum & Filthy Peasant",
+        "fold": "budrumfilthypeasant",
+        "n_discos": 1,
+        "variantes": [
+          "Budrum & Filthy Peasant"
+        ]
+      },
+      {
+        "display": "Filthy Peasant",
+        "fold": "filthypeasant",
+        "n_discos": 2,
+        "variantes": [
+          "Filthy Peasant"
+        ]
+      },
+      {
+        "display": "Grim Keep",
+        "fold": "grimkeep",
+        "n_discos": 2,
+        "variantes": [
+          "Grim Keep"
+        ]
+      },
+      {
+        "display": "Malefic Rapture",
+        "fold": "maleficrapture",
+        "n_discos": 1,
+        "variantes": [
+          "Malefic Rapture"
+        ]
+      },
+      {
+        "display": "Sublime Solitude",
+        "fold": "sublimesolitude",
+        "n_discos": 3,
+        "variantes": [
+          "Sublime Solitude"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 5,
+    "n_discos": 9,
+    "origen": "ambos",
+    "url": "https://dungeonlordrecords.bandcamp.com"
+  },
+  {
     "account_id": "edervxga",
     "album_ids": [
       248820476,
@@ -9341,78 +9424,6 @@
     "n_discos": 9,
     "origen": "umbral",
     "url": "https://edervxga.bandcamp.com"
-  },
-  {
-    "account_id": "dungeonlordrecords",
-    "album_ids": [
-      91059845,
-      1041185274,
-      1247743733,
-      1958717964,
-      2423878300,
-      2468042490,
-      3227446167,
-      3443702487
-    ],
-    "artistas": [
-      "Budrum & Filthy Peasant",
-      "Filthy Peasant",
-      "Grim Keep",
-      "Malefic Rapture",
-      "Sublime Solitude"
-    ],
-    "clusters": [
-      {
-        "display": "Budrum & Filthy Peasant",
-        "fold": "budrumfilthypeasant",
-        "n_discos": 1,
-        "variantes": [
-          "Budrum & Filthy Peasant"
-        ]
-      },
-      {
-        "display": "Filthy Peasant",
-        "fold": "filthypeasant",
-        "n_discos": 1,
-        "variantes": [
-          "Filthy Peasant"
-        ]
-      },
-      {
-        "display": "Grim Keep",
-        "fold": "grimkeep",
-        "n_discos": 2,
-        "variantes": [
-          "Grim Keep"
-        ]
-      },
-      {
-        "display": "Malefic Rapture",
-        "fold": "maleficrapture",
-        "n_discos": 1,
-        "variantes": [
-          "Malefic Rapture"
-        ]
-      },
-      {
-        "display": "Sublime Solitude",
-        "fold": "sublimesolitude",
-        "n_discos": 3,
-        "variantes": [
-          "Sublime Solitude"
-        ]
-      }
-    ],
-    "flags": [],
-    "lexico_subtipo": null,
-    "marcadores": [
-      "records",
-      "record"
-    ],
-    "n_artistas": 5,
-    "n_discos": 8,
-    "origen": "ambos",
-    "url": "https://dungeonlordrecords.bandcamp.com"
   },
   {
     "account_id": "monocat7",
@@ -10652,6 +10663,121 @@
     "n_discos": 4,
     "origen": "umbral",
     "url": "https://isuo.bandcamp.com"
+  },
+  {
+    "account_id": "queimada-circuit-records",
+    "album_ids": [
+      595790429,
+      1400213486,
+      2373774624,
+      3303771169
+    ],
+    "artistas": [
+      "555 Kables",
+      "Melissa B",
+      "buchi.buchip",
+      "cuerpo pensante"
+    ],
+    "clusters": [
+      {
+        "display": "555 Kables",
+        "fold": "555kables",
+        "n_discos": 1,
+        "variantes": [
+          "555 Kables"
+        ]
+      },
+      {
+        "display": "Melissa B",
+        "fold": "melissab",
+        "n_discos": 1,
+        "variantes": [
+          "Melissa B"
+        ]
+      },
+      {
+        "display": "buchi.buchip",
+        "fold": "buchibuchip",
+        "n_discos": 1,
+        "variantes": [
+          "buchi.buchip"
+        ]
+      },
+      {
+        "display": "cuerpo pensante",
+        "fold": "cuerpopensante",
+        "n_discos": 1,
+        "variantes": [
+          "cuerpo pensante"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [
+      "records",
+      "record"
+    ],
+    "n_artistas": 4,
+    "n_discos": 4,
+    "origen": "ambos",
+    "url": "https://queimada-circuit-records.bandcamp.com"
+  },
+  {
+    "account_id": "samelevel",
+    "album_ids": [
+      1581754196,
+      2568623108,
+      3325552092,
+      3950594939
+    ],
+    "artistas": [
+      "Inshore",
+      "Inshore, Costin Rp",
+      "Inshore, Inigo Lunani",
+      "Inshore, Javier Ho"
+    ],
+    "clusters": [
+      {
+        "display": "Inshore",
+        "fold": "inshore",
+        "n_discos": 1,
+        "variantes": [
+          "Inshore"
+        ]
+      },
+      {
+        "display": "Inshore, Costin Rp",
+        "fold": "inshorecostinrp",
+        "n_discos": 1,
+        "variantes": [
+          "Inshore, Costin Rp"
+        ]
+      },
+      {
+        "display": "Inshore, Inigo Lunani",
+        "fold": "inshoreinigolunani",
+        "n_discos": 1,
+        "variantes": [
+          "Inshore, Inigo Lunani"
+        ]
+      },
+      {
+        "display": "Inshore, Javier Ho",
+        "fold": "inshorejavierho",
+        "n_discos": 1,
+        "variantes": [
+          "Inshore, Javier Ho"
+        ]
+      }
+    ],
+    "flags": [],
+    "lexico_subtipo": null,
+    "marcadores": [],
+    "n_artistas": 4,
+    "n_discos": 4,
+    "origen": "umbral",
+    "url": "https://samelevel.bandcamp.com"
   },
   {
     "account_id": "sustraiakrecords",
@@ -12407,55 +12533,6 @@
     "url": "https://moimoicollectif.bandcamp.com"
   },
   {
-    "account_id": "queimada-circuit-records",
-    "album_ids": [
-      1400213486,
-      2373774624,
-      3303771169
-    ],
-    "artistas": [
-      "555 Kables",
-      "buchi.buchip",
-      "cuerpo pensante"
-    ],
-    "clusters": [
-      {
-        "display": "555 Kables",
-        "fold": "555kables",
-        "n_discos": 1,
-        "variantes": [
-          "555 Kables"
-        ]
-      },
-      {
-        "display": "buchi.buchip",
-        "fold": "buchibuchip",
-        "n_discos": 1,
-        "variantes": [
-          "buchi.buchip"
-        ]
-      },
-      {
-        "display": "cuerpo pensante",
-        "fold": "cuerpopensante",
-        "n_discos": 1,
-        "variantes": [
-          "cuerpo pensante"
-        ]
-      }
-    ],
-    "flags": [],
-    "lexico_subtipo": null,
-    "marcadores": [
-      "records",
-      "record"
-    ],
-    "n_artistas": 3,
-    "n_discos": 3,
-    "origen": "ambos",
-    "url": "https://queimada-circuit-records.bandcamp.com"
-  },
-  {
     "account_id": "rolangarces",
     "album_ids": [
       2593910670,
@@ -12502,52 +12579,6 @@
     "n_discos": 3,
     "origen": "umbral",
     "url": "https://rolangarces.bandcamp.com"
-  },
-  {
-    "account_id": "samelevel",
-    "album_ids": [
-      1581754196,
-      2568623108,
-      3325552092
-    ],
-    "artistas": [
-      "Inshore",
-      "Inshore, Costin Rp",
-      "Inshore, Javier Ho"
-    ],
-    "clusters": [
-      {
-        "display": "Inshore",
-        "fold": "inshore",
-        "n_discos": 1,
-        "variantes": [
-          "Inshore"
-        ]
-      },
-      {
-        "display": "Inshore, Costin Rp",
-        "fold": "inshorecostinrp",
-        "n_discos": 1,
-        "variantes": [
-          "Inshore, Costin Rp"
-        ]
-      },
-      {
-        "display": "Inshore, Javier Ho",
-        "fold": "inshorejavierho",
-        "n_discos": 1,
-        "variantes": [
-          "Inshore, Javier Ho"
-        ]
-      }
-    ],
-    "flags": [],
-    "lexico_subtipo": null,
-    "marcadores": [],
-    "n_artistas": 3,
-    "n_discos": 3,
-    "origen": "umbral",
-    "url": "https://samelevel.bandcamp.com"
   },
   {
     "account_id": "thecovenantband",
@@ -12880,6 +12911,7 @@
       2504638066,
       2508873286,
       2551805757,
+      2633930362,
       2658634675,
       2675519908,
       2770870287,
@@ -12909,7 +12941,7 @@
       {
         "display": "WLDV",
         "fold": "wldv",
-        "n_discos": 28,
+        "n_discos": 29,
         "variantes": [
           "WLDV"
         ]
@@ -12923,7 +12955,7 @@
     "lexico_subtipo": null,
     "marcadores": [],
     "n_artistas": 2,
-    "n_discos": 31,
+    "n_discos": 32,
     "origen": "umbral",
     "url": "https://wldv.bandcamp.com"
   },
@@ -13828,6 +13860,49 @@
     "n_discos": 7,
     "origen": "umbral",
     "url": "https://phlgz.bandcamp.com"
+  },
+  {
+    "account_id": "technoprostitute",
+    "album_ids": [
+      469981767,
+      1186116246,
+      1431258127,
+      1895547396,
+      3597315173,
+      3755797848,
+      3811935645
+    ],
+    "artistas": [
+      "mailu",
+      "qzn"
+    ],
+    "clusters": [
+      {
+        "display": "mailu",
+        "fold": "mailu",
+        "n_discos": 4,
+        "variantes": [
+          "mailu"
+        ]
+      },
+      {
+        "display": "qzn",
+        "fold": "qzn",
+        "n_discos": 3,
+        "variantes": [
+          "qzn"
+        ]
+      }
+    ],
+    "flags": [
+      "borde_2artistas"
+    ],
+    "lexico_subtipo": null,
+    "marcadores": [],
+    "n_artistas": 2,
+    "n_discos": 7,
+    "origen": "umbral",
+    "url": "https://technoprostitute.bandcamp.com"
   },
   {
     "account_id": "drmugre",
@@ -15779,6 +15854,48 @@
     "url": "https://jupiterjon.bandcamp.com"
   },
   {
+    "account_id": "kalipotxo",
+    "album_ids": [
+      739345812,
+      1318770188,
+      3455477994
+    ],
+    "artistas": [
+      "Kalipotxo",
+      "NKO, Krivex, Kalipotxo"
+    ],
+    "clusters": [
+      {
+        "display": "Kalipotxo",
+        "fold": "kalipotxo",
+        "n_discos": 2,
+        "variantes": [
+          "Kalipotxo",
+          "kalipotxo"
+        ]
+      },
+      {
+        "display": "NKO, Krivex, Kalipotxo",
+        "fold": "nkokrivexkalipotxo",
+        "n_discos": 1,
+        "variantes": [
+          "NKO, Krivex, Kalipotxo"
+        ]
+      }
+    ],
+    "flags": [
+      "borde_2artistas",
+      "nombre_anidado",
+      "posible_autocuenta"
+    ],
+    "lexico_subtipo": null,
+    "marcadores": [],
+    "n_artistas": 2,
+    "n_discos": 3,
+    "origen": "umbral",
+    "url": "https://kalipotxo.bandcamp.com"
+  },
+  {
     "account_id": "kamorrah",
     "album_ids": [
       257457752,
@@ -17541,46 +17658,6 @@
     "n_discos": 2,
     "origen": "umbral",
     "url": "https://jonminer.bandcamp.com"
-  },
-  {
-    "account_id": "kalipotxo",
-    "album_ids": [
-      1318770188,
-      3455477994
-    ],
-    "artistas": [
-      "NKO, Krivex, Kalipotxo",
-      "kalipotxo"
-    ],
-    "clusters": [
-      {
-        "display": "NKO, Krivex, Kalipotxo",
-        "fold": "nkokrivexkalipotxo",
-        "n_discos": 1,
-        "variantes": [
-          "NKO, Krivex, Kalipotxo"
-        ]
-      },
-      {
-        "display": "kalipotxo",
-        "fold": "kalipotxo",
-        "n_discos": 1,
-        "variantes": [
-          "kalipotxo"
-        ]
-      }
-    ],
-    "flags": [
-      "borde_2artistas",
-      "nombre_anidado",
-      "posible_autocuenta"
-    ],
-    "lexico_subtipo": null,
-    "marcadores": [],
-    "n_artistas": 2,
-    "n_discos": 2,
-    "origen": "umbral",
-    "url": "https://kalipotxo.bandcamp.com"
   },
   {
     "account_id": "knekelput",
