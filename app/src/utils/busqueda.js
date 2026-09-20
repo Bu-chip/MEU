@@ -47,11 +47,16 @@ function getHaystacks(archive) {
   return hay
 }
 
-export function filtra(archive, { artista, genero, anio, tag, q }) {
+// Filtros compartidos por ARCHIVO y MAPA (misma semántica en ambas vistas).
+// `desde`/`hasta` acotan por año de publicación, inclusivos; las releases
+// sin año quedan fuera en cuanto hay rango, igual que con `anio`.
+export function filtra(archive, { artista, genero, anio, desde, hasta, tag, q }) {
   let rows = archive.albums
   if (artista) rows = rows.filter((r) => r.artist === artista)
   if (genero) rows = rows.filter((r) => r.genre === genero)
   if (anio) rows = rows.filter((r) => r.year === anio)
+  if (desde) rows = rows.filter((r) => r.year && r.year >= desde)
+  if (hasta) rows = rows.filter((r) => r.year && r.year <= hasta)
   if (tag) rows = rows.filter((r) => r.tags.includes(tag))
   if (q && q.trim()) {
     const { qn, equivalentes } = expandeConsulta(q)

@@ -1,0 +1,322 @@
+{
+  "accounts_with_multiple_values": {},
+  "artists_total": 3422,
+  "artists_with_location": 2466,
+  "contradictory_releases": [],
+  "files": {
+    "candidates_2026-07.json": 5483,
+    "candidates_2026-08.json": 29,
+    "candidates_2026-09.json": 76,
+    "discovery_state_pending.json": 45
+  },
+  "observation_keys_total": 5605,
+  "releases_checked_without_location": 124,
+  "releases_with_direct_location": 5181,
+  "releases_with_observation": 5305,
+  "releases_without_information": 2263,
+  "sources": [
+    {
+      "observations": 5483,
+      "provenance": "data/candidates_2026-07.json",
+      "target": "candidates_2026-07.json",
+      "with_value": 5352
+    },
+    {
+      "observations": 5483,
+      "provenance": "git:7cff6af83c:data/candidates_2026-07.json",
+      "target": "candidates_2026-07.json",
+      "with_value": 5352
+    },
+    {
+      "observations": 76,
+      "provenance": "git:7cff6af83c:data/candidates_2026-09.json",
+      "target": "candidates_2026-09.json",
+      "with_value": 70
+    },
+    {
+      "observations": 29,
+      "provenance": "git:0b54208369:data/candidates_2026-08.json",
+      "target": "candidates_2026-08.json",
+      "with_value": 28
+    },
+    {
+      "observations": 45,
+      "provenance": "git:0b54208369:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 1
+    },
+    {
+      "observations": 45,
+      "provenance": "git:7f9e7f9309:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 1
+    },
+    {
+      "observations": 45,
+      "provenance": "git:06683c45b9:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 1
+    },
+    {
+      "observations": 45,
+      "provenance": "git:98f6b3ea7e:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 1
+    },
+    {
+      "observations": 45,
+      "provenance": "git:0fbb0741fd:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 1
+    },
+    {
+      "observations": 4954,
+      "provenance": "git:46cfbfe284:data/candidates_2026-07.json",
+      "target": "candidates_2026-07.json",
+      "with_value": 4827
+    },
+    {
+      "observations": 574,
+      "provenance": "git:099099e4ac:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 526
+    },
+    {
+      "observations": 4206,
+      "provenance": "git:cec6971c02:data/candidates_2026-07.json",
+      "target": "candidates_2026-07.json",
+      "with_value": 4085
+    },
+    {
+      "observations": 1322,
+      "provenance": "git:dce291f90c:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 1268
+    },
+    {
+      "observations": 3448,
+      "provenance": "git:a38f414b51:data/candidates_2026-07.json",
+      "target": "candidates_2026-07.json",
+      "with_value": 3340
+    },
+    {
+      "observations": 2080,
+      "provenance": "git:ff8d81bdb6:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 2013
+    },
+    {
+      "observations": 2680,
+      "provenance": "git:86eca2fa4d:data/candidates_2026-07.json",
+      "target": "candidates_2026-07.json",
+      "with_value": 2577
+    },
+    {
+      "observations": 2848,
+      "provenance": "git:faa979a0be:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 2776
+    },
+    {
+      "observations": 1905,
+      "provenance": "git:af8e83acee:data/candidates_2026-07.json",
+      "target": "candidates_2026-07.json",
+      "with_value": 1810
+    },
+    {
+      "observations": 3622,
+      "provenance": "git:e01962a51f:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 3542
+    },
+    {
+      "observations": 1123,
+      "provenance": "git:a770d03526:data/candidates_2026-07.json",
+      "target": "candidates_2026-07.json",
+      "with_value": 1035
+    },
+    {
+      "observations": 4404,
+      "provenance": "git:6ac84e3af6:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 4317
+    },
+    {
+      "observations": 332,
+      "provenance": "git:640106cace:data/candidates_2026-07.json",
+      "target": "candidates_2026-07.json",
+      "with_value": 317
+    },
+    {
+      "observations": 5195,
+      "provenance": "git:e6f13fc802:data/discovery_state.json",
+      "target": "discovery_state_pending.json",
+      "with_value": 5035
+    }
+  ],
+  "top_values_in_catalog": [
+    [
+      "Pamplona, Spain",
+      891
+    ],
+    [
+      "Vitoria Gasteiz, Spain",
+      529
+    ],
+    [
+      "Donostia San Sebastian, Spain",
+      474
+    ],
+    [
+      "San Sebastián, Spain",
+      369
+    ],
+    [
+      "Bilbao, Spain",
+      358
+    ],
+    [
+      "Zarautz, Spain",
+      278
+    ],
+    [
+      "PV, Spain",
+      181
+    ],
+    [
+      "Basque Country, Spain",
+      117
+    ],
+    [
+      "Irun, Spain",
+      107
+    ],
+    [
+      "Getxo, Spain",
+      91
+    ],
+    [
+      "Euskadi, Spain",
+      76
+    ],
+    [
+      "France",
+      73
+    ],
+    [
+      "Santurtzi, Spain",
+      73
+    ],
+    [
+      "Donostia San Sebastián, Spain",
+      68
+    ],
+    [
+      "Hondarribia, Spain",
+      59
+    ],
+    [
+      "Errenteria, Spain",
+      58
+    ],
+    [
+      "Barakaldo, Spain",
+      55
+    ],
+    [
+      "Madrid, Spain",
+      50
+    ],
+    [
+      "Arrasate, Spain",
+      48
+    ],
+    [
+      "Leioa, Spain",
+      48
+    ],
+    [
+      "Donostia / San Sebastián, Spain",
+      47
+    ],
+    [
+      "Bermeo, Spain",
+      41
+    ],
+    [
+      "Portugalete, Spain",
+      40
+    ],
+    [
+      "Ondarroa, Spain",
+      39
+    ],
+    [
+      "Oiartzun, Spain",
+      35
+    ],
+    [
+      "Eibar, Spain",
+      34
+    ],
+    [
+      "Tolosa, Spain",
+      34
+    ],
+    [
+      "Andoain, Spain",
+      33
+    ],
+    [
+      "Bilbo, Spain",
+      29
+    ],
+    [
+      "Hernani, Spain",
+      29
+    ],
+    [
+      "Oñati, Spain",
+      29
+    ],
+    [
+      "Spain",
+      29
+    ],
+    [
+      "Guernica, Spain",
+      28
+    ],
+    [
+      "Afghanistan",
+      24
+    ],
+    [
+      "Tudela, Spain",
+      22
+    ],
+    [
+      "Zumaia, Spain",
+      22
+    ],
+    [
+      "Azpeitia, Spain",
+      18
+    ],
+    [
+      "Donostia, Spain",
+      18
+    ],
+    [
+      "Laudio, Spain",
+      18
+    ],
+    [
+      "Bergara, Spain",
+      16
+    ]
+  ],
+  "total_releases": 7568,
+  "unique_values_all_observations": 240,
+  "unique_values_in_catalog": 216
+}

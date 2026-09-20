@@ -109,3 +109,23 @@
   }
   .firma .firma-enlace { margin-left: auto; }
 }
+
+/* Cabecera compacta (MAPA): identidad + SOBRE en una sola línea baja.
+   Los contadores globales viven en la línea de cobertura del mapa. */
+header.cabecera.compacta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 18px 6px;
+}
+header.cabecera.compacta .logotype { font-size: clamp(26px, 4vw, 40px); line-height: .84; }
+header.cabecera.compacta .logotype .l2 { display: inline; margin-left: .28em; }
+header.cabecera.compacta .sobre-link { font-size: 10px; }
+
+/* Móvil: el título compacto cabe en una línea y libera alto para el mapa. */
+@media (max-width: 760px) {
+  header.cabecera.compacta { padding: 6px 10px 5px; gap: 8px; }
+  header.cabecera.compacta .logotype { font-size: clamp(15px, 4.7vw, 22px); line-height: 1; }
+  header.cabecera.compacta .sobre-link { font-size: 9px; white-space: nowrap; }
+}

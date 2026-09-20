@@ -75,3 +75,10 @@ nav.puertas a.marca-usuario .marca-txt {
   text-transform: uppercase;
   border-bottom: 1px solid var(--tinta);
 }
+
+/* Tres puertas (EXPLORAR · ARCHIVO · MAPA) + marca en 375 px: se estrecha
+   el aire lateral para que la barra no desborde la página. */
+@media (max-width: 480px) {
+  nav.puertas a.puerta { padding: 6px 11px 8px 9px; }
+  nav.puertas a.marca-usuario { padding: 0 9px; }
+}

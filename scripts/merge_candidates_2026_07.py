@@ -32,6 +32,9 @@ y muta data/bandcamp_bilbaotags_clean.json + data/rejected.json:
      genre derivado de los tags contra el vocabulario existente del
      canónico (nada inventado; sin señal -> null), y solo los 9 campos
      del esquema (band_location/source_tags/discovered_at se descartan).
+     NOTA (sep 2026): band_location NO se pierde: vive como observación en
+     data/locations/observations/ (scripts/locations.py ingest/recover).
+     Todo merge futuro debe dejar pasar `python3 scripts/locations.py check`.
 
 El fichero de candidatos NO está en main (viaja en la rama del PR #23),
 por eso la ruta se pasa como argumento. Tras este script debe ejecutarse

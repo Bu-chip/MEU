@@ -91,7 +91,21 @@ jobs:
           USED=$(sed -n 's/^requests usados: //p' /tmp/scrape.log | tail -1)
           echo "rc=$rc" >> "$GITHUB_OUTPUT"
           echo "used=${USED:-?}" >> "$GITHUB_OUTPUT"
-          echo "month=${MONTH:-$(date -u +%Y-%m)}" >> "$GITHUB_OUTPUT"
+          MONTH="${MONTH:-$(date -u +%Y-%m)}"
+          echo "month=$MONTH" >> "$GITHUB_OUTPUT"
+          # Ubicaciones: el band_location de cada candidato viaja en el PR
+          # como observación (data/locations/observations/), fuera del
+          # canónico, para que ningún merge posterior pueda perderlo. Se
+          # genera AQUÍ, con el checkout de main: los pasos siguientes
+          # cambian a ramas cuyos scripts pueden ser anteriores.
+          # No bloqueante: un fallo aquí no debe impedir persistir el estado;
+          # la guardia `locations.py check` (workflow Tests) lo detectaría
+          # en el PR.
+          if [ -f "data/candidates_${MONTH}.json" ]; then
+            python3 scripts/locations.py ingest "data/candidates_${MONTH}.json" \
+              && cp "data/locations/observations/candidates_${MONTH}.json" /tmp/obs.json \
+              || echo "::warning::no se pudieron registrar las ubicaciones de los candidatos"
+          fi
 
       # if: always() para conservar el progreso parcial ante timeout/cancel.
       - name: Subir artifact con candidatos y estado
@@ -183,6 +197,7 @@ jobs:
           print(body)
           PY
           cp "$FILE" /tmp/cands.json
+          OBS="data/locations/observations/$(basename "$FILE")"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git fetch origin "$BR"; then
@@ -194,6 +209,12 @@ jobs:
           mkdir -p data
           cp /tmp/cands.json "$FILE"
           cp /tmp/tabla.md "$TABLA"
+          # Observaciones de ubicación generadas en el paso de descubrimiento.
+          if [ -f /tmp/obs.json ]; then
+            mkdir -p "$(dirname "$OBS")"
+            cp /tmp/obs.json "$OBS"
+            git add -f "$OBS"
+          fi
           git add -f "$FILE" "$TABLA"
           PUSHED=0
           if git diff --cached --quiet; then

@@ -1,0 +1,54 @@
+# Tests y guardias de datos. Corre en cada PR (incluidos los PR mensuales
+# de candidatos) y en cada push a main. No despliega nada.
+#
+# La guardia `locations.py check` falla si algún band_location de un
+# fichero de candidatos del árbol no está registrado como observación en
+# data/locations/observations/ (docs/mapa.md): así un merge futuro no
+# puede volver a perder ubicaciones sin que se note.
+name: Tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Tests de Python (capa de localización)
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Guardia de ubicaciones
+        run: python3 scripts/locations.py check
+
+      # Los derivados (normalized, resolutions, auditoría, map_index) son
+      # deterministas: regenerarlos no debe cambiar nada de lo commiteado.
+      - name: Derivados de ubicación al día
+        run: |
+          python3 scripts/locations.py all
+          git diff --exit-code -- data/locations docs/mapa-data-audit.md \
+            || { echo "::error::derivados desactualizados: python3 scripts/locations.py all"; exit 1; }
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Tests de la app (lógica del mapa)
+        working-directory: app
+        run: |
+          npm ci
+          npm test
+          npm run lint

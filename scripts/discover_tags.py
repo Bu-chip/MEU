@@ -26,6 +26,9 @@ el sondeo GATE, ver docs/scraping-method.md):
      única vía de entrada son basquemusic/euskalmusika y cuya location
      es de Iparralde van a la cola `deferred_oleada2` del mismo fichero
      (decisión 2026-07-12: alcance CAV+Navarra en esta oleada).
+  6. UBICACIÓN: cada checkpoint vuelca band_location a
+     data/locations/observations/candidates_YYYY-MM.json (evidencia
+     cruda, unión sin pérdidas). El merge al canónico no la necesita.
 
 Operativa:
   - Presupuesto DURO de requests por pasada (--budget, por defecto 900)
@@ -70,6 +73,10 @@ STATE_FILE = REPO_ROOT / "data" / "discovery_state.json"
 # Normalización de tags compartida con el canónico.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from pipeline import INVISIBLE_CHARS, TAG_RENAMES, TAG_SPLITS  # noqa: E402
+# La ubicación (band_location) se registra además como OBSERVACIÓN en
+# data/locations/observations/, fuera del canónico: así ningún merge
+# posterior puede perderla (docs/mapa.md).
+from locations import ingest_doc as ingest_locations  # noqa: E402
 
 DISCOVER_API = "https://bandcamp.com/api/discover/1/discover_web"
 PAGE_SIZE = 20
@@ -570,6 +577,7 @@ def main():
                           "source_tags, discovered_at; los id se asignan al merge",
             })
             atomic_save(out_file, out)
+            ingest_locations(out, out_file.name, f"data/{out_file.name}")
 
     log(f"Descubrimiento — {len(tags)} tags, presupuesto {args.budget} requests, "
         f"{args.delay_min}-{args.delay_max}s entre requests")

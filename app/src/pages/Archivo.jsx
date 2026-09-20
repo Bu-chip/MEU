@@ -63,6 +63,8 @@ export function Archivo({ route, archive }) {
     q: params.get('q') ?? '',
     genero: params.get('genero'),
     anio: params.get('anio') ? Number(params.get('anio')) : null,
+    desde: params.get('desde') ? Number(params.get('desde')) : null,
+    hasta: params.get('hasta') ? Number(params.get('hasta')) : null,
     tag: params.get('tag'),
     artista: params.get('artista'),
   }
@@ -102,7 +104,13 @@ export function Archivo({ route, archive }) {
   const idx = getIndices(archive)
   const efectivos = { ...filtros, q: qLocal }
   const activo = Boolean(
-    qLocal.trim() || filtros.genero || filtros.anio || filtros.tag || filtros.artista,
+    qLocal.trim() ||
+      filtros.genero ||
+      filtros.anio ||
+      filtros.desde ||
+      filtros.hasta ||
+      filtros.tag ||
+      filtros.artista,
   )
 
   const escribeQ = (valor) => {
@@ -119,6 +127,8 @@ export function Archivo({ route, archive }) {
           q: valor,
           genero: p.get('genero'),
           anio: p.get('anio'),
+          desde: p.get('desde'),
+          hasta: p.get('hasta'),
           tag: p.get('tag'),
           artista: p.get('artista'),
         }),
@@ -144,6 +154,10 @@ export function Archivo({ route, archive }) {
   if (filtros.artista) chips.push(['artista: ' + filtros.artista, { artista: null }])
   if (filtros.genero) chips.push(['género: ' + filtros.genero, { genero: null }])
   if (filtros.anio) chips.push(['año: ' + filtros.anio, { anio: null }])
+  if (filtros.desde || filtros.hasta) {
+    const r = `${filtros.desde ?? '…'}–${filtros.hasta ?? '…'}`
+    chips.push(['años: ' + r, { desde: null, hasta: null }])
+  }
   if (filtros.tag) chips.push(['tag: ' + filtros.tag, { tag: null }])
   if (qLocal.trim()) {
     const eq = equivalentes.length ? ' ≈ ' + equivalentes.join(' · ') : ''

@@ -1,0 +1,7 @@
+{
+ "meta": {
+  "note": "Decisiones humanas de ubicación (docs/mapa.md). Mandan sobre toda la evidencia automática y quedan trazadas como resolution type 'manual'. releases: por id del canónico. accounts: por cuenta de Bandcamp (subdominio o custom:host), se aplica a todas sus releases salvo decisión por release. Cada entrada: {place: id de places.json o null, category?: region_only|outside_scope|unresolved, note, decided_at}."
+ },
+ "releases": {},
+ "accounts": {}
+}
