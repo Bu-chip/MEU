@@ -10,7 +10,7 @@ Bandcamp — a comprar la música y apoyar a quien la hace.
 
 ## Estado
 
-- **Catálogo:** 7.568 publicaciones · 3.572 artistas · 5.537 tags · 42 años.
+- **Catálogo:** 7.637 publicaciones · 3.634 artistas · 5.575 tags · 44 años.
 - **Fuente de verdad:** [`data/bandcamp_bilbaotags_clean.json`](data/) — esquema estricto
   de **9 campos** por álbum: `id`, `artist`, `title`, `genre`, `year`, `tags`, `url`,
   `cover_url`, `album_id`. El CSV de origen no está versionado; **el JSON es la única
@@ -42,7 +42,7 @@ La app son **cuatro puertas a un mismo archivo**:
   años, territorio y procedencia de la ubicación. El mapa domina la página y el detalle
   aparece por capas: panel de municipio (cifras, tags, releases y secciones plegadas de
   artistas, sellos, estadísticas y procedencia) y panel de tag (reparto por municipio).
-  Por defecto dibuja el **escenario D** (5.904 releases): fuera las inferencias desde
+  Por defecto dibuja el **escenario D** (5.969 releases): fuera las inferencias desde
   cuentas con varios artistas y las pistas de tag, activables en «Más filtros». Ver
   [`docs/mapa.md`](docs/mapa.md).
 - **FICHA**: página de disco con portada tratada, reproductor embebido de Bandcamp, tags

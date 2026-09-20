@@ -1,0 +1,61 @@
+{
+    "meta": {
+        "que_es": "Pendientes de revisión manual tras el merge de candidates/2026-09. No bloquean el canónico.",
+        "date": "2026-09-20",
+        "pr": 66
+    },
+    "sello_vs_sello": [
+        {
+            "candidato_url": "https://ice-kolari.bandcamp.com/album/eterno-domingo",
+            "canon_id": 1871,
+            "canon_url": "https://icekolari.bandcamp.com/album/eterno-domingo",
+            "artist": "Ice Kolari",
+            "title": "Eterno Domingo"
+        },
+        {
+            "candidato_url": "https://pic22.bandcamp.com/album/cvc-2",
+            "canon_id": 7612,
+            "canon_url": "https://pic22.bandcamp.com/album/cvc",
+            "artist": "PIC22",
+            "title": "CvC"
+        }
+    ],
+    "internos_ambiguos": [],
+    "retenidos": [
+        {
+            "artist": "Smokey Bastard",
+            "title": "Drunken Sailor",
+            "url": "https://emeraldriotrecords.bandcamp.com/album/drunken-sailor",
+            "cuenta": "emeraldriotrecords",
+            "nota": "cuenta ajena al artista, sin ubicación y sin señal vasca propia: ni entra ni se rechaza, pendiente de revisión"
+        },
+        {
+            "artist": "Two Door Cinema Club",
+            "title": "Tourist History (Deluxe Edition)",
+            "url": "https://essentialindierock.bandcamp.com/album/tourist-history-deluxe-edition",
+            "cuenta": "essentialindierock",
+            "nota": "cuenta ajena al artista, sin ubicación y sin señal vasca propia: ni entra ni se rechaza, pendiente de revisión"
+        },
+        {
+            "artist": "Arctic Monkeys",
+            "title": "Whatever People Say I Am, That's What I'm Not",
+            "url": "https://essentialindierock.bandcamp.com/album/whatever-people-say-i-am-thats-what-im-not",
+            "cuenta": "essentialindierock",
+            "nota": "cuenta ajena al artista, sin ubicación y sin señal vasca propia: ni entra ni se rechaza, pendiente de revisión"
+        },
+        {
+            "artist": "Peter, Paul And Mary",
+            "title": "Puff, the Magic Dragon",
+            "url": "https://folkheritagerecords.bandcamp.com/album/puff-the-magic-dragon",
+            "cuenta": "folkheritagerecords",
+            "nota": "cuenta ajena al artista, sin ubicación y sin señal vasca propia: ni entra ni se rechaza, pendiente de revisión"
+        },
+        {
+            "artist": "Guerouabi",
+            "title": "Kifache hilti",
+            "url": "https://lesessentielsduchabialgrien.bandcamp.com/album/kifache-hilti",
+            "cuenta": "lesessentielsduchabialgrien",
+            "nota": "cuenta ajena al artista, sin ubicación y sin señal vasca propia: ni entra ni se rechaza, pendiente de revisión"
+        }
+    ]
+}

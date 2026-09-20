@@ -4,16 +4,16 @@ Dato derivado del subdominio de `url` en el canónico. Una cuenta entra en el í
 
 ## Totales
 
-- Cuentas totales (con cuenta atribuible): **2588**
-- **Candidatas a sello (total): 320**
-- Candidatos **antes / después** de añadir la vía léxica: **247 → 320** (+73)
-- Discos cubiertos por candidatas: **2405** de 7568 (**31.8%** del catálogo)
+- Cuentas totales (con cuenta atribuible): **2606**
+- **Candidatas a sello (total): 321**
+- Candidatos **antes / después** de añadir la vía léxica: **248 → 321** (+73)
+- Discos cubiertos por candidatas: **2418** de 7637 (**31.7%** del catálogo)
 - Cuentas con dominio propio (`custom:`): **6**
 - Huecos honestos (url vacía o `bandcamp.com`): **5**
 
 ### Desglose por origen de entrada
 
-- `umbral` (solo por >= 2 artistas): **206**
+- `umbral` (solo por >= 2 artistas): **207**
 - `ambos` (umbral **y** marcador léxico): **41**
 - `lexico` (solo por marcador léxico; 1 cluster, antes invisibles): **73**
 
@@ -24,11 +24,11 @@ Dato derivado del subdominio de `url` en el canónico. Una cuenta entra en el í
 >
 > `borde_2artistas` y `nombre_anidado` no aplican con un solo cluster.
 
-Nota histórica: al endurecer la normalización de artistas los candidatos por umbral pasaron de 338 a 247 (dedup dura por clave `fold`).
+Nota histórica: al endurecer la normalización de artistas los candidatos por umbral pasaron de 339 a 248 (dedup dura por clave `fold`).
 
 ### Recuento por flag (dentro de las candidatas)
 
-- `borde_2artistas` (exactamente 2 artistas): **137**
+- `borde_2artistas` (exactamente 2 artistas): **138**
 - `posible_VA` (Various Artists / VA / V.A. / Various): **15**
 - `nombre_anidado` (2 clusters, uno contenido en el otro; featurings/alias): **78**
 - `posible_autocuenta` (id de cuenta ≈ nombre de un artista propio; tiene falsos positivos, revisión humana): **156**
@@ -38,49 +38,52 @@ Nota histórica: al endurecer la normalización de artistas los candidatos por u
 
 | nº discos | nº cuentas |
 | ---: | ---: |
-| 1 | 1330 |
-| 2 | 515 |
-| 3 | 253 |
-| 4 | 160 |
-| 5 | 91 |
-| 6 | 60 |
-| 7 | 30 |
-| 8 | 25 |
-| 9 | 21 |
+| 1 | 1342 |
+| 2 | 518 |
+| 3 | 252 |
+| 4 | 161 |
+| 5 | 92 |
+| 6 | 59 |
+| 7 | 33 |
+| 8 | 24 |
+| 9 | 22 |
 | 10 | 10 |
 | 11 | 13 |
 | 12 | 2 |
-| 13 | 11 |
-| 14 | 4 |
+| 13 | 9 |
+| 14 | 6 |
 | 15 | 7 |
 | 16 | 9 |
 | 17 | 6 |
 | 18 | 1 |
 | 19 | 2 |
 | 20 | 2 |
-| 21 | 2 |
-| 22 | 3 |
+| 21 | 1 |
+| 22 | 4 |
 | 23 | 1 |
 | 24 | 3 |
 | 25 | 3 |
 | 27 | 1 |
 | 29 | 2 |
-| 31 | 2 |
+| 31 | 1 |
+| 32 | 1 |
 | 34 | 2 |
 | 35 | 1 |
 | 40 | 1 |
 | 41 | 1 |
-| 45 | 2 |
+| 45 | 1 |
+| 47 | 1 |
 | 48 | 1 |
-| 49 | 2 |
+| 49 | 1 |
 | 51 | 1 |
 | 52 | 1 |
 | 53 | 1 |
+| 55 | 1 |
 | 57 | 1 |
 | 61 | 1 |
-| 74 | 1 |
 | 82 | 1 |
-| 97 | 1 |
+| 90 | 1 |
+| 98 | 1 |
 | 105 | 1 |
 
 ## Entran solo por léxico
@@ -178,7 +181,7 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 
 | account_id | origen | n_discos | n_artistas | flags |
 | :--- | :--- | ---: | ---: | :--- |
-| zaratazarautz | umbral | 97 | 94 | posible_autocuenta |
+| zaratazarautz | umbral | 98 | 95 | posible_autocuenta |
 | musexindustries | umbral | 105 | 81 | posible_VA |
 | polygonnetwork | umbral | 82 | 51 | — |
 | eclecticreactionsrecords | ambos | 53 | 48 | posible_VA |
@@ -227,8 +230,8 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | ghettogunshotrecords | ambos | 13 | 5 | posible_autocuenta |
 | alonereggaeshop | umbral | 10 | 5 | — |
 | caballitorecords | ambos | 9 | 5 | — |
+| dungeonlordrecords | ambos | 9 | 5 | — |
 | edervxga | umbral | 9 | 5 | — |
-| dungeonlordrecords | ambos | 8 | 5 | — |
 | monocat7 | umbral | 8 | 5 | — |
 | txiltxoko | umbral | 8 | 5 | posible_autocuenta |
 | valdokmusic | umbral | 8 | 5 | posible_autocuenta |
@@ -248,6 +251,8 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | dialectoperiferico | umbral | 4 | 4 | — |
 | infrarecords | ambos | 4 | 4 | — |
 | isuo | umbral | 4 | 4 | posible_autocuenta |
+| queimada-circuit-records | ambos | 4 | 4 | — |
+| samelevel | umbral | 4 | 4 | — |
 | sustraiakrecords | ambos | 4 | 4 | — |
 | xedh | umbral | 4 | 4 | — |
 | zulo8 | umbral | 4 | 4 | — |
@@ -282,15 +287,13 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | javip3z | umbral | 3 | 3 | — |
 | kontra-k | umbral | 3 | 3 | posible_autocuenta |
 | moimoicollectif | umbral | 3 | 3 | — |
-| queimada-circuit-records | ambos | 3 | 3 | — |
 | rolangarces | umbral | 3 | 3 | posible_autocuenta |
-| samelevel | umbral | 3 | 3 | — |
 | thecovenantband | umbral | 3 | 3 | posible_autocuenta |
 | truthtown | umbral | 3 | 3 | — |
 | yojimboi | umbral | 3 | 3 | — |
 | petruskarecords | ambos | 49 | 2 | borde_2artistas, posible_autocuenta |
 | theetherensemble | umbral | 41 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
-| wldv | umbral | 31 | 2 | borde_2artistas, posible_VA, posible_autocuenta |
+| wldv | umbral | 32 | 2 | borde_2artistas, posible_VA, posible_autocuenta |
 | revolutionarybrothers | umbral | 17 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | glyyyydan | umbral | 14 | 2 | borde_2artistas |
 | cosmichyrax | umbral | 13 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
@@ -310,6 +313,7 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | juantxozeberioetxetxipia | umbral | 7 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | naveartificial | umbral | 7 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | phlgz | umbral | 7 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
+| technoprostitute | umbral | 7 | 2 | borde_2artistas |
 | drmugre | umbral | 6 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | gazlimbo | umbral | 6 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | janjodidaactitudnormal | umbral | 6 | 2 | borde_2artistas, posible_autocuenta |
@@ -356,6 +360,7 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | garon | umbral | 3 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | intoxikado | umbral | 3 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | jupiterjon | umbral | 3 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
+| kalipotxo | umbral | 3 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | kamorrah | umbral | 3 | 2 | borde_2artistas, posible_autocuenta |
 | leilasix | umbral | 3 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | lodor | umbral | 3 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
@@ -400,7 +405,6 @@ El único artista capturado no es el sello. No es mala detección: el scraper so
 | javiercpc | umbral | 2 | 2 | borde_2artistas |
 | jgcproducciones | ambos | 2 | 2 | borde_2artistas |
 | jonminer | umbral | 2 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
-| kalipotxo | umbral | 2 | 2 | borde_2artistas, nombre_anidado, posible_autocuenta |
 | knekelput | umbral | 2 | 2 | borde_2artistas |
 | ktcdomesticproductions | umbral | 2 | 2 | borde_2artistas |
 | latxosa | umbral | 2 | 2 | borde_2artistas |
@@ -531,8 +535,8 @@ Candidatas que no disparan ninguna bandera: los sellos más claros.
 | grabacionesviscerales | 6 | 6 |
 | alonereggaeshop | 10 | 5 |
 | caballitorecords | 9 | 5 |
+| dungeonlordrecords | 9 | 5 |
 | edervxga | 9 | 5 |
-| dungeonlordrecords | 8 | 5 |
 | monocat7 | 8 | 5 |
 | unsound-methods | 5 | 5 |
 | raso | 6 | 4 |
@@ -543,6 +547,8 @@ Candidatas que no disparan ninguna bandera: los sellos más claros.
 | crystalmine | 4 | 4 |
 | dialectoperiferico | 4 | 4 |
 | infrarecords | 4 | 4 |
+| queimada-circuit-records | 4 | 4 |
+| samelevel | 4 | 4 |
 | sustraiakrecords | 4 | 4 |
 | xedh | 4 | 4 |
 | zulo8 | 4 | 4 |
@@ -554,8 +560,6 @@ Candidatas que no disparan ninguna bandera: los sellos más claros.
 | gudaridubrecords | 3 | 3 |
 | javip3z | 3 | 3 |
 | moimoicollectif | 3 | 3 |
-| queimada-circuit-records | 3 | 3 |
-| samelevel | 3 | 3 |
 | truthtown | 3 | 3 |
 | yojimboi | 3 | 3 |
 | daimnicagrabaciones | 9 | 1 |
