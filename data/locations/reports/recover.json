@@ -7,7 +7,6 @@
     "candidates_2026-07.json": 5483,
     "candidates_2026-08.json": 29,
     "candidates_2026-09.json": 76,
-    "candidates_smoke.json": 12,
     "discovery_state_pending.json": 45
   },
   "observation_keys_total": 5605,
@@ -153,12 +152,6 @@
       "provenance": "git:e6f13fc802:data/discovery_state.json",
       "target": "discovery_state_pending.json",
       "with_value": 5035
-    },
-    {
-      "observations": 12,
-      "provenance": "git:d7907c783c:data/candidates_smoke.json",
-      "target": "candidates_smoke.json",
-      "with_value": 12
     }
   ],
   "top_values_in_catalog": [

@@ -218,6 +218,11 @@ def historical_blobs():
             if not (name.startswith("candidates_") and name.endswith(".json")) \
                     and name != "discovery_state.json":
                 continue
+            # La prueba de humo del scraper (rama candidates/smoke) no aporta
+            # evidencia propia: sus filas están también en los candidatos del
+            # mes. Se deja fuera para no versionar datos de prueba.
+            if name.startswith("candidates_smoke"):
+                continue
             if blob in seen:
                 continue
             seen.add(blob)

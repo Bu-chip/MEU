@@ -44,7 +44,6 @@ Fuentes: ficheros `data/candidates_*.json` del árbol y todas sus versiones en e
 | `git:6ac84e3af6:data/discovery_state.json` | `discovery_state_pending.json` | 4404 | 4317 |
 | `git:640106cace:data/candidates_2026-07.json` | `candidates_2026-07.json` | 332 | 317 |
 | `git:e6f13fc802:data/discovery_state.json` | `discovery_state_pending.json` | 5195 | 5035 |
-| `git:d7907c783c:data/candidates_smoke.json` | `candidates_smoke.json` | 12 | 12 |
 
 ## Releases con valores contradictorios
 
