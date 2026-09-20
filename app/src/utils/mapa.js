@@ -179,6 +179,29 @@ export function rankingLugares(porLugar, geo) {
 // quepan. Al ampliar a un territorio (o al filtrar por él) caben más.
 export const CAPITALES = ['bilbo', 'donostia', 'gasteiz', 'irunea', 'baiona']
 
+// Cuántos rótulos caben según el contexto. En móvil, la vista general
+// lleva solo las capitales; al acercar (o al entrar en un territorio)
+// aparecen más.
+export function maxEtiquetas({ movil = false, territorio = null, zoom = 1 } = {}) {
+  if (movil) {
+    if (zoom <= 1.4 && !territorio) return 5
+    return Math.min(14, Math.round(4 + zoom * 3) + (territorio ? 3 : 0))
+  }
+  if (territorio) return 18
+  return zoom > 1.6 ? Math.min(20, Math.round(7 + zoom * 3)) : 7
+}
+
+// Encaja una vista (zoom k sobre un centro) dentro de la caja base: nunca
+// se sale del mapa ni se aleja más que la vista completa.
+export function encajaVista(base, { k = 1, cx, cy } = {}) {
+  const escala = Math.min(8, Math.max(1, k))
+  const w = base[2] / escala
+  const h = base[3] / escala
+  const x = Math.min(Math.max((cx ?? base[0] + base[2] / 2) - w / 2, base[0]), base[0] + base[2] - w)
+  const y = Math.min(Math.max((cy ?? base[1] + base[3] / 2) - h / 2, base[1]), base[1] + base[3] - h)
+  return [x, y, w, h]
+}
+
 export function etiquetasPrioritarias(marcas, { max = 7, seleccion = null, hover = null } = {}) {
   const por = (id) => marcas.find((m) => m.lugar.id === id)
   const conDiscos = marcas

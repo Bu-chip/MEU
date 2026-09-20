@@ -140,6 +140,15 @@ La tarea de `#/mapa` es explorar el archivo por lugares, así que el mapa domina
 - **Panel de municipio**: nombre, territorio, cifras, 6 tags y 4 releases. El resto (Artistas, Releases, Sellos y cuentas, Estadísticas, Procedencia) vive en secciones plegadas.
 - **El lima** solo marca selección y filtro activo.
 
+### Móvil (≤ 760 px): modo propio, no la versión encogida
+
+- **Cabecera en una línea** y filtros como fila de botones deslizable: `Buscar`, `Género`, `Territorio`, `Años`, `Más filtros`. La búsqueda también es un desplegable, para no comerse una fila entera.
+- **Mapa acotado** (unos 46 vh, con tope de 52 vh) que sirve para orientar y seleccionar: **se desplaza con un dedo, se acerca con dos** y tiene botones `+`, `−` y `⟲` (vuelve a la vista completa). El municipio seleccionado lleva cuadrado lima y un anillo, para localizarlo de un vistazo.
+- **Rótulos mínimos**: en la vista general solo Bilbo, Donostia, Gasteiz, Iruñea y Baiona; al acercar o entrar en un territorio aparecen más (hasta 14). Los blancos táctiles son de 34 px.
+- **Hoja inferior** con tres estados: *asomada* (una línea que resume qué hay debajo), *media* (se abre sola al tocar un municipio, con el mapa aún visible) y *expandida*. Se arrastra o se toca el tirador; en expandida, tocarlo vuelve a plegar.
+- **Modo `Mapa | Lista`**: el mismo ranking de municipios con los filtros activos, para no depender de tocar cuadrados pequeños.
+- **«Cómo leer el mapa»** abre la cobertura y la metodología como capa, sin empujar el mapa.
+
 ## 9. Cómo se cruzan mapa y tags
 
 - Los filtros son los de ARCHIVO: texto (con alias de tags), género, tag, artista y años (`desde`/`hasta`, compartidos con ARCHIVO). El mapa añade territorio y procedencia.

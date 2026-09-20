@@ -6,6 +6,7 @@ import { filtra } from './busqueda.js'
 import {
   leeFiltrosMapa, hashMapa, preparaGeo, agrega, consultaMapa, rankingLugares,
   lift, sobrerrepresentados, resumenLugar, UBIC_DEFECTO, procedenciaDe, etiquetasPrioritarias,
+  maxEtiquetas, encajaVista,
 } from './mapa.js'
 
 // Índice mínimo con la misma forma que data/locations/map_index.json.
@@ -138,6 +139,26 @@ test('filtros combinados: tag + años + territorio', () => {
   assert.deepEqual(rank, [['bilbo', 1], ['zarautz', 1]])
   const g = consultaMapa(ARCHIVE, geo, { tag: 'hardcore', territorio: 'Nafarroa', ubic: UBIC_DEFECTO })
   assert.deepEqual([...g.porLugar.values()].flat().map((a) => a.id), [5])
+})
+
+test('densidad de etiquetas por contexto', () => {
+  assert.equal(maxEtiquetas({ movil: true }), 5, 'en móvil, vista general: solo las capitales')
+  assert.ok(maxEtiquetas({ movil: true, zoom: 3 }) > 5, 'al acercar, más rótulos')
+  assert.ok(maxEtiquetas({ movil: true, territorio: 'Gipuzkoa', zoom: 2 }) > maxEtiquetas({ movil: true, zoom: 2 }))
+  assert.equal(maxEtiquetas({}), 7)
+  assert.equal(maxEtiquetas({ territorio: 'Gipuzkoa' }), 18)
+  assert.ok(maxEtiquetas({ movil: true, zoom: 8 }) <= 14, 'con tope')
+})
+
+test('zoom y desplazamiento encajados en el mapa', () => {
+  const base = [0, 0, 100, 80]
+  assert.deepEqual(encajaVista(base, { k: 1 }), base, 'sin zoom, la vista completa')
+  assert.deepEqual(encajaVista(base, { k: 2, cx: 50, cy: 40 }), [25, 20, 50, 40])
+  assert.deepEqual(encajaVista(base, { k: 2, cx: -100, cy: -100 }), [0, 0, 50, 40], 'no se sale por arriba')
+  assert.deepEqual(encajaVista(base, { k: 2, cx: 999, cy: 999 }), [50, 40, 50, 40], 'ni por abajo')
+  assert.deepEqual(encajaVista(base, { k: 0.2 }), base, 'no se aleja más que el mapa entero')
+  const z = encajaVista(base, { k: 99, cx: 50, cy: 40 })
+  assert.equal(z[2], 100 / 8, 'zoom con tope')
 })
 
 test('lift y sobrerrepresentados con umbrales', () => {

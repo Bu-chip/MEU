@@ -3,11 +3,12 @@ import { getIndices } from '../utils/indices.js'
 import { formato } from '../utils/formato.js'
 import { navegar, reemplazar, parseRoute, hashArchivo } from '../hooks/useHashRoute.js'
 import { useMapIndex } from '../hooks/useMapIndex.js'
+import { useMovil } from '../hooks/useMovil.js'
 import { FichaBar } from '../components/FichaBar.jsx'
 import {
   PROCEDENCIAS, UBIC_DEFECTO, leeFiltrosMapa, hashMapa, preparaGeo, consultaCacheada,
   rankingLugares, resumenLugar, tagsPrincipales, sobrerrepresentados, procedenciaDe,
-  etiquetasPrioritarias,
+  etiquetasPrioritarias, maxEtiquetas, encajaVista,
 } from '../utils/mapa.js'
 import './Mapa.css'
 
@@ -15,11 +16,15 @@ import './Mapa.css'
 // artistas y tags; MAPA parte de lugares. Usa los MISMOS filtros que ARCHIVO
 // y el índice geográfico precalculado (data/locations/map_index.json).
 //
-// Jerarquía de la página: la tarea es explorar el archivo por lugares, así
-// que el mapa manda. Divulgación progresiva: lo esencial primero, el detalle
-// al seleccionar, la metodología plegada.
-//   cabecera compacta · una línea de filtros · una línea de cobertura ·
-//   mapa (≈65 %) + panel de contexto (≈35 %)
+// Dos modos, no uno encogido:
+//   ESCRITORIO  cabecera compacta · filtros en una línea · cobertura ·
+//               mapa (≈65 %) + panel de contexto (≈35 %), sin scroll.
+//   MÓVIL       el mapa orienta y selecciona (alto acotado, con gestos);
+//               el detalle vive en una hoja inferior de tres estados, y hay
+//               modo LISTA para no depender de tocar cuadrados pequeños.
+//
+// Divulgación progresiva en los dos: lo esencial primero, el detalle al
+// seleccionar, la metodología plegada.
 //
 // Referencia visual: la retícula de puntos cuadrados del «mapa de escenas»
 // del archivo de música electrónica. Aquí la unidad es el municipio y la
@@ -31,8 +36,7 @@ const LADO_MAX = 30
 const PAGINA = 40
 const TAGS_VISIBLES = 6
 const RELEASES_VISIBLES = 4
-const ETIQUETAS_MUNDO = 7 // rótulos en la vista de Euskal Herria
-const ETIQUETAS_TERRITORIO = 18
+const ARRASTRE_MINIMO = 8 // px: por debajo, un toque es selección, no pan
 
 const CODIGO_PROC = {
   d: ['D', 'directa: Bandcamp, en esta release'],
@@ -55,7 +59,7 @@ function cajaDe(cells, pad = 1) {
 
 // Coloca los rótulos ya priorizados: cada uno prueba derecha, izquierda,
 // arriba y abajo, y se descarta si no cabe sin pisar nada.
-function colocaEtiquetas(items, upx, vb) {
+function colocaEtiquetas(items, upx, vb, margenDerecho = 0) {
   const puestas = []
   const cajas = []
   const solapa = (a, b) => a[0] < b[0] + b[2] && a[0] + a[2] > b[0] && a[1] < b[1] + b[3] && a[1] + a[3] > b[1]
@@ -75,7 +79,7 @@ function colocaEtiquetas(items, upx, vb) {
       .find(
         (c) =>
           c[0] >= vb[0] &&
-          c[0] + c[2] <= vb[0] + vb[2] &&
+          c[0] + c[2] <= vb[0] + vb[2] - margenDerecho &&
           c[1] >= vb[1] &&
           c[1] + c[3] <= vb[1] + vb[3] &&
           !cajas.some((b) => solapa(c, b)) &&
@@ -104,17 +108,26 @@ function useCaja(ref) {
   return caja
 }
 
-function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, onLugar, onTerritorio }) {
+function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, movil, onLugar, onTerritorio }) {
   const [hover, setHover] = useState(null)
+  // Vista del mapa (zoom y centro). Lleva el territorio para reencuadrar
+  // al cambiarlo, ajustando el estado en render (patrón de ARCHIVO), no en
+  // un efecto.
+  const [vista, setVista] = useState({ terr: territorio, k: 1, cx: null, cy: null })
+  if (vista.terr !== territorio) setVista({ terr: territorio, k: 1, cx: null, cy: null })
   const svgRef = useRef(null)
   const caja = useCaja(svgRef)
+  const gesto = useRef(null)
+  const arrastrado = useRef(false)
   const grid = geo.grid
-  const vb = useMemo(() => {
+
+  const base = useMemo(() => {
     const cells = territorio
       ? grid.cells.filter(([, , t]) => geo.territories[t] === territorio)
       : grid.cells
     return cajaDe(cells.length ? cells : grid.cells)
   }, [grid, geo.territories, territorio])
+  const vb = encajaVista(base, vista)
   const upx = caja ? Math.max(vb[2] / caja.w, vb[3] / caja.h) : vb[2] / ANCHO_NOMINAL
   const ladoMax = Math.min(LADO_MAX, Math.max(16, (vb[2] / upx) * 0.045))
   const lado = (n) => (n > 0 ? (LADO_MIN + (ladoMax - LADO_MIN) * Math.sqrt(n / maxN)) * upx : 0)
@@ -132,18 +145,60 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
   const marcas = lugares
     .filter((l) => !territorio || l.lugar.territorio === territorio)
     .map((l) => ({ ...l, x: l.lugar.x, y: l.lugar.y, name: l.lugar.name, lado: lado(l.n), ladoBase: lado(l.nBase) }))
-  // Densidad de rótulos por contexto: pocos en la vista general, más al
-  // ampliar a un territorio; lo seleccionado y lo apuntado, siempre.
+  const visibles = marcas.filter(
+    (m) => m.x >= vb[0] && m.x <= vb[0] + vb[2] && m.y >= vb[1] && m.y <= vb[1] + vb[3],
+  )
+  // Densidad de rótulos por contexto y zoom; lo seleccionado y lo apuntado,
+  // siempre.
   const etiquetas = colocaEtiquetas(
-    etiquetasPrioritarias(marcas, {
-      max: territorio ? ETIQUETAS_TERRITORIO : ETIQUETAS_MUNDO,
+    etiquetasPrioritarias(visibles, {
+      max: maxEtiquetas({ movil, territorio, zoom: vista.k }),
       seleccion: lugarSel,
       hover,
     }),
     upx,
     vb,
+    // En móvil, los botones de zoom ocupan la esquina: los rótulos no
+    // deben quedar debajo.
+    movil ? 44 * upx : 0,
   )
   const hov = hover && marcas.find((m) => m.lugar.id === hover)
+
+  // ── Gestos (solo móvil): un dedo desplaza, dos acercan ──
+  const centro = () => ({ cx: vb[0] + vb[2] / 2, cy: vb[1] + vb[3] / 2 })
+  const dist = (t) => Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY)
+  const onTouchStart = (e) => {
+    if (!movil) return
+    arrastrado.current = false
+    const t = e.touches
+    gesto.current =
+      t.length >= 2
+        ? { tipo: 'pinza', d0: dist(t), k0: vista.k, ...centro() }
+        : { tipo: 'pan', x: t[0].clientX, y: t[0].clientY, ...centro() }
+  }
+  const onTouchMove = (e) => {
+    if (!movil || !gesto.current) return
+    const g = gesto.current
+    const t = e.touches
+    if (g.tipo === 'pinza' && t.length >= 2) {
+      arrastrado.current = true
+      setVista({ terr: territorio, k: Math.min(8, Math.max(1, (g.k0 * dist(t)) / (g.d0 || 1))), cx: g.cx, cy: g.cy })
+      return
+    }
+    const dx = t[0].clientX - g.x
+    const dy = t[0].clientY - g.y
+    if (Math.hypot(dx, dy) > ARRASTRE_MINIMO) arrastrado.current = true
+    if (vista.k <= 1) return // sin zoom no hay nada que desplazar
+    setVista((v) => ({ ...v, cx: g.cx - dx * upx, cy: g.cy - dy * upx }))
+  }
+  const onTouchEnd = () => {
+    gesto.current = null
+  }
+  const acercar = (f) =>
+    setVista((v) => {
+      const c = centro()
+      return { terr: territorio, k: Math.min(8, Math.max(1, v.k * f)), cx: c.cx, cy: c.cy }
+    })
 
   return (
     <div className="lienzo">
@@ -152,6 +207,9 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
         viewBox={vb.join(' ')}
         role="img"
         aria-label={`Mapa de Euskal Herria${territorio ? ' · ' + territorio : ''} con los municipios del archivo`}
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
       >
         <g className="reticula">
           {grid.cells.map(([c, r, t]) => (
@@ -162,7 +220,7 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
               width={0.68}
               height={0.68}
               className={`celda${territorio && geo.territories[t] !== territorio ? ' fuera' : ''}`}
-              onClick={() => onTerritorio(geo.territories[t])}
+              onClick={() => !arrastrado.current && onTerritorio(geo.territories[t])}
             />
           ))}
         </g>
@@ -174,13 +232,13 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
             y={r.y}
             className="rotulo-territorio"
             fontSize={16 * upx}
-            onClick={() => onTerritorio(r.name)}
+            onClick={() => !arrastrado.current && onTerritorio(r.name)}
           >
             {r.name.toUpperCase()}
           </text>
         ))}
         {filtrado &&
-          marcas
+          visibles
             .filter((m) => m.nBase > 0)
             .map((m) => (
               <rect
@@ -193,7 +251,7 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
                 strokeWidth={1 * upx}
               />
             ))}
-        {marcas
+        {visibles
           .filter((m) => m.n > 0)
           .sort((a, b) => b.n - a.n)
           .map((m) => (
@@ -215,6 +273,25 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
               strokeDasharray={debiles && m.soloDebil ? `${2 * upx} ${1.5 * upx}` : undefined}
             />
           ))}
+        {/* Anillo del municipio seleccionado: en móvil el cuadrado lima
+            solo no basta para localizarlo de un vistazo. */}
+        {lugarSel &&
+          visibles
+            .filter((m) => m.lugar.id === lugarSel)
+            .map((m) => {
+              const r = Math.max(m.lado / 2 + 7 * upx, 13 * upx)
+              return (
+                <rect
+                  key={'sel' + m.lugar.id}
+                  className="anillo"
+                  x={m.x - r}
+                  y={m.y - r}
+                  width={2 * r}
+                  height={2 * r}
+                  strokeWidth={1.4 * upx}
+                />
+              )
+            })}
         {etiquetas.map((e) => (
           <text
             key={'t' + e.lugar.id}
@@ -226,11 +303,11 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
             {e.name}
           </text>
         ))}
-        {/* Blancos táctiles invisibles (≥ 26 px) por encima de todo. */}
-        {marcas
+        {/* Blancos táctiles invisibles (≥ 26 px; 34 en móvil). */}
+        {visibles
           .filter((m) => m.n > 0 || lugarSel === m.lugar.id)
           .map((m) => {
-            const t = Math.max(26 * upx, m.lado)
+            const t = Math.max((movil ? 34 : 26) * upx, m.lado)
             return (
               <rect
                 key={'h' + m.lugar.id}
@@ -239,19 +316,40 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
                 y={m.y - t / 2}
                 width={t}
                 height={t}
-                onMouseEnter={() => setHover(m.lugar.id)}
-                onMouseLeave={() => setHover(null)}
-                onClick={() => onLugar(m.lugar.id)}
+                onMouseEnter={() => !movil && setHover(m.lugar.id)}
+                onMouseLeave={() => !movil && setHover(null)}
+                onClick={() => !arrastrado.current && onLugar(m.lugar.id)}
               >
                 <title>{`${m.name}: ${formato(m.n)} releases`}</title>
               </rect>
             )
           })}
       </svg>
-      {hov && (
+      {hov && !movil && (
         <div className="tip" aria-hidden="true">
           <b>{hov.name}</b> {formato(hov.n)}
           {filtrado && hov.nBase !== hov.n ? ` de ${formato(hov.nBase)}` : ''}
+        </div>
+      )}
+      {movil && (
+        <div className="zoom">
+          <button onClick={() => acercar(1.7)} aria-label="acercar">
+            +
+          </button>
+          <button onClick={() => acercar(1 / 1.7)} aria-label="alejar">
+            −
+          </button>
+          {(vista.k > 1 || territorio) && (
+            <button
+              onClick={() => {
+                setVista({ terr: territorio, k: 1, cx: null, cy: null })
+                if (territorio) onTerritorio(null)
+              }}
+              aria-label="vista completa"
+            >
+              ⟲
+            </button>
+          )}
         </div>
       )}
       <div className="leyenda">
@@ -264,7 +362,7 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
             <i className="lg-debil" /> solo ubicación débil
           </span>
         )}
-        {territorio && (
+        {territorio && !movil && (
           <button className="lg-volver" onClick={() => onTerritorio(null)}>
             ← EUSKAL HERRIA
           </button>
@@ -274,7 +372,7 @@ function Lienzo({ geo, lugares, maxN, lugarSel, territorio, filtrado, debiles, o
   )
 }
 
-// ── Panel de contexto ─────────────────────────────────────────────────
+// ── Panel de contexto (mismo contenido en escritorio y en la hoja) ────
 
 function Seccion({ titulo, cuenta, abierta, onAbrir, children }) {
   return (
@@ -319,14 +417,17 @@ function ListaReleases({ rows, geo, onRelease, limite }) {
   )
 }
 
-function PanelLugar({ lugar, rows, nBase, filtrado, geo, idx, total, filtros, aplica, onRelease }) {
+function PanelLugar({ lugar, rows, nBase, filtrado, geo, idx, total, filtros, aplica, onRelease, onExpandir }) {
   const [abierta, setAbierta] = useState(null)
   const [todosTags, setTodosTags] = useState(false)
   const r = resumenLugar(rows, geo)
   const excluir = geo.geoTags
   const principales = tagsPrincipales(rows, { excluir, limite: todosTags ? 40 : TAGS_VISIBLES })
   const sobre = sobrerrepresentados(rows, idx.tagIndex, total, { excluir })
-  const abrir = (k) => setAbierta((a) => (a === k ? null : k))
+  const abrir = (k) => {
+    setAbierta((a) => (a === k ? null : k))
+    onExpandir?.()
+  }
 
   return (
     <div className="panel panel-lugar">
@@ -508,7 +609,7 @@ function Ranking({ lugares, onLugar, maxN, conLift }) {
   )
 }
 
-function PanelTag({ tag, lugares, geo, sinTag, nConTag, nLocalizadas, onLugar }) {
+function PanelTag({ tag, lugares, geo, sinTag, nConTag, nLocalizadas, onLugar, onExpandir }) {
   const [n, setN] = useState(8)
   const totalSinTag = sinTag.rows.length
   const conLift = lugares.map((l) => {
@@ -525,11 +626,17 @@ function PanelTag({ tag, lugares, geo, sinTag, nConTag, nLocalizadas, onLugar })
       {geo.geoTags.has(tag) && (
         <p className="nota">Este tag es un topónimo: dice dónde se etiqueta, no dónde está nadie.</p>
       )}
-      <h3>MÁS PRESENCIA</h3>
+      <h3>MÁS PRESENCIA EN</h3>
       <Ranking lugares={conLift.slice(0, n)} onLugar={onLugar} maxN={conLift[0]?.n || 1} conLift />
       {conLift.length > n && (
-        <button className="enlace" onClick={() => setN(conLift.length)}>
-          ver todos ({conLift.length - n}) →
+        <button
+          className="enlace"
+          onClick={() => {
+            setN(conLift.length)
+            onExpandir?.()
+          }}
+        >
+          ver lista ({conLift.length - n}) →
         </button>
       )}
       <p className="nota">
@@ -540,7 +647,7 @@ function PanelTag({ tag, lugares, geo, sinTag, nConTag, nLocalizadas, onLugar })
   )
 }
 
-function PanelVacio({ lugares, cuenta, onLugar }) {
+function PanelVacio({ lugares, cuenta, onLugar, onLista, movil }) {
   const [ver, setVer] = useState(false)
   return (
     <div className="panel panel-vacio">
@@ -550,7 +657,11 @@ function PanelVacio({ lugares, cuenta, onLugar }) {
         visibles
       </p>
       <p className="nota">Selecciona un municipio en el mapa.</p>
-      {ver ? (
+      {movil ? (
+        <button className="enlace" onClick={onLista}>
+          ver ranking de municipios →
+        </button>
+      ) : ver ? (
         <>
           <h3>MÁS RELEASES</h3>
           <Ranking lugares={lugares.slice(0, 25)} onLugar={onLugar} maxN={lugares[0]?.n || 1} />
@@ -561,6 +672,65 @@ function PanelVacio({ lugares, cuenta, onLugar }) {
         </button>
       )}
     </div>
+  )
+}
+
+// Modo LISTA (móvil): la misma consulta, sin depender de tocar cuadrados.
+function ListaMunicipios({ lugares, lugarSel, onLugar }) {
+  return (
+    <div className="lista-municipios">
+      {lugares.length === 0 && <p className="vacio">Ningún municipio cumple los filtros activos.</p>}
+      {lugares.map((l) => (
+        <button
+          key={l.lugar.id}
+          className={'fila-mun' + (lugarSel === l.lugar.id ? ' sel' : '')}
+          onClick={() => onLugar(l.lugar.id)}
+        >
+          <span className="nom">{l.lugar.name}</span>
+          <span className="terr">{l.lugar.territorio}</span>
+          <span className="bar">
+            <span style={{ width: `${(100 * l.n) / (lugares[0]?.n || 1)}%` }} />
+          </span>
+          <span className="n">{formato(l.n)}</span>
+        </button>
+      ))}
+    </div>
+  )
+}
+
+// ── Hoja inferior (móvil) ─────────────────────────────────────────────
+
+const ESTADOS = ['asomada', 'media', 'expandida']
+
+function Hoja({ estado, setEstado, resumen, children }) {
+  const gesto = useRef(null)
+  const sube = () => setEstado(ESTADOS[Math.min(ESTADOS.length - 1, ESTADOS.indexOf(estado) + 1)])
+  const baja = () => setEstado(ESTADOS[Math.max(0, ESTADOS.indexOf(estado) - 1)])
+  return (
+    <section className={'hoja ' + estado} aria-label="detalle">
+      <div
+        className="tirador"
+        role="button"
+        tabIndex={0}
+        aria-label={estado === 'expandida' ? 'plegar' : 'desplegar'}
+        onClick={() => (estado === 'expandida' ? setEstado('asomada') : sube())}
+        onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && sube()}
+        onTouchStart={(e) => {
+          gesto.current = e.touches[0].clientY
+        }}
+        onTouchEnd={(e) => {
+          const y0 = gesto.current
+          gesto.current = null
+          const dy = (e.changedTouches[0]?.clientY ?? y0) - y0
+          if (dy < -24) sube()
+          else if (dy > 24) baja()
+        }}
+      >
+        <span className="asa" />
+        <span className="resumen">{resumen}</span>
+      </div>
+      <div className="hoja-contenido">{children}</div>
+    </section>
   )
 }
 
@@ -588,6 +758,7 @@ function Menu({ id, titulo, valor, abierto, setAbierto, children, ancho }) {
 
 export function Mapa({ route, archive }) {
   const { index, error } = useMapIndex()
+  const movil = useMovil()
   const filtros = leeFiltrosMapa(route)
 
   const [qLocal, setQLocal] = useState(filtros.q)
@@ -607,9 +778,18 @@ export function Mapa({ route, archive }) {
   const [metodologia, setMetodologia] = useState(false)
   const [seleccion, setSeleccion] = useState(null)
   const [recorriendo, setRecorriendo] = useState(false)
+  const [hoja, setHoja] = useState(filtros.lugar ? 'media' : 'asomada')
+  const [lugarPrevio, setLugarPrevio] = useState(filtros.lugar)
+  const [modo, setModo] = useState('mapa') // móvil: mapa | lista
   const barraRef = useRef(null)
 
-  // Los menús se cierran al pinchar fuera (Esc se gestiona más abajo).
+  // Al seleccionar municipio, la hoja se abre a media altura; el mapa
+  // sigue visible encima. Al soltar la selección, vuelve a asomarse.
+  if (filtros.lugar !== lugarPrevio) {
+    setLugarPrevio(filtros.lugar)
+    setHoja(filtros.lugar ? 'media' : 'asomada')
+  }
+
   useEffect(() => {
     if (!abierto) return
     const fuera = (e) => {
@@ -646,13 +826,17 @@ export function Mapa({ route, archive }) {
         setAbierto(null)
         return
       }
+      if (metodologia) {
+        setMetodologia(false)
+        return
+      }
       const f = leeFiltrosMapa(parseRoute(window.location.hash))
       if (f.lugar) navegar(hashMapa({ ...f, lugar: null }))
       else if (f.territorio) navegar(hashMapa({ ...f, territorio: null }))
     }
     document.addEventListener('keydown', onKey)
     return () => document.removeEventListener('keydown', onKey)
-  }, [seleccion, abierto])
+  }, [seleccion, abierto, metodologia])
 
   if (error) return <p className="error-datos">error al cargar el mapa: {error}</p>
   if (!archive || !consulta || !base) return <p className="cargando">cargando mapa…</p>
@@ -725,6 +909,15 @@ export function Mapa({ route, archive }) {
     }
   }
 
+  const verLista = () => {
+    setModo('lista')
+    setHoja('asomada')
+  }
+  const eligeLugar = (id) => {
+    aplica({ lugar: id === filtros.lugar ? null : id })
+    if (movil) setHoja('media')
+  }
+
   let panel
   if (filtros.lugar && !lugarSel) {
     panel = (
@@ -749,6 +942,7 @@ export function Mapa({ route, archive }) {
         filtros={efectivos}
         aplica={aplica}
         onRelease={setSeleccion}
+        onExpandir={movil ? () => setHoja('expandida') : undefined}
       />
     )
   } else if (filtros.tag) {
@@ -760,18 +954,47 @@ export function Mapa({ route, archive }) {
         sinTag={consultaCacheada(archive, geo, { ...efectivos, tag: null, lugar: null })}
         nConTag={consulta.rows.length}
         nLocalizadas={cuenta.localizadas}
-        onLugar={(id) => aplica({ lugar: id })}
+        onLugar={eligeLugar}
+        onExpandir={movil ? () => setHoja('expandida') : undefined}
       />
     )
   } else {
-    panel = <PanelVacio lugares={ranking} cuenta={cuenta} onLugar={(id) => aplica({ lugar: id })} />
+    panel = (
+      <PanelVacio
+        lugares={ranking}
+        cuenta={cuenta}
+        onLugar={eligeLugar}
+        onLista={verLista}
+        movil={movil}
+      />
+    )
   }
 
-  return (
-    // Las clases dicen qué filas hay sobre el mapa: el alto del cuerpo se
-    // ajusta para que mapa + panel sigan cabiendo sin scroll.
-    <div className={'mapa' + (chips.length ? ' con-chips' : '') + (metodologia ? ' con-metodologia' : '')}>
-      <div className="barra" ref={barraRef}>
+  // Línea de la hoja plegada: dice qué hay debajo sin abrirla.
+  const resumenHoja = lugarSel
+    ? `${lugarSel.name} · ${formato((porLugar.get(lugarSel.i) ?? []).length)} releases`
+    : filtros.tag
+      ? `${filtros.tag} · ${formato(cuenta.localizadas)} releases en ${ranking.length} municipios`
+      : `${formato(ranking.length)} municipios · toca uno en el mapa`
+
+  const barraFiltros = (
+    <div className="barra" ref={barraRef}>
+      {movil ? (
+        <Menu id="buscar" titulo="Buscar" valor={qLocal.trim() ? '«' + qLocal.trim() + '»' : null} abierto={abierto} setAbierto={setAbierto} ancho={300}>
+          <label className="campo">
+            texto
+            <input
+              type="text"
+              autoComplete="off"
+              spellCheck="false"
+              placeholder="artista, título, tag…"
+              value={qLocal}
+              onChange={(e) => escribeQ(e.target.value)}
+            />
+          </label>
+          <p className="nota">Busca en artista, título, género, año y tags, con alias.</p>
+        </Menu>
+      ) : (
         <input
           className="buscar"
           type="text"
@@ -782,111 +1005,202 @@ export function Mapa({ route, archive }) {
           onChange={(e) => escribeQ(e.target.value)}
           aria-label="buscar"
         />
+      )}
 
-        <Menu id="genero" titulo="Género" valor={filtros.genero ?? filtros.tag} abierto={abierto} setAbierto={setAbierto} ancho={300}>
-          <label className="campo">
-            tag
-            <input
-              type="text"
-              list="mapa-tags"
-              defaultValue={filtros.tag ?? ''}
-              placeholder="noise, hardcore…"
-              onChange={(e) => {
-                const t = e.target.value.trim().toLowerCase()
-                if (idx.tagIndex.has(t)) aplica({ tag: t })
-              }}
-            />
-          </label>
-          <datalist id="mapa-tags">
-            {idx.tagsElegibles.map((t) => (
-              <option key={t} value={t} />
-            ))}
-          </datalist>
-          <div className="opciones">
-            {idx.generos.slice(0, 24).map(([g, c]) => (
-              <button
-                key={g}
-                className={filtros.genero === g ? 'on' : ''}
-                onClick={() => aplica({ genero: filtros.genero === g ? null : g })}
-              >
-                {g} <span className="c">{c}</span>
-              </button>
-            ))}
-          </div>
-        </Menu>
-
-        <Menu id="territorio" titulo="Territorio" valor={filtros.territorio} abierto={abierto} setAbierto={setAbierto}>
-          <div className="opciones">
-            {geo.territories.map((t) => (
-              <button
-                key={t}
-                className={filtros.territorio === t ? 'on' : ''}
-                onClick={() => aplica({ territorio: filtros.territorio === t ? null : t, lugar: null })}
-              >
-                {t}
-              </button>
-            ))}
-          </div>
-        </Menu>
-
-        <Menu id="anios" titulo="Años" valor={rangoAnios} abierto={abierto} setAbierto={setAbierto} ancho={260}>
-          <div className="filas">
-            <label className="campo">
-              desde
-              <select
-                value={filtros.desde ?? ''}
-                onChange={(e) => aplica({ desde: e.target.value ? Number(e.target.value) : null })}
-              >
-                <option value="">—</option>
-                {anios.map((y) => (
-                  <option key={y} value={y}>
-                    {y}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="campo">
-              hasta
-              <select
-                value={filtros.hasta ?? ''}
-                onChange={(e) => aplica({ hasta: e.target.value ? Number(e.target.value) : null })}
-              >
-                <option value="">—</option>
-                {anios.map((y) => (
-                  <option key={y} value={y}>
-                    {y}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <button className={'accion' + (recorriendo ? ' on' : '')} onClick={() => setRecorriendo((v) => !v)}>
-              {recorriendo ? '■ parar' : '▶ recorrer año a año'}
+      <Menu id="genero" titulo="Género" valor={filtros.genero ?? filtros.tag} abierto={abierto} setAbierto={setAbierto} ancho={300}>
+        <label className="campo">
+          tag
+          <input
+            type="text"
+            list="mapa-tags"
+            defaultValue={filtros.tag ?? ''}
+            placeholder="noise, hardcore…"
+            onChange={(e) => {
+              const t = e.target.value.trim().toLowerCase()
+              if (idx.tagIndex.has(t)) aplica({ tag: t })
+            }}
+          />
+        </label>
+        <datalist id="mapa-tags">
+          {idx.tagsElegibles.map((t) => (
+            <option key={t} value={t} />
+          ))}
+        </datalist>
+        <div className="opciones">
+          {idx.generos.slice(0, 24).map(([g, c]) => (
+            <button
+              key={g}
+              className={filtros.genero === g ? 'on' : ''}
+              onClick={() => aplica({ genero: filtros.genero === g ? null : g })}
+            >
+              {g} <span className="c">{c}</span>
             </button>
-            <p className="nota">
-              El año es el de la release; la ubicación es la actual de la cuenta en Bandcamp.
-            </p>
-          </div>
-        </Menu>
+          ))}
+        </div>
+      </Menu>
 
-        <Menu id="mas" titulo="Más filtros" abierto={abierto} setAbierto={setAbierto} ancho={340}>
-          <div className="filas">
-            <p className="titulillo">UBICACIONES INCLUIDAS</p>
-            {PROCEDENCIAS.map((p) => (
-              <label key={p.code} className="check">
-                <input type="checkbox" checked={filtros.ubic.includes(p.code)} onChange={() => alternaUbic(p.code)} />
-                <span>
-                  {p.label}
-                  <span className="ayuda">{p.ayuda}</span>
-                </span>
-              </label>
+      <Menu id="territorio" titulo="Territorio" valor={filtros.territorio} abierto={abierto} setAbierto={setAbierto}>
+        <div className="opciones">
+          {geo.territories.map((t) => (
+            <button
+              key={t}
+              className={filtros.territorio === t ? 'on' : ''}
+              onClick={() => aplica({ territorio: filtros.territorio === t ? null : t, lugar: null })}
+            >
+              {t}
+            </button>
+          ))}
+        </div>
+      </Menu>
+
+      <Menu id="anios" titulo="Años" valor={rangoAnios} abierto={abierto} setAbierto={setAbierto} ancho={260}>
+        <div className="filas">
+          <label className="campo">
+            desde
+            <select
+              value={filtros.desde ?? ''}
+              onChange={(e) => aplica({ desde: e.target.value ? Number(e.target.value) : null })}
+            >
+              <option value="">—</option>
+              {anios.map((y) => (
+                <option key={y} value={y}>
+                  {y}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="campo">
+            hasta
+            <select
+              value={filtros.hasta ?? ''}
+              onChange={(e) => aplica({ hasta: e.target.value ? Number(e.target.value) : null })}
+            >
+              <option value="">—</option>
+              {anios.map((y) => (
+                <option key={y} value={y}>
+                  {y}
+                </option>
+              ))}
+            </select>
+          </label>
+          <button className={'accion' + (recorriendo ? ' on' : '')} onClick={() => setRecorriendo((v) => !v)}>
+            {recorriendo ? '■ parar' : '▶ recorrer año a año'}
+          </button>
+          <p className="nota">
+            El año es el de la release; la ubicación es la actual de la cuenta en Bandcamp.
+          </p>
+        </div>
+      </Menu>
+
+      <Menu id="mas" titulo="Más filtros" abierto={abierto} setAbierto={setAbierto} ancho={340}>
+        <div className="filas">
+          <p className="titulillo">UBICACIONES INCLUIDAS</p>
+          {PROCEDENCIAS.map((p) => (
+            <label key={p.code} className="check">
+              <input type="checkbox" checked={filtros.ubic.includes(p.code)} onChange={() => alternaUbic(p.code)} />
+              <span>
+                {p.label}
+                <span className="ayuda">{p.ayuda}</span>
+              </span>
+            </label>
+          ))}
+          <p className="nota">
+            Por defecto quedan fuera las inferencias desde cuentas con varios artistas (probables
+            sellos) y las pistas de tag. Los datos no se borran: esto solo decide qué se dibuja.
+          </p>
+        </div>
+      </Menu>
+    </div>
+  )
+
+  const bloqueMetodologia = (
+    <div className="metodologia">
+      {movil && (
+        <button className="cerrar-metodologia" onClick={() => setMetodologia(false)} aria-label="cerrar">
+          ×
+        </button>
+      )}
+      <div className="cols">
+        <div>
+          <p className="titulillo">DIBUJADAS · {formato(cuenta.localizadas)}</p>
+          <ul>
+            {PROCEDENCIAS.filter((p) => filtros.ubic.includes(p.code) && cuenta[p.code]).map((p) => (
+              <li key={p.code}>
+                {p.label} <b>{formato(cuenta[p.code])}</b>
+              </li>
             ))}
-            <p className="nota">
-              Por defecto quedan fuera las inferencias desde cuentas con varios artistas (probables
-              sellos) y las pistas de tag. Los datos no se borran: esto solo decide qué se dibuja.
-            </p>
-          </div>
-        </Menu>
+            {filtros.territorio && cuenta.otroTerritorio > 0 && (
+              <li>
+                en otros territorios <b>{formato(cuenta.otroTerritorio)}</b>
+              </li>
+            )}
+          </ul>
+        </div>
+        <div>
+          <p className="titulillo">EXCLUIDAS AHORA · {formato(cuenta.excluidas)}</p>
+          <ul>
+            {PROCEDENCIAS.filter((p) => !filtros.ubic.includes(p.code) && cuenta[p.code]).map((p) => (
+              <li key={p.code}>
+                {p.label} <b>{formato(cuenta[p.code])}</b>{' '}
+                <button className="enlace" onClick={() => alternaUbic(p.code)}>
+                  incluir
+                </button>
+              </li>
+            ))}
+            {cuenta.excluidas === 0 && <li>ninguna</li>}
+          </ul>
+        </div>
+        <div>
+          <p className="titulillo">SIN MUNICIPIO · {formato(cuenta.sinMunicipio)}</p>
+          <ul>
+            <li>
+              solo región o país <b>{formato(cuenta.region_only)}</b>
+            </li>
+            <li>
+              fuera de Euskal Herria <b>{formato(cuenta.outside_scope)}</b>
+            </li>
+            <li>
+              sin resolver <b>{formato(cuenta.unresolved)}</b>
+            </li>
+          </ul>
+        </div>
       </div>
+      <p className="nota">
+        El cuadrado es el tamaño del municipio en el archivo. La ubicación es la que Bandcamp da hoy
+        a la cuenta que publica (grupo o sello), situada en el punto representativo de su municipio:
+        es una asociación geográfica del archivo, no la residencia de nadie. Por defecto no se
+        dibujan las inferencias desde cuentas con varios artistas ni las pistas de tag; se activan en
+        «Más filtros». Detalle en docs/mapa.md.
+      </p>
+    </div>
+  )
+
+  const lienzo = (
+    <Lienzo
+      geo={geo}
+      lugares={lugares}
+      maxN={maxN}
+      lugarSel={lugarSel?.id}
+      territorio={filtros.territorio}
+      filtrado={filtrado}
+      debiles={debiles}
+      movil={movil}
+      onLugar={eligeLugar}
+      onTerritorio={(t) => aplica({ territorio: t, lugar: null })}
+    />
+  )
+
+  return (
+    <div
+      className={
+        'mapa' +
+        (movil ? ' movil' : '') +
+        (chips.length ? ' con-chips' : '') +
+        (metodologia && !movil ? ' con-metodologia' : '') +
+        (movil ? ' hoja-' + hoja : '')
+      }
+    >
+      {barraFiltros}
 
       {chips.length > 0 && (
         <div className="chips">
@@ -912,103 +1226,58 @@ export function Mapa({ route, archive }) {
           >
             limpiar
           </button>
-          <a
-            className="al-archivo"
-            href={hashArchivo({
-              q: qLocal,
-              genero: filtros.genero,
-              tag: filtros.tag,
-              artista: filtros.artista,
-              desde: filtros.desde,
-              hasta: filtros.hasta,
-            })}
-          >
-            ver en ARCHIVO →
-          </a>
+          {!movil && (
+            <a
+              className="al-archivo"
+              href={hashArchivo({
+                q: qLocal,
+                genero: filtros.genero,
+                tag: filtros.tag,
+                artista: filtros.artista,
+                desde: filtros.desde,
+                hasta: filtros.hasta,
+              })}
+            >
+              ver en ARCHIVO →
+            </a>
+          )}
         </div>
       )}
 
       <div className="cobertura">
         <span>
-          <b>{formato(cuenta.localizadas)}</b> releases localizadas · <b>{ranking.length}</b>{' '}
-          municipios
+          <b>{formato(cuenta.localizadas)}</b> localizadas · <b>{ranking.length}</b> municipios
         </span>
+        {movil && (
+          <div className="modo" role="group" aria-label="mapa o lista">
+            <button className={modo === 'mapa' ? 'on' : ''} onClick={() => setModo('mapa')}>
+              Mapa
+            </button>
+            <button className={modo === 'lista' ? 'on' : ''} onClick={verLista}>
+              Lista
+            </button>
+          </div>
+        )}
         <button className="enlace" onClick={() => setMetodologia((v) => !v)} aria-expanded={metodologia}>
-          Cobertura y metodología {metodologia ? '↑' : '→'}
+          {movil ? 'Cómo leer el mapa' : 'Cobertura y metodología'} {metodologia ? '↑' : '→'}
         </button>
       </div>
 
-      {metodologia && (
-        <div className="metodologia">
-          <div className="cols">
-            <div>
-              <p className="titulillo">DIBUJADAS · {formato(cuenta.localizadas)}</p>
-              <ul>
-                {PROCEDENCIAS.filter((p) => filtros.ubic.includes(p.code) && cuenta[p.code]).map((p) => (
-                  <li key={p.code}>
-                    {p.label} <b>{formato(cuenta[p.code])}</b>
-                  </li>
-                ))}
-                {filtros.territorio && cuenta.otroTerritorio > 0 && (
-                  <li>
-                    en otros territorios <b>{formato(cuenta.otroTerritorio)}</b>
-                  </li>
-                )}
-              </ul>
-            </div>
-            <div>
-              <p className="titulillo">EXCLUIDAS AHORA · {formato(cuenta.excluidas)}</p>
-              <ul>
-                {PROCEDENCIAS.filter((p) => !filtros.ubic.includes(p.code) && cuenta[p.code]).map((p) => (
-                  <li key={p.code}>
-                    {p.label} <b>{formato(cuenta[p.code])}</b>{' '}
-                    <button className="enlace" onClick={() => alternaUbic(p.code)}>
-                      incluir
-                    </button>
-                  </li>
-                ))}
-                {cuenta.excluidas === 0 && <li>ninguna</li>}
-              </ul>
-            </div>
-            <div>
-              <p className="titulillo">SIN MUNICIPIO · {formato(cuenta.sinMunicipio)}</p>
-              <ul>
-                <li>
-                  solo región o país <b>{formato(cuenta.region_only)}</b>
-                </li>
-                <li>
-                  fuera de Euskal Herria <b>{formato(cuenta.outside_scope)}</b>
-                </li>
-                <li>
-                  sin resolver <b>{formato(cuenta.unresolved)}</b>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <p className="nota">
-            La ubicación es la que Bandcamp da hoy a la cuenta que publica (grupo o sello), situada
-            en el punto representativo de su municipio: es una asociación geográfica del archivo, no
-            la residencia de nadie. Por defecto no se dibujan las inferencias desde cuentas con
-            varios artistas ni las pistas de tag; se activan en «Más filtros». Detalle en
-            docs/mapa.md.
-          </p>
-        </div>
-      )}
+      {metodologia && bloqueMetodologia}
 
       <div className="mapa-cuerpo">
-        <Lienzo
-          geo={geo}
-          lugares={lugares}
-          maxN={maxN}
-          lugarSel={lugarSel?.id}
-          territorio={filtros.territorio}
-          filtrado={filtrado}
-          debiles={debiles}
-          onLugar={(id) => aplica({ lugar: id === filtros.lugar ? null : id })}
-          onTerritorio={(t) => aplica({ territorio: t, lugar: null })}
-        />
-        <aside className="mapa-panel">{panel}</aside>
+        {(!movil || modo === 'mapa') && lienzo}
+        {movil && modo === 'lista' && (
+          <ListaMunicipios lugares={ranking} lugarSel={lugarSel?.id} onLugar={eligeLugar} />
+        )}
+        {!movil && <aside className="mapa-panel">{panel}</aside>}
       </div>
+
+      {movil && (
+        <Hoja estado={hoja} setEstado={setHoja} resumen={resumenHoja}>
+          <div className="mapa-panel">{panel}</div>
+        </Hoja>
+      )}
 
       <FichaBar album={seleccion} onCerrar={() => setSeleccion(null)} />
     </div>

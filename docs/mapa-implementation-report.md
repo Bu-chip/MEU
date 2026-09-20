@@ -152,6 +152,19 @@ Segunda iteración sobre la misma rama, sin tocar datos ni resolución. La tarea
 
 **Antes → después (densidad en la primera pantalla, 1440×900):** de 3 filas de filtros con ~45 controles a la vista, 4 cifras de cobertura en franja grande y un panel que obligaba a bajar, a 1 fila con 5 controles, 1 línea de cobertura y el panel completo visible; los rótulos del mapa pasan de ~30 a 7.
 
+## Modo móvil (20 sep 2026)
+
+Tercera iteración, solo interfaz. En móvil el mapa deja de ser un panel encogido: orienta y selecciona, y el detalle vive en una hoja inferior.
+
+- **`useMovil`** (matchMedia, mismo umbral que el CSS) permite estructurar distinto en JS, no solo maquetar distinto.
+- **Mapa con gestos**: un dedo desplaza, dos acercan; botones `+/−/⟲`; el encuadre se calcula con `encajaVista`, que nunca deja salirse del mapa ni alejarse más que la vista completa (con test).
+- **Densidad de rótulos** con `maxEtiquetas`: 5 en la vista general móvil (las capitales), hasta 14 al acercar o dentro de un territorio, 7/18 en escritorio (con test). Se rotulan solo los municipios visibles en el encuadre.
+- **Hoja inferior** de tres estados (54 px / 46 vh / 88 vh) con tirador arrastrable y línea-resumen; se abre sola al seleccionar y vuelve a asomarse al soltar la selección.
+- **Modo lista**: ranking de municipios con los filtros activos, alternativa al mapa.
+- **Metodología como capa** en móvil, con cierre, en vez de empujar el contenido.
+- **Selección más visible**: anillo alrededor del municipio elegido y blancos táctiles de 34 px.
+- La cabecera compacta cabe en una línea en móvil y los filtros son una fila deslizable.
+
 ## Propuestas para una fase futura
 
 1. **Ubicación y procedencia en la FICHA** de cada disco, con enlace «ver en el mapa».

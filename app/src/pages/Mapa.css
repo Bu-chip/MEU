@@ -1,9 +1,10 @@
 /* MAPA — mismos tokens del proyecto (papel/tinta/lima, radio 0, sin
-   sombras, Big Shoulders + Plex Mono). Reglas del rediseño:
+   sombras, Big Shoulders + Plex Mono). Reglas:
 
-   1. El mapa manda: ocupa ~65 % y cabe sin scroll en escritorio.
+   1. El mapa manda: en escritorio ~65 % y sin scroll; en móvil, alto
+      acotado y la hoja inferior para el detalle.
    2. Agrupar con espacio y jerarquía tipográfica, no con cajas: los bordes
-      solo separan regiones funcionales (barra, cuerpo, panel).
+      solo separan regiones funcionales.
    3. El lima se reserva a selección y estado activo, nunca decora.
    4. Divulgación progresiva: metodología, procedencias y listados largos
       viven plegados. */
@@ -154,7 +155,7 @@
 }
 .mapa .chips .al-archivo:hover { background: var(--lima); }
 
-/* ══ COBERTURA (una línea) + METODOLOGÍA (plegada) ══ */
+/* ══ COBERTURA + METODOLOGÍA (plegada) ══ */
 .mapa .cobertura {
   display: flex;
   align-items: baseline;
@@ -182,6 +183,7 @@
   padding: 4px 18px 12px;
   border-bottom: 1px solid var(--tinta);
   font-size: 10.5px;
+  position: relative;
 }
 .mapa .metodologia .cols {
   display: grid;
@@ -200,8 +202,7 @@
   border-bottom: 2px solid var(--tinta);
   align-items: stretch;
   /* Alto del cuerpo: lo que queda de ventana bajo cabecera compacta,
-     puertas, barra de filtros y línea de cobertura. Así mapa y panel
-     básico entran sin scroll en escritorio. */
+     puertas, barra de filtros y línea de cobertura. */
   --alto: clamp(300px, calc(100vh - 250px), 760px);
 }
 .mapa.con-chips .mapa-cuerpo { --alto: clamp(280px, calc(100vh - 285px), 740px); }
@@ -239,6 +240,7 @@
 .lienzo .marca.debil { fill: var(--papel); }
 .lienzo .marca.hov { stroke-width: 2px; }
 .lienzo .marca.sel { fill: var(--lima); stroke: var(--tinta); }
+.lienzo .anillo { fill: none; stroke: var(--tinta); pointer-events: none; }
 .lienzo .fantasma { fill: none; stroke: var(--tinta); stroke-opacity: .4; pointer-events: none; }
 .lienzo .etiqueta {
   font-family: var(--display);
@@ -262,6 +264,26 @@
   pointer-events: none;
 }
 .lienzo .tip b { font-family: var(--display); font-size: 13px; text-transform: uppercase; }
+.lienzo .zoom {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.lienzo .zoom button {
+  font-family: var(--mono);
+  font-size: 15px;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  background: var(--papel);
+  border: 1px solid var(--tinta);
+  color: var(--tinta);
+  cursor: pointer;
+}
+.lienzo .zoom button:active { background: var(--lima); }
 .lienzo .leyenda {
   display: flex;
   flex-wrap: wrap;
@@ -414,19 +436,175 @@
 .mapa-panel .ranking tr:hover td { background: var(--lima); }
 .mapa-panel .ranking tr:hover td.bar { background: transparent; }
 
-/* ══ MÓVIL: una columna; el municipio queda bajo el mapa ══ */
-@media (max-width: 900px) {
-  .mapa .mapa-cuerpo { grid-template-columns: 1fr; }
-  .lienzo { border-right: none; }
-  .lienzo svg { height: min(56vh, 420px); }
-  .mapa-panel {
-    max-height: none;
-    border-top: 2px solid var(--tinta);
-    padding-bottom: 90px;
+/* ══════════════════════════════════════════════════════════════════════
+   MODO MÓVIL: el mapa orienta y selecciona; el detalle vive en la hoja
+   inferior. No es la versión de escritorio encogida.
+   ══════════════════════════════════════════════════════════════════════ */
+@media (max-width: 760px) {
+  .mapa .barra {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 4px;
+    padding: 5px 10px 6px;
+    scrollbar-width: none;
   }
-  .mapa .barra { flex-wrap: wrap; gap: 2px 6px; }
-  .mapa .barra .buscar { flex-basis: 100%; margin-bottom: 2px; }
-  .mapa .menu-panel { width: min(88vw, 330px) !important; }
-  .mapa .menu:first-of-type .menu-panel { left: 0; right: auto; }
-  .mapa .cobertura { flex-wrap: wrap; gap: 2px 10px; }
+  .mapa .barra::-webkit-scrollbar { display: none; }
+  .mapa .menu { position: static; }
+  .mapa .menu .disparador {
+    border: 1px solid rgba(17, 17, 17, .3);
+    padding: 6px 10px;
+    font-size: 11.5px;
+  }
+  /* Los desplegables ocupan el ancho útil, anclados bajo la barra. */
+  .mapa .menu-panel {
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    top: auto;
+    width: auto !important;
+    max-height: 52vh;
+  }
+
+  .mapa .chips { padding: 6px 10px; gap: 4px; }
+  .mapa .chips .chip { padding: 4px 8px; }
+  .mapa .cobertura {
+    padding: 6px 10px;
+    gap: 8px;
+    font-size: 10.5px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  /* Mapa | Lista: la vía alternativa para no depender del mapa. */
+  .mapa .cobertura .modo { display: flex; border: 1px solid var(--tinta); }
+  .mapa .cobertura .modo button {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    background: transparent;
+    border: none;
+    color: var(--tinta);
+    padding: 4px 10px;
+    cursor: pointer;
+  }
+  .mapa .cobertura .modo button.on { background: var(--tinta); color: var(--papel); font-weight: 700; }
+
+  /* Metodología: capa sobre el mapa, no empuja el contenido. */
+  .mapa.movil .metodologia {
+    position: fixed;
+    inset: auto 8px 8px 8px;
+    z-index: 60;
+    max-height: 72vh;
+    overflow-y: auto;
+    background: var(--papel);
+    border: 2px solid var(--tinta);
+    padding: 12px 12px 14px;
+  }
+  .mapa.movil .metodologia .cols { grid-template-columns: 1fr; gap: 10px; }
+  .mapa.movil .metodologia .cerrar-metodologia {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-family: var(--mono);
+    font-size: 16px;
+    line-height: 1;
+    background: transparent;
+    border: none;
+    color: var(--tinta);
+    cursor: pointer;
+  }
+
+  /* El mapa va justo debajo de la cobertura, con alto acotado: orienta y
+     selecciona. El detalle vive en la hoja inferior. */
+  .mapa .mapa-cuerpo {
+    grid-template-columns: 1fr;
+    border-bottom: none;
+    --alto: clamp(230px, calc(100vh - 300px), 52vh);
+  }
+  .lienzo { border-right: none; padding: 4px 8px 2px; }
+  /* Los gestos del mapa no deben arrastrar la página. El alto sigue al
+     ancho (el mapa es más ancho que alto): así no queda banda muerta
+     dentro del SVG. */
+  .lienzo svg { touch-action: none; height: auto; max-height: var(--alto); }
+  .lienzo .leyenda { padding: 2px 2px 6px; }
+
+  /* Lista de municipios (modo LISTA) */
+  .lista-municipios {
+    max-height: calc(var(--alto) + 40px);
+    overflow-y: auto;
+    padding: 2px 10px 10px;
+  }
+  .lista-municipios .fila-mun {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 64px 44px;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(17, 17, 17, .15);
+    padding: 9px 0;
+    color: var(--tinta);
+    text-align: left;
+    cursor: pointer;
+  }
+  .lista-municipios .fila-mun.sel { background: var(--lima); }
+  .lista-municipios .fila-mun .nom { font-weight: 700; text-transform: uppercase; font-size: 12px; }
+  .lista-municipios .fila-mun .terr { font-size: 9px; opacity: .55; }
+  .lista-municipios .fila-mun .bar span { display: block; height: 6px; background: var(--tinta); min-width: 2px; }
+  .lista-municipios .fila-mun .n { text-align: right; font-size: 11px; }
+
+  /* ── HOJA INFERIOR ── */
+  .hoja {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    background: var(--papel);
+    border-top: 2px solid var(--tinta);
+    display: flex;
+    flex-direction: column;
+    transition: height .18s ease-out;
+  }
+  .hoja.asomada { height: 54px; }
+  .hoja.media { height: 46vh; }
+  .hoja.expandida { height: 88vh; }
+  .hoja .tirador {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 6px 12px 7px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(17, 17, 17, .18);
+    touch-action: none;
+  }
+  .hoja .tirador .asa { display: block; width: 44px; height: 3px; background: var(--tinta); opacity: .45; }
+  .hoja .tirador .resumen {
+    font-size: 10.5px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .hoja .hoja-contenido { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .hoja.asomada .hoja-contenido { display: none; }
+  .hoja .mapa-panel { max-height: none; padding: 10px 14px 100px; }
+  .hoja .mapa-panel h2 { font-size: clamp(28px, 9vw, 40px); }
+  .hoja .mapa-panel .cab-seccion { padding: 11px 0; }
+  .hoja .mapa-panel .releases .rel { padding: 3px 0; }
+  .hoja .mapa-panel .tags button,
+  .hoja .mapa-panel .lista-en-linea button { padding: 2px 0; }
+
+  /* Con la hoja asomada, el cuerpo deja su hueco libre. */
+  .mapa.movil { padding-bottom: 54px; }
+}
+
+/* Pantallas muy bajas: la hoja media no debe comerse el mapa. */
+@media (max-width: 760px) and (max-height: 620px) {
+  .mapa .mapa-cuerpo { --alto: clamp(180px, 40vh, 300px); }
+  .hoja.media { height: 52vh; }
 }
