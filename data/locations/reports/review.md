@@ -35,12 +35,12 @@ Ninguno.
 
 | Texto crudo | rel. | obs. | cuentas | Motivo |
 |---|---:|---:|---:|---|
-| Madrid, Spain | 53 | 57 | 21 | lugar fuera del ámbito (lista controlada) |
-| Barcelona, Spain | 19 | 20 | 16 | lugar fuera del ámbito (lista controlada) |
+| Madrid, Spain | 53 | 83 | 21 | lugar fuera del ámbito (lista controlada) |
+| Barcelona, Spain | 19 | 34 | 16 | lugar fuera del ámbito (lista controlada) |
 | Punta Del Este, Uruguay | 10 | 10 | 5 | fuera de ES/FR (Uruguay) |
 | Zaragoza, Spain | 10 | 10 | 2 | lugar fuera del ámbito (lista controlada) |
 | La Línea De La Concepción, Spain | 9 | 9 | 1 | lugar fuera del ámbito (lista controlada) |
-| Buenos Aires, Argentina | 7 | 7 | 5 | fuera de ES/FR (Argentina) |
+| Buenos Aires, Argentina | 7 | 12 | 5 | fuera de ES/FR (Argentina) |
 | Paris, France | 7 | 7 | 6 | lugar fuera del ámbito (lista controlada) |
 | London, UK | 6 | 8 | 2 | fuera de ES/FR (UK) |
 | Berlin, Germany | 5 | 6 | 5 | fuera de ES/FR (Germany) |
@@ -49,14 +49,14 @@ Ninguno.
 | Thailand | 5 | 5 | 1 | lugar fuera del ámbito (lista controlada) |
 | Burgos, Spain | 4 | 5 | 1 | lugar fuera del ámbito (lista controlada) |
 | Logroño, Spain | 4 | 4 | 2 | lugar fuera del ámbito (lista controlada) |
+| Oviedo, Spain | 3 | 28 | 3 | lugar fuera del ámbito (lista controlada) |
 | Denmark | 3 | 5 | 2 | lugar fuera del ámbito (lista controlada) |
 | Argentina | 3 | 3 | 2 | lugar fuera del ámbito (lista controlada) |
 | Los Angeles, California | 3 | 3 | 3 | fuera de ES/FR (California) |
 | Magallanes y la Antártica Chilen, Chile | 3 | 3 | 1 | fuera de ES/FR (Chile) |
-| Oviedo, Spain | 3 | 3 | 3 | lugar fuera del ámbito (lista controlada) |
 | Toulouse, France | 3 | 3 | 3 | lugar fuera del ámbito (lista controlada) |
 | UK | 3 | 3 | 3 | lugar fuera del ámbito (lista controlada) |
-| Seville, Spain | 2 | 6 | 2 | lugar fuera del ámbito (lista controlada) |
+| Seville, Spain | 2 | 82 | 2 | lugar fuera del ámbito (lista controlada) |
 | Valencia, Spain | 2 | 5 | 3 | lugar fuera del ámbito (lista controlada) |
 | Nantes, France | 2 | 3 | 2 | lugar fuera del ámbito (lista controlada) |
 | Alto Paraná Department, Paraguay | 2 | 2 | 1 | fuera de ES/FR (Paraguay) |
@@ -77,6 +77,7 @@ Ninguno.
 | Trøndelag, Norway | 2 | 2 | 1 | fuera de ES/FR (Norway) |
 | Vietnam | 2 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
 | Vigo, Spain | 2 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
+| Armenia | 1 | 15 | 1 | lugar fuera del ámbito (lista controlada) |
 | El Bierzo, Spain | 1 | 4 | 1 | lugar fuera del ámbito (lista controlada) |
 | Talavera De La Reina, Spain | 1 | 3 | 1 | lugar fuera del ámbito (lista controlada) |
 | Italy | 1 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
@@ -85,7 +86,6 @@ Ninguno.
 | Alliance, Ohio | 1 | 1 | 1 | fuera de ES/FR (Ohio) |
 | Andorra | 1 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
 | Angers, France | 1 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
-| Armenia | 1 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
 | Asturias, Spain | 1 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
 | Barcelona | 1 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
 | Bath, UK | 1 | 1 | 1 | fuera de ES/FR (UK) |
@@ -148,8 +148,8 @@ Ninguno.
 | Washington, D.C. | 1 | 1 | 1 | fuera de ES/FR (D.C.) |
 | Western Sahara | 1 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
 | Worcester, UK | 1 | 1 | 1 | fuera de ES/FR (UK) |
+| Brittany, France | 0 | 131 | 1 | lugar fuera del ámbito (lista controlada) |
 | Nice, France | 0 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
-| Brittany, France | 0 | 1 | 1 | lugar fuera del ámbito (lista controlada) |
 
 ## Solo región, comarca o país (sin municipio) — 14 valores, 515 releases
 
@@ -159,7 +159,7 @@ Ninguno.
 | Basque Country, Spain | 117 | 117 | 34 | el valor completo es una región (euskal-herria) |
 | Euskadi, Spain | 76 | 77 | 18 | el valor completo es una región (euskal-herria) |
 | France | 73 | 76 | 12 | el valor completo es una región (france) |
-| Spain | 35 | 42 | 22 | el valor completo es una región (spain) |
+| Spain | 35 | 77 | 22 | el valor completo es una región (spain) |
 | Enkarterri, Spain | 6 | 6 | 3 | región/comarca, sin municipio (enkarterri) |
 | Navarre, Spain | 6 | 6 | 4 | región/comarca, sin municipio (nafarroa) |
 | PV | 5 | 5 | 3 | el valor completo es una región (euskal-herria) |
@@ -170,7 +170,7 @@ Ninguno.
 | Navarra, Spain | 1 | 1 | 1 | el valor completo es una región (nafarroa) |
 | Nouvelle-Aquitaine, France | 1 | 1 | 1 | región/comarca, sin municipio (nouvelle-aquitaine) |
 
-## Resueltos a municipio — 104 municipios
+## Resueltos a municipio — 105 municipios
 
 | Municipio | Territorio | Textos crudos (releases) |
 |---|---|---|
@@ -278,3 +278,4 @@ Ninguno.
 | Trapagaran (`trapagaran`) | Bizkaia | Valle De Trápaga Trapagaran, Spain (1) |
 | Zaratamo (`zaratamo`) | Bizkaia | Zaratamo, Spain (1) |
 | Zizur Nagusia (`zizur-nagusia`) | Nafarroa | Zizur Mayor, Spain (1) |
+| Zizurkil (`zizurkil`) | Gipuzkoa | Zizurkil, Spain (0) |
