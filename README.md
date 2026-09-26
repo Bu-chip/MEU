@@ -109,8 +109,8 @@ data/            JSON canónico + ficheros de candidatos/descartes
 data/locations/  ubicaciones: observaciones, registro de lugares, reglas, resolución, índice del mapa
 app/             aplicación Vite + React (se despliega en la raíz del dominio)
 scripts/         pipeline de datos y scrapers (Python, stdlib)
-tests/           tests de la capa de ubicaciones (unittest)
-docs/            método de scraping, mapa, auditorías, historia del proyecto
+tests/           tests de ubicaciones y del mapa de fusión de tags (unittest)
+docs/            método de scraping, mapa, mapa de fusión de tags, auditorías, historia del proyecto
 design/          mockups HTML del sistema visual congelado
 ```
 
