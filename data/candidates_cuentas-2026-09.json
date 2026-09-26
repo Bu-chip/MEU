@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "generated_at": "2026-09-26T14:04:34Z",
+    "month": "2026-09",
+    "source": "scripts/discover_accounts.py --kind artist",
+    "schema": "candidato = canónico sin id + band_location, source_tags (vacío: entra por cuenta), source_account, source_place, discovered_at; los id se asignan al merge"
+  },
+  "candidates": [
+    {
+      "artist": "Fontso",
+      "title": "Días de lluvia",
+      "genre": null,
+      "year": 2003,
+      "tags": [
+        "acoustic",
+        "pop rock",
+        "rock",
+        "bilbao"
+      ],
+      "url": "https://fontso.bandcamp.com/album/d-as-de-lluvia",
+      "cover_url": "https://f4.bcbits.com/img/a0881223456_5.jpg",
+      "album_id": 2198837024,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [],
+      "source_account": "fontso",
+      "source_place": "bilbo",
+      "discovered_at": "2026-09-26T14:04:14Z"
+    },
+    {
+      "artist": "Fontso",
+      "title": "La distancia",
+      "genre": null,
+      "year": 1998,
+      "tags": [
+        "acoustic",
+        "pop rock",
+        "rock",
+        "bilbao"
+      ],
+      "url": "https://fontso.bandcamp.com/album/la-distancia",
+      "cover_url": "https://f4.bcbits.com/img/a2795481634_5.jpg",
+      "album_id": 3893219629,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [],
+      "source_account": "fontso",
+      "source_place": "bilbo",
+      "discovered_at": "2026-09-26T14:04:14Z"
+    },
+    {
+      "artist": "Fontso",
+      "title": "La Reentrada",
+      "genre": null,
+      "year": 2021,
+      "tags": [
+        "acoustic",
+        "pop rock",
+        "rock",
+        "bilbao"
+      ],
+      "url": "https://fontso.bandcamp.com/album/la-reentrada",
+      "cover_url": "https://f4.bcbits.com/img/a3298788151_5.jpg",
+      "album_id": 3662156176,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [],
+      "source_account": "fontso",
+      "source_place": "bilbo",
+      "discovered_at": "2026-09-26T14:04:14Z"
+    },
+    {
+      "artist": "Fontso",
+      "title": "Memorias de un artista caducado",
+      "genre": null,
+      "year": 2020,
+      "tags": [
+        "acoustic",
+        "pop rock",
+        "rock",
+        "bilbao"
+      ],
+      "url": "https://fontso.bandcamp.com/album/memorias-de-un-artista-caducado",
+      "cover_url": "https://f4.bcbits.com/img/a3186260880_5.jpg",
+      "album_id": 1436717590,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [],
+      "source_account": "fontso",
+      "source_place": "bilbo",
+      "discovered_at": "2026-09-26T14:04:14Z"
+    },
+    {
+      "artist": "Fontso",
+      "title": "Meridianos",
+      "genre": null,
+      "year": 2012,
+      "tags": [
+        "acoustic",
+        "pop rock",
+        "rock",
+        "bilbao"
+      ],
+      "url": "https://fontso.bandcamp.com/album/meridianos",
+      "cover_url": "https://f4.bcbits.com/img/a0051941189_5.jpg",
+      "album_id": 2554652407,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [],
+      "source_account": "fontso",
+      "source_place": "bilbo",
+      "discovered_at": "2026-09-26T14:04:14Z"
+    },
+    {
+      "artist": "Fontso",
+      "title": "Pensamientos de una noche inquieta",
+      "genre": null,
+      "year": 2009,
+      "tags": [
+        "acoustic",
+        "pop rock",
+        "rock",
+        "bilbao"
+      ],
+      "url": "https://fontso.bandcamp.com/album/pensamientos-de-una-noche-inquieta",
+      "cover_url": "https://f4.bcbits.com/img/a1870897653_5.jpg",
+      "album_id": 1233553631,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [],
+      "source_account": "fontso",
+      "source_place": "bilbo",
+      "discovered_at": "2026-09-26T14:04:14Z"
+    },
+    {
+      "artist": "Fontso",
+      "title": "Planeta Fontso",
+      "genre": null,
+      "year": 2008,
+      "tags": [
+        "acoustic",
+        "pop rock",
+        "rock",
+        "bilbao"
+      ],
+      "url": "https://fontso.bandcamp.com/album/planeta-fontso",
+      "cover_url": "https://f4.bcbits.com/img/a2209005010_5.jpg",
+      "album_id": 1062929718,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [],
+      "source_account": "fontso",
+      "source_place": "bilbo",
+      "discovered_at": "2026-09-26T14:04:14Z"
+    },
+    {
+      "artist": "Fontso",
+      "title": "Por haberme disparado",
+      "genre": null,
+      "year": 2012,
+      "tags": [
+        "acoustic",
+        "pop rock",
+        "rock",
+        "bilbao"
+      ],
+      "url": "https://fontso.bandcamp.com/album/por-haberme-disparado",
+      "cover_url": "https://f4.bcbits.com/img/a1864458329_5.jpg",
+      "album_id": 2416200584,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [],
+      "source_account": "fontso",
+      "source_place": "bilbo",
+      "discovered_at": "2026-09-26T14:04:14Z"
+    }
+  ],
+  "deferred_oleada2": []
+}

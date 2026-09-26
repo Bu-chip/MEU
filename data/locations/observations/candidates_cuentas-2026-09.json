@@ -1,0 +1,13 @@
+{
+  "meta": {"note": "band_location de discover_web, tal cual (sin normalizar). value=null: Bandcamp no daba ubicación. Ubicación de la cuenta que publica (grupo o sello), actual y sin fecha.", "source": "candidates_cuentas-2026-09.json", "source_type": "bandcamp_discover", "sources_read": ["data/candidates_cuentas-2026-09.json"], "subject": "publishing_account"},
+  "observations": {
+  "bc:1062929718": [{"account": "fontso", "provenance": "data/candidates_cuentas-2026-09.json", "retrieved_at": "2026-09-26", "source_type": "bandcamp_discover", "source_url": "https://fontso.bandcamp.com/album/planeta-fontso", "subject": "publishing_account", "value": "Bilbao, Spain"}],
+  "bc:1233553631": [{"account": "fontso", "provenance": "data/candidates_cuentas-2026-09.json", "retrieved_at": "2026-09-26", "source_type": "bandcamp_discover", "source_url": "https://fontso.bandcamp.com/album/pensamientos-de-una-noche-inquieta", "subject": "publishing_account", "value": "Bilbao, Spain"}],
+  "bc:1436717590": [{"account": "fontso", "provenance": "data/candidates_cuentas-2026-09.json", "retrieved_at": "2026-09-26", "source_type": "bandcamp_discover", "source_url": "https://fontso.bandcamp.com/album/memorias-de-un-artista-caducado", "subject": "publishing_account", "value": "Bilbao, Spain"}],
+  "bc:2198837024": [{"account": "fontso", "provenance": "data/candidates_cuentas-2026-09.json", "retrieved_at": "2026-09-26", "source_type": "bandcamp_discover", "source_url": "https://fontso.bandcamp.com/album/d-as-de-lluvia", "subject": "publishing_account", "value": "Bilbao, Spain"}],
+  "bc:2416200584": [{"account": "fontso", "provenance": "data/candidates_cuentas-2026-09.json", "retrieved_at": "2026-09-26", "source_type": "bandcamp_discover", "source_url": "https://fontso.bandcamp.com/album/por-haberme-disparado", "subject": "publishing_account", "value": "Bilbao, Spain"}],
+  "bc:2554652407": [{"account": "fontso", "provenance": "data/candidates_cuentas-2026-09.json", "retrieved_at": "2026-09-26", "source_type": "bandcamp_discover", "source_url": "https://fontso.bandcamp.com/album/meridianos", "subject": "publishing_account", "value": "Bilbao, Spain"}],
+  "bc:3662156176": [{"account": "fontso", "provenance": "data/candidates_cuentas-2026-09.json", "retrieved_at": "2026-09-26", "source_type": "bandcamp_discover", "source_url": "https://fontso.bandcamp.com/album/la-reentrada", "subject": "publishing_account", "value": "Bilbao, Spain"}],
+  "bc:3893219629": [{"account": "fontso", "provenance": "data/candidates_cuentas-2026-09.json", "retrieved_at": "2026-09-26", "source_type": "bandcamp_discover", "source_url": "https://fontso.bandcamp.com/album/la-distancia", "subject": "publishing_account", "value": "Bilbao, Spain"}]
+  }
+}
