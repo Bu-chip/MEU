@@ -25,6 +25,7 @@ y añadirla a STEPS en el orden en que deba ejecutarse.
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
@@ -681,6 +682,57 @@ def step_normalize_tags(data):
     return []
 
 
+# ------------------------------------------------------------------
+# Puntuación final en tags (auditoría 2026-09)
+# ------------------------------------------------------------------
+#
+# 59 tags del canónico acaban en «.», «...» o «?» («ambient.», «beats...»,
+# «punk?»). Regla mecánica y conservadora: se recorta esa puntuación SOLO
+# si la forma limpia ya existe como tag en el catálogo («ambient.» ->
+# «ambient», 39 casos). Si no existe («blues etc.», «ta orain zer?»,
+# «.......») el tag se deja tal cual: podría ser un nombre propio, una
+# frase o una abreviatura, y eso es decisión para TAG_RENAMES.
+# Se excluyen las abreviaturas con punto por letra («a.o.r.», «méxico
+# d.f.») y las preguntas completas con «¿» («¿qué les dejaremos?»).
+# Idempotente: tras aplicarse, ninguna variante con puntuación tiene ya
+# forma limpia distinta de sí misma.
+TRAILING_PUNCT = re.compile(r"(\.{2,}|[.?])$")
+ABBREVIATION = re.compile(r"(^|[\s.])[^\s.]\.$")
+
+
+def strip_trailing_punct(tag):
+    """Forma limpia de un tag con puntuación final, o el propio tag."""
+    if not TRAILING_PUNCT.search(tag):
+        return tag
+    if tag.endswith("?") and "¿" in tag:
+        return tag
+    if tag.endswith(".") and not tag.endswith("..") and ABBREVIATION.search(tag):
+        return tag
+    return TRAILING_PUNCT.sub("", tag).rstrip()
+
+
+def step_strip_tag_punct(data):
+    """Recorta «.», «...» y «?» finales de un tag si la forma limpia ya existe."""
+    existing = {t for a in data["albums"] for t in a["tags"]}
+    touched = 0
+    for album in data["albums"]:
+        out = []
+        for tag in album["tags"]:
+            clean = strip_trailing_punct(tag)
+            if clean and clean != tag and clean in existing:
+                tag = clean
+            if tag not in out:
+                out.append(tag)
+        if out != album["tags"]:
+            album["tags"] = out
+            touched += 1
+    if touched:
+        rebuild_tags(data)
+        return [f"strip_tag_punct: {touched} álbumes con tags sin puntuación final "
+                f"({len(data['tags'])} tags únicos)"]
+    return []
+
+
 def step_merge_covers(data):
     """Fusiona data/covers.json (scrape de Bandcamp) en el canónico.
 
@@ -729,6 +781,7 @@ STEPS = [
     step_strip_whitespace,
     step_clean_invisible_chars,
     step_normalize_tags,
+    step_strip_tag_punct,
     step_merge_covers,
 ]
 
