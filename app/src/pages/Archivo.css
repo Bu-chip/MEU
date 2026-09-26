@@ -51,6 +51,21 @@
 .faceta button .c { font-size: 9px; opacity: .5; margin-left: 4px; }
 .faceta button:hover { background: var(--lima); }
 .faceta button.on { background: var(--tinta); color: var(--papel); font-weight: 700; }
+/* faceta ESTILO: campo con lista de nodos (datalist), mismo tono que los botones */
+.faceta input.estilo {
+  font-family: var(--mono);
+  font-size: 11px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--tinta);
+  padding: 6px 10px;
+  color: var(--tinta);
+  outline: none;
+  min-width: 220px;
+  flex-shrink: 0;
+}
+.faceta input.estilo::placeholder { color: var(--tinta); opacity: .5; }
+.faceta input.estilo:focus { background: var(--lima); }
 
 /* barra de estado: dónde estás dentro del archivo */
 .estado {

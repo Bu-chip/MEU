@@ -12,8 +12,9 @@ limpieza, no la riqueza.
 - `scripts/tag_merge_map.py` — reglas (todo en un fichero, stdlib, sin red).
 - `data/derived/tag_merge_map.json` — `{"map": {tag: nodo}, "nodos": [...], "dudosas": [...]}`.
 - `data/derived/tag_merge_report.md` — cifras, top 50, nodos por grupo, fusiones dudosas.
+- `data/derived/tag_nodes.json` — versión compacta para la web: solo los nodos con sus tags (~110 KB).
 - `tests/test_tag_merge_map.py` — normalización, sinónimos, clasificación, determinismo y
-  que el JSON versionado esté al día.
+  que los JSON versionados estén al día.
 
 Regenerar: `python3 scripts/tag_merge_map.py`. Solo LEE el canónico
 `data/bandcamp_bilbaotags_clean.json`; no toca `app/`.
@@ -95,5 +96,25 @@ campo `dudosas` del JSON.
   un origen.
 - **`poky`** absorbe bumping, hardbass, scouse house, bakalao, hard dance (escena
   makina).
-- Segunda fase (cuando se apruebe el mapa): consumirlo desde `Explorar.jsx` y
-  `Archivo.jsx`. Esta rama no toca `app/`.
+
+## Fase 2: la web consume el mapa
+
+La app no muta nada: sigue leyendo el canónico y superpone la lectura fusionada
+(`app/src/utils/estilos.js`, hook `useEstilos`, índice `tag_nodes.json`
+importado como asset con hash de contenido, igual que `map_index.json`).
+
+- **EXPLORAR · GÉNERO AL AZAR** cae en un *estilo*: nodo de género con ≥ 8
+  releases (mismo umbral de siempre, `UMBRAL_ESTILOS`). De ~650 tags crudos
+  (con lugares, formatos e idiomas mezclados) a ~280 estilos. Los recuentos se
+  calculan sobre el archivo cargado, no se leen del JSON.
+- **ARCHIVO** gana el filtro `#/archivo?estilo=<nodo>` (todos los discos cuyos
+  tags caen en el nodo), una faceta ESTILO con lista de los ~280 estilos, y la
+  búsqueda libre también encuentra por nodo («post punk» trae lo etiquetado
+  `postpunk`). El filtro `tag` (tag original exacto) sigue existiendo, así que
+  las URL antiguas y el MAPA no cambian.
+- **FICHA** muestra los tags tal cual los escribió el artista, pero cada uno
+  enlaza a su estilo; un tag de `resto` cae en el filtro exacto.
+- Un tag que el mapa no conoce (catálogo más nuevo que el mapa) cuenta como
+  nodo propio: no se pierde, solo queda sin fusionar hasta regenerar.
+- Pendiente: MAPA (`Mapa.jsx`, tags principales y sobrerrepresentados) y
+  «CERCA DE ESTE» (`similares.js`) siguen sobre tags crudos.

@@ -217,9 +217,20 @@ class FicheroDerivado(unittest.TestCase):
         if not (M.CANONICAL.exists() and M.MAP_JSON.exists()):
             self.skipTest("sin catálogo o sin derivado")
         catalog = json.loads(M.CANONICAL.read_text(encoding="utf-8"))
-        fresh = json.dumps(M.build(catalog), ensure_ascii=False, indent=1, sort_keys=False) + "\n"
-        self.assertEqual(fresh, M.MAP_JSON.read_text(encoding="utf-8"),
-                         "data/derived/tag_merge_map.json no está al día: python3 scripts/tag_merge_map.py")
+        result = M.build(catalog)
+        aviso = "no está al día: python3 scripts/tag_merge_map.py"
+        self.assertEqual(M.render_map_json(result), M.MAP_JSON.read_text(encoding="utf-8"),
+                         f"{M.MAP_JSON.name} {aviso}")
+        self.assertEqual(M.render_nodes_json(result), M.NODES_JSON.read_text(encoding="utf-8"),
+                         f"{M.NODES_JSON.name} {aviso}")
+
+    def test_nodes_json_es_compacto_y_completo(self):
+        res = M.build(mini_catalogo())
+        slim = json.loads(M.render_nodes_json(res))
+        self.assertEqual([n["id"] for n in slim["nodos"]], [n["id"] for n in res["nodos"]])
+        self.assertEqual(set(slim["nodos"][0]), {"id", "grupo", "padre", "discos", "tags"})
+        tags = {t for n in slim["nodos"] for t in n["tags"]}
+        self.assertEqual(tags, set(res["map"]))
 
 
 if __name__ == "__main__":

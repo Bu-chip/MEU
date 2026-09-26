@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { getIndices } from '../utils/indices.js'
+import { useEstilos } from '../hooks/useEstilos.js'
 import { shuffle, muroLibre, alAzarDistinto, TAM_MURO } from '../utils/azar.js'
 import { FichaBar } from '../components/FichaBar.jsx'
 import { Tile } from '../components/Tile.jsx'
@@ -37,13 +38,15 @@ function varianteEn(i) {
 }
 
 export function Explorar({ archive }) {
-  // modo: null = sin filtro | {tipo:'tag'|'anio', valor, total}
+  // modo: null = sin filtro | {tipo:'estilo'|'anio', valor, total}
   const [modo, setModo] = useState(null)
   // Muro inicial sembrado una vez por archivo; los mandos lo sustituyen.
   const semilla = useMemo(() => archive && muroLibre(archive.albums), [archive])
   const [regenerado, setMuro] = useState(null)
   const muro = regenerado ?? semilla
   const [seleccion, setSeleccion] = useState(null)
+  // Estilos = nodos del mapa de fusión de tags (docs/tag-merge-map.md).
+  const { estilos: est } = useEstilos(archive)
 
   const idx = archive ? getIndices(archive) : null
   const years = archive?.years ?? []
@@ -52,9 +55,16 @@ export function Explorar({ archive }) {
     return <p className="cargando">cargando archivo…</p>
   }
 
+  // GÉNERO AL AZAR cae en un estilo (nodo de género con ≥ UMBRAL_ESTILOS
+  // releases): «post-punk», «postpunk» y «post punk» son una sola caída, y
+  // los tags de lugar, formato o idioma no cuentan como género. Hasta que
+  // llega el mapa (unos ms tras el archivo) vale el universo de tags crudos.
+  const universo = est ? est.elegibles : idx.tagsElegibles
+  const releasesDe = (valor) => est?.nodoIndex.get(valor) ?? idx.tagIndex.get(valor) ?? []
+
   const masDiscos = () => {
-    if (modo?.tipo === 'tag') {
-      setMuro(shuffle(idx.tagIndex.get(modo.valor)).slice(0, TAM_MURO))
+    if (modo?.tipo === 'estilo') {
+      setMuro(shuffle(releasesDe(modo.valor)).slice(0, TAM_MURO))
     } else if (modo?.tipo === 'anio') {
       setMuro(shuffle(archive.albums.filter((a) => a.year === modo.valor)).slice(0, TAM_MURO))
     } else {
@@ -63,9 +73,9 @@ export function Explorar({ archive }) {
   }
 
   const generoAzar = () => {
-    const tag = alAzarDistinto(idx.tagsElegibles, modo?.tipo === 'tag' ? modo.valor : null)
-    const releases = idx.tagIndex.get(tag)
-    setModo({ tipo: 'tag', valor: tag, total: releases.length })
+    const estilo = alAzarDistinto(universo, modo?.tipo === 'estilo' ? modo.valor : null)
+    const releases = releasesDe(estilo)
+    setModo({ tipo: 'estilo', valor: estilo, total: releases.length })
     setMuro(shuffle(releases).slice(0, TAM_MURO))
   }
 
@@ -91,7 +101,7 @@ export function Explorar({ archive }) {
           </button>
           <button className="mando" onClick={generoAzar}>
             ⚄ GÉNERO AL AZAR
-            <span className="sub">caes en uno de {idx.tagsElegibles.length} estilos</span>
+            <span className="sub">caes en uno de {universo.length} estilos</span>
           </button>
           <button className="mando" onClick={anioAzar}>
             ⚁ AÑO AL AZAR
