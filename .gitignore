@@ -46,6 +46,7 @@ probe_out/
 data/candidates_*.json
 data/discovery_state.json
 data/discovery_state_*.json
+data/proposals_state.json
 
 # Build outputs (para futuras compilaciones)
 dist/

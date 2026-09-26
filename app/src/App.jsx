@@ -8,6 +8,7 @@ import { Archivo } from './pages/Archivo.jsx'
 import { Mapa } from './pages/Mapa.jsx'
 import { Ficha } from './pages/Ficha.jsx'
 import { Sobre } from './pages/Sobre.jsx'
+import { Proponer } from './pages/Proponer.jsx'
 import { Entrar } from './pages/Entrar.jsx'
 import { Coleccion } from './pages/Coleccion.jsx'
 import './App.css'
@@ -17,6 +18,7 @@ const PAGINAS = {
   archivo: Archivo,
   mapa: Mapa,
   sobre: Sobre,
+  proponer: Proponer,
   entrar: Entrar,
   coleccion: Coleccion,
 }

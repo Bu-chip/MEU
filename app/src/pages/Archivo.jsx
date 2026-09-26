@@ -263,7 +263,7 @@ export function Archivo({ route, archive }) {
         en reposo, el archivo es el índice de sus {formato(idx.artistas.length)}{' '}
         artistas · cualquier gesto (buscar, filtrar género/año, clicar un artista) abre el
         registro con las líneas reales · ← ÍNDICE o quitar los filtros devuelve al reposo ·
-        click en línea = ficha
+        click en línea = ficha · ¿falta algo? <a href="#/proponer">proponer un disco</a>
       </footer>
 
       <FichaBar album={seleccion} onCerrar={() => setSeleccion(null)} />

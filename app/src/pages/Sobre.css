@@ -24,6 +24,12 @@ main.sobre-pagina p {
   line-height: 1.8;
   margin-top: 12px;
 }
+main.sobre-pagina .proponer-link {
+  color: var(--tinta);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 main.sobre-pagina .qcr { margin-top: 26px; }
 main.sobre-pagina .qcr a {
   color: var(--lima);

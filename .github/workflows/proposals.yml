@@ -1,0 +1,214 @@
+name: Propuestas del público (formulario)
+
+# Lee las respuestas del formulario «proponer un disco» (Google Form →
+# Sheet publicado como CSV) y las convierte en candidatos con
+# scripts/proposals.py: fichas de disco, o la discografía entera si
+# proponen la portada de un grupo o sello.
+#
+# PRINCIPIO INNEGOCIABLE: el robot propone, Miguel dispone. El formulario
+# es público (carne de bots): NADA entra sin revisión. Este workflow JAMÁS
+# toca main ni el canónico: el estado vive en la rama
+# discovery-state-propuestas y los candidatos entran solo vía PR desde
+# candidates/propuestas-YYYY-MM.
+#
+# Cron el día 5 de cada mes (los de descubrimiento van el día 3) y a
+# mano cuando haga falta.
+
+on:
+  schedule:
+    - cron: "17 6 5 * *"
+  workflow_dispatch:
+    inputs:
+      budget:
+        description: "Presupuesto de requests a Bandcamp"
+        required: false
+        default: "200"
+      month:
+        description: "Sufijo YYYY-MM del fichero de candidatos (vacío = mes actual)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Solo scrape + artifact: no persiste estado ni abre PR"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+# Mismo group que los otros scrapes: jamás dos a la vez contra Bandcamp.
+concurrency:
+  group: scrape-covers
+  cancel-in-progress: false
+
+jobs:
+  proposals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PREFIX: propuestas
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restaurar estado, candidatos y pendientes
+        run: |
+          if git fetch origin discovery-state-propuestas; then
+            git ls-tree -r --name-only FETCH_HEAD -- data/ \
+              | grep -E "^data/(proposals_state\.json|candidates_${PREFIX}-[^/]+\.json)$" \
+              | while read -r f; do
+                  git checkout FETCH_HEAD -- "$f"
+                  echo "restaurado $f"
+                done
+          else
+            echo "sin rama de estado previa (primera pasada)"
+          fi
+          # Solo para el dedupe (no se persiste): estado y candidatos de
+          # los robots de descubrimiento que aún no estén en main.
+          for BR in discovery-state discovery-state-cuentas; do
+            if git fetch origin "$BR"; then
+              git ls-tree -r --name-only FETCH_HEAD -- data/ \
+                | grep -E '^data/(discovery_state[^/]*\.json|candidates_[^/]+\.json)$' \
+                | while read -r f; do
+                    if [ ! -f "$f" ]; then
+                      git show "FETCH_HEAD:$f" > "$f"
+                      echo "restaurado (dedupe) $f"
+                    fi
+                  done
+            fi
+          done
+
+      - name: Propuestas → candidatos
+        id: scrape
+        run: |
+          MONTH="${{ inputs.month }}"
+          MONTH="${MONTH:-$(date -u +%Y-%m)}"
+          set +e
+          python3 scripts/proposals.py --budget "${{ inputs.budget || '200' }}" \
+            --month "$MONTH" 2>&1 | tee /tmp/scrape.log
+          rc=${PIPESTATUS[0]}
+          set -e
+          USED=$(sed -n 's/^requests usados: //p' /tmp/scrape.log | tail -1)
+          ROWS=$(sed -n 's/^filas procesadas: //p' /tmp/scrape.log | tail -1)
+          {
+            echo "rc=$rc"
+            echo "used=${USED:-?}"
+            echo "rows=${ROWS:-?}"
+            echo "month=$MONTH"
+          } >> "$GITHUB_OUTPUT"
+          OBS="data/locations/observations/candidates_${PREFIX}-${MONTH}.json"
+          if [ -f "$OBS" ]; then cp "$OBS" /tmp/obs.json; fi
+
+      - name: Subir artifact con candidatos y estado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: proposals-output
+          path: |
+            data/candidates_${{ env.PREFIX }}-*.json
+            data/proposals_state.json
+          if-no-files-found: warn
+
+      - name: Persistir estado a la rama discovery-state-propuestas
+        if: ${{ !inputs.dry_run }}
+        run: |
+          mkdir -p /tmp/keep
+          cp data/proposals_state.json data/candidates_${PREFIX}-*.json /tmp/keep/ 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch origin discovery-state-propuestas; then
+            git checkout -f -B discovery-state-propuestas FETCH_HEAD
+          else
+            git checkout -f -B discovery-state-propuestas
+          fi
+          mkdir -p data
+          cp /tmp/keep/*.json data/ 2>/dev/null || true
+          # -f: están en .gitignore para proteger main; aquí es deliberado.
+          git add -f data/proposals_state.json data/candidates_${PREFIX}-*.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "sin cambios de estado"
+          else
+            git commit -m "estado ${PREFIX}: run ${{ github.run_id }}"
+            git push origin discovery-state-propuestas
+          fi
+
+      - name: Abrir/actualizar PR de candidatos
+        if: ${{ !inputs.dry_run && steps.scrape.outputs.rc == '0' }}
+        run: |
+          MONTH="${{ steps.scrape.outputs.month }}"
+          FILE="/tmp/keep/candidates_${PREFIX}-${MONTH}.json"
+          if [ ! -f "$FILE" ]; then
+            echo "sin fichero de candidatos → sin PR"
+            exit 0
+          fi
+          TOTAL=$(python3 -c "import json; print(len(json.load(open('$FILE'))['candidates']))")
+          if [ "$TOTAL" -eq 0 ]; then
+            echo "0 candidatos → sin PR"
+            exit 0
+          fi
+          BR="candidates/${PREFIX}-${MONTH}"
+          DEST="data/candidates_${PREFIX}-${MONTH}.json"
+          TABLA="data/candidates_${PREFIX}-${MONTH}_tabla.md"
+          # La tabla se genera con el script y el estado del ref del run,
+          # ANTES de cambiar a la rama del PR (que parte de main).
+          python3 scripts/proposals.py --table "$FILE" > /tmp/tabla.md
+          cat > /tmp/pr-body.md <<EOF
+          PR generado automáticamente por el workflow \`proposals\` (run ${{ github.run_id }}).
+
+          **${TOTAL} candidatos** propuestos por el público desde el formulario «proponer un disco» de la web. Tabla completa para revisión, con lo que escribió quien propuso (lugar, sello, comentario, sin verificar) y las propuestas que no dieron nada: [\`${TABLA}\`](https://github.com/${{ github.repository }}/blob/${BR}/${TABLA}).
+
+          Requests usados en el último run: ${{ steps.scrape.outputs.used }}. Filas del formulario procesadas: ${{ steps.scrape.outputs.rows }}.
+
+          **Ojo**: el formulario es público. Nada de esto está verificado; la revisión aquí es la única barrera.
+
+          **Revisión**: elimina del JSON las filas que no deban entrar y apunta su URL normalizada en \`data/rejected.json\`. Al aprobar: \`python3 scripts/merge_candidates.py ${PREFIX}-${MONTH} --pr <nº>\`.
+          EOF
+          if git fetch origin "$BR"; then
+            git checkout -f -B "$BR" FETCH_HEAD
+          else
+            git fetch origin main
+            git checkout -f -B "$BR" origin/main
+          fi
+          mkdir -p data
+          cp "$FILE" "$DEST"
+          cp /tmp/tabla.md "$TABLA"
+          if [ -f /tmp/obs.json ]; then
+            OBS="data/locations/observations/candidates_${PREFIX}-${MONTH}.json"
+            mkdir -p "$(dirname "$OBS")"
+            cp /tmp/obs.json "$OBS"
+            git add -f "$OBS"
+          fi
+          git add -f "$DEST" "$TABLA"
+          PUSHED=0
+          if git diff --cached --quiet; then
+            echo "candidatos sin cambios respecto a la rama $BR"
+          else
+            git commit -m "data: candidatos ${PREFIX} ${MONTH} (run ${{ github.run_id }})"
+            git push origin "$BR"
+            PUSHED=1
+          fi
+          OPEN=$(gh pr list --head "$BR" --state open --json number --jq '.[].number' | head -1)
+          if [ "$PUSHED" = "1" ]; then
+            if [ -z "$OPEN" ]; then
+              if gh pr create --head "$BR" --base main \
+                   --title "Propuestas del público ${MONTH}: ${TOTAL} discos para revisión" \
+                   --body-file /tmp/pr-body.md; then
+                echo "PR de candidatos abierto"
+              else
+                echo "::warning::No se pudo abrir el PR automáticamente. Los candidatos están en la rama ${BR}: https://github.com/${{ github.repository }}/compare/main...${BR}"
+              fi
+            else
+              gh pr edit "$OPEN" --body-file /tmp/pr-body.md
+              echo "PR #${OPEN} existente actualizado"
+            fi
+          else
+            echo "sin novedades → sin PR"
+          fi
+
+      - name: Propagar fallo del scraper
+        if: ${{ steps.scrape.outputs.rc != '0' }}
+        run: |
+          echo "::error::El script terminó con código ${{ steps.scrape.outputs.rc }}. Si es 2, Bandcamp sirve el Client Challenge: ejecutar el canario (workflow probe-tag-pages) y revisar docs/scraping-method.md."
+          exit 1
