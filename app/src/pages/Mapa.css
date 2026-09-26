@@ -55,7 +55,7 @@
 .mapa .menu .disparador:hover { text-decoration: underline; text-underline-offset: 3px; }
 .mapa .menu .disparador.on { background: var(--lima); font-weight: 700; }
 .mapa .menu.abierto .disparador { background: var(--tinta); color: var(--papel); }
-.mapa .menu-panel {
+:is(.mapa, .mapa-menu-portal) .menu-panel {
   position: absolute;
   top: calc(100% + 7px);
   right: 0;
@@ -67,8 +67,8 @@
   max-height: 60vh;
   overflow-y: auto;
 }
-.mapa .menu-panel .opciones { display: flex; flex-wrap: wrap; gap: 3px; }
-.mapa .menu-panel .opciones button {
+:is(.mapa, .mapa-menu-portal) .menu-panel .opciones { display: flex; flex-wrap: wrap; gap: 3px; }
+:is(.mapa, .mapa-menu-portal) .menu-panel .opciones button {
   font-family: var(--mono);
   font-size: 11px;
   background: transparent;
@@ -77,19 +77,19 @@
   padding: 2px 6px;
   cursor: pointer;
 }
-.mapa .menu-panel .opciones button:hover { border-color: var(--tinta); }
-.mapa .menu-panel .opciones button.on { background: var(--lima); border-color: var(--tinta); font-weight: 700; }
-.mapa .menu-panel .opciones .c { font-size: 9px; opacity: .5; }
-.mapa .menu-panel .filas { display: flex; flex-direction: column; gap: 8px; }
-.mapa .menu-panel .campo {
+:is(.mapa, .mapa-menu-portal) .menu-panel .opciones button:hover { border-color: var(--tinta); }
+:is(.mapa, .mapa-menu-portal) .menu-panel .opciones button.on { background: var(--lima); border-color: var(--tinta); font-weight: 700; }
+:is(.mapa, .mapa-menu-portal) .menu-panel .opciones .c { font-size: 9px; opacity: .5; }
+:is(.mapa, .mapa-menu-portal) .menu-panel .filas { display: flex; flex-direction: column; gap: 8px; }
+:is(.mapa, .mapa-menu-portal) .menu-panel .campo {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 11px;
   margin-bottom: 8px;
 }
-.mapa .menu-panel .campo select,
-.mapa .menu-panel .campo input {
+:is(.mapa, .mapa-menu-portal) .menu-panel .campo select,
+:is(.mapa, .mapa-menu-portal) .menu-panel .campo input {
   font-family: var(--mono);
   font-size: 11px;
   background: var(--papel);
@@ -99,7 +99,7 @@
   flex: 1;
   min-width: 0;
 }
-.mapa .menu-panel .accion {
+:is(.mapa, .mapa-menu-portal) .menu-panel .accion {
   font-family: var(--mono);
   font-size: 11px;
   text-align: left;
@@ -109,17 +109,17 @@
   padding: 4px 8px;
   cursor: pointer;
 }
-.mapa .menu-panel .accion:hover { background: var(--lima); }
-.mapa .menu-panel .accion.on { background: var(--lima); font-weight: 700; }
-.mapa .menu-panel .check {
+:is(.mapa, .mapa-menu-portal) .menu-panel .accion:hover { background: var(--lima); }
+:is(.mapa, .mapa-menu-portal) .menu-panel .accion.on { background: var(--lima); font-weight: 700; }
+:is(.mapa, .mapa-menu-portal) .menu-panel .check {
   display: flex;
   gap: 7px;
   align-items: flex-start;
   font-size: 11px;
   cursor: pointer;
 }
-.mapa .menu-panel .check input { accent-color: var(--tinta); margin-top: 2px; }
-.mapa .menu-panel .check .ayuda { display: block; font-size: 9.5px; opacity: .6; line-height: 1.45; }
+:is(.mapa, .mapa-menu-portal) .menu-panel .check input { accent-color: var(--tinta); margin-top: 2px; }
+:is(.mapa, .mapa-menu-portal) .menu-panel .check .ayuda { display: block; font-size: 9.5px; opacity: .6; line-height: 1.45; }
 .titulillo { font-size: 9px; letter-spacing: .12em; font-weight: 700; }
 
 /* ══ CHIPS DE FILTROS ACTIVOS ══ */
@@ -469,12 +469,17 @@
     padding: 6px 10px;
     font-size: 11.5px;
   }
-  /* Los desplegables ocupan el ancho útil, anclados bajo la barra. */
-  .mapa .menu-panel {
+  /* Los desplegables ocupan el ancho útil, anclados bajo la barra. Van
+     en un portal fuera de la barra (ver Menu en Mapa.jsx): la barra hace
+     scroll horizontal y recortaría lo que cuelga de ella. */
+  .mapa-menu-portal {
     position: fixed;
     left: 8px;
     right: 8px;
-    top: auto;
+    z-index: 70;
+  }
+  .mapa-menu-portal .menu-panel {
+    position: static;
     width: auto !important;
     max-height: 52vh;
   }
