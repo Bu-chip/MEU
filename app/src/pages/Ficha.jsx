@@ -5,6 +5,7 @@ import { navegar, hashArchivo } from '../hooks/useHashRoute.js'
 import { useCompartir } from '../hooks/useCompartir.js'
 import { useGuardar } from '../hooks/useGuardar.js'
 import { useVistos } from '../hooks/useVistos.js'
+import { useEstilos } from '../hooks/useEstilos.js'
 import { supabase } from '../lib/supabase.js'
 import { Corazon } from '../components/Corazon.jsx'
 import { Externo } from '../components/Externo.jsx'
@@ -14,7 +15,11 @@ import './Ficha.css'
 
 // Spec congelada: design/meu-ficha-v1.html + extensiones de Fase 0
 // (decisión 2 enmendada: el player carga automáticamente al entrar), tags
-// clicables que aterrizan en #/archivo?tag=…, similares al vuelo.
+// clicables que aterrizan en ARCHIVO, similares al vuelo. Los tags se
+// muestran tal cual los escribió el artista, pero el enlace lleva a su
+// estilo del mapa de fusión (#/archivo?estilo=rock para «rocka»); si el
+// tag no tiene nodo navegable (resto) o el mapa aún no ha llegado, cae en
+// el filtro exacto #/archivo?tag=….
 // Sin header ni puertas: la ficha abre con su barra de retorno (mockup).
 //
 // Las tres poblaciones del archivo, distinguibles por los datos:
@@ -43,6 +48,11 @@ export function Ficha({ route, archive }) {
   const { compartir, copiado } = useCompartir(album)
   const { guardado, alternar } = useGuardar(album)
   const { marcar } = useVistos()
+  const { estilos: est } = useEstilos(archive)
+  const destinoTag = (tag) => {
+    const nodo = est?.nodoDeTag.get(tag)
+    return nodo && nodo !== 'resto' ? hashArchivo({ estilo: nodo }) : hashArchivo({ tag })
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -113,7 +123,7 @@ export function Ficha({ route, archive }) {
           </div>
           <div className="tags">
             {album.tags.map((tag) => (
-              <a key={tag} href={hashArchivo({ tag })}>
+              <a key={tag} href={destinoTag(tag)}>
                 {tag}
               </a>
             ))}
@@ -174,7 +184,7 @@ export function Ficha({ route, archive }) {
       </div>
 
       <footer className="pie">
-        Toca un tag para filtrar ARCHIVO por él. OTRO AL AZAR abre otra ficha cualquiera.
+        Toca un tag para filtrar ARCHIVO por su estilo. OTRO AL AZAR abre otra ficha cualquiera.
         Si el disco no tiene portada en Bandcamp, se muestra un hueco en su lugar.
       </footer>
     </>

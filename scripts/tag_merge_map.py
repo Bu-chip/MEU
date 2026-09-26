@@ -5,6 +5,7 @@ Lee data/bandcamp_bilbaotags_clean.json (NO lo modifica) y escribe:
 
   * data/derived/tag_merge_map.json    -> {"map": {tag_original: nodo}, "nodos": [...]}
   * data/derived/tag_merge_report.md   -> resumen legible + "fusiones dudosas"
+  * data/derived/tag_nodes.json        -> solo "nodos", compacto, para la web
 
 Objetivo: reducir los ~5.500 tags distintos de Bandcamp a unos 400-500 nodos
 navegables SIN perder información: cada tag original apunta a exactamente un
@@ -75,6 +76,9 @@ RULES_JSON = REPO_ROOT / "data" / "locations" / "rules.json"
 DERIVED_DIR = REPO_ROOT / "data" / "derived"
 MAP_JSON = DERIVED_DIR / "tag_merge_map.json"
 REPORT_MD = DERIVED_DIR / "tag_merge_report.md"
+# Versión mínima para la web (app/src/hooks/useEstilos.js): solo los nodos
+# con sus tags, sin sangrado ni dudosas (~110 KB frente a ~410 KB).
+NODES_JSON = DERIVED_DIR / "tag_nodes.json"
 
 # ---------------------------------------------------------------------------
 # Parámetros. MIN_DISCOS es el umbral de microgénero: un concepto con menos
@@ -2497,11 +2501,22 @@ def render_report(result: dict) -> str:
     return "\n".join(out) + "\n"
 
 
+def render_map_json(result: dict) -> str:
+    return json.dumps(result, ensure_ascii=False, indent=1, sort_keys=False) + "\n"
+
+
+def render_nodes_json(result: dict) -> str:
+    """Índice para la web: nodos con id, grupo, padre, discos y tags."""
+    slim = {"nodos": [{k: n[k] for k in ("id", "grupo", "padre", "discos", "tags")} for n in result["nodos"]]}
+    return json.dumps(slim, ensure_ascii=False, separators=(",", ":")) + "\n"
+
+
 def main() -> None:
     catalog = json.loads(CANONICAL.read_text(encoding="utf-8"))
     result = build(catalog)
     DERIVED_DIR.mkdir(parents=True, exist_ok=True)
-    MAP_JSON.write_text(json.dumps(result, ensure_ascii=False, indent=1, sort_keys=False) + "\n", encoding="utf-8")
+    MAP_JSON.write_text(render_map_json(result), encoding="utf-8")
+    NODES_JSON.write_text(render_nodes_json(result), encoding="utf-8")
     REPORT_MD.write_text(render_report(result), encoding="utf-8")
     m = result["_meta"]
     print(f"tags {m['n_tags']} -> nodos {m['n_nodos']} {m['n_nodos_por_grupo']} "

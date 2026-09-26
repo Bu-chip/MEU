@@ -47,8 +47,9 @@ export function reemplazar(hash) {
 
 // Construye #/archivo?… con los filtros no vacíos (esquema de Fase 0).
 // desde/hasta (rango de años) llegan sobre todo desde el MAPA («ver en
-// archivo»): mismo filtro compartido en busqueda.filtra.
-export function hashArchivo({ q, genero, anio, desde, hasta, tag, artista } = {}) {
+// archivo»): mismo filtro compartido en busqueda.filtra. `estilo` es un nodo
+// del mapa de fusión de tags; `tag` sigue siendo el tag original exacto.
+export function hashArchivo({ q, genero, anio, desde, hasta, tag, estilo, artista } = {}) {
   const params = new URLSearchParams()
   if (q && q.trim()) params.set('q', q.trim())
   if (genero) params.set('genero', genero)
@@ -56,6 +57,7 @@ export function hashArchivo({ q, genero, anio, desde, hasta, tag, artista } = {}
   if (desde) params.set('desde', String(desde))
   if (hasta) params.set('hasta', String(hasta))
   if (tag) params.set('tag', tag)
+  if (estilo) params.set('estilo', estilo)
   if (artista) params.set('artista', artista)
   const qs = params.toString()
   return qs ? `#/archivo?${qs}` : '#/archivo'
