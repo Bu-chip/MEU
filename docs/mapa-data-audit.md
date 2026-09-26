@@ -24,7 +24,7 @@ Recordatorio: la ubicación es la que Bandcamp da **hoy** a la cuenta que public
 - **Sin municipio** en el mapa por defecto: **1050** (13.7 %); de ellas, 156 consultadas en Bandcamp sin ubicación.
 - Sin resolver (167): 142 porque Bandcamp no da ubicación, 22 con evidencia descartada (ver abajo) y 3 sin evidencia.
 - Municipios con al menos una release: **104**.
-- Releases con contradicciones registradas: 33 (tag 30, tag_hints_multiple 3).
+- Releases con contradicciones registradas: 38 (same_account 5, tag 30, tag_hints_multiple 3).
 
 ## Por territorio (mapa por defecto)
 

@@ -1,6 +1,7 @@
 {
   "checked_empty": 156,
   "conflicts": {
+    "same_account": 5,
     "tag": 30,
     "tag_hints_multiple": 3
   },
@@ -6905,7 +6906,7 @@
     "Pamplona, Colombia": 6,
     "San Sebastián, Chile": 1
   },
-  "releases_with_conflicts": 33,
+  "releases_with_conflicts": 38,
   "reliable": 6504,
   "territories": {
     "Araba": 596,

@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, useMemo } from 'react'
+import { createPortal } from 'react-dom'
 import { getIndices } from '../utils/indices.js'
 import { formato } from '../utils/formato.js'
 import { navegar, reemplazar, parseRoute, hashArchivo } from '../hooks/useHashRoute.js'
@@ -745,8 +746,34 @@ function Hoja({ estado, setEstado, resumen, children }) {
 
 // ── Filtros ───────────────────────────────────────────────────────────
 
-function Menu({ id, titulo, valor, abierto, setAbierto, children, ancho }) {
+function Menu({ id, titulo, valor, abierto, setAbierto, children, ancho, movil, barraRef }) {
   const activo = Boolean(valor)
+  const panel = abierto === id && (
+    <div className="menu-panel" style={ancho ? { width: ancho } : undefined}>
+      {children}
+    </div>
+  )
+  // En móvil la barra es un carrusel con scroll horizontal y Safari recorta
+  // lo que cuelga de ella (position: fixed dentro de un overflow: auto se
+  // comporta como absolute). El desplegable se saca de la barra con un
+  // portal y se ancla justo debajo; el cierre por clic fuera lo contempla
+  // (busca .menu-panel, no solo la barra).
+  const enPortal = movil && abierto === id
+  const [top, setTop] = useState(0)
+  useEffect(() => {
+    if (!enPortal) return
+    const mide = () => {
+      const barra = barraRef?.current
+      if (barra) setTop(Math.round(barra.getBoundingClientRect().bottom) + 6)
+    }
+    mide()
+    window.addEventListener('resize', mide)
+    window.addEventListener('scroll', mide, true)
+    return () => {
+      window.removeEventListener('resize', mide)
+      window.removeEventListener('scroll', mide, true)
+    }
+  }, [enPortal, barraRef])
   return (
     <div className={'menu' + (abierto === id ? ' abierto' : '')}>
       <button
@@ -756,11 +783,12 @@ function Menu({ id, titulo, valor, abierto, setAbierto, children, ancho }) {
       >
         {activo ? valor : titulo} <span className="flecha">▾</span>
       </button>
-      {abierto === id && (
-        <div className="menu-panel" style={ancho ? { width: ancho } : undefined}>
-          {children}
-        </div>
-      )}
+      {panel && (enPortal
+        ? createPortal(
+            <div className="mapa-menu-portal" style={{ top }}>{panel}</div>,
+            document.body,
+          )
+        : panel)}
     </div>
   )
 }
@@ -804,7 +832,9 @@ export function Mapa({ route, archive }) {
   useEffect(() => {
     if (!abierto) return
     const fuera = (e) => {
-      if (!barraRef.current?.contains(e.target)) setAbierto(null)
+      if (barraRef.current?.contains(e.target)) return
+      if (e.target.closest?.('.menu-panel')) return
+      setAbierto(null)
     }
     document.addEventListener('mousedown', fuera)
     return () => document.removeEventListener('mousedown', fuera)
@@ -1012,7 +1042,7 @@ export function Mapa({ route, archive }) {
   const barraFiltros = (
     <div className="barra" ref={barraRef}>
       {movil ? (
-        <Menu id="buscar" titulo="Buscar" valor={qLocal.trim() ? '«' + qLocal.trim() + '»' : null} abierto={abierto} setAbierto={setAbierto} ancho={300}>
+        <Menu id="buscar" titulo="Buscar" valor={qLocal.trim() ? '«' + qLocal.trim() + '»' : null} abierto={abierto} setAbierto={setAbierto} movil={movil} barraRef={barraRef} ancho={300}>
           <label className="campo">
             texto
             <input
@@ -1039,7 +1069,7 @@ export function Mapa({ route, archive }) {
         />
       )}
 
-      <Menu id="genero" titulo="Género" valor={filtros.genero ?? filtros.estilo ?? filtros.tag} abierto={abierto} setAbierto={setAbierto} ancho={300}>
+      <Menu id="genero" titulo="Género" valor={filtros.genero ?? filtros.estilo ?? filtros.tag} abierto={abierto} setAbierto={setAbierto} movil={movil} barraRef={barraRef} ancho={300}>
         <label className="campo">
           {est ? 'estilo' : 'tag'}
           {/* Se aplica al elegir en la lista, con Enter o al salir del campo,
@@ -1076,7 +1106,7 @@ export function Mapa({ route, archive }) {
         </div>
       </Menu>
 
-      <Menu id="territorio" titulo="Territorio" valor={filtros.territorio} abierto={abierto} setAbierto={setAbierto}>
+      <Menu id="territorio" titulo="Territorio" valor={filtros.territorio} abierto={abierto} setAbierto={setAbierto} movil={movil} barraRef={barraRef}>
         <div className="opciones">
           {geo.territories.map((t) => (
             <button
@@ -1090,7 +1120,7 @@ export function Mapa({ route, archive }) {
         </div>
       </Menu>
 
-      <Menu id="anios" titulo="Años" valor={rangoAnios} abierto={abierto} setAbierto={setAbierto} ancho={260}>
+      <Menu id="anios" titulo="Años" valor={rangoAnios} abierto={abierto} setAbierto={setAbierto} movil={movil} barraRef={barraRef} ancho={260}>
         <div className="filas">
           <label className="campo">
             desde
@@ -1129,7 +1159,7 @@ export function Mapa({ route, archive }) {
         </div>
       </Menu>
 
-      <Menu id="mas" titulo="Más filtros" abierto={abierto} setAbierto={setAbierto} ancho={340}>
+      <Menu id="mas" titulo="Más filtros" abierto={abierto} setAbierto={setAbierto} movil={movil} barraRef={barraRef} ancho={340}>
         <div className="filas">
           <p className="titulillo">UBICACIONES INCLUIDAS</p>
           {PROCEDENCIAS.map((p) => (
