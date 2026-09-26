@@ -168,7 +168,7 @@
 }
 .sim .ti { font-style: italic; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sim .ge { font-size: 10px; opacity: .55; }
-.sim .ov { font-size: 10px; text-align: right; opacity: .55; }
+.sim .ov { font-size: 10px; text-align: right; opacity: .55; white-space: nowrap; }
 
 .no-encontrado { border-bottom: 2px solid var(--tinta); padding: 48px 18px 64px 18px; }
 .no-encontrado .que {
@@ -189,7 +189,8 @@
     border-bottom: 2px solid var(--tinta);
     max-height: 52vw;
   }
-  .sim { grid-template-columns: 44px 1fr 50px; }
+  /* la última columna dice «3 estilos» (antes «3 tags»): que no se parta */
+  .sim { grid-template-columns: 44px 1fr auto; }
   .sim .ti,
   .sim .ge { display: none; }
 }
