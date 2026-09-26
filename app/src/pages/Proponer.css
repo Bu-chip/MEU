@@ -1,0 +1,109 @@
+/* PROPONER: misma columna de lectura que SOBRE y los mismos campos que
+   la vía email de ENTRAR (mono, borde 2px, botón display con hover lima).
+   Tokens congelados: papel/tinta, sin radius ni sombras. */
+main.proponer-pagina {
+  max-width: 68ch;
+  padding: 26px 22px 64px 22px;
+}
+main.proponer-pagina h1 {
+  font-family: var(--display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(34px, 5.5vw, 72px);
+  line-height: .88;
+}
+main.proponer-pagina p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+main.proponer-pagina .propuesta {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 26px;
+}
+main.proponer-pagina .propuesta label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+main.proponer-pagina .propuesta label > span {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+main.proponer-pagina .propuesta input,
+main.proponer-pagina .propuesta textarea {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--tinta);
+  background: var(--papel);
+  border: 2px solid var(--tinta);
+  padding: 10px 12px;
+  resize: vertical;
+}
+main.proponer-pagina .propuesta input:focus,
+main.proponer-pagina .propuesta textarea:focus {
+  outline: none;
+  background: #fff;
+}
+main.proponer-pagina .propuesta ::placeholder {
+  opacity: 0.45;
+}
+
+/* Honeypot: fuera de pantalla, no display:none (algunos bots lo respetan). */
+main.proponer-pagina .propuesta .trampa {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+main.proponer-pagina .propuesta button {
+  align-self: flex-start;
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  background: transparent;
+  color: var(--tinta);
+  border: 2px solid var(--tinta);
+  padding: 10px 18px;
+  cursor: pointer;
+}
+main.proponer-pagina .propuesta button:hover {
+  background: var(--lima);
+}
+main.proponer-pagina .propuesta button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+main.proponer-pagina .err {
+  font-size: 11px;
+  color: var(--tinta);
+  background: var(--lima);
+  padding: 6px 10px;
+  display: inline-block;
+  margin-top: 0;
+}
+main.proponer-pagina .enviado {
+  margin-top: 26px;
+  border-left: 2px solid var(--tinta);
+  padding-left: 12px;
+}
+main.proponer-pagina .otra {
+  color: var(--tinta);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+main.proponer-pagina .pie-form {
+  margin-top: 26px;
+  opacity: 0.7;
+}

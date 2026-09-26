@@ -30,6 +30,12 @@ export function Sobre() {
         una sola persona. El catálogo es un archivo vivo: crece cada mes con discos nuevos que
         se descubren en Bandcamp y se revisan a mano antes de entrar.
       </p>
+      <h2>Falta algo</h2>
+      <p>
+        Si echas en falta un disco, un grupo o un sello, puedes{' '}
+        <a className="proponer-link" href="#/proponer">proponerlo</a>. Basta con su
+        enlace de Bandcamp; se revisa a mano antes de entrar.
+      </p>
       <p className="qcr">
         <a href="https://queimadacircuitrecords.com" target="_blank" rel="noreferrer">
           queimadacircuitrecords.com
