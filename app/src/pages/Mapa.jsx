@@ -3,6 +3,8 @@ import { getIndices } from '../utils/indices.js'
 import { formato } from '../utils/formato.js'
 import { navegar, reemplazar, parseRoute, hashArchivo } from '../hooks/useHashRoute.js'
 import { useMapIndex } from '../hooks/useMapIndex.js'
+import { useEstilos } from '../hooks/useEstilos.js'
+import { etiqueta } from '../utils/estilos.js'
 import { useMovil } from '../hooks/useMovil.js'
 import { FichaBar } from '../components/FichaBar.jsx'
 import {
@@ -417,13 +419,16 @@ function ListaReleases({ rows, geo, onRelease, limite }) {
   )
 }
 
-function PanelLugar({ lugar, rows, nBase, filtrado, geo, idx, total, filtros, aplica, onRelease, onExpandir }) {
+function PanelLugar({ lugar, rows, nBase, filtrado, geo, idx, est, total, filtros, aplica, onRelease, onExpandir }) {
   const [abierta, setAbierta] = useState(null)
   const [todosTags, setTodosTags] = useState(false)
   const r = resumenLugar(rows, geo)
-  const excluir = geo.geoTags
-  const principales = tagsPrincipales(rows, { excluir, limite: todosTags ? 40 : TAGS_VISIBLES })
-  const sobre = sobrerrepresentados(rows, idx.tagIndex, total, { excluir })
+  // Con el mapa de fusión: estilos (nodos de género), fuera lugares y
+  // formatos. Sin él (aún cargando): tags crudos menos los topónimos.
+  const excluir = est ? est.noGenero : geo.geoTags
+  const nodoDeTag = est?.nodoDeTag
+  const principales = tagsPrincipales(rows, { excluir, nodoDeTag, limite: todosTags ? 40 : TAGS_VISIBLES })
+  const sobre = sobrerrepresentados(rows, est ? est.nodoIndex : idx.tagIndex, total, { excluir, nodoDeTag })
   const abrir = (k) => {
     setAbierta((a) => (a === k ? null : k))
     onExpandir?.()
@@ -454,12 +459,12 @@ function PanelLugar({ lugar, rows, nBase, filtrado, geo, idx, total, filtros, ap
           </p>
           {filtrado && <p className="nota">con los filtros activos · sin filtros: {formato(nBase)}</p>}
 
-          <h3>TAGS PRINCIPALES</h3>
+          <h3>{est ? 'ESTILOS PRINCIPALES' : 'TAGS PRINCIPALES'}</h3>
           <p className="tags">
             {principales.map(([t], i) => (
               <span key={t}>
                 {i > 0 && <span className="sep"> · </span>}
-                <button className={filtros.tag === t ? 'on' : ''} onClick={() => aplica({ tag: t })}>
+                <button className={filtros.estilo === t ? 'on' : ''} onClick={() => aplica({ estilo: t, tag: null })}>
                   {t}
                 </button>
               </span>
@@ -498,6 +503,7 @@ function PanelLugar({ lugar, rows, nBase, filtrado, geo, idx, total, filtros, ap
                   q: filtros.q,
                   genero: filtros.genero,
                   tag: filtros.tag,
+                  estilo: filtros.estilo,
                   artista: filtros.artista,
                   desde: filtros.desde,
                   hasta: filtros.hasta,
@@ -535,7 +541,7 @@ function PanelLugar({ lugar, rows, nBase, filtrado, geo, idx, total, filtros, ap
                 <table className="tabla">
                   <tbody>
                     {sobre.map(([t, n, x]) => (
-                      <tr key={t} onClick={() => aplica({ tag: t })}>
+                      <tr key={t} onClick={() => aplica({ estilo: t, tag: null })}>
                         <td className="t">{t}</td>
                         <td className="x">×{x.toFixed(1)}</td>
                         <td className="n">{n}</td>
@@ -609,7 +615,7 @@ function Ranking({ lugares, onLugar, maxN, conLift }) {
   )
 }
 
-function PanelTag({ tag, lugares, geo, sinTag, nConTag, nLocalizadas, onLugar, onExpandir }) {
+function PanelTag({ tag, esLugar, lugares, sinTag, nConTag, nLocalizadas, onLugar, onExpandir }) {
   const [n, setN] = useState(8)
   const totalSinTag = sinTag.rows.length
   const conLift = lugares.map((l) => {
@@ -623,7 +629,7 @@ function PanelTag({ tag, lugares, geo, sinTag, nConTag, nLocalizadas, onLugar, o
       <p className="cifras">
         <b>{formato(nLocalizadas)}</b> releases localizadas · <b>{lugares.length}</b> municipios
       </p>
-      {geo.geoTags.has(tag) && (
+      {esLugar && (
         <p className="nota">Este tag es un topónimo: dice dónde se etiqueta, no dónde está nadie.</p>
       )}
       <h3>MÁS PRESENCIA EN</h3>
@@ -761,6 +767,8 @@ function Menu({ id, titulo, valor, abierto, setAbierto, children, ancho }) {
 
 export function Mapa({ route, archive }) {
   const { index, error } = useMapIndex()
+  // Estilos = nodos del mapa de fusión de tags; null hasta que llega.
+  const { estilos: est } = useEstilos(archive)
   const movil = useMovil()
   const filtros = leeFiltrosMapa(route)
 
@@ -804,8 +812,8 @@ export function Mapa({ route, archive }) {
 
   const efectivos = { ...filtros, q: qLocal }
   const geo = index ? preparaGeo(index) : null
-  const consulta = archive && geo ? consultaCacheada(archive, geo, { ...efectivos, lugar: null }) : null
-  const base = archive && geo ? consultaCacheada(archive, geo, { ubic: filtros.ubic }) : null
+  const consulta = archive && geo ? consultaCacheada(archive, geo, { ...efectivos, lugar: null }, est) : null
+  const base = archive && geo ? consultaCacheada(archive, geo, { ubic: filtros.ubic }, est) : null
 
   useEffect(() => {
     if (!recorriendo || !archive) return
@@ -848,7 +856,7 @@ export function Mapa({ route, archive }) {
   const total = archive.albums.length
   const { porLugar, cuenta } = consulta
   const filtrado = Boolean(
-    qLocal.trim() || filtros.genero || filtros.tag || filtros.artista || filtros.desde || filtros.hasta,
+    qLocal.trim() || filtros.genero || filtros.tag || filtros.estilo || filtros.artista || filtros.desde || filtros.hasta,
   )
   const maxN = Math.max(1, ...[...base.porLugar.values()].map((r) => r.length))
   const debiles = filtros.ubic.includes('m') || filtros.ubic.includes('t')
@@ -882,6 +890,16 @@ export function Mapa({ route, archive }) {
     setAbierto(null)
     navegar(hashMapa({ ...efectivos, ...cambios }))
   }
+  // Estilo (nodo) con el mapa cargado; tag crudo mientras no ha llegado.
+  const aplicaEstilo = (texto) => {
+    const t = texto.trim().toLowerCase()
+    if (!t) return
+    if (est) {
+      if (t !== filtros.estilo && est.nodoIndex.has(t)) aplica({ estilo: t, tag: null })
+    } else if (t !== filtros.tag && idx.tagIndex.has(t)) {
+      aplica({ tag: t })
+    }
+  }
   const alternaUbic = (code) => {
     aplica({ ubic: filtros.ubic.includes(code) ? filtros.ubic.replace(code, '') : filtros.ubic + code })
   }
@@ -899,6 +917,7 @@ export function Mapa({ route, archive }) {
   if (filtros.artista) chips.push(['artista: ' + filtros.artista, { artista: null }])
   if (filtros.genero) chips.push([filtros.genero, { genero: null }])
   if (filtros.tag) chips.push([filtros.tag, { tag: null }])
+  if (filtros.estilo) chips.push([etiqueta(filtros.estilo), { estilo: null }])
   if (rangoAnios) chips.push([rangoAnios, { desde: null, hasta: null }])
   if (filtros.territorio) chips.push([filtros.territorio, { territorio: null }])
   if (qLocal.trim()) chips.push(['«' + qLocal.trim() + '»', { q: '' }])
@@ -941,6 +960,7 @@ export function Mapa({ route, archive }) {
         filtrado={filtrado}
         geo={geo}
         idx={idx}
+        est={est}
         total={total}
         filtros={efectivos}
         aplica={aplica}
@@ -948,13 +968,14 @@ export function Mapa({ route, archive }) {
         onExpandir={movil ? () => setHoja('expandida') : undefined}
       />
     )
-  } else if (filtros.tag) {
+  } else if (filtros.estilo || filtros.tag) {
+    const t = filtros.estilo ?? filtros.tag
     panel = (
       <PanelTag
-        tag={filtros.tag}
+        tag={etiqueta(t)}
+        esLugar={geo.geoTags.has(t) || est?.nodos.get(t)?.grupo === 'lugar'}
         lugares={ranking}
-        geo={geo}
-        sinTag={consultaCacheada(archive, geo, { ...efectivos, tag: null, lugar: null })}
+        sinTag={consultaCacheada(archive, geo, { ...efectivos, tag: null, estilo: null, lugar: null }, est)}
         nConTag={consulta.rows.length}
         nLocalizadas={cuenta.localizadas}
         onLugar={eligeLugar}
@@ -978,9 +999,9 @@ export function Mapa({ route, archive }) {
     <>
       <b>{lugarSel.name}</b> · {formato((porLugar.get(lugarSel.i) ?? []).length)} releases
     </>
-  ) : filtros.tag ? (
+  ) : filtros.estilo || filtros.tag ? (
     <>
-      <b>{filtros.tag}</b> · {formato(cuenta.localizadas)} releases en {ranking.length} municipios
+      <b>{etiqueta(filtros.estilo ?? filtros.tag)}</b> · {formato(cuenta.localizadas)} releases en {ranking.length} municipios
     </>
   ) : (
     <>
@@ -1018,22 +1039,27 @@ export function Mapa({ route, archive }) {
         />
       )}
 
-      <Menu id="genero" titulo="Género" valor={filtros.genero ?? filtros.tag} abierto={abierto} setAbierto={setAbierto} ancho={300}>
+      <Menu id="genero" titulo="Género" valor={filtros.genero ?? filtros.estilo ?? filtros.tag} abierto={abierto} setAbierto={setAbierto} ancho={300}>
         <label className="campo">
-          tag
+          {est ? 'estilo' : 'tag'}
+          {/* Se aplica al elegir en la lista, con Enter o al salir del campo,
+              nunca por tecleo: «rock» no debe cortar «rock & roll». */}
           <input
             type="text"
             list="mapa-tags"
-            defaultValue={filtros.tag ?? ''}
+            key={filtros.estilo ?? filtros.tag ?? ''}
+            defaultValue={filtros.estilo ?? filtros.tag ?? ''}
             placeholder="noise, hardcore…"
             onChange={(e) => {
-              const t = e.target.value.trim().toLowerCase()
-              if (idx.tagIndex.has(t)) aplica({ tag: t })
+              const tipo = e.nativeEvent?.inputType
+              if (!tipo || tipo === 'insertReplacementText') aplicaEstilo(e.target.value)
             }}
+            onKeyDown={(e) => e.key === 'Enter' && aplicaEstilo(e.target.value)}
+            onBlur={(e) => aplicaEstilo(e.target.value)}
           />
         </label>
         <datalist id="mapa-tags">
-          {idx.tagsElegibles.map((t) => (
+          {(est ? est.elegibles : idx.tagsElegibles).map((t) => (
             <option key={t} value={t} />
           ))}
         </datalist>
@@ -1227,6 +1253,7 @@ export function Mapa({ route, archive }) {
                 q: '',
                 genero: null,
                 tag: null,
+                estilo: null,
                 artista: null,
                 desde: null,
                 hasta: null,
@@ -1244,6 +1271,7 @@ export function Mapa({ route, archive }) {
                 q: qLocal,
                 genero: filtros.genero,
                 tag: filtros.tag,
+                estilo: filtros.estilo,
                 artista: filtros.artista,
                 desde: filtros.desde,
                 hasta: filtros.hasta,

@@ -5,7 +5,7 @@ import { parseRoute } from '../hooks/useHashRoute.js'
 import { filtra } from './busqueda.js'
 import {
   leeFiltrosMapa, hashMapa, preparaGeo, agrega, consultaMapa, rankingLugares,
-  lift, sobrerrepresentados, resumenLugar, UBIC_DEFECTO, procedenciaDe, etiquetasPrioritarias,
+  lift, sobrerrepresentados, tagsPrincipales, resumenLugar, UBIC_DEFECTO, procedenciaDe, etiquetasPrioritarias,
   maxEtiquetas, encajaVista,
 } from './mapa.js'
 
@@ -172,6 +172,39 @@ test('lift y sobrerrepresentados con umbrales', () => {
   const s = sobrerrepresentados(rows, tagIndex, 100, { excluir: new Set(['bilbao']) })
   assert.deepEqual(s.map((x) => x[0]), ['noise'], 'raro no llega a 10 en el archivo; bilbao es topónimo')
   assert.equal(s[0][2], 3.75)
+})
+
+test('tags principales y sobrerrepresentados por estilo (mapa de fusión)', () => {
+  // post-punk / postpunk son un nodo; bilbao es lugar; kokoshca es resto.
+  const nodoDeTag = new Map([
+    ['post-punk', 'post-punk'], ['postpunk', 'post-punk'], ['noise', 'noise'],
+    ['bilbao', 'lugar:bilbo'], ['kokoshca', 'resto'],
+  ])
+  const rows = [
+    { id: 1, tags: ['post-punk', 'postpunk', 'bilbao', 'kokoshca'] },
+    { id: 2, tags: ['postpunk', 'noise', 'bilbao'] },
+    { id: 3, tags: ['noise', 'bilbao'] },
+  ]
+  const excluir = new Set(['lugar:bilbo', 'resto'])
+  assert.deepEqual(tagsPrincipales(rows, { excluir, nodoDeTag }), [['noise', 2], ['post-punk', 2]])
+  assert.deepEqual(tagsPrincipales(rows, { excluir: new Set(['bilbao']) }), [['noise', 2], ['post-punk', 1], ['postpunk', 2], ['kokoshca', 1]].sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0])))
+  const nodoIndex = new Map([['post-punk', new Array(10)], ['noise', new Array(40)], ['lugar:bilbo', new Array(50)]])
+  const s = sobrerrepresentados(rows, nodoIndex, 100, { excluir, nodoDeTag, minLocal: 2 })
+  assert.deepEqual(s.map((x) => x[0]), ['post-punk', 'noise'])
+  assert.equal(s[0][2], lift(2, 3, 10, 100))
+})
+
+test('estilo en la URL del mapa y en la consulta', () => {
+  const r = ruta('#/mapa/bilbo?estilo=post-punk&tag=noise')
+  const f = leeFiltrosMapa(r)
+  assert.equal(f.estilo, 'post-punk')
+  assert.equal(f.tag, 'noise')
+  assert.equal(hashMapa({ lugar: 'bilbo', estilo: 'post-punk' }), '#/mapa/bilbo?estilo=post-punk')
+  const estilos = { nodoDeTag: new Map([['noise', 'ruido'], ['hardcore', 'hardcore']]) }
+  const c = consultaMapa(ARCHIVE, geo, { estilo: 'ruido', ubic: UBIC_DEFECTO }, estilos)
+  assert.deepEqual(c.rows.map((a) => a.id), [1, 2, 3, 6, 7, 8, 9])
+  const sin = consultaMapa(ARCHIVE, geo, { estilo: 'ruido', ubic: UBIC_DEFECTO })
+  assert.deepEqual(sin.rows, [], 'sin mapa, estilo degrada a tag exacto')
 })
 
 test('resumen de municipio: procedencia, sellos y artistas', () => {

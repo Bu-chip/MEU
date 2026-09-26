@@ -60,6 +60,7 @@ test('elegibles: solo género, sobre el umbral, sin «otros géneros»', () => {
   assert.deepEqual(est2.elegibles, ['post-punk', 'rock']) // por frecuencia: post-punk 3+N > rock 2+N
   assert.equal(est2.elegibles.includes('lugar:bilbo'), false)
   assert.equal(est2.elegibles.includes('otro:cassette'), false)
+  assert.deepEqual([...est.noGenero].sort(), ['lugar:bilbo', OTROS_GENEROS, 'otro:cassette', RESTO].sort())
 })
 
 test('tieneEstilo y etiqueta', () => {

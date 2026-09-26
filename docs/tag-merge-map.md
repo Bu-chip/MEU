@@ -116,5 +116,17 @@ importado como asset con hash de contenido, igual que `map_index.json`).
   enlaza a su estilo; un tag de `resto` cae en el filtro exacto.
 - Un tag que el mapa no conoce (catálogo más nuevo que el mapa) cuenta como
   nodo propio: no se pierde, solo queda sin fusionar hasta regenerar.
-- Pendiente: MAPA (`Mapa.jsx`, tags principales y sobrerrepresentados) y
-  «CERCA DE ESTE» (`similares.js`) siguen sobre tags crudos.
+
+## Fase 3: MAPA y «CERCA DE ESTE»
+
+- **MAPA**: «tags principales» y «más característicos» de un municipio se
+  cuentan por estilo (cada disco una vez por nodo), excluyendo `lugar:*`,
+  `otro:*`, `resto` y `otros géneros`. El filtro de la URL es
+  `#/mapa?estilo=<nodo>` (el menú Género elige entre los ~280 estilos); un
+  `?tag=` antiguo se sigue leyendo como tag exacto. «Ver en ARCHIVO» lleva el
+  estilo. Un estilo de lugar (`lugar:bilbo`) muestra el aviso de topónimo.
+- **FICHA · CERCA DE ESTE**: vecinos por estilos compartidos, no por tags
+  crudos: «rocka» y «rock» son un solo estilo en común y los tags de `resto`
+  (nombres de grupo, sellos) no acercan a nadie.
+- Hasta que llega el mapa (unos ms tras el archivo) ambas vistas funcionan
+  como antes, sobre tags crudos.

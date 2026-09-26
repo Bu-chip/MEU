@@ -36,6 +36,8 @@ export function nodosDe(album, nodoDeTag) {
 //   nodoIndex  Map id → releases (cada disco una sola vez por nodo)
 //   elegibles  ids de género con ≥ UMBRAL_ESTILOS releases, por frecuencia:
 //              el universo de GÉNERO AL AZAR y de la faceta ESTILO
+//   noGenero   ids de lugar:* y otro:* (lo que el MAPA excluye de sus
+//              «tags principales»: un topónimo o un formato no es un estilo)
 export function preparaEstilos(mapa, archive) {
   const nodoDeTag = new Map()
   const nodos = new Map()
@@ -62,7 +64,10 @@ export function preparaEstilos(mapa, archive) {
     )
     .sort((a, b) => nodoIndex.get(b).length - nodoIndex.get(a).length || a.localeCompare(b))
 
-  return { nodoDeTag, nodos, nodoIndex, elegibles }
+  const noGenero = new Set([...nodos.values()].filter((n) => n.grupo !== 'genero').map((n) => n.id))
+  noGenero.add(OTROS_GENEROS)
+
+  return { nodoDeTag, nodos, nodoIndex, elegibles, noGenero }
 }
 
 // ¿El disco cae en este estilo? Vale para cualquier nodo (género, lugar:*,

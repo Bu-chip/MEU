@@ -1,14 +1,21 @@
-// «CERCA DE ESTE»: vecinos por tags compartidos, calculados al vuelo por
-// ficha (2.364 × ~6 tags: coste despreciable, nada que precomputar).
+// «CERCA DE ESTE»: vecinos por estilos compartidos, calculados al vuelo por
+// ficha (7.600 × ~6 tags: coste despreciable, nada que precomputar).
+// Con el mapa de fusión cargado (nodoDeTag) se comparan nodos, no tags
+// crudos: «rocka» y «rock» cuentan como un solo estilo en común, y los
+// tags de «resto» (nombres de grupo, sellos) no acercan a nadie. Sin mapa,
+// tags crudos tal cual.
 // Orden del mockup: solapamiento desc y, a igualdad, año asc (s/f primero).
-export function similares(albums, album, n = 8) {
-  const propios = new Set(album.tags)
+import { nodosDe } from './estilos.js'
+
+export function similares(albums, album, n = 8, nodoDeTag = null) {
+  const claves = (a) => (nodoDeTag ? nodosDe(a, nodoDeTag) : a.tags)
+  const propios = new Set(claves(album))
   const candidatos = []
   for (const otro of albums) {
     if (otro.id === album.id) continue
     let ov = 0
-    for (const tag of otro.tags) {
-      if (propios.has(tag)) ov++
+    for (const k of claves(otro)) {
+      if (propios.has(k)) ov++
     }
     if (ov > 0) candidatos.push([otro, ov])
   }
