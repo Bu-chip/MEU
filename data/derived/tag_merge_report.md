@@ -7,13 +7,13 @@ Generado por `scripts/tag_merge_map.py` a partir de `data/bandcamp_bilbaotags_cl
 | | |
 |---|---|
 | Discos | 7637 |
-| Tags distintos (antes) | 5575 |
+| Tags distintos (antes) | 5536 |
 | Nodos navegables (después) | 452 |
 | &nbsp;&nbsp;· genero | 319 |
 | &nbsp;&nbsp;· lugar | 88 |
 | &nbsp;&nbsp;· otro | 45 |
 | Umbral de microgénero (MIN_DISCOS) | 5 |
-| Tags en `resto` (sin nodo navegable) | 2979 |
+| Tags en `resto` (sin nodo navegable) | 2977 |
 | Discos cuyos tags caen todos en `resto` | 2 |
 
 Grupos: `genero` (sin prefijo), `lugar:*` (aparte, nunca se funde con géneros), `otro:*` (formato, idioma, instrumento, escena, época) y `resto` (nombres de grupo, sellos, palabras sueltas: se conservan en el mapa pero no son nodo).
@@ -23,10 +23,10 @@ Grupos: `genero` (sin prefijo), `lugar:*` (aparte, nunca se funde con géneros),
 | # | Nodo | Grupo | Padre | Discos | Tags fusionados | Ejemplos de tags |
 |---|---|---|---|---|---|---|
 | 1 | rock | genero |  | 2048 | 97 | rock, euskal rock, oz rock, eclectic rock, spanish rock, power trio … |
-| 2 | electronic | genero |  | 1611 | 19 | electronic, electronica, electronic music, electronics, euzkadi electronic, folktronica … |
-| 3 | punk | genero | rock | 1378 | 88 | punk, neopunk, political punk, political punk rock, egg punk, pathetic punk … |
-| 4 | alternative rock | genero | rock | 1108 | 27 | alternative, alternative rock, rock alternativo, alt rock, alternativo, basque rock alternative … |
-| 5 | metal | genero | rock | 1074 | 49 | metal, extreme metal, modern metal, extreme music, extreme underground sounds, spanish metal … |
+| 2 | electronic | genero |  | 1611 | 17 | electronic, electronica, electronic music, electronics, euzkadi electronic, folktronica … |
+| 3 | punk | genero | rock | 1378 | 87 | punk, neopunk, political punk, political punk rock, egg punk, pathetic punk … |
+| 4 | alternative rock | genero | rock | 1108 | 26 | alternative, alternative rock, rock alternativo, alt rock, alternativo, basque rock alternative … |
+| 5 | metal | genero | rock | 1074 | 48 | metal, extreme metal, modern metal, extreme music, extreme underground sounds, spanish metal … |
 | 6 | lugar:euskal herria | lugar |  | 1070 | 26 | basque country, euskal herria, basque, basque music, euskadi, euskal musika … |
 | 7 | lugar:donostia | lugar | lugar:gipuzkoa | 1033 | 7 | donostia, donostia san sebastián, donostia / san sebastián, donosti, san sebastian, donosti sound … |
 | 8 | lugar:iruñea | lugar | lugar:nafarroa | 969 | 4 | iruña, iruñea, beruna, pamplona sound |
@@ -34,16 +34,16 @@ Grupos: `genero` (sin prefijo), `lugar:*` (aparte, nunca se funde con géneros),
 | 10 | pop | genero |  | 850 | 73 | pop, spanish pop, pop radical, brioche pop, amor, happy … |
 | 11 | techno | genero | electronic | 696 | 28 | techno, trance electro techno, deep techno, techno and variations, dark techno, leftfield techno … |
 | 12 | hardcore | genero | punk | 676 | 50 | hardcore, hxc, hc, h.c., alternative hardcore, basque hardcore … |
-| 13 | ambient | genero | electronic | 667 | 25 | ambient, soundscape, sound textures, infinite loops, soundscapes, ambient. … |
+| 13 | ambient | genero | electronic | 667 | 24 | ambient, soundscape, sound textures, infinite loops, soundscapes, landscapes … |
 | 14 | lugar:gasteiz | lugar | lugar:araba | 571 | 3 | vitoria gasteiz, gasteiz, vitoria |
-| 15 | punk rock | genero | rock | 528 | 21 | punk rock, punk-rock, ramones, hyper-energetic, pop punk punk rock, punk 'n' roll … |
+| 15 | punk rock | genero | rock | 528 | 20 | punk rock, punk-rock, ramones, hyper-energetic, pop punk punk rock, punk 'n' roll … |
 | 16 | lugar:spain | lugar |  | 495 | 10 | spain, zaragoza, españa, mallorca, valencia, toledo … |
-| 17 | indie rock | genero | rock | 456 | 15 | indie, indie rock, mod indie, pixies, emo indie, indie rock. … |
+| 17 | indie rock | genero | rock | 456 | 14 | indie, indie rock, mod indie, pixies, emo indie, indietronica … |
 | 18 | folk | genero |  | 441 | 45 | folk, traditional, traditional music, traditional folk, folclore, herri&b … |
 | 19 | house | genero | electronic | 431 | 26 | house, house music, housemusic, 90s house, classic house, rally house … |
 | 20 | hip hop | genero |  | 386 | 21 | hip-hop/rap, hip hop, rap & hip-hop, africanhiphop, afrihooop, horrorcore … |
 | 21 | reggae | genero |  | 376 | 14 | reggae, reagge, 80s reggae, digi reggae, early reggae, electronic reggae … |
-| 22 | lugar:bilbo | lugar | lugar:bizkaia | 370 | 6 | bilbao, bilbo, crudobilbao, bilbaomusikak, bilbo zaharra, bilbao. |
+| 22 | lugar:bilbo | lugar | lugar:bizkaia | 370 | 5 | bilbao, bilbo, crudobilbao, bilbaomusikak, bilbo zaharra |
 | 23 | noise | genero | experimental | 340 | 24 | noise, ruido, white noise, italo noise, devotional noise, zarata … |
 | 24 | post-punk | genero | punk | 334 | 6 | post-punk, post, after punk, post punk., post-music, post-punk revival |
 | 25 | rock & roll | genero | rock | 311 | 17 | rock & roll, rock and roll, rock'n'roll, r&r, rock 'n' roll, basque country rock & roll … |
@@ -52,23 +52,23 @@ Grupos: `genero` (sin prefijo), `lugar:*` (aparte, nunca se funde con géneros),
 | 28 | black metal | genero | metal | 288 | 26 | black metal, black, blackened, basque black metal, melodic black metal, ambient black metal … |
 | 29 | dark ambient | genero | ambient | 286 | 7 | dark ambient, dark, dark ambient noise, dark ambient drone, dark ambient music, dark emo cowboy sexy dream … |
 | 30 | lugar:zarautz | lugar | lugar:gipuzkoa | 284 | 1 | zarautz |
-| 31 | acoustic | genero | folk | 274 | 15 | acoustic, acoustic guitar, acustico, acustica, acoustic guitar solo, acustic … |
+| 31 | acoustic | genero | folk | 274 | 14 | acoustic, acoustic guitar, acustico, acustica, acoustic guitar solo, acustic … |
 | 32 | pop rock | genero | rock | 273 | 12 | pop rock, pop rock en español, basque pop-rock, garage pop rock, rock pop, alternative pop rock … |
 | 33 | world music | genero | folk | 268 | 19 | world, world music, world beats, arabic, ethnic, world groove … |
-| 34 | crust | genero | hardcore punk | 255 | 12 | crust, crust punk, crustcore, hardcore crust, stenchcore, emocrust … |
+| 34 | crust | genero | hardcore punk | 255 | 11 | crust, crust punk, crustcore, hardcore crust, stenchcore, emocrust … |
 | 35 | dub | genero | reggae | 248 | 21 | dub, rub a dub, dubwise, uk dub, dub noir, lo-end dub … |
-| 36 | rap | genero | hip hop | 246 | 27 | rap, euskal rap, rap alternative, rap español, rap latino, spanish rap … |
+| 36 | rap | genero | hip hop | 246 | 26 | rap, euskal rap, rap alternative, rap español, rap latino, spanish rap … |
 | 37 | electro | genero | electronic | 241 | 12 | electro, electro techno, electro electrobass breaks bass, electro glam, ghettotech, bounce … |
 | 38 | grindcore | genero | hardcore | 234 | 8 | grindcore, grind, deathgrind, noisecore, brutal death grind, grind core … |
 | 39 | soundtrack | genero | instrumental | 224 | 17 | soundtrack, cinematic, bso, documentary music, film score, ost … |
 | 40 | doom metal | genero | metal | 215 | 12 | doom, doom metal, funeral doom, black sabbath, drone funeral doom, drone doom metal … |
 | 41 | post-hardcore | genero | hardcore | 215 | 4 | post-hardcore, synth core, post-hc, synthcore |
-| 42 | jazz | genero |  | 205 | 30 | jazz, dark jazz, bebop, jazz., postjazz, punk jazz … |
+| 42 | jazz | genero |  | 205 | 29 | jazz, dark jazz, bebop, postjazz, punk jazz, traditional jazz … |
 | 43 | industrial | genero | experimental | 199 | 9 | industrial, industria, post-industrial, dark industrial, rhythmic noise, abstract industrial … |
-| 44 | hard rock | genero | rock | 197 | 17 | hard rock, heavy rock, hardrock, rock metal, 70s hard rock, hard rock-hard blues … |
+| 44 | hard rock | genero | rock | 197 | 16 | hard rock, heavy rock, hardrock, rock metal, 70s hard rock, hard rock-hard blues … |
 | 45 | otro:euskaraz | otro | otro:idioma | 187 | 4 | euskara, euskera, euskaraz, euskaldun |
 | 46 | post-rock | genero | rock | 184 | 6 | post-rock, ambient rock, post-folk, post rock instrumental, instrumental-post-rock, cinematic post rock |
-| 47 | funk | genero | soul | 178 | 20 | funk, groove, funky, intrumental funk, funk rythm & blues, funk. … |
+| 47 | funk | genero | soul | 178 | 19 | funk, groove, funky, intrumental funk, funk rythm & blues, jazz-funk … |
 | 48 | roots reggae | genero | reggae | 175 | 10 | roots, roots reggae, reggae roots, conscious music, jah music, roots reggae dub … |
 | 49 | instrumental | genero |  | 169 | 9 | instrumental, instrumentals, instrumental guitar, almost instrumental, guitar instrumental, lofi instrumental … |
 | 50 | psychedelic | genero |  | 169 | 17 | psychedelic, psicodelia, psych, psicodelic, trippy, psicodelico … |
@@ -89,13 +89,13 @@ otro:euskaraz (187), otro:diy (139), otro:en directo (129), otro:guitarra (63), 
 
 ## Lo que cae en `resto`
 
-2979 tags, 2127 discos con al menos uno. Los 40 más frecuentes (si alguno es un género, añadirlo a GENRE_TERMS o FULL_SYNONYMS):
+2977 tags, 2127 discos con al menos uno. Los 40 más frecuentes (si alguno es un género, añadirlo a GENRE_TERMS o FULL_SYNONYMS):
 
 bidehuts, eclectic reactions, massa confusa, ally morton, petruska records, label, music, musika, sello, preqwal, tony morton, wldv, symmatik, belarri, kokoshca, primavera sound, sonido muchacho, aventuras de kirlian, bass lee, ibon errazkin, le mans, matt o'brien, one man band, elefant records, mugre, xtreem music, lisabo, senoid recordings, ballard, retriever, txomin larronde, clarty cat records, duo, dut, munlet, arenna, bakarlaria, cujo, family, jackie purver
 
 ## Fusiones dudosas (para revisar)
 
-Casos donde la regla podría estar uniendo cosas distintas: 696 tags marcados. Aquí los 170 con al menos 2 discos, ordenados por nº de discos; la lista completa (incluidos los de 1 disco) está en el campo `dudosas` del JSON.
+Casos donde la regla podría estar uniendo cosas distintas: 691 tags marcados. Aquí los 169 con al menos 2 discos, ordenados por nº de discos; la lista completa (incluidos los de 1 disco) está en el campo `dudosas` del JSON.
 
 | Tag | Discos | → Nodo | Motivo |
 |---|---|---|---|
@@ -103,7 +103,7 @@ Casos donde la regla podría estar uniendo cosas distintas: 696 tags marcados. A
 | hip-hop/rap | 294 | hip hop | hip-hop/rap (umbrella de Bandcamp) -> hip hop |
 | indie | 252 | indie rock | indie a secas -> indie rock |
 | alternative rock | 245 | alternative rock | alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
-| indie rock | 221 | indie rock | indie (umbrella de Bandcamp) se funde con indie rock |
+| indie rock | 222 | indie rock | indie (umbrella de Bandcamp) se funde con indie rock |
 | electronica | 219 | electronic | electronica (en inglés puede ser un género propio) -> electronic |
 | world | 205 | world music | world -> world music |
 | crust punk | 121 | crust | crust y crust punk se funden en un solo nodo |
@@ -114,7 +114,7 @@ Casos donde la regla podría estar uniendo cosas distintas: 696 tags marcados. A
 | stoner | 81 | stoner rock | stoner -> stoner rock |
 | r&b/soul | 72 | r&b | r&b/soul (umbrella de Bandcamp) -> r&b |
 | contemporary | 71 | contemporary classical | contemporary -> contemporary classical |
-| trap | 70 | trap | trap (por umbral, cloud rap y autotune cuelgan aquí) |
+| trap | 71 | trap | trap (por umbral, cloud rap y autotune cuelgan aquí) |
 | progressive | 63 | progressive rock | progressive a secas -> progressive rock |
 | tropical | 51 | latin | tropical -> latin |
 | dark | 50 | dark ambient | dark a secas -> dark ambient |
@@ -126,9 +126,9 @@ Casos donde la regla podría estar uniendo cosas distintas: 696 tags marcados. A
 | musica urbana | 31 | urban | urban / musica urbana como nodo propio |
 | skinhead | 31 | oi! | skinhead (subcultura) -> oi! |
 | cinematic | 26 | soundtrack | cinematic -> soundtrack |
+| heavy | 26 | heavy metal | heavy a secas -> heavy metal |
 | minimalism | 26 | minimal | minimalism (clásica) -> minimal (electrónica) |
 | euskal rock | 25 | rock | se ha quitado la parte de lugar/gentilicio |
-| heavy | 25 | heavy metal | heavy a secas -> heavy metal |
 | acoustic guitar | 24 | acoustic | acoustic guitar -> acoustic |
 | groove | 20 | funk | groove -> funk |
 | death | 18 | death metal | death a secas -> death metal |
@@ -147,10 +147,10 @@ Casos donde la regla podría estar uniendo cosas distintas: 696 tags marcados. A
 | crustcore | 8 | crust | crustcore -> crust |
 | euskal rap | 8 | rap | se ha quitado la parte de lugar/gentilicio |
 | space | 8 | space rock | space -> space rock |
+| alt rock | 7 | alternative rock | alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
 | classic | 7 | classic rock | classic -> classic rock |
 | deep | 7 | deep house | deep -> deep house |
 | ramones | 7 | punk rock | nombre de grupo usado como tag -> punk rock |
-| alt rock | 6 | alternative rock | alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
 | alternativo | 6 | alternative rock | alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
 | basque rock alternative | 6 | alternative rock | se ha quitado la parte de lugar/gentilicio; alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
 | black | 6 | black metal | black a secas -> black metal |
@@ -169,7 +169,7 @@ Casos donde la regla podría estar uniendo cosas distintas: 696 tags marcados. A
 | urban music | 5 | urban | urban / musica urbana como nodo propio |
 | 90s rock | 4 | alternative rock | alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
 | alternative hardcore | 4 | hardcore | alternativas: alternative rock; más de una palabra era nodo |
-| alternative rock;  laudio | 4 | alternative rock | alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
+| alternative rock; laudio | 4 | alternative rock | alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
 | basque metal | 4 | metal | se ha quitado la parte de lugar/gentilicio |
 | basque rock | 4 | rock | se ha quitado la parte de lugar/gentilicio |
 | cold | 4 | coldwave | cold -> coldwave |
@@ -199,6 +199,7 @@ Casos donde la regla podría estar uniendo cosas distintas: 696 tags marcados. A
 | indie electronic | 3 | electronic | alternativas: indie rock; más de una palabra era nodo |
 | medieval black metal | 3 | black metal | alternativas: medieval, metal; más de una palabra era nodo |
 | metal euskadi | 3 | metal | se ha quitado la parte de lugar/gentilicio |
+| metal spain | 3 | metal | se ha quitado la parte de lugar/gentilicio |
 | punk español | 3 | punk | se ha quitado la parte de lugar/gentilicio |
 | 90's rock | 2 | alternative rock | alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
 | alternativo en español | 2 | alternative rock | se ha quitado la parte de lugar/gentilicio; alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
@@ -226,7 +227,6 @@ Casos donde la regla podría estar uniendo cosas distintas: 696 tags marcados. A
 | heavy blues rock | 2 | blues rock | alternativas: heavy metal, blues, rock; más de una palabra era nodo |
 | horrorsynth | 2 | synth | raíz pegada separada; más de una palabra era nodo |
 | indie lo-fi | 2 | lo-fi | alternativas: indie rock; más de una palabra era nodo |
-| indie rock. | 2 | indie rock | indie (umbrella de Bandcamp) se funde con indie rock |
 | indietronica | 2 | indie rock | raíz pegada separada |
 | industrial rock alternative | 2 | alternative rock | alternativas: industrial, rock; más de una palabra era nodo |
 | jazz punk | 2 | punk | alternativas: jazz; más de una palabra era nodo |
@@ -234,7 +234,6 @@ Casos donde la regla podría estar uniendo cosas distintas: 696 tags marcados. A
 | lofi dungeon synth | 2 | dungeon synth | alternativas: lo-fi, synth; más de una palabra era nodo |
 | melodic hard rock | 2 | hard rock | alternativas: melodic rock, rock; más de una palabra era nodo |
 | metal alternativo | 2 | alternative rock | alternativas: metal; más de una palabra era nodo |
-| metal spain. | 2 | metal | se ha quitado la parte de lugar/gentilicio |
 | militant dungeon synth | 2 | dungeon synth | alternativas: synth; más de una palabra era nodo |
 | modern rock | 2 | alternative rock | alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock |
 | motorpunk | 2 | punk | raíz pegada separada |

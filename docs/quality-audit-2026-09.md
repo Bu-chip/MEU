@@ -2,7 +2,7 @@
 
 *Generado por `python3 scripts/quality_audit.py`. Solo lectura: este informe no cambia datos. No editar a mano; regenerar.*
 
-Canónico: **7637** fichas, 3634 artistas, 5575 tags. Procedencia por `album_id` (2026-07: 5305, 2026-08: 27, 2026-09: 42, orig.: 2263); «orig.» = catálogo anterior a julio o sin `album_id` en ninguna oleada.
+Canónico: **7637** fichas, 3632 artistas, 5536 tags. Procedencia por `album_id` (2026-07: 5305, 2026-08: 27, 2026-09: 42, orig.: 2263); «orig.» = catálogo anterior a julio o sin `album_id` en ninguna oleada.
 
 ## Cómo leerlo
 
@@ -32,15 +32,15 @@ Lo que `scripts/pipeline.py` corrigió en PRs anteriores no se vuelve a auditar;
 | [Duplicados: misma URL normalizada](#dup_url) | 0 |
 | [Duplicados: mismo artista+título normalizados con distinta URL](#dup_artist_title) | 25 grupos |
 | [Posibles reediciones: mismo artista y mismo slug de URL en otra cuenta](#reedicion_slug) | 1 grupos |
-| [Artistas: mismo nombre escrito de varias formas](#artist_variants) | 172 grupos |
+| [Artistas: mismo nombre escrito de varias formas](#artist_variants) | 170 grupos |
 | [Artistas: capitalización rara frente a otra grafía del catálogo](#artist_case) | 123 filas |
-| [Artistas solo en MAYÚSCULAS o solo en minúsculas (informativo)](#artist_style) | 549 en MAYÚSCULAS, 249 en minúsculas |
-| [Artista o título con espacios sobrantes o puntuación colgante](#whitespace) | 31 filas |
+| [Artistas solo en MAYÚSCULAS o solo en minúsculas (informativo)](#artist_style) | 549 en MAYÚSCULAS, 250 en minúsculas |
+| [Artista o título con espacios sobrantes o puntuación colgante](#whitespace) | 25 filas |
 | [`genre` null o vacío](#genre_null) | 46 filas |
 | [`genre` fuera del vocabulario](#genre_vocab) | 0 |
 | [`tags` vacío](#tags_empty) | 30 filas |
-| [Tags sucios (vacíos, espacios, mayúsculas, puntuación colgante)](#tags_dirty) | 118 filas |
-| [Tags: variantes del mismo tag no cubiertas por `TAG_RENAMES` (informativo)](#tag_variants) | 215 grupos |
+| [Tags sucios (vacíos, espacios, mayúsculas, puntuación colgante)](#tags_dirty) | 32 filas |
+| [Tags: variantes del mismo tag no cubiertas por `TAG_RENAMES` (informativo)](#tag_variants) | 182 grupos |
 | [URLs sucias](#url_dirty) | 60 filas |
 | [URL nula](#url_null) | 5 filas |
 | [`year` vacío](#year_null) | 23 filas |
@@ -148,7 +148,7 @@ El título difiere (si no, ya estaría en la categoría anterior) pero el slug d
 <a id="artist_variants"></a>
 ## Artistas: mismo nombre escrito de varias formas
 
-**Recuento: 172 grupos.**
+**Recuento: 170 grupos.**
 
 Agrupado con clave fuerte (sin acentos, mayúsculas ni puntuación). Cada fila es un grupo; entre paréntesis, nº de fichas con esa grafía. Los nombres colaborativos («A & B» / «A, B») también caen aquí.
 
@@ -219,7 +219,7 @@ Agrupado con clave fuerte (sin acentos, mayúsculas ni puntuación). Cada fila e
 | 2416 | 79179195 | 2026-07 | 6jerseys | 333 - Tres tristes trans | `6jerseys` (13), `6Jerseys` (1) | [↗](https://6jerseys.bandcamp.com/album/333-tres-tristes-trans) |
 | 2423 | 1774500612 | 2026-07 | 6Jerseys | Ilegal loops | ″ | [↗](https://6jerseys.bandcamp.com/album/ilegal-loops) |
 
-*… y 142 más (solo se muestran 30).*
+*… y 140 más (solo se muestran 30).*
 
 <a id="artist_case"></a>
 ## Artistas: capitalización rara frente a otra grafía del catálogo
@@ -266,7 +266,7 @@ Nombre TODO EN MAYÚSCULAS o todo en minúsculas cuando el mismo nombre existe e
 <a id="artist_style"></a>
 ## Artistas solo en MAYÚSCULAS o solo en minúsculas (informativo)
 
-**Recuento: 549 en MAYÚSCULAS, 249 en minúsculas.**
+**Recuento: 549 en MAYÚSCULAS, 250 en minúsculas.**
 
 Sin otra grafía en el catálogo: casi siempre es la estilización del propio grupo (COBRA, judy). Se listan solo los recuentos y una muestra; no es accionable sin mirar la página.
 
@@ -306,7 +306,7 @@ Sin otra grafía en el catálogo: casi siempre es la estilización del propio gr
 <a id="whitespace"></a>
 ## Artista o título con espacios sobrantes o puntuación colgante
 
-**Recuento: 31 filas.**
+**Recuento: 25 filas.**
 
 | id | album_id | origen | artista | título | campo | problema | url |
 |---|---|---|---|---|---|---|---|
@@ -328,20 +328,13 @@ Sin otra grafía en el catálogo: casi siempre es la estilización del propio gr
 | 4349 | 2535110334 | 2026-07 | Iker Munduate | .   .  . ... .  .   . | title | doble espacio | [↗](https://ikermunduate.bandcamp.com/album/-) |
 | 4761 | 2139645594 | 2026-07 | JOXE CABALLERO | ZELAI  BERRIAK | title | doble espacio | [↗](https://joxecaballero.bandcamp.com/album/zelai-berriak) |
 | 4768 | 1757298497 | 2026-07 | Juantxo Zeberio Etxetxipia | Eguberri Umama (Basque Christmas Songs)  Deluxe edition | title | doble espacio | [↗](https://juantxozeberioetxetxipia.bandcamp.com/album/eguberri-umama-basque-christmas-songs-deluxe-edition) |
-| 4903 | 2035084015 | 2026-07 | Calathea  | Flowers & Knives | artist | espacio inicial/final | [↗](https://knr-calathea.bandcamp.com/album/flowers-knives) |
 | 5357 | 2747101219 | 2026-07 | Mike & Cara Gangloff | Mike & Cara Gangloff  "A Domestic Art" | title | doble espacio | [↗](https://makramerecords.bandcamp.com/album/mike-cara-gangloff-a-domestic-art) |
 | 5502 | 1855873389 | 2026-07 | M E R Y  M A Y | Rue Matignon | artist | doble espacio | [↗](https://merymay.bandcamp.com/album/rue-matignon) |
 | 5680 | 2639762978 | 2026-07 | MURGI | dUAL [1/2] :  GORDEKA | title | doble espacio | [↗](https://murgi.bandcamp.com/album/dual-1-2-gordeka) |
-| 6038 | 3242994922 | 2026-07 | bizitza kaotikoa  | Mailu oquerrr1 | artist | espacio inicial/final | [↗](https://oquerr.bandcamp.com/album/mailu-oquerrr1) |
 | 6208 | 1033400519 | 2026-07 | Petruska Records | PR020 / V/A LOCAL PUNK FOR GLOBAL CHAOS  feat. KOKOSHA GLAVA / KAOS KOOPERATIV / NOVI TSVETYA / THE PAUKI | title | doble espacio | [↗](https://petruskarecords.bandcamp.com/album/pr020-v-a-local-punk-for-global-chaos-feat-kokosha-glava-kaos-kooperativ-novi-tsvetya-the-pauki) |
-| 6325 | 1278506271 | 2026-07 | QUANTUM9 ERA  | Closed-circuit sapiens | artist | espacio inicial/final | [↗](https://quantu9era.bandcamp.com/album/closed-circuit-sapiens) |
-| 6326 | 3162691937 | 2026-07 | QUANTUM9 ERA  | Inductors | artist | espacio inicial/final | [↗](https://quantu9era.bandcamp.com/album/inductors) |
-| 6327 | 824895046 | 2026-07 | QUANTUM9 ERA  | Occident | artist | espacio inicial/final | [↗](https://quantu9era.bandcamp.com/album/occident) |
-| 6328 | 3523367685 | 2026-07 | QUANTUM9 ERA  | Peacekeeping Agent | artist | espacio inicial/final | [↗](https://quantu9era.bandcamp.com/album/peacekeeping-agent) |
 | 7021 | 4174631765 | 2026-07 | Marcelino Gutierrez -  Iratxe Castrillo | La Linda Flor / Escenas | artist | doble espacio | [↗](https://tkuento.bandcamp.com/album/la-linda-flor-escenas) |
 | 7263 | 3529421856 | 2026-07 | UYULALA | Safo  /’Σαπφώ/ | title | doble espacio | [↗](https://uyulala.bandcamp.com/album/safo) |
-
-*… y 1 más (solo se muestran 30).*
+| 7360 | 2741279075 | 2026-07 | willis drummond | istanteak   (bIDEhUTS - 2011 // TRR 2016) | title | doble espacio | [↗](https://willisdrummond.bandcamp.com/album/istanteak-bidehuts-2011-trr-2016) |
 
 <a id="genre_null"></a>
 ## `genre` null o vacío
@@ -431,47 +424,47 @@ Sin casos.
 <a id="tags_dirty"></a>
 ## Tags sucios (vacíos, espacios, mayúsculas, puntuación colgante)
 
-**Recuento: 118 filas.**
+**Recuento: 32 filas.**
 
 | id | album_id | origen | artista | título | tag | problema | url |
 |---|---|---|---|---|---|---|---|
 | 930 | 2094486891 | orig. | Lee Perk | Tumbleweed | pop music. | puntuación final | [↗](https://leeperk.bandcamp.com/album/tumbleweed) |
-| 975 | 1318770188 | orig. | kalipotxo | error bakui | punk? | puntuación final | [↗](https://kalipotxo.bandcamp.com/album/error-bakui) |
 | 1397 | 3950606019 | orig. | FEROSZ | Blasphemer | metal melódico. | puntuación final | [↗](https://ferosz.bandcamp.com/album/blasphemer) |
 | 1442 | 3297233913 | orig. | Lee Perk | The bloody vaults | pop music. | puntuación final | [↗](https://leeperk.bandcamp.com/album/the-bloody-vaults) |
 | 1451 | 947743118 | orig. | Lee Perk | brand new records 2017 | pop music. | puntuación final | [↗](https://leeperk.bandcamp.com/album/brand-new-records-2017) |
 | 2106 | 868319604 | 2026-07 | II | Y | beatz. | puntuación final | [↗](https://iikrisgm.bandcamp.com/album/y) |
 | 2202 | 223515606 | orig. | Lee Perk | B-sides and rarities | pop music. | puntuación final | [↗](https://leeperk.bandcamp.com/album/b-sides-and-rarities) |
-| 2498 | 19703371 | 2026-07 | Aiert | Arriskuaz Larrutan | popindie. | puntuación final | [↗](https://aiert.bandcamp.com/album/arriskuaz-larrutan) |
-| 2525 | 1619148490 | 2026-07 | Alain Concepción | Holding Love | soft rock. | puntuación final | [↗](https://alainconcepcion.bandcamp.com/album/holding-love) |
-| 2527 | 2555815231 | 2026-07 | Alain Concepción | Life Songs | jazz. | puntuación final | [↗](https://alainconcepcion.bandcamp.com/album/life-songs) |
-| 2600 | 1645101924 | 2026-07 | Ancient Settlers | Tales From The Earth | hard rock. | puntuación final | [↗](https://ancientsettlers.bandcamp.com/album/tales-from-the-earth) |
-| 2644 | 3921485893 | 2026-07 | Antoine Bellanger | LE JARDIN PERDU | field recordings. | puntuación final | [↗](https://antoinebellanger.bandcamp.com/album/le-jardin-perdu) |
-| 2721 | 613350518 | 2026-07 | Asier LI | Entelekia | new age. | puntuación final | [↗](https://asier-li.bandcamp.com/album/entelekia) |
-| 2739 | 1579349976 | 2026-07 | Atmospheric Drum & Bass | Atmospheric Drum & Bass, Volume 6 | ambient electronic. | puntuación final | [↗](https://atmosphericdrumbass.bandcamp.com/album/atmospheric-drum-bass-volume-6-2) |
-| 2851 | 1045702088 | 2026-07 | Asteroid B612 | Asteroid B612 (LP) | punk rock. | puntuación final | [↗](https://bangrecords.bandcamp.com/album/asteroid-b612-lp) |
 | 2853 | 203050501 | 2026-07 | The Chrome Cranks | Diabolical Boogie (3LP) | swamp blues noise... | puntuación final | [↗](https://bangrecords.bandcamp.com/album/diabolical-boogie-3lp) |
-| 2858 | 3803675527 | 2026-07 | Brian Henry Hooper | I Won't Be Bend For You (LP) | swamp... | puntuación final | [↗](https://bangrecords.bandcamp.com/album/i-wont-be-bend-for-you-lp) |
-| 3115 | 38833047 | 2026-07 | Borja Moskv | After sin retorno | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/after-sin-retorno) |
-| 3116 | 3198055933 | 2026-07 | Borja Moskv | [B] | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/b) |
-| 3117 | 19263043 | 2026-07 | BORJA MOSKV | Between two waters | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/between-two-waters) |
-| 3118 | 1056598984 | 2026-07 | BORJA MOSKV | Bombástico | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/bomb-stico) |
-| 3119 | 1690580310 | 2026-07 | Borja Moskv | Fandangos de Selva y Desierto | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/fandangos-de-selva-y-desierto) |
-| 3120 | 4072443607 | 2026-07 | Borja Moskv | Galactics | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/galactics) |
-| 3121 | 3994364503 | 2026-07 | Borja Moskv | Instructions for flying | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/instructions-for-flying) |
-| 3122 | 878342802 | 2026-07 | Borja Moskv | Lo inmanente | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/lo-inmanente) |
-| 3123 | 2703267212 | 2026-07 | Borja Moskv | Mudlark : Redux | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/mudlark-redux) |
-| 3124 | 1663269807 | 2026-07 | Borja Moskv | Re[al]Works[50]BYborjamoskv | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/re-al-works-50-byborjamoskv) |
-| 3125 | 3541743596 | 2026-07 | Borja Moskv | This Was In Rainbows | ambient. | puntuación final | [↗](https://borjamoskv.bandcamp.com/album/this-was-in-rainbows) |
 | 3159 | 3117411912 | 2026-07 | Bris | Hira | post punk. | puntuación final | [↗](https://briscorp.bandcamp.com/album/hira) |
-| 3231 | 1045283788 | 2026-07 | คาราบาว | พออยู่พอกิน Chapter 21 | heavy. | puntuación final | [↗](https://carabao.bandcamp.com/album/chapter-21) |
+| 3369 | 3495716917 | 2026-07 | Crownledge Collective | Ashes Of The Black Easter | inmersive. | puntuación final | [↗](https://crownledge.bandcamp.com/album/ashes-of-the-black-easter) |
+| 3370 | 2102328704 | 2026-07 | Crownledge | Azaburu | inmersive. | puntuación final | [↗](https://crownledge.bandcamp.com/album/azaburu) |
+| 3371 | 2808151512 | 2026-07 | Crownledge | Smrt fašizmu, sloboda narodu! | inmersive. | puntuación final | [↗](https://crownledge.bandcamp.com/album/smrt-fa-izmu-sloboda-narodu) |
+| 4007 | 724520228 | 2026-07 | Gaueko Goñi | Future Architecture | thematic and programmatic music. | puntuación final | [↗](https://gauekogoni.bandcamp.com/album/future-architecture) |
+| 4008 | 2296641436 | 2026-07 | Gaueko Goñi | Hijos del norte | thematic and programmatic music. | puntuación final | [↗](https://gauekogoni.bandcamp.com/album/hijos-del-norte) |
+| 4009 | 3631223056 | 2026-07 | Gaueko Goñi | Inferno:Impromptu No.1,Op.1 | thematic and programmatic music. | puntuación final | [↗](https://gauekogoni.bandcamp.com/album/inferno-impromptu-no-1-op-1-4) |
+| 4010 | 77074567 | 2026-07 | Gaueko Goñi | Interstellar Journey | thematic and programmatic music. | puntuación final | [↗](https://gauekogoni.bandcamp.com/album/interstellar-journey) |
+| 4011 | 783406984 | 2026-07 | Gaueko Goñi | Música junto al fuego negro de invierno | thematic and programmatic music. | puntuación final | [↗](https://gauekogoni.bandcamp.com/album/m-sica-junto-al-fuego-negro-de-invierno) |
+| 4012 | 873476638 | 2026-07 | Gaueko Goñi | The Anomaly Manor (Original Videogame Soundtrack) | thematic and programmatic music. | puntuación final | [↗](https://gauekogoni.bandcamp.com/album/the-anomaly-manor-original-videogame-soundtrack) |
+| 5347 | 3832546990 | 2026-07 | Aum Sahib | Aum Sahib "The Formula of Atavistic Resurgence" | aum sahib. | puntuación final | [↗](https://makramerecords.bandcamp.com/album/aum-sahib-the-formula-of-atavistic-resurgence) |
+| 5349 | 3957246561 | 2026-07 | Bolide | Bolide "The Last Thoughts of an Aqua Sabbat" | bolide. | puntuación final | [↗](https://makramerecords.bandcamp.com/album/bolide-the-last-thoughts-of-an-aqua-sabbat) |
+| 5354 | 2525746403 | 2026-07 | J.Collin | J.Collin "Albert Road Room Odorisor" | j.collin. | puntuación final | [↗](https://makramerecords.bandcamp.com/album/j-collin-albert-road-room-odorisor) |
+| 5358 | 3542484755 | 2026-07 | Pan del Indio | Pan del Indio "Un Disco" | pan del indio. | puntuación final | [↗](https://makramerecords.bandcamp.com/album/pan-del-indio-un-disco) |
+| 5361 | 3604757740 | 2026-07 | Schrein | Schrein "Afternoon Shadows" | schrein. | puntuación final | [↗](https://makramerecords.bandcamp.com/album/schrein-afternoon-shadows) |
+| 5363 | 2218362255 | 2026-07 | Uton | Uton "Say Hello to the Butterflies" | uton. | puntuación final | [↗](https://makramerecords.bandcamp.com/album/uton-say-hello-to-the-butterflies) |
+| 5377 | 2685028423 | 2026-07 | Mamushka! | Maketa 1 | pop y lo que sea... | puntuación final | [↗](https://mamushkarock.bandcamp.com/album/maketa-1) |
+| 5538 | 2305512722 | 2026-07 | Marian Gerrikabeitia | MINIMA EP | blues etc. | puntuación final | [↗](https://minima2.bandcamp.com/album/minima-ep) |
+| 6128 | 309484152 | 2026-07 | Ozki | Ta orain zer? | ta orain zer? | puntuación final | [↗](https://ozki.bandcamp.com/album/ta-orain-zer) |
+| 6200 | 1092386356 | 2026-07 | Petruska Records | PR012 SLEVY - Cuentos aquaticos | ??? | puntuación final | [↗](https://petruskarecords.bandcamp.com/album/pr012-slevy-cuentos-aquaticos) |
+| 6936 | 1854574674 | 2026-07 | THE SOULBREAKER COMPANY | Graceless | ....... | puntuación final | [↗](https://thesoulbreakercompany.bandcamp.com/album/graceless) |
+| 7353 | 3446549475 | 2026-07 | WILHELM | How High Lily? | how high lily? | puntuación final | [↗](https://wilhelmusic.bandcamp.com/album/how-high-lily) |
+| 7376 | 1565886615 | 2026-07 | Xabi Guevara | Amapola | son. | puntuación final | [↗](https://xabiguevara.bandcamp.com/album/amapola) |
 
-*… y 88 más (solo se muestran 30).*
+*… y 2 más (solo se muestran 30).*
 
 <a id="tag_variants"></a>
 ## Tags: variantes del mismo tag no cubiertas por `TAG_RENAMES` (informativo)
 
-**Recuento: 215 grupos.**
+**Recuento: 182 grupos.**
 
 Misma clave fuerte (sin acentos, espacios, guiones ni puntuación). El pipeline ya fusiona las variantes auditadas en la PR C; estas son las que quedan. Candidatas a `TAG_RENAMES`, pero la política de la PR C exige decidirlas una a una.
 
@@ -481,7 +474,6 @@ Misma clave fuerte (sin acentos, espacios, guiones ni puntuación). El pipeline 
 | 235 | 3452519598 | orig. | Brigada suicida | Sucias lenguas | `metalpunk` (15), `metal; punk` (1) | [↗](https://brigadasuicida.bandcamp.com/album/sucias-lenguas) |
 | 333 | 2546932655 | orig. | Feline | FSR101 Feline - Feline (LP) | `after punk` (6), `afterpunk` (3) | [↗](https://familyspreerecordings.bandcamp.com/album/fsr101-feline-feline-lp) |
 | 579 | 1303736141 | orig. | Incursed | Beer Bloodbath EP | `game of thrones` (1), `gameofthrones` (1) | [↗](https://incursed.bandcamp.com/album/beer-bloodbath-ep) |
-| 975 | 1318770188 | orig. | kalipotxo | error bakui | `punk` (1355), `punk?` (1) | [↗](https://kalipotxo.bandcamp.com/album/error-bakui) |
 | 1056 | 880511061 | orig. | Dr. Skyloop | Plex! | `sinth pop` (1), `sinthpop` (1) | [↗](https://drskyloop.bandcamp.com/album/plex) |
 | 1920 | 1275663510 | orig. | Samuel Cano | veinte veinte | `post-folk` (6), `postfolk` (1) | [↗](https://samuelcano.bandcamp.com/album/veinte-veinte) |
 | 2190 | 490265248 | 2026-07 | II | OO | `modular synth` (1), `modularsynth` (1) | [↗](https://iikrisgm.bandcamp.com/album/oo) |
@@ -493,22 +485,23 @@ Misma clave fuerte (sin acentos, espacios, guiones ni puntuación). El pipeline 
 | 2461 | 3976218622 | 2026-07 | Adiktos Al Kaos | Territorio Hostil | `rock'n'speed` (5), `rock´n´speed` (1) | [↗](https://adiktosalkaos.bandcamp.com/album/territorio-hostil) |
 | 2462 | 942963498 | 2026-07 | Adrenalized | Docet Umbra | `skate punk` (17), `skatepunk` (15) | [↗](https://adrenalized.bandcamp.com/album/docet-umbra) |
 | 2473 | 1115931345 | 2026-07 | Hurricane Studio & Afrihooop | African FemMc's Vol 1 | `underground hip hop` (31), `underground hip-hop` (7), `underground hiphop` (4) | [↗](https://afrihooop.bandcamp.com/album/african-femmcs-vol-1) |
-| 2498 | 19703371 | 2026-07 | Aiert | Arriskuaz Larrutan | `popindie` (8), `pop indie` (3), `popindie.` (1) | [↗](https://aiert.bandcamp.com/album/arriskuaz-larrutan) |
 | 2515 | 350939189 | 2026-07 | Aitor Suarez | Syberia Urbexplay (Original Soundtrack) | `film score` (5), `filmscore` (2) | [↗](https://aitorsu.bandcamp.com/album/syberia-urbexplay-original-soundtrack) |
 | 2515 | 350939189 | 2026-07 | Aitor Suarez | Syberia Urbexplay (Original Soundtrack) | `videogame music` (8), `videogamemusic` (1) | [↗](https://aitorsu.bandcamp.com/album/syberia-urbexplay-original-soundtrack) |
-| 2525 | 1619148490 | 2026-07 | Alain Concepción | Holding Love | `soft rock` (13), `soft rock.` (1) | [↗](https://alainconcepcion.bandcamp.com/album/holding-love) |
-| 2527 | 2555815231 | 2026-07 | Alain Concepción | Life Songs | `jazz` (185), `jazz.` (2) | [↗](https://alainconcepcion.bandcamp.com/album/life-songs) |
 | 2528 | 450660096 | 2026-07 | Alain Concepción | R | `aor` (8), `a.o.r` (1), `a.o.r.` (1) | [↗](https://alainconcepcion.bandcamp.com/album/r) |
 | 2543 | 3022832892 | 2026-07 | Alitruta | La ciudad sigue dormida ( Tus manos y el mundo) | `krautrock` (22), `kraut rock` (3) | [↗](https://alitruta.bandcamp.com/album/la-ciudad-sigue-dormida-tus-manos-y-el-mundo) |
-| 2600 | 1645101924 | 2026-07 | Ancient Settlers | Tales From The Earth | `hard rock` (161), `hardrock` (11), `hard rock.` (1), `hard-rock` (1), `hard_rock` (1) | [↗](https://ancientsettlers.bandcamp.com/album/tales-from-the-earth) |
 | 2613 | 465479922 | 2026-07 | A.Klee & Gab | FULGOR | `chill hop` (1), `chillhop` (1) | [↗](https://andreiklee.bandcamp.com/album/fulgor) |
 | 2624 | 46495773 | 2026-07 | ANIMA | Anima EP | `heavy metal` (102), `heavymetal` (12) | [↗](https://animametalband.bandcamp.com/album/anima-ep) |
-| 2644 | 3921485893 | 2026-07 | Antoine Bellanger | LE JARDIN PERDU | `field recordings` (22), `field recordings.` (1), `fieldrecordings` (1) | [↗](https://antoinebellanger.bandcamp.com/album/le-jardin-perdu) |
 | 2670 | 71541519 | 2026-07 | Aquí y ahora | Auge y ocaso del hemisferio accidental EP | `montreal` (4), `montréal` (1) | [↗](https://aquiahora.bandcamp.com/album/auge-y-ocaso-del-hemisferio-accidental-ep) |
 | 2679 | 2449937471 | 2026-07 | Arbusto Crower | Pragmasónico | `electro urbano` (1), `electrourbano` (1) | [↗](https://arbustocrower.bandcamp.com/album/pragmas-nico) |
-| 2721 | 613350518 | 2026-07 | Asier LI | Entelekia | `new age` (20), `new age.` (18) | [↗](https://asier-li.bandcamp.com/album/entelekia) |
+| 2734 | 2841165389 | 2026-07 | Various Artists 7 inch Compilation | CONTINUUM.35-V/A "Tunes From The Toilet Vol.2" 57 Bands 7” Compilation (Ltd. to 300 copies) | `hc . punk` (1), `hc punk` (1) | [↗](https://aterpe.bandcamp.com/album/c-ontinuum-35-v-a-tunes-from-the-toilet-vol-2-57-bands-7-compilation-ltd-to-300-copies) |
+| 2739 | 1579349976 | 2026-07 | Atmospheric Drum & Bass | Atmospheric Drum & Bass, Volume 6 | `spoken word` (25), `spokenword` (1) | [↗](https://atmosphericdrumbass.bandcamp.com/album/atmospheric-drum-bass-volume-6-2) |
+| 2740 | 2408179960 | 2026-07 | Atodamadre | #TIRALOPATRA | `baile funk` (1), `bailefunk` (1) | [↗](https://atodamadre.bandcamp.com/album/tiralopatra) |
+| 2772 | 99445156 | 2026-07 | Azken Sustraiak | Goierri | `oi! punk` (8), `oi!punk` (4) | [↗](https://azkensustraiak.bandcamp.com/album/goierri) |
+| 2773 | 384055295 | 2026-07 | Unai Azkune | Abesti bat herri bat izan daiteke | `electric guitar` (5), `electricguitar` (1) | [↗](https://azkune.bandcamp.com/album/abesti-bat-herri-bat-izan-daiteke) |
+| 2793 | 2641546772 | 2026-07 | Badmintones | Sinestarazi / Hutsune | `donostia san sebastián` (104), `donostia / san sebastián` (48), `donostia-san sebastian` (1) | [↗](https://badmintonestaldea.bandcamp.com/album/sinestarazi-hutsune) |
+| 2880 | 194451364 | 2026-07 | Barraks Promotion | BP004 - Keziah "The Ocean Is Not Silent" (EP) | `post-metal` (40), `post metal` (7) | [↗](https://barraks.bandcamp.com/album/bp004-keziah-the-ocean-is-not-silent-ep) |
 
-*… y 185 más (solo se muestran 30).*
+*… y 152 más (solo se muestran 30).*
 
 <a id="url_dirty"></a>
 ## URLs sucias

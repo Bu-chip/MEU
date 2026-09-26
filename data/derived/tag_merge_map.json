@@ -3,7 +3,7 @@
   "fuente": "data/bandcamp_bilbaotags_clean.json",
   "generado_por": "scripts/tag_merge_map.py",
   "n_discos": 7637,
-  "n_tags": 5575,
+  "n_tags": 5536,
   "n_nodos": 452,
   "n_nodos_por_grupo": {
    "genero": 319,
@@ -11,7 +11,7 @@
    "otro": 45
   },
   "umbral_min_discos": 5,
-  "tags_en_resto": 2979,
+  "tags_en_resto": 2977,
   "discos_solo_con_tags_resto": 2
  },
  "map": {
@@ -46,7 +46,6 @@
   "acoustic": "acoustic",
   "acoustic guitar": "acoustic",
   "acoustic guitar solo": "acoustic",
-  "acoustic...": "acoustic",
   "acustic": "acoustic",
   "acustica": "acoustic",
   "acustico": "acoustic",
@@ -57,7 +56,6 @@
   "acoustic metal": "metal",
   "acoustic pop": "acoustic pop",
   "acoustic rock": "acoustic rock",
-  "acoustic rock...": "acoustic rock",
   "african pop": "pop",
   "african world music": "world music",
   "african": "afro",
@@ -85,11 +83,10 @@
   "90's rock": "alternative rock",
   "90s rock": "alternative rock",
   "alt rock": "alternative rock",
-  "alt rock.": "alternative rock",
   "alternativa": "alternative rock",
   "alternative": "alternative rock",
   "alternative rock": "alternative rock",
-  "alternative rock;  laudio": "alternative rock",
+  "alternative rock; laudio": "alternative rock",
   "alternative-rock": "alternative rock",
   "alternativerock": "alternative rock",
   "alternativo": "alternative rock",
@@ -108,7 +105,6 @@
   "ambience": "ambient",
   "ambient": "ambient",
   "ambient music": "ambient",
-  "ambient.": "ambient",
   "basque ambient": "ambient",
   "infinite loops": "ambient",
   "landscapes": "ambient",
@@ -121,7 +117,6 @@
   "ambient drone electronic": "electronic",
   "ambientechno": "techno",
   "ambient electronic": "ambient electronic",
-  "ambient electronic.": "ambient electronic",
   "ambient electronica": "ambient electronic",
   "ambient for film": "ambient",
   "ambientgaze": "shoegaze",
@@ -195,8 +190,6 @@
   "beats": "beats",
   "beats for sale": "beats",
   "beats hiphop": "beats",
-  "beats.": "beats",
-  "beats...": "beats",
   "beattape": "beats",
   "producer": "beats",
   "rap beats": "beats",
@@ -206,7 +199,6 @@
   "bedroom emo": "emo",
   "bedroom": "bedroom pop",
   "bedroom pop": "bedroom pop",
-  "bedroom pop.": "bedroom pop",
   "bedroom pop hip-hop": "hip hop",
   "bedroom rock": "bedroom rock",
   "bedroom shoegaze": "shoegaze",
@@ -374,7 +366,6 @@
   "crossover thrash": "thrash metal",
   "crust": "crust",
   "crust punk": "crust",
-  "crust.": "crust",
   "crustcore": "crust",
   "hardcore crust": "crust",
   "stenchcore": "crust",
@@ -512,7 +503,6 @@
   "drill": "drill",
   "driving techno": "techno",
   "drone": "drone",
-  "drone.": "drone",
   "ambient drone": "drone ambient",
   "drone ambient": "drone ambient",
   "droneambient": "drone ambient",
@@ -614,8 +604,6 @@
   "electro-jazz": "jazz",
   "electronic": "electronic",
   "electronic music": "electronic",
-  "electronic music.": "electronic",
-  "electronic.": "electronic",
   "electronica": "electronic",
   "electronics": "electronic",
   "elektronika": "electronic",
@@ -641,7 +629,6 @@
   "emapunk histérico": "otros géneros",
   "emo": "emo",
   "emo revival": "emo",
-  "emo.": "emo",
   "emocore": "emo",
   "emotional hardcore": "emo",
   "midwest emo": "emo",
@@ -716,7 +703,6 @@
   "fiedrecording": "field recording",
   "field recording": "field recording",
   "field recordings": "field recording",
-  "field recordings.": "field recording",
   "nature": "field recording",
   "nature sounds": "field recording",
   "phonography": "field recording",
@@ -805,7 +791,6 @@
   "funk": "funk",
   "funk music": "funk",
   "funk rythm & blues": "funk",
-  "funk.": "funk",
   "funky": "funk",
   "groove": "funk",
   "intrumental funk": "funk",
@@ -927,7 +912,6 @@
   "hard rock": "hard rock",
   "hard rock metal": "hard rock",
   "hard rock-hard blues": "hard rock",
-  "hard rock.": "hard rock",
   "hard-rock": "hard rock",
   "hard-rock-metal": "hard rock",
   "hard_rock": "hard rock",
@@ -942,7 +926,7 @@
   "hardgroove techno": "hard techno",
   "hardtechno acid techno": "hard techno",
   "schranz": "hard techno",
-  "techno electro  hardtechno": "hard techno",
+  "techno electro hardtechno": "hard techno",
   "hardtechno.minimaltechno": "minimal techno",
   "hardtek": "hardcore techno",
   "tribe": "hardcore techno",
@@ -961,7 +945,6 @@
   "heavy": "heavy metal",
   "heavy metal": "heavy metal",
   "heavy metal - hard rock": "heavy metal",
-  "heavy.": "heavy metal",
   "heavymetal": "heavy metal",
   "old school metal": "heavy metal",
   "‬heavy psych": "psychedelic",
@@ -1036,12 +1019,10 @@
   "indie lo-fi": "lo-fi",
   "indie pop": "indie pop",
   "indie pop rock": "indie pop",
-  "indie pop.": "indie pop",
   "indie rock pop": "indie pop",
   "pop indie": "indie pop",
   "pop rock indie": "indie pop",
   "popindie": "indie pop",
-  "popindie.": "indie pop",
   "twee pop": "indie pop",
   "indi pop": "indie pop",
   "indie punk": "indie punk",
@@ -1050,7 +1031,6 @@
   "guitar indie": "indie rock",
   "indie": "indie rock",
   "indie rock": "indie rock",
-  "indie rock.": "indie rock",
   "mod indie": "indie rock",
   "pixies": "indie rock",
   "rock indie": "indie rock",
@@ -1102,7 +1082,6 @@
   "jackin house": "house",
   "jangle pop": "jangle pop",
   "jazz": "jazz",
-  "jazz.": "jazz",
   "spanish jazz": "jazz",
   "jazz in all styles (jazz metal": "metal",
   "jazz band": "jazz",
@@ -1238,7 +1217,6 @@
   "metal euskadi": "metal",
   "metal nafarroa": "metal",
   "metal spain": "metal",
-  "metal spain.": "metal",
   "modern metal": "metal",
   "métal": "metal",
   "rotten metal": "metal",
@@ -1266,7 +1244,6 @@
   "micro house": "house",
   "militant dungeon synth": "dungeon synth",
   "minimal": "minimal",
-  "minimal.": "minimal",
   "minimalism": "minimal",
   "minimalist": "minimal",
   "minimal classical": "classical",
@@ -1319,7 +1296,6 @@
   "meditative": "new age",
   "new age": "new age",
   "new age music": "new age",
-  "new age.": "new age",
   "spiritual": "new age",
   "new beat": "new beat",
   "newbeat": "new beat",
@@ -1558,7 +1534,6 @@
   "heavy psych": "psychedelic rock",
   "psych rock": "psychedelic rock",
   "psychedelic rock": "psychedelic rock",
-  "psychedelic rock.": "psychedelic rock",
   "psychedellic rock": "psychedelic rock",
   "pshychedelic rock": "psychedelic rock",
   "psichedelic rock": "psychedelic rock",
@@ -1592,7 +1567,6 @@
   "punk estiloso": "punk",
   "punk patatero": "punk",
   "punk vasco": "punk",
-  "punk?": "punk",
   "spanish punk": "punk",
   "veganwave": "punk",
   "young punk": "punk",
@@ -1614,7 +1588,6 @@
   "punk rock": "punk rock",
   "punk rock bilbao": "punk rock",
   "punk rock pamplona spain": "punk rock",
-  "punk rock.": "punk rock",
   "punk rock. argentina": "punk rock",
   "punk-rock": "punk rock",
   "ramones": "punk rock",
@@ -1656,7 +1629,6 @@
   "rap español": "rap",
   "rap latino": "rap",
   "rap vasco": "rap",
-  "rap.": "rap",
   "spanish rap": "rap",
   "rap & roll": "rap",
   "rap fr": "rap",
@@ -1837,7 +1809,6 @@
   "shock rock": "rock",
   "gaze": "shoegaze",
   "shoegaze": "shoegaze",
-  "shoegaze...": "shoegaze",
   "sinfonic metal": "metal",
   "autor": "singer-songwriter",
   "canción de autor": "singer-songwriter",
@@ -1878,7 +1849,6 @@
   "soft jazz": "jazz",
   "softpop": "pop",
   "soft rock": "soft rock",
-  "soft rock.": "soft rock",
   "songwriter pop": "pop",
   "soul": "soul",
   "soul funk": "funk",
@@ -1925,7 +1895,6 @@
   "spoken": "spoken word",
   "spoken word": "spoken word",
   "spoken word poetry": "spoken word",
-  "spoken word.": "spoken word",
   "steppa": "steppa",
   "steppas": "steppa",
   "stepper": "steppa",
@@ -2055,15 +2024,13 @@
   "progressive trance": "trance",
   "psytrance": "trance",
   "trance": "trance",
-  "trance.": "trance",
   "vocal trance": "trance",
   "autotune": "trap",
   "cloud rap": "trap",
   "trap": "trap",
   "trap music": "trap",
   "trap-fusión triste": "trap",
-  "trap...": "trap",
-  "trap  flow": "trap",
+  "trap flow": "trap",
   "trapunk": "punk",
   "trash death groove metal": "groove metal",
   "trash rock": "trash rock",
@@ -2206,7 +2173,6 @@
   "bidarte": "lugar:iparralde",
   "bidasoa": "lugar:gipuzkoa",
   "bilbao": "lugar:bilbo",
-  "bilbao.": "lugar:bilbo",
   "bilbaomusikak": "lugar:bilbo",
   "bilbo": "lugar:bilbo",
   "bilbo zaharra": "lugar:bilbo",
@@ -2282,7 +2248,6 @@
   "vitoria": "lugar:gasteiz",
   "vitoria gasteiz": "lugar:gasteiz",
   "berlin": "lugar:germany",
-  "berlin.": "lugar:germany",
   "germany": "lugar:germany",
   "gernika": "lugar:gernika-lumo",
   "gernika lumo": "lugar:gernika-lumo",
@@ -2361,7 +2326,6 @@
   "oslo": "lugar:norway",
   "oiartzun": "lugar:oiartzun",
   "oñati": "lugar:oñati",
-  "oñati.": "lugar:oñati",
   "ondarroa": "lugar:ondarroa",
   "ondarru": "lugar:ondarroa",
   "orio": "lugar:orio",
@@ -2516,7 +2480,6 @@
   "live looping": "otro:en directo",
   "live music": "otro:en directo",
   "live recording": "otro:en directo",
-  "live.": "otro:en directo",
   "zuzenean": "otro:en directo",
   "english": "otro:idioma",
   "ep": "otro:formato",
@@ -2854,7 +2817,6 @@
   "bakarlaria": "resto",
   "bakarrik egoteko": "resto",
   "bala": "resto",
-  "bala.": "resto",
   "balada": "resto",
   "baladas": "resto",
   "balcan": "resto",
@@ -5192,7 +5154,6 @@
   "sverige": "resto",
   "svreca": "resto",
   "swamp": "resto",
-  "swamp...": "resto",
   "swarvy": "resto",
   "sweat": "resto",
   "sweet oblivion": "resto",
@@ -5597,7 +5558,7 @@
    "grupo": "resto",
    "padre": null,
    "discos": 2127,
-   "n_tags": 2979,
+   "n_tags": 2977,
    "tags": [
     "bidehuts",
     "eclectic reactions",
@@ -5735,6 +5696,7 @@
     "audiobook",
     "audiobooks",
     "australopithecus",
+    "bala",
     "balada",
     "baldosa flotante",
     "ballad",
@@ -5919,7 +5881,6 @@
     "atmosphere",
     "audiolibro",
     "ave fénix",
-    "bala",
     "baladas",
     "bariri",
     "barraks promotion",
@@ -6224,6 +6185,7 @@
     "string",
     "suberock2013",
     "supercollider",
+    "swamp",
     "súa",
     "tabla",
     "talavera de la reina",
@@ -6472,7 +6434,6 @@
     "baiuca",
     "bakarlari",
     "bakarrik egoteko",
-    "bala.",
     "balcan",
     "baldruin",
     "baltimore",
@@ -8273,8 +8234,6 @@
     "susan alcorn",
     "sverige",
     "svreca",
-    "swamp",
-    "swamp...",
     "swarvy",
     "sweat",
     "sweet oblivion",
@@ -8691,7 +8650,7 @@
    "grupo": "genero",
    "padre": null,
    "discos": 1611,
-   "n_tags": 19,
+   "n_tags": 17,
    "tags": [
     "electronic",
     "electronica",
@@ -8706,8 +8665,6 @@
     "ekectronic",
     "electro techno electronic",
     "electronic macarrism",
-    "electronic music.",
-    "electronic.",
     "electrónica minimalista",
     "elektronika",
     "eletronica",
@@ -8719,7 +8676,7 @@
    "grupo": "genero",
    "padre": "rock",
    "discos": 1378,
-   "n_tags": 88,
+   "n_tags": 87,
    "tags": [
     "punk",
     "neopunk",
@@ -8792,7 +8749,6 @@
     "punk gang art tribe rain",
     "punk mongol",
     "punk rural",
-    "punk?",
     "reggaeton punk",
     "rhytm & punk",
     "riot girl",
@@ -8816,7 +8772,7 @@
    "grupo": "genero",
    "padre": "rock",
    "discos": 1108,
-   "n_tags": 27,
+   "n_tags": 26,
    "tags": [
     "alternative",
     "alternative rock",
@@ -8827,14 +8783,13 @@
     "rock alternative",
     "alternativa",
     "90s rock",
-    "alternative rock;  laudio",
+    "alternative rock; laudio",
     "90's rock",
     "alternativerock",
     "alternativo en español",
     "industrial rock alternative",
     "metal alternativo",
     "modern rock",
-    "alt rock.",
     "alternative-rock",
     "alternativo rock",
     "basque alt-rock",
@@ -8852,7 +8807,7 @@
    "grupo": "genero",
    "padre": "rock",
    "discos": 1074,
-   "n_tags": 49,
+   "n_tags": 48,
    "tags": [
     "metal",
     "extreme metal",
@@ -8865,10 +8820,10 @@
     "female fronted metal",
     "funk metal",
     "metal euskadi",
+    "metal spain",
     "alt metal",
     "comic metal",
     "grunge metal",
-    "metal spain.",
     "protometal",
     "rotten metal",
     "underground metal",
@@ -8888,7 +8843,6 @@
     "metal españa",
     "metal euskaraz",
     "metal nafarroa",
-    "metal spain",
     "métal",
     "new metal",
     "oi! metal",
@@ -9180,14 +9134,13 @@
    "grupo": "genero",
    "padre": "electronic",
    "discos": 667,
-   "n_tags": 25,
+   "n_tags": 24,
    "tags": [
     "ambient",
     "soundscape",
     "sound textures",
     "infinite loops",
     "soundscapes",
-    "ambient.",
     "landscapes",
     "space music",
     "ambience",
@@ -9226,7 +9179,7 @@
    "grupo": "genero",
    "padre": "rock",
    "discos": 528,
-   "n_tags": 21,
+   "n_tags": 20,
    "tags": [
     "punk rock",
     "punk-rock",
@@ -9245,7 +9198,6 @@
     "punk & roll",
     "punk rock bilbao",
     "punk rock pamplona spain",
-    "punk rock.",
     "punk rock. argentina",
     "punk´n´roll´n´ska de lavabo",
     "spanish punk rock"
@@ -9275,14 +9227,13 @@
    "grupo": "genero",
    "padre": "rock",
    "discos": 456,
-   "n_tags": 15,
+   "n_tags": 14,
    "tags": [
     "indie",
     "indie rock",
     "mod indie",
     "pixies",
     "emo indie",
-    "indie rock.",
     "indietronica",
     "rock indie",
     "80s indie rock",
@@ -9441,14 +9392,13 @@
    "grupo": "lugar",
    "padre": "lugar:bizkaia",
    "discos": 370,
-   "n_tags": 6,
+   "n_tags": 5,
    "tags": [
     "bilbao",
     "bilbo",
     "crudobilbao",
     "bilbaomusikak",
-    "bilbo zaharra",
-    "bilbao."
+    "bilbo zaharra"
    ]
   },
   {
@@ -9633,7 +9583,7 @@
    "grupo": "genero",
    "padre": "folk",
    "discos": 274,
-   "n_tags": 15,
+   "n_tags": 14,
    "tags": [
     "acoustic",
     "acoustic guitar",
@@ -9644,7 +9594,6 @@
     "acústica",
     "accoustic",
     "akustikoa",
-    "acoustic...",
     "modern acoustic",
     "free impro acoustic duo",
     "gitarra akustikoa",
@@ -9706,7 +9655,7 @@
    "grupo": "genero",
    "padre": "hardcore punk",
    "discos": 255,
-   "n_tags": 12,
+   "n_tags": 11,
    "tags": [
     "crust",
     "crust punk",
@@ -9714,7 +9663,6 @@
     "hardcore crust",
     "stenchcore",
     "emocrust",
-    "crust.",
     "blackened crust punk",
     "experimental crust",
     "melodic crust",
@@ -9757,7 +9705,7 @@
    "grupo": "genero",
    "padre": "hip hop",
    "discos": 246,
-   "n_tags": 27,
+   "n_tags": 26,
    "tags": [
     "rap",
     "euskal rap",
@@ -9784,8 +9732,7 @@
     "rap indé",
     "rap underground",
     "rap vasco",
-    "rap venezolano",
-    "rap."
+    "rap venezolano"
    ]
   },
   {
@@ -9891,12 +9838,11 @@
    "grupo": "genero",
    "padre": null,
    "discos": 205,
-   "n_tags": 30,
+   "n_tags": 29,
    "tags": [
     "jazz",
     "dark jazz",
     "bebop",
-    "jazz.",
     "postjazz",
     "punk jazz",
     "traditional jazz",
@@ -9948,7 +9894,7 @@
    "grupo": "genero",
    "padre": "rock",
    "discos": 197,
-   "n_tags": 17,
+   "n_tags": 16,
    "tags": [
     "hard rock",
     "heavy rock",
@@ -9962,7 +9908,6 @@
     "proto-metal",
     "70´s hard rock",
     "80's hard rock",
-    "hard rock.",
     "hard-rock",
     "hard-rock-metal",
     "hard_rock",
@@ -10002,14 +9947,13 @@
    "grupo": "genero",
    "padre": "soul",
    "discos": 178,
-   "n_tags": 20,
+   "n_tags": 19,
    "tags": [
     "funk",
     "groove",
     "funky",
     "intrumental funk",
     "funk rythm & blues",
-    "funk.",
     "jazz-funk",
     "baile funk",
     "bailefunk",
@@ -10094,12 +10038,11 @@
    "grupo": "genero",
    "padre": "techno",
    "discos": 167,
-   "n_tags": 7,
+   "n_tags": 6,
    "tags": [
     "minimal",
     "minimalism",
     "minimalist",
-    "minimal.",
     "deep minimal",
     "folk minimal",
     "ro-minimal"
@@ -10127,10 +10070,9 @@
    "grupo": "genero",
    "padre": "ambient",
    "discos": 161,
-   "n_tags": 5,
+   "n_tags": 4,
    "tags": [
     "drone",
-    "drone.",
     "antique drone",
     "dungeon drone",
     "pagan drone"
@@ -10141,7 +10083,7 @@
    "grupo": "genero",
    "padre": "pop",
    "discos": 159,
-   "n_tags": 11,
+   "n_tags": 9,
    "tags": [
     "indie pop",
     "indie pop rock",
@@ -10150,8 +10092,6 @@
     "pop indie",
     "indie rock pop",
     "indi pop",
-    "indie pop.",
-    "popindie.",
     "rock pop indie",
     "twee pop"
    ]
@@ -10438,7 +10378,7 @@
    "grupo": "otro",
    "padre": "otro:formato",
    "discos": 129,
-   "n_tags": 8,
+   "n_tags": 7,
    "tags": [
     "live",
     "live recording",
@@ -10446,7 +10386,6 @@
     "directo",
     "live music",
     "concert",
-    "live.",
     "zuzenean"
    ]
   },
@@ -10466,7 +10405,7 @@
    "grupo": "genero",
    "padre": "metal",
    "discos": 127,
-   "n_tags": 10,
+   "n_tags": 9,
    "tags": [
     "heavy metal",
     "heavy",
@@ -10476,7 +10415,6 @@
     "old school metal",
     "80s heavy metal",
     "classic heavy metal",
-    "heavy.",
     "old school heavy metal"
    ]
   },
@@ -10687,14 +10625,13 @@
    "grupo": "genero",
    "padre": "post-hardcore",
    "discos": 102,
-   "n_tags": 10,
+   "n_tags": 9,
    "tags": [
     "emo",
     "emotional hardcore",
     "emocore",
     "midwest emo",
     "emo revival",
-    "emo.",
     "90s emo",
     "acoustic emo",
     "bedroom emo",
@@ -10720,7 +10657,7 @@
    "grupo": "genero",
    "padre": "hip hop",
    "discos": 98,
-   "n_tags": 22,
+   "n_tags": 20,
    "tags": [
     "beats",
     "beattape",
@@ -10734,8 +10671,6 @@
     "beat tape",
     "beat explosion",
     "beats of olarizu",
-    "beats.",
-    "beats...",
     "dancehall beats",
     "darkbeat",
     "ghôst flow beats",
@@ -10846,7 +10781,7 @@
    "grupo": "genero",
    "padre": "hip hop",
    "discos": 86,
-   "n_tags": 9,
+   "n_tags": 8,
    "tags": [
     "trap",
     "autotune",
@@ -10855,8 +10790,7 @@
     "trap-fusión triste",
     "chamber trap",
     "melodic trap",
-    "trap  flow",
-    "trap..."
+    "trap flow"
    ]
   },
   {
@@ -11016,7 +10950,7 @@
    "grupo": "genero",
    "padre": "experimental",
    "discos": 70,
-   "n_tags": 9,
+   "n_tags": 8,
    "tags": [
     "poems",
     "spoken word",
@@ -11025,8 +10959,7 @@
     "poesia",
     "spoken word poetry",
     "spoken",
-    "poesia y música",
-    "spoken word."
+    "poesia y música"
    ]
   },
   {
@@ -11047,10 +10980,9 @@
    "grupo": "genero",
    "padre": "ambient",
    "discos": 67,
-   "n_tags": 8,
+   "n_tags": 7,
    "tags": [
     "new age",
-    "new age.",
     "meditation",
     "meditative",
     "mantra",
@@ -11221,7 +11153,7 @@
     "hardgroove",
     "hardgroove techno",
     "hardtechno acid techno",
-    "techno electro  hardtechno"
+    "techno electro hardtechno"
    ]
   },
   {
@@ -11411,7 +11343,7 @@
    "grupo": "genero",
    "padre": "rock",
    "discos": 56,
-   "n_tags": 8,
+   "n_tags": 7,
    "tags": [
     "psychedelic rock",
     "psychedellic rock",
@@ -11419,7 +11351,6 @@
     "pshychedelic rock",
     "psichedelic rock",
     "psych rock",
-    "psychedelic rock.",
     "pychedelic rock"
    ]
   },
@@ -11516,14 +11447,13 @@
    "grupo": "genero",
    "padre": "indie rock",
    "discos": 54,
-   "n_tags": 8,
+   "n_tags": 7,
    "tags": [
     "shoegaze",
     "ambientgaze",
     "bedroom shoegaze",
     "gaze",
     "sadgaze",
-    "shoegaze...",
     "skygaze",
     "voidgaze"
    ]
@@ -11685,15 +11615,14 @@
    "grupo": "genero",
    "padre": "experimental",
    "discos": 50,
-   "n_tags": 7,
+   "n_tags": 6,
    "tags": [
     "field recordings",
     "field recording",
     "phonography",
     "fiedrecording",
     "nature",
-    "nature sounds",
-    "field recordings."
+    "nature sounds"
    ]
   },
   {
@@ -12083,10 +12012,9 @@
    "grupo": "genero",
    "padre": "electronic",
    "discos": 37,
-   "n_tags": 3,
+   "n_tags": 2,
    "tags": [
     "ambient electronic",
-    "ambient electronic.",
     "ambient electronica"
    ]
   },
@@ -12210,11 +12138,10 @@
    "grupo": "genero",
    "padre": "pop",
    "discos": 35,
-   "n_tags": 3,
+   "n_tags": 2,
    "tags": [
     "bedroom pop",
-    "bedroom",
-    "bedroom pop."
+    "bedroom"
    ]
   },
   {
@@ -12366,10 +12293,9 @@
    "grupo": "lugar",
    "padre": "lugar:gipuzkoa",
    "discos": 32,
-   "n_tags": 2,
+   "n_tags": 1,
    "tags": [
-    "oñati",
-    "oñati."
+    "oñati"
    ]
   },
   {
@@ -12388,7 +12314,7 @@
    "grupo": "genero",
    "padre": "electronic",
    "discos": 32,
-   "n_tags": 8,
+   "n_tags": 7,
    "tags": [
     "trance",
     "eurotrance",
@@ -12396,8 +12322,7 @@
     "psytrance",
     "progressive trance",
     "pop trance",
-    "epic trance",
-    "trance."
+    "epic trance"
    ]
   },
   {
@@ -13199,10 +13124,9 @@
    "grupo": "genero",
    "padre": "rock",
    "discos": 18,
-   "n_tags": 2,
+   "n_tags": 1,
    "tags": [
-    "acoustic rock",
-    "acoustic rock..."
+    "acoustic rock"
    ]
   },
   {
@@ -13650,11 +13574,10 @@
    "grupo": "lugar",
    "padre": null,
    "discos": 14,
-   "n_tags": 3,
+   "n_tags": 2,
    "tags": [
     "berlin",
-    "germany",
-    "berlin."
+    "germany"
    ]
   },
   {
@@ -13716,11 +13639,10 @@
    "grupo": "genero",
    "padre": "rock",
    "discos": 14,
-   "n_tags": 3,
+   "n_tags": 2,
    "tags": [
     "soft rock",
-    "anarcho soft-rock",
-    "soft rock."
+    "anarcho soft-rock"
    ]
   },
   {
@@ -15272,7 +15194,7 @@
   },
   {
    "tag": "indie rock",
-   "discos": 221,
+   "discos": 222,
    "nodo": "indie rock",
    "motivo": "indie (umbrella de Bandcamp) se funde con indie rock"
   },
@@ -15338,7 +15260,7 @@
   },
   {
    "tag": "trap",
-   "discos": 70,
+   "discos": 71,
    "nodo": "trap",
    "motivo": "trap (por umbral, cloud rap y autotune cuelgan aquí)"
   },
@@ -15409,6 +15331,12 @@
    "motivo": "cinematic -> soundtrack"
   },
   {
+   "tag": "heavy",
+   "discos": 26,
+   "nodo": "heavy metal",
+   "motivo": "heavy a secas -> heavy metal"
+  },
+  {
    "tag": "minimalism",
    "discos": 26,
    "nodo": "minimal",
@@ -15419,12 +15347,6 @@
    "discos": 25,
    "nodo": "rock",
    "motivo": "se ha quitado la parte de lugar/gentilicio"
-  },
-  {
-   "tag": "heavy",
-   "discos": 25,
-   "nodo": "heavy metal",
-   "motivo": "heavy a secas -> heavy metal"
   },
   {
    "tag": "acoustic guitar",
@@ -15535,6 +15457,12 @@
    "motivo": "space -> space rock"
   },
   {
+   "tag": "alt rock",
+   "discos": 7,
+   "nodo": "alternative rock",
+   "motivo": "alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock"
+  },
+  {
    "tag": "classic",
    "discos": 7,
    "nodo": "classic rock",
@@ -15551,12 +15479,6 @@
    "discos": 7,
    "nodo": "punk rock",
    "motivo": "nombre de grupo usado como tag -> punk rock"
-  },
-  {
-   "tag": "alt rock",
-   "discos": 6,
-   "nodo": "alternative rock",
-   "motivo": "alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock"
   },
   {
    "tag": "alternativo",
@@ -15667,7 +15589,7 @@
    "motivo": "alternativas: alternative rock; más de una palabra era nodo"
   },
   {
-   "tag": "alternative rock;  laudio",
+   "tag": "alternative rock; laudio",
    "discos": 4,
    "nodo": "alternative rock",
    "motivo": "alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock"
@@ -15847,6 +15769,12 @@
    "motivo": "se ha quitado la parte de lugar/gentilicio"
   },
   {
+   "tag": "metal spain",
+   "discos": 3,
+   "nodo": "metal",
+   "motivo": "se ha quitado la parte de lugar/gentilicio"
+  },
+  {
    "tag": "punk español",
    "discos": 3,
    "nodo": "punk",
@@ -16009,12 +15937,6 @@
    "motivo": "alternativas: indie rock; más de una palabra era nodo"
   },
   {
-   "tag": "indie rock.",
-   "discos": 2,
-   "nodo": "indie rock",
-   "motivo": "indie (umbrella de Bandcamp) se funde con indie rock"
-  },
-  {
    "tag": "indietronica",
    "discos": 2,
    "nodo": "indie rock",
@@ -16055,12 +15977,6 @@
    "discos": 2,
    "nodo": "alternative rock",
    "motivo": "alternativas: metal; más de una palabra era nodo"
-  },
-  {
-   "tag": "metal spain.",
-   "discos": 2,
-   "nodo": "metal",
-   "motivo": "se ha quitado la parte de lugar/gentilicio"
   },
   {
    "tag": "militant dungeon synth",
@@ -16379,12 +16295,6 @@
    "discos": 1,
    "nodo": "country rock",
    "motivo": "alternativas: country, rock; más de una palabra era nodo"
-  },
-  {
-   "tag": "alt rock.",
-   "discos": 1,
-   "nodo": "alternative rock",
-   "motivo": "alternative (954 discos, umbrella de Bandcamp) se funde con alternative rock"
   },
   {
    "tag": "alternative dance",
@@ -17725,12 +17635,6 @@
    "motivo": "alternativas: heavy metal, metal; más de una palabra era nodo"
   },
   {
-   "tag": "heavy.",
-   "discos": 1,
-   "nodo": "heavy metal",
-   "motivo": "heavy a secas -> heavy metal"
-  },
-  {
    "tag": "high energy punk rock",
    "discos": 1,
    "nodo": "punk rock",
@@ -18209,12 +18113,6 @@
    "discos": 1,
    "nodo": "rock",
    "motivo": "alternativas: metal; más de una palabra era nodo"
-  },
-  {
-   "tag": "metal spain",
-   "discos": 1,
-   "nodo": "metal",
-   "motivo": "se ha quitado la parte de lugar/gentilicio"
   },
   {
    "tag": "mikel artieda",
@@ -19319,12 +19217,6 @@
    "discos": 1,
    "nodo": "hardcore",
    "motivo": "raíz pegada separada"
-  },
-  {
-   "tag": "trap...",
-   "discos": 1,
-   "nodo": "trap",
-   "motivo": "trap (por umbral, cloud rap y autotune cuelgan aquí)"
   },
   {
    "tag": "trapunk",
