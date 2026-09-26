@@ -29,7 +29,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Sondeo (≤10 requests, 1 req/2s)
         run: python3 scripts/probe_tag_pages.py --extra-tags "${{ inputs.extra_tags }}"
@@ -37,7 +37,7 @@ jobs:
       # if: always() para conservar las respuestas parciales si algo falla.
       - name: Subir artifact con respuestas crudas y resumen
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: probe-tag-pages
           path: probe_out/

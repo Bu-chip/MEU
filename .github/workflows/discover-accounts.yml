@@ -45,9 +45,13 @@ on:
         required: false
         default: false
 
+# contents: write para las ramas discovery-state-cuentas y candidates/*;
+# pull-requests: write para abrir el PR de candidatos; actions: write
+# para lanzar el workflow Tests sobre la rama del PR. Main no se toca.
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 # Mismo group que scrape-covers y discover-tags: jamás dos scrapes a la
 # vez contra Bandcamp.
@@ -65,7 +69,7 @@ jobs:
       PREFIX: ${{ inputs.kind == 'label' && 'sellos' || 'cuentas' }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Restaurar estado, candidatos y pendientes
         run: |
@@ -121,7 +125,7 @@ jobs:
 
       - name: Subir artifact con candidatos y estado
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: discovery-accounts-output
           path: |
@@ -153,6 +157,7 @@ jobs:
           fi
 
       - name: Abrir/actualizar PR de candidatos
+        id: pr
         if: ${{ !inputs.dry_run && steps.scrape.outputs.rc == '0' }}
         run: |
           MONTH="${{ steps.scrape.outputs.month }}"
@@ -242,6 +247,7 @@ jobs:
               if gh pr create --head "$BR" --base main --title "$TITLE" \
                    --body-file /tmp/pr-body.md; then
                 echo "PR de candidatos abierto"
+                OPEN=nuevo
               else
                 echo "::warning::No se pudo abrir el PR automáticamente. Los candidatos están en la rama ${BR}: https://github.com/${{ github.repository }}/compare/main...${BR}"
               fi
@@ -251,6 +257,24 @@ jobs:
             fi
           else
             echo "sin novedades → sin PR"
+          fi
+          # Rama del PR abierto (nuevo o existente) para el paso siguiente.
+          if [ -n "$OPEN" ]; then
+            echo "branch=$BR" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Ver el mismo paso en discover-tags.yml: los push con GITHUB_TOKEN
+      # no disparan `pull_request`, pero workflow_dispatch sí se puede
+      # lanzar con ese token. Tests tiene concurrency por rama con
+      # cancel-in-progress: el último run es el que deja los checks.
+      - name: Lanzar Tests sobre la rama del PR
+        if: ${{ steps.pr.outputs.branch != '' }}
+        run: |
+          BR="${{ steps.pr.outputs.branch }}"
+          if gh workflow run tests.yml --ref "$BR"; then
+            echo "Tests lanzado sobre ${BR}"
+          else
+            echo "::warning::No se pudo lanzar Tests sobre ${BR}; el PR se queda sin checks. Lánzalo a mano: Actions → Tests → Run workflow → ${BR}"
           fi
 
       - name: Propagar fallo del scraper
