@@ -1,5 +1,13 @@
-# Tests y guardias de datos. Corre en cada PR (incluidos los PR mensuales
-# de candidatos) y en cada push a main. No despliega nada.
+# Tests y guardias de datos. Corre en cada PR y en cada push a main. No
+# despliega nada.
+#
+# Los PR de candidatos (ramas candidates/*) los empujan los robots
+# discover-tags y discover-accounts con el GITHUB_TOKEN, y GitHub no
+# dispara `pull_request` desde push hechos con ese token. Por eso los
+# robots lanzan este workflow explícitamente con `gh workflow run
+# tests.yml --ref <rama>` (workflow_dispatch SÍ se puede disparar con el
+# GITHUB_TOKEN): el check queda sobre el head de la rama y aparece en el
+# PR como cualquier otro.
 #
 # La guardia `locations.py check` falla si algún band_location de un
 # fichero de candidatos del árbol no está registrado como observación en
@@ -16,13 +24,20 @@ on:
 permissions:
   contents: read
 
+# Un run por ref: si llegan dos runs seguidos sobre la misma rama (p. ej.
+# dos pasadas del robot sobre el mismo PR de candidatos), el antiguo se
+# cancela y el último es el que deja los checks.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
@@ -40,9 +55,9 @@ jobs:
           git diff --exit-code -- data/locations docs/mapa-data-audit.md \
             || { echo "::error::derivados desactualizados: python3 scripts/locations.py all"; exit 1; }
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
           cache-dependency-path: app/package-lock.json
 
