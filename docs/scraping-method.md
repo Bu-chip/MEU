@@ -77,6 +77,35 @@ Lo que el listado **no** da: la lista de tags del álbum ni el género
 textual (`band_genre_id` es numérico y del artista, no del release).
 Para tags hay que visitar la ficha.
 
+**El listado por tag no es exhaustivo** (verificado el 2026-09-26). La
+cuenta `fontso` (Bilbao) publica 9 álbumes; los 9 llevan el tag
+`Bilbao` en su ficha, pero el canónico solo tenía uno, y el tag
+`bilbao` figura como agotado en `discovery_state.json` (146 páginas).
+El listado de `discover_web` para un tag omite releases que sí lo
+llevan; no sabemos con qué criterio. Por eso existe el canal 3.
+
+### `geoname_id`: filtro por ubicación, probado y descartado
+
+El body acepta `geoname_id` (el id de GeoNames que usa el filtro de
+ubicación del Discover). El id de un lugar se obtiene de
+`POST https://bandcamp.com/api/location/1/geoname_search` con
+`{"q": "Bilbao", "n": 5, "geocoder_fallback": true}` → Bilbao es
+`3128026`. Sondeo del 2026-09-26 con `tag_norm_names: []` y
+`geoname_id: 3128026`:
+
+- `result_count: 281` (paginado entero), de solo **86 cuentas**, cuando
+  el canónico ubica 772 cuentas en Bilbo. Con `tag_norm_names:
+  ["bilbao"]` y el mismo geoname salen 273; sin geoname, 2.666.
+- El más reciente es de 2026-05, cuando el tag `bilbao` tiene discos de
+  2026-09 con `band_location` «Bilbao, Spain».
+- Devuelve merch (`item_type: "p"`) pese a `include_result_types:
+  ["a", "s"]`.
+- Contra el canónico: 276 ya estaban, 2 estaban rechazados y los 3
+  restantes eran camisetas. **Cero discos nuevos.**
+
+El índice por ubicación del Discover cubre una fracción pequeña y
+sesgada de las cuentas; no sirve como canal de descubrimiento.
+
 ## Canal vivo 2: fichas de álbum (metadatos completos)
 
 Las páginas `https://<artista>.bandcamp.com/album/<slug>` **no** están
@@ -93,6 +122,27 @@ sigue vigente:
 - Fecha: texto `released <Month> <D>, <YYYY>` en la página.
 - `data-tralbum="..."` sigue presente (JSON completo del release,
   fuente alternativa si las metas cambiaran).
+
+## Canal vivo 3: discografía de una cuenta (`/music`)
+
+`https://<cuenta>.bandcamp.com/music` (o `https://<dominio>/music` en
+cuentas con dominio propio) no está tras el Client Challenge (verificado
+el 2026-09-26 en cinco cuentas de Bilbo y una de dominio propio). Lo usa
+`scripts/discover_accounts.py`:
+
+- Rejilla: `<li data-item-id="album-<id>">` / `"track-<id>"` con un
+  `<a href="/album/<slug>">` dentro. En cuentas de sello el `href` puede
+  ser absoluto hacia el subdominio del grupo, con `?label=…&tab=music`.
+- Discografías largas: el resto de la rejilla viaja en
+  `data-client-items="…"` (JSON con `id`, `type`, `page_url`, `title`).
+- Cuenta de un solo lanzamiento: `/music` sirve directamente la ficha;
+  se reconoce por `bc-page-properties` + `og:url`.
+- Ubicación de la cuenta: `<span class="location …">Bilbao, Spain</span>`.
+- En la ficha, `data-tralbum` da `artist`, `current.title` y
+  `current.release_date` (`"14 Feb 1998 00:00:00 GMT"`).
+
+Solo se proponen álbumes: el canónico no tiene temas sueltos
+(`/track/`), que se cuentan en el estado pero no entran.
 
 ## Condiciones operativas (sin cambios desde el scrape de portadas)
 

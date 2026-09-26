@@ -45,6 +45,7 @@ probe_out/
 # data/tag_candidates.json SÍ se versionan.
 data/candidates_*.json
 data/discovery_state.json
+data/discovery_state_*.json
 
 # Build outputs (para futuras compilaciones)
 dist/

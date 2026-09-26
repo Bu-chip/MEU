@@ -1,0 +1,260 @@
+name: Discover accounts (Bandcamp)
+
+# Descubrimiento por cuenta: recorre la discografía (/music) de las
+# cuentas que el canónico ya ubica en Euskal Herria y propone los discos
+# que faltan (ver scripts/discover_accounts.py y docs/scraping-method.md).
+# Complementa a discover-tags: la búsqueda por tag de Bandcamp no
+# devuelve todo lo que lleva el tag.
+#
+# PRINCIPIO INNEGOCIABLE: el robot propone, Miguel dispone. Este
+# workflow JAMÁS toca main ni el canónico: el estado vive en la rama
+# discovery-state-cuentas y los candidatos entran solo vía PR revisable
+# desde ramas candidates/<cuentas|sellos>-YYYY-MM.
+#
+# Sin cron: es un barrido que se lanza a mano hasta recorrer todas las
+# cuentas (una cuenta ya recorrida no se vuelve a pedir). Cada run del
+# mismo mes actualiza el mismo PR.
+
+on:
+  workflow_dispatch:
+    inputs:
+      budget:
+        description: "Presupuesto de requests de la pasada (≤4000: 1 req/2s cabe en el timeout)"
+        required: false
+        default: "900"
+      kind:
+        description: "Cuentas de grupo (artist) o de sello (label)"
+        type: choice
+        options: [artist, label]
+        default: artist
+      places:
+        description: "Solo cuentas de estos municipios (ids de places.json separados por comas, p. ej. bilbo). Vacío = todas"
+        required: false
+        default: ""
+      accounts:
+        description: "Override: solo estas cuentas (separadas por comas)"
+        required: false
+        default: ""
+      month:
+        description: "Sufijo YYYY-MM del fichero de candidatos (vacío = mes actual)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Solo scrape + artifact: no persiste estado ni abre PR"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+# Mismo group que scrape-covers y discover-tags: jamás dos scrapes a la
+# vez contra Bandcamp.
+concurrency:
+  group: scrape-covers
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    # 4000 requests x ~2,2s ≈ 2h30; margen para las escrituras.
+    timeout-minutes: 180
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PREFIX: ${{ inputs.kind == 'label' && 'sellos' || 'cuentas' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restaurar estado, candidatos y pendientes
+        run: |
+          if git fetch origin discovery-state-cuentas; then
+            git ls-tree -r --name-only FETCH_HEAD -- data/ \
+              | grep -E "^data/(discovery_state_${PREFIX}\.json|candidates_${PREFIX}-[^/]+\.json)$" \
+              | while read -r f; do
+                  git checkout FETCH_HEAD -- "$f"
+                  echo "restaurado $f"
+                done
+          else
+            echo "sin rama de estado previa (primera pasada)"
+          fi
+          # Solo para el dedupe (no se persiste): pendientes y candidatos
+          # del descubrimiento por tags que aún no estén en main.
+          if git fetch origin discovery-state; then
+            git ls-tree -r --name-only FETCH_HEAD -- data/ \
+              | grep -E '^data/(discovery_state\.json|candidates_[0-9]{4}-[0-9]{2}\.json)$' \
+              | while read -r f; do
+                  if [ ! -f "$f" ]; then
+                    git show "FETCH_HEAD:$f" > "$f"
+                    echo "restaurado (dedupe) $f"
+                  fi
+                done
+          fi
+
+      - name: Descubrimiento por cuenta
+        id: scrape
+        run: |
+          MONTH="${{ inputs.month }}"
+          MONTH="${MONTH:-$(date -u +%Y-%m)}"
+          # El código de salida se propaga en el último step: antes hay
+          # que persistir el estado aunque el scraper haya fallado.
+          set +e
+          python3 scripts/discover_accounts.py --budget "${{ inputs.budget || '900' }}" \
+            --kind "${{ inputs.kind || 'artist' }}" --places "${{ inputs.places }}" \
+            --accounts "${{ inputs.accounts }}" --month "$MONTH" 2>&1 | tee /tmp/scrape.log
+          rc=${PIPESTATUS[0]}
+          set -e
+          USED=$(sed -n 's/^requests usados: //p' /tmp/scrape.log | tail -1)
+          ACCOUNTS=$(sed -n 's/^cuentas recorridas: //p' /tmp/scrape.log | tail -1)
+          {
+            echo "rc=$rc"
+            echo "used=${USED:-?}"
+            echo "accounts=${ACCOUNTS:-?}"
+            echo "month=$MONTH"
+          } >> "$GITHUB_OUTPUT"
+          # El script ya registra band_location como observación en cada
+          # checkpoint; se guarda aquí porque los pasos siguientes cambian
+          # de rama.
+          OBS="data/locations/observations/candidates_${PREFIX}-${MONTH}.json"
+          if [ -f "$OBS" ]; then cp "$OBS" /tmp/obs.json; fi
+
+      - name: Subir artifact con candidatos y estado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-accounts-output
+          path: |
+            data/candidates_${{ env.PREFIX }}-*.json
+            data/discovery_state_${{ env.PREFIX }}.json
+          if-no-files-found: warn
+
+      - name: Persistir estado a la rama discovery-state-cuentas
+        if: ${{ !inputs.dry_run }}
+        run: |
+          mkdir -p /tmp/keep
+          cp "data/discovery_state_${PREFIX}.json" data/candidates_${PREFIX}-*.json /tmp/keep/ 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch origin discovery-state-cuentas; then
+            git checkout -f -B discovery-state-cuentas FETCH_HEAD
+          else
+            git checkout -f -B discovery-state-cuentas
+          fi
+          mkdir -p data
+          cp /tmp/keep/*.json data/ 2>/dev/null || true
+          # -f: están en .gitignore para proteger main; aquí es deliberado.
+          git add -f "data/discovery_state_${PREFIX}.json" data/candidates_${PREFIX}-*.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "sin cambios de estado"
+          else
+            git commit -m "estado ${PREFIX}: run ${{ github.run_id }}"
+            git push origin discovery-state-cuentas
+          fi
+
+      - name: Abrir/actualizar PR de candidatos
+        if: ${{ !inputs.dry_run && steps.scrape.outputs.rc == '0' }}
+        run: |
+          MONTH="${{ steps.scrape.outputs.month }}"
+          FILE="/tmp/keep/candidates_${PREFIX}-${MONTH}.json"
+          if [ ! -f "$FILE" ]; then
+            echo "sin fichero de candidatos → sin PR"
+            exit 0
+          fi
+          TOTAL=$(python3 -c "import json; d = json.load(open('$FILE')); print(len(d['candidates']) + len(d['deferred_oleada2']))")
+          if [ "$TOTAL" -eq 0 ]; then
+            echo "0 candidatos → sin PR"
+            exit 0
+          fi
+          BR="candidates/${PREFIX}-${MONTH}"
+          DEST="data/candidates_${PREFIX}-${MONTH}.json"
+          TABLA="data/candidates_${PREFIX}-${MONTH}_tabla.md"
+          # La tabla se genera con el script del ref del run, ANTES de
+          # cambiar a la rama del PR (que parte de main).
+          python3 scripts/discover_accounts.py --table "$FILE" > /tmp/tabla.md
+          python3 - "$FILE" "$MONTH" "${{ github.repository }}" "$BR" "$PREFIX" \
+            "${{ steps.scrape.outputs.used }}" "${{ steps.scrape.outputs.accounts }}" \
+            "${{ github.run_id }}" > /tmp/pr-body.md <<'PY'
+          import collections, json, sys
+          path, month, repo, br, prefix, used, accounts, run = sys.argv[1:9]
+          d = json.load(open(path))
+          cands, deferred = d["candidates"], d["deferred_oleada2"]
+          by_place = collections.Counter(c.get("source_place") or "?" for c in cands)
+          n_acc = len({c["source_account"] for c in cands + deferred})
+          quien = "sellos" if prefix == "sellos" else "grupos"
+          out = [
+              f"PR generado automáticamente por el workflow `discover-accounts` (run {run}).",
+              "",
+              f"**{len(cands)} candidatos** (+{len(deferred)} en cola oleada-2 Iparralde) "
+              f"de {n_acc} cuentas de {quien}, encontrados recorriendo la discografía "
+              "(/music) de cuentas que el canónico ya ubica en Euskal Herria. "
+              f"Tabla completa para revisión: "
+              f"[`data/candidates_{prefix}-{month}_tabla.md`](https://github.com/{repo}/blob/{br}/data/candidates_{prefix}-{month}_tabla.md).",
+              "",
+              f"Requests usados en el último run: {used}. Cuentas recorridas: {accounts}.",
+              "",
+          ]
+          if prefix == "sellos":
+              out += ["**Ojo, sellos**: la ubicación es la del sello, no la del grupo; "
+                      "su catálogo puede incluir grupos de fuera.", ""]
+          out += [
+              "**Revisión**: elimina del JSON las filas que no deban entrar y "
+              "apunta su URL normalizada en `data/rejected.json`. Al aprobar: "
+              f"`python3 scripts/merge_candidates.py {prefix}-{month} --pr <nº>`.",
+              "",
+              "| Municipio de la cuenta | Candidatos |",
+              "|---|---:|",
+          ]
+          out += [f"| {place} | {n} |" for place, n in by_place.most_common(60)]
+          body = "\n".join(out)
+          assert len(body) < 30000, f"body de {len(body)} caracteres"
+          print(body)
+          PY
+          if git fetch origin "$BR"; then
+            git checkout -f -B "$BR" FETCH_HEAD
+          else
+            git fetch origin main
+            git checkout -f -B "$BR" origin/main
+          fi
+          mkdir -p data
+          cp "$FILE" "$DEST"
+          cp /tmp/tabla.md "$TABLA"
+          if [ -f /tmp/obs.json ]; then
+            OBS="data/locations/observations/candidates_${PREFIX}-${MONTH}.json"
+            mkdir -p "$(dirname "$OBS")"
+            cp /tmp/obs.json "$OBS"
+            git add -f "$OBS"
+          fi
+          git add -f "$DEST" "$TABLA"
+          PUSHED=0
+          if git diff --cached --quiet; then
+            echo "candidatos sin cambios respecto a la rama $BR"
+          else
+            git commit -m "data: candidatos ${PREFIX} ${MONTH} (run ${{ github.run_id }})"
+            git push origin "$BR"
+            PUSHED=1
+          fi
+          OPEN=$(gh pr list --head "$BR" --state open --json number --jq '.[].number' | head -1)
+          if [ "$PUSHED" = "1" ]; then
+            if [ -z "$OPEN" ]; then
+              TITLE="Candidatos por cuenta ${MONTH}: ${TOTAL} discos para revisión"
+              [ "$PREFIX" = "sellos" ] && TITLE="Candidatos de sellos ${MONTH}: ${TOTAL} discos para revisión"
+              if gh pr create --head "$BR" --base main --title "$TITLE" \
+                   --body-file /tmp/pr-body.md; then
+                echo "PR de candidatos abierto"
+              else
+                echo "::warning::No se pudo abrir el PR automáticamente. Los candidatos están en la rama ${BR}: https://github.com/${{ github.repository }}/compare/main...${BR}"
+              fi
+            else
+              gh pr edit "$OPEN" --body-file /tmp/pr-body.md
+              echo "PR #${OPEN} existente actualizado"
+            fi
+          else
+            echo "sin novedades → sin PR"
+          fi
+
+      - name: Propagar fallo del scraper
+        if: ${{ steps.scrape.outputs.rc != '0' }}
+        run: |
+          echo "::error::El scraper terminó con código ${{ steps.scrape.outputs.rc }}. Si es 2, Bandcamp sirve el Client Challenge en /music o en las fichas: ejecutar el canario (workflow probe-tag-pages) y revisar docs/scraping-method.md."
+          exit 1

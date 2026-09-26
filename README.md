@@ -71,6 +71,11 @@ curación la decide una persona.
   `revision_2026-07.json`), nunca el canónico; la lista de tags a rastrear vive en
   `data/tag_candidates.json`. Deduplica por `album_id` + URL normalizada contra el catálogo
   y contra `rejected.json` (las URLs descartadas no se vuelven a proponer).
+- La búsqueda por tag deja fuera discos de grupos que ya tenemos: el tag no siempre está,
+  y aunque esté, `discover_web` no lo devuelve todo. El descubrimiento **por cuenta**
+  ([`scripts/discover_accounts.py`](scripts/discover_accounts.py), workflow
+  `discover-accounts.yml`, solo manual) recorre la discografía de cada cuenta que el
+  catálogo ya ubica en Euskal Herria y propone lo que falta, por el mismo circuito de PR.
 
 ## Ubicaciones y MAPA
 
