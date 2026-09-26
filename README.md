@@ -34,9 +34,10 @@ dominio propio.
 La app son **cuatro puertas a un mismo archivo**:
 
 - **EXPLORAR**: muro tipográfico de descubrimiento (más discos, género al azar, año al
-  azar), con portadas tratadas.
-- **ARCHIVO**: índice de artistas y registro filtrable por facetas, con los filtros
-  reflejados en la URL y una capa de alias de tags para la búsqueda.
+  azar), con portadas tratadas. «Género al azar» cae en un *estilo*: un nodo del mapa de
+  fusión de tags ([`docs/tag-merge-map.md`](docs/tag-merge-map.md)), no en un tag crudo.
+- **ARCHIVO**: índice de artistas y registro filtrable por facetas (género, estilo, año),
+  con los filtros reflejados en la URL y una capa de alias de tags para la búsqueda.
 - **MAPA**: el mismo archivo interrogado desde los lugares. Municipios de Euskal Herria
   sobre una retícula de puntos cuadrados, con los mismos filtros que ARCHIVO más rango de
   años, territorio y procedencia de la ubicación. El mapa domina la página y el detalle

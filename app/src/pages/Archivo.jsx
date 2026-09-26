@@ -3,6 +3,8 @@ import { getIndices } from '../utils/indices.js'
 import { filtra, ordena, expandeConsulta, normaliza } from '../utils/busqueda.js'
 import { formato } from '../utils/formato.js'
 import { navegar, reemplazar, hashArchivo, parseRoute } from '../hooks/useHashRoute.js'
+import { useEstilos } from '../hooks/useEstilos.js'
+import { etiqueta } from '../utils/estilos.js'
 import { FichaBar } from '../components/FichaBar.jsx'
 import './Archivo.css'
 
@@ -11,7 +13,9 @@ import './Archivo.css'
 // artista) abre el registro. Los filtros viven en la URL (#/archivo?…,
 // esquema de Fase 0) para que sean compartibles y para que los tags de la
 // FICHA (F4) tengan dónde aterrizar. La búsqueda cubre también los tags:
-// ahí actúa la capa de alias.
+// ahí actúa la capa de alias. `estilo` filtra por nodo del mapa de fusión
+// de tags (docs/tag-merge-map.md): todos los discos cuyos tags caen en él;
+// `tag` sigue siendo el tag original exacto.
 
 const PAGE = 150
 const FACETAS_GENERO = 14
@@ -66,6 +70,7 @@ export function Archivo({ route, archive }) {
     desde: params.get('desde') ? Number(params.get('desde')) : null,
     hasta: params.get('hasta') ? Number(params.get('hasta')) : null,
     tag: params.get('tag'),
+    estilo: params.get('estilo'),
     artista: params.get('artista'),
   }
 
@@ -88,6 +93,7 @@ export function Archivo({ route, archive }) {
   const [sort, setSort] = useState({ k: 'y', asc: false })
   const [page, setPage] = useState(0)
   const [seleccion, setSeleccion] = useState(null)
+  const { estilos: est } = useEstilos(archive)
 
   // El paginado vuelve a 0 cuando cambia cualquier filtro u orden.
   const claveFiltros = JSON.stringify([filtros, qLocal, sort])
@@ -110,6 +116,7 @@ export function Archivo({ route, archive }) {
       filtros.desde ||
       filtros.hasta ||
       filtros.tag ||
+      filtros.estilo ||
       filtros.artista,
   )
 
@@ -130,6 +137,7 @@ export function Archivo({ route, archive }) {
           desde: p.get('desde'),
           hasta: p.get('hasta'),
           tag: p.get('tag'),
+          estilo: p.get('estilo'),
           artista: p.get('artista'),
         }),
       )
@@ -145,8 +153,13 @@ export function Archivo({ route, archive }) {
     clearTimeout(debounce.current)
     navegar(hashArchivo({}))
   }
+  // Solo navega si el texto es un nodo real y distinto del filtro actual.
+  const aplicaEstilo = (texto) => {
+    const v = texto.trim().toLowerCase()
+    if (v && v !== filtros.estilo && est?.nodoIndex.has(v)) aplica({ estilo: v })
+  }
 
-  const rows = activo ? ordena(filtra(archive, efectivos), sort.k, sort.asc) : []
+  const rows = activo ? ordena(filtra(archive, efectivos, est), sort.k, sort.asc) : []
   const upto = Math.min(rows.length, (page + 1) * PAGE)
   const { equivalentes } = expandeConsulta(qLocal)
 
@@ -159,6 +172,12 @@ export function Archivo({ route, archive }) {
     chips.push(['años: ' + r, { desde: null, hasta: null }])
   }
   if (filtros.tag) chips.push(['tag: ' + filtros.tag, { tag: null }])
+  if (filtros.estilo) {
+    // «lugar: bilbo» / «otro: cassette» en vez de «estilo: lugar:bilbo»
+    const grupo = est?.nodos.get(filtros.estilo)?.grupo
+    const rotulo = grupo === 'lugar' || grupo === 'otro' ? grupo : 'estilo'
+    chips.push([rotulo + ': ' + etiqueta(filtros.estilo), { estilo: null }])
+  }
   if (qLocal.trim()) {
     const eq = equivalentes.length ? ' ≈ ' + equivalentes.join(' · ') : ''
     chips.push(['«' + qLocal.trim() + '»' + eq, { q: '' }])
@@ -173,7 +192,7 @@ export function Archivo({ route, archive }) {
           type="text"
           autoComplete="off"
           spellCheck="false"
-          placeholder="artista, título, género, año, tag…"
+          placeholder="artista, título, género, año, tag, estilo…"
           value={qLocal}
           onChange={(e) => escribeQ(e.target.value)}
         />
@@ -193,6 +212,35 @@ export function Archivo({ route, archive }) {
               <span className="c">{c}</span>
             </button>
           ))}
+        </div>
+        <div className="faceta">
+          <span className="flbl">ESTILO</span>
+          {/* Un estilo entre los ~300 nodos de género del mapa de fusión.
+              Se aplica al elegir en la lista, con Enter o al salir del
+              campo, nunca por tecleo: «rock» no debe cortar «rock & roll».
+              key = filtro: quitar el chip vacía el campo. */}
+          <input
+            className="estilo"
+            type="text"
+            list="archivo-estilos"
+            autoComplete="off"
+            spellCheck="false"
+            aria-label="estilo"
+            key={filtros.estilo ?? ''}
+            defaultValue={filtros.estilo ?? ''}
+            placeholder={est ? `uno de ${est.elegibles.length} estilos…` : 'cargando…'}
+            onChange={(e) => {
+              const tipo = e.nativeEvent?.inputType
+              if (!tipo || tipo === 'insertReplacementText') aplicaEstilo(e.target.value)
+            }}
+            onKeyDown={(e) => e.key === 'Enter' && aplicaEstilo(e.target.value)}
+            onBlur={(e) => aplicaEstilo(e.target.value)}
+          />
+          <datalist id="archivo-estilos">
+            {(est?.elegibles ?? []).map((id) => (
+              <option key={id} value={id} />
+            ))}
+          </datalist>
         </div>
         <div className="faceta">
           <span className="flbl">AÑO</span>
