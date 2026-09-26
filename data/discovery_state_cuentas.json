@@ -12651,6 +12651,2402 @@
       "albums": 2,
       "tracks": 0,
       "new": 0
+    },
+    "pantani1": {
+      "checked_at": "2026-09-26T18:51:17Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "pantypantera": {
+      "checked_at": "2026-09-26T18:51:19Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "pape": {
+      "checked_at": "2026-09-26T18:51:22Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "papr1": {
+      "checked_at": "2026-09-26T18:51:24Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 29,
+      "new": 0
+    },
+    "paraje": {
+      "checked_at": "2026-09-26T18:51:27Z",
+      "status": "ok",
+      "place": "mungia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "paraqueenganarnos": {
+      "checked_at": "2026-09-26T18:51:30Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "pariakbai": {
+      "checked_at": "2026-09-26T18:51:32Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 4,
+      "tracks": 1,
+      "new": 3
+    },
+    "parockos": {
+      "checked_at": "2026-09-26T18:51:35Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "pasadenamusika": {
+      "checked_at": "2026-09-26T18:51:37Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 2,
+      "new": 0
+    },
+    "pasternakrocks": {
+      "checked_at": "2026-09-26T18:51:40Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "pastorizaanaiak": {
+      "checked_at": "2026-09-26T18:51:43Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "patgrabaketak": {
+      "checked_at": "2026-09-26T18:51:46Z",
+      "status": "ok",
+      "place": "laudio",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "patronalpunk": {
+      "checked_at": "2026-09-26T18:51:48Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 3,
+      "tracks": 0,
+      "new": 1
+    },
+    "patxidinamita": {
+      "checked_at": "2026-09-26T18:51:51Z",
+      "status": "ok",
+      "place": "eibar",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "patxisuinaga": {
+      "checked_at": "2026-09-26T18:51:53Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 4,
+      "tracks": 1,
+      "new": 0
+    },
+    "paulotronic": {
+      "checked_at": "2026-09-26T18:51:56Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "pecozzaunited": {
+      "checked_at": "2026-09-26T18:51:58Z",
+      "status": "ok",
+      "place": "irun",
+      "albums": 2,
+      "tracks": 1,
+      "new": 0
+    },
+    "peichengrup": {
+      "checked_at": "2026-09-26T18:52:01Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "peichenpunk": {
+      "checked_at": "2026-09-26T18:52:04Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "pelayoiturralde": {
+      "checked_at": "2026-09-26T18:52:06Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "pelocasco": {
+      "checked_at": "2026-09-26T18:52:09Z",
+      "status": "ok",
+      "place": "getxo",
+      "albums": 5,
+      "tracks": 1,
+      "new": 0
+    },
+    "pergaztelu": {
+      "checked_at": "2026-09-26T18:52:12Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 11,
+      "new": 0
+    },
+    "perranova": {
+      "checked_at": "2026-09-26T18:52:14Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "perre": {
+      "checked_at": "2026-09-26T18:52:17Z",
+      "status": "ok",
+      "place": "bermeo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "perrodelkaos": {
+      "checked_at": "2026-09-26T18:52:20Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "perroskonasma": {
+      "checked_at": "2026-09-26T18:52:23Z",
+      "status": "ok",
+      "place": "zaratamo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "petfennec": {
+      "checked_at": "2026-09-26T18:52:25Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "petrataldea": {
+      "checked_at": "2026-09-26T18:52:28Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "physisversusnomos": {
+      "checked_at": "2026-09-26T18:52:30Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 17,
+      "tracks": 0,
+      "new": 6
+    },
+    "pic22": {
+      "checked_at": "2026-09-26T18:52:33Z",
+      "status": "ok",
+      "place": "laudio",
+      "albums": 3,
+      "tracks": 50,
+      "new": 0
+    },
+    "piedra": {
+      "checked_at": "2026-09-26T18:52:35Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 3,
+      "tracks": 1,
+      "new": 0
+    },
+    "pielcromatica": {
+      "checked_at": "2026-09-26T18:52:38Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "pignkiss": {
+      "checked_at": "2026-09-26T18:52:41Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "pikunk": {
+      "checked_at": "2026-09-26T18:52:44Z",
+      "status": "ok",
+      "place": "legorreta",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "piztiak": {
+      "checked_at": "2026-09-26T18:52:46Z",
+      "status": "ok",
+      "place": "ondarroa",
+      "albums": 6,
+      "tracks": 2,
+      "new": 1
+    },
+    "plagiomagno": {
+      "checked_at": "2026-09-26T18:52:49Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "polaroidbnd": {
+      "checked_at": "2026-09-26T18:52:52Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "polarroots": {
+      "checked_at": "2026-09-26T18:52:54Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 1,
+      "new": 0
+    },
+    "poorpurine": {
+      "checked_at": "2026-09-26T18:52:57Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "porcobravo": {
+      "checked_at": "2026-09-26T18:53:00Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "pornox1": {
+      "checked_at": "2026-09-26T18:53:03Z",
+      "status": "ok",
+      "place": "lekeitio",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "porrumentzio": {
+      "checked_at": "2026-09-26T18:53:06Z",
+      "status": "ok",
+      "place": "hernani",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "postkosmos": {
+      "checked_at": "2026-09-26T18:53:08Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "pottorstaklito": {
+      "checked_at": "2026-09-26T18:53:11Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "pr0t0c0lectiv0": {
+      "checked_at": "2026-09-26T18:53:14Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 6,
+      "tracks": 0,
+      "new": 1
+    },
+    "prehistoricmermaid": {
+      "checked_at": "2026-09-26T18:53:17Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "presbicia": {
+      "checked_at": "2026-09-26T18:53:19Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "projekta": {
+      "checked_at": "2026-09-26T18:53:22Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "protokadaver": {
+      "checked_at": "2026-09-26T18:53:26Z",
+      "status": "ok",
+      "place": "irun",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "psikotropik": {
+      "checked_at": "2026-09-26T18:53:29Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "psilocybelaudio": {
+      "checked_at": "2026-09-26T18:53:31Z",
+      "status": "ok",
+      "place": "laudio",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "punik": {
+      "checked_at": "2026-09-26T18:53:34Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "puntutakoma": {
+      "checked_at": "2026-09-26T18:53:37Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 4,
+      "new": 0
+    },
+    "purpleexplosivejackets": {
+      "checked_at": "2026-09-26T18:53:39Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "putakaska": {
+      "checked_at": "2026-09-26T18:53:42Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "puybarralmanugaigne": {
+      "checked_at": "2026-09-26T18:53:45Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 2,
+      "new": 0
+    },
+    "quantu9era": {
+      "checked_at": "2026-09-26T18:53:47Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 4,
+      "tracks": 8,
+      "new": 0
+    },
+    "radio-aktiva": {
+      "checked_at": "2026-09-26T18:53:50Z",
+      "status": "ok",
+      "place": "basauri",
+      "albums": 2,
+      "tracks": 7,
+      "new": 0
+    },
+    "radiocaster": {
+      "checked_at": "2026-09-26T18:53:52Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 1,
+      "new": 0
+    },
+    "radiofobia": {
+      "checked_at": "2026-09-26T18:53:55Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "rafaberrio": {
+      "checked_at": "2026-09-26T18:53:58Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 10,
+      "tracks": 0,
+      "new": 0
+    },
+    "raglefant": {
+      "checked_at": "2026-09-26T18:54:00Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 2,
+      "tracks": 2,
+      "new": 0
+    },
+    "ramadainn": {
+      "checked_at": "2026-09-26T18:54:03Z",
+      "status": "ok",
+      "place": "onati",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "ramon10635producer": {
+      "checked_at": "2026-09-26T18:54:06Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "rarevocation": {
+      "checked_at": "2026-09-26T18:54:09Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "rasgrind": {
+      "checked_at": "2026-09-26T18:54:11Z",
+      "status": "ok",
+      "place": "tolosa",
+      "albums": 7,
+      "tracks": 0,
+      "new": 0
+    },
+    "ratiorock": {
+      "checked_at": "2026-09-26T18:54:14Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "rbls": {
+      "checked_at": "2026-09-26T18:54:16Z",
+      "status": "ok",
+      "place": "zizur-nagusia",
+      "albums": 16,
+      "tracks": 0,
+      "new": 15
+    },
+    "rebelnoise": {
+      "checked_at": "2026-09-26T18:54:19Z",
+      "status": "ok",
+      "place": "arrasate",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "redblaze": {
+      "checked_at": "2026-09-26T18:54:22Z",
+      "status": "ok",
+      "place": "ermua",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "redironsquad": {
+      "checked_at": "2026-09-26T18:54:24Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 1,
+      "new": 0
+    },
+    "redoxpunkrock": {
+      "checked_at": "2026-09-26T18:54:27Z",
+      "status": "ok",
+      "place": "tutera",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "redveilrock": {
+      "checked_at": "2026-09-26T18:54:30Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "reinarepublicana": {
+      "checked_at": "2026-09-26T18:54:32Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 6,
+      "tracks": 4,
+      "new": 2
+    },
+    "reitxelo": {
+      "checked_at": "2026-09-26T18:54:35Z",
+      "status": "ok",
+      "place": "getxo",
+      "albums": 1,
+      "tracks": 5,
+      "new": 0
+    },
+    "rekursoshumanos": {
+      "checked_at": "2026-09-26T18:54:38Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "republikadelmiedo": {
+      "checked_at": "2026-09-26T18:54:41Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "resacajackson": {
+      "checked_at": "2026-09-26T18:54:43Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "resilente": {
+      "checked_at": "2026-09-26T18:54:46Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "rever4": {
+      "checked_at": "2026-09-26T18:54:49Z",
+      "status": "ok",
+      "place": "hondarribia",
+      "albums": 6,
+      "tracks": 0,
+      "new": 0
+    },
+    "revertt": {
+      "checked_at": "2026-09-26T18:54:51Z",
+      "status": "ok",
+      "place": "bermeo",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "reykjavik606": {
+      "checked_at": "2026-09-26T18:54:54Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 6,
+      "tracks": 0,
+      "new": 1
+    },
+    "rhevent": {
+      "checked_at": "2026-09-26T18:54:56Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "rinranbluesband": {
+      "checked_at": "2026-09-26T18:54:59Z",
+      "status": "ok",
+      "place": "san-adrian",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "rioarga": {
+      "checked_at": "2026-09-26T18:55:02Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "rippertaldea": {
+      "checked_at": "2026-09-26T18:55:05Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "risingcircus": {
+      "checked_at": "2026-09-26T18:55:08Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "riumc": {
+      "checked_at": "2026-09-26T18:55:11Z",
+      "status": "ok",
+      "place": "mutriku",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "rmeltren": {
+      "checked_at": "2026-09-26T18:55:13Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "rnorte": {
+      "checked_at": "2026-09-26T18:55:16Z",
+      "status": "ok",
+      "place": "portugalete",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "rockaina": {
+      "checked_at": "2026-09-26T18:55:19Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "rojovivoreggaeband": {
+      "checked_at": "2026-09-26T18:55:22Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "ruletarusarock": {
+      "checked_at": "2026-09-26T18:55:24Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sabesmuybien": {
+      "checked_at": "2026-09-26T18:55:27Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "sablestarr": {
+      "checked_at": "2026-09-26T18:55:30Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sakatu": {
+      "checked_at": "2026-09-26T18:55:32Z",
+      "status": "ok",
+      "place": "galdakao",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "samarithan": {
+      "checked_at": "2026-09-26T18:55:35Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 1,
+      "tracks": 4,
+      "new": 0
+    },
+    "sameold": {
+      "checked_at": "2026-09-26T18:55:37Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 3,
+      "tracks": 0,
+      "new": 1
+    },
+    "samuelsdecay": {
+      "checked_at": "2026-09-26T18:55:40Z",
+      "status": "ok",
+      "place": "eibar",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "sangredemono1": {
+      "checked_at": "2026-09-26T18:55:43Z",
+      "status": "ok",
+      "place": "irun",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "santuak": {
+      "checked_at": "2026-09-26T18:55:45Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "saraazurza": {
+      "checked_at": "2026-09-26T18:55:48Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "saraonate": {
+      "checked_at": "2026-09-26T18:55:51Z",
+      "status": "ok",
+      "place": "sopela",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sarasqueta": {
+      "checked_at": "2026-09-26T18:55:53Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "sarazozaya": {
+      "checked_at": "2026-09-26T18:55:56Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 4,
+      "tracks": 9,
+      "new": 0
+    },
+    "sarcomanoise": {
+      "checked_at": "2026-09-26T18:55:59Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 8,
+      "tracks": 1,
+      "new": 6
+    },
+    "sardeska": {
+      "checked_at": "2026-09-26T18:56:01Z",
+      "status": "ok",
+      "place": "errenteria",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sargo": {
+      "checked_at": "2026-09-26T18:56:04Z",
+      "status": "ok",
+      "place": "zumaia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sartoriuscloud": {
+      "checked_at": "2026-09-26T18:56:08Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 2,
+      "new": 0
+    },
+    "sashagreen": {
+      "checked_at": "2026-09-26T18:56:11Z",
+      "status": "ok",
+      "place": "portugalete",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "saskarrak": {
+      "checked_at": "2026-09-26T18:56:13Z",
+      "status": "ok",
+      "place": "elortzibar",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "schizophonicconnections": {
+      "checked_at": "2026-09-26T18:56:16Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 3,
+      "tracks": 0,
+      "new": 1
+    },
+    "scottzuniga": {
+      "checked_at": "2026-09-26T18:56:18Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 2,
+      "new": 0
+    },
+    "screamersandsinners": {
+      "checked_at": "2026-09-26T18:56:21Z",
+      "status": "ok",
+      "place": "arrasate",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "scusiboys": {
+      "checked_at": "2026-09-26T18:56:23Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "segasoundkillers": {
+      "checked_at": "2026-09-26T18:56:26Z",
+      "status": "ok",
+      "place": "oiartzun",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "segismundotoxicomano": {
+      "checked_at": "2026-09-26T18:56:29Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 5,
+      "tracks": 0,
+      "new": 0
+    },
+    "segundosmusic": {
+      "checked_at": "2026-09-26T18:56:31Z",
+      "status": "http_404"
+    },
+    "senoraqueso2000": {
+      "checked_at": "2026-09-26T18:56:34Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "senorno": {
+      "checked_at": "2026-09-26T18:56:37Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "sentenciados": {
+      "checked_at": "2026-09-26T18:56:40Z",
+      "status": "ok",
+      "place": "bergara",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "serge1975": {
+      "checked_at": "2026-09-26T18:56:43Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "seriousbusinessband": {
+      "checked_at": "2026-09-26T18:56:45Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 3,
+      "new": 0
+    },
+    "sermonds": {
+      "checked_at": "2026-09-26T18:56:48Z",
+      "status": "ok",
+      "place": "elorrio",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "serrulla": {
+      "checked_at": "2026-09-26T18:56:50Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sertx": {
+      "checked_at": "2026-09-26T18:56:53Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "sffera": {
+      "checked_at": "2026-09-26T18:56:56Z",
+      "status": "ok",
+      "place": "ermua",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "shallow-waters": {
+      "checked_at": "2026-09-26T18:56:59Z",
+      "status": "ok",
+      "place": "arrasate",
+      "albums": 2,
+      "tracks": 2,
+      "new": 0
+    },
+    "sherparanoide": {
+      "checked_at": "2026-09-26T18:57:01Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "shotband": {
+      "checked_at": "2026-09-26T18:57:04Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "siberians": {
+      "checked_at": "2026-09-26T18:57:06Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "sietecmusica": {
+      "checked_at": "2026-09-26T18:57:09Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 5,
+      "tracks": 1,
+      "new": 4
+    },
+    "siku": {
+      "checked_at": "2026-09-26T18:57:12Z",
+      "status": "ok",
+      "place": "getxo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "silhouet": {
+      "checked_at": "2026-09-26T18:57:14Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "similarinterests": {
+      "checked_at": "2026-09-26T18:57:17Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "sindireccion": {
+      "checked_at": "2026-09-26T18:57:19Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "sindyberbenas": {
+      "checked_at": "2026-09-26T18:57:22Z",
+      "status": "ok",
+      "place": "arrasate",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "sinnerdolls": {
+      "checked_at": "2026-09-26T18:57:24Z",
+      "status": "ok",
+      "place": "bermeo",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "sinnerrage": {
+      "checked_at": "2026-09-26T18:57:27Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "sitecah": {
+      "checked_at": "2026-09-26T18:57:30Z",
+      "status": "ok",
+      "place": "santurtzi",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sixmileswide": {
+      "checked_at": "2026-09-26T18:57:32Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 3,
+      "tracks": 0,
+      "new": 2
+    },
+    "skasti": {
+      "checked_at": "2026-09-26T18:57:35Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 3,
+      "tracks": 0,
+      "new": 1
+    },
+    "skorlian": {
+      "checked_at": "2026-09-26T18:57:38Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "slaktuis": {
+      "checked_at": "2026-09-26T18:57:41Z",
+      "status": "ok",
+      "place": "azkoitia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "slevy": {
+      "checked_at": "2026-09-26T18:57:43Z",
+      "status": "ok",
+      "place": "irun",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "slimfit1": {
+      "checked_at": "2026-09-26T18:57:46Z",
+      "status": "ok",
+      "place": "irun",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "slowtimesbluesband": {
+      "checked_at": "2026-09-26T18:57:48Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "snkt": {
+      "checked_at": "2026-09-26T18:57:52Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sobieht": {
+      "checked_at": "2026-09-26T18:57:54Z",
+      "status": "ok",
+      "place": "sestao",
+      "albums": 3,
+      "tracks": 0,
+      "new": 2
+    },
+    "sofokaos2012": {
+      "checked_at": "2026-09-26T18:57:57Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "sohano": {
+      "checked_at": "2026-09-26T18:57:59Z",
+      "status": "ok",
+      "place": "hazparne",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "sokataldea": {
+      "checked_at": "2026-09-26T18:58:02Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "somoscrap": {
+      "checked_at": "2026-09-26T18:58:04Z",
+      "status": "ok",
+      "place": "arrasate",
+      "albums": 3,
+      "tracks": 0,
+      "new": 1
+    },
+    "somostomboyle": {
+      "checked_at": "2026-09-26T18:58:07Z",
+      "status": "ok",
+      "place": "getxo",
+      "albums": 10,
+      "tracks": 0,
+      "new": 2
+    },
+    "sonictoys": {
+      "checked_at": "2026-09-26T18:58:10Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sonsofdecay": {
+      "checked_at": "2026-09-26T18:58:13Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sorgerth": {
+      "checked_at": "2026-09-26T18:58:15Z",
+      "status": "ok",
+      "place": "bermeo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "soycastor": {
+      "checked_at": "2026-09-26T18:58:18Z",
+      "status": "ok",
+      "place": "getxo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "soyuzexperience": {
+      "checked_at": "2026-09-26T18:58:21Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 1,
+      "new": 0
+    },
+    "sparto": {
+      "checked_at": "2026-09-26T18:58:24Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "specialkat": {
+      "checked_at": "2026-09-26T18:58:27Z",
+      "status": "ok",
+      "place": "getxo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "spirituallofi": {
+      "checked_at": "2026-09-26T18:58:29Z",
+      "status": "ok",
+      "place": "hondarribia",
+      "albums": 6,
+      "tracks": 6,
+      "new": 1
+    },
+    "sswordofdamocless": {
+      "checked_at": "2026-09-26T18:58:32Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "st-only": {
+      "checked_at": "2026-09-26T18:58:35Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 9,
+      "tracks": 0,
+      "new": 0
+    },
+    "staizitto": {
+      "checked_at": "2026-09-26T18:58:37Z",
+      "status": "ok",
+      "place": "ermua",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "stayfirm": {
+      "checked_at": "2026-09-26T18:58:40Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "stereal": {
+      "checked_at": "2026-09-26T18:58:43Z",
+      "status": "ok",
+      "place": "santurtzi",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "stereo": {
+      "checked_at": "2026-09-26T18:58:46Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sterlina": {
+      "checked_at": "2026-09-26T18:58:48Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "stidiek": {
+      "checked_at": "2026-09-26T18:58:51Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "stoldak": {
+      "checked_at": "2026-09-26T18:58:54Z",
+      "status": "ok",
+      "place": "hondarribia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "stonerfulano": {
+      "checked_at": "2026-09-26T18:58:56Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "suakoban": {
+      "checked_at": "2026-09-26T18:58:59Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "sugezur": {
+      "checked_at": "2026-09-26T18:59:02Z",
+      "status": "ok",
+      "place": "untzue",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "sukaldeabeats": {
+      "checked_at": "2026-09-26T18:59:04Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "sukena": {
+      "checked_at": "2026-09-26T18:59:07Z",
+      "status": "ok",
+      "place": "onati",
+      "albums": 1,
+      "tracks": 3,
+      "new": 0
+    },
+    "sumisioncityblues": {
+      "checked_at": "2026-09-26T18:59:09Z",
+      "status": "ok",
+      "place": "moreda-araba",
+      "albums": 7,
+      "tracks": 1,
+      "new": 4
+    },
+    "sundancekiz": {
+      "checked_at": "2026-09-26T18:59:12Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "supercremalleras": {
+      "checked_at": "2026-09-26T18:59:14Z",
+      "status": "ok",
+      "place": "gernika-lumo",
+      "albums": 1,
+      "tracks": 2,
+      "new": 0
+    },
+    "superlore": {
+      "checked_at": "2026-09-26T18:59:17Z",
+      "status": "ok",
+      "place": "hernani",
+      "albums": 1,
+      "tracks": 2,
+      "new": 0
+    },
+    "sustraiberriak": {
+      "checked_at": "2026-09-26T18:59:19Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 4,
+      "tracks": 1,
+      "new": 0
+    },
+    "symphonikey": {
+      "checked_at": "2026-09-26T18:59:22Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "syrahardopop": {
+      "checked_at": "2026-09-26T18:59:25Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "systemupdate": {
+      "checked_at": "2026-09-26T18:59:28Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 4,
+      "tracks": 1,
+      "new": 0
+    },
+    "tacumah": {
+      "checked_at": "2026-09-26T18:59:31Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "takenmetal": {
+      "checked_at": "2026-09-26T18:59:33Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "tantragrupo": {
+      "checked_at": "2026-09-26T18:59:36Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "tashakor": {
+      "checked_at": "2026-09-26T18:59:39Z",
+      "status": "ok",
+      "place": "gernika-lumo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "tatabeya": {
+      "checked_at": "2026-09-26T18:59:41Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "taupada": {
+      "checked_at": "2026-09-26T18:59:44Z",
+      "status": "ok",
+      "place": "urretxu",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "tenpera": {
+      "checked_at": "2026-09-26T18:59:46Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 3,
+      "tracks": 1,
+      "new": 0
+    },
+    "theallnighters": {
+      "checked_at": "2026-09-26T18:59:49Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "theangerprice": {
+      "checked_at": "2026-09-26T18:59:51Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 2,
+      "new": 0
+    },
+    "theanimalwithin": {
+      "checked_at": "2026-09-26T18:59:54Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "thebloodymagicnails": {
+      "checked_at": "2026-09-26T18:59:56Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 3,
+      "tracks": 3,
+      "new": 0
+    },
+    "thebobbys": {
+      "checked_at": "2026-09-26T18:59:59Z",
+      "status": "ok",
+      "place": "errenteria",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "thebrokenhorizon": {
+      "checked_at": "2026-09-26T19:00:01Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thebrutal": {
+      "checked_at": "2026-09-26T19:00:04Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "theburns": {
+      "checked_at": "2026-09-26T19:00:06Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 5,
+      "new": 0
+    },
+    "theclayton": {
+      "checked_at": "2026-09-26T19:00:09Z",
+      "status": "ok",
+      "place": "aramaio",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "thedealersproject": {
+      "checked_at": "2026-09-26T19:00:12Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 9,
+      "tracks": 0,
+      "new": 0
+    },
+    "theeeliam": {
+      "checked_at": "2026-09-26T19:00:14Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 6,
+      "tracks": 0,
+      "new": 0
+    },
+    "theflacotones": {
+      "checked_at": "2026-09-26T19:00:17Z",
+      "status": "ok",
+      "place": "gernika-lumo",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "theflams": {
+      "checked_at": "2026-09-26T19:00:20Z",
+      "status": "ok",
+      "place": "tutera",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thefridayscrew": {
+      "checked_at": "2026-09-26T19:00:22Z",
+      "status": "ok",
+      "place": "azpeitia",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "thegratix": {
+      "checked_at": "2026-09-26T19:00:25Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "thegreatwound": {
+      "checked_at": "2026-09-26T19:00:28Z",
+      "status": "ok",
+      "place": "arrasate",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thegurnr": {
+      "checked_at": "2026-09-26T19:00:31Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thehammerkillers": {
+      "checked_at": "2026-09-26T19:00:33Z",
+      "status": "ok",
+      "place": "bermeo",
+      "albums": 5,
+      "tracks": 0,
+      "new": 0
+    },
+    "thehopper": {
+      "checked_at": "2026-09-26T19:00:36Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "theicercompany": {
+      "checked_at": "2026-09-26T19:00:39Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "theinductionsband": {
+      "checked_at": "2026-09-26T19:00:42Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "thelastjack": {
+      "checked_at": "2026-09-26T19:00:44Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "themoodrings": {
+      "checked_at": "2026-09-26T19:00:48Z",
+      "status": "ok",
+      "place": "eibar",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thenekrobabies": {
+      "checked_at": "2026-09-26T19:00:50Z",
+      "status": "ok",
+      "place": "legazpi",
+      "albums": 6,
+      "tracks": 0,
+      "new": 0
+    },
+    "thenephewsband": {
+      "checked_at": "2026-09-26T19:00:53Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "thenorthagirres": {
+      "checked_at": "2026-09-26T19:00:56Z",
+      "status": "ok",
+      "place": "urretxu",
+      "albums": 6,
+      "tracks": 0,
+      "new": 2
+    },
+    "theowlproject": {
+      "checked_at": "2026-09-26T19:00:58Z",
+      "status": "ok",
+      "place": "markina-xemein",
+      "albums": 7,
+      "tracks": 1,
+      "new": 6
+    },
+    "theredarmy": {
+      "checked_at": "2026-09-26T19:01:01Z",
+      "status": "ok",
+      "place": "ermua",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "therindcycles": {
+      "checked_at": "2026-09-26T19:01:04Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "theroofofficial": {
+      "checked_at": "2026-09-26T19:01:07Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 2,
+      "new": 0
+    },
+    "thesofa": {
+      "checked_at": "2026-09-26T19:01:09Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 3,
+      "tracks": 2,
+      "new": 0
+    },
+    "thesoulbreakercompany": {
+      "checked_at": "2026-09-26T19:01:12Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 8,
+      "tracks": 2,
+      "new": 0
+    },
+    "thesublinary": {
+      "checked_at": "2026-09-26T19:01:15Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thetentacle": {
+      "checked_at": "2026-09-26T19:01:18Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thetrers": {
+      "checked_at": "2026-09-26T19:01:21Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thetwinrebels": {
+      "checked_at": "2026-09-26T19:01:23Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 5,
+      "new": 0
+    },
+    "thevartools": {
+      "checked_at": "2026-09-26T19:01:26Z",
+      "status": "ok",
+      "place": "eibar",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "thevoidslament": {
+      "checked_at": "2026-09-26T19:01:29Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "theyoungwait": {
+      "checked_at": "2026-09-26T19:01:31Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "theyslain": {
+      "checked_at": "2026-09-26T19:01:34Z",
+      "status": "ok",
+      "place": "andoain",
+      "albums": 7,
+      "tracks": 0,
+      "new": 0
+    },
+    "thisischoice": {
+      "checked_at": "2026-09-26T19:01:36Z",
+      "status": "ok",
+      "place": "tolosa",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thrashgression": {
+      "checked_at": "2026-09-26T19:01:39Z",
+      "status": "ok",
+      "place": "zarautz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "thursdayspussydogs": {
+      "checked_at": "2026-09-26T19:01:42Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "tigerteeth": {
+      "checked_at": "2026-09-26T19:01:45Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "tigreses": {
+      "checked_at": "2026-09-26T19:01:48Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 2,
+      "new": 0
+    },
+    "timbakada": {
+      "checked_at": "2026-09-26T19:01:50Z",
+      "status": "ok",
+      "place": "tutera",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "tinkohc": {
+      "checked_at": "2026-09-26T19:01:53Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "tmg-tommygun": {
+      "checked_at": "2026-09-26T19:01:56Z",
+      "status": "ok",
+      "place": "santurtzi",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "tnuk": {
+      "checked_at": "2026-09-26T19:01:58Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "tootheroak": {
+      "checked_at": "2026-09-26T19:02:01Z",
+      "status": "ok",
+      "place": "gernika-lumo",
+      "albums": 6,
+      "tracks": 2,
+      "new": 3
+    },
+    "toriitaldea": {
+      "checked_at": "2026-09-26T19:02:03Z",
+      "status": "ok",
+      "place": "getxo",
+      "albums": 3,
+      "tracks": 1,
+      "new": 0
+    },
+    "touzasenra": {
+      "checked_at": "2026-09-26T19:02:06Z",
+      "status": "ok",
+      "place": "getxo",
+      "albums": 2,
+      "tracks": 1,
+      "new": 0
+    },
+    "transdimensions": {
+      "checked_at": "2026-09-26T19:02:09Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "transistores50": {
+      "checked_at": "2026-09-26T19:02:12Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "tremendatrementina": {
+      "checked_at": "2026-09-26T19:02:14Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 3,
+      "tracks": 0,
+      "new": 2
+    },
+    "tres41": {
+      "checked_at": "2026-09-26T19:02:17Z",
+      "status": "ok",
+      "place": "berriz",
+      "albums": 4,
+      "tracks": 3,
+      "new": 0
+    },
+    "tributerrible": {
+      "checked_at": "2026-09-26T19:02:19Z",
+      "status": "ok",
+      "place": "getxo",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "triggertravis": {
+      "checked_at": "2026-09-26T19:02:22Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "trilita": {
+      "checked_at": "2026-09-26T19:02:25Z",
+      "status": "ok",
+      "place": "errenteria",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "triplezeta": {
+      "checked_at": "2026-09-26T19:02:27Z",
+      "status": "ok",
+      "place": "tutera",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "tristancrowley": {
+      "checked_at": "2026-09-26T19:02:30Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "ttirritt": {
+      "checked_at": "2026-09-26T19:02:33Z",
+      "status": "ok",
+      "place": "hondarribia",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "tu-k": {
+      "checked_at": "2026-09-26T19:02:35Z",
+      "status": "ok",
+      "place": "ondarroa",
+      "albums": 3,
+      "tracks": 1,
+      "new": 0
+    },
+    "tudetuz": {
+      "checked_at": "2026-09-26T19:02:38Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "tutancomeon": {
+      "checked_at": "2026-09-26T19:02:41Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 1,
+      "new": 0
+    },
+    "tutatis": {
+      "checked_at": "2026-09-26T19:02:44Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "txakurrak": {
+      "checked_at": "2026-09-26T19:02:47Z",
+      "status": "ok",
+      "place": "arrasate",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "txapajo": {
+      "checked_at": "2026-09-26T19:02:50Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "txarlibraun": {
+      "checked_at": "2026-09-26T19:02:52Z",
+      "status": "ok",
+      "place": "getaria-gipuzkoa",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "txatar": {
+      "checked_at": "2026-09-26T19:02:55Z",
+      "status": "ok",
+      "place": "azpeitia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "txavvo": {
+      "checked_at": "2026-09-26T19:02:58Z",
+      "status": "ok",
+      "place": "hondarribia",
+      "albums": 2,
+      "tracks": 3,
+      "new": 0
+    },
+    "txelowski": {
+      "checked_at": "2026-09-26T19:03:01Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 7,
+      "tracks": 3,
+      "new": 0
+    },
+    "txemak": {
+      "checked_at": "2026-09-26T19:03:03Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 3,
+      "tracks": 0,
+      "new": 2
+    },
+    "txentebalader": {
+      "checked_at": "2026-09-26T19:03:06Z",
+      "status": "ok",
+      "place": "martzilla",
+      "albums": 2,
+      "tracks": 1,
+      "new": 0
+    },
+    "txetxubrainloster": {
+      "checked_at": "2026-09-26T19:03:08Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "txilly": {
+      "checked_at": "2026-09-26T19:03:11Z",
+      "status": "ok",
+      "place": "oiartzun",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "txorlitohead": {
+      "checked_at": "2026-09-26T19:03:13Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "txorroskilotxs": {
+      "checked_at": "2026-09-26T19:03:16Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 3,
+      "tracks": 1,
+      "new": 0
+    },
+    "txuletons": {
+      "checked_at": "2026-09-26T19:03:19Z",
+      "status": "ok",
+      "place": "onati",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "txumaflamariqueband": {
+      "checked_at": "2026-09-26T19:03:22Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "tzataldea": {
+      "checked_at": "2026-09-26T19:03:25Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "ubriel": {
+      "checked_at": "2026-09-26T19:03:28Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "udaz": {
+      "checked_at": "2026-09-26T19:03:30Z",
+      "status": "ok",
+      "place": "eibar",
+      "albums": 1,
+      "tracks": 2,
+      "new": 0
+    },
+    "ueueueue": {
+      "checked_at": "2026-09-26T19:03:34Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "ukabildu": {
+      "checked_at": "2026-09-26T19:03:37Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "ukbill": {
+      "checked_at": "2026-09-26T19:03:39Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 19,
+      "new": 0
+    },
+    "ukurka": {
+      "checked_at": "2026-09-26T19:03:42Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 5,
+      "tracks": 4,
+      "new": 0
+    },
+    "unaisarasola": {
+      "checked_at": "2026-09-26T19:03:45Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "unameriel": {
+      "checked_at": "2026-09-26T19:03:47Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 2,
+      "new": 0
+    },
+    "unclemuwu": {
+      "checked_at": "2026-09-26T19:03:50Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 6,
+      "tracks": 2,
+      "new": 0
+    },
+    "unslainthey": {
+      "checked_at": "2026-09-26T19:03:52Z",
+      "status": "ok",
+      "place": "andoain",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "upyard": {
+      "checked_at": "2026-09-26T19:03:55Z",
+      "status": "ok",
+      "place": "mungia",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "urdrone": {
+      "checked_at": "2026-09-26T19:03:57Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 5,
+      "tracks": 0,
+      "new": 0
+    },
+    "uriisualdrovandi": {
+      "checked_at": "2026-09-26T19:04:00Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 6,
+      "tracks": 1,
+      "new": 5
+    },
+    "urkara": {
+      "checked_at": "2026-09-26T19:04:03Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "urliktaldea": {
+      "checked_at": "2026-09-26T19:04:05Z",
+      "status": "ok",
+      "place": "bermeo",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "uroboru": {
+      "checked_at": "2026-09-26T19:04:08Z",
+      "status": "ok",
+      "place": "errenteria",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "usumusika": {
+      "checked_at": "2026-09-26T19:04:11Z",
+      "status": "ok",
+      "place": "donostia",
+      "albums": 1,
+      "tracks": 1,
+      "new": 0
+    },
+    "uther": {
+      "checked_at": "2026-09-26T19:04:13Z",
+      "status": "ok",
+      "place": "ondarroa",
+      "albums": 4,
+      "tracks": 0,
+      "new": 0
+    },
+    "v301": {
+      "checked_at": "2026-09-26T19:04:16Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 0
+    },
+    "vakumm": {
+      "checked_at": "2026-09-26T19:04:18Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "varapalo": {
+      "checked_at": "2026-09-26T19:04:21Z",
+      "status": "ok",
+      "place": "barakaldo",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "varoshaband": {
+      "checked_at": "2026-09-26T19:04:23Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 2,
+      "tracks": 0,
+      "new": 1
+    },
+    "vastylez": {
+      "checked_at": "2026-09-26T19:04:26Z",
+      "status": "ok",
+      "place": "ermua",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "velozet": {
+      "checked_at": "2026-09-26T19:04:29Z",
+      "status": "ok",
+      "place": "hondarribia",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "velutine": {
+      "checked_at": "2026-09-26T19:04:32Z",
+      "status": "ok",
+      "place": "bera",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "vertigo-rockalternative": {
+      "checked_at": "2026-09-26T19:04:35Z",
+      "status": "ok",
+      "place": "irunea",
+      "albums": 1,
+      "tracks": 0,
+      "new": 0
+    },
+    "vicepresidentes": {
+      "checked_at": "2026-09-26T19:04:37Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 3,
+      "tracks": 0,
+      "new": 0
+    },
+    "victimasclub": {
+      "checked_at": "2026-09-26T19:04:40Z",
+      "status": "ok",
+      "place": "gasteiz",
+      "albums": 2,
+      "tracks": 1,
+      "new": 0
     }
   },
   "pending_fichas": {
@@ -17093,6 +19489,1281 @@
       "source_account": "pablogilaguirre",
       "source_place": "zornotza",
       "discovered_at": "2026-09-26T18:16:28Z"
+    },
+    "pariakbai.bandcamp.com/album/behin-betiko-2013": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://pariakbai.bandcamp.com/album/behin-betiko-2013",
+      "cover_url": null,
+      "album_id": 2233193178,
+      "band_location": "Zarautz, Spain",
+      "source_tags": [],
+      "source_account": "pariakbai",
+      "source_place": "zarautz",
+      "discovered_at": "2026-09-26T18:51:32Z"
+    },
+    "pariakbai.bandcamp.com/album/ezer-ez-ta-festa-2004": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://pariakbai.bandcamp.com/album/ezer-ez-ta-festa-2004",
+      "cover_url": null,
+      "album_id": 476974916,
+      "band_location": "Zarautz, Spain",
+      "source_tags": [],
+      "source_account": "pariakbai",
+      "source_place": "zarautz",
+      "discovered_at": "2026-09-26T18:51:32Z"
+    },
+    "pariakbai.bandcamp.com/album/pariak-bai-2001": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://pariakbai.bandcamp.com/album/pariak-bai-2001",
+      "cover_url": null,
+      "album_id": 2076852756,
+      "band_location": "Zarautz, Spain",
+      "source_tags": [],
+      "source_account": "pariakbai",
+      "source_place": "zarautz",
+      "discovered_at": "2026-09-26T18:51:32Z"
+    },
+    "patronalpunk.bandcamp.com/album/patronal-punk": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://patronalpunk.bandcamp.com/album/patronal-punk",
+      "cover_url": null,
+      "album_id": 3874193805,
+      "band_location": "San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "patronalpunk",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:51:48Z"
+    },
+    "pelayoiturralde.bandcamp.com/album/baserri": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://pelayoiturralde.bandcamp.com/album/baserri",
+      "cover_url": null,
+      "album_id": 2877119095,
+      "band_location": "Zarautz, Spain",
+      "source_tags": [],
+      "source_account": "pelayoiturralde",
+      "source_place": "zarautz",
+      "discovered_at": "2026-09-26T18:52:06Z"
+    },
+    "physisversusnomos.bandcamp.com/album/arrabioa-arrabio": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://physisversusnomos.bandcamp.com/album/arrabioa-arrabio",
+      "cover_url": null,
+      "album_id": 1741251566,
+      "band_location": "Donostia San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "physisversusnomos",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:52:30Z"
+    },
+    "physisversusnomos.bandcamp.com/album/20-urte-biba-festa-biba-eraldaketa-biba-piratak": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://physisversusnomos.bandcamp.com/album/20-urte-biba-festa-biba-eraldaketa-biba-piratak",
+      "cover_url": null,
+      "album_id": 592831853,
+      "band_location": "Donostia San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "physisversusnomos",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:52:30Z"
+    },
+    "physisversusnomos.bandcamp.com/album/pandemia-kalabazan": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://physisversusnomos.bandcamp.com/album/pandemia-kalabazan",
+      "cover_url": null,
+      "album_id": 2602641148,
+      "band_location": "Donostia San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "physisversusnomos",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:52:30Z"
+    },
+    "physisversusnomos.bandcamp.com/album/maitzak-1-xoroi": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://physisversusnomos.bandcamp.com/album/maitzak-1-xoroi",
+      "cover_url": null,
+      "album_id": 2569202866,
+      "band_location": "Donostia San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "physisversusnomos",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:52:30Z"
+    },
+    "physisversusnomos.bandcamp.com/album/zaharrak-berriak-eta-kuttunak-i-goiz-batin": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://physisversusnomos.bandcamp.com/album/zaharrak-berriak-eta-kuttunak-i-goiz-batin",
+      "cover_url": null,
+      "album_id": 452397198,
+      "band_location": "Donostia San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "physisversusnomos",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:52:30Z"
+    },
+    "physisversusnomos.bandcamp.com/album/arraro2000": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://physisversusnomos.bandcamp.com/album/arraro2000",
+      "cover_url": null,
+      "album_id": 555208131,
+      "band_location": "Donostia San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "physisversusnomos",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:52:30Z"
+    },
+    "piztiak.bandcamp.com/album/xxx-cd": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://piztiak.bandcamp.com/album/xxx-cd",
+      "cover_url": null,
+      "album_id": 1323359006,
+      "band_location": "Ondarroa, Spain",
+      "source_tags": [],
+      "source_account": "piztiak",
+      "source_place": "ondarroa",
+      "discovered_at": "2026-09-26T18:52:46Z"
+    },
+    "polaroidbnd.bandcamp.com/album/the-escapist": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://polaroidbnd.bandcamp.com/album/the-escapist",
+      "cover_url": null,
+      "album_id": 885816228,
+      "band_location": "Donostia San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "polaroidbnd",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:52:52Z"
+    },
+    "pr0t0c0lectiv0.bandcamp.com/album/ganying": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://pr0t0c0lectiv0.bandcamp.com/album/ganying",
+      "cover_url": null,
+      "album_id": 3194483453,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [],
+      "source_account": "pr0t0c0lectiv0",
+      "source_place": "irunea",
+      "discovered_at": "2026-09-26T18:53:14Z"
+    },
+    "rbls.bandcamp.com/album/secondary-protocols": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/secondary-protocols",
+      "cover_url": null,
+      "album_id": 1662512471,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/modus-operandi": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/modus-operandi",
+      "cover_url": null,
+      "album_id": 366038593,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/logical-physics": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/logical-physics",
+      "cover_url": null,
+      "album_id": 3312953451,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/primal-mechanisms": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/primal-mechanisms",
+      "cover_url": null,
+      "album_id": 3769177091,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/seed-of-tomorrow": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/seed-of-tomorrow",
+      "cover_url": null,
+      "album_id": 2931338714,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/colapso": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/colapso",
+      "cover_url": null,
+      "album_id": 1156476756,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/mutant": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/mutant",
+      "cover_url": null,
+      "album_id": 386632716,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/archivo-8778": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/archivo-8778",
+      "cover_url": null,
+      "album_id": 366298689,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/calle": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/calle",
+      "cover_url": null,
+      "album_id": 1232988012,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/stochastic": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/stochastic",
+      "cover_url": null,
+      "album_id": 2620329907,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/destroy-to-build": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/destroy-to-build",
+      "cover_url": null,
+      "album_id": 3596656200,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/getting-off-the-bench": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/getting-off-the-bench",
+      "cover_url": null,
+      "album_id": 2966890193,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/rough-pieces": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/rough-pieces",
+      "cover_url": null,
+      "album_id": 2730354791,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/alkaline": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/alkaline",
+      "cover_url": null,
+      "album_id": 3836003708,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "rbls.bandcamp.com/album/granite": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://rbls.bandcamp.com/album/granite",
+      "cover_url": null,
+      "album_id": 3367735183,
+      "band_location": "Zizur Mayor, Spain",
+      "source_tags": [],
+      "source_account": "rbls",
+      "source_place": "zizur-nagusia",
+      "discovered_at": "2026-09-26T18:54:16Z"
+    },
+    "redblaze.bandcamp.com/album/red-blaze": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://redblaze.bandcamp.com/album/red-blaze",
+      "cover_url": null,
+      "album_id": 3329877614,
+      "band_location": "Ermua, Spain",
+      "source_tags": [],
+      "source_account": "redblaze",
+      "source_place": "ermua",
+      "discovered_at": "2026-09-26T18:54:22Z"
+    },
+    "reinarepublicana.bandcamp.com/album/clonidina-7": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://reinarepublicana.bandcamp.com/album/clonidina-7",
+      "cover_url": null,
+      "album_id": 3752539777,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [],
+      "source_account": "reinarepublicana",
+      "source_place": "irunea",
+      "discovered_at": "2026-09-26T18:54:32Z"
+    },
+    "reinarepublicana.bandcamp.com/album/reina-republicana-las-robertas-split": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://reinarepublicana.bandcamp.com/album/reina-republicana-las-robertas-split",
+      "cover_url": null,
+      "album_id": 1276448886,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [],
+      "source_account": "reinarepublicana",
+      "source_place": "irunea",
+      "discovered_at": "2026-09-26T18:54:32Z"
+    },
+    "reykjavik606.bandcamp.com/album/from-to-remixes": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://reykjavik606.bandcamp.com/album/from-to-remixes",
+      "cover_url": null,
+      "album_id": 2582836203,
+      "band_location": "San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "reykjavik606",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:54:54Z"
+    },
+    "sameold.bandcamp.com/album/cabeza-voladora": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sameold.bandcamp.com/album/cabeza-voladora",
+      "cover_url": null,
+      "album_id": 3721479288,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [],
+      "source_account": "sameold",
+      "source_place": "gasteiz",
+      "discovered_at": "2026-09-26T18:55:37Z"
+    },
+    "sarcomanoise.bandcamp.com/album/kaamos-album": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sarcomanoise.bandcamp.com/album/kaamos-album",
+      "cover_url": null,
+      "album_id": 1214880236,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [],
+      "source_account": "sarcomanoise",
+      "source_place": "gasteiz",
+      "discovered_at": "2026-09-26T18:55:59Z"
+    },
+    "sarcomanoise.bandcamp.com/album/not-crosses-remixed-f-ck-u-sarcoma-you-think-ur-skrillex-but-ur-not-3-lp": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sarcomanoise.bandcamp.com/album/not-crosses-remixed-f-ck-u-sarcoma-you-think-ur-skrillex-but-ur-not-3-lp",
+      "cover_url": null,
+      "album_id": 2846266847,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [],
+      "source_account": "sarcomanoise",
+      "source_place": "gasteiz",
+      "discovered_at": "2026-09-26T18:55:59Z"
+    },
+    "sarcomanoise.bandcamp.com/album/peritoneal-disseminations-when-love-is-poured-out-from-your-spleen-in-the-form-of-uncoagulated-blood-album": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sarcomanoise.bandcamp.com/album/peritoneal-disseminations-when-love-is-poured-out-from-your-spleen-in-the-form-of-uncoagulated-blood-album",
+      "cover_url": null,
+      "album_id": 335521657,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [],
+      "source_account": "sarcomanoise",
+      "source_place": "gasteiz",
+      "discovered_at": "2026-09-26T18:55:59Z"
+    },
+    "sarcomanoise.bandcamp.com/album/transgressive-hnw-experiments-1-digital-only": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sarcomanoise.bandcamp.com/album/transgressive-hnw-experiments-1-digital-only",
+      "cover_url": null,
+      "album_id": 4190501476,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [],
+      "source_account": "sarcomanoise",
+      "source_place": "gasteiz",
+      "discovered_at": "2026-09-26T18:55:59Z"
+    },
+    "sarcomanoise.bandcamp.com/album/live-in-vigo-until-the-recorder-stopped-working-digital-only": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sarcomanoise.bandcamp.com/album/live-in-vigo-until-the-recorder-stopped-working-digital-only",
+      "cover_url": null,
+      "album_id": 3175206546,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [],
+      "source_account": "sarcomanoise",
+      "source_place": "gasteiz",
+      "discovered_at": "2026-09-26T18:55:59Z"
+    },
+    "sarcomanoise.bandcamp.com/album/not-crosses-lp": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sarcomanoise.bandcamp.com/album/not-crosses-lp",
+      "cover_url": null,
+      "album_id": 4286571411,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [],
+      "source_account": "sarcomanoise",
+      "source_place": "gasteiz",
+      "discovered_at": "2026-09-26T18:55:59Z"
+    },
+    "schizophonicconnections.bandcamp.com/album/iii-3": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://schizophonicconnections.bandcamp.com/album/iii-3",
+      "cover_url": null,
+      "album_id": 1343522331,
+      "band_location": "Donostia San Sebastian, Spain",
+      "source_tags": [],
+      "source_account": "schizophonicconnections",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:56:16Z"
+    },
+    "sherparanoide.bandcamp.com/album/ojeras": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sherparanoide.bandcamp.com/album/ojeras",
+      "cover_url": null,
+      "album_id": 469790685,
+      "band_location": "San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "sherparanoide",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:57:01Z"
+    },
+    "sietecmusica.bandcamp.com/album/gen-n-mada": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sietecmusica.bandcamp.com/album/gen-n-mada",
+      "cover_url": null,
+      "album_id": 2595718551,
+      "band_location": "Donostia, Spain",
+      "source_tags": [],
+      "source_account": "sietecmusica",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:57:09Z"
+    },
+    "sietecmusica.bandcamp.com/album/buenos-vivientes": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sietecmusica.bandcamp.com/album/buenos-vivientes",
+      "cover_url": null,
+      "album_id": 1991424575,
+      "band_location": "Donostia, Spain",
+      "source_tags": [],
+      "source_account": "sietecmusica",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:57:09Z"
+    },
+    "sietecmusica.bandcamp.com/album/jovenes-en-celo-ep": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sietecmusica.bandcamp.com/album/jovenes-en-celo-ep",
+      "cover_url": null,
+      "album_id": 1740544797,
+      "band_location": "Donostia, Spain",
+      "source_tags": [],
+      "source_account": "sietecmusica",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:57:09Z"
+    },
+    "sietecmusica.bandcamp.com/album/familia": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sietecmusica.bandcamp.com/album/familia",
+      "cover_url": null,
+      "album_id": 593931790,
+      "band_location": "Donostia, Spain",
+      "source_tags": [],
+      "source_account": "sietecmusica",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:57:09Z"
+    },
+    "sixmileswide.bandcamp.com/album/through-the-wild-deadly-habits-pack": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sixmileswide.bandcamp.com/album/through-the-wild-deadly-habits-pack",
+      "cover_url": null,
+      "album_id": 394946310,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [],
+      "source_account": "sixmileswide",
+      "source_place": "irunea",
+      "discovered_at": "2026-09-26T18:57:32Z"
+    },
+    "sixmileswide.bandcamp.com/album/deadly-habits": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sixmileswide.bandcamp.com/album/deadly-habits",
+      "cover_url": null,
+      "album_id": 3926055458,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [],
+      "source_account": "sixmileswide",
+      "source_place": "irunea",
+      "discovered_at": "2026-09-26T18:57:32Z"
+    },
+    "skasti.bandcamp.com/album/new-age-2": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://skasti.bandcamp.com/album/new-age-2",
+      "cover_url": null,
+      "album_id": 3750347727,
+      "band_location": "Zarautz, Spain",
+      "source_tags": [],
+      "source_account": "skasti",
+      "source_place": "zarautz",
+      "discovered_at": "2026-09-26T18:57:35Z"
+    },
+    "sobieht.bandcamp.com/album/azken-berba-esatear-dago": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sobieht.bandcamp.com/album/azken-berba-esatear-dago",
+      "cover_url": null,
+      "album_id": 2340488200,
+      "band_location": "Sestao, Spain",
+      "source_tags": [],
+      "source_account": "sobieht",
+      "source_place": "sestao",
+      "discovered_at": "2026-09-26T18:57:54Z"
+    },
+    "sobieht.bandcamp.com/album/sobieht": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sobieht.bandcamp.com/album/sobieht",
+      "cover_url": null,
+      "album_id": 2312314638,
+      "band_location": "Sestao, Spain",
+      "source_tags": [],
+      "source_account": "sobieht",
+      "source_place": "sestao",
+      "discovered_at": "2026-09-26T18:57:54Z"
+    },
+    "sokataldea.bandcamp.com/album/ez-da-hemen": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sokataldea.bandcamp.com/album/ez-da-hemen",
+      "cover_url": null,
+      "album_id": 2990333685,
+      "band_location": "Donostia San Sebastian, Spain",
+      "source_tags": [],
+      "source_account": "sokataldea",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:58:02Z"
+    },
+    "somoscrap.bandcamp.com/album/rehearsal-demo-tapes": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://somoscrap.bandcamp.com/album/rehearsal-demo-tapes",
+      "cover_url": null,
+      "album_id": 3940657427,
+      "band_location": "Arrasate, Spain",
+      "source_tags": [],
+      "source_account": "somoscrap",
+      "source_place": "arrasate",
+      "discovered_at": "2026-09-26T18:58:04Z"
+    },
+    "somostomboyle.bandcamp.com/album/isla-elefante-ep-2009": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://somostomboyle.bandcamp.com/album/isla-elefante-ep-2009",
+      "cover_url": null,
+      "album_id": 1141647402,
+      "band_location": "Getxo, Spain",
+      "source_tags": [],
+      "source_account": "somostomboyle",
+      "source_place": "getxo",
+      "discovered_at": "2026-09-26T18:58:07Z"
+    },
+    "somostomboyle.bandcamp.com/album/interferencias-ep-aplasta-tus-gafas-de-pasta-records-2008": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://somostomboyle.bandcamp.com/album/interferencias-ep-aplasta-tus-gafas-de-pasta-records-2008",
+      "cover_url": null,
+      "album_id": 101747092,
+      "band_location": "Getxo, Spain",
+      "source_tags": [],
+      "source_account": "somostomboyle",
+      "source_place": "getxo",
+      "discovered_at": "2026-09-26T18:58:07Z"
+    },
+    "spirituallofi.bandcamp.com/album/turn-up-vol-2": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://spirituallofi.bandcamp.com/album/turn-up-vol-2",
+      "cover_url": null,
+      "album_id": 552719491,
+      "band_location": "Hondarribia, Spain",
+      "source_tags": [],
+      "source_account": "spirituallofi",
+      "source_place": "hondarribia",
+      "discovered_at": "2026-09-26T18:58:29Z"
+    },
+    "sumisioncityblues.bandcamp.com/album/hay-un-plan-trazado-desde-arriba-que-se-llama": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sumisioncityblues.bandcamp.com/album/hay-un-plan-trazado-desde-arriba-que-se-llama",
+      "cover_url": null,
+      "album_id": 3272437007,
+      "band_location": "Moreda De Alava, Spain",
+      "source_tags": [],
+      "source_account": "sumisioncityblues",
+      "source_place": "moreda-araba",
+      "discovered_at": "2026-09-26T18:59:09Z"
+    },
+    "sumisioncityblues.bandcamp.com/album/el-odio-la-demacraci-n-y-la-ternura-humana": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sumisioncityblues.bandcamp.com/album/el-odio-la-demacraci-n-y-la-ternura-humana",
+      "cover_url": null,
+      "album_id": 1888268875,
+      "band_location": "Moreda De Alava, Spain",
+      "source_tags": [],
+      "source_account": "sumisioncityblues",
+      "source_place": "moreda-araba",
+      "discovered_at": "2026-09-26T18:59:09Z"
+    },
+    "sumisioncityblues.bandcamp.com/album/scb-7-2011": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sumisioncityblues.bandcamp.com/album/scb-7-2011",
+      "cover_url": null,
+      "album_id": 2369344465,
+      "band_location": "Moreda De Alava, Spain",
+      "source_tags": [],
+      "source_account": "sumisioncityblues",
+      "source_place": "moreda-araba",
+      "discovered_at": "2026-09-26T18:59:09Z"
+    },
+    "sumisioncityblues.bandcamp.com/album/scb-minicd-2011": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://sumisioncityblues.bandcamp.com/album/scb-minicd-2011",
+      "cover_url": null,
+      "album_id": 169134281,
+      "band_location": "Moreda De Alava, Spain",
+      "source_tags": [],
+      "source_account": "sumisioncityblues",
+      "source_place": "moreda-araba",
+      "discovered_at": "2026-09-26T18:59:09Z"
+    },
+    "taupada.bandcamp.com/album/arima-galdua-ep": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://taupada.bandcamp.com/album/arima-galdua-ep",
+      "cover_url": null,
+      "album_id": 939555123,
+      "band_location": "Urretxu, Spain",
+      "source_tags": [],
+      "source_account": "taupada",
+      "source_place": "urretxu",
+      "discovered_at": "2026-09-26T18:59:44Z"
+    },
+    "theanimalwithin.bandcamp.com/album/we-all-breathe-we-all-bleed-acoustic": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://theanimalwithin.bandcamp.com/album/we-all-breathe-we-all-bleed-acoustic",
+      "cover_url": null,
+      "album_id": 1226696230,
+      "band_location": "San Sebastián, Spain",
+      "source_tags": [],
+      "source_account": "theanimalwithin",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T18:59:54Z"
+    },
+    "theclayton.bandcamp.com/album/maketa": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://theclayton.bandcamp.com/album/maketa",
+      "cover_url": null,
+      "album_id": 4135898475,
+      "band_location": "Aramaio, Spain",
+      "source_tags": [],
+      "source_account": "theclayton",
+      "source_place": "aramaio",
+      "discovered_at": "2026-09-26T19:00:09Z"
+    },
+    "thenorthagirres.bandcamp.com/album/the-hot-dogs-96": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://thenorthagirres.bandcamp.com/album/the-hot-dogs-96",
+      "cover_url": null,
+      "album_id": 148202501,
+      "band_location": "Urretxu, Spain",
+      "source_tags": [],
+      "source_account": "thenorthagirres",
+      "source_place": "urretxu",
+      "discovered_at": "2026-09-26T19:00:56Z"
+    },
+    "thenorthagirres.bandcamp.com/album/hot-dogs-con-ojos-rotos": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://thenorthagirres.bandcamp.com/album/hot-dogs-con-ojos-rotos",
+      "cover_url": null,
+      "album_id": 3702868046,
+      "band_location": "Urretxu, Spain",
+      "source_tags": [],
+      "source_account": "thenorthagirres",
+      "source_place": "urretxu",
+      "discovered_at": "2026-09-26T19:00:56Z"
+    },
+    "theowlproject.bandcamp.com/album/enea": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://theowlproject.bandcamp.com/album/enea",
+      "cover_url": null,
+      "album_id": 4253345784,
+      "band_location": "Markina Xemein, Spain",
+      "source_tags": [],
+      "source_account": "theowlproject",
+      "source_place": "markina-xemein",
+      "discovered_at": "2026-09-26T19:00:58Z"
+    },
+    "theowlproject.bandcamp.com/album/bada": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://theowlproject.bandcamp.com/album/bada",
+      "cover_url": null,
+      "album_id": 2466453134,
+      "band_location": "Markina Xemein, Spain",
+      "source_tags": [],
+      "source_account": "theowlproject",
+      "source_place": "markina-xemein",
+      "discovered_at": "2026-09-26T19:00:58Z"
+    },
+    "theowlproject.bandcamp.com/album/jai": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://theowlproject.bandcamp.com/album/jai",
+      "cover_url": null,
+      "album_id": 2076124288,
+      "band_location": "Markina Xemein, Spain",
+      "source_tags": [],
+      "source_account": "theowlproject",
+      "source_place": "markina-xemein",
+      "discovered_at": "2026-09-26T19:00:58Z"
+    },
+    "theowlproject.bandcamp.com/album/igali": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://theowlproject.bandcamp.com/album/igali",
+      "cover_url": null,
+      "album_id": 2281385462,
+      "band_location": "Markina Xemein, Spain",
+      "source_tags": [],
+      "source_account": "theowlproject",
+      "source_place": "markina-xemein",
+      "discovered_at": "2026-09-26T19:00:58Z"
+    },
+    "theowlproject.bandcamp.com/album/maluta": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://theowlproject.bandcamp.com/album/maluta",
+      "cover_url": null,
+      "album_id": 3840094897,
+      "band_location": "Markina Xemein, Spain",
+      "source_tags": [],
+      "source_account": "theowlproject",
+      "source_place": "markina-xemein",
+      "discovered_at": "2026-09-26T19:00:58Z"
+    },
+    "theowlproject.bandcamp.com/album/core-dream": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://theowlproject.bandcamp.com/album/core-dream",
+      "cover_url": null,
+      "album_id": 3634278958,
+      "band_location": "Markina Xemein, Spain",
+      "source_tags": [],
+      "source_account": "theowlproject",
+      "source_place": "markina-xemein",
+      "discovered_at": "2026-09-26T19:00:58Z"
+    },
+    "tootheroak.bandcamp.com/album/azken-pausoak": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://tootheroak.bandcamp.com/album/azken-pausoak",
+      "cover_url": null,
+      "album_id": 1646303754,
+      "band_location": "Gernika Lumo, Spain",
+      "source_tags": [],
+      "source_account": "tootheroak",
+      "source_place": "gernika-lumo",
+      "discovered_at": "2026-09-26T19:02:01Z"
+    },
+    "tootheroak.bandcamp.com/album/errautsetatik": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://tootheroak.bandcamp.com/album/errautsetatik",
+      "cover_url": null,
+      "album_id": 2412007846,
+      "band_location": "Gernika Lumo, Spain",
+      "source_tags": [],
+      "source_account": "tootheroak",
+      "source_place": "gernika-lumo",
+      "discovered_at": "2026-09-26T19:02:01Z"
+    },
+    "tootheroak.bandcamp.com/album/tooth-2": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://tootheroak.bandcamp.com/album/tooth-2",
+      "cover_url": null,
+      "album_id": 3483935782,
+      "band_location": "Gernika Lumo, Spain",
+      "source_tags": [],
+      "source_account": "tootheroak",
+      "source_place": "gernika-lumo",
+      "discovered_at": "2026-09-26T19:02:01Z"
+    },
+    "tremendatrementina.bandcamp.com/album/sangre-pop": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://tremendatrementina.bandcamp.com/album/sangre-pop",
+      "cover_url": null,
+      "album_id": 4224045441,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [],
+      "source_account": "tremendatrementina",
+      "source_place": "irunea",
+      "discovered_at": "2026-09-26T19:02:14Z"
+    },
+    "tremendatrementina.bandcamp.com/album/tremenda-trementina": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://tremendatrementina.bandcamp.com/album/tremenda-trementina",
+      "cover_url": null,
+      "album_id": 3395379328,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [],
+      "source_account": "tremendatrementina",
+      "source_place": "irunea",
+      "discovered_at": "2026-09-26T19:02:14Z"
+    },
+    "txemak.bandcamp.com/album/anal": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://txemak.bandcamp.com/album/anal",
+      "cover_url": null,
+      "album_id": 778341937,
+      "band_location": "Donostia, Spain",
+      "source_tags": [],
+      "source_account": "txemak",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T19:03:03Z"
+    },
+    "txemak.bandcamp.com/album/performanze": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://txemak.bandcamp.com/album/performanze",
+      "cover_url": null,
+      "album_id": 651255614,
+      "band_location": "Donostia, Spain",
+      "source_tags": [],
+      "source_account": "txemak",
+      "source_place": "donostia",
+      "discovered_at": "2026-09-26T19:03:03Z"
+    },
+    "uriisualdrovandi.bandcamp.com/album/sorginen-sasoia": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://uriisualdrovandi.bandcamp.com/album/sorginen-sasoia",
+      "cover_url": null,
+      "album_id": 1663278108,
+      "band_location": "Barakaldo, Spain",
+      "source_tags": [],
+      "source_account": "uriisualdrovandi",
+      "source_place": "barakaldo",
+      "discovered_at": "2026-09-26T19:04:00Z"
+    },
+    "uriisualdrovandi.bandcamp.com/album/ikerketa-bereziak-2099-the-cotai-strip-investigations": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://uriisualdrovandi.bandcamp.com/album/ikerketa-bereziak-2099-the-cotai-strip-investigations",
+      "cover_url": null,
+      "album_id": 2927966196,
+      "band_location": "Barakaldo, Spain",
+      "source_tags": [],
+      "source_account": "uriisualdrovandi",
+      "source_place": "barakaldo",
+      "discovered_at": "2026-09-26T19:04:00Z"
+    },
+    "uriisualdrovandi.bandcamp.com/album/heart-condition": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://uriisualdrovandi.bandcamp.com/album/heart-condition",
+      "cover_url": null,
+      "album_id": 1791751990,
+      "band_location": "Barakaldo, Spain",
+      "source_tags": [],
+      "source_account": "uriisualdrovandi",
+      "source_place": "barakaldo",
+      "discovered_at": "2026-09-26T19:04:00Z"
+    },
+    "uriisualdrovandi.bandcamp.com/album/urban-ipx-memories-ipx": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://uriisualdrovandi.bandcamp.com/album/urban-ipx-memories-ipx",
+      "cover_url": null,
+      "album_id": 4059709437,
+      "band_location": "Barakaldo, Spain",
+      "source_tags": [],
+      "source_account": "uriisualdrovandi",
+      "source_place": "barakaldo",
+      "discovered_at": "2026-09-26T19:04:00Z"
+    },
+    "uriisualdrovandi.bandcamp.com/album/ancestral-user-interface": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://uriisualdrovandi.bandcamp.com/album/ancestral-user-interface",
+      "cover_url": null,
+      "album_id": 2527697784,
+      "band_location": "Barakaldo, Spain",
+      "source_tags": [],
+      "source_account": "uriisualdrovandi",
+      "source_place": "barakaldo",
+      "discovered_at": "2026-09-26T19:04:00Z"
+    },
+    "vakumm.bandcamp.com/album/torsion-2": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://vakumm.bandcamp.com/album/torsion-2",
+      "cover_url": null,
+      "album_id": 2844059601,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [],
+      "source_account": "vakumm",
+      "source_place": "irunea",
+      "discovered_at": "2026-09-26T19:04:18Z"
+    },
+    "varoshaband.bandcamp.com/album/bailarinas": {
+      "artist": null,
+      "title": null,
+      "genre": null,
+      "year": null,
+      "tags": [],
+      "url": "https://varoshaband.bandcamp.com/album/bailarinas",
+      "cover_url": null,
+      "album_id": 1636775948,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [],
+      "source_account": "varoshaband",
+      "source_place": "irunea",
+      "discovered_at": "2026-09-26T19:04:23Z"
     }
   },
   "fichas_error": {}
