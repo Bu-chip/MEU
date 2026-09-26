@@ -384,6 +384,48 @@ def step_clean_invisible_chars(data):
 
 
 # ------------------------------------------------------------------
+# Espacios sobrantes (auditoría 2026-09)
+# ------------------------------------------------------------------
+#
+# La auditoría de calidad (docs/quality-audit-2026-09.md) encontró seis
+# fichas con espacio final en `artist` («Calathea », «QUANTUM9 ERA ») y
+# tres tags con doble espacio interno («trap  flow»). Regla mecánica:
+#   - artist y title: se recortan los espacios iniciales/finales. NO se
+#     colapsan los internos: «M E R Y  M A Y» o «.   .  . ...» son
+#     estilización del artista, no un error.
+#   - tags: recorte y colapso de espacios internos a uno (un tag es una
+#     etiqueta de Bandcamp, sin estilización posible), sin repetidos.
+# Idempotente por naturaleza: sobre texto ya limpio no hace nada.
+
+def _squash_spaces(s):
+    return " ".join(s.split())
+
+
+def step_strip_whitespace(data):
+    """Recorta espacios sobrantes en artist/title y los colapsa en tags."""
+    touched = 0
+    for album in data["albums"]:
+        for field in ("artist", "title"):
+            new = album[field].strip()
+            if new and new != album[field]:
+                album[field] = new
+                touched += 1
+        out = []
+        for tag in album["tags"]:
+            tag = _squash_spaces(tag)
+            if tag and tag not in out:
+                out.append(tag)
+        if out != album["tags"]:
+            album["tags"] = out
+            touched += 1
+    if touched:
+        rebuild_artists(data)
+        rebuild_tags(data)
+        return [f"strip_whitespace: {touched} campos recortados"]
+    return []
+
+
+# ------------------------------------------------------------------
 # Normalización de tags (PR C, paso 2)
 # ------------------------------------------------------------------
 #
@@ -684,6 +726,7 @@ STEPS = [
     step_fix_corrupt_genres,
     step_dedupe_releases,
     step_normalize_artist_names,
+    step_strip_whitespace,
     step_clean_invisible_chars,
     step_normalize_tags,
     step_merge_covers,
