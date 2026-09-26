@@ -27,6 +27,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = REPO_ROOT / "data" / "bandcamp_bilbaotags_clean.json"
@@ -36,19 +37,41 @@ DATA_FILE = REPO_ROOT / "data" / "bandcamp_bilbaotags_clean.json"
 # Pasos del pipeline
 # ------------------------------------------------------------------
 
+def clean_url(url):
+    """Forma canónica de una URL de release: sin espacios, sin query ni
+    fragmento, sin barra final, esquema https y host en minúsculas. El
+    path se respeta (los slugs de Bandcamp ya son minúsculas). None y la
+    cadena vacía se devuelven tal cual."""
+    if not url:
+        return url
+    u = url.strip().replace(" ", "")
+    u = u.split("?", 1)[0].split("#", 1)[0].rstrip("/")
+    parts = urlsplit(u)
+    if parts.netloc:
+        scheme = parts.scheme.lower()
+        if scheme in ("http", "https"):
+            scheme = "https"
+        u = urlunsplit((scheme, parts.netloc.lower(), parts.path, "", ""))
+    return u
+
+
 def step_clean_urls(data):
-    """Elimina los parámetros de tracking de búsqueda de las URLs.
+    """Normaliza las URLs de los releases.
 
     El scraping guardó cada URL con la cola `?from=search&search_sig=...`
-    de Bandcamp, que no aporta nada y engorda el archivo. Se corta la URL
-    en el primer `?`. Las URLs nulas se dejan tal cual.
+    de Bandcamp, que no aporta nada y engorda el archivo. Desde la
+    auditoría 2026-09 la regla es la de `clean_url`: además del `?`,
+    fragmento `#`, barra final, espacios, `http://` y host en mayúsculas,
+    que son las mismas variantes que la clave de dedupe considera iguales.
+    Las URLs nulas se dejan tal cual.
     """
     changes = []
     cleaned = 0
     for album in data["albums"]:
         url = album.get("url")
-        if url and "?" in url:
-            album["url"] = url.split("?", 1)[0]
+        new = clean_url(url)
+        if url and new != url:
+            album["url"] = new
             cleaned += 1
     if cleaned:
         changes.append(f"clean_urls: {cleaned} URLs limpiadas de parámetros de tracking")
@@ -678,6 +701,15 @@ def serialize(data):
     return json.dumps(data, indent=4, ensure_ascii=False)
 
 
+def url_key(url):
+    """Clave de duplicado de URL: la de `clean_url`, sin esquema y toda en
+    minúsculas (misma familia que discover_tags.normalize_url)."""
+    if not url:
+        return None
+    parts = urlsplit(clean_url(url))
+    return f"{parts.netloc}{parts.path}".lower()
+
+
 def validate(data):
     """Invariantes de esquema que ningún paso puede romper."""
     assert set(data.keys()) == {"albums", "artists", "tags", "years"}
@@ -694,6 +726,20 @@ def validate(data):
             f"cover_url no es string|null en album id={album.get('id')}"
         assert album["album_id"] is None or isinstance(album["album_id"], int), \
             f"album_id no es int|null en album id={album.get('id')}"
+    # Unicidad (auditoría 2026-09): ninguna fila puede compartir id,
+    # album_id ni URL normalizada con otra. Hoy se cumple; la guarda
+    # evita que un merge futuro cuele un duplicado sin que se note.
+    for field, key in (("id", lambda a: a["id"]),
+                       ("album_id", lambda a: a["album_id"]),
+                       ("url", lambda a: url_key(a["url"]))):
+        seen = {}
+        for album in data["albums"]:
+            k = key(album)
+            if k is None:
+                continue
+            assert k not in seen, \
+                f"{field} duplicado: {k!r} en albums id={seen[k]} y id={album['id']}"
+            seen[k] = album["id"]
 
 
 def main():
