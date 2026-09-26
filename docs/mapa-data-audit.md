@@ -82,11 +82,11 @@ Tags sobrerrepresentados: `lift = (releases del municipio con el tag / releases 
 | Donostia | Gipuzkoa | 1005 | 435 | 1985–2026 | 37 % | rock (312), electronic (286), experimental (184), punk (161), pop (148) | art-blues ×7.6, deathdream ×7.6, dreampunk ×7.6, folk psicodelia ×7.6 |
 | Iruñea | Nafarroa | 925 | 427 | 1998–2026 | 34 % | rock (258), electronic (212), techno (166), metal (136), pop (136) | vgm ×8.3, primavera sound ×8.3, sonido muchacho ×8.3, reverbcore ×8.3 |
 | Gasteiz | Araba | 557 | 246 | 1998–2026 | 23 % | rock (140), metal (118), electronic (96), punk (84), black metal (76) | freakbeat ×13.7, senoid recordings ×13.7, grove metal ×13.7, minimal techno industrial ×13.7 |
-| Zarautz | Gipuzkoa | 280 | 163 | 1989–2026 | 59 % | punk (115), hardcore (106), hardcore punk (101), crust punk (98), live (98) | live recording ×26.5, deep tech ×24.4, tropical ×24.1, live ×22.5 |
+| Zarautz | Gipuzkoa | 280 | 163 | 1989–2026 | 59 % | punk (115), hardcore (106), hardcore punk (101), crust punk (98), live (98) | live recording ×26.5, deep tech ×24.4, tropical ×24.1, live ×22.3 |
 | Irun | Gipuzkoa | 113 | 27 | 1997–2025 | 54 % | punk (75), punk rock (62), post-punk (59), hardcore (56), petruska records (28) | 77 punk ×67.6, 82 punk ×67.6, petruska records ×67.6, oi ×23.6 |
-| Getxo | Bizkaia | 93 | 36 | 2004–2026 | 9 % | rock (46), indie rock (20), alternative (16), pop (16), acoustic (13) | hardrock ×74.7, heavymetal ×68.4, heavy rock ×34.2, shoegaze ×15.4 |
+| Getxo | Bizkaia | 93 | 36 | 2004–2026 | 9 % | rock (46), indie rock (20), alternative (16), pop (16), acoustic (14) | hardrock ×74.7, heavymetal ×68.4, heavy rock ×34.2, shoegaze ×15.1 |
 | Santurtzi | Bizkaia | 75 | 65 | 2012–2025 | 83 % | punk (66), metal (44), crust (40), death metal (40), grindcore (40) | oz rock ×101.8, swamp rock ×101.8, high energy rock ×88.5, blackened crust ×40.7 |
-| Hondarribia | Gipuzkoa | 59 | 26 | 2005–2026 | 0 % | rock (19), pop (14), hip-hop/rap (10), dub (7), instrumental (7) | stoner metal ×51.8, sludge metal ×30.5, acoustic rock ×24.3, cumbia ×21.6 |
+| Hondarribia | Gipuzkoa | 59 | 26 | 2005–2026 | 0 % | rock (19), pop (14), hip-hop/rap (10), dub (7), instrumental (7) | stoner metal ×51.8, sludge metal ×30.5, acoustic rock ×21.6, cumbia ×21.6 |
 | Errenteria | Gipuzkoa | 58 | 19 | 1992–2026 | 9 % | pop (29), digicore (24), glitch pop (24), hyper pop (24), internet music (24) | digicore ×131.7, internet music ×131.7, internetcore ×131.7, glitch pop ×126.4 |
 | Barakaldo | Bizkaia | 56 | 28 | 1991–2025 | 0 % | rock (34), punk (21), punk rock (9), rock'n'roll (8), garage (7) | melodic metal ×34.1, garage punk ×25.8, rock'n'roll ×20.6, power metal ×14.4 |
 | Arrasate | Gipuzkoa | 49 | 29 | 2010–2026 | 26 % | punk rock (25), rock (21), punk (16), metal (9), black metal (7) | metalpunk ×41.6, surf ×22.3, street punk ×15.2, punk rock ×7.8 |
@@ -95,17 +95,17 @@ Tags sobrerrepresentados: `lift = (releases del municipio con el tag / releases 
 | Gernika-Lumo | Bizkaia | 43 | 18 | 2003–2026 | 5 % | metal (11), punk (11), rock (11), hardcore (9), alternative (8) | melodic metal ×55.5, extreme metal ×53.3, acoustic guitar ×29.6, afghanistan ×21.3 |
 | Portugalete | Bizkaia | 41 | 25 | 2008–2026 | 61 % | electronic (17), hip hop (16), beattape (15), world beats (15), rock (12) | beattape ×186.3, world beats ×186.3, kraut ×46.6, soft rock ×43.0 |
 | Ondarroa | Bizkaia | 39 | 15 | 1998–2026 | 28 % | rock (24), pop rock (14), alternative (12), euskal musika (9), folk (9) | fastcore ×49.0, powerviolence ×35.6, euskal musika ×16.9, screamo ×14.4 |
-| Eibar | Gipuzkoa | 37 | 13 | 2009–2025 | 8 % | rock (14), electronic (10), ambient electronic (9), bidehuts (7), metal (7) | soundscapes ×63.5, comedy ×55.0, ambient electronic ×53.1, groove metal ×30.4 |
-| Oiartzun | Gipuzkoa | 35 | 15 | 2004–2024 | 23 % | punk (14), hip-hop/rap (11), rap (11), hip hop (9), hardcore (8) | oi ×87.3, occitan ×65.5, street punk ×42.6, trap ×24.9 |
-| Tolosa | Gipuzkoa | 34 | 16 | 1998–2025 | 0 % | rock (9), grindcore (8), metal (8), punk (8), crust (7) | raggamuffin ×33.7, dancehall ×12.5, crust ×11.9, grindcore ×8.2 |
+| Eibar | Gipuzkoa | 37 | 13 | 2009–2025 | 8 % | rock (14), electronic (10), ambient electronic (9), bidehuts (7), metal (7) | soundscapes ×63.5, comedy ×55.0, ambient electronic ×51.6, groove metal ×30.4 |
+| Oiartzun | Gipuzkoa | 35 | 15 | 2004–2024 | 23 % | punk (14), hip-hop/rap (11), rap (11), hip hop (9), hardcore (8) | oi ×87.3, occitan ×65.5, street punk ×42.6, trap ×24.6 |
+| Tolosa | Gipuzkoa | 34 | 16 | 1998–2025 | 0 % | rock (9), grindcore (8), metal (8), punk (8), crust (7) | raggamuffin ×33.7, dancehall ×12.5, crust ×11.7, grindcore ×8.2 |
 | Andoain | Gipuzkoa | 33 | 14 | 1983–2026 | 42 % | rock (19), pop (14), soul (14), electronic (9), experimental (9) | flamenco ×135.0, fantasy ×104.1, horror ×61.3, euskaraz ×24.8 |
 | Hernani | Gipuzkoa | 32 | 14 | 2005–2026 | 12 % | punk (14), rock (11), oi! (10), oi! streetpunk (8), skinhead (8) | oi! streetpunk ×190.9, skinhead ×61.6, oi! ×26.2, instrumental ×8.2 |
 | Oñati | Gipuzkoa | 29 | 19 | 2012–2026 | 7 % | rock (16), alternative (6), punk (5), 70s (3), free jazz (3) | free jazz ×11.1, post-hardcore ×3.7, post-punk ×2.5, rock ×2.1 |
-| Laudio | Araba | 22 | 13 | 2001–2026 | 18 % | rock (8), post-rock (5), acoustic (4), alternative rock;  laudio (4), cantautor (4) | folk pop ×49.6, cantautor ×27.8, post-rock ×11.2, post-hardcore ×6.5 |
-| Tutera | Nafarroa | 22 | 14 | 2010–2023 | 0 % | rock (14), hard rock (8), alternative (7), rock and roll (5), surf rock (4) | surf rock ×47.9, garage rock ×28.9, hard rock ×17.2, rock and roll ×14.5 |
+| Laudio | Araba | 22 | 13 | 2001–2026 | 18 % | rock (8), post-rock (5), acoustic (4), alternative rock; laudio (4), cantautor (4) | folk pop ×49.6, cantautor ×27.8, post-rock ×11.2, post-hardcore ×6.5 |
+| Tutera | Nafarroa | 22 | 14 | 2010–2023 | 0 % | rock (14), hard rock (8), alternative (7), rock and roll (5), surf rock (4) | surf rock ×47.9, garage rock ×28.9, hard rock ×17.1, rock and roll ×14.5 |
 | Zumaia | Gipuzkoa | 22 | 9 | 2014–2026 | 0 % | rock (12), experimental (8), rock & roll (6), blues (5), blues rock (5) | blues rock ×40.4, rock & roll ×14.6, blues ×13.4, folk ×4.2 |
 | Azpeitia | Gipuzkoa | 18 | 11 | 2006–2026 | 17 % | punk (6), rock (6), street punk (4), alternative (3), hardcore punk (3) | street punk ×41.4, hardcore punk ×4.7, punk ×1.9, alternative ×1.3 |
-| Lekeitio | Bizkaia | 17 | 7 | 2010–2026 | 47 % | cloud rap (6), hip hop (6), hip-hop/rap (6), rap (6), trap (6) | trap ×38.5, rap ×11.9, hip hop ×10.7, hip-hop/rap ×9.2 |
+| Lekeitio | Bizkaia | 17 | 7 | 2010–2026 | 47 % | cloud rap (6), hip hop (6), hip-hop/rap (6), rap (6), trap (6) | trap ×38.0, rap ×11.9, hip hop ×10.7, hip-hop/rap ×9.2 |
 | Bergara | Gipuzkoa | 16 | 10 | 2011–2024 | 25 % | punk (8), hardcore (7), punk rock (7), rock (5), euskera (4) | skate punk ×84.2, euskera ×34.7, metalcore ×13.1, post-hardcore ×9.0 |
 | Ermua | Bizkaia | 16 | 9 | 2006–2025 | 0 % | rock (7), metal (4), punk (4), alternative (3), diy (3) | diy ×17.7, metal ×1.8, rock ×1.7, alternative ×1.5 |
 | Mungia | Bizkaia | 16 | 8 | 1996–2026 | 0 % | alternative (5), melodic hardcore (5), punk (5), skatepunk (5), pop (4) | skatepunk ×159.1, melodic hardcore ×48.7, pop ×2.5, alternative ×2.5 |
@@ -113,7 +113,7 @@ Tags sobrerrepresentados: `lift = (releases del municipio con el tag / releases 
 | Hendaia | Iparralde | 13 | 4 | 2005–2026 | 0 % | rock (10), rock compilation (10), alternative (2), antzerkia (1), electronic (1) | rock compilation ×587.5, rock ×3.0 |
 | Kanbo | Iparralde | 13 | 13 | 2019–2024 | 100 % | belarri (13), euskal musika (13), musika (13), world (13), contemporary (2) | belarri ×587.5, musika ×381.9, euskal musika ×73.4, world ×37.2 |
 | Amurrio | Araba | 12 | 9 | 2008–2026 | 33 % | metal (5), alternative (4), crossover (4), groove metal (4), hardcore (4) | crossover ×79.5, groove metal ×74.9, hardcore ×3.9, metal ×3.0 |
-| Berriz | Bizkaia | 11 | 4 | 2010–2024 | 0 % | ambient (5), electronic (5), experimental (5), hardcore (5), idm (5) | idm ×23.5, industrial ×19.2, noise ×11.0, ambient ×6.2 |
+| Berriz | Bizkaia | 11 | 4 | 2010–2024 | 0 % | ambient (5), electronic (5), experimental (5), hardcore (5), idm (5) | idm ×23.5, industrial ×19.2, noise ×11.0, ambient ×6.1 |
 | Mendaro | Gipuzkoa | 11 | 2 | 2003–2023 | 0 % | electronica (10), indie (10), punk (10), rock (10), munlet (7) | electronica ×31.7, indie ×27.6, post-punk ×11.1, punk ×5.1 |
 | Sopela | Bizkaia | 11 | 3 | 2014–2021 | 9 % | doom (10), hardcore (10), metal (9), sludge (9), black metal (5) | sludge ×73.5, doom ×59.3, stoner ×42.9, black metal ×12.9 |
 | Basauri | Bizkaia | 10 | 5 | 2009–2025 | 0 % | punk (7), hardcore punk (4), punk rock (3), rock (3), skate punk (3) | skatepunk ×152.7, skate punk ×134.8, hardcore punk ×11.4, punk rock ×4.6 |
@@ -121,16 +121,16 @@ Tags sobrerrepresentados: `lift = (releases del municipio con el tag / releases 
 | Zumarraga | Gipuzkoa | 9 | 3 | 2004–2023 | 0 % | punk (5), punk rock (5), rock (5), rock'n'speed (5), death metal (3) | melodic death metal ×45.5, death metal ×9.1, punk rock ×8.5, punk ×3.1 |
 | Arrigorriaga | Bizkaia | 8 | 1 | 2020–2025 | 0 % | basque music (8), death metal (8), heavy metal (8), metal (8), thrash metal (8) | thrash metal ×76.4, heavy metal ×74.9, basque music ×49.9, death metal ×27.3 |
 | Bera | Nafarroa | 8 | 4 | 2013–2022 | 0 % | alternative (6), alternative rock (6), rock (2), 90s rock (1), angry (1) | alternative rock ×23.4, alternative ×6.0 |
-| Legazpi | Gipuzkoa | 8 | 3 | 2010–2024 | 0 % | bloody rock (6), hard rock (6), high energy rock'n'roll (6), punk rock (6), rock (6) | hard rock ×35.6, punk rock ×11.5, rock ×2.9 |
-| Urretxu | Gipuzkoa | 8 | 4 | 2014–2023 | 0 % | rock (6), hard rock (5), blues rock (4), country (4), rock and roll (4) | blues rock ×88.8, country ×49.6, rock and roll ×31.8, hard rock ×29.6 |
+| Legazpi | Gipuzkoa | 8 | 3 | 2010–2024 | 0 % | bloody rock (6), hard rock (6), high energy rock'n'roll (6), punk rock (6), rock (6) | hard rock ×35.4, punk rock ×11.5, rock ×2.9 |
+| Urretxu | Gipuzkoa | 8 | 4 | 2014–2023 | 0 % | rock (6), hard rock (5), blues rock (4), country (4), rock and roll (4) | blues rock ×88.8, country ×49.6, rock and roll ×31.8, hard rock ×29.5 |
 | Hazparne | Iparralde | 7 | 3 | 2012–2025 | 0 % | folk (6), alternative (5), grunge (5), indie (5), basque music (2) | grunge ×54.0, indie ×21.6, folk ×15.8, alternative ×5.7 |
-| Galdakao | Bizkaia | 6 | 5 | 2015–2025 | 0 % | punk (4), punk rock (3), melodic hardcore (2), metal (2), post-hardcore (2) | punk rock ×7.7, punk ×3.8 |
-| Ispaster | Bizkaia | 6 | 1 | 2012–2017 | 0 % | alternative (6), beruna (6), crust (6), doom (6), sludge (6) | sludge ×89.8, doom ×65.3, crust ×57.9, alternative ×8.0 |
+| Galdakao | Bizkaia | 6 | 5 | 2015–2025 | 0 % | punk (4), punk rock (3), melodic hardcore (2), metal (2), post-hardcore (2) | punk rock ×7.6, punk ×3.8 |
+| Ispaster | Bizkaia | 6 | 1 | 2012–2017 | 0 % | alternative (6), beruna (6), crust (6), doom (6), sludge (6) | sludge ×89.8, doom ×65.3, crust ×57.0, alternative ×8.0 |
 | Lasarte-Oria | Gipuzkoa | 6 | 5 | 2010–2024 | 0 % | alternative (2), black metal (2), death metal (2), euskal musika (2), metal (2) |  |
 | Sestao | Bizkaia | 6 | 6 | 2014–2024 | 67 % | electro glam (4), electronic (4), techno house (4), techno punk (4), batucada (1) | electronic ×3.5 |
 | Getaria | Gipuzkoa | 5 | 3 | 2021–2026 | 0 % | getaria (5), punk (5), hardcore (3), punk rock (3), hardcore punk (2) | getaria ×763.7, punk rock ×9.2, hardcore ×7.1, punk ×5.6 |
 | Lekunberri | Nafarroa | 5 | 2 | 2014–2017 | 0 % | lekunberri (5), indie (4), metal (4), punk (4), punk rock (4) | indie ×24.2, punk rock ×12.2, metal ×5.8, punk ×4.5 |
-| Orio | Gipuzkoa | 5 | 2 | 2011–2021 | 0 % | rock (5), ambient (4), experimental (4), instrumental (4), math-rock (4) | instrumental ×42.1, post-rock ×39.4, ambient ×10.8, experimental ×6.8 |
+| Orio | Gipuzkoa | 5 | 2 | 2011–2021 | 0 % | rock (5), ambient (4), experimental (4), instrumental (4), math-rock (4) | instrumental ×42.1, post-rock ×39.4, ambient ×10.7, experimental ×6.8 |
 | Urnieta | Gipuzkoa | 5 | 1 | 2007–2014 | 0 % | post-hardcore (5), punk rock (5), rock (5), pop (2), alternative metal (1) | post-hardcore ×36.0, punk rock ×15.3, rock ×3.8 |
 | Villabona-Amasa | Gipuzkoa | 5 | 2 | 2019–2023 | 0 % | rock (5), alternative rock (3), ambient rock (3), basque music (3), grunge (3) | melodic rock ×269.5, ambient rock ×218.2, grunge ×45.4, basque music ×29.9 |
 | Abadiño | Bizkaia | 4 | 1 | 2010–2024 | 0 % | black metal (4), dark power metal (4), death metal (4), metal (4), power metal (4) | power metal ×201.0, black metal ×28.4, death metal ×27.3, metal ×7.2 |
@@ -190,7 +190,7 @@ Tags sobrerrepresentados: `lift = (releases del municipio con el tag / releases 
 - live recording: ×26.5 (98 releases)
 - deep tech: ×24.4 (25 releases)
 - tropical: ×24.1 (45 releases)
-- live: ×22.5 (98 releases)
+- live: ×22.3 (98 releases)
 - crust punk: ×22.1 (98 releases)
 - rub a dub: ×18.7 (13 releases)
 - raggamuffin: ×17.7 (13 releases)
