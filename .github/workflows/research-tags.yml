@@ -29,7 +29,7 @@ jobs:
     timeout-minutes: 25
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Investigación (≤200 requests, 1 req/2s)
         run: python3 scripts/research_tags.py --tags "${{ inputs.tags }}"
@@ -37,7 +37,7 @@ jobs:
       # if: always() para conservar el resultado parcial si algo falla.
       - name: Subir artifact con el resultado
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: tag-candidates
           path: probe_out/

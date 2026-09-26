@@ -31,7 +31,7 @@ jobs:
     timeout-minutes: 150
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       # Si ya hay resultados en scrape-covers-test se usan como semilla:
       # el script salta los items "ok" y las pasadas son acumulativas.
@@ -48,7 +48,7 @@ jobs:
       # cancele o agote el timeout a mitad de pasada.
       - name: Subir artifact con el resultado
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: covers-json
           path: data/covers.json
