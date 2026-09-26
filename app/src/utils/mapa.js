@@ -10,6 +10,7 @@
 // reconstruye dónde vivía nadie ese año.
 
 import { filtra } from './busqueda.js'
+import { nodosDe } from './estilos.js'
 
 // Procedencias activables, una por código. El defecto es el «escenario D»
 // de data/locations/reports/multiartist-audit.md: entra todo menos lo que
@@ -43,8 +44,10 @@ const normUbic = (s) =>
     .join('')
 
 // ── URL ────────────────────────────────────────────────────────────────
-// #/mapa[/<lugar>]?q&genero&tag&artista&desde&hasta&territorio&ubic
+// #/mapa[/<lugar>]?q&genero&estilo&tag&artista&desde&hasta&territorio&ubic
 // Se aceptan también from/to (alias en inglés) al leer; se escribe desde/hasta.
+// `estilo` es un nodo del mapa de fusión de tags (docs/tag-merge-map.md);
+// `tag` (tag original exacto) se sigue leyendo por las URL antiguas.
 
 const anio = (v) => {
   const n = Number(v)
@@ -58,6 +61,7 @@ export function leeFiltrosMapa(route) {
     q: p.get('q') ?? '',
     genero: p.get('genero'),
     tag: p.get('tag'),
+    estilo: p.get('estilo'),
     artista: p.get('artista'),
     desde: anio(p.get('desde') ?? p.get('from')),
     hasta: anio(p.get('hasta') ?? p.get('to')),
@@ -66,11 +70,12 @@ export function leeFiltrosMapa(route) {
   }
 }
 
-export function hashMapa({ lugar, q, genero, tag, artista, desde, hasta, territorio, ubic } = {}) {
+export function hashMapa({ lugar, q, genero, tag, estilo, artista, desde, hasta, territorio, ubic } = {}) {
   const params = new URLSearchParams()
   if (q && q.trim()) params.set('q', q.trim())
   if (genero) params.set('genero', genero)
   if (tag) params.set('tag', tag)
+  if (estilo) params.set('estilo', estilo)
   if (artista) params.set('artista', artista)
   if (desde) params.set('desde', String(desde))
   if (hasta) params.set('hasta', String(hasta))
@@ -237,10 +242,12 @@ export function lift(nLugar, totalLugar, nGlobal, totalGlobal) {
   return nLugar / totalLugar / (nGlobal / totalGlobal)
 }
 
-function cuentaTags(rows, excluir) {
+// Con nodoDeTag (mapa de fusión cargado) se cuentan estilos, no tags crudos:
+// «post-punk» y «postpunk» suman al mismo nodo y cada disco cuenta una vez.
+function cuentaTags(rows, excluir, nodoDeTag) {
   const c = new Map()
   for (const a of rows) {
-    for (const t of new Set(a.tags)) {
+    for (const t of nodoDeTag ? nodosDe(a, nodoDeTag) : new Set(a.tags)) {
       if (excluir?.has(t)) continue
       c.set(t, (c.get(t) ?? 0) + 1)
     }
@@ -248,16 +255,17 @@ function cuentaTags(rows, excluir) {
   return c
 }
 
-export function tagsPrincipales(rows, { limite = 8, excluir } = {}) {
-  return [...cuentaTags(rows, excluir).entries()]
+export function tagsPrincipales(rows, { limite = 8, excluir, nodoDeTag } = {}) {
+  return [...cuentaTags(rows, excluir, nodoDeTag).entries()]
     .sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0]))
     .slice(0, limite)
 }
 
-// tagIndex: Map tag → releases del archivo (getIndices).
-export function sobrerrepresentados(rows, tagIndex, totalGlobal, { limite = 8, excluir, minLocal = MIN_LOCAL, minGlobal = MIN_GLOBAL } = {}) {
+// tagIndex: Map tag → releases del archivo (getIndices), o nodo → releases
+// (useEstilos.nodoIndex) cuando se pasa nodoDeTag.
+export function sobrerrepresentados(rows, tagIndex, totalGlobal, { limite = 8, excluir, nodoDeTag, minLocal = MIN_LOCAL, minGlobal = MIN_GLOBAL } = {}) {
   const out = []
-  for (const [t, n] of cuentaTags(rows, excluir)) {
+  for (const [t, n] of cuentaTags(rows, excluir, nodoDeTag)) {
     const nGlobal = tagIndex.get(t)?.length ?? 0
     if (n < minLocal || nGlobal < minGlobal) continue
     out.push([t, n, lift(n, rows.length, nGlobal, totalGlobal)])
@@ -317,8 +325,8 @@ export function resumenLugar(rows, geo) {
 
 // Aplica los filtros compartidos + agrega. Punto único que usan la página
 // y los tests.
-export function consultaMapa(archive, geo, filtros) {
-  const rows = filtra(archive, filtros)
+export function consultaMapa(archive, geo, filtros, estilos = null) {
+  const rows = filtra(archive, filtros, estilos)
   return { rows, ...agrega(rows, geo, filtros) }
 }
 
@@ -328,16 +336,17 @@ export function consultaMapa(archive, geo, filtros) {
 const cacheConsultas = new WeakMap()
 const MAX_CONSULTAS = 40
 
-export function consultaCacheada(archive, geo, filtros) {
+export function consultaCacheada(archive, geo, filtros, estilos = null) {
   let m = cacheConsultas.get(archive)
   if (!m) {
     m = new Map()
     cacheConsultas.set(archive, m)
   }
-  const k = JSON.stringify(filtros)
+  // la misma consulta con y sin mapa de estilos no es la misma consulta
+  const k = (estilos ? 'E' : 'T') + JSON.stringify(filtros)
   let r = m.get(k)
   if (r) return r
-  r = consultaMapa(archive, geo, filtros)
+  r = consultaMapa(archive, geo, filtros, estilos)
   m.set(k, r)
   if (m.size > MAX_CONSULTAS) m.delete(m.keys().next().value)
   return r

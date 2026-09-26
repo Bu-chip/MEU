@@ -91,7 +91,8 @@ export function Ficha({ route, archive }) {
   }
 
   const poblacion = album.url ? (album.album_id ? 'ok' : 'borrado') : 'sinurl'
-  const sims = similares(archive.albums, album)
+  // Con el mapa cargado, «cerca de este» compara estilos; antes, tags crudos.
+  const sims = similares(archive.albums, album, 8, est?.nodoDeTag)
 
   const otroAzar = () => {
     let otro
@@ -165,7 +166,7 @@ export function Ficha({ route, archive }) {
 
       <div className="similares">
         <h2>
-          CERCA DE ESTE <span className="c">por tags compartidos</span>
+          CERCA DE ESTE <span className="c">por {est ? 'estilos' : 'tags'} compartidos</span>
         </h2>
         {sims.length === 0 && (
           <p className="solo">nada cerca: este disco está solo en su esquina del archivo</p>
@@ -177,7 +178,7 @@ export function Ficha({ route, archive }) {
             <span className="ti">{otro.title}</span>
             <span className="ge">{otro.genre || '—'}</span>
             <span className="ov">
-              {ov} {ov === 1 ? 'tag' : 'tags'}
+              {ov} {est ? (ov === 1 ? 'estilo' : 'estilos') : ov === 1 ? 'tag' : 'tags'}
             </span>
           </div>
         ))}
