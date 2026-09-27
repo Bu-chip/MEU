@@ -1,0 +1,42 @@
+name: Activación semanal
+
+# Supabase (plan gratuito) pausa el proyecto tras 7 días sin actividad,
+# y con él las cuentas del MEU (ENTRAR / COLECCIÓN). Este workflow hace
+# una consulta mínima a la base dos veces por semana para que cuente como
+# actividad. Usa la clave anon (pública por diseño; RLS manda en el
+# servidor), la misma que lleva la web. Sin checkout: no toca el repo.
+
+on:
+  schedule:
+    - cron: "23 6 * * 1,4"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  latido:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+    steps:
+      - name: Consulta mínima a Supabase
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_KEY" ]; then
+            echo "::error::Faltan los secretos VITE_SUPABASE_URL / VITE_SUPABASE_ANON_KEY"
+            exit 1
+          fi
+          # Una lectura sobre la tabla de la colección (RLS puede devolver
+          # [] sin sesión: da igual, la consulta llega a la base). El
+          # cuerpo no se imprime.
+          CODE=$(curl -sS -o /dev/null -w '%{http_code}' \
+            --max-time 30 \
+            -H "apikey: $SUPABASE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_KEY" \
+            "$SUPABASE_URL/rest/v1/saved_albums?select=album_id&limit=1")
+          echo "respuesta: HTTP $CODE"
+          case "$CODE" in
+            2*) echo "proyecto activo" ;;
+            *) echo "::error::Supabase respondió $CODE (¿proyecto pausado? Reactivar en supabase.com → panel del proyecto)"; exit 1 ;;
+          esac
