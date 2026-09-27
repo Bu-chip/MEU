@@ -1,127 +1,130 @@
 {
   "checked_empty": 156,
   "conflicts": {
-    "same_account": 5,
-    "tag": 30,
+    "same_account": 6,
+    "tag": 31,
     "tag_hints_multiple": 3
   },
   "decades": {
+    "1930s": {
+      "located": 1
+    },
     "1980s": {
       "located": 7,
       "not_located": 1
     },
     "1990s": {
-      "located": 49,
+      "located": 63,
       "not_located": 16
     },
     "2000s": {
-      "located": 255,
-      "not_located": 74
+      "located": 296,
+      "not_located": 75
     },
     "2010s": {
-      "located": 2938,
+      "located": 3172,
       "not_located": 465
     },
     "2020s": {
-      "located": 3319,
-      "not_located": 490
+      "located": 3436,
+      "not_located": 491
     },
     "s/f": {
       "located": 19,
       "not_located": 4
     }
   },
-  "located_default": 6587,
-  "located_via_label_account": 2039,
-  "municipalities": 104,
-  "not_located": 1050,
+  "located_default": 6994,
+  "located_via_label_account": 2033,
+  "municipalities": 105,
+  "not_located": 1052,
   "places": [
     {
-      "artists": 1052,
+      "artists": 1060,
       "by_type": {
-        "artist_inferred": 30,
-        "direct": 970,
-        "same_account": 1469
+        "artist_inferred": 36,
+        "direct": 1106,
+        "same_account": 1467
       },
       "id": "bilbo",
-      "label_account_share": 0.318,
+      "label_account_share": 0.3,
       "name": "Bilbo",
       "overrepresented": [
         [
-          "sello",
-          19,
-          3.09
-        ],
-        [
-          "death metal melódico",
-          11,
-          3.09
-        ],
-        [
-          "xtreem music",
-          11,
-          3.09
-        ],
-        [
-          "eurotrance",
-          10,
-          3.09
-        ],
-        [
-          "ukgrime",
-          10,
-          3.09
-        ],
-        [
-          "vocal trance",
-          10,
-          3.09
-        ],
-        [
           "trance electro techno",
-          90,
-          3.09
+          96,
+          3.08
         ],
         [
-          "bumping",
-          34,
-          3.09
+          "non-conventional",
+          29,
+          3.08
+        ],
+        [
+          "poems",
+          29,
+          3.08
+        ],
+        [
+          "sound textures",
+          29,
+          3.08
+        ],
+        [
+          "conscious music",
+          15,
+          3.08
+        ],
+        [
+          "jah music",
+          15,
+          3.08
+        ],
+        [
+          "black doom metal",
+          14,
+          3.08
+        ],
+        [
+          "bass lee",
+          13,
+          3.08
         ]
       ],
-      "releases": 2469,
+      "releases": 2609,
       "territory": "Bizkaia",
       "top_tags": [
         [
           "electronic",
-          587
+          603
         ],
         [
           "rock",
-          509
+          552
         ],
         [
           "experimental",
-          398
+          404
         ],
         [
           "metal",
-          375
+          385
         ],
         [
           "techno",
-          353
+          361
         ],
         [
           "punk",
-          335
-        ],
-        [
-          "ambient",
-          286
+          355
         ],
         [
           "alternative",
-          275
+          295
+        ],
+        [
+          "ambient",
+          288
         ]
       ],
       "years": [
@@ -130,179 +133,179 @@
       ]
     },
     {
-      "artists": 435,
+      "artists": 437,
       "by_type": {
         "artist_inferred": 14,
-        "direct": 987,
+        "direct": 1032,
         "same_account": 4
       },
       "id": "donostia",
-      "label_account_share": 0.366,
+      "label_account_share": 0.35,
       "name": "Donostia",
       "overrepresented": [
         [
-          "art-blues",
-          11,
-          7.6
+          "preqwal",
+          20,
+          7.66
         ],
         [
-          "deathdream",
-          11,
-          7.6
-        ],
-        [
-          "dreampunk",
-          11,
-          7.6
-        ],
-        [
-          "folk psicodelia",
-          11,
-          7.6
-        ],
-        [
-          "medicalcore",
-          11,
-          7.6
-        ],
-        [
-          "postvore",
-          11,
-          7.6
-        ],
-        [
-          "massa confusa",
-          33,
-          7.6
+          "tony morton",
+          18,
+          7.66
         ],
         [
           "le mans",
           12,
-          7.6
+          7.66
+        ],
+        [
+          "matt o'brien",
+          12,
+          7.66
+        ],
+        [
+          "single",
+          12,
+          7.66
+        ],
+        [
+          "urban pop",
+          10,
+          7.66
+        ],
+        [
+          "massa confusa",
+          35,
+          7.66
+        ],
+        [
+          "ally morton",
+          31,
+          7.66
         ]
       ],
-      "releases": 1005,
+      "releases": 1050,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
           "rock",
-          312
+          330
         ],
         [
           "electronic",
-          286
+          294
         ],
         [
           "experimental",
-          184
+          197
         ],
         [
           "punk",
-          161
+          170
         ],
         [
           "pop",
-          148
+          153
         ],
         [
           "alternative",
-          102
+          108
         ],
         [
           "ambient",
-          92
+          94
         ],
         [
-          "reggae",
-          89
+          "folk",
+          94
         ]
       ],
       "years": [
-        1985,
+        1937,
         2026
       ]
     },
     {
-      "artists": 427,
+      "artists": 429,
       "by_type": {
         "artist_inferred": 18,
-        "direct": 907
+        "direct": 961
       },
       "id": "irunea",
-      "label_account_share": 0.342,
+      "label_account_share": 0.323,
       "name": "Iruñea",
       "overrepresented": [
         [
-          "vgm",
-          14,
-          8.26
-        ],
-        [
           "primavera sound",
-          13,
-          8.26
+          14,
+          8.22
         ],
         [
           "sonido muchacho",
-          13,
-          8.26
+          14,
+          8.22
+        ],
+        [
+          "vgm",
+          14,
+          8.22
         ],
         [
           "reverbcore",
-          11,
-          8.26
+          13,
+          8.22
         ],
         [
           "techno and variations",
           24,
-          7.93
+          7.89
         ],
         [
           "spanish pop",
-          13,
-          7.67
+          15,
+          7.7
         ],
         [
           "kokoshca",
           12,
-          7.62
+          7.59
         ],
         [
           "symphonic metal",
           12,
-          6.19
+          6.16
         ]
       ],
-      "releases": 925,
+      "releases": 979,
       "territory": "Nafarroa",
       "top_tags": [
         [
           "rock",
-          258
+          283
         ],
         [
           "electronic",
-          212
+          213
         ],
         [
           "techno",
           166
         ],
         [
-          "metal",
-          136
+          "pop",
+          155
         ],
         [
-          "pop",
-          136
+          "metal",
+          142
+        ],
+        [
+          "alternative",
+          139
         ],
         [
           "house",
           135
-        ],
-        [
-          "alternative",
-          122
         ],
         [
           "tech house",
@@ -310,167 +313,167 @@
         ]
       ],
       "years": [
-        1998,
+        1993,
         2026
       ]
     },
     {
-      "artists": 246,
+      "artists": 247,
       "by_type": {
-        "artist_inferred": 7,
-        "direct": 550
+        "artist_inferred": 10,
+        "direct": 579
       },
       "id": "gasteiz",
-      "label_account_share": 0.23,
+      "label_account_share": 0.217,
       "name": "Gasteiz",
       "overrepresented": [
         [
-          "freakbeat",
-          10,
-          13.71
-        ],
-        [
-          "senoid recordings",
-          10,
-          13.71
-        ],
-        [
           "grove metal",
           13,
-          13.71
+          13.66
+        ],
+        [
+          "freakbeat",
+          12,
+          13.66
         ],
         [
           "minimal techno industrial",
           15,
-          13.71
+          13.66
+        ],
+        [
+          "senoid recordings",
+          10,
+          13.66
         ],
         [
           "slam",
-          55,
-          12.78
+          58,
+          12.38
         ],
         [
           "industrial techno",
           16,
-          9.14
+          9.11
         ],
         [
           "united states",
           8,
-          9.14
+          9.11
         ],
         [
           "bassline",
           6,
-          8.23
+          8.2
         ]
       ],
-      "releases": 557,
+      "releases": 589,
       "territory": "Araba",
       "top_tags": [
         [
           "rock",
-          140
+          148
         ],
         [
           "metal",
-          118
+          124
         ],
         [
           "electronic",
-          96
+          102
         ],
         [
           "punk",
-          84
+          94
         ],
         [
           "black metal",
-          76
+          79
         ],
         [
           "alternative",
-          60
+          69
         ],
         [
           "grindcore",
-          59
+          62
         ],
         [
-          "deathcore",
-          55
+          "noise",
+          59
         ]
       ],
       "years": [
-        1998,
+        1997,
         2026
       ]
     },
     {
       "artists": 163,
       "by_type": {
-        "direct": 279,
+        "direct": 296,
         "same_account": 1
       },
       "id": "zarautz",
-      "label_account_share": 0.589,
+      "label_account_share": 0.556,
       "name": "Zarautz",
       "overrepresented": [
         [
           "live recording",
           98,
-          26.46
+          26.29
         ],
         [
           "deep tech",
           25,
-          24.35
+          24.19
         ],
         [
           "tropical",
           45,
-          24.07
-        ],
-        [
-          "live",
-          98,
-          22.27
+          23.9
         ],
         [
           "crust punk",
           98,
-          22.09
+          21.94
+        ],
+        [
+          "live",
+          98,
+          21.76
         ],
         [
           "rub a dub",
           13,
-          18.66
+          18.54
         ],
         [
           "raggamuffin",
           13,
-          17.73
+          17.61
         ],
         [
           "r&b/soul",
           45,
-          17.05
+          16.93
         ]
       ],
-      "releases": 280,
+      "releases": 297,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
           "punk",
-          115
+          123
         ],
         [
           "hardcore",
-          106
+          108
         ],
         [
           "hardcore punk",
-          101
+          107
         ],
         [
           "crust punk",
@@ -501,54 +504,54 @@
     {
       "artists": 27,
       "by_type": {
-        "direct": 113
+        "direct": 114
       },
       "id": "irun",
-      "label_account_share": 0.54,
+      "label_account_share": 0.535,
       "name": "Irun",
       "overrepresented": [
         [
+          "petruska records",
+          28,
+          70.58
+        ],
+        [
           "77 punk",
           11,
-          67.58
+          70.58
         ],
         [
           "82 punk",
           11,
-          67.58
-        ],
-        [
-          "petruska records",
-          28,
-          67.58
+          70.58
         ],
         [
           "oi",
           7,
-          23.65
+          24.7
         ],
         [
           "sludge metal",
           4,
-          15.9
+          16.61
         ],
         [
           "post-punk",
           59,
-          12.74
+          12.58
         ],
         [
           "punk hardcore",
           6,
-          8.45
+          8.64
         ],
         [
           "punk rock",
           62,
-          8.38
+          8.19
         ]
       ],
-      "releases": 113,
+      "releases": 114,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
@@ -572,11 +575,11 @@
           28
         ],
         [
-          "hip hop",
-          12
+          "reggae",
+          13
         ],
         [
-          "reggae",
+          "hip hop",
           12
         ],
         [
@@ -593,71 +596,71 @@
       "artists": 36,
       "by_type": {
         "artist_inferred": 1,
-        "direct": 91,
+        "direct": 94,
         "same_account": 1
       },
       "id": "getxo",
-      "label_account_share": 0.086,
+      "label_account_share": 0.083,
       "name": "Getxo",
       "overrepresented": [
         [
           "hardrock",
           10,
-          74.65
+          69.84
         ],
         [
           "heavymetal",
           10,
-          68.43
+          69.84
         ],
         [
           "heavy rock",
           10,
-          34.22
+          33.53
         ],
         [
           "shoegaze",
-          9,
-          15.08
+          11,
+          17.73
         ],
         [
           "euskal",
           3,
-          8.49
+          8.38
         ],
         [
           "indie rock",
           20,
-          7.4
+          6.81
         ],
         [
           "indie pop",
-          9,
-          5.73
+          11,
+          6.36
         ],
         [
           "folk rock",
           6,
-          5.24
+          5.18
         ]
       ],
-      "releases": 93,
+      "releases": 96,
       "territory": "Bizkaia",
       "top_tags": [
         [
           "rock",
-          46
+          49
         ],
         [
           "indie rock",
           20
         ],
         [
-          "alternative",
-          16
+          "pop",
+          18
         ],
         [
-          "pop",
+          "alternative",
           16
         ],
         [
@@ -665,16 +668,16 @@
           14
         ],
         [
-          "hardrock",
-          10
+          "indie",
+          12
         ],
         [
-          "heavy rock",
-          10
+          "noise",
+          12
         ],
         [
-          "heavymetal",
-          10
+          "indie pop",
+          11
         ]
       ],
       "years": [
@@ -685,60 +688,60 @@
     {
       "artists": 65,
       "by_type": {
-        "direct": 73,
+        "direct": 74,
         "same_account": 2
       },
       "id": "santurtzi",
-      "label_account_share": 0.827,
+      "label_account_share": 0.816,
       "name": "Santurtzi",
       "overrepresented": [
         [
           "oz rock",
           20,
-          101.83
+          105.87
         ],
         [
           "swamp rock",
           20,
-          101.83
+          105.87
         ],
         [
           "high energy rock",
           20,
-          88.54
+          88.22
         ],
         [
           "blackened crust",
           4,
-          40.73
+          38.5
         ],
         [
           "vegan",
           4,
-          37.03
+          35.29
         ],
         [
           "crust",
           40,
-          30.4
-        ],
-        [
-          "death",
-          5,
-          28.29
+          30.69
         ],
         [
           "neocrust",
           3,
-          27.77
+          28.87
+        ],
+        [
+          "death",
+          5,
+          26.47
         ]
       ],
-      "releases": 75,
+      "releases": 76,
       "territory": "Bizkaia",
       "top_tags": [
         [
           "punk",
-          66
+          67
         ],
         [
           "metal",
@@ -775,9 +778,101 @@
       ]
     },
     {
+      "artists": 28,
+      "by_type": {
+        "direct": 65,
+        "same_account": 1
+      },
+      "id": "barakaldo",
+      "label_account_share": 0.0,
+      "name": "Barakaldo",
+      "overrepresented": [
+        [
+          "rock alternative",
+          5,
+          55.41
+        ],
+        [
+          "melodic metal",
+          5,
+          33.86
+        ],
+        [
+          "remix",
+          6,
+          33.25
+        ],
+        [
+          "retro",
+          6,
+          31.8
+        ],
+        [
+          "vaporwave",
+          6,
+          30.48
+        ],
+        [
+          "garage punk",
+          7,
+          21.33
+        ],
+        [
+          "rock'n'roll",
+          8,
+          17.73
+        ],
+        [
+          "power metal",
+          5,
+          14.18
+        ]
+      ],
+      "releases": 66,
+      "territory": "Bizkaia",
+      "top_tags": [
+        [
+          "rock",
+          36
+        ],
+        [
+          "punk",
+          25
+        ],
+        [
+          "pop",
+          10
+        ],
+        [
+          "punk rock",
+          10
+        ],
+        [
+          "rock'n'roll",
+          8
+        ],
+        [
+          "electronic",
+          7
+        ],
+        [
+          "garage",
+          7
+        ],
+        [
+          "garage punk",
+          7
+        ]
+      ],
+      "years": [
+        1991,
+        2026
+      ]
+    },
+    {
       "artists": 26,
       "by_type": {
-        "direct": 59
+        "direct": 62
       },
       "id": "hondarribia",
       "label_account_share": 0.0,
@@ -786,50 +881,50 @@
         [
           "stoner metal",
           4,
-          51.78
+          51.91
         ],
         [
           "sludge metal",
           4,
-          30.46
+          30.54
         ],
         [
           "acoustic rock",
-          3,
-          21.57
+          4,
+          25.95
+        ],
+        [
+          "underground",
+          7,
+          22.16
         ],
         [
           "cumbia",
           3,
-          21.57
-        ],
-        [
-          "underground",
-          6,
-          19.91
+          20.49
         ],
         [
           "shoegaze",
           4,
-          10.57
+          9.98
         ],
         [
           "trap",
           5,
-          9.12
+          9.14
         ],
         [
-          "stoner",
-          4,
-          6.39
+          "instrumental",
+          8,
+          6.97
         ]
       ],
-      "releases": 59,
+      "releases": 62,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
           "rock",
-          19
+          20
         ],
         [
           "pop",
@@ -837,27 +932,27 @@
         ],
         [
           "hip-hop/rap",
-          10
+          11
+        ],
+        [
+          "instrumental",
+          8
+        ],
+        [
+          "punk",
+          8
         ],
         [
           "dub",
           7
         ],
         [
-          "instrumental",
-          7
-        ],
-        [
-          "punk",
-          7
-        ],
-        [
           "folk",
-          6
+          7
         ],
         [
           "hip hop",
-          6
+          7
         ]
       ],
       "years": [
@@ -868,86 +963,86 @@
     {
       "artists": 19,
       "by_type": {
-        "direct": 58
+        "direct": 60
       },
       "id": "errenteria",
-      "label_account_share": 0.086,
+      "label_account_share": 0.083,
       "name": "Errenteria",
       "overrepresented": [
         [
           "digicore",
-          24,
-          131.67
+          25,
+          134.1
         ],
         [
           "internet music",
-          24,
-          131.67
+          25,
+          134.1
         ],
         [
           "internetcore",
-          24,
-          131.67
+          25,
+          134.1
         ],
         [
           "glitch pop",
-          24,
-          126.41
+          25,
+          128.94
         ],
         [
           "hyper pop",
-          24,
-          98.75
+          25,
+          101.59
         ],
         [
           "breakcore",
           7,
-          51.21
+          52.15
         ],
         [
           "goth",
           3,
-          39.5
+          40.23
         ],
         [
           "edm",
           3,
-          28.22
+          28.74
         ]
       ],
-      "releases": 58,
+      "releases": 60,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
           "pop",
-          29
+          30
         ],
         [
           "digicore",
-          24
+          25
         ],
         [
           "glitch pop",
-          24
+          25
         ],
         [
           "hyper pop",
-          24
+          25
         ],
         [
           "internet music",
-          24
+          25
         ],
         [
           "internetcore",
-          24
+          25
         ],
         [
           "rock",
           17
         ],
         [
-          "metal",
+          "experimental",
           10
         ]
       ],
@@ -957,162 +1052,70 @@
       ]
     },
     {
-      "artists": 28,
-      "by_type": {
-        "direct": 55,
-        "same_account": 1
-      },
-      "id": "barakaldo",
-      "label_account_share": 0.0,
-      "name": "Barakaldo",
-      "overrepresented": [
-        [
-          "melodic metal",
-          4,
-          34.09
-        ],
-        [
-          "garage punk",
-          7,
-          25.8
-        ],
-        [
-          "rock'n'roll",
-          8,
-          20.58
-        ],
-        [
-          "power metal",
-          4,
-          14.36
-        ],
-        [
-          "r&b",
-          3,
-          14.11
-        ],
-        [
-          "rhythm & blues",
-          3,
-          14.11
-        ],
-        [
-          "surf",
-          4,
-          12.99
-        ],
-        [
-          "garage",
-          7,
-          10.73
-        ]
-      ],
-      "releases": 56,
-      "territory": "Bizkaia",
-      "top_tags": [
-        [
-          "rock",
-          34
-        ],
-        [
-          "punk",
-          21
-        ],
-        [
-          "punk rock",
-          9
-        ],
-        [
-          "rock'n'roll",
-          8
-        ],
-        [
-          "garage",
-          7
-        ],
-        [
-          "garage punk",
-          7
-        ],
-        [
-          "metal",
-          6
-        ],
-        [
-          "pop",
-          6
-        ]
-      ],
-      "years": [
-        1991,
-        2025
-      ]
-    },
-    {
       "artists": 29,
       "by_type": {
         "artist_inferred": 1,
-        "direct": 48
+        "direct": 49
       },
       "id": "arrasate",
-      "label_account_share": 0.265,
+      "label_account_share": 0.26,
       "name": "Arrasate",
       "overrepresented": [
         [
           "metalpunk",
           4,
-          41.56
+          42.91
         ],
         [
           "surf",
           6,
-          22.27
+          22.45
         ],
         [
           "street punk",
           4,
-          15.21
+          14.63
         ],
         [
           "punk rock",
-          25,
-          7.79
+          26,
+          7.84
         ],
         [
           "crust punk",
           4,
-          5.15
+          5.32
         ],
         [
           "doom metal",
           3,
-          4.82
+          4.88
         ],
         [
           "crust",
           4,
-          4.65
+          4.66
         ],
         [
           "instrumental",
           4,
-          4.3
+          4.32
         ]
       ],
-      "releases": 49,
+      "releases": 50,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
           "punk rock",
-          25
+          26
         ],
         [
           "rock",
-          21
+          22
         ],
         [
           "punk",
-          16
+          17
         ],
         [
           "metal",
@@ -1141,6 +1144,98 @@
       ]
     },
     {
+      "artists": 23,
+      "by_type": {
+        "artist_inferred": 2,
+        "direct": 46
+      },
+      "id": "bermeo",
+      "label_account_share": 0.042,
+      "name": "Bermeo",
+      "overrepresented": [
+        [
+          "punk-rock",
+          6,
+          91.43
+        ],
+        [
+          "melodic rock",
+          6,
+          52.93
+        ],
+        [
+          "euskal rock",
+          4,
+          26.82
+        ],
+        [
+          "punk hardcore",
+          4,
+          13.68
+        ],
+        [
+          "euskera",
+          4,
+          11.76
+        ],
+        [
+          "d-beat",
+          3,
+          11.43
+        ],
+        [
+          "garage",
+          4,
+          6.91
+        ],
+        [
+          "hard rock",
+          7,
+          6.41
+        ]
+      ],
+      "releases": 48,
+      "territory": "Bizkaia",
+      "top_tags": [
+        [
+          "rock",
+          29
+        ],
+        [
+          "punk",
+          11
+        ],
+        [
+          "alternative",
+          7
+        ],
+        [
+          "hard rock",
+          7
+        ],
+        [
+          "hardcore",
+          7
+        ],
+        [
+          "melodic rock",
+          6
+        ],
+        [
+          "punk-rock",
+          6
+        ],
+        [
+          "hardcore punk",
+          5
+        ]
+      ],
+      "years": [
+        1994,
+        2026
+      ]
+    },
+    {
       "artists": 1,
       "by_type": {
         "direct": 48
@@ -1152,7 +1247,7 @@
         [
           "soundtrack",
           48,
-          42.19
+          44.21
         ]
       ],
       "releases": 48,
@@ -1197,167 +1292,75 @@
       ]
     },
     {
-      "artists": 22,
-      "by_type": {
-        "artist_inferred": 2,
-        "direct": 41
-      },
-      "id": "bermeo",
-      "label_account_share": 0.047,
-      "name": "Bermeo",
-      "overrepresented": [
-        [
-          "melodic rock",
-          5,
-          52.24
-        ],
-        [
-          "euskal rock",
-          4,
-          28.42
-        ],
-        [
-          "punk hardcore",
-          4,
-          14.8
-        ],
-        [
-          "d-beat",
-          3,
-          12.69
-        ],
-        [
-          "euskera",
-          3,
-          9.69
-        ],
-        [
-          "hard rock",
-          7,
-          7.67
-        ],
-        [
-          "rock and roll",
-          5,
-          7.4
-        ],
-        [
-          "garage",
-          3,
-          5.99
-        ]
-      ],
-      "releases": 43,
-      "territory": "Bizkaia",
-      "top_tags": [
-        [
-          "rock",
-          26
-        ],
-        [
-          "punk",
-          10
-        ],
-        [
-          "hard rock",
-          7
-        ],
-        [
-          "hardcore",
-          7
-        ],
-        [
-          "alternative",
-          5
-        ],
-        [
-          "melodic rock",
-          5
-        ],
-        [
-          "metal",
-          5
-        ],
-        [
-          "rock and roll",
-          5
-        ]
-      ],
-      "years": [
-        1994,
-        2025
-      ]
-    },
-    {
       "artists": 18,
       "by_type": {
         "artist_inferred": 2,
-        "direct": 39,
+        "direct": 43,
         "same_account": 2
       },
       "id": "gernika-lumo",
-      "label_account_share": 0.047,
+      "label_account_share": 0.043,
       "name": "Gernika-Lumo",
       "overrepresented": [
         [
-          "melodic metal",
-          5,
-          55.5
+          "extreme metal",
+          4,
+          57.06
         ],
         [
-          "extreme metal",
-          3,
-          53.28
+          "melodic metal",
+          5,
+          47.55
         ],
         [
           "acoustic guitar",
           4,
-          29.6
+          25.36
         ],
         [
           "afghanistan",
           3,
-          21.31
+          20.54
+        ],
+        [
+          "noise rock",
+          5,
+          19.91
         ],
         [
           "trip hop",
           4,
-          16.52
-        ],
-        [
-          "noise rock",
-          3,
-          13.0
+          15.56
         ],
         [
           "thrash metal",
           5,
-          8.88
+          8.31
         ],
         [
           "heavy metal",
           5,
-          8.71
+          7.85
         ]
       ],
-      "releases": 43,
+      "releases": 47,
       "territory": "Bizkaia",
       "top_tags": [
         [
-          "metal",
-          11
+          "punk",
+          13
         ],
         [
-          "punk",
-          11
+          "metal",
+          12
         ],
         [
           "rock",
-          11
+          12
         ],
         [
           "hardcore",
-          9
+          11
         ],
         [
           "alternative",
@@ -1365,11 +1368,11 @@
         ],
         [
           "pop",
-          7
+          8
         ],
         [
           "hardcore punk",
-          6
+          7
         ],
         [
           "folk",
@@ -1379,6 +1382,98 @@
       "years": [
         2003,
         2026
+      ]
+    },
+    {
+      "artists": 14,
+      "by_type": {
+        "artist_inferred": 2,
+        "direct": 39
+      },
+      "id": "eibar",
+      "label_account_share": 0.049,
+      "name": "Eibar",
+      "overrepresented": [
+        [
+          "comedy",
+          5,
+          61.33
+        ],
+        [
+          "soundscapes",
+          4,
+          60.38
+        ],
+        [
+          "ambient electronic",
+          10,
+          53.04
+        ],
+        [
+          "groove metal",
+          5,
+          28.03
+        ],
+        [
+          "bidehuts",
+          8,
+          23.09
+        ],
+        [
+          "blues rock",
+          3,
+          12.8
+        ],
+        [
+          "progressive",
+          4,
+          12.27
+        ],
+        [
+          "selfmanagement and free creation",
+          3,
+          11.32
+        ]
+      ],
+      "releases": 41,
+      "territory": "Gipuzkoa",
+      "top_tags": [
+        [
+          "rock",
+          16
+        ],
+        [
+          "electronic",
+          11
+        ],
+        [
+          "ambient electronic",
+          10
+        ],
+        [
+          "bidehuts",
+          8
+        ],
+        [
+          "metal",
+          7
+        ],
+        [
+          "droneambient",
+          6
+        ],
+        [
+          "experimental",
+          6
+        ],
+        [
+          "experimental electronic",
+          6
+        ]
+      ],
+      "years": [
+        2009,
+        2025
       ]
     },
     {
@@ -1393,42 +1488,42 @@
         [
           "beattape",
           15,
-          186.27
+          196.24
         ],
         [
           "world beats",
           15,
-          186.27
+          196.24
         ],
         [
           "kraut",
           3,
-          46.57
+          45.29
         ],
         [
           "soft rock",
           3,
-          42.98
+          45.29
         ],
         [
           "rap & hip-hop",
           3,
-          24.3
+          25.6
         ],
         [
           "hip hop",
           16,
-          11.83
+          12.08
         ],
         [
           "r&b/soul",
           4,
-          10.35
+          10.9
         ],
         [
-          "psychedelic",
-          3,
-          5.37
+          "funk",
+          4,
+          5.1
         ]
       ],
       "releases": 41,
@@ -1475,63 +1570,63 @@
     {
       "artists": 15,
       "by_type": {
-        "direct": 39
+        "direct": 40
       },
       "id": "ondarroa",
-      "label_account_share": 0.282,
+      "label_account_share": 0.275,
       "name": "Ondarroa",
       "overrepresented": [
         [
           "fastcore",
           4,
-          48.96
+          50.29
         ],
         [
           "powerviolence",
           4,
-          35.6
+          34.98
         ],
         [
           "euskal musika",
           9,
-          16.95
+          17.24
         ],
         [
           "screamo",
           5,
-          14.4
+          14.58
         ],
         [
           "pop rock",
-          14,
-          10.46
+          15,
+          10.93
         ],
         [
           "diy",
           3,
-          7.25
+          6.29
         ],
         [
           "doom metal",
           3,
-          6.06
+          6.1
         ],
         [
           "heavy metal",
           3,
-          5.76
+          5.54
         ]
       ],
-      "releases": 39,
+      "releases": 40,
       "territory": "Bizkaia",
       "top_tags": [
         [
           "rock",
-          24
+          25
         ],
         [
           "pop rock",
-          14
+          15
         ],
         [
           "alternative",
@@ -1564,94 +1659,93 @@
       ]
     },
     {
-      "artists": 13,
+      "artists": 16,
       "by_type": {
-        "artist_inferred": 3,
-        "direct": 34
+        "direct": 38
       },
-      "id": "eibar",
-      "label_account_share": 0.081,
-      "name": "Eibar",
+      "id": "tolosa",
+      "label_account_share": 0.0,
+      "name": "Tolosa",
       "overrepresented": [
         [
-          "soundscapes",
-          4,
-          63.51
+          "raggamuffin",
+          3,
+          31.76
         ],
         [
-          "comedy",
-          4,
-          55.04
+          "dancehall",
+          3,
+          11.76
         ],
         [
-          "ambient electronic",
-          9,
-          51.6
-        ],
-        [
-          "groove metal",
-          5,
-          30.35
-        ],
-        [
-          "bidehuts",
+          "crust",
           7,
-          21.56
+          10.74
         ],
         [
-          "blues rock",
+          "psychedelic",
+          5,
+          9.13
+        ],
+        [
+          "grindcore",
+          8,
+          7.56
+        ],
+        [
+          "euskara",
           3,
-          14.4
+          5.57
         ],
         [
-          "progressive",
+          "blues",
+          3,
+          4.64
+        ],
+        [
+          "alternative rock",
           4,
-          13.11
-        ],
-        [
-          "selfmanagement and free creation",
-          3,
-          11.91
+          3.13
         ]
       ],
-      "releases": 37,
+      "releases": 38,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
           "rock",
-          14
+          13
         ],
         [
-          "electronic",
-          10
+          "punk",
+          12
         ],
         [
-          "ambient electronic",
-          9
-        ],
-        [
-          "bidehuts",
-          7
+          "grindcore",
+          8
         ],
         [
           "metal",
+          8
+        ],
+        [
+          "crust",
           7
         ],
         [
-          "alternative",
+          "pop",
+          6
+        ],
+        [
+          "erotic",
           5
         ],
         [
-          "death metal",
-          5
-        ],
-        [
-          "droneambient",
+          "magick",
           5
         ]
       ],
       "years": [
-        2009,
+        1998,
         2025
       ]
     },
@@ -1667,42 +1761,42 @@
         [
           "oi",
           8,
-          87.28
+          91.95
         ],
         [
           "occitan",
           3,
-          65.46
+          68.97
         ],
         [
           "street punk",
           8,
-          42.58
+          41.8
         ],
         [
           "trap",
           8,
-          24.59
+          25.9
         ],
         [
           "rap",
           11,
-          10.57
+          10.76
         ],
         [
           "hip-hop/rap",
           11,
-          8.16
-        ],
-        [
-          "hip hop",
-          9,
-          7.79
+          8.35
         ],
         [
           "euskara",
           4,
-          7.66
+          8.07
+        ],
+        [
+          "hip hop",
+          9,
+          7.96
         ]
       ],
       "releases": 35,
@@ -1747,97 +1841,6 @@
       ]
     },
     {
-      "artists": 16,
-      "by_type": {
-        "direct": 34
-      },
-      "id": "tolosa",
-      "label_account_share": 0.0,
-      "name": "Tolosa",
-      "overrepresented": [
-        [
-          "raggamuffin",
-          3,
-          33.69
-        ],
-        [
-          "dancehall",
-          3,
-          12.48
-        ],
-        [
-          "crust",
-          7,
-          11.73
-        ],
-        [
-          "grindcore",
-          8,
-          8.21
-        ],
-        [
-          "euskara",
-          3,
-          5.91
-        ],
-        [
-          "blues",
-          3,
-          5.22
-        ],
-        [
-          "alternative rock",
-          4,
-          3.67
-        ],
-        [
-          "rap",
-          3,
-          2.97
-        ]
-      ],
-      "releases": 34,
-      "territory": "Gipuzkoa",
-      "top_tags": [
-        [
-          "rock",
-          9
-        ],
-        [
-          "grindcore",
-          8
-        ],
-        [
-          "metal",
-          8
-        ],
-        [
-          "punk",
-          8
-        ],
-        [
-          "crust",
-          7
-        ],
-        [
-          "pop",
-          6
-        ],
-        [
-          "alternative rock",
-          4
-        ],
-        [
-          "experimental",
-          4
-        ]
-      ],
-      "years": [
-        1998,
-        2025
-      ]
-    },
-    {
       "artists": 14,
       "by_type": {
         "direct": 33
@@ -1849,42 +1852,42 @@
         [
           "flamenco",
           7,
-          135.0
+          142.23
         ],
         [
           "fantasy",
           9,
-          104.14
+          109.72
         ],
         [
           "horror",
           9,
-          61.26
+          64.54
         ],
         [
           "euskaraz",
           3,
-          24.8
+          26.12
         ],
         [
           "soul",
           14,
-          21.04
+          21.47
         ],
         [
           "industrial",
           7,
-          8.95
+          9.18
         ],
         [
           "latin",
           3,
-          5.18
+          5.34
         ],
         [
           "pop",
           14,
-          4.3
+          4.2
         ]
       ],
       "releases": 33,
@@ -1941,42 +1944,42 @@
         [
           "oi! streetpunk",
           8,
-          190.93
+          201.15
         ],
         [
           "skinhead",
           8,
-          61.59
+          64.89
         ],
         [
           "oi!",
           10,
-          26.23
+          27.04
         ],
         [
           "instrumental",
           5,
-          8.23
+          8.44
         ],
         [
           "blues",
           4,
-          7.4
+          7.34
         ],
         [
           "rock and roll",
           3,
-          5.97
+          5.71
         ],
         [
           "reggae",
           6,
-          3.87
+          4.04
         ],
         [
           "post-hardcore",
           3,
-          3.38
+          3.41
         ]
       ],
       "releases": 32,
@@ -2023,49 +2026,54 @@
     {
       "artists": 19,
       "by_type": {
-        "direct": 29
+        "direct": 31
       },
       "id": "onati",
-      "label_account_share": 0.069,
+      "label_account_share": 0.065,
       "name": "Oñati",
       "overrepresented": [
         [
           "free jazz",
           3,
-          11.13
+          10.81
         ],
         [
           "post-hardcore",
+          4,
+          4.7
+        ],
+        [
+          "hardcore punk",
           3,
-          3.73
+          2.73
         ],
         [
           "post-punk",
           3,
-          2.52
+          2.35
         ],
         [
           "rock",
           16,
-          2.12
+          1.93
         ],
         [
           "alternative",
+          7,
+          1.78
+        ],
+        [
+          "punk",
           6,
-          1.66
+          1.08
         ],
         [
           "pop",
           3,
-          1.05
-        ],
-        [
-          "punk",
-          5,
-          0.97
+          0.96
         ]
       ],
-      "releases": 29,
+      "releases": 31,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
@@ -2074,14 +2082,22 @@
         ],
         [
           "alternative",
-          6
+          7
         ],
         [
           "punk",
-          5
+          6
+        ],
+        [
+          "post-hardcore",
+          4
         ],
         [
           "70s",
+          3
+        ],
+        [
+          "eh is not spain",
           3
         ],
         [
@@ -2089,20 +2105,194 @@
           3
         ],
         [
-          "pop",
-          3
-        ],
-        [
-          "post-hardcore",
-          3
-        ],
-        [
-          "post-punk",
+          "hardcore punk",
           3
         ]
       ],
       "years": [
         2012,
+        2026
+      ]
+    },
+    {
+      "artists": 14,
+      "by_type": {
+        "direct": 24
+      },
+      "id": "tutera",
+      "label_account_share": 0.0,
+      "name": "Tutera",
+      "overrepresented": [
+        [
+          "rock alternativo",
+          4,
+          60.95
+        ],
+        [
+          "surf rock",
+          4,
+          46.24
+        ],
+        [
+          "garage rock",
+          3,
+          27.94
+        ],
+        [
+          "hard rock",
+          8,
+          14.66
+        ],
+        [
+          "rock and roll",
+          5,
+          12.7
+        ],
+        [
+          "folk",
+          4,
+          3.05
+        ],
+        [
+          "post-punk",
+          3,
+          3.04
+        ],
+        [
+          "alternative",
+          9,
+          2.95
+        ]
+      ],
+      "releases": 24,
+      "territory": "Nafarroa",
+      "top_tags": [
+        [
+          "rock",
+          15
+        ],
+        [
+          "alternative",
+          9
+        ],
+        [
+          "hard rock",
+          8
+        ],
+        [
+          "rock and roll",
+          5
+        ],
+        [
+          "folk",
+          4
+        ],
+        [
+          "rock alternativo",
+          4
+        ],
+        [
+          "surf rock",
+          4
+        ],
+        [
+          "garage rock",
+          3
+        ]
+      ],
+      "years": [
+        2010,
+        2023
+      ]
+    },
+    {
+      "artists": 9,
+      "by_type": {
+        "direct": 23
+      },
+      "id": "zumaia",
+      "label_account_share": 0.0,
+      "name": "Zumaia",
+      "overrepresented": [
+        [
+          "blues rock",
+          5,
+          38.02
+        ],
+        [
+          "rock & roll",
+          6,
+          14.09
+        ],
+        [
+          "blues",
+          5,
+          12.77
+        ],
+        [
+          "stoner",
+          3,
+          11.41
+        ],
+        [
+          "folk",
+          5,
+          3.98
+        ],
+        [
+          "experimental",
+          8,
+          3.04
+        ],
+        [
+          "rock",
+          13,
+          2.12
+        ],
+        [
+          "alternative",
+          4,
+          1.37
+        ]
+      ],
+      "releases": 23,
+      "territory": "Gipuzkoa",
+      "top_tags": [
+        [
+          "rock",
+          13
+        ],
+        [
+          "experimental",
+          8
+        ],
+        [
+          "rock & roll",
+          6
+        ],
+        [
+          "blues",
+          5
+        ],
+        [
+          "blues rock",
+          5
+        ],
+        [
+          "folk",
+          5
+        ],
+        [
+          "alternative",
+          4
+        ],
+        [
+          "electronic",
+          4
+        ]
+      ],
+      "years": [
+        2014,
         2026
       ]
     },
@@ -2119,37 +2309,37 @@
         [
           "folk pop",
           4,
-          49.59
+          48.76
         ],
         [
           "cantautor",
           4,
-          27.77
+          28.13
         ],
         [
           "post-rock",
           5,
-          11.2
+          11.5
         ],
         [
           "post-hardcore",
           4,
-          6.55
+          6.62
         ],
         [
           "acoustic",
           4,
-          6.31
+          5.78
         ],
         [
           "rock",
           8,
-          1.4
+          1.36
         ],
         [
           "metal",
           3,
-          0.98
+          0.99
         ]
       ],
       "releases": 22,
@@ -2194,228 +2384,127 @@
       ]
     },
     {
-      "artists": 14,
+      "artists": 8,
       "by_type": {
-        "direct": 22
+        "direct": 21
       },
-      "id": "tutera",
+      "id": "mungia",
       "label_account_share": 0.0,
-      "name": "Tutera",
+      "name": "Mungia",
       "overrepresented": [
         [
-          "surf rock",
-          4,
-          47.88
+          "skatepunk",
+          9,
+          181.49
         ],
         [
-          "garage rock",
+          "melodic hardcore",
+          9,
+          65.06
+        ],
+        [
+          "indie",
           3,
-          28.93
+          4.0
         ],
         [
-          "hard rock",
-          8,
-          17.14
-        ],
-        [
-          "rock and roll",
-          5,
-          14.46
-        ],
-        [
-          "post-punk",
-          3,
-          3.33
+          "punk",
+          9,
+          2.38
         ],
         [
           "alternative",
-          7,
-          2.55
-        ],
-        [
-          "folk",
-          3,
-          2.52
-        ],
-        [
-          "rock",
-          14,
-          2.44
-        ]
-      ],
-      "releases": 22,
-      "territory": "Nafarroa",
-      "top_tags": [
-        [
-          "rock",
-          14
-        ],
-        [
-          "hard rock",
-          8
-        ],
-        [
-          "alternative",
-          7
-        ],
-        [
-          "rock and roll",
-          5
-        ],
-        [
-          "surf rock",
-          4
-        ],
-        [
-          "folk",
-          3
-        ],
-        [
-          "garage rock",
-          3
-        ],
-        [
-          "post-punk",
-          3
-        ]
-      ],
-      "years": [
-        2010,
-        2023
-      ]
-    },
-    {
-      "artists": 9,
-      "by_type": {
-        "direct": 22
-      },
-      "id": "zumaia",
-      "label_account_share": 0.0,
-      "name": "Zumaia",
-      "overrepresented": [
-        [
-          "blues rock",
-          5,
-          40.36
-        ],
-        [
-          "rock & roll",
           6,
-          14.57
+          2.25
         ],
         [
-          "blues",
-          5,
-          13.45
+          "pop",
+          4,
+          1.89
+        ]
+      ],
+      "releases": 21,
+      "territory": "Bizkaia",
+      "top_tags": [
+        [
+          "melodic hardcore",
+          9
         ],
         [
-          "folk",
-          5,
-          4.19
+          "punk",
+          9
         ],
         [
-          "experimental",
-          8,
-          3.1
-        ],
-        [
-          "rock",
-          12,
-          2.09
+          "skatepunk",
+          9
         ],
         [
           "alternative",
-          4,
-          1.46
-        ],
-        [
-          "electronic",
-          4,
-          0.97
-        ]
-      ],
-      "releases": 22,
-      "territory": "Gipuzkoa",
-      "top_tags": [
-        [
-          "rock",
-          12
-        ],
-        [
-          "experimental",
-          8
-        ],
-        [
-          "rock & roll",
           6
         ],
         [
-          "blues",
-          5
-        ],
-        [
-          "blues rock",
-          5
-        ],
-        [
-          "folk",
-          5
-        ],
-        [
-          "alternative",
+          "pop",
           4
         ],
         [
-          "electronic",
-          4
+          "indie",
+          3
+        ],
+        [
+          "dub",
+          2
+        ],
+        [
+          "indie rock",
+          2
         ]
       ],
       "years": [
-        2014,
+        1994,
         2026
       ]
     },
     {
       "artists": 11,
       "by_type": {
-        "direct": 18
+        "direct": 19
       },
       "id": "azpeitia",
-      "label_account_share": 0.167,
+      "label_account_share": 0.158,
       "name": "Azpeitia",
       "overrepresented": [
         [
           "street punk",
           4,
-          41.39
+          38.5
         ],
         [
           "hardcore punk",
           3,
-          4.73
+          4.46
         ],
         [
           "punk",
-          6,
-          1.88
+          7,
+          2.05
         ],
         [
           "alternative",
           3,
-          1.33
+          1.24
         ],
         [
           "rock",
           6,
-          1.28
+          1.18
         ]
       ],
-      "releases": 18,
+      "releases": 19,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
           "punk",
-          6
+          7
         ],
         [
           "rock",
@@ -2431,6 +2520,10 @@
         ],
         [
           "hardcore punk",
+          3
+        ],
+        [
+          "ollateiko punk-e",
           3
         ],
         [
@@ -2440,15 +2533,180 @@
         [
           "metal",
           2
-        ],
-        [
-          "oi!",
-          2
         ]
       ],
       "years": [
         2006,
         2026
+      ]
+    },
+    {
+      "artists": 3,
+      "by_type": {
+        "artist_inferred": 1,
+        "direct": 17,
+        "same_account": 1
+      },
+      "id": "sopela",
+      "label_account_share": 0.053,
+      "name": "Sopela",
+      "overrepresented": [
+        [
+          "sludge",
+          17,
+          76.59
+        ],
+        [
+          "doom",
+          18,
+          60.02
+        ],
+        [
+          "stoner",
+          13,
+          59.84
+        ],
+        [
+          "hardcore",
+          18,
+          11.38
+        ],
+        [
+          "black metal",
+          7,
+          10.78
+        ],
+        [
+          "death metal",
+          7,
+          10.15
+        ],
+        [
+          "metal",
+          17,
+          6.48
+        ],
+        [
+          "rock",
+          11,
+          2.17
+        ]
+      ],
+      "releases": 19,
+      "territory": "Bizkaia",
+      "top_tags": [
+        [
+          "doom",
+          18
+        ],
+        [
+          "hardcore",
+          18
+        ],
+        [
+          "metal",
+          17
+        ],
+        [
+          "sludge",
+          17
+        ],
+        [
+          "stoner",
+          13
+        ],
+        [
+          "rock",
+          11
+        ],
+        [
+          "black metal",
+          7
+        ],
+        [
+          "death metal",
+          7
+        ]
+      ],
+      "years": [
+        2010,
+        2021
+      ]
+    },
+    {
+      "artists": 9,
+      "by_type": {
+        "direct": 17
+      },
+      "id": "ermua",
+      "label_account_share": 0.0,
+      "name": "Ermua",
+      "overrepresented": [
+        [
+          "diy",
+          3,
+          14.79
+        ],
+        [
+          "rock",
+          8,
+          1.76
+        ],
+        [
+          "metal",
+          4,
+          1.7
+        ],
+        [
+          "alternative",
+          3,
+          1.39
+        ],
+        [
+          "punk",
+          4,
+          1.31
+        ]
+      ],
+      "releases": 17,
+      "territory": "Bizkaia",
+      "top_tags": [
+        [
+          "rock",
+          8
+        ],
+        [
+          "metal",
+          4
+        ],
+        [
+          "punk",
+          4
+        ],
+        [
+          "alternative",
+          3
+        ],
+        [
+          "diy",
+          3
+        ],
+        [
+          "hardcore crust",
+          3
+        ],
+        [
+          "stoner punk rock",
+          3
+        ],
+        [
+          "hard rock",
+          2
+        ]
+      ],
+      "years": [
+        2006,
+        2025
       ]
     },
     {
@@ -2464,27 +2722,27 @@
         [
           "trap",
           6,
-          37.96
+          40.0
         ],
         [
           "rap",
           6,
-          11.87
+          12.08
         ],
         [
           "hip hop",
           6,
-          10.7
+          10.92
         ],
         [
           "hip-hop/rap",
           6,
-          9.17
+          9.37
         ],
         [
           "hardcore",
           5,
-          3.46
+          3.53
         ],
         [
           "metal",
@@ -2494,7 +2752,7 @@
         [
           "punk",
           5,
-          1.66
+          1.64
         ]
       ],
       "releases": 17,
@@ -2550,27 +2808,27 @@
         [
           "skate punk",
           3,
-          84.23
+          88.74
         ],
         [
           "euskera",
           4,
-          34.71
+          35.29
         ],
         [
           "metalcore",
           3,
-          13.14
+          13.71
         ],
         [
           "post-hardcore",
           4,
-          9.01
+          9.1
         ],
         [
           "punk rock",
           7,
-          6.68
+          6.59
         ],
         [
           "pop rock",
@@ -2580,12 +2838,12 @@
         [
           "hardcore punk",
           3,
-          5.32
+          5.29
         ],
         [
           "hardcore",
           7,
-          5.15
+          5.25
         ]
       ],
       "releases": 16,
@@ -2630,154 +2888,93 @@
       ]
     },
     {
-      "artists": 9,
+      "artists": 2,
       "by_type": {
-        "direct": 16
+        "direct": 15
       },
-      "id": "ermua",
+      "id": "mendaro",
       "label_account_share": 0.0,
-      "name": "Ermua",
+      "name": "Mendaro",
       "overrepresented": [
         [
-          "diy",
-          3,
-          17.68
-        ],
-        [
-          "metal",
-          4,
-          1.8
-        ],
-        [
-          "rock",
-          7,
-          1.68
-        ],
-        [
-          "alternative",
-          3,
-          1.5
-        ],
-        [
-          "punk",
-          4,
-          1.41
-        ]
-      ],
-      "releases": 16,
-      "territory": "Bizkaia",
-      "top_tags": [
-        [
-          "rock",
-          7
-        ],
-        [
-          "metal",
-          4
-        ],
-        [
-          "punk",
-          4
-        ],
-        [
-          "alternative",
-          3
-        ],
-        [
-          "diy",
-          3
-        ],
-        [
-          "hardcore crust",
-          3
-        ],
-        [
-          "stoner punk rock",
-          3
-        ],
-        [
-          "pop rock",
-          2
-        ]
-      ],
-      "years": [
-        2006,
-        2025
-      ]
-    },
-    {
-      "artists": 8,
-      "by_type": {
-        "direct": 16
-      },
-      "id": "mungia",
-      "label_account_share": 0.0,
-      "name": "Mungia",
-      "overrepresented": [
-        [
-          "skatepunk",
+          "devotional",
           5,
-          159.1
+          58.3
         ],
         [
-          "melodic hardcore",
-          5,
-          48.71
-        ],
-        [
-          "pop",
-          4,
-          2.53
-        ],
-        [
-          "alternative",
-          5,
-          2.5
-        ],
-        [
-          "punk",
-          5,
-          1.76
-        ]
-      ],
-      "releases": 16,
-      "territory": "Bizkaia",
-      "top_tags": [
-        [
-          "alternative",
-          5
-        ],
-        [
-          "melodic hardcore",
-          5
-        ],
-        [
-          "punk",
-          5
-        ],
-        [
-          "skatepunk",
-          5
-        ],
-        [
-          "pop",
-          4
-        ],
-        [
-          "dub",
-          2
+          "electronica",
+          10,
+          23.95
         ],
         [
           "indie",
-          2
+          10,
+          18.69
         ],
         [
-          "reggae",
-          2
+          "alternative rock",
+          5,
+          9.9
+        ],
+        [
+          "post-punk",
+          5,
+          8.1
+        ],
+        [
+          "ambient",
+          7,
+          6.46
+        ],
+        [
+          "folk",
+          5,
+          6.11
+        ],
+        [
+          "punk",
+          10,
+          3.71
+        ]
+      ],
+      "releases": 15,
+      "territory": "Gipuzkoa",
+      "top_tags": [
+        [
+          "electronica",
+          10
+        ],
+        [
+          "indie",
+          10
+        ],
+        [
+          "punk",
+          10
+        ],
+        [
+          "rock",
+          10
+        ],
+        [
+          "ambient",
+          7
+        ],
+        [
+          "munlet",
+          7
+        ],
+        [
+          "alternative",
+          6
+        ],
+        [
+          "alternative rock",
+          5
         ]
       ],
       "years": [
-        1996,
+        2003,
         2026
       ]
     },
@@ -2793,32 +2990,32 @@
         [
           "bidehuts",
           4,
-          32.57
+          33.81
         ],
         [
           "hardcore punk",
           3,
-          6.08
+          6.05
         ],
         [
           "alternative",
           9,
-          5.15
+          5.06
         ],
         [
           "hardcore",
           3,
-          2.52
+          2.57
         ],
         [
           "rock",
           6,
-          1.65
+          1.6
         ],
         [
           "punk",
           3,
-          1.21
+          1.19
         ]
       ],
       "releases": 14,
@@ -2863,6 +3060,97 @@
       ]
     },
     {
+      "artists": 5,
+      "by_type": {
+        "direct": 14
+      },
+      "id": "urretxu",
+      "label_account_share": 0.0,
+      "name": "Urretxu",
+      "overrepresented": [
+        [
+          "blues rock",
+          6,
+          74.96
+        ],
+        [
+          "alternative pop",
+          4,
+          47.89
+        ],
+        [
+          "indie folk",
+          4,
+          46.92
+        ],
+        [
+          "country",
+          6,
+          41.55
+        ],
+        [
+          "rock and roll",
+          6,
+          26.12
+        ],
+        [
+          "emo",
+          4,
+          24.2
+        ],
+        [
+          "hard rock",
+          7,
+          21.98
+        ],
+        [
+          "indie pop",
+          4,
+          15.85
+        ]
+      ],
+      "releases": 14,
+      "territory": "Gipuzkoa",
+      "top_tags": [
+        [
+          "rock",
+          12
+        ],
+        [
+          "hard rock",
+          7
+        ],
+        [
+          "blues rock",
+          6
+        ],
+        [
+          "country",
+          6
+        ],
+        [
+          "rock and roll",
+          6
+        ],
+        [
+          "pop",
+          5
+        ],
+        [
+          "alternative pop",
+          4
+        ],
+        [
+          "emo",
+          4
+        ]
+      ],
+      "years": [
+        1994,
+        2023
+      ]
+    },
+    {
       "artists": 4,
       "by_type": {
         "direct": 13
@@ -2874,12 +3162,12 @@
         [
           "rock compilation",
           10,
-          587.46
+          618.92
         ],
         [
           "rock",
           10,
-          2.95
+          2.88
         ]
       ],
       "releases": 13,
@@ -2935,22 +3223,22 @@
         [
           "belarri",
           13,
-          587.46
+          618.92
         ],
         [
           "musika",
           13,
-          381.85
+          402.3
         ],
         [
           "euskal musika",
           13,
-          73.43
+          76.63
         ],
         [
           "world",
           13,
-          37.25
+          37.77
         ]
       ],
       "releases": 13,
@@ -3006,27 +3294,27 @@
         [
           "crossover",
           4,
-          79.55
+          83.81
         ],
         [
           "groove metal",
           4,
-          74.87
+          76.63
         ],
         [
           "hardcore",
           4,
-          3.92
+          4.0
         ],
         [
           "metal",
           5,
-          3.0
+          3.02
         ],
         [
           "alternative",
           4,
-          2.67
+          2.62
         ]
       ],
       "releases": 12,
@@ -3071,6 +3359,254 @@
       ]
     },
     {
+      "artists": 5,
+      "by_type": {
+        "direct": 12
+      },
+      "id": "basauri",
+      "label_account_share": 0.0,
+      "name": "Basauri",
+      "overrepresented": [
+        [
+          "skate punk",
+          3,
+          118.32
+        ],
+        [
+          "skatepunk",
+          3,
+          105.87
+        ],
+        [
+          "punk hardcore",
+          3,
+          41.05
+        ],
+        [
+          "hardcore punk",
+          4,
+          9.41
+        ],
+        [
+          "punk rock",
+          3,
+          3.77
+        ],
+        [
+          "punk",
+          8,
+          3.71
+        ],
+        [
+          "rock",
+          4,
+          1.25
+        ]
+      ],
+      "releases": 12,
+      "territory": "Bizkaia",
+      "top_tags": [
+        [
+          "punk",
+          8
+        ],
+        [
+          "hardcore punk",
+          4
+        ],
+        [
+          "rock",
+          4
+        ],
+        [
+          "punk hardcore",
+          3
+        ],
+        [
+          "punk rock",
+          3
+        ],
+        [
+          "skate punk",
+          3
+        ],
+        [
+          "skatepunk",
+          3
+        ],
+        [
+          "surf punk",
+          3
+        ]
+      ],
+      "years": [
+        2009,
+        2025
+      ]
+    },
+    {
+      "artists": 3,
+      "by_type": {
+        "direct": 12
+      },
+      "id": "legazpi",
+      "label_account_share": 0.0,
+      "name": "Legazpi",
+      "overrepresented": [
+        [
+          "high energy rock'n'roll",
+          6,
+          402.3
+        ],
+        [
+          "groove metal",
+          3,
+          57.47
+        ],
+        [
+          "hard rock",
+          6,
+          21.98
+        ],
+        [
+          "punk rock",
+          6,
+          7.53
+        ],
+        [
+          "metal",
+          6,
+          3.62
+        ],
+        [
+          "rock",
+          6,
+          1.87
+        ]
+      ],
+      "releases": 12,
+      "territory": "Gipuzkoa",
+      "top_tags": [
+        [
+          "bloody rock",
+          6
+        ],
+        [
+          "hard rock",
+          6
+        ],
+        [
+          "high energy rock'n'roll",
+          6
+        ],
+        [
+          "metal",
+          6
+        ],
+        [
+          "punk rock",
+          6
+        ],
+        [
+          "rock",
+          6
+        ],
+        [
+          "scandinavian rock",
+          6
+        ],
+        [
+          "groove metal",
+          3
+        ]
+      ],
+      "years": [
+        2007,
+        2024
+      ]
+    },
+    {
+      "artists": 2,
+      "by_type": {
+        "direct": 12
+      },
+      "id": "lekunberri-nafarroa",
+      "label_account_share": 0.0,
+      "name": "Lekunberri",
+      "overrepresented": [
+        [
+          "lekunberri",
+          12,
+          670.5
+        ],
+        [
+          "indie",
+          11,
+          25.7
+        ],
+        [
+          "punk rock",
+          11,
+          13.81
+        ],
+        [
+          "metal",
+          11,
+          6.64
+        ],
+        [
+          "punk",
+          11,
+          5.1
+        ],
+        [
+          "rock",
+          11,
+          3.43
+        ]
+      ],
+      "releases": 12,
+      "territory": "Nafarroa",
+      "top_tags": [
+        [
+          "lekunberri",
+          12
+        ],
+        [
+          "indie",
+          11
+        ],
+        [
+          "metal",
+          11
+        ],
+        [
+          "punk",
+          11
+        ],
+        [
+          "punk rock",
+          11
+        ],
+        [
+          "rock",
+          11
+        ],
+        [
+          "hardcore",
+          2
+        ],
+        [
+          "alternative",
+          1
+        ]
+      ],
+      "years": [
+        2001,
+        2017
+      ]
+    },
+    {
       "artists": 4,
       "by_type": {
         "direct": 11
@@ -3082,42 +3618,42 @@
         [
           "idm",
           5,
-          23.46
+          24.71
         ],
         [
           "industrial",
           5,
-          19.18
+          19.66
         ],
         [
           "noise",
           5,
-          11.02
+          10.98
         ],
         [
           "ambient",
           5,
-          6.07
+          6.29
         ],
         [
           "hardcore",
           5,
-          5.35
+          5.46
         ],
         [
           "experimental",
           5,
-          3.88
+          3.98
         ],
         [
           "metal",
           4,
-          2.62
+          2.63
         ],
         [
           "electronic",
           5,
-          2.42
+          2.47
         ]
       ],
       "releases": 11,
@@ -3162,258 +3698,141 @@
       ]
     },
     {
-      "artists": 2,
+      "artists": 1,
       "by_type": {
-        "direct": 11
+        "direct": 10
       },
-      "id": "mendaro",
+      "id": "zaldibia",
       "label_account_share": 0.0,
-      "name": "Mendaro",
+      "name": "Zaldibia",
       "overrepresented": [
         [
-          "electronica",
+          "bertsioak",
           10,
-          31.7
+          804.6
         ],
         [
-          "indie",
+          "q ez da",
           10,
-          27.55
+          804.6
         ],
         [
-          "post-punk",
-          5,
-          11.09
-        ],
-        [
-          "punk",
+          "version",
           10,
-          5.12
+          574.71
         ],
         [
-          "ambient",
-          3,
-          3.64
-        ],
-        [
-          "rock",
+          "covers",
           10,
-          3.49
+          502.88
+        ],
+        [
+          "acoustic",
+          10,
+          31.8
         ]
       ],
-      "releases": 11,
+      "releases": 10,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "electronica",
+          "acoustic",
           10
         ],
         [
-          "indie",
+          "bertsioak",
           10
         ],
         [
-          "punk",
+          "covers",
           10
         ],
         [
-          "rock",
+          "q ez da",
           10
         ],
         [
-          "munlet",
-          7
-        ],
-        [
-          "post-punk",
-          5
-        ],
-        [
-          "ambient",
-          3
-        ],
-        [
-          "alternative",
-          2
-        ]
-      ],
-      "years": [
-        2003,
-        2023
-      ]
-    },
-    {
-      "artists": 3,
-      "by_type": {
-        "artist_inferred": 1,
-        "direct": 9,
-        "same_account": 1
-      },
-      "id": "sopela",
-      "label_account_share": 0.091,
-      "name": "Sopela",
-      "overrepresented": [
-        [
-          "sludge",
-          9,
-          73.51
-        ],
-        [
-          "doom",
-          10,
-          59.34
-        ],
-        [
-          "stoner",
-          5,
-          42.86
-        ],
-        [
-          "black metal",
-          5,
-          12.9
-        ],
-        [
-          "death metal",
-          5,
-          12.4
-        ],
-        [
-          "hardcore",
-          10,
-          10.7
-        ],
-        [
-          "metal",
-          9,
-          5.89
-        ],
-        [
-          "rock",
-          5,
-          1.75
-        ]
-      ],
-      "releases": 11,
-      "territory": "Bizkaia",
-      "top_tags": [
-        [
-          "doom",
+          "version",
           10
         ],
         [
-          "hardcore",
-          10
+          "ahotsa",
+          1
         ],
         [
-          "metal",
-          9
+          "armonia",
+          1
         ],
         [
-          "sludge",
-          9
-        ],
-        [
-          "black metal",
-          5
-        ],
-        [
-          "death metal",
-          5
-        ],
-        [
-          "rock",
-          5
-        ],
-        [
-          "stoner",
-          5
+          "bi zaldi",
+          1
         ]
       ],
       "years": [
         2014,
-        2021
+        2026
       ]
     },
     {
-      "artists": 5,
+      "artists": 4,
       "by_type": {
-        "direct": 10
+        "direct": 8,
+        "same_account": 1
       },
-      "id": "basauri",
+      "id": "bera",
       "label_account_share": 0.0,
-      "name": "Basauri",
+      "name": "Bera",
       "overrepresented": [
         [
-          "skatepunk",
-          3,
-          152.74
-        ],
-        [
-          "skate punk",
-          3,
-          134.77
-        ],
-        [
-          "hardcore punk",
-          4,
-          11.36
-        ],
-        [
-          "punk rock",
-          3,
-          4.58
-        ],
-        [
-          "punk",
+          "alternative rock",
           7,
-          3.94
+          23.09
         ],
         [
-          "rock",
-          3,
-          1.15
+          "alternative",
+          7,
+          6.12
         ]
       ],
-      "releases": 10,
-      "territory": "Bizkaia",
+      "releases": 9,
+      "territory": "Nafarroa",
       "top_tags": [
         [
-          "punk",
+          "alternative",
           7
         ],
         [
-          "hardcore punk",
-          4
-        ],
-        [
-          "punk rock",
-          3
+          "alternative rock",
+          7
         ],
         [
           "rock",
-          3
-        ],
-        [
-          "skate punk",
-          3
-        ],
-        [
-          "skatepunk",
-          3
-        ],
-        [
-          "surf punk",
-          3
-        ],
-        [
-          "psicocríticopunk",
           2
+        ],
+        [
+          "90s rock",
+          1
+        ],
+        [
+          "angry",
+          1
+        ],
+        [
+          "atala",
+          1
+        ],
+        [
+          "borrokan",
+          1
+        ],
+        [
+          "elektronika",
+          1
         ]
       ],
       "years": [
-        2009,
-        2025
+        2012,
+        2022
       ]
     },
     {
@@ -3428,7 +3847,7 @@
         [
           "basque music",
           9,
-          49.92
+          52.59
         ],
         [
           "pop rock",
@@ -3438,7 +3857,7 @@
         [
           "alternative",
           9,
-          8.01
+          7.87
         ]
       ],
       "releases": 9,
@@ -3494,32 +3913,32 @@
         [
           "melodic death metal",
           3,
-          45.46
+          47.05
         ],
         [
           "death metal",
           3,
-          9.09
+          9.18
         ],
         [
           "punk rock",
           5,
-          8.49
+          8.37
         ],
         [
           "punk",
           5,
-          3.13
+          3.09
         ],
         [
           "metal",
           3,
-          2.4
+          2.41
         ],
         [
           "rock",
           5,
-          2.13
+          2.08
         ]
       ],
       "releases": 9,
@@ -3575,27 +3994,27 @@
         [
           "thrash metal",
           8,
-          76.37
+          78.12
         ],
         [
           "heavy metal",
           8,
-          74.87
+          73.82
         ],
         [
           "basque music",
           8,
-          49.92
+          52.59
         ],
         [
           "death metal",
           8,
-          27.28
+          27.55
         ],
         [
           "metal",
           8,
-          7.2
+          7.24
         ]
       ],
       "releases": 8,
@@ -3640,194 +4059,47 @@
       ]
     },
     {
-      "artists": 4,
-      "by_type": {
-        "direct": 7,
-        "same_account": 1
-      },
-      "id": "bera",
-      "label_account_share": 0.0,
-      "name": "Bera",
-      "overrepresented": [
-        [
-          "alternative rock",
-          6,
-          23.38
-        ],
-        [
-          "alternative",
-          6,
-          6.0
-        ]
-      ],
-      "releases": 8,
-      "territory": "Nafarroa",
-      "top_tags": [
-        [
-          "alternative",
-          6
-        ],
-        [
-          "alternative rock",
-          6
-        ],
-        [
-          "rock",
-          2
-        ],
-        [
-          "90s rock",
-          1
-        ],
-        [
-          "angry",
-          1
-        ],
-        [
-          "atala",
-          1
-        ],
-        [
-          "borrokan",
-          1
-        ],
-        [
-          "elektronika",
-          1
-        ]
-      ],
-      "years": [
-        2013,
-        2022
-      ]
-    },
-    {
-      "artists": 3,
+      "artists": 6,
       "by_type": {
         "direct": 8
       },
-      "id": "legazpi",
-      "label_account_share": 0.0,
-      "name": "Legazpi",
+      "id": "sestao",
+      "label_account_share": 0.5,
+      "name": "Sestao",
       "overrepresented": [
         [
-          "hard rock",
-          6,
-          35.36
-        ],
-        [
-          "punk rock",
-          6,
-          11.46
-        ],
-        [
-          "rock",
-          6,
-          2.88
-        ]
-      ],
-      "releases": 8,
-      "territory": "Gipuzkoa",
-      "top_tags": [
-        [
-          "bloody rock",
-          6
-        ],
-        [
-          "hard rock",
-          6
-        ],
-        [
-          "high energy rock'n'roll",
-          6
-        ],
-        [
-          "punk rock",
-          6
-        ],
-        [
-          "rock",
-          6
-        ],
-        [
-          "scandinavian rock",
-          6
-        ],
-        [
-          "groove metal",
-          2
-        ],
-        [
-          "metal",
-          2
-        ]
-      ],
-      "years": [
-        2010,
-        2024
-      ]
-    },
-    {
-      "artists": 4,
-      "by_type": {
-        "direct": 8
-      },
-      "id": "urretxu",
-      "label_account_share": 0.0,
-      "name": "Urretxu",
-      "overrepresented": [
-        [
-          "blues rock",
-          4,
-          88.8
-        ],
-        [
-          "country",
-          4,
-          49.59
-        ],
-        [
-          "rock and roll",
-          4,
-          31.82
-        ],
-        [
-          "hard rock",
-          5,
-          29.46
-        ],
-        [
-          "rock",
-          6,
-          2.88
+          "rapmetal",
+          3,
+          177.49
         ],
         [
           "metal",
           3,
-          2.7
+          2.72
+        ],
+        [
+          "electronic",
+          4,
+          2.71
         ]
       ],
       "releases": 8,
-      "territory": "Gipuzkoa",
+      "territory": "Bizkaia",
       "top_tags": [
         [
-          "rock",
-          6
-        ],
-        [
-          "hard rock",
-          5
-        ],
-        [
-          "blues rock",
+          "electro glam",
           4
         ],
         [
-          "country",
+          "electronic",
           4
         ],
         [
-          "rock and roll",
+          "techno house",
+          4
+        ],
+        [
+          "techno punk",
           4
         ],
         [
@@ -3835,17 +4107,21 @@
           3
         ],
         [
-          "hardcore",
-          2
+          "rapmetal",
+          3
         ],
         [
-          "hxc",
-          2
+          "batucada",
+          1
+        ],
+        [
+          "bolero tech",
+          1
         ]
       ],
       "years": [
-        2014,
-        2023
+        2012,
+        2024
       ]
     },
     {
@@ -3860,22 +4136,22 @@
         [
           "grunge",
           5,
-          54.01
+          51.31
         ],
         [
           "indie",
           5,
-          21.65
+          20.02
         ],
         [
           "folk",
           6,
-          15.81
+          15.71
         ],
         [
           "alternative",
           5,
-          5.72
+          5.62
         ]
       ],
       "releases": 7,
@@ -3922,6 +4198,173 @@
     {
       "artists": 5,
       "by_type": {
+        "direct": 7
+      },
+      "id": "lasarte-oria",
+      "label_account_share": 0.0,
+      "name": "Lasarte-Oria",
+      "overrepresented": [],
+      "releases": 7,
+      "territory": "Gipuzkoa",
+      "top_tags": [
+        [
+          "alternative",
+          2
+        ],
+        [
+          "black metal",
+          2
+        ],
+        [
+          "death metal",
+          2
+        ],
+        [
+          "euskal musika",
+          2
+        ],
+        [
+          "metal",
+          2
+        ],
+        [
+          "rock",
+          2
+        ],
+        [
+          "thrash metal",
+          2
+        ],
+        [
+          "acoustic",
+          1
+        ]
+      ],
+      "years": [
+        2010,
+        2024
+      ]
+    },
+    {
+      "artists": 1,
+      "by_type": {
+        "direct": 7
+      },
+      "id": "markina-xemein",
+      "label_account_share": 0.0,
+      "name": "Markina-Xemein",
+      "overrepresented": [
+        [
+          "electronic rock",
+          7,
+          502.88
+        ],
+        [
+          "indie rock",
+          7,
+          32.71
+        ],
+        [
+          "electronic",
+          7,
+          5.43
+        ],
+        [
+          "rock",
+          7,
+          3.74
+        ]
+      ],
+      "releases": 7,
+      "territory": "Bizkaia",
+      "top_tags": [
+        [
+          "electronic",
+          7
+        ],
+        [
+          "electronic rock",
+          7
+        ],
+        [
+          "indie rock",
+          7
+        ],
+        [
+          "rock",
+          7
+        ],
+        [
+          "indie electronic rock",
+          1
+        ],
+        [
+          "owl music",
+          1
+        ]
+      ],
+      "years": [
+        2014,
+        2019
+      ]
+    },
+    {
+      "artists": 1,
+      "by_type": {
+        "direct": 7
+      },
+      "id": "moreda-araba",
+      "label_account_share": 0.0,
+      "name": "Moreda Araba",
+      "overrepresented": [
+        [
+          "blues",
+          7,
+          58.73
+        ],
+        [
+          "punk",
+          7,
+          5.56
+        ],
+        [
+          "rock",
+          7,
+          3.74
+        ]
+      ],
+      "releases": 7,
+      "territory": "Araba",
+      "top_tags": [
+        [
+          "blues",
+          7
+        ],
+        [
+          "punk",
+          7
+        ],
+        [
+          "rock",
+          7
+        ],
+        [
+          "bluespunk",
+          1
+        ],
+        [
+          "pop",
+          1
+        ]
+      ],
+      "years": [
+        2011,
+        2018
+      ]
+    },
+    {
+      "artists": 5,
+      "by_type": {
         "direct": 6
       },
       "id": "galdakao",
@@ -3931,12 +4374,12 @@
         [
           "punk rock",
           3,
-          7.64
+          7.53
         ],
         [
           "punk",
           4,
-          3.75
+          3.71
         ]
       ],
       "releases": 6,
@@ -3992,22 +4435,22 @@
         [
           "sludge",
           6,
-          89.85
+          85.6
         ],
         [
           "doom",
           6,
-          65.27
+          63.35
         ],
         [
           "crust",
           6,
-          56.99
+          58.3
         ],
         [
           "alternative",
           6,
-          8.01
+          7.87
         ]
       ],
       "releases": 6,
@@ -4052,39 +4495,186 @@
       ]
     },
     {
-      "artists": 5,
+      "artists": 1,
       "by_type": {
         "direct": 6
       },
-      "id": "lasarte-oria",
+      "id": "urnieta",
       "label_account_share": 0.0,
-      "name": "Lasarte-Oria",
-      "overrepresented": [],
+      "name": "Urnieta",
+      "overrepresented": [
+        [
+          "post-hardcore",
+          6,
+          36.41
+        ],
+        [
+          "punk rock",
+          6,
+          15.07
+        ],
+        [
+          "rock",
+          6,
+          3.74
+        ]
+      ],
       "releases": 6,
       "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "alternative",
+          "post-hardcore",
+          6
+        ],
+        [
+          "punk rock",
+          6
+        ],
+        [
+          "rock",
+          6
+        ],
+        [
+          "pop",
           2
         ],
         [
-          "black metal",
-          2
+          "alternative metal",
+          1
         ],
         [
-          "death metal",
-          2
+          "alternative rock",
+          1
+        ],
+        [
+          "progressive rock",
+          1
+        ]
+      ],
+      "years": [
+        2007,
+        2014
+      ]
+    },
+    {
+      "artists": 2,
+      "by_type": {
+        "direct": 6
+      },
+      "id": "villabona-amasa",
+      "label_account_share": 0.0,
+      "name": "Villabona-Amasa",
+      "overrepresented": [
+        [
+          "melodic rock",
+          4,
+          282.32
+        ],
+        [
+          "ambient rock",
+          4,
+          223.5
+        ],
+        [
+          "grunge",
+          3,
+          35.92
+        ],
+        [
+          "basque music",
+          3,
+          26.29
+        ],
+        [
+          "alternative rock",
+          4,
+          19.79
+        ],
+        [
+          "pop rock",
+          3,
+          14.58
+        ],
+        [
+          "rock",
+          6,
+          3.74
+        ]
+      ],
+      "releases": 6,
+      "territory": "Gipuzkoa",
+      "top_tags": [
+        [
+          "rock",
+          6
+        ],
+        [
+          "alternative rock",
+          4
+        ],
+        [
+          "ambient rock",
+          4
+        ],
+        [
+          "melodic rock",
+          4
+        ],
+        [
+          "basque music",
+          3
+        ],
+        [
+          "grunge",
+          3
+        ],
+        [
+          "pop rock",
+          3
         ],
         [
           "euskal musika",
           2
+        ]
+      ],
+      "years": [
+        2019,
+        2023
+      ]
+    },
+    {
+      "artists": 2,
+      "by_type": {
+        "direct": 5
+      },
+      "id": "beasain",
+      "label_account_share": 0.0,
+      "name": "Beasain",
+      "overrepresented": [
+        [
+          "punk rock",
+          4,
+          12.05
         ],
         [
-          "metal",
-          2
+          "punk",
+          4,
+          4.45
+        ]
+      ],
+      "releases": 5,
+      "territory": "Gipuzkoa",
+      "top_tags": [
+        [
+          "punk",
+          4
         ],
         [
-          "thrash metal",
+          "punk rock",
+          4
+        ],
+        [
+          "rock",
           2
         ],
         [
@@ -4092,69 +4682,91 @@
           1
         ],
         [
-          "basque music",
+          "acustic",
+          1
+        ],
+        [
+          "composer",
+          1
+        ],
+        [
+          "diy",
+          1
+        ],
+        [
+          "experimental",
           1
         ]
       ],
       "years": [
-        2010,
-        2024
+        2017,
+        2023
       ]
     },
     {
-      "artists": 6,
+      "artists": 1,
       "by_type": {
-        "direct": 6
+        "direct": 5
       },
-      "id": "sestao",
-      "label_account_share": 0.667,
-      "name": "Sestao",
+      "id": "elgoibar",
+      "label_account_share": 0.0,
+      "name": "Elgoibar",
       "overrepresented": [
         [
-          "electronic",
-          4,
-          3.55
+          "acoustic",
+          5,
+          31.8
+        ],
+        [
+          "folk",
+          5,
+          18.33
+        ],
+        [
+          "rock",
+          5,
+          3.74
         ]
       ],
-      "releases": 6,
-      "territory": "Bizkaia",
+      "releases": 5,
+      "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "electro glam",
-          4
+          "acoustic",
+          5
         ],
         [
-          "electronic",
-          4
+          "folk",
+          5
         ],
         [
-          "techno house",
-          4
+          "rock",
+          5
         ],
         [
-          "techno punk",
-          4
-        ],
-        [
-          "batucada",
+          "acoustic rock",
           1
         ],
         [
-          "bolero tech",
+          "eh",
           1
         ],
         [
-          "bossa nova",
+          "euskal",
           1
         ],
         [
-          "canson",
+          "herria",
+          1
+        ],
+        [
+          "iria",
           1
         ]
       ],
       "years": [
-        2014,
-        2024
+        2006,
+        2013
       ]
     },
     {
@@ -4169,22 +4781,22 @@
         [
           "getaria",
           5,
-          763.7
+          804.6
         ],
         [
           "punk rock",
           3,
-          9.16
+          9.04
         ],
         [
           "hardcore",
           3,
-          7.06
+          7.21
         ],
         [
           "punk",
           5,
-          5.63
+          5.56
         ]
       ],
       "releases": 5,
@@ -4233,82 +4845,6 @@
       "by_type": {
         "direct": 5
       },
-      "id": "lekunberri-nafarroa",
-      "label_account_share": 0.0,
-      "name": "Lekunberri",
-      "overrepresented": [
-        [
-          "indie",
-          4,
-          24.24
-        ],
-        [
-          "punk rock",
-          4,
-          12.22
-        ],
-        [
-          "metal",
-          4,
-          5.76
-        ],
-        [
-          "punk",
-          4,
-          4.51
-        ],
-        [
-          "rock",
-          4,
-          3.07
-        ]
-      ],
-      "releases": 5,
-      "territory": "Nafarroa",
-      "top_tags": [
-        [
-          "lekunberri",
-          5
-        ],
-        [
-          "indie",
-          4
-        ],
-        [
-          "metal",
-          4
-        ],
-        [
-          "punk",
-          4
-        ],
-        [
-          "punk rock",
-          4
-        ],
-        [
-          "rock",
-          4
-        ],
-        [
-          "hardcore",
-          2
-        ],
-        [
-          "alternative",
-          1
-        ]
-      ],
-      "years": [
-        2014,
-        2017
-      ]
-    },
-    {
-      "artists": 2,
-      "by_type": {
-        "direct": 5
-      },
       "id": "orio",
       "label_account_share": 0.0,
       "name": "Orio",
@@ -4316,27 +4852,27 @@
         [
           "instrumental",
           4,
-          42.14
+          43.2
         ],
         [
           "post-rock",
           4,
-          39.42
+          40.48
         ],
         [
           "ambient",
           4,
-          10.68
+          11.08
         ],
         [
           "experimental",
           4,
-          6.83
+          7.0
         ],
         [
           "rock",
           5,
-          3.84
+          3.74
         ]
       ],
       "releases": 5,
@@ -4383,154 +4919,6 @@
     {
       "artists": 1,
       "by_type": {
-        "direct": 5
-      },
-      "id": "urnieta",
-      "label_account_share": 0.0,
-      "name": "Urnieta",
-      "overrepresented": [
-        [
-          "post-hardcore",
-          5,
-          36.02
-        ],
-        [
-          "punk rock",
-          5,
-          15.27
-        ],
-        [
-          "rock",
-          5,
-          3.84
-        ]
-      ],
-      "releases": 5,
-      "territory": "Gipuzkoa",
-      "top_tags": [
-        [
-          "post-hardcore",
-          5
-        ],
-        [
-          "punk rock",
-          5
-        ],
-        [
-          "rock",
-          5
-        ],
-        [
-          "pop",
-          2
-        ],
-        [
-          "alternative metal",
-          1
-        ],
-        [
-          "alternative rock",
-          1
-        ],
-        [
-          "progressive rock",
-          1
-        ]
-      ],
-      "years": [
-        2007,
-        2014
-      ]
-    },
-    {
-      "artists": 2,
-      "by_type": {
-        "direct": 5
-      },
-      "id": "villabona-amasa",
-      "label_account_share": 0.0,
-      "name": "Villabona-Amasa",
-      "overrepresented": [
-        [
-          "melodic rock",
-          3,
-          269.54
-        ],
-        [
-          "ambient rock",
-          3,
-          218.2
-        ],
-        [
-          "grunge",
-          3,
-          45.37
-        ],
-        [
-          "basque music",
-          3,
-          29.95
-        ],
-        [
-          "alternative rock",
-          3,
-          18.7
-        ],
-        [
-          "pop rock",
-          3,
-          17.49
-        ],
-        [
-          "rock",
-          5,
-          3.84
-        ]
-      ],
-      "releases": 5,
-      "territory": "Gipuzkoa",
-      "top_tags": [
-        [
-          "rock",
-          5
-        ],
-        [
-          "alternative rock",
-          3
-        ],
-        [
-          "ambient rock",
-          3
-        ],
-        [
-          "basque music",
-          3
-        ],
-        [
-          "grunge",
-          3
-        ],
-        [
-          "melodic rock",
-          3
-        ],
-        [
-          "pop rock",
-          3
-        ],
-        [
-          "euskal musika",
-          2
-        ]
-      ],
-      "years": [
-        2019,
-        2023
-      ]
-    },
-    {
-      "artists": 1,
-      "by_type": {
         "direct": 4
       },
       "id": "abadino",
@@ -4540,22 +4928,22 @@
         [
           "power metal",
           4,
-          200.97
+          187.12
         ],
         [
           "black metal",
           4,
-          28.39
+          29.26
         ],
         [
           "death metal",
           4,
-          27.28
+          27.55
         ],
         [
           "metal",
           4,
-          7.2
+          7.24
         ]
       ],
       "releases": 4,
@@ -4611,7 +4999,7 @@
         [
           "electronic",
           3,
-          3.99
+          4.07
         ]
       ],
       "releases": 4,
@@ -4667,7 +5055,7 @@
         [
           "punk",
           4,
-          5.63
+          5.56
         ]
       ],
       "releases": 4,
@@ -4707,12 +5095,12 @@
         [
           "hardcore",
           3,
-          11.77
+          12.01
         ],
         [
           "rock",
           3,
-          3.84
+          3.74
         ]
       ],
       "releases": 3,
@@ -4811,6 +5199,61 @@
       "by_type": {
         "direct": 3
       },
+      "id": "legutio",
+      "label_account_share": 0.0,
+      "name": "Legutio",
+      "overrepresented": [
+        [
+          "punk oi!",
+          3,
+          804.6
+        ],
+        [
+          "street punk",
+          3,
+          182.86
+        ],
+        [
+          "hardcore punk",
+          3,
+          28.23
+        ],
+        [
+          "punk",
+          3,
+          5.56
+        ]
+      ],
+      "releases": 3,
+      "territory": "Araba",
+      "top_tags": [
+        [
+          "hardcore punk",
+          3
+        ],
+        [
+          "punk",
+          3
+        ],
+        [
+          "punk oi!",
+          3
+        ],
+        [
+          "street punk",
+          3
+        ]
+      ],
+      "years": [
+        2013,
+        2020
+      ]
+    },
+    {
+      "artists": 1,
+      "by_type": {
+        "direct": 3
+      },
       "id": "maule-lextarre",
       "label_account_share": 0.0,
       "name": "Maule-Lextarre",
@@ -4818,27 +5261,27 @@
         [
           "ragga",
           3,
-          636.42
+          670.5
         ],
         [
           "raggamuffin",
           3,
-          381.85
+          402.3
         ],
         [
           "roots",
           3,
-          72.05
+          75.91
         ],
         [
           "dub",
           3,
-          31.3
+          32.71
         ],
         [
           "reggae",
           3,
-          20.64
+          21.57
         ]
       ],
       "releases": 3,
@@ -4887,56 +5330,6 @@
       "by_type": {
         "direct": 3
       },
-      "id": "moreda-araba",
-      "label_account_share": 0.0,
-      "name": "Moreda Araba",
-      "overrepresented": [
-        [
-          "blues",
-          3,
-          59.2
-        ],
-        [
-          "punk",
-          3,
-          5.63
-        ],
-        [
-          "rock",
-          3,
-          3.84
-        ]
-      ],
-      "releases": 3,
-      "territory": "Araba",
-      "top_tags": [
-        [
-          "blues",
-          3
-        ],
-        [
-          "punk",
-          3
-        ],
-        [
-          "rock",
-          3
-        ],
-        [
-          "bluespunk",
-          1
-        ]
-      ],
-      "years": [
-        2013,
-        2018
-      ]
-    },
-    {
-      "artists": 1,
-      "by_type": {
-        "direct": 3
-      },
       "id": "zaldibar",
       "label_account_share": 0.0,
       "name": "Zaldibar",
@@ -4944,22 +5337,22 @@
         [
           "basque music",
           3,
-          49.92
+          52.59
         ],
         [
           "post-punk",
           3,
-          24.4
+          24.31
         ],
         [
           "pop",
           3,
-          10.13
+          9.9
         ],
         [
           "alternative",
           3,
-          8.01
+          7.87
         ]
       ],
       "releases": 3,
@@ -4985,6 +5378,98 @@
       "years": [
         2023,
         2026
+      ]
+    },
+    {
+      "artists": 1,
+      "by_type": {
+        "direct": 2
+      },
+      "id": "altsasu",
+      "label_account_share": 0.0,
+      "name": "Altsasu",
+      "overrepresented": [],
+      "releases": 2,
+      "territory": "Nafarroa",
+      "top_tags": [
+        [
+          "d-beat",
+          2
+        ],
+        [
+          "punk",
+          2
+        ],
+        [
+          "album",
+          1
+        ],
+        [
+          "disasko",
+          1
+        ],
+        [
+          "disbrigade",
+          1
+        ],
+        [
+          "hardcore",
+          1
+        ],
+        [
+          "i+d",
+          1
+        ],
+        [
+          "lokal",
+          1
+        ]
+      ],
+      "years": [
+        2023,
+        2023
+      ]
+    },
+    {
+      "artists": 1,
+      "by_type": {
+        "direct": 2
+      },
+      "id": "aramaio",
+      "label_account_share": 0.0,
+      "name": "Aramaio",
+      "overrepresented": [],
+      "releases": 2,
+      "territory": "Araba",
+      "top_tags": [
+        [
+          "rock",
+          2
+        ],
+        [
+          "rock'n'roll",
+          2
+        ],
+        [
+          "album release",
+          1
+        ],
+        [
+          "basque music",
+          1
+        ],
+        [
+          "basque rock alternative",
+          1
+        ],
+        [
+          "phoenix",
+          1
+        ]
+      ],
+      "years": [
+        2019,
+        2021
       ]
     },
     {
@@ -5114,56 +5599,6 @@
       "by_type": {
         "direct": 2
       },
-      "id": "beasain",
-      "label_account_share": 0.0,
-      "name": "Beasain",
-      "overrepresented": [],
-      "releases": 2,
-      "territory": "Gipuzkoa",
-      "top_tags": [
-        [
-          "composer",
-          1
-        ],
-        [
-          "diy",
-          1
-        ],
-        [
-          "experimental",
-          1
-        ],
-        [
-          "instrumental",
-          1
-        ],
-        [
-          "midi",
-          1
-        ],
-        [
-          "oi!punk",
-          1
-        ],
-        [
-          "progressive rock",
-          1
-        ],
-        [
-          "punk",
-          1
-        ]
-      ],
-      "years": [
-        2017,
-        2023
-      ]
-    },
-    {
-      "artists": 2,
-      "by_type": {
-        "direct": 2
-      },
       "id": "deba",
       "label_account_share": 1.0,
       "name": "Deba",
@@ -5257,36 +5692,6 @@
       "years": [
         2012,
         2020
-      ]
-    },
-    {
-      "artists": 1,
-      "by_type": {
-        "direct": 2
-      },
-      "id": "elgoibar",
-      "label_account_share": 0.0,
-      "name": "Elgoibar",
-      "overrepresented": [],
-      "releases": 2,
-      "territory": "Gipuzkoa",
-      "top_tags": [
-        [
-          "acoustic",
-          2
-        ],
-        [
-          "folk",
-          2
-        ],
-        [
-          "rock",
-          2
-        ]
-      ],
-      "years": [
-        2011,
-        2013
       ]
     },
     {
@@ -5561,56 +5966,6 @@
       "by_type": {
         "direct": 2
       },
-      "id": "zaldibia",
-      "label_account_share": 0.0,
-      "name": "Zaldibia",
-      "overrepresented": [],
-      "releases": 2,
-      "territory": "Gipuzkoa",
-      "top_tags": [
-        [
-          "acoustic",
-          2
-        ],
-        [
-          "bertsioak",
-          2
-        ],
-        [
-          "covers",
-          2
-        ],
-        [
-          "q ez da",
-          2
-        ],
-        [
-          "version",
-          2
-        ],
-        [
-          "bi zaldi",
-          1
-        ],
-        [
-          "euskara",
-          1
-        ],
-        [
-          "euskaraz",
-          1
-        ]
-      ],
-      "years": [
-        2014,
-        2021
-      ]
-    },
-    {
-      "artists": 1,
-      "by_type": {
-        "direct": 2
-      },
       "id": "zestoa",
       "label_account_share": 0.0,
       "name": "Zestoa",
@@ -5654,6 +6009,86 @@
       "years": [
         2013,
         2017
+      ]
+    },
+    {
+      "artists": 2,
+      "by_type": {
+        "direct": 2
+      },
+      "id": "zizur-nagusia",
+      "label_account_share": 0.0,
+      "name": "Zizur Nagusia",
+      "overrepresented": [],
+      "releases": 2,
+      "territory": "Nafarroa",
+      "top_tags": [
+        [
+          "electronic",
+          2
+        ],
+        [
+          "electronica",
+          2
+        ],
+        [
+          "techno",
+          2
+        ],
+        [
+          "techno; downtempo; electro",
+          2
+        ],
+        [
+          "davma",
+          1
+        ],
+        [
+          "rebels",
+          1
+        ],
+        [
+          "riot",
+          1
+        ]
+      ],
+      "years": [
+        2022,
+        2025
+      ]
+    },
+    {
+      "artists": 2,
+      "by_type": {
+        "direct": 2
+      },
+      "id": "zornotza",
+      "label_account_share": 0.0,
+      "name": "Zornotza",
+      "overrepresented": [],
+      "releases": 2,
+      "territory": "Bizkaia",
+      "top_tags": [
+        [
+          "hip hop",
+          2
+        ],
+        [
+          "hip-hop/rap",
+          2
+        ],
+        [
+          "pablo gil aguirre",
+          2
+        ],
+        [
+          "ronda",
+          2
+        ]
+      ],
+      "years": [
+        2012,
+        2016
       ]
     },
     {
@@ -5707,56 +6142,6 @@
       "by_type": {
         "direct": 1
       },
-      "id": "altsasu",
-      "label_account_share": 0.0,
-      "name": "Altsasu",
-      "overrepresented": [],
-      "releases": 1,
-      "territory": "Nafarroa",
-      "top_tags": [
-        [
-          "album",
-          1
-        ],
-        [
-          "d-beat",
-          1
-        ],
-        [
-          "disasko",
-          1
-        ],
-        [
-          "disbrigade",
-          1
-        ],
-        [
-          "hardcore",
-          1
-        ],
-        [
-          "i+d",
-          1
-        ],
-        [
-          "lokal",
-          1
-        ],
-        [
-          "musica",
-          1
-        ]
-      ],
-      "years": [
-        2023,
-        2023
-      ]
-    },
-    {
-      "artists": 1,
-      "by_type": {
-        "direct": 1
-      },
       "id": "angelu",
       "label_account_share": 0.0,
       "name": "Angelu",
@@ -5788,48 +6173,6 @@
       "years": [
         2025,
         2025
-      ]
-    },
-    {
-      "artists": 1,
-      "by_type": {
-        "direct": 1
-      },
-      "id": "aramaio",
-      "label_account_share": 0.0,
-      "name": "Aramaio",
-      "overrepresented": [],
-      "releases": 1,
-      "territory": "Araba",
-      "top_tags": [
-        [
-          "album release",
-          1
-        ],
-        [
-          "basque music",
-          1
-        ],
-        [
-          "basque rock alternative",
-          1
-        ],
-        [
-          "phoenix",
-          1
-        ],
-        [
-          "rock",
-          1
-        ],
-        [
-          "rock'n'roll",
-          1
-        ]
-      ],
-      "years": [
-        2021,
-        2021
       ]
     },
     {
@@ -6095,40 +6438,6 @@
       "by_type": {
         "direct": 1
       },
-      "id": "legutio",
-      "label_account_share": 0.0,
-      "name": "Legutio",
-      "overrepresented": [],
-      "releases": 1,
-      "territory": "Araba",
-      "top_tags": [
-        [
-          "hardcore punk",
-          1
-        ],
-        [
-          "punk",
-          1
-        ],
-        [
-          "punk oi!",
-          1
-        ],
-        [
-          "street punk",
-          1
-        ]
-      ],
-      "years": [
-        2020,
-        2020
-      ]
-    },
-    {
-      "artists": 1,
-      "by_type": {
-        "direct": 1
-      },
       "id": "lizarra",
       "label_account_share": 0.0,
       "name": "Lizarra",
@@ -6152,40 +6461,6 @@
       "years": [
         2024,
         2024
-      ]
-    },
-    {
-      "artists": 1,
-      "by_type": {
-        "direct": 1
-      },
-      "id": "markina-xemein",
-      "label_account_share": 0.0,
-      "name": "Markina-Xemein",
-      "overrepresented": [],
-      "releases": 1,
-      "territory": "Bizkaia",
-      "top_tags": [
-        [
-          "electronic",
-          1
-        ],
-        [
-          "electronic rock",
-          1
-        ],
-        [
-          "indie rock",
-          1
-        ],
-        [
-          "rock",
-          1
-        ]
-      ],
-      "years": [
-        2016,
-        2016
       ]
     },
     {
@@ -6535,15 +6810,19 @@
       "by_type": {
         "direct": 1
       },
-      "id": "zizur-nagusia",
+      "id": "zizurkil",
       "label_account_share": 0.0,
-      "name": "Zizur Nagusia",
+      "name": "Zizurkil",
       "overrepresented": [],
       "releases": 1,
-      "territory": "Nafarroa",
+      "territory": "Gipuzkoa",
       "top_tags": [
         [
-          "davma",
+          "antifa electropop",
+          1
+        ],
+        [
+          "electro",
           1
         ],
         [
@@ -6551,63 +6830,17 @@
           1
         ],
         [
-          "electronica",
+          "political pop",
           1
         ],
         [
-          "rebels",
-          1
-        ],
-        [
-          "riot",
-          1
-        ],
-        [
-          "techno",
-          1
-        ],
-        [
-          "techno; downtempo; electro",
+          "post-punk",
           1
         ]
       ],
       "years": [
-        2025,
-        2025
-      ]
-    },
-    {
-      "artists": 1,
-      "by_type": {
-        "direct": 1
-      },
-      "id": "zornotza",
-      "label_account_share": 0.0,
-      "name": "Zornotza",
-      "overrepresented": [],
-      "releases": 1,
-      "territory": "Bizkaia",
-      "top_tags": [
-        [
-          "hip hop",
-          1
-        ],
-        [
-          "hip-hop/rap",
-          1
-        ],
-        [
-          "pablo gil aguirre",
-          1
-        ],
-        [
-          "ronda",
-          1
-        ]
-      ],
-      "years": [
-        2012,
-        2012
+        2026,
+        2026
       ]
     }
   ],
@@ -6616,176 +6849,176 @@
       [
         "live recording",
         98,
-        26.46
+        26.29
       ],
       [
         "deep tech",
         25,
-        24.35
+        24.19
       ],
       [
         "tropical",
         45,
-        24.07
-      ],
-      [
-        "live",
-        98,
-        22.27
+        23.9
       ],
       [
         "crust punk",
         98,
-        22.09
+        21.94
+      ],
+      [
+        "live",
+        98,
+        21.76
       ],
       [
         "rub a dub",
         13,
-        18.66
+        18.54
       ],
       [
         "raggamuffin",
         13,
-        17.73
+        17.61
       ],
       [
         "r&b/soul",
         45,
-        17.05
+        16.93
       ],
       [
         "mugre",
         6,
-        14.88
+        14.78
       ],
       [
         "one man band",
         6,
-        13.64
+        13.55
       ]
     ],
     "tag:hardcore": {
-      "located": 581,
+      "located": 602,
       "places": [
         [
           "Bilbo",
-          181,
-          2469,
-          0.86
+          185,
+          2609,
+          0.85
         ],
         [
           "Zarautz",
-          106,
-          280,
-          4.45
+          108,
+          297,
+          4.37
         ],
         [
           "Irun",
           56,
-          113,
-          5.83
+          114,
+          5.9
         ],
         [
           "Donostia",
-          53,
-          1005,
+          54,
+          1050,
           0.62
         ],
         [
           "Gasteiz",
-          46,
-          557,
-          0.97
+          50,
+          589,
+          1.02
         ],
         [
           "Iruñea",
           23,
-          925,
-          0.29
+          979,
+          0.28
         ],
         [
           "Sopela",
-          10,
+          18,
+          19,
+          11.38
+        ],
+        [
+          "Gernika-Lumo",
           11,
-          10.7
+          47,
+          2.81
         ],
         [
           "Santurtzi",
           10,
-          75,
-          1.57
-        ],
-        [
-          "Gernika-Lumo",
-          9,
-          43,
-          2.46
+          76,
+          1.58
         ],
         [
           "Oiartzun",
           8,
           35,
-          2.69
+          2.74
         ]
       ],
-      "tag_releases": 649
+      "tag_releases": 670
     },
     "tag:noise": {
-      "located": 266,
+      "located": 284,
       "places": [
         [
           "Bilbo",
-          128,
-          2469,
-          1.26
+          133,
+          2609,
+          1.23
+        ],
+        [
+          "Gasteiz",
+          59,
+          589,
+          2.42
         ],
         [
           "Donostia",
           50,
-          1005,
-          1.21
-        ],
-        [
-          "Gasteiz",
-          49,
-          557,
-          2.13
+          1050,
+          1.15
         ],
         [
           "Iruñea",
-          14,
-          925,
+          15,
+          979,
           0.37
         ],
         [
           "Getxo",
-          10,
-          93,
-          2.61
+          12,
+          96,
+          3.02
         ],
         [
           "Berriz",
           5,
           11,
-          11.02
+          10.98
         ],
         [
           "Arrasate",
           4,
-          49,
-          1.98
+          50,
+          1.93
         ],
         [
           "Azkaine",
           2,
           2,
-          24.24
+          24.16
         ],
         [
           "Ondarroa",
           2,
-          39,
-          1.24
+          40,
+          1.21
         ],
         [
           "Andoain",
@@ -6794,73 +7027,73 @@
           0.73
         ]
       ],
-      "tag_releases": 315
+      "tag_releases": 333
     },
     "tag:techno": {
-      "located": 648,
+      "located": 662,
       "places": [
         [
           "Bilbo",
-          353,
-          2469,
+          361,
+          2609,
           1.61
         ],
         [
           "Iruñea",
           166,
-          925,
-          2.02
+          979,
+          1.97
         ],
         [
           "Donostia",
-          80,
-          1005,
-          0.9
+          83,
+          1050,
+          0.92
         ],
         [
           "Gasteiz",
-          39,
-          557,
-          0.79
+          41,
+          589,
+          0.81
         ],
         [
           "Portugalete",
           3,
           41,
-          0.82
+          0.85
+        ],
+        [
+          "Zizur Nagusia",
+          2,
+          2,
+          11.61
         ],
         [
           "Hondarribia",
           2,
-          59,
-          0.38
-        ],
-        [
-          "Zizur Nagusia",
-          1,
-          1,
-          11.25
+          62,
+          0.37
         ],
         [
           "Sestao",
           1,
-          6,
-          1.87
+          8,
+          1.45
         ],
         [
           "Hernani",
           1,
           32,
-          0.35
+          0.36
         ],
         [
           "Errenteria",
           1,
-          58,
+          60,
           0.19
         ]
       ],
-      "tag_releases": 679
+      "tag_releases": 693
     },
     "tag:trikitixa": {
       "located": 3,
@@ -6869,19 +7102,19 @@
           "Kanbo",
           1,
           13,
-          195.82
+          206.31
         ],
         [
           "Portugalete",
           1,
           41,
-          62.09
+          65.41
         ],
         [
           "Gasteiz",
           1,
-          557,
-          4.57
+          589,
+          4.55
         ]
       ],
       "tag_releases": 3
@@ -6894,7 +7127,7 @@
     "france": 73,
     "nafarroa": 13,
     "nouvelle-aquitaine": 4,
-    "spain": 39
+    "spain": 40
   },
   "rejected_values": {
     "Afghanistan": 24,
@@ -6906,22 +7139,22 @@
     "Pamplona, Colombia": 6,
     "San Sebastián, Chile": 1
   },
-  "releases_with_conflicts": 38,
-  "reliable": 6504,
+  "releases_with_conflicts": 40,
+  "reliable": 6903,
   "territories": {
-    "Araba": 596,
-    "Bizkaia": 3034,
-    "Gipuzkoa": 1903,
+    "Araba": 635,
+    "Bizkaia": 3223,
+    "Gipuzkoa": 2016,
     "Iparralde": 79,
-    "Nafarroa": 975
+    "Nafarroa": 1041
   },
-  "total_releases": 7637,
+  "total_releases": 8046,
   "types": {
-    "artist_inferred": 83,
-    "direct": 5018,
-    "outside_scope": 287,
-    "region_only": 560,
-    "same_account": 1486,
+    "artist_inferred": 91,
+    "direct": 5419,
+    "outside_scope": 288,
+    "region_only": 561,
+    "same_account": 1484,
     "tag_hint": 36,
     "unresolved": 167
   },

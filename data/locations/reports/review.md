@@ -31,16 +31,16 @@ Ninguno.
 |---|---:|---:|---:|---|
 | Afghanistan | 24 | 24 | 1 | manual: ubicación no literal: la usa solo la cuenta del sello navarro Mendeku Diskak (Orreaga 778, Cuero…); revisado 2026-09-19 |
 
-## Fuera de Euskal Herria — 115 valores, 283 releases
+## Fuera de Euskal Herria — 115 valores, 289 releases
 
 | Texto crudo | rel. | obs. | cuentas | Motivo |
 |---|---:|---:|---:|---|
 | Madrid, Spain | 53 | 83 | 21 | lugar fuera del ámbito (lista controlada) |
-| Barcelona, Spain | 19 | 34 | 16 | lugar fuera del ámbito (lista controlada) |
+| Barcelona, Spain | 20 | 34 | 16 | lugar fuera del ámbito (lista controlada) |
+| Buenos Aires, Argentina | 12 | 12 | 5 | fuera de ES/FR (Argentina) |
 | Punta Del Este, Uruguay | 10 | 10 | 5 | fuera de ES/FR (Uruguay) |
 | Zaragoza, Spain | 10 | 10 | 2 | lugar fuera del ámbito (lista controlada) |
 | La Línea De La Concepción, Spain | 9 | 9 | 1 | lugar fuera del ámbito (lista controlada) |
-| Buenos Aires, Argentina | 7 | 12 | 5 | fuera de ES/FR (Argentina) |
 | Paris, France | 7 | 7 | 6 | lugar fuera del ámbito (lista controlada) |
 | London, UK | 6 | 8 | 2 | fuera de ES/FR (UK) |
 | Berlin, Germany | 5 | 6 | 5 | fuera de ES/FR (Germany) |
@@ -151,7 +151,7 @@ Ninguno.
 | Brittany, France | 0 | 131 | 1 | lugar fuera del ámbito (lista controlada) |
 | Nice, France | 0 | 2 | 1 | lugar fuera del ámbito (lista controlada) |
 
-## Solo región, comarca o país (sin municipio) — 14 valores, 515 releases
+## Solo región, comarca o país (sin municipio) — 14 valores, 519 releases
 
 | Texto crudo | rel. | obs. | cuentas | Motivo |
 |---|---:|---:|---:|---|
@@ -159,7 +159,7 @@ Ninguno.
 | Basque Country, Spain | 117 | 117 | 34 | el valor completo es una región (euskal-herria) |
 | Euskadi, Spain | 76 | 77 | 18 | el valor completo es una región (euskal-herria) |
 | France | 73 | 76 | 12 | el valor completo es una región (france) |
-| Spain | 35 | 77 | 22 | el valor completo es una región (spain) |
+| Spain | 39 | 77 | 22 | el valor completo es una región (spain) |
 | Enkarterri, Spain | 6 | 6 | 3 | región/comarca, sin municipio (enkarterri) |
 | Navarre, Spain | 6 | 6 | 4 | región/comarca, sin municipio (nafarroa) |
 | PV | 5 | 5 | 3 | el valor completo es una región (euskal-herria) |
@@ -174,73 +174,79 @@ Ninguno.
 
 | Municipio | Territorio | Textos crudos (releases) |
 |---|---|---|
-| Donostia (`donostia`) | Gipuzkoa | Donostia San Sebastian, Spain (479); San Sebastián, Spain (370); Donostia San Sebastián, Spain (68); Donostia / San Sebastián, Spain (48); Donostia, Spain (18); Donostia (4) |
-| Bilbo (`bilbo`) | Bizkaia | Bilbao, Spain (940); Bilbo, Spain (29); Bilbao (1) |
-| Iruñea (`irunea`) | Nafarroa | Pamplona, Spain (905); Iruña, Spain (2) |
-| Gasteiz (`gasteiz`) | Araba | Vitoria Gasteiz, Spain (538); Vitoria, Spain (12) |
-| Zarautz (`zarautz`) | Gipuzkoa | Zarautz, Spain (279) |
-| Irun (`irun`) | Gipuzkoa | Irun, Spain (107); Irún, Spain (6) |
-| Getxo (`getxo`) | Bizkaia | Getxo, Spain (91) |
-| Santurtzi (`santurtzi`) | Bizkaia | Santurtzi, Spain (73) |
-| Hondarribia (`hondarribia`) | Gipuzkoa | Hondarribia, Spain (59) |
-| Errenteria (`errenteria`) | Gipuzkoa | Errenteria, Spain (58) |
-| Barakaldo (`barakaldo`) | Bizkaia | Barakaldo, Spain (55) |
-| Arrasate (`arrasate`) | Gipuzkoa | Arrasate, Spain (48) |
+| Bilbo (`bilbo`) | Bizkaia | Bilbao, Spain (1060); Bilbo, Spain (44); Bilbao (2) |
+| Donostia (`donostia`) | Gipuzkoa | Donostia San Sebastian, Spain (488); San Sebastián, Spain (384); Donostia San Sebastián, Spain (78); Donostia / San Sebastián, Spain (48); Donostia, Spain (25); Donostia (9) |
+| Iruñea (`irunea`) | Nafarroa | Pamplona, Spain (959); Iruña, Spain (2) |
+| Gasteiz (`gasteiz`) | Araba | Vitoria Gasteiz, Spain (565); Vitoria, Spain (14) |
+| Zarautz (`zarautz`) | Gipuzkoa | Zarautz, Spain (296) |
+| Irun (`irun`) | Gipuzkoa | Irun, Spain (108); Irún, Spain (6) |
+| Getxo (`getxo`) | Bizkaia | Getxo, Spain (94) |
+| Santurtzi (`santurtzi`) | Bizkaia | Santurtzi, Spain (74) |
+| Barakaldo (`barakaldo`) | Bizkaia | Barakaldo, Spain (65) |
+| Hondarribia (`hondarribia`) | Gipuzkoa | Hondarribia, Spain (62) |
+| Errenteria (`errenteria`) | Gipuzkoa | Errenteria, Spain (60) |
+| Arrasate (`arrasate`) | Gipuzkoa | Arrasate, Spain (49) |
 | Leioa (`leioa`) | Bizkaia | Leioa, Spain (48) |
-| Bermeo (`bermeo`) | Bizkaia | Bermeo, Spain (41) |
+| Bermeo (`bermeo`) | Bizkaia | Bermeo, Spain (46) |
+| Gernika-Lumo (`gernika-lumo`) | Bizkaia | Guernica, Spain (29); Gernika Lumo, Spain (14) |
 | Portugalete (`portugalete`) | Bizkaia | Portugalete, Spain (41) |
-| Gernika-Lumo (`gernika-lumo`) | Bizkaia | Guernica, Spain (28); Gernika Lumo, Spain (11) |
-| Ondarroa (`ondarroa`) | Bizkaia | Ondarroa, Spain (39) |
+| Ondarroa (`ondarroa`) | Bizkaia | Ondarroa, Spain (40) |
+| Eibar (`eibar`) | Gipuzkoa | Eibar, Spain (39) |
+| Tolosa (`tolosa`) | Gipuzkoa | Tolosa, Spain (38) |
 | Oiartzun (`oiartzun`) | Gipuzkoa | Oiartzun, Spain (35) |
-| Eibar (`eibar`) | Gipuzkoa | Eibar, Spain (34) |
-| Tolosa (`tolosa`) | Gipuzkoa | Tolosa, Spain (34) |
 | Andoain (`andoain`) | Gipuzkoa | Andoain, Spain (33) |
+| Oñati (`onati`) | Gipuzkoa | Oñati, Spain (31) |
 | Hernani (`hernani`) | Gipuzkoa | Hernani, Spain (29); Ereñotzu, Spain (1) |
-| Oñati (`onati`) | Gipuzkoa | Oñati, Spain (29) |
-| Tutera (`tutera`) | Nafarroa | Tudela, Spain (22) |
-| Zumaia (`zumaia`) | Gipuzkoa | Zumaia, Spain (22) |
+| Tutera (`tutera`) | Nafarroa | Tudela, Spain (24) |
+| Zumaia (`zumaia`) | Gipuzkoa | Zumaia, Spain (23) |
+| Mungia (`mungia`) | Bizkaia | Mungia, Spain (21) |
+| Azpeitia (`azpeitia`) | Gipuzkoa | Azpeitia, Spain (19) |
 | Laudio (`laudio`) | Araba | Laudio, Spain (19) |
-| Azpeitia (`azpeitia`) | Gipuzkoa | Azpeitia, Spain (18) |
+| Ermua (`ermua`) | Bizkaia | Ermua, Spain (17) |
+| Sopela (`sopela`) | Bizkaia | Sopelana, Spain (17) |
 | Bergara (`bergara`) | Gipuzkoa | Bergara, Spain (16) |
-| Ermua (`ermua`) | Bizkaia | Ermua, Spain (16) |
-| Mungia (`mungia`) | Bizkaia | Mungia, Spain (16) |
 | Lekeitio (`lekeitio`) | Bizkaia | Lekeitio, Spain (15) |
+| Mendaro (`mendaro`) | Gipuzkoa | Mendaro, Spain (15) |
 | Baiona (`baiona`) | Iparralde | Bayonne, France (14) |
+| Urretxu (`urretxu`) | Gipuzkoa | Urretxu, Spain (14) |
 | Kanbo (`kanbo`) | Iparralde | Cambo Les Bains, France (13) |
 | Hendaia (`hendaia`) | Iparralde | Hendaye, France (13) |
 | Amurrio (`amurrio`) | Araba | Amurrio, Spain (12) |
+| Basauri (`basauri`) | Bizkaia | Basauri, Spain (12) |
+| Legazpi (`legazpi`) | Gipuzkoa | Legazpi, Spain (12) |
+| Lekunberri (`lekunberri-nafarroa`) | Nafarroa | Lekunberri, Spain (12) |
 | Berriz (`berriz`) | Bizkaia | Berriz, Spain (11) |
-| Mendaro (`mendaro`) | Gipuzkoa | Mendaro, Spain (11) |
-| Basauri (`basauri`) | Bizkaia | Basauri, Spain (10) |
+| Zaldibia (`zaldibia`) | Gipuzkoa | Zaldibia, Spain (10) |
 | Itsasu (`itsasu`) | Iparralde | Itxassou, France (9) |
-| Sopela (`sopela`) | Bizkaia | Sopelana, Spain (9) |
 | Zumarraga (`zumarraga`) | Gipuzkoa | Zumarraga, Spain (9) |
 | Arrigorriaga (`arrigorriaga`) | Bizkaia | Arrigorriaga, Spain (8) |
-| Legazpi (`legazpi`) | Gipuzkoa | Legazpi, Spain (8) |
-| Urretxu (`urretxu`) | Gipuzkoa | Urretxu, Spain (8) |
-| Bera (`bera`) | Nafarroa | Bera, Spain (7) |
+| Bera (`bera`) | Nafarroa | Bera, Spain (8) |
+| Sestao (`sestao`) | Bizkaia | Sestao, Spain (8) |
 | Hazparne (`hazparne`) | Iparralde | Hasparren, France (7) |
+| Lasarte-Oria (`lasarte-oria`) | Gipuzkoa | Lasarte Oria, Spain (7) |
+| Markina-Xemein (`markina-xemein`) | Bizkaia | Markina Xemein, Spain (7) |
+| Moreda Araba (`moreda-araba`) | Araba | Moreda De Alava, Spain (7) |
 | Galdakao (`galdakao`) | Bizkaia | Galdakao, Spain (6) |
 | Ispaster (`ispaster`) | Bizkaia | Ispaster, Spain (6) |
-| Lasarte-Oria (`lasarte-oria`) | Gipuzkoa | Lasarte Oria, Spain (6) |
-| Sestao (`sestao`) | Bizkaia | Sestao, Spain (6) |
+| Urnieta (`urnieta`) | Gipuzkoa | Urnieta, Spain (6) |
+| Villabona-Amasa (`villabona-amasa`) | Gipuzkoa | Villabona, Spain (6) |
+| Beasain (`beasain`) | Gipuzkoa | Beasain, Spain (5) |
+| Elgoibar (`elgoibar`) | Gipuzkoa | Elgoibar, Spain (5) |
 | Getaria (`getaria-gipuzkoa`) | Gipuzkoa | Getaria, Spain (5) |
-| Lekunberri (`lekunberri-nafarroa`) | Nafarroa | Lekunberri, Spain (5) |
 | Orio (`orio`) | Gipuzkoa | Orio, Spain (5) |
-| Urnieta (`urnieta`) | Gipuzkoa | Urnieta, Spain (5) |
-| Villabona-Amasa (`villabona-amasa`) | Gipuzkoa | Villabona, Spain (5) |
 | Abadiño (`abadino`) | Bizkaia | Abadiño, Spain (4) |
 | Elortzibar (`elortzibar`) | Nafarroa | Noáin, Navarra, Spain (4) |
 | Donibane Lohizune (`donibane-lohizune`) | Iparralde | Saint Jean De Luz, France (4) |
 | Azkoitia (`azkoitia`) | Gipuzkoa | Azkoitia, Spain (3) |
 | Biarritz (`biarritz`) | Iparralde | Biarritz, France (3) |
+| Legutio (`legutio`) | Araba | Legutio, Spain (3) |
 | Maule-Lextarre (`maule-lextarre`) | Iparralde | Mauléon Licharre, France (3) |
-| Moreda Araba (`moreda-araba`) | Araba | Moreda De Alava, Spain (3) |
 | Zaldibar (`zaldibar`) | Bizkaia | Zaldibar, Spain (3) |
+| Altsasu (`altsasu`) | Nafarroa | Alsasua – Altsasu, Spain (2) |
+| Zornotza (`zornotza`) | Bizkaia | Amorebieta, Spain (2) |
+| Aramaio (`aramaio`) | Araba | Aramaio, Spain (2) |
 | Azkaine (`azkaine`) | Iparralde | Ascain, France (2) |
-| Beasain (`beasain`) | Gipuzkoa | Beasain, Spain (2) |
 | Durango (`durango`) | Bizkaia | Durango, Spain (2) |
-| Elgoibar (`elgoibar`) | Gipuzkoa | Elgoibar, Spain (2) |
 | Elorrio (`elorrio`) | Bizkaia | Elorrio, Spain (2) |
 | Eskoriatza (`eskoriatza`) | Gipuzkoa | Eskoriatza, Spain (2) |
 | Deba (`deba`) | Gipuzkoa | Itziar, Spain (2) |
@@ -250,13 +256,10 @@ Ninguno.
 | Baigorri (`baigorri`) | Iparralde | Saint étienne De Baïgorry, France (2) |
 | Soraluze (`soraluze`) | Gipuzkoa | Soraluze Placencia De Las Armas, Spain (1); Soraluze, Spain (1) |
 | Suhuskune (`suhuskune`) | Iparralde | Suhescun, France (2) |
-| Zaldibia (`zaldibia`) | Gipuzkoa | Zaldibia, Spain (2) |
 | Zestoa (`zestoa`) | Gipuzkoa | Zestoa, Spain (2) |
+| Zizur Nagusia (`zizur-nagusia`) | Nafarroa | Zizur Mayor, Spain (2) |
 | Ainhize-Monjolose (`ainhize-monjolose`) | Iparralde | Ainhice Mongelos, France (1) |
-| Altsasu (`altsasu`) | Nafarroa | Alsasua – Altsasu, Spain (1) |
-| Zornotza (`zornotza`) | Bizkaia | Amorebieta, Spain (1) |
 | Angelu (`angelu`) | Iparralde | Anglet, France (1) |
-| Aramaio (`aramaio`) | Araba | Aramaio, Spain (1) |
 | Arellano (`arellano`) | Nafarroa | Arellano, Spain (1) |
 | Aretxabaleta (`aretxabaleta`) | Gipuzkoa | Aretxabaleta, Spain (1) |
 | Berango (`berango`) | Bizkaia | Berango, Spain (1) |
@@ -265,8 +268,6 @@ Ninguno.
 | Lizarra (`lizarra`) | Nafarroa | Estella, Spain (1) |
 | Irulegi (`irulegi`) | Iparralde | Irouléguy, France (1) |
 | Legorreta (`legorreta`) | Gipuzkoa | Legorreta, Spain (1) |
-| Legutio (`legutio`) | Araba | Legutio, Spain (1) |
-| Markina-Xemein (`markina-xemein`) | Bizkaia | Markina Xemein, Spain (1) |
 | Mundaka (`mundaka`) | Bizkaia | Mundaka, Spain (1) |
 | Mutriku (`mutriku`) | Gipuzkoa | Mutriku, Spain (1) |
 | Donibane Garazi (`donibane-garazi`) | Iparralde | Saint Jean Pied De Port, France (1) |
@@ -277,5 +278,4 @@ Ninguno.
 | Usurbil (`usurbil`) | Gipuzkoa | Usurbil, Spain (1) |
 | Trapagaran (`trapagaran`) | Bizkaia | Valle De Trápaga Trapagaran, Spain (1) |
 | Zaratamo (`zaratamo`) | Bizkaia | Zaratamo, Spain (1) |
-| Zizur Nagusia (`zizur-nagusia`) | Nafarroa | Zizur Mayor, Spain (1) |
-| Zizurkil (`zizurkil`) | Gipuzkoa | Zizurkil, Spain (0) |
+| Zizurkil (`zizurkil`) | Gipuzkoa | Zizurkil, Spain (1) |

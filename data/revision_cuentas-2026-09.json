@@ -1,0 +1,1437 @@
+{
+  "meta": {
+    "que_es": "Pendientes de revisión manual tras el merge de candidates/cuentas-2026-09. No bloquean el canónico.",
+    "date": "2026-09-27",
+    "pr": 70,
+    "sellos_mixtos": "83 filas de 5 sellos vascos que también publican grupos de fuera (actionweekend, gramacionesgrabofonicas, rbls, deofora, wearethedaughters): artista no presente en el canónico y sin señal vasca propia. Ni entran ni se rechazan; repescables."
+  },
+  "sello_vs_sello": [
+    {
+      "candidato_url": "https://dhasthbeatsoficial.bandcamp.com/album/dhasthbeats-on-air",
+      "canon_id": 3509,
+      "canon_url": "https://dhasthbeatsoficial.bandcamp.com/album/dhasthbeats-on-air-2",
+      "artist": "dHastHBeats",
+      "title": "dHastHBeats - On Air"
+    },
+    {
+      "candidato_url": "https://ilmband.bandcamp.com/album/the-withering",
+      "canon_id": 262,
+      "canon_url": "https://funere.bandcamp.com/album/the-withering",
+      "artist": "In Loving Memory",
+      "title": "The Withering"
+    },
+    {
+      "candidato_url": "https://massaconfusa.bandcamp.com/album/massa-confusa-presents-compilation-volume-1",
+      "canon_id": 3297,
+      "canon_url": "https://clartycat.bandcamp.com/album/massa-confusa-presents-compilation-volume-1",
+      "artist": "Various Artists",
+      "title": "Massa Confusa Presents Compilation Volume 1"
+    },
+    {
+      "candidato_url": "https://tootheroak.bandcamp.com/album/tooth-2",
+      "canon_id": 7027,
+      "canon_url": "https://tootheroak.bandcamp.com/album/tooth",
+      "artist": "Tooth",
+      "title": "Tooth"
+    }
+  ],
+  "internos_ambiguos": [],
+  "retenidos": [
+    {
+      "artist": "The Forrest Gump Mile High Marathon",
+      "title": "SELF TITLED",
+      "url": "https://heisenbergny.bandcamp.com/album/self-titled",
+      "cuenta": "heisenbergny",
+      "nota": "cuenta ajena al artista, sin ubicación y sin señal vasca propia: ni entra ni se rechaza, pendiente de revisión"
+    },
+    {
+      "artist": "The Forrest Gump Mile High Marathon",
+      "title": "TFGMHM 2009 rehearsal 2011 demo",
+      "url": "https://heisenbergny.bandcamp.com/album/tfgmhm-2009-rehearsal-2011-demo",
+      "cuenta": "heisenbergny",
+      "nota": "cuenta ajena al artista, sin ubicación y sin señal vasca propia: ni entra ni se rechaza, pendiente de revisión"
+    }
+  ],
+  "retenidos_sellos_mixtos": [
+    {
+      "artist": "Karma Gurús",
+      "title": "Al Despertar / Reverberation",
+      "year": 2014,
+      "url": "https://actionweekend.bandcamp.com/album/al-despertar-reverberation",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "león",
+        "rock",
+        "folk rock",
+        "garage",
+        "garage rock",
+        "new psychedelia",
+        "psychedelic",
+        "psychedelic folk",
+        "pychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Jamarazza",
+      "title": "Alucinosis / Saya Negra",
+      "year": 2019,
+      "url": "https://actionweekend.bandcamp.com/album/alucinosis-saya-negra",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "new psych",
+        "rock",
+        "amazonian",
+        "garage",
+        "hard psych",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Amonite",
+      "title": "Amonite Blues",
+      "year": 2025,
+      "url": "https://actionweekend.bandcamp.com/album/amonite-blues",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "psychedelic blues",
+        "rock",
+        "acoustic blues guitar",
+        "garage",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Zack Keim",
+      "title": "Battery Lane",
+      "year": 2025,
+      "url": "https://actionweekend.bandcamp.com/album/battery-lane",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "garage",
+        "indie folk",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Zack Keim",
+      "title": "Better Days / Maggie",
+      "year": 2023,
+      "url": "https://actionweekend.bandcamp.com/album/better-days-maggie",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "garage",
+        "indie folk",
+        "indie pop",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Zack Keim",
+      "title": "Canyon / Alice",
+      "year": 2022,
+      "url": "https://actionweekend.bandcamp.com/album/canyon-alice",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "folk",
+        "pittsburgh",
+        "rock",
+        "usa",
+        "alternative",
+        "country folk",
+        "folk pop",
+        "garage",
+        "indie folk",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Jacco Gardner",
+      "title": "Clear The Air / A House On The Moon",
+      "year": 2012,
+      "url": "https://actionweekend.bandcamp.com/album/clear-the-air-a-house-on-the-moon-2",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "baroque pop",
+        "garage",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Jacco Gardner",
+      "title": "Clear The Air / A House On The Moon (Re)",
+      "year": 2013,
+      "url": "https://actionweekend.bandcamp.com/album/clear-the-air-a-house-on-the-moon-re",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "garage",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Het Combo Koedijk",
+      "title": "Doe Mij Dit Niet Aan! / Dat Leuke Ding van de Kruidenier",
+      "year": 2016,
+      "url": "https://actionweekend.bandcamp.com/album/doe-mij-dit-niet-aan-dat-leuke-ding-van-de-kruidenier",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "punk",
+        "rock",
+        "soul",
+        "dutch",
+        "folk",
+        "garage",
+        "nederbeat",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Pulsebeats",
+      "title": "Fiction Non-Fiction",
+      "year": 2016,
+      "url": "https://actionweekend.bandcamp.com/album/fiction-non-fiction",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "uk garage",
+        "garage",
+        "power pop",
+        "psychedelic",
+        "punk rock",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Safes",
+      "title": "Hometown / Ace For A Face",
+      "year": 2018,
+      "url": "https://actionweekend.bandcamp.com/album/hometown-ace-for-a-face",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "garage",
+        "power pop",
+        "psychedelic",
+        "rock and roll",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Routes",
+      "title": "I Got A Feelin´ / All I Really  Need Is Love",
+      "year": 2013,
+      "url": "https://actionweekend.bandcamp.com/album/i-got-a-feelin-all-i-really-need-is-love",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "garage",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Los Estanques",
+      "title": "II",
+      "year": 2017,
+      "url": "https://actionweekend.bandcamp.com/album/ii",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "progressive rock",
+        "rock",
+        "garage",
+        "pop psychedelic",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Los Estanques",
+      "title": "Inés Moral / Niño Soy",
+      "year": 2019,
+      "url": "https://actionweekend.bandcamp.com/album/in-s-moral-ni-o-soy",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "action weekend",
+        "action weekend records",
+        "inbpophonic",
+        "los estanques",
+        "rock",
+        "garage",
+        "progresivo",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Los Cids",
+      "title": "Los Cids",
+      "year": 2025,
+      "url": "https://actionweekend.bandcamp.com/album/los-cids",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "action weekend",
+        "los cids",
+        "rock",
+        "garage",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Routes",
+      "title": "Mesmerised",
+      "year": 2021,
+      "url": "https://actionweekend.bandcamp.com/album/mesmerised",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "garage",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Chris Jack",
+      "title": "Miles to Go",
+      "year": 2020,
+      "url": "https://actionweekend.bandcamp.com/album/miles-to-go",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "japan",
+        "rock",
+        "acoustic pop",
+        "folk rock",
+        "garage",
+        "indie",
+        "indie folk",
+        "indie pop",
+        "pop psych",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Skywalkers",
+      "title": "Rosa / Creature Of The Night",
+      "year": 2013,
+      "url": "https://actionweekend.bandcamp.com/album/rosa-creature-of-the-night",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "freakbeat",
+        "hugo van de poel",
+        "jacco gardner",
+        "rock",
+        "the skywalkers",
+        "garage",
+        "garage pop",
+        "psychedelic",
+        "psychedelic pop",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Los Estanques",
+      "title": "Sentado al Son / Cuantos Valles",
+      "year": 2016,
+      "url": "https://actionweekend.bandcamp.com/album/sentado-al-son-cuantos-valles",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "folk rock",
+        "garage",
+        "progressive",
+        "psych pop",
+        "psychedelia",
+        "psychedelic",
+        "psychedelic rock",
+        "psychpop",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Kryng",
+      "title": "So Many Girls",
+      "year": 2019,
+      "url": "https://actionweekend.bandcamp.com/album/so-many-girls",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "action weekend",
+        "meppel",
+        "nederbeat",
+        "rock",
+        "beat",
+        "folk rock",
+        "garage",
+        "garage folk",
+        "indie",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Kryng",
+      "title": "So Many Girls",
+      "year": 2018,
+      "url": "https://actionweekend.bandcamp.com/album/so-many-girls-2",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "nederland",
+        "rock",
+        "garage",
+        "nederbeat",
+        "power pop",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Kryng",
+      "title": "So Many Girls vol.2",
+      "year": 2019,
+      "url": "https://actionweekend.bandcamp.com/album/so-many-girls-vol-2",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "netherlands",
+        "rock",
+        "garage",
+        "nederbeat",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Supertubos",
+      "title": "The Demeter",
+      "year": 2014,
+      "url": "https://actionweekend.bandcamp.com/album/the-demeter",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "surf rock",
+        "garage",
+        "instrumental rock",
+        "psychedelia",
+        "psychedelic",
+        "psychedelic rock",
+        "surf music",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Right Nows",
+      "title": "The Right Nows",
+      "year": 2009,
+      "url": "https://actionweekend.bandcamp.com/album/the-right-nows",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "galicia",
+        "rock",
+        "action weekend",
+        "garage",
+        "pop",
+        "power pop",
+        "psychedelic",
+        "punk",
+        "sunny day",
+        "west coast",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Routes / Bobkat´65",
+      "title": "The Routes / Bobkat'65 Split EP",
+      "year": 2023,
+      "url": "https://actionweekend.bandcamp.com/album/the-routes-bobkat65-split-ep",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "garage",
+        "garage punk",
+        "psychedelic",
+        "teenbeat",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Trouble Couple",
+      "title": "The Trouble Couple",
+      "year": 2020,
+      "url": "https://actionweekend.bandcamp.com/album/the-trouble-couple",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "american roots",
+        "madrid",
+        "rock",
+        "west coast",
+        "acoustic guitar",
+        "australian indie pop rock",
+        "folk rock",
+        "garage",
+        "indie pop",
+        "psychedelic",
+        "psychedelic folk",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Los Pebbles",
+      "title": "Vol.0",
+      "year": 2020,
+      "url": "https://actionweekend.bandcamp.com/album/vol-0",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "rock",
+        "garage",
+        "garage folk rock",
+        "garage punk",
+        "garage revival",
+        "psychedelic",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Lunamotos",
+      "title": "¡WHOOOW!",
+      "year": 2025,
+      "url": "https://actionweekend.bandcamp.com/album/whooow",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "cedeira",
+        "gz",
+        "rock",
+        "alternative rock",
+        "fuzz rock",
+        "garage",
+        "psychedelic",
+        "sonido mosca",
+        "spain"
+      ]
+    },
+    {
+      "artist": "The Safes",
+      "title": "Winning Combination",
+      "year": 2019,
+      "url": "https://actionweekend.bandcamp.com/album/winning-combination",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "action weekend",
+        "chicago",
+        "rock",
+        "usa",
+        "garage",
+        "psychedelic",
+        "psychedelic pop",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Los Tupper",
+      "title": "Yesterday´s Pizza",
+      "year": 2014,
+      "url": "https://actionweekend.bandcamp.com/album/yesterday-s-pizza",
+      "source_account": "actionweekend",
+      "band_location": "Spain",
+      "tags": [
+        "psychedelic",
+        "rock",
+        "blues",
+        "garage",
+        "glam rock",
+        "pop",
+        "spain"
+      ]
+    },
+    {
+      "artist": "Buraco Negro",
+      "title": "Buraco Negro - Devastação k7 - DOF006",
+      "year": 2017,
+      "url": "https://deofora.bandcamp.com/album/buraco-negro-devasta-o-k7-dof006",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "brazil",
+        "punk",
+        "industrial",
+        "techno",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Chroma",
+      "title": "Chroma - Cuerpos Dóciles LP - DOF002",
+      "year": 2016,
+      "url": "https://deofora.bandcamp.com/album/chroma-cuerpos-d-ciles-lp-dof002",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "punk",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Crosta",
+      "title": "Crosta - Refugis 7'' EP - DOF007",
+      "year": 2017,
+      "url": "https://deofora.bandcamp.com/album/crosta-refugis-7-ep-dof007",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "punk",
+        "refugis",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Emotional Pussy",
+      "title": "Love is the law - DOF018",
+      "year": 2022,
+      "url": "https://deofora.bandcamp.com/album/love-is-the-law-dof018",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "punk",
+        "electronic music",
+        "experimental music",
+        "musica electronica",
+        "spokenword",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "MENTIRA",
+      "title": "Mentira - Autointitulado 7'' EP - DOF008",
+      "year": 2017,
+      "url": "https://deofora.bandcamp.com/album/mentira-autointitulado-7-ep-dof008",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "punk",
+        "fodase",
+        "fuckwave",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Dê o Fora!",
+      "title": "OUT SOON!",
+      "year": 2020,
+      "url": "https://deofora.bandcamp.com/album/out-soon",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "punk",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Pedro em Ibiza",
+      "title": "Pedro em Ibiza - DOF013",
+      "year": 2021,
+      "url": "https://deofora.bandcamp.com/album/pedro-em-ibiza-dof013",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "punk",
+        "industrial",
+        "pedro people",
+        "techno",
+        "world music",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Rakta",
+      "title": "Rakta - III LP - DOF004",
+      "year": 2016,
+      "url": "https://deofora.bandcamp.com/album/rakta-iii-lp-dof004",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "brazil",
+        "punk",
+        "world",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Rakta",
+      "title": "Rakta - Intenção 7\" EP - DOF003",
+      "year": 2016,
+      "url": "https://deofora.bandcamp.com/album/rakta-inten-o-7-ep-dof003",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "brazil",
+        "punk",
+        "world",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Rakta",
+      "title": "Rakta - st 12\" - DOF005",
+      "year": 2016,
+      "url": "https://deofora.bandcamp.com/album/rakta-st-12-dof005",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "brazil",
+        "punk",
+        "world",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Dê o Fora!",
+      "title": "Sangre En Polvo - Força obreira k7 - DOF012",
+      "year": 2018,
+      "url": "https://deofora.bandcamp.com/album/sangre-en-polvo-for-a-obreira-k7-dof012",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "palma de mallorca",
+        "punk",
+        "dub",
+        "reggae",
+        "x-ray",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Vértigo",
+      "title": "Vértigo - Vínculos 12'' LP - DOF009",
+      "year": 2017,
+      "url": "https://deofora.bandcamp.com/album/v-rtigo-v-nculos-12-lp-dof009",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "punk",
+        "bajonero",
+        "carcelona",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Dê o Fora!",
+      "title": "Yunclas - De lingua ad mortem k7 - DOF10",
+      "year": 2018,
+      "url": "https://deofora.bandcamp.com/album/yunclas-de-lingua-ad-mortem-k7-dof10",
+      "source_account": "deofora",
+      "band_location": "Barcelona, Spain",
+      "tags": [
+        "punk",
+        "ambient",
+        "asturies",
+        "industrial",
+        "techno",
+        "barcelona"
+      ]
+    },
+    {
+      "artist": "Filetillo",
+      "title": "0916",
+      "year": 2018,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/0916",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop"
+      ]
+    },
+    {
+      "artist": "Ataque de caspa",
+      "title": "Ataque de caspa",
+      "year": 2011,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/ataque-de-caspa",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop"
+      ]
+    },
+    {
+      "artist": "Corte Moderno",
+      "title": "Corte Moderno",
+      "year": 2013,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/corte-moderno",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop",
+        "barcelona",
+        "caja de ritmos",
+        "corte moderno"
+      ]
+    },
+    {
+      "artist": "Anntona",
+      "title": "Grandes males, remedios regulares",
+      "year": 2011,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/grandes-males-remedios-regulares",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "anntona",
+        "grabofonías",
+        "madrid",
+        "pop",
+        "grabofonicas",
+        "gramaciones"
+      ]
+    },
+    {
+      "artist": "Anntona",
+      "title": "Internacional",
+      "year": 2017,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/internacional",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop"
+      ]
+    },
+    {
+      "artist": "Bicicross",
+      "title": "Los alemanes me han perdido el rastro (2005-2007)",
+      "year": 2014,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/los-alemanes-me-han-perdido-el-rastro-2005-2007",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop",
+        "vainica doble",
+        "erasmus",
+        "world music"
+      ]
+    },
+    {
+      "artist": "Los Claveles",
+      "title": "Los Claveles - Ojos",
+      "year": 2014,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/los-claveles-ojos",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "los claveles",
+        "madrid",
+        "pop",
+        "rock"
+      ]
+    },
+    {
+      "artist": "Jonston",
+      "title": "Los sentimientos",
+      "year": 2018,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/los-sentimientos",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop"
+      ]
+    },
+    {
+      "artist": "Caliza",
+      "title": "Mar de cristal",
+      "year": 2018,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/mar-de-cristal",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop"
+      ]
+    },
+    {
+      "artist": "Los Claveles",
+      "title": "Mesetario",
+      "year": 2012,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/mesetario",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "los claveles",
+        "madrid",
+        "mesetario",
+        "pop"
+      ]
+    },
+    {
+      "artist": "Montañas",
+      "title": "Montañas 12\"",
+      "year": 2013,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/monta-as-12",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop",
+        "punk",
+        "asturias",
+        "country",
+        "lo-fi",
+        "montanas",
+        "montañas"
+      ]
+    },
+    {
+      "artist": "Violeta Vil",
+      "title": "Mujeres Ulaga",
+      "year": 2014,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/mujeres-ulaga",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "logroño",
+        "madrid",
+        "pop",
+        "punk",
+        "gothic",
+        "latin"
+      ]
+    },
+    {
+      "artist": "Los Claveles",
+      "title": "Nacional 42 EP",
+      "year": 2010,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/nacional-42-ep",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "los claveles",
+        "madrid",
+        "pop",
+        "rock"
+      ]
+    },
+    {
+      "artist": "Daga Voladora",
+      "title": "Primer Segundo",
+      "year": 2017,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/primer-segundo",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop"
+      ]
+    },
+    {
+      "artist": "Juventud Juché",
+      "title": "Quemadero",
+      "year": 2013,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/quemadero",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "almería",
+        "grabofonías",
+        "madrid",
+        "pop",
+        "sonido muchacho",
+        "hardcore",
+        "punk"
+      ]
+    },
+    {
+      "artist": "Sierra",
+      "title": "Tiene mucha fuerza",
+      "year": 2014,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/tiene-mucha-fuerza",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop"
+      ]
+    },
+    {
+      "artist": "Templeton",
+      "title": "Una mar enorme",
+      "year": 2017,
+      "url": "https://gramacionesgrabofonicas.bandcamp.com/album/una-mar-enorme",
+      "source_account": "gramacionesgrabofonicas",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "grabofonías",
+        "madrid",
+        "pop"
+      ]
+    },
+    {
+      "artist": "Editer, Vendex, Hi-Kuze, Irrational Language, Borsek, Kurohyo",
+      "title": "Alkaline",
+      "year": 2020,
+      "url": "https://rbls.bandcamp.com/album/alkaline",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "electronica",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Borsek",
+      "title": "Archivo 8778",
+      "year": 2022,
+      "url": "https://rbls.bandcamp.com/album/archivo-8778",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "techno",
+        "electronica",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Editer, Kastil, Disruption",
+      "title": "Calle",
+      "year": 2022,
+      "url": "https://rbls.bandcamp.com/album/calle",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "breaks",
+        "electronica",
+        "techno",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Quantum",
+      "title": "Colapso",
+      "year": 2023,
+      "url": "https://rbls.bandcamp.com/album/colapso",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "electronica",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Jose Pouj, Hi-Kuze, Another Machines, Borsek, Korben Nice, Editer",
+      "title": "Destroy To Build",
+      "year": 2021,
+      "url": "https://rbls.bandcamp.com/album/destroy-to-build",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "dark techno",
+        "electronic",
+        "atmospheric techno",
+        "electronica",
+        "industrial techno",
+        "rebels",
+        "techno",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Reviverb, Editer, Demon I/O, Borsek, Iñaki Kreator, Hi-Kuze, Aitor Burgui, Quantum, III3S",
+      "title": "Getting Off The Bench",
+      "year": 2020,
+      "url": "https://rbls.bandcamp.com/album/getting-off-the-bench",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "atmosferic",
+        "electronica",
+        "elektro",
+        "hypnotic",
+        "industrial",
+        "off beat",
+        "techno",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Bruhma, C-System, Borsek, Editer, Hi-Kuze",
+      "title": "Granite",
+      "year": 2019,
+      "url": "https://rbls.bandcamp.com/album/granite",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "electronica",
+        "rebelion",
+        "rebels",
+        "riot",
+        "techno",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Rarek",
+      "title": "Logical Physics",
+      "year": 2025,
+      "url": "https://rbls.bandcamp.com/album/logical-physics",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "electronica",
+        "rebels",
+        "riot",
+        "techno",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Mind Halla",
+      "title": "Modus Operandi",
+      "year": 2026,
+      "url": "https://rbls.bandcamp.com/album/modus-operandi",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "electronica",
+        "techno",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Rebels Riot Rec",
+      "title": "Mutant",
+      "year": 2022,
+      "url": "https://rbls.bandcamp.com/album/mutant",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "electronica",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Binary Source",
+      "title": "Primal Mechanisms",
+      "year": 2024,
+      "url": "https://rbls.bandcamp.com/album/primal-mechanisms",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "electronica",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "HD Substance, Hi-Kuze, Muted, Borsek, Editer",
+      "title": "Rough Pieces",
+      "year": 2020,
+      "url": "https://rbls.bandcamp.com/album/rough-pieces",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "electronica",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Rebels Riot Rec",
+      "title": "Secondary Protocols",
+      "year": 2026,
+      "url": "https://rbls.bandcamp.com/album/secondary-protocols",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "electronica",
+        "techno",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Kurohyo",
+      "title": "Seed Of Tomorrow",
+      "year": 2024,
+      "url": "https://rbls.bandcamp.com/album/seed-of-tomorrow",
+      "source_account": "rbls",
+      "band_location": "Zizur Mayor, Spain",
+      "tags": [
+        "electronic",
+        "downbeat",
+        "electronica",
+        "techno",
+        "techno; downtempo; electro",
+        "zizur mayor"
+      ]
+    },
+    {
+      "artist": "Allfits",
+      "title": "Sea horse",
+      "year": 2011,
+      "url": "https://wearethedaughters.bandcamp.com/album/sea-horse",
+      "source_account": "wearethedaughters",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "rock",
+        "allfits",
+        "caleiah",
+        "gran derby",
+        "gran derby records",
+        "la agonia de vivir",
+        "malaga",
+        "post-hardcore",
+        "post-punk",
+        "post-rock",
+        "punk",
+        "screamo",
+        "thismonkey",
+        "madrid"
+      ]
+    },
+    {
+      "artist": "Ulises Lima/Shonen bat",
+      "title": "WATD01 · Ulises Lima/Shonen bat split 12''",
+      "year": 2013,
+      "url": "https://wearethedaughters.bandcamp.com/album/watd01-ulises-lima-shonen-bat-split-12",
+      "source_account": "wearethedaughters",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "rock",
+        "caleiah",
+        "emo",
+        "existencia",
+        "la agonia de vivir",
+        "madrid",
+        "malaga",
+        "post-hardcore",
+        "post-punk",
+        "post-rock",
+        "punk",
+        "screamo",
+        "shonen bat",
+        "ulises lima",
+        "we are the daughters"
+      ]
+    },
+    {
+      "artist": "Allfits",
+      "title": "WATD02 · Nada, corre, vuela 12''",
+      "year": 2013,
+      "url": "https://wearethedaughters.bandcamp.com/album/watd02-nada-corre-vuela-12",
+      "source_account": "wearethedaughters",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "rock",
+        "allfits",
+        "corre",
+        "malaga",
+        "nada",
+        "post-hardcore",
+        "post-punk",
+        "post-rock",
+        "punk",
+        "screamo",
+        "vuela",
+        "madrid"
+      ]
+    },
+    {
+      "artist": "Sport",
+      "title": "WATD04 · Bon voyage 12''",
+      "year": 2014,
+      "url": "https://wearethedaughters.bandcamp.com/album/watd04-bon-voyage-12",
+      "source_account": "wearethedaughters",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "rock",
+        "france",
+        "lyon",
+        "post-hardcore",
+        "post-punk",
+        "post-rock",
+        "punk",
+        "screamo",
+        "sport",
+        "madrid"
+      ]
+    },
+    {
+      "artist": "Enoch Ardon",
+      "title": "WATD05 · Dedos rotos 7''",
+      "year": 2014,
+      "url": "https://wearethedaughters.bandcamp.com/album/watd05-dedos-rotos-7",
+      "source_account": "wearethedaughters",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "rock",
+        "asturias",
+        "emo violence",
+        "post-hardcore",
+        "post-punk",
+        "post-rock",
+        "punk",
+        "screamo",
+        "spain",
+        "madrid"
+      ]
+    },
+    {
+      "artist": "Jamie for President",
+      "title": "WATD06 · Where did our youth go? 12''",
+      "year": 2014,
+      "url": "https://wearethedaughters.bandcamp.com/album/watd06-where-did-our-youth-go-12",
+      "source_account": "wearethedaughters",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "rock",
+        "madrid",
+        "pop",
+        "post-hardcore",
+        "post-punk",
+        "post-rock",
+        "punk",
+        "screamo"
+      ]
+    },
+    {
+      "artist": "Carson Wells",
+      "title": "WATD07 · Tread A Northern Path",
+      "year": 2015,
+      "url": "https://wearethedaughters.bandcamp.com/album/watd07-tread-a-northern-path",
+      "source_account": "wearethedaughters",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "aberdeen",
+        "rock",
+        "scotland",
+        "emo",
+        "indie",
+        "post-hardcore",
+        "post-punk",
+        "post-rock",
+        "punk",
+        "screamo",
+        "uk",
+        "madrid"
+      ]
+    },
+    {
+      "artist": "Torpedo Holiday",
+      "title": "WATD08 · Kuraĝo",
+      "year": 2015,
+      "url": "https://wearethedaughters.bandcamp.com/album/watd08-kura-o",
+      "source_account": "wearethedaughters",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "hamburg",
+        "rock",
+        "emo",
+        "hardcore",
+        "post-hardcore",
+        "post-punk",
+        "post-rock",
+        "punk",
+        "screamo",
+        "madrid"
+      ]
+    },
+    {
+      "artist": "Wild Animals",
+      "title": "WATD09 · First songs EP 12''",
+      "year": 2015,
+      "url": "https://wearethedaughters.bandcamp.com/album/watd09-first-songs-ep-12",
+      "source_account": "wearethedaughters",
+      "band_location": "Madrid, Spain",
+      "tags": [
+        "90s",
+        "rock",
+        "asturias",
+        "emo",
+        "indie",
+        "madrid",
+        "malaga",
+        "post-hardcore",
+        "post-punk",
+        "post-rock",
+        "punk",
+        "punk rock",
+        "screamo"
+      ]
+    }
+  ]
+}
