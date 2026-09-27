@@ -8,6 +8,24 @@ import './Header.css'
 // dominante de esa vista). Mantiene identidad y acceso a SOBRE, pero deja
 // fuera los contadores globales y la firma, que allí competirían con los
 // contadores de cobertura del propio mapa.
+// «sobre el proyecto · proponer un disco»: los dos enlaces de servicio
+// siempre juntos, en la cabecera (escritorio: columna derecha; móvil: línea
+// de la firma; MAPA: cabecera compacta). Proponer va aquí y no en las
+// puertas: es una acción de servicio, no una vista del archivo.
+function Enlaces({ className = '' }) {
+  return (
+    <span className={`enlaces ${className}`.trim()}>
+      <a className="sobre-link" href="#/sobre">
+        sobre el proyecto
+      </a>
+      <span className="enlaces-sep">·</span>
+      <a className="sobre-link" href="#/proponer">
+        proponer un disco
+      </a>
+    </span>
+  )
+}
+
 export function Header({ archive, compacta = false }) {
   const years = archive?.years ?? []
   const rango = years.length ? `${years[0]}–${years[years.length - 1]}` : '—'
@@ -20,9 +38,7 @@ export function Header({ archive, compacta = false }) {
             MAPA EUSKADI<span className="l2">UNDERGROUND</span>
           </a>
         </h1>
-        <a className="sobre-link" href="#/sobre">
-          sobre el proyecto
-        </a>
+        <Enlaces />
       </header>
     )
   }
@@ -41,9 +57,7 @@ export function Header({ archive, compacta = false }) {
           {/* «sobre el proyecto» encabeza la columna en escritorio; en móvil
               se oculta y el enlace pasa a la línea de la firma. Los «·» solo
               se pintan en móvil, donde las cifras van corridas en línea. */}
-          <a className="sobre-link" href="#/sobre">
-            sobre el proyecto
-          </a>
+          <Enlaces className="enlaces-columna" />
           <span className="dato">
             <b>{archive ? formato(archive.albums.length) : '—'}</b> releases
           </span>
@@ -70,9 +84,7 @@ export function Header({ archive, compacta = false }) {
           </a>{' '}
           a la música underground de Euskadi
         </span>
-        <a className="sobre-link firma-enlace" href="#/sobre">
-          sobre el proyecto
-        </a>
+        <Enlaces className="firma-enlace" />
       </p>
     </>
   )
