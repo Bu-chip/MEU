@@ -55,10 +55,10 @@ main.entrar-pagina .sep {
   align-items: center;
   gap: 10px;
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  opacity: 0.6;
+  opacity: .72;
 }
 main.entrar-pagina .sep::before,
 main.entrar-pagina .sep::after {
@@ -116,7 +116,7 @@ main.entrar-pagina .enviado {
   padding-left: 12px;
 }
 main.entrar-pagina .err {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--tinta);
   background: var(--lima);
   padding: 6px 10px;
@@ -125,5 +125,5 @@ main.entrar-pagina .err {
 main.entrar-pagina .cargando {
   font-family: var(--mono);
   font-size: 12px;
-  opacity: 0.6;
+  opacity: .72;
 }

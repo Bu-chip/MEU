@@ -58,7 +58,7 @@ nav.puertas a.marca-usuario .marca-inicial {
    no fundirse con el fondo. */
 nav.puertas a.marca-usuario .marca-cuenta {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   background: var(--lima);
   color: var(--tinta);
@@ -70,7 +70,7 @@ nav.puertas a.marca-usuario:hover .marca-cuenta {
 }
 nav.puertas a.marca-usuario .marca-txt {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
   border-bottom: 1px solid var(--tinta);
