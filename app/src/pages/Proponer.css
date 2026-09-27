@@ -32,7 +32,7 @@ main.proponer-pagina .propuesta label {
 main.proponer-pagina .propuesta label > span {
   font-family: var(--mono);
   font-weight: 700;
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 main.proponer-pagina .propuesta input,
@@ -51,7 +51,7 @@ main.proponer-pagina .propuesta textarea:focus {
   background: #fff;
 }
 main.proponer-pagina .propuesta ::placeholder {
-  opacity: 0.45;
+  opacity: 0.55;
 }
 
 /* Honeypot: fuera de pantalla, no display:none (algunos bots lo respetan). */
@@ -85,7 +85,7 @@ main.proponer-pagina .propuesta button:disabled {
 }
 
 main.proponer-pagina .err {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--tinta);
   background: var(--lima);
   padding: 6px 10px;

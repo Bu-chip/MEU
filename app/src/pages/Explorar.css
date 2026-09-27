@@ -21,7 +21,7 @@
 }
 .mandos button.mando .sub {
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: .05em;
   display: block;
@@ -34,7 +34,7 @@ button#m-discos:hover { background: var(--lima); color: var(--tinta); }
 .mandos .archivo-link {
   align-self: center;
   justify-self: end;
-  font-size: 10px;
+  font-size: 12px;
   padding: 0 16px;
   text-align: right;
   line-height: 1.5;
@@ -47,12 +47,12 @@ button#m-discos:hover { background: var(--lima); color: var(--tinta); }
   gap: 10px;
   flex-wrap: wrap;
   padding: 6px 18px;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.4;
 }
-.mandos .donde .donde-pre { font-size: 10px; }
-.mandos .donde .donde-n { font-size: 10px; opacity: .6; }
-.mandos .donde .donde-libre { font-size: 10px; opacity: .6; }
+.mandos .donde .donde-pre { font-size: 12px; }
+.mandos .donde .donde-n { font-size: 12px; opacity: .72; }
+.mandos .donde .donde-libre { font-size: 12px; opacity: .72; }
 .mandos .donde .tagname {
   font-family: var(--display);
   text-transform: uppercase;
@@ -62,7 +62,7 @@ button#m-discos:hover { background: var(--lima); color: var(--tinta); }
 }
 .mandos .donde .salir {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   border: 1px solid var(--tinta);
   background: transparent;
   color: var(--tinta);

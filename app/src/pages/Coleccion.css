@@ -33,7 +33,7 @@ main.coleccion-pagina {
 }
 .coleccion-cab .cuenta-quien {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.5px;
   color: var(--tinta);
   max-width: 60vw;
@@ -109,7 +109,7 @@ main.coleccion-pagina .tile {
    (antes al pie), a mano y sin bajar hasta el final del muro. */
 .coleccion-cab .cuenta-barra .salir {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
   background: transparent;

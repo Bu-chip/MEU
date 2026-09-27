@@ -36,8 +36,8 @@
   line-height: 1;
   word-break: break-word;
 }
-.tile .meta .t { font-size: 9px; line-height: 1.35; margin-top: 4px; word-break: break-word; }
-.tile .meta .g { font-size: 9px; display: flex; justify-content: space-between; align-items: baseline; }
+.tile .meta .t { font-size: 12px; line-height: 1.35; margin-top: 4px; word-break: break-word; }
+.tile .meta .g { font-size: 12px; display: flex; justify-content: space-between; align-items: baseline; }
 .tile .meta .play { font-size: 13px; }
 .tile.v-negra {
   background: var(--tinta);
@@ -45,7 +45,7 @@
   justify-content: flex-end;
   padding: 8px;
 }
-.tile.v-negra .tt { font-size: 9px; line-height: 1.35; text-transform: uppercase; word-break: break-word; }
+.tile.v-negra .tt { font-size: 12px; line-height: 1.35; text-transform: uppercase; word-break: break-word; }
 .tile.v-inicial { align-items: center; justify-content: center; }
 .tile.v-inicial .ini {
   font-family: var(--display);
@@ -59,21 +59,28 @@
   bottom: 6px;
   left: 8px;
   right: 8px;
-  font-size: 8px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: .04em;
   word-break: break-word;
+  /* Dos líneas como mucho: un nombre largo a 12px treparía hasta pisar
+     la inicial grande. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
 }
 .tile.v-split .top {
   background: var(--tinta);
   color: var(--papel);
   height: 50%;
   padding: 6px 8px;
-  font-size: 9px;
+  font-size: 12px;
   text-transform: uppercase;
   overflow: hidden;
 }
-.tile.v-split .bot { height: 50%; padding: 6px 8px; font-size: 9px; overflow: hidden; font-style: italic; }
+.tile.v-split .bot { height: 50%; padding: 6px 8px; font-size: 12px; overflow: hidden; font-style: italic; }
 .tile.v-portada img {
   width: 100%;
   height: 100%;
@@ -89,7 +96,7 @@
   max-width: 100%;
   background: var(--tinta);
   color: var(--papel);
-  font-size: 8px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: .04em;
   padding: 3px 6px;

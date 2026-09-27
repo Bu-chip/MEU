@@ -20,15 +20,15 @@
   font-size: clamp(18px, 3vw, 30px);
   line-height: 1;
 }
-.ficha-bar .ft { font-size: 11px; margin-top: 3px; }
-.ficha-bar .fmeta { font-size: 10px; opacity: .7; margin-top: 2px; }
+.ficha-bar .ft { font-size: 12px; margin-top: 3px; }
+.ficha-bar .fmeta { font-size: 12px; opacity: .7; margin-top: 2px; }
 .ficha-bar .acciones {
   display: flex;
   flex-direction: column;
   gap: 6px;
   text-align: right;
 }
-.ficha-bar a { color: var(--papel); font-size: 11px; text-decoration: underline; }
+.ficha-bar a { color: var(--papel); font-size: 12px; text-decoration: underline; }
 .ficha-bar a:hover { background: var(--lima); color: var(--tinta); }
 /* fila ↑ | FICHA →: dos cajas hermanas de igual altura, alineadas al
    borde derecho como el resto de la columna de acciones */
@@ -64,7 +64,7 @@
 }
 .ficha-bar button.compartir-mini:hover,
 .ficha-bar button.guardar-mini:hover { background: var(--lima); color: var(--tinta); }
-.ficha-bar .stub { font-size: 9px; opacity: .55; }
+.ficha-bar .stub { font-size: 12px; opacity: .72; }
 .ficha-bar .cerrar {
   position: absolute;
   top: -1px;
@@ -74,7 +74,7 @@
   color: var(--papel);
   border: none;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   padding: 4px 10px;
   cursor: pointer;
   border-top: 1px solid var(--papel);
