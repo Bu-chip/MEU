@@ -1,0 +1,1225 @@
+{
+  "meta": {
+    "generated_at": "2026-10-03T10:00:52Z",
+    "month": "2026-10",
+    "schema": "candidato = canónico sin id + band_location, source_tags, discovered_at; los id se asignan al merge"
+  },
+  "candidates": [
+    {
+      "artist": "AMOOMA",
+      "title": "eder",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "funk",
+        "hip hop",
+        "rap",
+        "soul",
+        "bilbao"
+      ],
+      "url": "https://amooma.bandcamp.com/album/eder",
+      "cover_url": "https://f4.bcbits.com/img/a1894824196_5.jpg",
+      "album_id": 208002455,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "Amorante",
+      "title": "Ez Dot Amaitu",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "experimental",
+        "folk",
+        "basque country",
+        "herri&b",
+        "traditional",
+        "spain"
+      ],
+      "url": "https://amorante.bandcamp.com/album/ez-dot-amaitu",
+      "cover_url": "https://f4.bcbits.com/img/a3164905137_5.jpg",
+      "album_id": 2711786424,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "basque-country"
+      ],
+      "discovered_at": "2026-10-03T09:56:17Z"
+    },
+    {
+      "artist": "Agüero",
+      "title": "pokemon diamante",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "aragon",
+        "punk",
+        "emo",
+        "emocore",
+        "navarra",
+        "agüero"
+      ],
+      "url": "https://auero.bandcamp.com/album/pokemon-diamante",
+      "cover_url": "https://f4.bcbits.com/img/a3265847259_5.jpg",
+      "album_id": 114998287,
+      "band_location": "Agüero, Spain",
+      "source_tags": [
+        "navarra"
+      ],
+      "discovered_at": "2026-10-03T09:54:23Z"
+    },
+    {
+      "artist": "Agüero",
+      "title": "y mañana trabajo",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "aragon",
+        "punk",
+        "emo",
+        "emocore",
+        "navarra",
+        "agüero"
+      ],
+      "url": "https://auero.bandcamp.com/album/y-ma-ana-trabajo",
+      "cover_url": "https://f4.bcbits.com/img/a4097494981_5.jpg",
+      "album_id": 4243501500,
+      "band_location": "Agüero, Spain",
+      "source_tags": [
+        "navarra"
+      ],
+      "discovered_at": "2026-10-03T09:54:23Z"
+    },
+    {
+      "artist": "Baobabs Will Destroy Your Planet",
+      "title": "Bai Esan",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "alternative",
+        "iruña"
+      ],
+      "url": "https://baobabswilldestroyyourplanet.bandcamp.com/album/bai-esan-2",
+      "cover_url": "https://f4.bcbits.com/img/a1295934727_5.jpg",
+      "album_id": 1040853682,
+      "band_location": "Pamplona, Spain",
+      "source_tags": [
+        "pamplona"
+      ],
+      "discovered_at": "2026-10-03T09:56:22Z"
+    },
+    {
+      "artist": "Blekinge Kale Banden",
+      "title": "Galtzaileen abenideetan hotza egiten zuen (2.maketa)",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "alternative",
+        "euskal herria",
+        "iruñea",
+        "nafarroa",
+        "punk",
+        "rock",
+        "txantrea",
+        "entusiasta",
+        "spain"
+      ],
+      "url": "https://blekingekalebanden.bandcamp.com/album/galtzaileen-abenideetan-hotza-egiten-zuen-2-maketa",
+      "cover_url": "https://f4.bcbits.com/img/a1127884500_5.jpg",
+      "album_id": 2601213226,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "iruñea",
+        "nafarroa",
+        "euskal-herria"
+      ],
+      "discovered_at": "2026-10-03T09:53:20Z"
+    },
+    {
+      "artist": "CØRRUPT TRAX",
+      "title": "SAHANNT - Fugitive Protocol",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "schranz",
+        "donostia"
+      ],
+      "url": "https://corrupttrax.bandcamp.com/album/sahannt-fugitive-protocol",
+      "cover_url": "https://f4.bcbits.com/img/a1348595722_5.jpg",
+      "album_id": 168760009,
+      "band_location": "Donostia San Sebastian, Spain",
+      "source_tags": [
+        "donostia-san-sebastian"
+      ],
+      "discovered_at": "2026-10-03T09:56:09Z"
+    },
+    {
+      "artist": "Couture",
+      "title": "Odola odolaren truke",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "metal",
+        "hardcore",
+        "hardcore punk",
+        "bermeo"
+      ],
+      "url": "https://couturehardcore.bandcamp.com/album/odola-odolaren-truke",
+      "cover_url": "https://f4.bcbits.com/img/a1606622400_5.jpg",
+      "album_id": 3794528464,
+      "band_location": "Bermeo, Spain",
+      "source_tags": [
+        "bermeo"
+      ],
+      "discovered_at": "2026-10-03T09:54:55Z"
+    },
+    {
+      "artist": "Couture",
+      "title": "Resurge la bestia",
+      "genre": null,
+      "year": 2022,
+      "tags": [
+        "metal",
+        "hardcore",
+        "hardcore punk",
+        "bermeo"
+      ],
+      "url": "https://couturehardcore.bandcamp.com/album/resurge-la-bestia-2",
+      "cover_url": "https://f4.bcbits.com/img/a2507488091_5.jpg",
+      "album_id": 2511368149,
+      "band_location": "Bermeo, Spain",
+      "source_tags": [
+        "bermeo"
+      ],
+      "discovered_at": "2026-10-03T09:54:55Z"
+    },
+    {
+      "artist": "Darío Aldunate",
+      "title": "Live fast Die Hard",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "80s metal",
+        "classic rock",
+        "funk soul",
+        "glam-metal",
+        "rock",
+        "donostia / san sebastián"
+      ],
+      "url": "https://darioaldunate.bandcamp.com/album/live-fast-die-hard",
+      "cover_url": "https://f4.bcbits.com/img/a1890600261_5.jpg",
+      "album_id": 1041418574,
+      "band_location": "Donostia / San Sebastián, Spain",
+      "source_tags": [
+        "donostia-san-sebastian"
+      ],
+      "discovered_at": "2026-10-03T09:56:09Z"
+    },
+    {
+      "artist": "delko.",
+      "title": "OBSCURA",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "hardgroove",
+        "hypnotic techno",
+        "minimal",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://delko7.bandcamp.com/album/obscura",
+      "cover_url": "https://f4.bcbits.com/img/a0518092537_5.jpg",
+      "album_id": 2834528349,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "Uninhabited",
+      "title": "Continuous operation",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "ambient",
+        "dark ambient",
+        "drone ambient",
+        "dungeon synth",
+        "experimental",
+        "industrial ambient",
+        "lo-fi",
+        "old school dungeon synth",
+        "bilbao"
+      ],
+      "url": "https://dungeonlordrecords.bandcamp.com/album/continuous-operation",
+      "cover_url": "https://f4.bcbits.com/img/a0307466163_5.jpg",
+      "album_id": 2749633905,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:29Z"
+    },
+    {
+      "artist": "ENBOR ARNASA",
+      "title": "Lore Gorrien Sinergia Tour",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "acoustic",
+        "basque country",
+        "basque music",
+        "death metal",
+        "euskara",
+        "metal",
+        "thrash metal",
+        "valencia",
+        "acoustic guitar",
+        "acoustic metal",
+        "acoustic rock",
+        "euskera",
+        "heavy metal",
+        "arrigorriaga"
+      ],
+      "url": "https://enborarnasa.bandcamp.com/album/lore-gorrien-sinergia-tour",
+      "cover_url": "https://f4.bcbits.com/img/a3795154549_5.jpg",
+      "album_id": 1906621111,
+      "band_location": "Arrigorriaga, Spain",
+      "source_tags": [
+        "euskera",
+        "euskara",
+        "basque-music",
+        "basque-country"
+      ],
+      "discovered_at": "2026-10-03T09:55:06Z"
+    },
+    {
+      "artist": "Ohil",
+      "title": "Eta Maiz Ez Da Beste Ezer (ERR-003)",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "alternative",
+        "emo",
+        "hardcore punk",
+        "melodic hardcore",
+        "vitoria gasteiz"
+      ],
+      "url": "https://erraldoirecords.bandcamp.com/album/eta-maiz-ez-da-beste-ezer-err-003",
+      "cover_url": "https://f4.bcbits.com/img/a1262360998_5.jpg",
+      "album_id": 2431728484,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [
+        "vitoria-gasteiz"
+      ],
+      "discovered_at": "2026-10-03T09:56:04Z"
+    },
+    {
+      "artist": "Papaverhof",
+      "title": "Hot Acid EP",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "basque country",
+        "bilbao",
+        "den haag",
+        "electronic",
+        "karrantza",
+        "netherlands",
+        "acid",
+        "acid house",
+        "club culture",
+        "denhaag",
+        "old school",
+        "rave",
+        "spain"
+      ],
+      "url": "https://esnebidearecords.bandcamp.com/album/hot-acid-ep",
+      "cover_url": "https://f4.bcbits.com/img/a0564948159_5.jpg",
+      "album_id": 3132427838,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "basque-country",
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:14Z"
+    },
+    {
+      "artist": "DJ Splitta",
+      "title": "Two Drops EP",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "basque country",
+        "bilbao",
+        "d&b",
+        "drum & bass",
+        "electronic",
+        "france",
+        "karrantza",
+        "paris",
+        "club culture",
+        "dj splitta",
+        "dnb",
+        "jungle",
+        "liquid",
+        "liquid dnb",
+        "rave",
+        "spain"
+      ],
+      "url": "https://esnebidearecords.bandcamp.com/album/two-drops-ep",
+      "cover_url": "https://f4.bcbits.com/img/a3404725207_5.jpg",
+      "album_id": 2924275048,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "basque-country",
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:14Z"
+    },
+    {
+      "artist": "F.O.A.M.",
+      "title": "Zaborra Bota",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "punk",
+        "dbeat rawpunk",
+        "hardcore punk",
+        "punk rock",
+        "bilbao"
+      ],
+      "url": "https://foampunk.bandcamp.com/album/zaborra-bota",
+      "cover_url": "https://f4.bcbits.com/img/a1621990780_5.jpg",
+      "album_id": 3788123134,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "FØSIL",
+      "title": "III",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "bizkaia underground",
+        "diy",
+        "euskarazko musika",
+        "punk",
+        "street punk",
+        "bizkaia",
+        "diy punk",
+        "euskal rock",
+        "hardcore",
+        "hardcore punk",
+        "punk rock",
+        "spain"
+      ],
+      "url": "https://fosilhc.bandcamp.com/album/iii",
+      "cover_url": "https://f4.bcbits.com/img/a0837994175_5.jpg",
+      "album_id": 844264113,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "bizkaia",
+        "euskal-rock"
+      ],
+      "discovered_at": "2026-10-03T09:54:00Z"
+    },
+    {
+      "artist": "Ghetto De Luxe",
+      "title": "Ghetto De Luxe",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "rock",
+        "urban rock",
+        "ortuella"
+      ],
+      "url": "https://ghettodeluxe.bandcamp.com/album/ghetto-de-luxe",
+      "cover_url": "https://f4.bcbits.com/img/a0611382789_5.jpg",
+      "album_id": 1372971352,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "ortuella"
+      ],
+      "discovered_at": "2026-10-03T09:52:48Z"
+    },
+    {
+      "artist": "Goxoa Grooves",
+      "title": "Hau Da Jai-Alai",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "drum & bass",
+        "electronic",
+        "basque",
+        "detroit",
+        "dnb",
+        "downtempo",
+        "folktronic",
+        "jai alai",
+        "techno",
+        "world beats",
+        "spain"
+      ],
+      "url": "https://goxoa.bandcamp.com/album/hau-da-jai-alai",
+      "cover_url": "https://f4.bcbits.com/img/a0027504338_5.jpg",
+      "album_id": 2509386332,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "basque"
+      ],
+      "discovered_at": "2026-10-03T09:55:41Z"
+    },
+    {
+      "artist": "Kris Stems",
+      "title": "Cuadrado Blanco",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "experimental",
+        "stems",
+        "bilbao"
+      ],
+      "url": "https://iikrisgmstems.bandcamp.com/album/cuadrado-blanco",
+      "cover_url": "https://f4.bcbits.com/img/a2895570338_5.jpg",
+      "album_id": 538967745,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "Kris Stems",
+      "title": "Maiatzaren 5",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "experimental",
+        "stems",
+        "bilbao"
+      ],
+      "url": "https://iikrisgmstems.bandcamp.com/album/maiatzaren-5",
+      "cover_url": "https://f4.bcbits.com/img/a1227698186_5.jpg",
+      "album_id": 3370946076,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "Kris Stems",
+      "title": "Mi Sol",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "experimental",
+        "stems",
+        "bilbao"
+      ],
+      "url": "https://iikrisgmstems.bandcamp.com/album/mi-sol",
+      "cover_url": "https://f4.bcbits.com/img/a1001302159_5.jpg",
+      "album_id": 2280512217,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "Iker Manterola",
+      "title": "Gurutzeko kabroia I",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "acoustic",
+        "basque country",
+        "basque music",
+        "basque",
+        "beginner",
+        "instrumental",
+        "rock",
+        "stoner",
+        "stoner rock",
+        "spain"
+      ],
+      "url": "https://ikermanterola.bandcamp.com/album/gurutzeko-kabroia-i",
+      "cover_url": "https://f4.bcbits.com/img/a0898263547_5.jpg",
+      "album_id": 912893362,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "basque-music",
+        "basque",
+        "basque-country"
+      ],
+      "discovered_at": "2026-10-03T09:55:36Z"
+    },
+    {
+      "artist": "Inigo Lunani",
+      "title": "Hard Confusion",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "minimal house",
+        "minimal",
+        "minimal techno",
+        "bilbao"
+      ],
+      "url": "https://inigolunani.bandcamp.com/album/hard-confusion",
+      "cover_url": "https://f4.bcbits.com/img/a2780076301_5.jpg",
+      "album_id": 73672965,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "Ivan Macho",
+      "title": "DECADENCIA OCCIDENTAL (LP)",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "rock",
+        "rock alternativo en español",
+        "rock en español",
+        "lo-fi rock",
+        "rock de autor",
+        "rock nacional",
+        "bilbao"
+      ],
+      "url": "https://ivanmacho.bandcamp.com/album/decadencia-occidental-lp",
+      "cover_url": "https://f4.bcbits.com/img/a3372715215_5.jpg",
+      "album_id": 3512248268,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:29Z"
+    },
+    {
+      "artist": "Various Artists",
+      "title": "Krautrock∶ Music for Your Brain, Volume 4",
+      "genre": null,
+      "year": 2009,
+      "tags": [
+        "80's rock",
+        "celtic rock",
+        "euskal rock",
+        "horror rock´n´roll",
+        "instrumentalrock",
+        "latin alternative rock pop",
+        "pysch rock",
+        "rock",
+        "surf rocket",
+        "swedish rock",
+        "wizard rock"
+      ],
+      "url": "https://krautrockmusicforyourbrain.bandcamp.com/album/krautrock-music-for-your-brain-volume-4-2",
+      "cover_url": "https://f4.bcbits.com/img/a1177477544_5.jpg",
+      "album_id": 4007984767,
+      "band_location": null,
+      "source_tags": [
+        "euskal-rock"
+      ],
+      "discovered_at": "2026-10-03T09:54:05Z"
+    },
+    {
+      "artist": "La Agonía de Vivir",
+      "title": "LADV225 - OHIL \"eta maiz ez da beste ezer\" LP",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "bilbao",
+        "punk",
+        "crust",
+        "emo",
+        "hardcore",
+        "indie rock",
+        "pop punk",
+        "post-rock",
+        "power pop",
+        "punk rock",
+        "madrid"
+      ],
+      "url": "https://laagoniadevivir.bandcamp.com/album/ladv225-ohil-eta-maiz-ez-da-beste-ezer-lp-2",
+      "cover_url": "https://f4.bcbits.com/img/a3946673928_5.jpg",
+      "album_id": 2595378963,
+      "band_location": "Madrid, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:29Z"
+    },
+    {
+      "artist": "LINDUS",
+      "title": "Itsasargia",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "acoustic",
+        "country",
+        "folk",
+        "pop",
+        "rock",
+        "euskal musika",
+        "spain"
+      ],
+      "url": "https://lindus3.bandcamp.com/album/itsasargia-2",
+      "cover_url": "https://f4.bcbits.com/img/a2849932879_5.jpg",
+      "album_id": 3861083896,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "euskal-musika"
+      ],
+      "discovered_at": "2026-10-03T09:55:23Z"
+    },
+    {
+      "artist": "-Love-",
+      "title": "A warmth as heavy as a star",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "black metal",
+        "deathcore",
+        "metal",
+        "djent",
+        "doom",
+        "grindcore",
+        "slam",
+        "vitoria gasteiz"
+      ],
+      "url": "https://love-evolmusic.bandcamp.com/album/a-warmth-as-heavy-as-a-star",
+      "cover_url": "https://f4.bcbits.com/img/a2581955397_5.jpg",
+      "album_id": 2278006858,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [
+        "vitoria-gasteiz"
+      ],
+      "discovered_at": "2026-10-03T09:56:04Z"
+    },
+    {
+      "artist": "Monsieur leCrêpe x Pato ta Panda",
+      "title": "Collage dominguero con movidas del viernes",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "ahul",
+        "dj pata",
+        "euskal herria",
+        "euskara",
+        "glaukoma",
+        "hip-hop/rap",
+        "iker pando",
+        "juantxo arakama",
+        "monsieur lecrêpe",
+        "rap",
+        "reggae",
+        "reggae-dancehall-hip hop",
+        "tröikadedra"
+      ],
+      "url": "https://monsieurlecrepe.bandcamp.com/album/collage-dominguero-con-movidas-del-viernes",
+      "cover_url": "https://f4.bcbits.com/img/a2007309992_5.jpg",
+      "album_id": 3764118098,
+      "band_location": null,
+      "source_tags": [
+        "euskara",
+        "euskal-herria"
+      ],
+      "discovered_at": "2026-10-03T09:55:28Z"
+    },
+    {
+      "artist": "MURGI",
+      "title": "Haztamuka",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "alternative",
+        "basque music",
+        "progressive rock",
+        "rock",
+        "grunge",
+        "spain"
+      ],
+      "url": "https://murgi.bandcamp.com/album/haztamuka",
+      "cover_url": "https://f4.bcbits.com/img/a2433023420_5.jpg",
+      "album_id": 500239309,
+      "band_location": "PV, Spain",
+      "source_tags": [
+        "basque-music"
+      ],
+      "discovered_at": "2026-10-03T09:55:36Z"
+    },
+    {
+      "artist": "Ni Hil",
+      "title": "Orba",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "metal",
+        "post-metal",
+        "underground",
+        "vitoria gasteiz"
+      ],
+      "url": "https://nihilnaiz.bandcamp.com/album/orba",
+      "cover_url": "https://f4.bcbits.com/img/a0172604621_5.jpg",
+      "album_id": 3474829592,
+      "band_location": "Vitoria Gasteiz, Spain",
+      "source_tags": [
+        "vitoria-gasteiz"
+      ],
+      "discovered_at": "2026-10-03T09:56:04Z"
+    },
+    {
+      "artist": "Pablo Maza",
+      "title": "Iduzki Denean",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "avant-garde jazz",
+        "jazz",
+        "fusion",
+        "spiritual jazz",
+        "bilbao"
+      ],
+      "url": "https://pablomaza.bandcamp.com/album/iduzki-denean",
+      "cover_url": "https://f4.bcbits.com/img/a1240017904_5.jpg",
+      "album_id": 3265960335,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:29Z"
+    },
+    {
+      "artist": "onepointsix",
+      "title": "onepointsix - vallecula | polygon network [NW0083]",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "experimental",
+        "abstract",
+        "ambient",
+        "idm",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://polygonnetwork.bandcamp.com/album/onepointsix-vallecula-polygon-network-nw0083",
+      "cover_url": "https://f4.bcbits.com/img/a2078464443_5.jpg",
+      "album_id": 4034440748,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "Rasy Simone",
+      "title": "El artesano",
+      "genre": null,
+      "year": 2013,
+      "tags": [
+        "alternative",
+        "bilboscratch",
+        "charles cooper",
+        "deadly hunta",
+        "el artesano",
+        "electronic",
+        "general levy",
+        "king solomon",
+        "moka only",
+        "oli olinga",
+        "ortuella",
+        "sweet ross",
+        "alternative hip-hop",
+        "independent music",
+        "piano",
+        "spain"
+      ],
+      "url": "https://rasysimone.bandcamp.com/album/el-artesano",
+      "cover_url": "https://f4.bcbits.com/img/a3755511086_5.jpg",
+      "album_id": 643754424,
+      "band_location": "Spain",
+      "source_tags": [
+        "ortuella"
+      ],
+      "discovered_at": "2026-10-03T09:52:48Z"
+    },
+    {
+      "artist": "Reeler",
+      "title": "Your Tax Money",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "alternative",
+        "rock",
+        "alt-country",
+        "alternative rock",
+        "britpop",
+        "grunge",
+        "indie",
+        "indie rock",
+        "neo-psychedelia",
+        "bilbao"
+      ],
+      "url": "https://reelerband.bandcamp.com/album/your-tax-money",
+      "cover_url": "https://f4.bcbits.com/img/a3768738379_5.jpg",
+      "album_id": 2391355406,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:29Z"
+    },
+    {
+      "artist": "Sal del Coche",
+      "title": "Salir de Casa",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "world",
+        "bilbao",
+        "jazz punk",
+        "post-punk"
+      ],
+      "url": "https://saldelcoche.bandcamp.com/album/salir-de-casa-2",
+      "cover_url": "https://f4.bcbits.com/img/a1111153550_5.jpg",
+      "album_id": 764244417,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "Showsa",
+      "title": "Jokalaris 2",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "hip-hop/rap",
+        "rap & hip-hop",
+        "portugalete"
+      ],
+      "url": "https://showsaone.bandcamp.com/album/jokalaris-2",
+      "cover_url": "https://f4.bcbits.com/img/a3933690297_5.jpg",
+      "album_id": 1646033895,
+      "band_location": "Portugalete, Spain",
+      "source_tags": [
+        "portugalete"
+      ],
+      "discovered_at": "2026-10-03T09:54:46Z"
+    },
+    {
+      "artist": "Silkat",
+      "title": "A sip of joy",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "rock",
+        "indie rock",
+        "post-punk",
+        "bilbao"
+      ],
+      "url": "https://silkat.bandcamp.com/album/a-sip-of-joy",
+      "cover_url": "https://f4.bcbits.com/img/a0899127337_5.jpg",
+      "album_id": 997939876,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:29Z"
+    },
+    {
+      "artist": "Su Lamina",
+      "title": "Aske",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "punk",
+        "rock",
+        "euskal musika",
+        "space rock",
+        "reykjavík"
+      ],
+      "url": "https://sulamina.bandcamp.com/album/aske",
+      "cover_url": "https://f4.bcbits.com/img/a3622881885_5.jpg",
+      "album_id": 1243612657,
+      "band_location": "Reykjavík, Iceland",
+      "source_tags": [
+        "euskal-musika"
+      ],
+      "discovered_at": "2026-10-03T09:55:23Z"
+    },
+    {
+      "artist": "Lum BonDie",
+      "title": "Tell Me Why",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "reggae",
+        "roots reggae",
+        "digital reggae",
+        "dub",
+        "bilbao"
+      ],
+      "url": "https://sustraidunyouths.bandcamp.com/album/tell-me-why",
+      "cover_url": "https://f4.bcbits.com/img/a2916365448_5.jpg",
+      "album_id": 3781557367,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "ZIAM",
+      "title": "El Mundo No Es Suficiente",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "hip-hop/rap",
+        "reggae",
+        "dub",
+        "explicit",
+        "explicit lyrics",
+        "gangsta rap beats",
+        "gangster rap",
+        "musica urbana",
+        "donostia / san sebastián"
+      ],
+      "url": "https://timbamuziklab.bandcamp.com/album/el-mundo-no-es-suficiente",
+      "cover_url": "https://f4.bcbits.com/img/a1560084241_5.jpg",
+      "album_id": 2442553407,
+      "band_location": "Donostia / San Sebastián, Spain",
+      "source_tags": [
+        "donostia-san-sebastian"
+      ],
+      "discovered_at": "2026-10-03T09:56:09Z"
+    },
+    {
+      "artist": "Time And Punishment",
+      "title": "Speak nice of us",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "oi!",
+        "punk",
+        "rock and roll",
+        "rock and roll music",
+        "bilbao"
+      ],
+      "url": "https://timeandpunishment.bandcamp.com/album/speak-nice-of-us",
+      "cover_url": "https://f4.bcbits.com/img/a4172751810_5.jpg",
+      "album_id": 3848941719,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "UDDA",
+      "title": "En las Nubes",
+      "genre": null,
+      "year": 2021,
+      "tags": [
+        "pop",
+        "gasteiz",
+        "alternative pop",
+        "debut",
+        "electronic-pop",
+        "euskal musika",
+        "euskara",
+        "singer-songwriter"
+      ],
+      "url": "https://uddaaa.bandcamp.com/album/en-las-nubes",
+      "cover_url": "https://f4.bcbits.com/img/a2910517429_5.jpg",
+      "album_id": 3314967175,
+      "band_location": null,
+      "source_tags": [
+        "euskal-musika",
+        "euskara",
+        "vitoria-gasteiz"
+      ],
+      "discovered_at": "2026-10-03T09:55:23Z"
+    },
+    {
+      "artist": "UDDA",
+      "title": "ETXETIK PASA GABE",
+      "genre": null,
+      "year": 2025,
+      "tags": [
+        "electronic",
+        "pop",
+        "gasteiz",
+        "alternative pop",
+        "electronic-pop",
+        "euskal musika",
+        "euskara",
+        "sophomore"
+      ],
+      "url": "https://uddaaa.bandcamp.com/album/etxetik-pasa-gabe",
+      "cover_url": "https://f4.bcbits.com/img/a3777654242_5.jpg",
+      "album_id": 1894182527,
+      "band_location": null,
+      "source_tags": [
+        "euskal-musika",
+        "euskara",
+        "vitoria-gasteiz"
+      ],
+      "discovered_at": "2026-10-03T09:55:23Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "DEXCONEKZIONEZ",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/dexconekzionez",
+      "cover_url": "https://f4.bcbits.com/img/a0296780599_5.jpg",
+      "album_id": 436195725,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "UrbanXtrm",
+      "title": "IV ESPERANZA?",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "electronic",
+        "trance electro techno",
+        "house",
+        "techno",
+        "bilbao"
+      ],
+      "url": "https://urbanxtrm.bandcamp.com/album/iv-esperanza",
+      "cover_url": "https://f4.bcbits.com/img/a1662530588_5.jpg",
+      "album_id": 2512912854,
+      "band_location": "Bilbao, Spain",
+      "source_tags": [
+        "bilbao"
+      ],
+      "discovered_at": "2026-10-03T09:56:27Z"
+    },
+    {
+      "artist": "Allusion",
+      "title": "S/T",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "punk",
+        "bidarte",
+        "euskal herria",
+        "hardcore punk",
+        "toulouse",
+        "nantes"
+      ],
+      "url": "https://urticariarecords.bandcamp.com/album/s-t-2",
+      "cover_url": "https://f4.bcbits.com/img/a0242572346_5.jpg",
+      "album_id": 2342806052,
+      "band_location": "Nantes, France",
+      "source_tags": [
+        "euskal-herria"
+      ],
+      "discovered_at": "2026-10-03T09:55:56Z"
+    },
+    {
+      "artist": "Montaña",
+      "title": "Montaña (2026-04-10)",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "punk",
+        "sevilla",
+        "crust punk",
+        "hardcore",
+        "hardcore punk",
+        "live",
+        "live recording",
+        "new wave",
+        "zarautz"
+      ],
+      "url": "https://zaratazarautz.bandcamp.com/album/monta-a-2026-04-10",
+      "cover_url": "https://f4.bcbits.com/img/a0764907963_5.jpg",
+      "album_id": 3140045160,
+      "band_location": "Zarautz, Spain",
+      "source_tags": [
+        "zarautz"
+      ],
+      "discovered_at": "2026-10-03T09:55:48Z"
+    },
+    {
+      "artist": "Paniko",
+      "title": "Paniko (2026-05-30)",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "punk",
+        "crust punk",
+        "fastcore",
+        "hardcore",
+        "hardcore punk",
+        "live",
+        "live recording",
+        "zarautz"
+      ],
+      "url": "https://zaratazarautz.bandcamp.com/album/paniko-2026-05-30",
+      "cover_url": "https://f4.bcbits.com/img/a3137885329_5.jpg",
+      "album_id": 3448431795,
+      "band_location": "Zarautz, Spain",
+      "source_tags": [
+        "zarautz"
+      ],
+      "discovered_at": "2026-10-03T09:55:48Z"
+    },
+    {
+      "artist": "Phosphore",
+      "title": "Phosphore(2026-05-30)",
+      "genre": null,
+      "year": 2026,
+      "tags": [
+        "bordeaux",
+        "punk",
+        "crust punk",
+        "d-beat",
+        "hardcore",
+        "hardcore punk",
+        "live",
+        "live recording",
+        "raw punk",
+        "zarautz"
+      ],
+      "url": "https://zaratazarautz.bandcamp.com/album/phosphore-2026-05-30",
+      "cover_url": "https://f4.bcbits.com/img/a1622010700_5.jpg",
+      "album_id": 1797297344,
+      "band_location": "Zarautz, Spain",
+      "source_tags": [
+        "zarautz"
+      ],
+      "discovered_at": "2026-10-03T09:55:48Z"
+    }
+  ],
+  "deferred_oleada2": []
+}
