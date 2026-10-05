@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "generated_at": "2026-10-05T14:37:35Z",
+    "month": "2026-10",
+    "source": "scripts/proposals.py (formulario «proponer un disco»)",
+    "schema": "candidato = canónico sin id + band_location, source_tags (vacío: entra por propuesta), source_account, proposal {submitted_at, place, label, comment} sin verificar, discovered_at; los id se asignan al merge"
+  },
+  "candidates": [],
+  "deferred_oleada2": []
+}
